@@ -71,11 +71,6 @@ See:
 
 ```text
 examples/sample_queries.sql
-## Sample Queries
-
-See:
-
-`examples/sample_queries.sql`
 
 ## Design Principle
 
