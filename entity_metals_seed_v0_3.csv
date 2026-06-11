@@ -1,0 +1,8 @@
+entity_id,value,confidence,rationale,source_id,review_status
+ENT_ARISTAEUS,craft,low,Extracted from existing v0.1 domains/tags/notes/claims; this may indicate craft rather than literal metal association.,SRC_THEOI_GODS,candidate_extracted
+ENT_ATHENA,craft,low,Extracted from existing v0.1 domains/tags/notes/claims; this may indicate craft rather than literal metal association.,SRC_THEOI_GODS,candidate_extracted
+ENT_CABEIRI,craft,low,Extracted from existing v0.1 domains/tags/notes/claims; this may indicate craft rather than literal metal association.,SRC_THEOI_GODS,candidate_extracted
+ENT_HEPHAESTUS,craft,low,Extracted from existing v0.1 domains/tags/notes/claims; this may indicate craft rather than literal metal association.,SRC_THEOI_GODS,candidate_extracted
+ENT_HEPHAESTUS,metal,low,Extracted from existing v0.1 domains/tags/notes/claims; this may indicate craft rather than literal metal association.,SRC_THEOI_GODS,candidate_extracted
+ENT_HEPHAESTUS,smithing,low,Extracted from existing v0.1 domains/tags/notes/claims; this may indicate craft rather than literal metal association.,SRC_THEOI_GODS,candidate_extracted
+ENT_PALLAS_TITAN,craft,low,Extracted from existing v0.1 domains/tags/notes/claims; this may indicate craft rather than literal metal association.,SRC_THEOI_GODS,candidate_extracted

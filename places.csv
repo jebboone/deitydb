@@ -1,0 +1,10 @@
+entity_id,place_name,place_type,place_authority_id,source_id,confidence,review_status
+ENT_GLYCON,Abonoteichus/Ionopolis,cult center,,SRC_THEOI_GODS,B,seed_pending
+ENT_TROPHONIUS,Lebadeia,oracle/cave,,SRC_THEOI_DEIFIED,B,seed_pending
+ENT_AMPHIARAUS,Oropos,healing oracle,,SRC_THEOI_DEIFIED,B,seed_pending
+ENT_DEMETER,Eleusis,mystery cult center,,SRC_THEOI_AGRICULTURE,B,seed_pending
+ENT_PERSEPHONE,Eleusis,mystery cult center,,SRC_THEOI_AGRICULTURE,B,seed_pending
+ENT_HECATE,crossroads/household thresholds,cult setting,,SRC_THEOI_UNDERWORLD,B,seed_pending
+ENT_DESPOINA,Arcadia/Lycosura,local mystery cult,,SRC_THEOI_AGRICULTURE,B,seed_pending
+ENT_ASCLEPIUS,Epidaurus,healing sanctuary,,SRC_THEOI_DEIFIED,B,seed_pending
+ENT_PYTHON,Delphi,oracle mythic site,,SRC_THEOI_UNDERWORLD,B,seed_pending

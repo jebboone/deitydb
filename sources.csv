@@ -1,0 +1,13 @@
+source_id,title,url,source_type,scope
+SRC_THEOI_HOME,Theoi Project main index,https://www.theoi.com/,secondary reference index,"Greek gods, spirits, heroes in classical literature and art"
+SRC_THEOI_GODS,Theoi Greek Gods category index,https://www.theoi.com/greek-mythology/greek-gods.html,secondary reference index,"Olympians, Titans, primordials, domain categories, daimones, apotheosed mortals"
+SRC_THEOI_NYMPHS,Theoi Nymphs index,https://www.theoi.com/greek-mythology/nymphs.html,secondary reference index,"Naiads, Dryads, Nereids, Oceanids, Hesperides, Lampades and named nymphs"
+SRC_THEOI_POTAMOI,Theoi Potamoi river-gods page,https://www.theoi.com/Potamos/Potamoi.html,secondary reference index,Greek river-gods and their genealogical/cult context
+SRC_THEOI_SEA,Theoi Sea Gods index,https://www.theoi.com/greek-mythology/sea-gods.html,secondary reference index,"Sea gods, Nereids, sea daimones and related beings"
+SRC_THEOI_DAIMONES,Theoi Daemones/personifications index,https://www.theoi.com/greek-mythology/personifications.html,secondary reference index,"Personified spirits and daimones of condition, emotion and abstraction"
+SRC_THEOI_UNDERWORLD,Theoi Underworld Gods index,https://www.theoi.com/greek-mythology/underworld-gods.html,secondary reference index,"Underworld gods, rivers, daimones and spirits"
+SRC_THEOI_RUSTIC,Theoi Rustic Gods index,https://www.theoi.com/greek-mythology/rustic-gods.html,secondary reference index,"Rustic, pastoral, agrarian and country gods"
+SRC_THEOI_AGRICULTURE,Theoi Agrarian and Mystery Gods index,https://www.theoi.com/greek-mythology/agricultural-gods.html,secondary reference index,"Agrarian, Eleusinian and mystery-associated powers"
+SRC_THEOI_DEIFIED,Theoi Deified Mortals index,https://www.theoi.com/greek-mythology/deified-mortals.html,secondary reference index,Apotheosed mortals and hero-gods
+SRC_PLEIADES,Pleiades ancient places gazetteer,https://pleiades.stoa.org/,gazetteer,Ancient places for later place reconciliation
+SRC_TOPOSTEXT,ToposText,https://topostext.org/,primary text/place index,Ancient texts linked to places for later verification

@@ -1,0 +1,8 @@
+entity_id,value,confidence,rationale,source_id,review_status
+ENT_AGATHOS_DAIMON,serpent,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_AMALTHEIA,goat,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,serpent,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_OPHION,serpent,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_POSEIDON,horse,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_PYTHON,serpent,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_SABAZIOS,serpent,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted

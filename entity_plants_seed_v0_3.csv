@@ -1,0 +1,22 @@
+entity_id,value,confidence,rationale,source_id,review_status
+ENT_ADONIS,vegetation,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_AEGLE_HESPERID,garden,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARETHUSA_HESPERID,garden,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARISTAEUS,olive,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_ATTIS,vegetation,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_DAPHNE,laurel,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_DAPHNE,tree,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_DEMETER,grain,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_DIONYSUS,vegetation,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_DRYADS,tree,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_ERYTHEIA_HESPERID,garden,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_HAMADRYADS,oak,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_HAMADRYADS,tree,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_HESPERIA_HESPERID,garden,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_HESPERIDES,apple,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_HESPERIDES,garden,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_MELIA,tree,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_MELIAE,tree,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_PERSEPHONE,vegetation,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_SYRINX,reed,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted
+ENT_TRIPTOLEMUS,grain,medium,Extracted from existing v0.1 domains/tags/notes/claims; verify against source before publication.,SRC_THEOI_GODS,candidate_extracted

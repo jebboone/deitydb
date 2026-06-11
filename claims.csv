@@ -1,0 +1,1481 @@
+claim_id,entity_id,claim_type,claim_value,confidence,source_id,review_status
+CLM_00001,ENT_CHAOS,domain,primordial void,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00002,ENT_CHAOS,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00003,ENT_CHAOS,tag,cosmogony,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00004,ENT_GAIA,domain,earth,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00005,ENT_GAIA,domain,generation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00006,ENT_GAIA,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00007,ENT_GAIA,tag,earth,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00008,ENT_URANUS,domain,sky,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00009,ENT_URANUS,domain,cosmic order,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00010,ENT_URANUS,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00011,ENT_URANUS,tag,sky,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00012,ENT_PONTUS,domain,sea,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00013,ENT_PONTUS,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00014,ENT_PONTUS,tag,sea,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00015,ENT_TARTARUS,domain,abyss,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00016,ENT_TARTARUS,domain,underworld,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00017,ENT_TARTARUS,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00018,ENT_TARTARUS,tag,underworld,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00019,ENT_EREBUS,domain,darkness,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00020,ENT_EREBUS,domain,underworld gloom,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00021,ENT_EREBUS,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00022,ENT_EREBUS,tag,darkness,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00023,ENT_NYX,domain,night,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00024,ENT_NYX,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00025,ENT_NYX,tag,night,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00026,ENT_HEMERA,domain,day,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00027,ENT_HEMERA,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00028,ENT_HEMERA,tag,day,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00029,ENT_AETHER,domain,upper air,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00030,ENT_AETHER,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00031,ENT_AETHER,tag,air,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00032,ENT_EROS_PRIMORDIAL,domain,cosmic attraction,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00033,ENT_EROS_PRIMORDIAL,domain,generation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00034,ENT_EROS_PRIMORDIAL,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00035,ENT_EROS_PRIMORDIAL,tag,creation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00036,ENT_ANANKE,domain,necessity,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00037,ENT_ANANKE,domain,fate,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00038,ENT_ANANKE,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00039,ENT_ANANKE,tag,fate,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00040,ENT_CHRONOS,domain,time,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00041,ENT_CHRONOS,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00042,ENT_CHRONOS,tag,time,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00043,ENT_PHANES,domain,creation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00044,ENT_PHANES,domain,revelation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00045,ENT_PHANES,tag,orphic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00046,ENT_PHANES,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00047,ENT_THESIS,domain,creation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00048,ENT_THESIS,domain,generation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00049,ENT_THESIS,tag,orphic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00050,ENT_THESIS,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00051,ENT_HYDROS,domain,primordial water,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00052,ENT_HYDROS,tag,orphic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00053,ENT_HYDROS,tag,water,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00054,ENT_PHYSIS,domain,nature,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00055,ENT_PHYSIS,tag,personification,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00056,ENT_PHYSIS,tag,nature,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00057,ENT_OUREA,domain,mountains,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00058,ENT_OUREA,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00059,ENT_OUREA,tag,mountain,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00060,ENT_NESOI,domain,islands,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00061,ENT_NESOI,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00062,ENT_NESOI,tag,landform,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00063,ENT_THALASSA,domain,sea,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00064,ENT_THALASSA,tag,protogenos,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00065,ENT_THALASSA,tag,sea,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00066,ENT_OPHION,domain,cosmic serpent,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00067,ENT_OPHION,domain,early ruler,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00068,ENT_OPHION,tag,orphic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00069,ENT_OPHION,tag,serpent,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00070,ENT_EURYNOME_PRIMORDIAL,domain,creation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00071,ENT_EURYNOME_PRIMORDIAL,domain,sea,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00072,ENT_EURYNOME_PRIMORDIAL,tag,creation,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00073,ENT_EURYNOME_PRIMORDIAL,tag,sea,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00074,ENT_MOROS,domain,doom,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00075,ENT_MOROS,tag,fate,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00076,ENT_MOROS,tag,daimon,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00077,ENT_KER,domain,violent death,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00078,ENT_KER,tag,death,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00079,ENT_KER,tag,daimon,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00080,ENT_MOIRAI,domain,fate,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00081,ENT_MOIRAI,tag,fate,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00082,ENT_MOIRAI,tag,collective,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00083,ENT_HESPERUS,domain,evening star,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00084,ENT_HESPERUS,tag,star,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00085,ENT_EOSPHORUS,domain,morning star,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00086,ENT_EOSPHORUS,tag,star,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00087,ENT_SELENE,domain,moon,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00088,ENT_SELENE,tag,titanic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00089,ENT_SELENE,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00090,ENT_HELIOS,domain,sun,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00091,ENT_HELIOS,tag,titanic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00092,ENT_HELIOS,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00093,ENT_EOS,domain,dawn,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00094,ENT_EOS,tag,titanic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00095,ENT_EOS,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00096,ENT_CRONUS,domain,kingship,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00097,ENT_CRONUS,domain,harvest/time by later association,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00098,ENT_CRONUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00099,ENT_RHEA,domain,motherhood,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00100,ENT_RHEA,domain,mountains,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00101,ENT_RHEA,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00102,ENT_RHEA,tag,mother goddess,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00103,ENT_OCEANUS,domain,world river,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00104,ENT_OCEANUS,domain,fresh waters,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00105,ENT_OCEANUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00106,ENT_OCEANUS,tag,water,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00107,ENT_TETHYS,domain,nursing waters,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00108,ENT_TETHYS,domain,fresh waters,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00109,ENT_TETHYS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00110,ENT_TETHYS,tag,water,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00111,ENT_HYPERION,domain,light,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00112,ENT_HYPERION,domain,sun ancestry,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00113,ENT_HYPERION,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00114,ENT_HYPERION,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00115,ENT_THEIA,domain,sight,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00116,ENT_THEIA,domain,shining light,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00117,ENT_THEIA,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00118,ENT_THEIA,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00119,ENT_COEUS,domain,axis of heaven,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00120,ENT_COEUS,domain,intelligence,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00121,ENT_COEUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00122,ENT_PHOEBE,domain,prophecy,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00123,ENT_PHOEBE,domain,radiance,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00124,ENT_PHOEBE,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00125,ENT_PHOEBE,tag,oracle,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00126,ENT_CRIUS,domain,constellations,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00127,ENT_CRIUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00128,ENT_CRIUS,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00129,ENT_EURYBIA,domain,sea power,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00130,ENT_EURYBIA,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00131,ENT_EURYBIA,tag,sea,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00132,ENT_IAPETUS,domain,mortality,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00133,ENT_IAPETUS,domain,ancestor of mankind,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00134,ENT_IAPETUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00135,ENT_CLYMENE_TITANESS,domain,renown,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00136,ENT_CLYMENE_TITANESS,domain,mother of Prometheus,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00137,ENT_CLYMENE_TITANESS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00138,ENT_MNEMOSYNE,domain,memory,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00139,ENT_MNEMOSYNE,domain,muses,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00140,ENT_MNEMOSYNE,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00141,ENT_MNEMOSYNE,tag,inspiration,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00142,ENT_THEMIS,domain,law,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00143,ENT_THEMIS,domain,divine order,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00144,ENT_THEMIS,domain,oracles,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00145,ENT_THEMIS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00146,ENT_THEMIS,tag,justice,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00147,ENT_ASTERIA,domain,stars,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00148,ENT_ASTERIA,domain,night prophecy,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00149,ENT_ASTERIA,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00150,ENT_ASTERIA,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00151,ENT_LETO,domain,motherhood,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00152,ENT_LETO,domain,Apollo and Artemis,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00153,ENT_LETO,tag,titaness,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00154,ENT_ATLAS,domain,sky-bearing,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00155,ENT_ATLAS,domain,endurance,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00156,ENT_ATLAS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00157,ENT_ATLAS,tag,cosmic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00158,ENT_PROMETHEUS,domain,forethought,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00159,ENT_PROMETHEUS,domain,fire,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00160,ENT_PROMETHEUS,domain,human culture,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00161,ENT_PROMETHEUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00162,ENT_PROMETHEUS,tag,culture hero,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00163,ENT_EPIMETHEUS,domain,afterthought,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00164,ENT_EPIMETHEUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00165,ENT_MENOETIUS,domain,violent anger,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00166,ENT_MENOETIUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00167,ENT_PERSES_TITAN,domain,destruction,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00168,ENT_PERSES_TITAN,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00169,ENT_PALLAS_TITAN,domain,warcraft,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00170,ENT_PALLAS_TITAN,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00171,ENT_ASTRAEUS,domain,stars,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00172,ENT_ASTRAEUS,domain,winds,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00173,ENT_ASTRAEUS,tag,titan,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00174,ENT_ASTRAEUS,tag,celestial,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00175,ENT_DIONE,domain,oracular goddess,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00176,ENT_DIONE,domain,mother of Aphrodite traditions,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00177,ENT_DIONE,tag,titaness,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00178,ENT_DIONE,tag,oracle,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00179,ENT_ZEUS,domain,sky,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00180,ENT_ZEUS,domain,weather,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00181,ENT_ZEUS,domain,kingship,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00182,ENT_ZEUS,domain,law,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00183,ENT_ZEUS,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00184,ENT_ZEUS,tag,major cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00185,ENT_HERA,domain,marriage,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00186,ENT_HERA,domain,queenship,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00187,ENT_HERA,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00188,ENT_HERA,tag,major cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00189,ENT_POSEIDON,domain,sea,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00190,ENT_POSEIDON,domain,earthquakes,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00191,ENT_POSEIDON,domain,horses,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00192,ENT_POSEIDON,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00193,ENT_POSEIDON,tag,earth-shaker,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00194,ENT_DEMETER,domain,grain,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00195,ENT_DEMETER,domain,agriculture,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00196,ENT_DEMETER,domain,mystery cult,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00197,ENT_DEMETER,tag,olympian,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00198,ENT_DEMETER,tag,earth,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00199,ENT_DEMETER,tag,eleusinian,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00200,ENT_PERSEPHONE,domain,underworld,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00201,ENT_PERSEPHONE,domain,vegetation cycle,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00202,ENT_PERSEPHONE,domain,queen of dead,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00203,ENT_PERSEPHONE,tag,chthonic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00204,ENT_PERSEPHONE,tag,eleusinian,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00205,ENT_HADES,domain,underworld,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00206,ENT_HADES,domain,dead,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00207,ENT_HADES,tag,chthonic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00208,ENT_HADES,tag,major,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00209,ENT_PLOUTON,domain,underground wealth,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00210,ENT_PLOUTON,domain,fertility,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00211,ENT_PLOUTON,tag,chthonic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00212,ENT_PLOUTON,tag,wealth,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00213,ENT_PLOUTON,tag,cult title,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00214,ENT_ATHENA,domain,wisdom,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00215,ENT_ATHENA,domain,warcraft,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00216,ENT_ATHENA,domain,city protection,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00217,ENT_ATHENA,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00218,ENT_ATHENA,tag,major cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00219,ENT_APOLLO,domain,prophecy,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00220,ENT_APOLLO,domain,music,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00221,ENT_APOLLO,domain,healing,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00222,ENT_APOLLO,domain,purification,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00223,ENT_APOLLO,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00224,ENT_APOLLO,tag,oracle,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00225,ENT_ARTEMIS,domain,hunting,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00226,ENT_ARTEMIS,domain,wilderness,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00227,ENT_ARTEMIS,domain,childbirth,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00228,ENT_ARTEMIS,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00229,ENT_ARTEMIS,tag,wilderness,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00230,ENT_ARES,domain,war,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00231,ENT_ARES,domain,battle fury,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00232,ENT_ARES,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00233,ENT_APHRODITE,domain,love,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00234,ENT_APHRODITE,domain,beauty,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00235,ENT_APHRODITE,domain,fertility,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00236,ENT_APHRODITE,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00237,ENT_HEPHAESTUS,domain,smithing,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00238,ENT_HEPHAESTUS,domain,metalwork,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00239,ENT_HEPHAESTUS,domain,fire craft,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00240,ENT_HEPHAESTUS,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00241,ENT_HEPHAESTUS,tag,craft,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00242,ENT_HEPHAESTUS,tag,metals,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00243,ENT_HERMES,domain,travel,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00244,ENT_HERMES,domain,commerce,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00245,ENT_HERMES,domain,herds,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00246,ENT_HERMES,domain,psychopomp,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00247,ENT_HERMES,tag,olympian,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00248,ENT_HERMES,tag,psychopomp,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00249,ENT_DIONYSUS,domain,wine,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00250,ENT_DIONYSUS,domain,ecstasy,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00251,ENT_DIONYSUS,domain,vegetation,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00252,ENT_DIONYSUS,domain,rebirth,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00253,ENT_DIONYSUS,tag,mystery,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00254,ENT_DIONYSUS,tag,vegetation,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00255,ENT_HESTIA,domain,hearth,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00256,ENT_HESTIA,domain,household fire,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00257,ENT_HESTIA,tag,olympian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00258,ENT_HESTIA,tag,domestic cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00259,ENT_PAN,domain,mountains,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00260,ENT_PAN,domain,shepherds,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00261,ENT_PAN,domain,wild nature,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00262,ENT_PAN,tag,rustic,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00263,ENT_PAN,tag,mountain,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00264,ENT_HECATE,domain,crossroads,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00265,ENT_HECATE,domain,magic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00266,ENT_HECATE,domain,spirits,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00267,ENT_HECATE,domain,thresholds,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00268,ENT_HECATE,tag,chthonic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00269,ENT_HECATE,tag,magic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00270,ENT_HECATE,tag,liminal,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00271,ENT_ASCLEPIUS,domain,medicine,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00272,ENT_ASCLEPIUS,domain,dream healing,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00273,ENT_ASCLEPIUS,domain,incubation,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00274,ENT_ASCLEPIUS,tag,healing,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00275,ENT_ASCLEPIUS,tag,apotheosis,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00276,ENT_EILEITHYIA,domain,childbirth,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00277,ENT_EILEITHYIA,tag,birth cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00278,ENT_IRIS,domain,rainbow,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00279,ENT_IRIS,domain,divine messenger,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00280,ENT_IRIS,tag,messenger,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00281,ENT_NIKE,domain,victory,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00282,ENT_NIKE,tag,personification,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00283,ENT_TYCHE,domain,fortune,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00284,ENT_TYCHE,domain,city luck,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00285,ENT_TYCHE,tag,personification,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00286,ENT_TYCHE,tag,city goddess,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00287,ENT_NEMESIS,domain,retribution,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00288,ENT_NEMESIS,domain,balance,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00289,ENT_NEMESIS,tag,personification,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00290,ENT_NEMESIS,tag,cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00291,ENT_DIKE,domain,justice,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00292,ENT_DIKE,tag,personification,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00293,ENT_EIRENE,domain,peace,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00294,ENT_EIRENE,tag,personification,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00295,ENT_EIRENE,tag,Horae,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00296,ENT_EUNOMIA,domain,good order,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00297,ENT_EUNOMIA,tag,personification,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00298,ENT_EUNOMIA,tag,Horae,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00299,ENT_HORAE,domain,seasons,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00300,ENT_HORAE,domain,order,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00301,ENT_HORAE,tag,collective,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00302,ENT_CHARITES,domain,grace,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00303,ENT_CHARITES,domain,beauty,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00304,ENT_CHARITES,domain,festivity,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00305,ENT_CHARITES,tag,collective,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00306,ENT_MUSES,domain,poetry,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00307,ENT_MUSES,domain,music,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00308,ENT_MUSES,domain,memory,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00309,ENT_MUSES,tag,collective,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00310,ENT_ERINYES,domain,vengeance,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00311,ENT_ERINYES,domain,oath punishment,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00312,ENT_ERINYES,tag,chthonic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00313,ENT_ERINYES,tag,collective,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00314,ENT_MOIRAI_85,domain,fate,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00315,ENT_MOIRAI_85,domain,life span,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00316,ENT_MOIRAI_85,tag,collective,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00317,ENT_MOIRAI_85,tag,fate,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_00318,ENT_KOURETES,domain,armed dance,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00319,ENT_KOURETES,domain,guardianship,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00320,ENT_KOURETES,tag,collective,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00321,ENT_KOURETES,tag,rustic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00322,ENT_KORYBANTES,domain,ecstatic dance,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00323,ENT_KORYBANTES,domain,mother goddess cult,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00324,ENT_KORYBANTES,tag,collective,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00325,ENT_KORYBANTES,tag,rustic,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00326,ENT_CABEIRI,domain,initiation,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00327,ENT_CABEIRI,domain,protection,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00328,ENT_CABEIRI,domain,craft mystery,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00329,ENT_CABEIRI,tag,mystery,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00330,ENT_CABEIRI,tag,local cult,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_00331,ENT_DIOSCURI,domain,sailors,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00332,ENT_DIOSCURI,domain,horsemen,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00333,ENT_DIOSCURI,domain,protection,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00334,ENT_DIOSCURI,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00335,ENT_DIOSCURI,tag,apotheosis,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00336,ENT_ACHERON,domain,underworld river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00337,ENT_ACHERON,domain,pain,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00338,ENT_ACHERON,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00339,ENT_ACHERON,tag,river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00340,ENT_COCYTUS,domain,underworld river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00341,ENT_COCYTUS,domain,lamentation,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00342,ENT_COCYTUS,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00343,ENT_COCYTUS,tag,river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00344,ENT_LETHE,domain,oblivion,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00345,ENT_LETHE,domain,underworld river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00346,ENT_LETHE,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00347,ENT_LETHE,tag,river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00348,ENT_PHLEGETHON,domain,fire river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00349,ENT_PHLEGETHON,domain,underworld,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00350,ENT_PHLEGETHON,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00351,ENT_PHLEGETHON,tag,river,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00352,ENT_STYX,domain,oaths,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00353,ENT_STYX,domain,underworld river,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00354,ENT_STYX,tag,chthonic,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00355,ENT_STYX,tag,river,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00356,ENT_STYX,tag,oath,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00357,ENT_CHARON,domain,ferryman of dead,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00358,ENT_CHARON,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00359,ENT_CHARON,tag,psychopomp,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00360,ENT_THANATOS,domain,death,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00361,ENT_THANATOS,tag,death,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00362,ENT_THANATOS,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00363,ENT_HYPNOS,domain,sleep,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00364,ENT_HYPNOS,tag,sleep,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00365,ENT_HYPNOS,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00366,ENT_ONEIROI,domain,dreams,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00367,ENT_ONEIROI,tag,dream,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00368,ENT_ONEIROI,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00369,ENT_MORPHEUS,domain,dream forms,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00370,ENT_MORPHEUS,tag,dream,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00371,ENT_PHOBETOR,domain,frightening dreams,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00372,ENT_PHOBETOR,tag,dream,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00373,ENT_PHANTASOS,domain,fantastic dreams,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00374,ENT_PHANTASOS,tag,dream,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00375,ENT_EMPUSA,domain,apparition,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00376,ENT_EMPUSA,domain,bogey spirit,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00377,ENT_EMPUSA,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00378,ENT_EMPUSA,tag,monstrous,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00379,ENT_EURYNOMOS,domain,corpse decay,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00380,ENT_EURYNOMOS,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00381,ENT_MORMOLYKEIA,domain,frightening spirits,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00382,ENT_MORMOLYKEIA,domain,retinue of Hecate,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00383,ENT_MORMOLYKEIA,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00384,ENT_MORMOLYKEIA,tag,collective,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00385,ENT_KERES,domain,violent death,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00386,ENT_KERES,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00387,ENT_KERES,tag,death,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00388,ENT_ACHLYS,domain,death mist,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00389,ENT_ACHLYS,domain,misery,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00390,ENT_ACHLYS,tag,death,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00391,ENT_MACARIA,domain,blessed death,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00392,ENT_MACARIA,tag,death,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00393,ENT_MACARIA,tag,underworld,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00394,ENT_MELINOE,domain,ghosts,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00395,ENT_MELINOE,domain,night apparitions,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00396,ENT_MELINOE,tag,orphic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00397,ENT_MELINOE,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00398,ENT_ZAGREUS,domain,rebirth,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00399,ENT_ZAGREUS,domain,underworld initiation,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00400,ENT_ZAGREUS,tag,orphic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00401,ENT_ZAGREUS,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00402,ENT_BRIMO,domain,underworld power,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00403,ENT_BRIMO,domain,terrifying goddess,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00404,ENT_BRIMO,tag,epithet,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00405,ENT_BRIMO,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00406,ENT_DESPOINA,domain,mystery cult,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00407,ENT_DESPOINA,domain,underworld/earth,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00408,ENT_DESPOINA,tag,local cult,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00409,ENT_DESPOINA,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00410,ENT_AEACUS,domain,judge of dead,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00411,ENT_AEACUS,tag,hero,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00412,ENT_AEACUS,tag,underworld,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00413,ENT_MINOS,domain,judge of dead,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00414,ENT_MINOS,tag,hero,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00415,ENT_MINOS,tag,underworld,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00416,ENT_RHADAMANTHYS,domain,judge of dead,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00417,ENT_RHADAMANTHYS,tag,hero,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00418,ENT_RHADAMANTHYS,tag,underworld,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00419,ENT_ASCALAPHUS,domain,orchard of Hades,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00420,ENT_ASCALAPHUS,domain,underworld witness,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00421,ENT_ASCALAPHUS,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00422,ENT_LEUCE,domain,underworld nymph,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00423,ENT_LEUCE,domain,white poplar,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00424,ENT_LEUCE,tag,nymph,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00425,ENT_LEUCE,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00426,ENT_MINTHE,domain,underworld nymph,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00427,ENT_MINTHE,domain,mint plant,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00428,ENT_MINTHE,tag,nymph,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00429,ENT_MINTHE,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00430,ENT_HADES_KLYMENOS,domain,underworld,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00431,ENT_HADES_KLYMENOS,domain,renowned one,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00432,ENT_HADES_KLYMENOS,tag,cult title,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00433,ENT_HADES_KLYMENOS,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00434,ENT_TROPHONIUS,domain,cave oracle,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00435,ENT_TROPHONIUS,domain,underworld wisdom,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00436,ENT_TROPHONIUS,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00437,ENT_TROPHONIUS,tag,oracle,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00438,ENT_TROPHONIUS,tag,cave,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00439,ENT_AMPHIARAUS,domain,dream healing,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00440,ENT_AMPHIARAUS,domain,oracle,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00441,ENT_AMPHIARAUS,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00442,ENT_AMPHIARAUS,tag,incubation,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_00443,ENT_GLYCON,domain,healing,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00444,ENT_GLYCON,domain,prophecy,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00445,ENT_GLYCON,domain,fortune,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00446,ENT_GLYCON,tag,local cult,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00447,ENT_GLYCON,tag,serpent,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00448,ENT_GLYCON,tag,oracle,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_00449,ENT_PYTHON,domain,Delphic earth oracle,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00450,ENT_PYTHON,tag,serpent,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00451,ENT_PYTHON,tag,oracle,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00452,ENT_PYTHON,tag,chthonic,B,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00453,ENT_AGATHOS_DAIMON,domain,household prosperity,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00454,ENT_AGATHOS_DAIMON,domain,protection,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00455,ENT_AGATHOS_DAIMON,tag,serpent,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00456,ENT_AGATHOS_DAIMON,tag,household,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00457,ENT_AGATHOS_DAIMON,tag,daimon,A,SRC_THEOI_UNDERWORLD,candidate_verified_name
+CLM_00458,ENT_AIDOS,domain,aidos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00459,ENT_AIDOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00460,ENT_AIDOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00461,ENT_ALGEA,domain,algea,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00462,ENT_ALGEA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00463,ENT_ALGEA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00464,ENT_ALKE,domain,alke,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00465,ENT_ALKE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00466,ENT_ALKE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00467,ENT_AMECHANIA,domain,amechania,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00468,ENT_AMECHANIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00469,ENT_AMECHANIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00470,ENT_AMPHILOGIAI,domain,amphilogiai,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00471,ENT_AMPHILOGIAI,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00472,ENT_AMPHILOGIAI,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00473,ENT_APATE,domain,apate,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00474,ENT_APATE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00475,ENT_APATE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00476,ENT_ARETE,domain,arete,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00477,ENT_ARETE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00478,ENT_ARETE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00479,ENT_AT,domain,atë,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00480,ENT_AT,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00481,ENT_AT,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00482,ENT_BIA,domain,bia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00483,ENT_BIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00484,ENT_BIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00485,ENT_CAERUS,domain,caerus,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00486,ENT_CAERUS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00487,ENT_CAERUS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00488,ENT_DEIMOS,domain,deimos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00489,ENT_DEIMOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00490,ENT_DEIMOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00491,ENT_DOLOS,domain,dolos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00492,ENT_DOLOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00493,ENT_DOLOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00494,ENT_DYSNOMIA,domain,dysnomia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00495,ENT_DYSNOMIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00496,ENT_DYSNOMIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00497,ENT_ELPIS,domain,elpis,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00498,ENT_ELPIS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00499,ENT_ELPIS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00500,ENT_ENYO,domain,enyo,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00501,ENT_ENYO,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00502,ENT_ENYO,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00503,ENT_ERIS,domain,eris,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00504,ENT_ERIS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00505,ENT_ERIS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00506,ENT_EROS,domain,eros,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00507,ENT_EROS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00508,ENT_EROS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00509,ENT_GERAS,domain,geras,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00510,ENT_GERAS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00511,ENT_GERAS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00512,ENT_HARMONIA,domain,harmonia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00513,ENT_HARMONIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00514,ENT_HARMONIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00515,ENT_HEDONE,domain,hedone,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00516,ENT_HEDONE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00517,ENT_HEDONE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00518,ENT_HIMEROS,domain,himeros,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00519,ENT_HIMEROS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00520,ENT_HIMEROS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00521,ENT_HOMONOIA,domain,homonoia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00522,ENT_HOMONOIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00523,ENT_HOMONOIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00524,ENT_HYBRIS,domain,hybris,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00525,ENT_HYBRIS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00526,ENT_HYBRIS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00527,ENT_HYSMINAI,domain,hysminai,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00528,ENT_HYSMINAI,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00529,ENT_HYSMINAI,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00530,ENT_IOKE,domain,ioke,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00531,ENT_IOKE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00532,ENT_IOKE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00533,ENT_KRATOS,domain,kratos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00534,ENT_KRATOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00535,ENT_KRATOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00536,ENT_KYDOIMOS,domain,kydoimos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00537,ENT_KYDOIMOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00538,ENT_KYDOIMOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00539,ENT_LETHE_151,domain,lethe,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00540,ENT_LETHE_151,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00541,ENT_LETHE_151,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00542,ENT_LIMOS,domain,limos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00543,ENT_LIMOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00544,ENT_LIMOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00545,ENT_LYSSA,domain,lyssa,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00546,ENT_LYSSA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00547,ENT_LYSSA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00548,ENT_MACHAI,domain,machai,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00549,ENT_MACHAI,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00550,ENT_MACHAI,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00551,ENT_MANIA,domain,mania,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00552,ENT_MANIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00553,ENT_MANIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00554,ENT_MOMUS,domain,momus,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00555,ENT_MOMUS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00556,ENT_MOMUS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00557,ENT_MOMOS,domain,momos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00558,ENT_MOMOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00559,ENT_MOMOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00560,ENT_MOROS_158,domain,moros,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00561,ENT_MOROS_158,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00562,ENT_MOROS_158,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00563,ENT_NIKE_159,domain,nike,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00564,ENT_NIKE_159,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00565,ENT_NIKE_159,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00566,ENT_OIZYS,domain,oizys,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00567,ENT_OIZYS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00568,ENT_OIZYS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00569,ENT_PEITHO,domain,peitho,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00570,ENT_PEITHO,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00571,ENT_PEITHO,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00572,ENT_PENIA,domain,penia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00573,ENT_PENIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00574,ENT_PENIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00575,ENT_PHEME,domain,pheme,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00576,ENT_PHEME,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00577,ENT_PHEME,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00578,ENT_PHOBOS,domain,phobos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00579,ENT_PHOBOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00580,ENT_PHOBOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00581,ENT_PHILOTES,domain,philotes,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00582,ENT_PHILOTES,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00583,ENT_PHILOTES,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00584,ENT_PONOS,domain,ponos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00585,ENT_PONOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00586,ENT_PONOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00587,ENT_POROS,domain,poros,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00588,ENT_POROS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00589,ENT_POROS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00590,ENT_POTHOS,domain,pothos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00591,ENT_POTHOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00592,ENT_POTHOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00593,ENT_SOPHROSYNE,domain,sophrosyne,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00594,ENT_SOPHROSYNE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00595,ENT_SOPHROSYNE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00596,ENT_SOTER,domain,soter,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00597,ENT_SOTER,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00598,ENT_SOTER,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00599,ENT_SOTERIA,domain,soteria,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00600,ENT_SOTERIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00601,ENT_SOTERIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00602,ENT_TECHNE,domain,techne,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00603,ENT_TECHNE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00604,ENT_TECHNE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00605,ENT_THANATOS_173,domain,thanatos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00606,ENT_THANATOS_173,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00607,ENT_THANATOS_173,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00608,ENT_THEMIS_174,domain,themis,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00609,ENT_THEMIS_174,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00610,ENT_THEMIS_174,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00611,ENT_THRASOS,domain,thrasos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00612,ENT_THRASOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00613,ENT_THRASOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00614,ENT_TYCHE_176,domain,tyche,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00615,ENT_TYCHE_176,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00616,ENT_TYCHE_176,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00617,ENT_ZELOS,domain,zelos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00618,ENT_ZELOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00619,ENT_ZELOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00620,ENT_ADIKIA,domain,adikia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00621,ENT_ADIKIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00622,ENT_ADIKIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00623,ENT_DIKAIOSYNE,domain,dikaiosyne,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00624,ENT_DIKAIOSYNE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00625,ENT_DIKAIOSYNE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00626,ENT_ELEOS,domain,eleos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00627,ENT_ELEOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00628,ENT_ELEOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00629,ENT_EPIPHRON,domain,epiphron,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00630,ENT_EPIPHRON,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00631,ENT_EPIPHRON,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00632,ENT_EUSEBEIA,domain,eusebeia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00633,ENT_EUSEBEIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00634,ENT_EUSEBEIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00635,ENT_HORKOS,domain,horkos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00636,ENT_HORKOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00637,ENT_HORKOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00638,ENT_KAIROS,domain,kairos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00639,ENT_KAIROS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00640,ENT_KAIROS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00641,ENT_KAKIA,domain,kakia,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00642,ENT_KAKIA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00643,ENT_KAKIA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00644,ENT_LITAE,domain,litae,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00645,ENT_LITAE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00646,ENT_LITAE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00647,ENT_NEIKEA,domain,neikea,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00648,ENT_NEIKEA,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00649,ENT_NEIKEA,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00650,ENT_NOMOS,domain,nomos,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00651,ENT_NOMOS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00652,ENT_NOMOS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00653,ENT_PALIOXIS,domain,palioxis,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00654,ENT_PALIOXIS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00655,ENT_PALIOXIS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00656,ENT_POINE,domain,poine,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00657,ENT_POINE,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00658,ENT_POINE,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00659,ENT_PRAXIS,domain,praxis,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00660,ENT_PRAXIS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00661,ENT_PRAXIS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00662,ENT_PROIOXIS,domain,proioxis,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00663,ENT_PROIOXIS,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00664,ENT_PROIOXIS,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00665,ENT_PSEUDOLOGOI,domain,pseudologoi,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00666,ENT_PSEUDOLOGOI,tag,daimon,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00667,ENT_PSEUDOLOGOI,tag,personification,B,SRC_THEOI_DAIMONES,candidate_verified_name
+CLM_00668,ENT_NEREUS,domain,old man of sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00669,ENT_NEREUS,domain,prophecy,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00670,ENT_NEREUS,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00671,ENT_DORIS,domain,sea bounty,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00672,ENT_DORIS,domain,mother of Nereids,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00673,ENT_DORIS,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00674,ENT_THAUMAS,domain,wonders of sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00675,ENT_THAUMAS,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00676,ENT_PHORCYS,domain,sea depths,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00677,ENT_PHORCYS,domain,sea monsters,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00678,ENT_PHORCYS,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00679,ENT_CETO,domain,sea monsters,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00680,ENT_CETO,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00681,ENT_EURYBIA_SEA,domain,sea power,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00682,ENT_EURYBIA_SEA,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00683,ENT_TRITON,domain,sea messenger,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00684,ENT_TRITON,domain,conch,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00685,ENT_TRITON,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00686,ENT_PROTEUS,domain,prophecy,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00687,ENT_PROTEUS,domain,shapechanging,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00688,ENT_PROTEUS,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00689,ENT_PROTEUS,tag,oracle,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00690,ENT_GLAUCUS,domain,sea prophecy,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00691,ENT_GLAUCUS,domain,fishermen,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00692,ENT_GLAUCUS,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00693,ENT_GLAUCUS,tag,apotheosis,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00694,ENT_PALAEMON,domain,sailor protection,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00695,ENT_PALAEMON,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00696,ENT_PALAEMON,tag,apotheosis,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00697,ENT_LEUCOTHEA,domain,sea rescue,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00698,ENT_LEUCOTHEA,domain,sailor protection,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00699,ENT_LEUCOTHEA,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00700,ENT_LEUCOTHEA,tag,apotheosis,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00701,ENT_THETIS,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00702,ENT_THETIS,domain,mother of Achilles,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00703,ENT_THETIS,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00704,ENT_THETIS,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00705,ENT_AMPHITRITE,domain,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00706,ENT_AMPHITRITE,domain,queen of sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00707,ENT_AMPHITRITE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00708,ENT_AMPHITRITE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00709,ENT_GALATEA,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00710,ENT_GALATEA,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00711,ENT_GALATEA,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00712,ENT_PSAMATHE,domain,sand shore,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00713,ENT_PSAMATHE,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00714,ENT_PSAMATHE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00715,ENT_PSAMATHE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00716,ENT_CYMODOCE,domain,waves,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00717,ENT_CYMODOCE,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00718,ENT_CYMODOCE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00719,ENT_CYMODOCE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00720,ENT_DYNAMENE,domain,power of sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00721,ENT_DYNAMENE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00722,ENT_DYNAMENE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00723,ENT_PHERUSA,domain,carrying power of sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00724,ENT_PHERUSA,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00725,ENT_PHERUSA,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00726,ENT_PROTO,domain,first sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00727,ENT_PROTO,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00728,ENT_PROTO,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00729,ENT_ACTAEA,domain,shore sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00730,ENT_ACTAEA,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00731,ENT_ACTAEA,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00732,ENT_DOTO,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00733,ENT_DOTO,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00734,ENT_DOTO,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00735,ENT_EUARNE,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00736,ENT_EUARNE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00737,ENT_EUARNE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00738,ENT_HIPPONOE,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00739,ENT_HIPPONOE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00740,ENT_HIPPONOE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00741,ENT_NESO,domain,island sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00742,ENT_NESO,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00743,ENT_NESO,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00744,ENT_THALIA_NEREID,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00745,ENT_THALIA_NEREID,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00746,ENT_THALIA_NEREID,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00747,ENT_EUDORA_NEREID,domain,sea nymph,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00748,ENT_EUDORA_NEREID,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00749,ENT_EUDORA_NEREID,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00750,ENT_SAO,domain,safety at sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00751,ENT_SAO,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00752,ENT_SAO,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00753,ENT_SPEIO,domain,sea caves,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00754,ENT_SPEIO,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00755,ENT_SPEIO,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00756,ENT_SPEIO,tag,cave,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00757,ENT_GLAUCE,domain,blue-green sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00758,ENT_GLAUCE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00759,ENT_GLAUCE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00760,ENT_CYMOTHOE,domain,swift waves,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00761,ENT_CYMOTHOE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00762,ENT_CYMOTHOE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00763,ENT_MELITE,domain,calm sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00764,ENT_MELITE,tag,nereid,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00765,ENT_MELITE,tag,sea,B,SRC_THEOI_SEA,candidate_verified_name
+CLM_00766,ENT_ACHELOOS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00767,ENT_ACHELOOS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00768,ENT_ACHELOOS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00769,ENT_ACHELOOS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00770,ENT_ACHELOOS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00771,ENT_ACHELOOS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00772,ENT_ALPHEUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00773,ENT_ALPHEUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00774,ENT_ALPHEUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00775,ENT_ALPHEUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00776,ENT_ALPHEUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00777,ENT_ALPHEUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00778,ENT_PENEUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00779,ENT_PENEUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00780,ENT_PENEUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00781,ENT_PENEUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00782,ENT_PENEUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00783,ENT_PENEUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00784,ENT_SCAMANDER,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00785,ENT_SCAMANDER,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00786,ENT_SCAMANDER,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00787,ENT_SCAMANDER,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00788,ENT_SCAMANDER,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00789,ENT_SCAMANDER,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00790,ENT_SIMOEIS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00791,ENT_SIMOEIS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00792,ENT_SIMOEIS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00793,ENT_SIMOEIS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00794,ENT_SIMOEIS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00795,ENT_SIMOEIS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00796,ENT_CEPHISSUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00797,ENT_CEPHISSUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00798,ENT_CEPHISSUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00799,ENT_CEPHISSUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00800,ENT_CEPHISSUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00801,ENT_CEPHISSUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00802,ENT_EUROTAS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00803,ENT_EUROTAS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00804,ENT_EUROTAS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00805,ENT_EUROTAS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00806,ENT_EUROTAS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00807,ENT_EUROTAS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00808,ENT_INACHUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00809,ENT_INACHUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00810,ENT_INACHUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00811,ENT_INACHUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00812,ENT_INACHUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00813,ENT_INACHUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00814,ENT_LADON,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00815,ENT_LADON,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00816,ENT_LADON,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00817,ENT_LADON,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00818,ENT_LADON,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00819,ENT_LADON,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00820,ENT_ASOPUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00821,ENT_ASOPUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00822,ENT_ASOPUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00823,ENT_ASOPUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00824,ENT_ASOPUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00825,ENT_ASOPUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00826,ENT_SPERCHEIOS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00827,ENT_SPERCHEIOS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00828,ENT_SPERCHEIOS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00829,ENT_SPERCHEIOS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00830,ENT_SPERCHEIOS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00831,ENT_SPERCHEIOS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00832,ENT_HEBRUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00833,ENT_HEBRUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00834,ENT_HEBRUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00835,ENT_HEBRUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00836,ENT_HEBRUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00837,ENT_HEBRUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00838,ENT_ERIDANUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00839,ENT_ERIDANUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00840,ENT_ERIDANUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00841,ENT_ERIDANUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00842,ENT_ERIDANUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00843,ENT_ERIDANUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00844,ENT_NILE,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00845,ENT_NILE,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00846,ENT_NILE,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00847,ENT_NILE,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00848,ENT_NILE,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00849,ENT_NILE,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00850,ENT_STRYMON,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00851,ENT_STRYMON,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00852,ENT_STRYMON,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00853,ENT_STRYMON,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00854,ENT_STRYMON,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00855,ENT_STRYMON,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00856,ENT_AESAR,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00857,ENT_AESAR,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00858,ENT_AESAR,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00859,ENT_AESAR,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00860,ENT_AESAR,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00861,ENT_AESAR,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00862,ENT_ACHELOUS_MINOR,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00863,ENT_ACHELOUS_MINOR,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00864,ENT_ACHELOUS_MINOR,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00865,ENT_ACHELOUS_MINOR,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00866,ENT_ACHELOUS_MINOR,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00867,ENT_ACHELOUS_MINOR,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00868,ENT_ACHERON_RIVER,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00869,ENT_ACHERON_RIVER,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00870,ENT_ACHERON_RIVER,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00871,ENT_ACHERON_RIVER,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00872,ENT_ACHERON_RIVER,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00873,ENT_ACHERON_RIVER,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00874,ENT_AESEPUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00875,ENT_AESEPUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00876,ENT_AESEPUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00877,ENT_AESEPUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00878,ENT_AESEPUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00879,ENT_AESEPUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00880,ENT_AXIUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00881,ENT_AXIUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00882,ENT_AXIUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00883,ENT_AXIUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00884,ENT_AXIUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00885,ENT_AXIUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00886,ENT_CAICUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00887,ENT_CAICUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00888,ENT_CAICUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00889,ENT_CAICUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00890,ENT_CAICUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00891,ENT_CAICUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00892,ENT_CLADEUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00893,ENT_CLADEUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00894,ENT_CLADEUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00895,ENT_CLADEUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00896,ENT_CLADEUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00897,ENT_CLADEUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00898,ENT_CYDNUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00899,ENT_CYDNUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00900,ENT_CYDNUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00901,ENT_CYDNUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00902,ENT_CYDNUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00903,ENT_CYDNUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00904,ENT_EVENUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00905,ENT_EVENUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00906,ENT_EVENUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00907,ENT_EVENUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00908,ENT_EVENUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00909,ENT_EVENUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00910,ENT_ERYMANTHUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00911,ENT_ERYMANTHUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00912,ENT_ERYMANTHUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00913,ENT_ERYMANTHUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00914,ENT_ERYMANTHUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00915,ENT_ERYMANTHUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00916,ENT_GRANICUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00917,ENT_GRANICUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00918,ENT_GRANICUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00919,ENT_GRANICUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00920,ENT_GRANICUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00921,ENT_GRANICUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00922,ENT_ILISSUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00923,ENT_ILISSUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00924,ENT_ILISSUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00925,ENT_ILISSUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00926,ENT_ILISSUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00927,ENT_ILISSUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00928,ENT_ISMENUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00929,ENT_ISMENUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00930,ENT_ISMENUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00931,ENT_ISMENUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00932,ENT_ISMENUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00933,ENT_ISMENUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00934,ENT_MAEANDER,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00935,ENT_MAEANDER,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00936,ENT_MAEANDER,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00937,ENT_MAEANDER,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00938,ENT_MAEANDER,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00939,ENT_MAEANDER,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00940,ENT_MELES,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00941,ENT_MELES,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00942,ENT_MELES,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00943,ENT_MELES,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00944,ENT_MELES,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00945,ENT_MELES,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00946,ENT_NESSUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00947,ENT_NESSUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00948,ENT_NESSUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00949,ENT_NESSUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00950,ENT_NESSUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00951,ENT_NESSUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00952,ENT_SANGARIUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00953,ENT_SANGARIUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00954,ENT_SANGARIUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00955,ENT_SANGARIUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00956,ENT_SANGARIUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00957,ENT_SANGARIUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00958,ENT_SATNIOEIS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00959,ENT_SATNIOEIS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00960,ENT_SATNIOEIS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00961,ENT_SATNIOEIS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00962,ENT_SATNIOEIS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00963,ENT_SATNIOEIS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00964,ENT_TITARESIUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00965,ENT_TITARESIUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00966,ENT_TITARESIUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00967,ENT_TITARESIUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00968,ENT_TITARESIUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00969,ENT_TITARESIUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00970,ENT_XANTHUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00971,ENT_XANTHUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00972,ENT_XANTHUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00973,ENT_XANTHUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00974,ENT_XANTHUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00975,ENT_XANTHUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00976,ENT_THERMODON,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00977,ENT_THERMODON,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00978,ENT_THERMODON,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00979,ENT_THERMODON,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00980,ENT_THERMODON,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00981,ENT_THERMODON,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00982,ENT_PARTHENIUS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00983,ENT_PARTHENIUS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00984,ENT_PARTHENIUS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00985,ENT_PARTHENIUS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00986,ENT_PARTHENIUS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00987,ENT_PARTHENIUS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00988,ENT_RHESUS_RIVER,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00989,ENT_RHESUS_RIVER,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00990,ENT_RHESUS_RIVER,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00991,ENT_RHESUS_RIVER,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00992,ENT_RHESUS_RIVER,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00993,ENT_RHESUS_RIVER,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00994,ENT_PHASIS,domain,river,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00995,ENT_PHASIS,domain,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00996,ENT_PHASIS,domain,local geography,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00997,ENT_PHASIS,tag,potamos,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00998,ENT_PHASIS,tag,freshwater,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_00999,ENT_PHASIS,tag,local cult potential,B,SRC_THEOI_POTAMOI,candidate_verified_name
+CLM_01000,ENT_AGANIPPE,domain,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01001,ENT_AGANIPPE,domain,inspiration,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01002,ENT_AGANIPPE,tag,naiad,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01003,ENT_AGANIPPE,tag,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01004,ENT_AMALTHEIA,domain,nurse of Zeus,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01005,ENT_AMALTHEIA,domain,mount Ida,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01006,ENT_AMALTHEIA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01007,ENT_AMALTHEIA,tag,mountain,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01008,ENT_AEGINA,domain,island/lineage,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01009,ENT_AEGINA,domain,local heroine,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01010,ENT_AEGINA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01011,ENT_AEGINA,tag,place,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01012,ENT_ARETHUSA,domain,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01013,ENT_ARETHUSA,domain,freshwater,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01014,ENT_ARETHUSA,tag,naiad,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01015,ENT_ARETHUSA,tag,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01016,ENT_CYRENE,domain,hunting,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01017,ENT_CYRENE,domain,city foundation,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01018,ENT_CYRENE,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01019,ENT_CYRENE,tag,wilds,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01020,ENT_DAPHNE,domain,laurel,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01021,ENT_DAPHNE,domain,wilderness,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01022,ENT_DAPHNE,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01023,ENT_DAPHNE,tag,tree,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01024,ENT_ECHO,domain,mountains,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01025,ENT_ECHO,domain,sound,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01026,ENT_ECHO,tag,oread,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01027,ENT_ECHO,tag,mountain,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01028,ENT_SYRINX,domain,reeds,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01029,ENT_SYRINX,domain,Pan myth,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01030,ENT_SYRINX,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01031,ENT_SYRINX,tag,wetlands,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01032,ENT_DIRCE,domain,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01033,ENT_DIRCE,domain,Thebes,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01034,ENT_DIRCE,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01035,ENT_DIRCE,tag,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01036,ENT_SALMACIS,domain,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01037,ENT_SALMACIS,domain,transformation,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01038,ENT_SALMACIS,tag,naiad,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01039,ENT_SALMACIS,tag,spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01040,ENT_CALYPSO,domain,island,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01041,ENT_CALYPSO,domain,concealment,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01042,ENT_CALYPSO,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01043,ENT_CALYPSO,tag,island,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01044,ENT_MAIA,domain,mother of Hermes,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01045,ENT_MAIA,domain,mountain cave,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01046,ENT_MAIA,tag,pleiad,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01047,ENT_MAIA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01048,ENT_MAIA,tag,cave,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01049,ENT_ELECTRA_OCEANID,domain,cloud/water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01050,ENT_ELECTRA_OCEANID,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01051,ENT_METIS,domain,counsel,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01052,ENT_METIS,domain,wisdom,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01053,ENT_METIS,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01054,ENT_METIS,tag,titaness,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01055,ENT_EURYNOME_OCEANID,domain,meadows/water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01056,ENT_EURYNOME_OCEANID,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01057,ENT_CLYMENE_OCEANID,domain,water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01058,ENT_CLYMENE_OCEANID,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01059,ENT_ASIA,domain,region/name,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01060,ENT_ASIA,domain,water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01061,ENT_ASIA,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01062,ENT_PLEIONE,domain,water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01063,ENT_PLEIONE,domain,mother of Pleiades,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01064,ENT_PLEIONE,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01065,ENT_CALLIRRHOE,domain,beautiful-flowing water,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01066,ENT_CALLIRRHOE,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01067,ENT_PERSEIS,domain,water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01068,ENT_PERSEIS,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01069,ENT_IDYIA,domain,knowledge,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01070,ENT_IDYIA,domain,water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01071,ENT_IDYIA,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01072,ENT_AETHRA_OCEANID,domain,bright sky/water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01073,ENT_AETHRA_OCEANID,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01074,ENT_BEROE,domain,city nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01075,ENT_BEROE,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01076,ENT_BEROE,tag,place,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01077,ENT_EPHYRA,domain,place nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01078,ENT_EPHYRA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01079,ENT_EPHYRA,tag,place,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01080,ENT_MELIA,domain,ash tree,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01081,ENT_MELIA,domain,mother of race/lineage,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01082,ENT_MELIA,tag,meliae,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01083,ENT_MELIA,tag,tree,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01084,ENT_PEITHO_OCEANID,domain,persuasion,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01085,ENT_PEITHO_OCEANID,domain,water nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01086,ENT_PEITHO_OCEANID,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01087,ENT_TYCHE_OCEANID,domain,fortune,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01088,ENT_TYCHE_OCEANID,tag,oceanid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01089,ENT_TYCHE_OCEANID,tag,personification,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01090,ENT_ADRASTEIA_NYMPH,domain,nurse of Zeus,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01091,ENT_ADRASTEIA_NYMPH,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01092,ENT_ADRASTEIA_NYMPH,tag,cretan,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01093,ENT_IDAIA,domain,Mount Ida,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01094,ENT_IDAIA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01095,ENT_IDAIA,tag,mountain,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01096,ENT_NEDA,domain,nurse of Zeus,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01097,ENT_NEDA,domain,river/spring,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01098,ENT_NEDA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01099,ENT_NEDA,tag,freshwater,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01100,ENT_CYLLENE,domain,mountain nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01101,ENT_CYLLENE,tag,oread,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01102,ENT_CYLLENE,tag,mountain,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01103,ENT_CHELONE,domain,tortoise myth,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01104,ENT_CHELONE,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01105,ENT_CHELONE,tag,uncertain,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01106,ENT_CORYCIA,domain,Corycian cave,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01107,ENT_CORYCIA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01108,ENT_CORYCIA,tag,cave,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01109,ENT_CORYCIAN_NYMPHS,domain,cave nymphs,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01110,ENT_CORYCIAN_NYMPHS,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01111,ENT_CORYCIAN_NYMPHS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01112,ENT_CORYCIAN_NYMPHS,tag,cave,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01113,ENT_MUSES_HELICONIAN,domain,inspiration,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01114,ENT_MUSES_HELICONIAN,domain,Mount Helicon,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01115,ENT_MUSES_HELICONIAN,tag,muses,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01116,ENT_MUSES_HELICONIAN,tag,mountain,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01117,ENT_HESPERIDES,domain,garden,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01118,ENT_HESPERIDES,domain,golden apples,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01119,ENT_HESPERIDES,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01120,ENT_HESPERIDES,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01121,ENT_HESPERIDES,tag,garden,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01122,ENT_AEGLE_HESPERID,domain,evening/garden nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01123,ENT_AEGLE_HESPERID,tag,hesperid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01124,ENT_ERYTHEIA_HESPERID,domain,evening/garden nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01125,ENT_ERYTHEIA_HESPERID,tag,hesperid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01126,ENT_HESPERIA_HESPERID,domain,evening/garden nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01127,ENT_HESPERIA_HESPERID,tag,hesperid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01128,ENT_ARETHUSA_HESPERID,domain,garden nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01129,ENT_ARETHUSA_HESPERID,tag,hesperid,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01130,ENT_LAMPADES,domain,torches,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01131,ENT_LAMPADES,domain,underworld,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01132,ENT_LAMPADES,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01133,ENT_LAMPADES,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01134,ENT_LAMPADES,tag,chthonic,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01135,ENT_ORPHNE,domain,darkness,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01136,ENT_ORPHNE,domain,underworld,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01137,ENT_ORPHNE,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01138,ENT_ORPHNE,tag,chthonic,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01139,ENT_GORGYRA,domain,underworld,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01140,ENT_GORGYRA,tag,nymph,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01141,ENT_GORGYRA,tag,chthonic,B,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01142,ENT_LEIMAKIDES,domain,meadows,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01143,ENT_LEIMAKIDES,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01144,ENT_LEIMAKIDES,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01145,ENT_LEIMAKIDES,tag,meadow,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01146,ENT_LIMNADES,domain,lakes,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01147,ENT_LIMNADES,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01148,ENT_LIMNADES,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01149,ENT_LIMNADES,tag,lake,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01150,ENT_NAPAEAE,domain,valleys,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01151,ENT_NAPAEAE,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01152,ENT_NAPAEAE,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01153,ENT_NAPAEAE,tag,valley,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01154,ENT_OREADS,domain,mountains,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01155,ENT_OREADS,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01156,ENT_OREADS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01157,ENT_OREADS,tag,mountain,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01158,ENT_DRYADS,domain,trees,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01159,ENT_DRYADS,domain,forests,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01160,ENT_DRYADS,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01161,ENT_DRYADS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01162,ENT_DRYADS,tag,tree,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01163,ENT_HAMADRYADS,domain,oak trees,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01164,ENT_HAMADRYADS,domain,tree-bound life,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01165,ENT_HAMADRYADS,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01166,ENT_HAMADRYADS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01167,ENT_HAMADRYADS,tag,tree,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01168,ENT_MELIAE,domain,ash trees,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01169,ENT_MELIAE,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01170,ENT_MELIAE,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01171,ENT_MELIAE,tag,tree,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01172,ENT_NAIADS,domain,springs,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01173,ENT_NAIADS,domain,fountains,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01174,ENT_NAIADS,domain,freshwater,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01175,ENT_NAIADS,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01176,ENT_NAIADS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01177,ENT_NAIADS,tag,freshwater,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01178,ENT_NEREIDS,domain,sea nymphs,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01179,ENT_NEREIDS,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01180,ENT_NEREIDS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01181,ENT_NEREIDS,tag,sea,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01182,ENT_OCEANIDS,domain,freshwater,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01183,ENT_OCEANIDS,domain,clouds,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01184,ENT_OCEANIDS,domain,rain,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01185,ENT_OCEANIDS,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01186,ENT_OCEANIDS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01187,ENT_OCEANIDS,tag,water,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01188,ENT_NEPHELAE,domain,clouds,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01189,ENT_NEPHELAE,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01190,ENT_NEPHELAE,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01191,ENT_NEPHELAE,tag,cloud,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01192,ENT_AURAE,domain,breezes,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01193,ENT_AURAE,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01194,ENT_AURAE,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01195,ENT_AURAE,tag,air,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01196,ENT_MAENADS,domain,Dionysian frenzy,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01197,ENT_MAENADS,tag,dionysian,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01198,ENT_MAENADS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01199,ENT_THYIADS,domain,Dionysian ecstasy,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01200,ENT_THYIADS,tag,dionysian,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01201,ENT_THYIADS,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01202,ENT_CRENAIAE,domain,wells,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01203,ENT_CRENAIAE,domain,fountains,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01204,ENT_CRENAIAE,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01205,ENT_CRENAIAE,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01206,ENT_CRENAIAE,tag,freshwater,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01207,ENT_HELEIONOMAI,domain,marshes,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01208,ENT_HELEIONOMAI,domain,wetlands,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01209,ENT_HELEIONOMAI,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01210,ENT_HELEIONOMAI,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01211,ENT_HELEIONOMAI,tag,wetland,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01212,ENT_PEGAEAE,domain,springs,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01213,ENT_PEGAEAE,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01214,ENT_PEGAEAE,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01215,ENT_PEGAEAE,tag,freshwater,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01216,ENT_POTAMEIDES,domain,rivers,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01217,ENT_POTAMEIDES,tag,nymph,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01218,ENT_POTAMEIDES,tag,collective,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01219,ENT_POTAMEIDES,tag,freshwater,C,SRC_THEOI_NYMPHS,candidate_verified_name
+CLM_01220,ENT_ARISTAEUS,domain,beekeeping,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01221,ENT_ARISTAEUS,domain,cheese-making,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01222,ENT_ARISTAEUS,domain,olive-growing,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01223,ENT_ARISTAEUS,domain,hunting,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01224,ENT_ARISTAEUS,tag,rustic,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01225,ENT_ARISTAEUS,tag,craft,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01226,ENT_ARISTAEUS,tag,agriculture,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01227,ENT_PRIAPUS,domain,gardens,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01228,ENT_PRIAPUS,domain,fertility,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01229,ENT_PRIAPUS,domain,livestock,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01230,ENT_PRIAPUS,tag,rustic,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01231,ENT_PRIAPUS,tag,fertility,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01232,ENT_HERMAPHRODITUS,domain,sexual duality,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01233,ENT_HERMAPHRODITUS,domain,union,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01234,ENT_HERMAPHRODITUS,tag,apotheosis,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01235,ENT_HERMAPHRODITUS,tag,liminal,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01236,ENT_ARIADNE,domain,Dionysian consort,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01237,ENT_ARIADNE,domain,mystery reception,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01238,ENT_ARIADNE,tag,apotheosis,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01239,ENT_ARIADNE,tag,dionysian,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01240,ENT_PSYCHE,domain,soul,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01241,ENT_PSYCHE,domain,apotheosis,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01242,ENT_PSYCHE,tag,apotheosis,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01243,ENT_PSYCHE,tag,soul,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01244,ENT_GANYMEDE,domain,cupbearer of gods,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01245,ENT_GANYMEDE,tag,apotheosis,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01246,ENT_TITHONUS,domain,dawn consort,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01247,ENT_TITHONUS,domain,immortality problem,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01248,ENT_TITHONUS,tag,apotheosis/immortalized,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01249,ENT_INO_LEUCOTHEA,domain,sailor rescue,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01250,ENT_INO_LEUCOTHEA,domain,sea,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01251,ENT_INO_LEUCOTHEA,tag,apotheosis,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01252,ENT_INO_LEUCOTHEA,tag,sea,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01253,ENT_MELICERTES_PALAEMON,domain,sailor protection,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01254,ENT_MELICERTES_PALAEMON,domain,Isthmian cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01255,ENT_MELICERTES_PALAEMON,tag,apotheosis,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01256,ENT_MELICERTES_PALAEMON,tag,sea,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01257,ENT_MELICERTES_PALAEMON,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01258,ENT_SABAZIOS,domain,protection,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01259,ENT_SABAZIOS,domain,initiation,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01260,ENT_SABAZIOS,domain,fertility,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01261,ENT_SABAZIOS,tag,imported,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01262,ENT_SABAZIOS,tag,syncretic,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01263,ENT_SABAZIOS,tag,serpent,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01264,ENT_M_N,domain,moon,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01265,ENT_M_N,domain,oaths,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01266,ENT_M_N,domain,healing,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01267,ENT_M_N,tag,anatolian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01268,ENT_M_N,tag,local cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01269,ENT_CYBELE,domain,mountains,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01270,ENT_CYBELE,domain,fertility,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01271,ENT_CYBELE,domain,wild nature,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01272,ENT_CYBELE,tag,imported,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01273,ENT_CYBELE,tag,mother goddess,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01274,ENT_CYBELE,tag,mountain,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01275,ENT_ATTIS,domain,vegetation,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01276,ENT_ATTIS,domain,death and return,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01277,ENT_ATTIS,tag,imported,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01278,ENT_ATTIS,tag,vegetation,A,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01279,ENT_ADONIS,domain,vegetation,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01280,ENT_ADONIS,domain,lamentation rites,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01281,ENT_ADONIS,tag,near eastern,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01282,ENT_ADONIS,tag,vegetation,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01283,ENT_BENDIS,domain,moon,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01284,ENT_BENDIS,domain,hunt,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01285,ENT_BENDIS,tag,imported,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01286,ENT_BENDIS,tag,thracian,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01287,ENT_COTYS,domain,ecstatic rites,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_01288,ENT_COTYS,tag,imported,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_01289,ENT_COTYS,tag,thracian,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_01290,ENT_DIONE_341,domain,Dodona,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01291,ENT_DIONE_341,domain,mother traditions,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01292,ENT_DIONE_341,tag,oracle,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01293,ENT_DIONE_341,tag,local cult,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01294,ENT_THEMIS_AT_DELPHI,domain,oracle,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01295,ENT_THEMIS_AT_DELPHI,domain,divine law,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01296,ENT_THEMIS_AT_DELPHI,tag,oracle,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01297,ENT_THEMIS_AT_DELPHI,tag,cult aspect,A,SRC_THEOI_GODS,candidate_verified_name
+CLM_01298,ENT_PHOEBE_AT_DELPHI,domain,oracle,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_01299,ENT_PHOEBE_AT_DELPHI,domain,prophecy,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_01300,ENT_PHOEBE_AT_DELPHI,tag,oracle,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_01301,ENT_PHOEBE_AT_DELPHI,tag,cult aspect,B,SRC_THEOI_GODS,candidate_verified_name
+CLM_01302,ENT_KOUROTROPHOS,domain,child nurture,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01303,ENT_KOUROTROPHOS,domain,protection,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01304,ENT_KOUROTROPHOS,tag,cult title,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01305,ENT_KOUROTROPHOS,tag,birth,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01306,ENT_KALLIGENEIA,domain,beautiful birth,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01307,ENT_KALLIGENEIA,domain,Thesmophoria,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01308,ENT_KALLIGENEIA,tag,cult title,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01309,ENT_KALLIGENEIA,tag,birth,D,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01310,ENT_ANYTUS,domain,guardian of Despoina,B,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01311,ENT_ANYTUS,tag,guardian,B,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01312,ENT_ANYTUS,tag,local cult,B,SRC_THEOI_RUSTIC,candidate_verified_name
+CLM_01313,ENT_EUBOULEUS,domain,good counsel,B,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01314,ENT_EUBOULEUS,domain,underworld/mystery,B,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01315,ENT_EUBOULEUS,tag,eleusinian,B,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01316,ENT_EUBOULEUS,tag,chthonic,B,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01317,ENT_TRIPTOLEMUS,domain,agriculture,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01318,ENT_TRIPTOLEMUS,domain,grain transmission,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01319,ENT_TRIPTOLEMUS,tag,hero cult,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01320,ENT_TRIPTOLEMUS,tag,agriculture,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01321,ENT_PLUTUS,domain,wealth,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01322,ENT_PLUTUS,domain,agrarian abundance,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01323,ENT_PLUTUS,tag,wealth,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01324,ENT_PLUTUS,tag,earth,A,SRC_THEOI_AGRICULTURE,candidate_verified_name
+CLM_01325,ENT_HERACLES,domain,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01326,ENT_HERACLES,domain,local mythic memory,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01327,ENT_HERACLES,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01328,ENT_HERACLES,tag,apotheosis or local cult potential,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01329,ENT_ORPHEUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01330,ENT_ORPHEUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01331,ENT_ORPHEUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01332,ENT_ORPHEUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01333,ENT_PERSEUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01334,ENT_PERSEUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01335,ENT_PERSEUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01336,ENT_PERSEUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01337,ENT_THESEUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01338,ENT_THESEUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01339,ENT_THESEUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01340,ENT_THESEUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01341,ENT_BELLEROPHON,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01342,ENT_BELLEROPHON,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01343,ENT_BELLEROPHON,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01344,ENT_BELLEROPHON,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01345,ENT_CADMUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01346,ENT_CADMUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01347,ENT_CADMUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01348,ENT_CADMUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01349,ENT_MOPSUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01350,ENT_MOPSUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01351,ENT_MOPSUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01352,ENT_MOPSUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01353,ENT_CASTOR,domain,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01354,ENT_CASTOR,domain,local mythic memory,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01355,ENT_CASTOR,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01356,ENT_CASTOR,tag,apotheosis or local cult potential,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01357,ENT_POLYDEUCES,domain,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01358,ENT_POLYDEUCES,domain,local mythic memory,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01359,ENT_POLYDEUCES,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01360,ENT_POLYDEUCES,tag,apotheosis or local cult potential,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01361,ENT_ACHILLES,domain,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01362,ENT_ACHILLES,domain,local mythic memory,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01363,ENT_ACHILLES,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01364,ENT_ACHILLES,tag,apotheosis or local cult potential,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01365,ENT_AJAX,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01366,ENT_AJAX,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01367,ENT_AJAX,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01368,ENT_AJAX,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01369,ENT_ODYSSEUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01370,ENT_ODYSSEUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01371,ENT_ODYSSEUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01372,ENT_ODYSSEUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01373,ENT_MENELAUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01374,ENT_MENELAUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01375,ENT_MENELAUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01376,ENT_MENELAUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01377,ENT_HELEN,domain,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01378,ENT_HELEN,domain,local mythic memory,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01379,ENT_HELEN,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01380,ENT_HELEN,tag,apotheosis or local cult potential,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01381,ENT_IPHIGENIA,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01382,ENT_IPHIGENIA,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01383,ENT_IPHIGENIA,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01384,ENT_IPHIGENIA,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01385,ENT_ORESTES,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01386,ENT_ORESTES,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01387,ENT_ORESTES,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01388,ENT_ORESTES,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01389,ENT_PYLADES,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01390,ENT_PYLADES,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01391,ENT_PYLADES,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01392,ENT_PYLADES,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01393,ENT_DIOMEDES,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01394,ENT_DIOMEDES,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01395,ENT_DIOMEDES,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01396,ENT_DIOMEDES,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01397,ENT_HIPPOLYTUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01398,ENT_HIPPOLYTUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01399,ENT_HIPPOLYTUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01400,ENT_HIPPOLYTUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01401,ENT_HYACINTHUS,domain,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01402,ENT_HYACINTHUS,domain,local mythic memory,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01403,ENT_HYACINTHUS,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01404,ENT_HYACINTHUS,tag,apotheosis or local cult potential,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01405,ENT_ADONIS_HERO,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01406,ENT_ADONIS_HERO,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01407,ENT_ADONIS_HERO,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01408,ENT_ADONIS_HERO,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01409,ENT_ERECHTHEUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01410,ENT_ERECHTHEUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01411,ENT_ERECHTHEUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01412,ENT_ERECHTHEUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01413,ENT_CECROPS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01414,ENT_CECROPS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01415,ENT_CECROPS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01416,ENT_CECROPS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01417,ENT_ION,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01418,ENT_ION,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01419,ENT_ION,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01420,ENT_ION,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01421,ENT_MINOS_HERO,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01422,ENT_MINOS_HERO,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01423,ENT_MINOS_HERO,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01424,ENT_MINOS_HERO,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01425,ENT_RHADAMANTHYS_HERO,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01426,ENT_RHADAMANTHYS_HERO,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01427,ENT_RHADAMANTHYS_HERO,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01428,ENT_RHADAMANTHYS_HERO,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01429,ENT_AEACUS_HERO,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01430,ENT_AEACUS_HERO,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01431,ENT_AEACUS_HERO,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01432,ENT_AEACUS_HERO,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01433,ENT_PELOPS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01434,ENT_PELOPS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01435,ENT_PELOPS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01436,ENT_PELOPS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01437,ENT_OENOMAUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01438,ENT_OENOMAUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01439,ENT_OENOMAUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01440,ENT_OENOMAUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01441,ENT_JASON,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01442,ENT_JASON,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01443,ENT_JASON,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01444,ENT_JASON,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01445,ENT_MEDEA,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01446,ENT_MEDEA,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01447,ENT_MEDEA,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01448,ENT_MEDEA,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01449,ENT_MELEAGER,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01450,ENT_MELEAGER,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01451,ENT_MELEAGER,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01452,ENT_MELEAGER,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01453,ENT_ATALANTA,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01454,ENT_ATALANTA,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01455,ENT_ATALANTA,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01456,ENT_ATALANTA,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01457,ENT_PROTESILAUS,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01458,ENT_PROTESILAUS,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01459,ENT_PROTESILAUS,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01460,ENT_PROTESILAUS,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01461,ENT_HECTOR,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01462,ENT_HECTOR,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01463,ENT_HECTOR,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01464,ENT_HECTOR,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01465,ENT_MEMNON,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01466,ENT_MEMNON,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01467,ENT_MEMNON,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01468,ENT_MEMNON,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01469,ENT_AENEAS_GREEK_RECEPTION,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01470,ENT_AENEAS_GREEK_RECEPTION,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01471,ENT_AENEAS_GREEK_RECEPTION,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01472,ENT_AENEAS_GREEK_RECEPTION,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01473,ENT_ASCLEPIUS_HERO,domain,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01474,ENT_ASCLEPIUS_HERO,domain,local mythic memory,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01475,ENT_ASCLEPIUS_HERO,tag,hero cult,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01476,ENT_ASCLEPIUS_HERO,tag,apotheosis or local cult potential,A,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01477,ENT_ARISTAEUS_HERO,domain,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01478,ENT_ARISTAEUS_HERO,domain,local mythic memory,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01479,ENT_ARISTAEUS_HERO,tag,hero cult,B,SRC_THEOI_DEIFIED,candidate_verified_name
+CLM_01480,ENT_ARISTAEUS_HERO,tag,apotheosis or local cult potential,B,SRC_THEOI_DEIFIED,candidate_verified_name

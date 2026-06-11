@@ -1,0 +1,18 @@
+file,field,description
+entities.csv,entity_id,Stable seed ID generated from canonical name.
+entities.csv,canonical_name,Preferred English/Latinized label.
+entities.csv,greek_name,Greek script name where available; intentionally sparse in v0.1.
+entities.csv,tradition,Religious/cultural tradition.
+entities.csv,entity_type,"Type such as deity, daimon, nymph, hero, river god."
+entities.csv,category,Broad taxonomy bucket.
+entities.csv,primary_domains,Semicolon-separated domains.
+entities.csv,tags,Semicolon-separated analytic tags.
+entities.csv,cult_scope,Approximate geographic/social scope.
+entities.csv,primary_period,Broad attestation/reception period.
+entities.csv,evidence_confidence,A-D confidence label.
+entities.csv,review_status,Workflow status.
+entities.csv,inclusion_basis,Why included.
+entities.csv,earth_association_score,0-5 analytic score.
+entities.csv,chthonic_flag,TRUE/FALSE.
+entities.csv,serpent_flag,TRUE/FALSE.
+entities.csv,short_note,Compact note for reviewers.

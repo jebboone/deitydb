@@ -1,0 +1,532 @@
+entity_id,function_name,confidence,rationale,source_id,review_status
+ENT_ACHELOOS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ACHELOOS,freshwater,B,Promoted from v0.1 claim CLM_00767 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHELOOS,freshwater,B,Promoted from v0.1 claim CLM_00770 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHELOOS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ACHELOOS,river,B,Promoted from v0.1 claim CLM_00766 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHELOUS_MINOR,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ACHELOUS_MINOR,freshwater,B,Promoted from v0.1 claim CLM_00863 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHELOUS_MINOR,freshwater,B,Promoted from v0.1 claim CLM_00866 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHELOUS_MINOR,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ACHELOUS_MINOR,river,B,Promoted from v0.1 claim CLM_00862 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHERON,river,B,Promoted from v0.1 claim CLM_00339 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_ACHERON_RIVER,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ACHERON_RIVER,freshwater,B,Promoted from v0.1 claim CLM_00869 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHERON_RIVER,freshwater,B,Promoted from v0.1 claim CLM_00872 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHERON_RIVER,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ACHERON_RIVER,river,B,Promoted from v0.1 claim CLM_00868 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ACHLYS,death,B,Promoted from v0.1 claim CLM_00390 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_ACTAEA,sea,B,Promoted from v0.1 claim CLM_00731 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_ADONIS,vegetation,A,Promoted from v0.1 claim CLM_01279 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_ADONIS,vegetation,A,Promoted from v0.1 claim CLM_01282 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_ADONIS,vegetation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AEACUS,judge of dead,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AEACUS,judge of dead,B,Promoted from v0.1 claim CLM_00410 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_AEACUS,underworld,B,Promoted from v0.1 claim CLM_00412 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_AESAR,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AESAR,freshwater,B,Promoted from v0.1 claim CLM_00857 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AESAR,freshwater,B,Promoted from v0.1 claim CLM_00860 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AESAR,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AESAR,river,B,Promoted from v0.1 claim CLM_00856 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AESEPUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AESEPUS,freshwater,B,Promoted from v0.1 claim CLM_00875 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AESEPUS,freshwater,B,Promoted from v0.1 claim CLM_00878 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AESEPUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AESEPUS,river,B,Promoted from v0.1 claim CLM_00874 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AGANIPPE,inspiration,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AGANIPPE,inspiration,B,Promoted from v0.1 claim CLM_01001 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_AGANIPPE,spring,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AGANIPPE,spring,B,Promoted from v0.1 claim CLM_01000 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_AGANIPPE,spring,B,Promoted from v0.1 claim CLM_01003 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_AGATHOS_DAIMON,protection,A,Promoted from v0.1 claim CLM_00454 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_AGATHOS_DAIMON,protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ALPHEUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ALPHEUS,freshwater,B,Promoted from v0.1 claim CLM_00773 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ALPHEUS,freshwater,B,Promoted from v0.1 claim CLM_00776 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ALPHEUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ALPHEUS,river,B,Promoted from v0.1 claim CLM_00772 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AMPHIARAUS,oracle,A,Promoted from v0.1 claim CLM_00440 (domain).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_AMPHIARAUS,oracle,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AMPHITRITE,sea,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AMPHITRITE,sea,B,Promoted from v0.1 claim CLM_00705 (domain).,SRC_THEOI_SEA,candidate_extracted
+ENT_AMPHITRITE,sea,B,Promoted from v0.1 claim CLM_00708 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_ANANKE,fate,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ANANKE,fate,B,Promoted from v0.1 claim CLM_00037 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ANANKE,fate,B,Promoted from v0.1 claim CLM_00039 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_ANYTUS,local cult,B,Promoted from v0.1 claim CLM_01312 (tag).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_APHRODITE,beauty,A,Promoted from v0.1 claim CLM_00234 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_APHRODITE,beauty,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_APHRODITE,fertility,A,Promoted from v0.1 claim CLM_00235 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_APHRODITE,fertility,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_APOLLO,healing,A,Promoted from v0.1 claim CLM_00221 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_APOLLO,healing,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_APOLLO,music,A,Promoted from v0.1 claim CLM_00220 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_APOLLO,music,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_APOLLO,oracle,A,Promoted from v0.1 claim CLM_00224 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_APOLLO,prophecy,A,Promoted from v0.1 claim CLM_00219 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_APOLLO,prophecy,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARETHUSA,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARETHUSA,freshwater,B,Promoted from v0.1 claim CLM_01013 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_ARETHUSA,spring,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARETHUSA,spring,B,Promoted from v0.1 claim CLM_01012 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_ARETHUSA,spring,B,Promoted from v0.1 claim CLM_01015 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_ARIADNE,apotheosis,A,Promoted from v0.1 claim CLM_01238 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_ARISTAEUS,agriculture,A,Promoted from v0.1 claim CLM_01226 (tag).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_ARISTAEUS,craft,A,Promoted from v0.1 claim CLM_01225 (tag).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_ARISTAEUS,hunting,A,Promoted from v0.1 claim CLM_01223 (domain).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_ARISTAEUS,hunting,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARTEMIS,childbirth,A,Promoted from v0.1 claim CLM_00227 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ARTEMIS,childbirth,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARTEMIS,hunting,A,Promoted from v0.1 claim CLM_00225 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ARTEMIS,hunting,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ARTEMIS,wilderness,A,Promoted from v0.1 claim CLM_00226 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ARTEMIS,wilderness,A,Promoted from v0.1 claim CLM_00229 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_ARTEMIS,wilderness,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ASCLEPIUS,apotheosis,A,Promoted from v0.1 claim CLM_00275 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_ASCLEPIUS,healing,A,Promoted from v0.1 claim CLM_00274 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_ASOPUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ASOPUS,freshwater,B,Promoted from v0.1 claim CLM_00821 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ASOPUS,freshwater,B,Promoted from v0.1 claim CLM_00824 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ASOPUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ASOPUS,river,B,Promoted from v0.1 claim CLM_00820 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ATHENA,warcraft,A,Promoted from v0.1 claim CLM_00215 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ATHENA,warcraft,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ATHENA,wisdom,A,Promoted from v0.1 claim CLM_00214 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ATHENA,wisdom,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ATTIS,vegetation,A,Promoted from v0.1 claim CLM_01275 (domain).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_ATTIS,vegetation,A,Promoted from v0.1 claim CLM_01278 (tag).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_ATTIS,vegetation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AXIUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AXIUS,freshwater,B,Promoted from v0.1 claim CLM_00881 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AXIUS,freshwater,B,Promoted from v0.1 claim CLM_00884 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_AXIUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_AXIUS,river,B,Promoted from v0.1 claim CLM_00880 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CABEIRI,local cult,A,Promoted from v0.1 claim CLM_00330 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_CABEIRI,mystery,A,Promoted from v0.1 claim CLM_00329 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_CABEIRI,protection,A,Promoted from v0.1 claim CLM_00327 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_CABEIRI,protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CAICUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CAICUS,freshwater,B,Promoted from v0.1 claim CLM_00887 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CAICUS,freshwater,B,Promoted from v0.1 claim CLM_00890 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CAICUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CAICUS,river,B,Promoted from v0.1 claim CLM_00886 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CEPHISSUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CEPHISSUS,freshwater,B,Promoted from v0.1 claim CLM_00797 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CEPHISSUS,freshwater,B,Promoted from v0.1 claim CLM_00800 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CEPHISSUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CEPHISSUS,river,B,Promoted from v0.1 claim CLM_00796 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CETO,sea,B,Promoted from v0.1 claim CLM_00680 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_CHAOS,cosmogony,B,Promoted from v0.1 claim CLM_00003 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_CHARITES,beauty,A,Promoted from v0.1 claim CLM_00303 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_CHARITES,beauty,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CHARON,psychopomp,B,Promoted from v0.1 claim CLM_00359 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_CLADEUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CLADEUS,freshwater,B,Promoted from v0.1 claim CLM_00893 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CLADEUS,freshwater,B,Promoted from v0.1 claim CLM_00896 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CLADEUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CLADEUS,river,B,Promoted from v0.1 claim CLM_00892 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_COCYTUS,river,B,Promoted from v0.1 claim CLM_00343 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_CRENAIAE,freshwater,C,Promoted from v0.1 claim CLM_01206 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_CRONUS,kingship,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CRONUS,kingship,B,Promoted from v0.1 claim CLM_00096 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_CYBELE,fertility,A,Promoted from v0.1 claim CLM_01270 (domain).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_CYBELE,fertility,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CYDNUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CYDNUS,freshwater,B,Promoted from v0.1 claim CLM_00899 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CYDNUS,freshwater,B,Promoted from v0.1 claim CLM_00902 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CYDNUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CYDNUS,river,B,Promoted from v0.1 claim CLM_00898 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_CYMODOCE,sea,B,Promoted from v0.1 claim CLM_00719 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_CYMOTHOE,sea,B,Promoted from v0.1 claim CLM_00762 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_CYRENE,hunting,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_CYRENE,hunting,B,Promoted from v0.1 claim CLM_01016 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_DAPHNE,wilderness,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DAPHNE,wilderness,B,Promoted from v0.1 claim CLM_01021 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_DEMETER,agriculture,A,Promoted from v0.1 claim CLM_00195 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_DEMETER,agriculture,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DEMETER,mystery cult,A,Promoted from v0.1 claim CLM_00196 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_DEMETER,mystery cult,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DESPOINA,local cult,B,Promoted from v0.1 claim CLM_00408 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_DESPOINA,mystery cult,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DESPOINA,mystery cult,B,Promoted from v0.1 claim CLM_00406 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_DIKE,justice,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DIKE,justice,B,Promoted from v0.1 claim CLM_00291 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_DIONE,oracle,B,Promoted from v0.1 claim CLM_00178 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_DIONE_341,local cult,A,Promoted from v0.1 claim CLM_01293 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_DIONE_341,oracle,A,Promoted from v0.1 claim CLM_01292 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_DIONYSUS,mystery,A,Promoted from v0.1 claim CLM_00253 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_DIONYSUS,rebirth,A,Promoted from v0.1 claim CLM_00252 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_DIONYSUS,rebirth,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DIONYSUS,vegetation,A,Promoted from v0.1 claim CLM_00251 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_DIONYSUS,vegetation,A,Promoted from v0.1 claim CLM_00254 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_DIONYSUS,vegetation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DIOSCURI,apotheosis,A,Promoted from v0.1 claim CLM_00335 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_DIOSCURI,protection,A,Promoted from v0.1 claim CLM_00333 (domain).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_DIOSCURI,protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DIRCE,spring,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_DIRCE,spring,B,Promoted from v0.1 claim CLM_01032 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_DIRCE,spring,B,Promoted from v0.1 claim CLM_01035 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_DORIS,sea,B,Promoted from v0.1 claim CLM_00673 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_DOTO,sea,B,Promoted from v0.1 claim CLM_00734 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_DYNAMENE,sea,B,Promoted from v0.1 claim CLM_00722 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_EILEITHYIA,childbirth,A,Promoted from v0.1 claim CLM_00276 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_EILEITHYIA,childbirth,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ERIDANUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ERIDANUS,freshwater,B,Promoted from v0.1 claim CLM_00839 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ERIDANUS,freshwater,B,Promoted from v0.1 claim CLM_00842 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ERIDANUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ERIDANUS,river,B,Promoted from v0.1 claim CLM_00838 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_EROS_PRIMORDIAL,creation,B,Promoted from v0.1 claim CLM_00035 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_EROS_PRIMORDIAL,generation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_EROS_PRIMORDIAL,generation,B,Promoted from v0.1 claim CLM_00033 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ERYMANTHUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ERYMANTHUS,freshwater,B,Promoted from v0.1 claim CLM_00911 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ERYMANTHUS,freshwater,B,Promoted from v0.1 claim CLM_00914 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ERYMANTHUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ERYMANTHUS,river,B,Promoted from v0.1 claim CLM_00910 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_EUARNE,sea,B,Promoted from v0.1 claim CLM_00737 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_EUDORA_NEREID,sea,B,Promoted from v0.1 claim CLM_00749 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_EUROTAS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_EUROTAS,freshwater,B,Promoted from v0.1 claim CLM_00803 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_EUROTAS,freshwater,B,Promoted from v0.1 claim CLM_00806 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_EUROTAS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_EUROTAS,river,B,Promoted from v0.1 claim CLM_00802 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_EURYBIA,sea,B,Promoted from v0.1 claim CLM_00131 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_EURYBIA_SEA,sea,B,Promoted from v0.1 claim CLM_00682 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_EURYNOME_PRIMORDIAL,creation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_EURYNOME_PRIMORDIAL,creation,B,Promoted from v0.1 claim CLM_00070 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_EURYNOME_PRIMORDIAL,creation,B,Promoted from v0.1 claim CLM_00072 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_EURYNOME_PRIMORDIAL,sea,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_EURYNOME_PRIMORDIAL,sea,B,Promoted from v0.1 claim CLM_00071 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_EURYNOME_PRIMORDIAL,sea,B,Promoted from v0.1 claim CLM_00073 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_EVENUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_EVENUS,freshwater,B,Promoted from v0.1 claim CLM_00905 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_EVENUS,freshwater,B,Promoted from v0.1 claim CLM_00908 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_EVENUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_EVENUS,river,B,Promoted from v0.1 claim CLM_00904 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_GAIA,generation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_GAIA,generation,B,Promoted from v0.1 claim CLM_00005 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_GALATEA,sea,B,Promoted from v0.1 claim CLM_00711 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_GANYMEDE,apotheosis,B,Promoted from v0.1 claim CLM_01245 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_GLAUCE,sea,B,Promoted from v0.1 claim CLM_00759 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_GLAUCUS,apotheosis,B,Promoted from v0.1 claim CLM_00693 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_GLAUCUS,sea,B,Promoted from v0.1 claim CLM_00692 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_GLYCON,fortune,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,fortune,B,Promoted from v0.1 claim CLM_00445 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,healing,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,healing,B,Promoted from v0.1 claim CLM_00443 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,local cult,B,Promoted from v0.1 claim CLM_00446 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,oracle,B,Promoted from v0.1 claim CLM_00448 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,prophecy,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_GLYCON,prophecy,B,Promoted from v0.1 claim CLM_00444 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_GORGYRA,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_GORGYRA,underworld,B,Promoted from v0.1 claim CLM_01139 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_GRANICUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_GRANICUS,freshwater,B,Promoted from v0.1 claim CLM_00917 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_GRANICUS,freshwater,B,Promoted from v0.1 claim CLM_00920 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_GRANICUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_GRANICUS,river,B,Promoted from v0.1 claim CLM_00916 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_HADES,underworld,A,Promoted from v0.1 claim CLM_00205 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_HADES,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_HADES_KLYMENOS,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_HADES_KLYMENOS,underworld,B,Promoted from v0.1 claim CLM_00430 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_HEBRUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_HEBRUS,freshwater,B,Promoted from v0.1 claim CLM_00833 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_HEBRUS,freshwater,B,Promoted from v0.1 claim CLM_00836 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_HEBRUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_HEBRUS,river,B,Promoted from v0.1 claim CLM_00832 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_HECATE,crossroads,A,Promoted from v0.1 claim CLM_00264 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_HECATE,crossroads,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_HECATE,magic,A,Promoted from v0.1 claim CLM_00265 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_HECATE,magic,A,Promoted from v0.1 claim CLM_00269 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_HECATE,magic,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_HEPHAESTUS,craft,A,Promoted from v0.1 claim CLM_00241 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_HERMAPHRODITUS,apotheosis,B,Promoted from v0.1 claim CLM_01234 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_HERMES,psychopomp,A,Promoted from v0.1 claim CLM_00246 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_HERMES,psychopomp,A,Promoted from v0.1 claim CLM_00248 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_HERMES,psychopomp,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_HIPPONOE,sea,B,Promoted from v0.1 claim CLM_00740 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_ILISSUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ILISSUS,freshwater,B,Promoted from v0.1 claim CLM_00923 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ILISSUS,freshwater,B,Promoted from v0.1 claim CLM_00926 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ILISSUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ILISSUS,river,B,Promoted from v0.1 claim CLM_00922 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_INACHUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_INACHUS,freshwater,B,Promoted from v0.1 claim CLM_00809 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_INACHUS,freshwater,B,Promoted from v0.1 claim CLM_00812 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_INACHUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_INACHUS,river,B,Promoted from v0.1 claim CLM_00808 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_INO_LEUCOTHEA,apotheosis,A,Promoted from v0.1 claim CLM_01251 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_INO_LEUCOTHEA,sea,A,Promoted from v0.1 claim CLM_01250 (domain).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_INO_LEUCOTHEA,sea,A,Promoted from v0.1 claim CLM_01252 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_INO_LEUCOTHEA,sea,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ISMENUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ISMENUS,freshwater,B,Promoted from v0.1 claim CLM_00929 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ISMENUS,freshwater,B,Promoted from v0.1 claim CLM_00932 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ISMENUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ISMENUS,river,B,Promoted from v0.1 claim CLM_00928 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_KALLIGENEIA,birth,D,Promoted from v0.1 claim CLM_01309 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_KER,death,B,Promoted from v0.1 claim CLM_00078 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_KERES,death,B,Promoted from v0.1 claim CLM_00387 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_KOUROTROPHOS,birth,D,Promoted from v0.1 claim CLM_01305 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_KOUROTROPHOS,protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_KOUROTROPHOS,protection,D,Promoted from v0.1 claim CLM_01303 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_LADON,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_LADON,freshwater,B,Promoted from v0.1 claim CLM_00815 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_LADON,freshwater,B,Promoted from v0.1 claim CLM_00818 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_LADON,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_LADON,river,B,Promoted from v0.1 claim CLM_00814 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_LAMPADES,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_LAMPADES,underworld,C,Promoted from v0.1 claim CLM_01131 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_LETHE,river,B,Promoted from v0.1 claim CLM_00347 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_LETO,motherhood,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_LETO,motherhood,B,Promoted from v0.1 claim CLM_00151 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_LEUCOTHEA,apotheosis,B,Promoted from v0.1 claim CLM_00700 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_LEUCOTHEA,sailor protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_LEUCOTHEA,sailor protection,B,Promoted from v0.1 claim CLM_00698 (domain).,SRC_THEOI_SEA,candidate_extracted
+ENT_LEUCOTHEA,sea,B,Promoted from v0.1 claim CLM_00699 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_MACARIA,death,B,Promoted from v0.1 claim CLM_00392 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_MACARIA,underworld,B,Promoted from v0.1 claim CLM_00393 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_MAEANDER,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MAEANDER,freshwater,B,Promoted from v0.1 claim CLM_00935 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_MAEANDER,freshwater,B,Promoted from v0.1 claim CLM_00938 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_MAEANDER,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MAEANDER,river,B,Promoted from v0.1 claim CLM_00934 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_MELES,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MELES,freshwater,B,Promoted from v0.1 claim CLM_00941 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_MELES,freshwater,B,Promoted from v0.1 claim CLM_00944 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_MELES,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MELES,river,B,Promoted from v0.1 claim CLM_00940 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_MELICERTES_PALAEMON,apotheosis,A,Promoted from v0.1 claim CLM_01255 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_MELICERTES_PALAEMON,sailor protection,A,Promoted from v0.1 claim CLM_01253 (domain).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_MELICERTES_PALAEMON,sailor protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MELICERTES_PALAEMON,sea,A,Promoted from v0.1 claim CLM_01256 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_MELITE,sea,B,Promoted from v0.1 claim CLM_00765 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_METIS,wisdom,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_METIS,wisdom,B,Promoted from v0.1 claim CLM_01052 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_MINOS,judge of dead,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MINOS,judge of dead,B,Promoted from v0.1 claim CLM_00413 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_MINOS,underworld,B,Promoted from v0.1 claim CLM_00415 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_MNEMOSYNE,inspiration,B,Promoted from v0.1 claim CLM_00141 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_MNEMOSYNE,memory,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MNEMOSYNE,memory,B,Promoted from v0.1 claim CLM_00138 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_MOIRAI,fate,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MOIRAI,fate,B,Promoted from v0.1 claim CLM_00080 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_MOIRAI,fate,B,Promoted from v0.1 claim CLM_00081 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_MOIRAI_85,fate,A,Promoted from v0.1 claim CLM_00314 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_MOIRAI_85,fate,A,Promoted from v0.1 claim CLM_00317 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_MOIRAI_85,fate,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MOROS,fate,B,Promoted from v0.1 claim CLM_00075 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_MORPHEUS,dream,B,Promoted from v0.1 claim CLM_00370 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_MUSES,memory,A,Promoted from v0.1 claim CLM_00308 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_MUSES,memory,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MUSES,music,A,Promoted from v0.1 claim CLM_00307 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_MUSES,music,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MUSES_HELICONIAN,inspiration,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_MUSES_HELICONIAN,inspiration,B,Promoted from v0.1 claim CLM_01113 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_M_N,healing,A,Promoted from v0.1 claim CLM_01266 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_M_N,healing,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_M_N,local cult,A,Promoted from v0.1 claim CLM_01268 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_NAIADS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_NAIADS,freshwater,C,Promoted from v0.1 claim CLM_01174 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_NAIADS,freshwater,C,Promoted from v0.1 claim CLM_01177 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_NEDA,freshwater,B,Promoted from v0.1 claim CLM_01099 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_NEREIDS,sea,C,Promoted from v0.1 claim CLM_01181 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_NEREUS,prophecy,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_NEREUS,prophecy,B,Promoted from v0.1 claim CLM_00669 (domain).,SRC_THEOI_SEA,candidate_extracted
+ENT_NEREUS,sea,B,Promoted from v0.1 claim CLM_00670 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_NESO,sea,B,Promoted from v0.1 claim CLM_00743 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_NESSUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_NESSUS,freshwater,B,Promoted from v0.1 claim CLM_00947 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_NESSUS,freshwater,B,Promoted from v0.1 claim CLM_00950 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_NESSUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_NESSUS,river,B,Promoted from v0.1 claim CLM_00946 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_NILE,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_NILE,freshwater,B,Promoted from v0.1 claim CLM_00845 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_NILE,freshwater,B,Promoted from v0.1 claim CLM_00848 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_NILE,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_NILE,river,B,Promoted from v0.1 claim CLM_00844 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_OCEANIDS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_OCEANIDS,freshwater,C,Promoted from v0.1 claim CLM_01182 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_ONEIROI,dream,B,Promoted from v0.1 claim CLM_00367 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_ONEIROI,dreams,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ONEIROI,dreams,B,Promoted from v0.1 claim CLM_00366 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_ORPHNE,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ORPHNE,underworld,B,Promoted from v0.1 claim CLM_01136 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_PALAEMON,apotheosis,B,Promoted from v0.1 claim CLM_00696 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PALAEMON,sailor protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PALAEMON,sailor protection,B,Promoted from v0.1 claim CLM_00694 (domain).,SRC_THEOI_SEA,candidate_extracted
+ENT_PALAEMON,sea,B,Promoted from v0.1 claim CLM_00695 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PALLAS_TITAN,warcraft,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PALLAS_TITAN,warcraft,B,Promoted from v0.1 claim CLM_00169 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_PARTHENIUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PARTHENIUS,freshwater,B,Promoted from v0.1 claim CLM_00983 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PARTHENIUS,freshwater,B,Promoted from v0.1 claim CLM_00986 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PARTHENIUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PARTHENIUS,river,B,Promoted from v0.1 claim CLM_00982 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PEGAEAE,freshwater,C,Promoted from v0.1 claim CLM_01215 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_PENEUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PENEUS,freshwater,B,Promoted from v0.1 claim CLM_00779 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PENEUS,freshwater,B,Promoted from v0.1 claim CLM_00782 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PENEUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PENEUS,river,B,Promoted from v0.1 claim CLM_00778 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PERSEPHONE,underworld,A,Promoted from v0.1 claim CLM_00200 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_PERSEPHONE,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHANES,creation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHANES,creation,B,Promoted from v0.1 claim CLM_00043 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_PHANTASOS,dream,B,Promoted from v0.1 claim CLM_00374 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_PHASIS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHASIS,freshwater,B,Promoted from v0.1 claim CLM_00995 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PHASIS,freshwater,B,Promoted from v0.1 claim CLM_00998 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PHASIS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHASIS,river,B,Promoted from v0.1 claim CLM_00994 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_PHERUSA,sea,B,Promoted from v0.1 claim CLM_00725 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PHLEGETHON,river,B,Promoted from v0.1 claim CLM_00351 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_PHLEGETHON,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHLEGETHON,underworld,B,Promoted from v0.1 claim CLM_00349 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_PHOBETOR,dream,B,Promoted from v0.1 claim CLM_00372 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_PHOEBE,oracle,B,Promoted from v0.1 claim CLM_00125 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_PHOEBE,prophecy,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHOEBE,prophecy,B,Promoted from v0.1 claim CLM_00122 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_PHOEBE_AT_DELPHI,oracle,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHOEBE_AT_DELPHI,oracle,B,Promoted from v0.1 claim CLM_01298 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_PHOEBE_AT_DELPHI,oracle,B,Promoted from v0.1 claim CLM_01300 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_PHOEBE_AT_DELPHI,prophecy,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PHOEBE_AT_DELPHI,prophecy,B,Promoted from v0.1 claim CLM_01299 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_PHORCYS,sea,B,Promoted from v0.1 claim CLM_00678 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PLOUTON,fertility,A,Promoted from v0.1 claim CLM_00210 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_PLOUTON,fertility,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PLOUTON,wealth,A,Promoted from v0.1 claim CLM_00212 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_PLUTUS,wealth,A,Promoted from v0.1 claim CLM_01321 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_PLUTUS,wealth,A,Promoted from v0.1 claim CLM_01323 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_PLUTUS,wealth,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PONTUS,sea,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PONTUS,sea,B,Promoted from v0.1 claim CLM_00012 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_PONTUS,sea,B,Promoted from v0.1 claim CLM_00014 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_POSEIDON,sea,A,Promoted from v0.1 claim CLM_00189 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_POSEIDON,sea,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_POTAMEIDES,freshwater,C,Promoted from v0.1 claim CLM_01219 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_PRIAPUS,fertility,A,Promoted from v0.1 claim CLM_01228 (domain).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_PRIAPUS,fertility,A,Promoted from v0.1 claim CLM_01231 (tag).,SRC_THEOI_RUSTIC,candidate_extracted
+ENT_PRIAPUS,fertility,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PROTEUS,oracle,B,Promoted from v0.1 claim CLM_00689 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PROTEUS,prophecy,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PROTEUS,prophecy,B,Promoted from v0.1 claim CLM_00686 (domain).,SRC_THEOI_SEA,candidate_extracted
+ENT_PROTEUS,sea,B,Promoted from v0.1 claim CLM_00688 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PROTO,sea,B,Promoted from v0.1 claim CLM_00728 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PSAMATHE,sea,B,Promoted from v0.1 claim CLM_00715 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_PSYCHE,apotheosis,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_PSYCHE,apotheosis,B,Promoted from v0.1 claim CLM_01241 (domain).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_PSYCHE,apotheosis,B,Promoted from v0.1 claim CLM_01242 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_PYTHON,oracle,B,Promoted from v0.1 claim CLM_00451 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_RHADAMANTHYS,judge of dead,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_RHADAMANTHYS,judge of dead,B,Promoted from v0.1 claim CLM_00416 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_RHADAMANTHYS,underworld,B,Promoted from v0.1 claim CLM_00418 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_RHEA,motherhood,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_RHEA,motherhood,B,Promoted from v0.1 claim CLM_00099 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_RHESUS_RIVER,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_RHESUS_RIVER,freshwater,B,Promoted from v0.1 claim CLM_00989 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_RHESUS_RIVER,freshwater,B,Promoted from v0.1 claim CLM_00992 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_RHESUS_RIVER,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_RHESUS_RIVER,river,B,Promoted from v0.1 claim CLM_00988 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SABAZIOS,fertility,A,Promoted from v0.1 claim CLM_01260 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_SABAZIOS,fertility,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SABAZIOS,protection,A,Promoted from v0.1 claim CLM_01258 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_SABAZIOS,protection,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SALMACIS,spring,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SALMACIS,spring,B,Promoted from v0.1 claim CLM_01036 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_SALMACIS,spring,B,Promoted from v0.1 claim CLM_01039 (tag).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_SANGARIUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SANGARIUS,freshwater,B,Promoted from v0.1 claim CLM_00953 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SANGARIUS,freshwater,B,Promoted from v0.1 claim CLM_00956 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SANGARIUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SANGARIUS,river,B,Promoted from v0.1 claim CLM_00952 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SAO,sea,B,Promoted from v0.1 claim CLM_00752 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_SATNIOEIS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SATNIOEIS,freshwater,B,Promoted from v0.1 claim CLM_00959 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SATNIOEIS,freshwater,B,Promoted from v0.1 claim CLM_00962 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SATNIOEIS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SATNIOEIS,river,B,Promoted from v0.1 claim CLM_00958 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SCAMANDER,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SCAMANDER,freshwater,B,Promoted from v0.1 claim CLM_00785 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SCAMANDER,freshwater,B,Promoted from v0.1 claim CLM_00788 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SCAMANDER,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SCAMANDER,river,B,Promoted from v0.1 claim CLM_00784 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SIMOEIS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SIMOEIS,freshwater,B,Promoted from v0.1 claim CLM_00791 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SIMOEIS,freshwater,B,Promoted from v0.1 claim CLM_00794 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SIMOEIS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SIMOEIS,river,B,Promoted from v0.1 claim CLM_00790 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SPEIO,sea,B,Promoted from v0.1 claim CLM_00755 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_SPERCHEIOS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SPERCHEIOS,freshwater,B,Promoted from v0.1 claim CLM_00827 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SPERCHEIOS,freshwater,B,Promoted from v0.1 claim CLM_00830 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_SPERCHEIOS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_SPERCHEIOS,river,B,Promoted from v0.1 claim CLM_00826 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_STRYMON,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_STRYMON,freshwater,B,Promoted from v0.1 claim CLM_00851 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_STRYMON,freshwater,B,Promoted from v0.1 claim CLM_00854 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_STRYMON,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_STRYMON,river,B,Promoted from v0.1 claim CLM_00850 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_STYX,river,A,Promoted from v0.1 claim CLM_00355 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_TARTARUS,abyss,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_TARTARUS,abyss,B,Promoted from v0.1 claim CLM_00015 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_TARTARUS,underworld,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_TARTARUS,underworld,B,Promoted from v0.1 claim CLM_00016 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_TARTARUS,underworld,B,Promoted from v0.1 claim CLM_00018 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_THALASSA,sea,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THALASSA,sea,B,Promoted from v0.1 claim CLM_00063 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_THALASSA,sea,B,Promoted from v0.1 claim CLM_00065 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_THALIA_NEREID,sea,B,Promoted from v0.1 claim CLM_00746 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_THANATOS,death,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THANATOS,death,B,Promoted from v0.1 claim CLM_00360 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_THANATOS,death,B,Promoted from v0.1 claim CLM_00361 (tag).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_THAUMAS,sea,B,Promoted from v0.1 claim CLM_00675 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_THEMIS,justice,B,Promoted from v0.1 claim CLM_00146 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_THEMIS,law,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THEMIS,law,B,Promoted from v0.1 claim CLM_00142 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_THEMIS_AT_DELPHI,oracle,A,Promoted from v0.1 claim CLM_01294 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_THEMIS_AT_DELPHI,oracle,A,Promoted from v0.1 claim CLM_01296 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_THEMIS_AT_DELPHI,oracle,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THERMODON,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THERMODON,freshwater,B,Promoted from v0.1 claim CLM_00977 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_THERMODON,freshwater,B,Promoted from v0.1 claim CLM_00980 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_THERMODON,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THERMODON,river,B,Promoted from v0.1 claim CLM_00976 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_THESIS,creation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THESIS,creation,B,Promoted from v0.1 claim CLM_00047 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_THESIS,generation,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_THESIS,generation,B,Promoted from v0.1 claim CLM_00048 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_THETIS,sea,B,Promoted from v0.1 claim CLM_00704 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_TITARESIUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_TITARESIUS,freshwater,B,Promoted from v0.1 claim CLM_00965 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_TITARESIUS,freshwater,B,Promoted from v0.1 claim CLM_00968 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_TITARESIUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_TITARESIUS,river,B,Promoted from v0.1 claim CLM_00964 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_TRIPTOLEMUS,agriculture,A,Promoted from v0.1 claim CLM_01317 (domain).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_TRIPTOLEMUS,agriculture,A,Promoted from v0.1 claim CLM_01320 (tag).,SRC_THEOI_AGRICULTURE,candidate_extracted
+ENT_TRIPTOLEMUS,agriculture,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_TRITON,sea,B,Promoted from v0.1 claim CLM_00685 (tag).,SRC_THEOI_SEA,candidate_extracted
+ENT_TROPHONIUS,oracle,A,Promoted from v0.1 claim CLM_00437 (tag).,SRC_THEOI_DEIFIED,candidate_extracted
+ENT_TYCHE,fortune,A,Promoted from v0.1 claim CLM_00283 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_TYCHE,fortune,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_TYCHE_OCEANID,fortune,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_TYCHE_OCEANID,fortune,B,Promoted from v0.1 claim CLM_01087 (domain).,SRC_THEOI_NYMPHS,candidate_extracted
+ENT_URANUS,cosmic order,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_URANUS,cosmic order,B,Promoted from v0.1 claim CLM_00009 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_URANUS,sky,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_URANUS,sky,B,Promoted from v0.1 claim CLM_00008 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_URANUS,sky,B,Promoted from v0.1 claim CLM_00011 (tag).,SRC_THEOI_GODS,candidate_extracted
+ENT_XANTHUS,freshwater,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_XANTHUS,freshwater,B,Promoted from v0.1 claim CLM_00971 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_XANTHUS,freshwater,B,Promoted from v0.1 claim CLM_00974 (tag).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_XANTHUS,river,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_XANTHUS,river,B,Promoted from v0.1 claim CLM_00970 (domain).,SRC_THEOI_POTAMOI,candidate_extracted
+ENT_ZAGREUS,rebirth,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ZAGREUS,rebirth,B,Promoted from v0.1 claim CLM_00398 (domain).,SRC_THEOI_UNDERWORLD,candidate_extracted
+ENT_ZEUS,kingship,A,Promoted from v0.1 claim CLM_00181 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ZEUS,kingship,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ZEUS,law,A,Promoted from v0.1 claim CLM_00182 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ZEUS,law,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted
+ENT_ZEUS,sky,A,Promoted from v0.1 claim CLM_00179 (domain).,SRC_THEOI_GODS,candidate_extracted
+ENT_ZEUS,sky,B,Extracted from entities.primary_domains.,SRC_THEOI_GODS,candidate_extracted

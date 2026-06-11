@@ -1,0 +1,10 @@
+subject_entity_id,object_entity_id,relationship_type,confidence,source_id,review_status
+ENT_PERSEPHONE,ENT_DEMETER,mother/daughter,B,SRC_THEOI_GODS,seed_pending
+ENT_HADES,ENT_PERSEPHONE,underworld royal pair,B,SRC_THEOI_GODS,seed_pending
+ENT_NEREUS,ENT_NEREIDS,father/collective daughters,B,SRC_THEOI_GODS,seed_pending
+ENT_DORIS,ENT_NEREIDS,mother/collective daughters,B,SRC_THEOI_GODS,seed_pending
+ENT_OCEANUS,ENT_OCEANIDS,father/collective daughters,B,SRC_THEOI_GODS,seed_pending
+ENT_TETHYS,ENT_POTAMOI,mother/collective sons,B,SRC_THEOI_GODS,seed_pending
+ENT_OCEANUS,ENT_POTAMOI,father/collective sons,B,SRC_THEOI_GODS,seed_pending
+ENT_DIONYSUS,ENT_ARIADNE,divine marriage,B,SRC_THEOI_GODS,seed_pending
+ENT_CYBELE,ENT_ATTIS,cultic pair,B,SRC_THEOI_GODS,seed_pending
