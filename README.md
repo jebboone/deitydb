@@ -84,7 +84,7 @@ High-value contribution areas:
 
 MIT License.
 
-Copyright (c) 2026 Apostolic Johannite Church.
+Copyright (c) Jeb Boone
 
 ## Sample Queries
 
