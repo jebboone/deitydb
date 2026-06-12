@@ -65,6 +65,27 @@ Useful views include:
 - `v_public_wisdom_knowledge_beings`
 - `v_public_relationship_triples`
 
+## Contributing
+
+Contributors are welcome.
+
+High-value contribution areas:
+
+* primary-source upgrades
+* Greek and Egyptian source refinement
+* Irenaeus and early Christian heresiology
+* Islamic tafsir, sira, and Sufi traditions
+* Jewish mystical and Kabbalistic expansion
+* data visualization
+* API or web interface development
+* scholarly review of existing relationship types
+
+## License
+
+MIT License.
+
+Copyright (c) 2026 Apostolic Johannite Church.
+
 ## Sample Queries
 
 See:
@@ -96,24 +117,3 @@ It distinguishes between:
 * personified abstractions
 
 This allows comparison without collapsing every tradition into the same theological category.
-
-## Contributing
-
-Contributors are welcome.
-
-High-value contribution areas:
-
-* primary-source upgrades
-* Greek and Egyptian source refinement
-* Irenaeus and early Christian heresiology
-* Islamic tafsir, sira, and Sufi traditions
-* Jewish mystical and Kabbalistic expansion
-* data visualization
-* API or web interface development
-* scholarly review of existing relationship types
-
-## License
-
-MIT License.
-
-Copyright (c) 2026 Apostolic Johannite Church.
