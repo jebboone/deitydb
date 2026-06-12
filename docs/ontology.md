@@ -112,3 +112,75 @@ Entities and relationships should be traceable to primary texts or scholarly sou
 ### Comparative, Not Reductionist
 
 The database supports comparison without asserting that traditions are identical.
+## Core Relationship Types
+
+### patron_of
+Primary domain, phenomenon, office, constituency, or social function governed by an entity.
+
+### embodies
+Ontological personification or direct embodiment of an abstraction, force, or principle.
+
+### member_of
+Entity belongs to a collective, class, host, or structured divine grouping.
+
+### has_member
+Inverse of member_of.
+
+### identified_with
+Strong identity equivalence, later reception equation, or direct theological identification.
+
+### aligned_with
+Structural, symbolic, functional, or comparative analog without identity.
+
+### paired_with
+Stable theological, mythic, ritual, or cultic pairing.
+
+### parent_of
+Genealogical or emanational parenthood.
+
+### child_of
+Inverse of parent_of.
+
+### emanates_from
+Ontological derivation through emanation rather than biological generation.
+
+### belongs_to_realm
+Entity belongs to, originates from, or operates within a cosmological realm.
+
+### dwells_in
+Locative habitation.
+
+### opposes
+Active mythic, theological, or cosmological opposition.
+
+### judges
+Performs evaluative, juridical, or eschatological judgment.
+
+### guides
+Guides souls, beings, or initiates.
+
+### reveals
+Reveals divine knowledge, gnosis, or sacred teaching.
+
+### teaches
+Instructional transmission.
+
+### deceives_or_tempts
+Temptation, testing, corruption, or deceptive instruction.
+
+### protects
+Protective role.
+
+### slays
+Violent defeat.
+
+### associated_ritual
+Associated ritual or liturgical function.
+
+## Residual Relationship
+
+### associated_with
+Reserved for unresolved, contextual, ambiguous, or weak associations not yet formalized.
+
+Policy:
+This should remain minimal and ideally under 10 records.
