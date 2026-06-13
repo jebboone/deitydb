@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict P1P98gfQqMI7xa3TsIRBXJtyP3VNUterGNgBfqPUz9dNrfWTu36yRlWnTJeiigI
+\restrict ZW6IgUjLMhGbygJs5LZSFhFtrdgs9J8puRMYpHJiGnO0hdpFXix0pMZD0LGpQGE
 
 -- Dumped from database version 17.10 (Debian 17.10-1.pgdg13+1)
 -- Dumped by pg_dump version 17.10 (Debian 17.10-1.pgdg13+1)
@@ -123,9 +123,15 @@ INSERT INTO public.entities VALUES ('ENT_DIONE', 'Dione', NULL, 'Greek', 'Titan/
 INSERT INTO public.entities VALUES ('ENT_HEPHAESTUS', 'Hephaestus', NULL, 'Greek', 'Olympian god', 'Craft Deity', 'smithing; metalwork; fire craft', 'olympian;craft;metals', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 4, false, false, 'Major or widely attested Greek religious/mythological entity.');
 INSERT INTO public.entities VALUES ('ENT_DIONYSUS', 'Dionysus', NULL, 'Greek', 'Olympian/mystery god', 'Mystery Deity', 'wine; ecstasy; vegetation; rebirth', 'mystery;vegetation', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 3, false, false, 'Major or widely attested Greek religious/mythological entity.');
 INSERT INTO public.entities VALUES ('ENT_PROTEUS', 'Proteus', NULL, 'Greek', 'Sea god', 'Sea Deity', 'prophecy; shapechanging', 'sea;oracle', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Sea divinity or Nereid/related sea being.');
+INSERT INTO public.entities VALUES ('ENT_LAT_AZAEL', 'Azael', NULL, 'Late Antique Ritual', NULL, 'Angelic Being', 'angelic control; Tephras; fever demon; Solomonic demonology', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_GLAUCUS', 'Glaucus', NULL, 'Greek', 'Sea god/deified mortal', 'Sea Deity', 'sea prophecy; fishermen', 'sea;apotheosis', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Sea divinity or Nereid/related sea being.');
 INSERT INTO public.entities VALUES ('ENT_BAPTISM', 'Baptism', NULL, 'Christian', 'Ritual category', 'Ritual Category', 'baptism; washing; initiation; repentance; rebirth', NULL, 'Christian', NULL, 'A', 'candidate_verified_name', 'Christian ritual category', 1, false, false, 'Christian baptismal/initiation category.');
+INSERT INTO public.entities VALUES ('ENT_LAT_BAZAZATH', 'Bazazath', NULL, 'Late Antique Ritual', NULL, 'Angelic Being', 'angelic control; winged dragon; second heaven; Solomonic demonology', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_ASCLEPIUS', 'Asclepius', NULL, 'Greek', 'Healing god/deified mortal', 'Healing Figure', 'medicine; dream healing; incubation', 'healing;apotheosis', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 1, false, true, 'Major or widely attested Greek religious/mythological entity.');
+INSERT INTO public.entities VALUES ('ENT_LAT_IAX', 'Iax', NULL, 'Late Antique Ritual', NULL, 'Angelic Being', 'angelic control; fiery spirit; Solomonic demonology', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_RATHANAEL', 'Rathanael', NULL, 'Late Antique Ritual', NULL, 'Angelic Being', 'angelic control; Enepsigos; third heaven; Solomonic demonology', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_IAMETH', 'Iameth', NULL, 'Late Antique Ritual', NULL, 'Angelic Being', 'angelic control; sea spirit; Kunopegos; Solomonic demonology', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_WINGED_DRAGON', 'Winged Dragon', NULL, 'Late Antique Ritual', NULL, 'Dragon Demon', 'winged dragon; reproductive harm; fire; women; Solomonic demonology', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_KORYBANTES', 'Korybantes', NULL, 'Greek', 'Daimon collective', 'Ecstatic Attendant', 'ecstatic dance; mother goddess cult', 'collective;rustic', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 2, false, false, 'Major or widely attested Greek religious/mythological entity.');
 INSERT INTO public.entities VALUES ('ENT_NIKE', 'Nike', NULL, 'Greek', 'Goddess/daimon', 'Personification', 'victory', 'personification', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Major or widely attested Greek religious/mythological entity.');
 INSERT INTO public.entities VALUES ('ENT_EILEITHYIA', 'Eileithyia', NULL, 'Greek', 'Goddess', 'Birth Deity', 'childbirth', 'birth cult', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 1, false, false, 'Major or widely attested Greek religious/mythological entity.');
@@ -5690,9 +5696,15 @@ INSERT INTO public.entity_relationships VALUES (230, 'ENT_EGY_NUN', 'spouse_of',
 INSERT INTO public.entity_relationships VALUES (311, 'ENT_HERMES_CHTHONIOS_CULT', 'guides', 'ENT_DEAD', 'high', 'Hermes Chthonios functions as psychopomp guiding the dead.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (697, 'ENT_THO_THOMAS', 'identified_with', 'ENT_THO_TWIN', 'high', 'Thomas/Didymus is associated with twin identity.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (694, 'ENT_THO_KINGDOM', 'aligned_with', 'ENT_REVELATION', 'medium', 'The Kingdom is disclosed through sayings and recognition.', 'SRC_NHC', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1205, 'ENT_LAT_AZAEL', 'opposes', 'ENT_LAT_TEPHRAS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1206, 'ENT_LAT_IAMETH', 'opposes', 'ENT_LAT_KUNOPEGOS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (716, 'ENT_CHR_DEMONS', 'causes_affliction', 'ENT_DISEASE', 'medium', 'Demons can be associated with affliction and illness in Christian texts.', 'SRC_CHRISTIAN_DEMONOLOGY_GENERAL', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (713, 'ENT_CHR_LUCIFER', 'identified_with', 'ENT_CHR_DEVIL', 'medium', 'Lucifer is identified with the Devil in later Christian reception.', 'SRC_DDD_CHRISTIAN', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1207, 'ENT_LAT_IAX', 'opposes', 'ENT_LAT_ENVY_DEMON', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1208, 'ENT_LAT_RATHANAEL', 'opposes', 'ENT_LAT_ENEPSIGOS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (715, 'ENT_CHR_ANTICHRIST', 'deceives_or_tempts', 'ENT_DECEPTION', 'medium', 'Antichrist traditions include deception and false appearance.', 'SRC_DDD_CHRISTIAN', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1209, 'ENT_ISR_SOLOMON', 'rules', 'ENT_LAT_WINGED_DRAGON', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1210, 'ENT_LAT_BAZAZATH', 'opposes', 'ENT_LAT_WINGED_DRAGON', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (698, 'ENT_THO_SOLITARY', 'aligned_with', 'ENT_UNION', 'medium', 'The solitary/single one may symbolize integration or restored unity.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (688, 'ENT_OPH_EVE_ZOE', 'identified_with', 'ENT_VAL_ZOE', 'high', 'Eve/Zoe overlaps with the Life/Zoe revealer pattern.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (689, 'ENT_OPH_EVE_ZOE', 'identified_with', 'ENT_GNO_ZOE', 'high', 'Eve/Zoe overlaps with the Life/Zoe revealer pattern.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
@@ -15740,6 +15752,12 @@ INSERT INTO public.entity_sources VALUES ('ENT_LAT_EPHIPPAS', 'SRC_TESTAMENT_SOL
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_KORUPHE', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_LEOPHOROS', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_RABDOS', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_AZAEL', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_BAZAZATH', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_IAMETH', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_IAX', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_RATHANAEL', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_WINGED_DRAGON', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 
 
 --
@@ -17149,12 +17167,12 @@ SELECT pg_catalog.setval('public.entity_aliases_alias_id_seq', 180, true);
 -- Name: entity_relationships_relationship_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1194, true);
+SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1210, true);
 
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict P1P98gfQqMI7xa3TsIRBXJtyP3VNUterGNgBfqPUz9dNrfWTu36yRlWnTJeiigI
+\unrestrict ZW6IgUjLMhGbygJs5LZSFhFtrdgs9J8puRMYpHJiGnO0hdpFXix0pMZD0LGpQGE
 
