@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict IruQx6EIYE2ZXoBb5ZR9HQW3M5BEALZaGses8op6iekuMPDasA6glCqakCjJmSO
+\restrict S8drFb619fsM03d7ik614kVEfJe0UfHZFkfzWglSicQ1FRsrezrssMbKVc0edQb
 
 -- Dumped from database version 17.10 (Debian 17.10-1.pgdg13+1)
 -- Dumped by pg_dump version 17.10 (Debian 17.10-1.pgdg13+1)
@@ -161,6 +161,7 @@ INSERT INTO public.entities VALUES ('ENT_PHANTASOS', 'Phantasos', NULL, 'Greek',
 INSERT INTO public.entities VALUES ('ENT_ZAGREUS', 'Zagreus', NULL, 'Greek', 'Orphic/Dionysian god', 'Mystery Deity', 'rebirth; underworld initiation', 'orphic;chthonic', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 5, true, false, 'Chthonic, underworld, or local cult seed entity.');
 INSERT INTO public.entities VALUES ('ENT_THANATOS', 'Thanatos', NULL, 'Greek', 'Daimon', 'Mortality Abstraction', 'death', 'death;chthonic', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 5, true, false, 'Chthonic, underworld, or local cult seed entity.');
 INSERT INTO public.entities VALUES ('ENT_HYPNOS', 'Hypnos', NULL, 'Greek', 'Daimon', 'Mortality Abstraction', 'sleep', 'sleep;chthonic', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 5, true, false, 'Chthonic, underworld, or local cult seed entity.');
+INSERT INTO public.entities VALUES ('ENT_PRAISE', 'Praise', NULL, 'Cross-traditional', NULL, 'Ritual Category', 'praise; hymnody; worship; liturgical utterance', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_PALAEMON', 'Palaemon', NULL, 'Greek', 'Sea god/deified child', 'Sea Deity', 'sailor protection', 'sea;apotheosis', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Sea divinity or Nereid/related sea being.');
 INSERT INTO public.entities VALUES ('ENT_LEUCOTHEA', 'Leucothea', NULL, 'Greek', 'Sea goddess/deified mortal', 'Sea Deity', 'sea rescue; sailor protection', 'sea;apotheosis', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Sea divinity or Nereid/related sea being.');
 INSERT INTO public.entities VALUES ('ENT_AMPHITRITE', 'Amphitrite', NULL, 'Greek', 'Nereid/sea queen', 'Sea Deity', 'sea; queen of sea', 'nereid;sea', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Sea divinity or Nereid/related sea being.');
@@ -5841,7 +5842,9 @@ INSERT INTO public.entity_relationships VALUES (853, 'ENT_NOR_NORNS', 'embodies'
 INSERT INTO public.entity_relationships VALUES (826, 'ENT_CEL_OGMA', 'patron_of', 'ENT_SPEECH', 'medium', 'Ogma is associated with eloquence.', 'SRC_MACCANA_CELTIC_MYTH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (830, 'ENT_CEL_DIANCECHT', 'member_of', 'ENT_CEL_TUATHA', 'high', 'Dian Cécht is a Tuatha Dé Danann healing figure.', 'SRC_MACCANA_CELTIC_MYTH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (847, 'ENT_NOR_YGGDRASIL', 'aligned_with', 'ENT_HER_COSMOS', 'high', 'Yggdrasil is the world tree structuring the Norse cosmos.', 'SRC_PROSE_EDDA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1225, 'ENT_JM_SANDALPHON', 'associated_ritual', 'ENT_PRAISE', 'medium', NULL, 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (849, 'ENT_NOR_FREYJA', 'patron_of', 'ENT_MAGIC', 'medium', 'Freyja is associated with seidr magic.', 'SRC_SIMEK_NORTHERN_MYTH', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1226, 'ENT_JM_SANDALPHON', 'member_of', 'ENT_ANGELS', 'high', NULL, 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (832, 'ENT_CEL_DAGDA', 'member_of', 'ENT_CEL_TUATHA', 'high', 'Dagda is one of the major Tuatha Dé Danann figures.', 'SRC_MACCANA_CELTIC_MYTH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (850, 'ENT_NOR_ODIN', 'patron_of', 'ENT_MAGIC', 'medium', 'Odin is associated with magic and seidr/runes.', 'SRC_SIMEK_NORTHERN_MYTH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (827, 'ENT_CEL_TARANIS', 'patron_of', 'ENT_STORM', 'high', 'Taranis is a thunder/storm god.', 'SRC_GREEN_CELTIC_GODS', 'reviewed');
@@ -17181,12 +17184,12 @@ SELECT pg_catalog.setval('public.entity_aliases_alias_id_seq', 181, true);
 -- Name: entity_relationships_relationship_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1224, true);
+SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1226, true);
 
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict IruQx6EIYE2ZXoBb5ZR9HQW3M5BEALZaGses8op6iekuMPDasA6glCqakCjJmSO
+\unrestrict S8drFb619fsM03d7ik614kVEfJe0UfHZFkfzWglSicQ1FRsrezrssMbKVc0edQb
 
