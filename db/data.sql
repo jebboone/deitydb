@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict 2u5l16Jod7GxsWXOVrXbQsXeYBMhTKDln5t0dOhTBw7j0WXSliekp1KaBZYYPpp
+\restrict P1P98gfQqMI7xa3TsIRBXJtyP3VNUterGNgBfqPUz9dNrfWTu36yRlWnTJeiigI
 
 -- Dumped from database version 17.10 (Debian 17.10-1.pgdg13+1)
 -- Dumped by pg_dump version 17.10 (Debian 17.10-1.pgdg13+1)
@@ -54,7 +54,6 @@ INSERT INTO public.entities VALUES ('ENT_LAT_ASMODEUS', 'Asmodeus', NULL, 'Late 
 INSERT INTO public.entities VALUES ('ENT_LAT_BEELZEBOUL', 'Beelzeboul', NULL, 'Late Antique Ritual', NULL, 'Demon', 'demonic ruler; demons; heavenly rebellion; obstruction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_ONOSKELIS', 'Onoskelis', NULL, 'Late Antique Ritual', NULL, 'Demon', 'female demon; caves; seduction; strangulation', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_OBYZOUTH', 'Obyzouth', NULL, 'Late Antique Ritual', NULL, 'Child-Harming Spirit', 'childbirth danger; infant harm; reproductive danger', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.entities VALUES ('ENT_LAT_ABEZETHIBOU', 'Abezethibou', NULL, 'Late Antique Ritual', NULL, 'Demon', 'Red Sea; obstruction; hardening Pharaoh; demonic opposition', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_LIX_TETRAX', 'Lix Tetrax', NULL, 'Late Antique Ritual', NULL, 'Wind Spirit', 'wind; dust; fever; desert affliction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_KUNOPEGOS', 'Kunopegos', NULL, 'Late Antique Ritual', NULL, 'Sea Monster', 'sea danger; wave demon; maritime affliction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_TEPHRAS', 'Tephras', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'ashes; fever; disease; affliction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
@@ -71,6 +70,7 @@ INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_SPHANDOR', 'Sphandor', NULL, 
 INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_BELBEL', 'Belbel', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'heart affliction; bodily harm; decan demon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_KOURTAEL_2', 'Kourtael II', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'belly affliction; bodily harm; decan demon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_MARMARETH', 'Marmareth', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'fate; disease; bodily affliction; decan demon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_ABEZETHIBOU', 'Abezithibod', NULL, 'Late Antique Ritual', NULL, 'Demon', 'Red Sea; hardening Pharaoh; Moses opposition; Iannes and Iambres; demonic opposition', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_KATANIKOTAEL', 'Katanikotael', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'domestic strife; hard temper; decan demon; bodily affliction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_SAPHATHORAEL', 'Saphathorael', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'partisanship; stumbling; drunken fit; decan demon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_BOBEL', 'Bobel', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'nervous illness; demonic assault; decan demon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
@@ -103,6 +103,11 @@ INSERT INTO public.entities VALUES ('ENT_HYPERION', 'Hyperion', NULL, 'Greek', '
 INSERT INTO public.entities VALUES ('ENT_THEIA', 'Theia', NULL, 'Greek', 'Titan/Titaness', 'Titan', 'sight; shining light', 'titan;celestial', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 1, false, false, 'Titanic generation or associated figure.');
 INSERT INTO public.entities VALUES ('ENT_COEUS', 'Coeus', NULL, 'Greek', 'Titan/Titaness', 'Titan', 'axis of heaven; intelligence', 'titan', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 1, false, false, 'Titanic generation or associated figure.');
 INSERT INTO public.entities VALUES ('ENT_LAT_DECAN_BIANAKITH', 'Bianakith', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'body harm; ruined houses; flesh decay; decan demon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_RABDOS', 'Rabdos', NULL, 'Late Antique Ritual', NULL, 'Demon', 'hound-like spirit; green stone; temple adornment; hidden treasure', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_LEOPHOROS', 'Leophoros', NULL, 'Late Antique Ritual', NULL, 'Disease Demon', 'lion-shaped spirit; sickness; legions; bodily weakness', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_KORUPHE', 'Koruphe', NULL, 'Late Antique Ritual', NULL, 'Dragon Demon', 'three-headed dragon; deafness; muteness; bodily affliction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_ENEPSIGOS', 'Enepsigos', NULL, 'Late Antique Ritual', NULL, 'Demon', 'three forms; moon; Kronos; prophecy; temple destruction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.entities VALUES ('ENT_LAT_EPHIPPAS', 'Ephippas', NULL, 'Late Antique Ritual', NULL, 'Wind Demon', 'Arabia; destructive wind; corner-stone; mountain-moving; temple construction', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_MISSION', 'Mission', NULL, 'Christian', 'Ecclesial/social category', 'Ritual Collective', 'mission; teaching; evangelism; apostolic travel', NULL, 'Christian', NULL, 'A', 'candidate_verified_name', 'Christian ecclesial category', 1, false, false, 'Christian mission and apostolic teaching category.');
 INSERT INTO public.entities VALUES ('ENT_PHORCYS', 'Phorcys', NULL, 'Greek', 'Sea god', 'Sea Deity', 'sea depths; sea monsters', 'sea', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Sea divinity or Nereid/related sea being.');
 INSERT INTO public.entities VALUES ('ENT_EURYBIA_SEA', 'Eurybia Sea', NULL, 'Greek', 'Sea goddess', 'Sea Deity', 'sea power', 'sea', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Sea divinity or Nereid/related sea being.');
@@ -5664,10 +5669,19 @@ INSERT INTO public.entity_relationships VALUES (225, 'ENT_EGY_MEHEN', 'protects'
 INSERT INTO public.entity_relationships VALUES (681, 'ENT_OPH_HEBDOMAD', 'belongs_to_realm', 'ENT_PLANETARY_SPHERES', 'medium', 'The seven archons are commonly interpreted through planetary/cosmic sphere symbolism.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (682, 'ENT_EGY_OGDOAD', 'belongs_to_realm', 'ENT_GNO_PLEROMA', 'medium', 'The Ogdoad marks a higher realm beyond the seven in some cosmological framings.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (664, 'ENT_VAL_BRIDAL_CHAMBER', 'associated_ritual', 'ENT_UNION', 'high', 'The bridal chamber is associated with union.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1186, 'ENT_ISR_SOLOMON', 'rules', 'ENT_LAT_RABDOS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1187, 'ENT_ISR_SOLOMON', 'rules', 'ENT_LAT_LEOPHOROS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (647, 'ENT_VAL_ACHAMOTH', 'identified_with', 'ENT_GNO_SOPHIA', 'high', 'Achamoth is the lower Sophia in Valentinian myth.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (661, 'ENT_VAL_SIGE', 'embodies', 'ENT_SILENCE', 'high', 'Sige personifies Silence.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (228, 'ENT_EGY_HEH', 'spouse_of', 'ENT_EGY_HAUHET', 'high', 'Heh and Hauhet form a male/female Ogdoad pair.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (648, 'ENT_VAL_LOGOS', 'spouse_of', 'ENT_GNO_ZOE', 'high', 'Logos and Zoe form a Valentinian syzygy.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1188, 'ENT_ISR_SOLOMON', 'rules', 'ENT_LAT_KORUPHE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1189, 'ENT_ISR_SOLOMON', 'rules', 'ENT_LAT_ENEPSIGOS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1190, 'ENT_ISR_SOLOMON', 'rules', 'ENT_LAT_EPHIPPAS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1191, 'ENT_LAT_LEOPHOROS', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1192, 'ENT_LAT_KORUPHE', 'causes_affliction', 'ENT_HUMANS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1193, 'ENT_LAT_EPHIPPAS', 'causes_affliction', 'ENT_HUMANS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1194, 'ENT_LAT_EPHIPPAS', 'guides', 'ENT_LAT_ABEZETHIBOU', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (693, 'ENT_THO_THOMAS', 'teaches', 'ENT_THO_LIVING_JESUS', 'high', 'The Gospel of Thomas frames Thomas as recipient of the hidden sayings of the living Jesus.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (692, 'ENT_THO_LIVING_JESUS', 'identified_with', 'ENT_GNO_CHRIST', 'medium', 'Living Jesus overlaps with Christic revealer traditions while remaining text-specific.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (229, 'ENT_EGY_KEK', 'spouse_of', 'ENT_EGY_KAUKET', 'high', 'Kek and Kauket form a male/female Ogdoad pair.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
@@ -15721,6 +15735,11 @@ INSERT INTO public.entity_sources VALUES ('ENT_LAT_DECAN_BIANAKITH', 'SRC_TESTAM
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_DECAN_HEPHESIKIRETH', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_DECAN_ICHTHION', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_DECAN_PHTHENOTH', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_ENEPSIGOS', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_EPHIPPAS', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_KORUPHE', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_LEOPHOROS', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_LAT_RABDOS', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 
 
 --
@@ -17130,12 +17149,12 @@ SELECT pg_catalog.setval('public.entity_aliases_alias_id_seq', 180, true);
 -- Name: entity_relationships_relationship_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1165, true);
+SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1194, true);
 
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 2u5l16Jod7GxsWXOVrXbQsXeYBMhTKDln5t0dOhTBw7j0WXSliekp1KaBZYYPpp
+\unrestrict P1P98gfQqMI7xa3TsIRBXJtyP3VNUterGNgBfqPUz9dNrfWTu36yRlWnTJeiigI
 
