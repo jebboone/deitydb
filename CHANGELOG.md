@@ -233,6 +233,90 @@
   Homer now #3 source by entity count (113); Apollodorus #5 (93); 100 total sources milestone
 - No change to entity or relationship counts: 1128 entities, 1303 relationships, 100 sources
 
+#### Zero-link and low-link source remediation (add_source_linkage_remediation.sql)
+- **Problem addressed**: Source audit found 14 registered sources with 0 or near-0 entity links;
+  most traditions had primary sources in the sources table but not linked to their own entities;
+  e.g. all 20 Norse entities had only Prose Edda + Simek; the older Poetic Edda was unlinked;
+  all 22 Roman entities had no Ovid link; no Egyptian entity had a Pyramid Texts link except
+  the 2 new entities added in the Egyptian remediation this session
+- **Total new links: ~199 entity_sources rows across 14 sources and 168 distinct entities**
+- **SRC_POETIC_EDDA** → 20 Germanic/Norse entities
+  (Odin, Thor, Freyja, Freyr, Frigg, Baldr, Tyr, Loki, Hel, Fenrir, Jörmungandr, Níðhöggr,
+  Njord, Norns, Valkyries, Aesir, Vanir, Jötnar, Dwarves, Yggdrasil);
+  primary for Völuspá, Hávamál, Grímnismál, Hymiskviða, Lokasenna, Þrymskviða, Baldrs draumar,
+  Skírnismál; the Poetic Edda pre-dates Snorri's Prose Edda and is more directly attested
+- **SRC_OVID_FASTI** → 22 Roman entities
+  (Jupiter, Juno, Mars, Venus, Saturn, Janus, Vesta, Ceres, Diana, Minerva, Neptune, Mercury,
+  Pluto, Proserpina, Bacchus, Apollo, Quirinus, Vulcan, Genius, Lares, Manes, Penates);
+  primary Latin source for the Roman religious calendar; especially critical for Janus (Book 1),
+  Mars (Books 2-3), Venus and Ceres (Book 4), Mercury (Book 5), Juno and Vesta (Book 6)
+- **SRC_PLUTARCH_ISIS_OSIRIS** → 15 Egyptian/syncretic entities
+  (Osiris, Isis, Seth, Nephthys, Thoth, Anubis, Horus, Ra, Hathor, Ptah, Neith,
+  Serapis, Harpocrates, Hermanubis, Zeus Ammon);
+  fullest surviving Greco-Roman account of the Osirian cycle and Egyptian-Greek equations;
+  primary source for the Serapis foundation myth (De Iside 28) and Harpocrates' gesture;
+  Neith's famous inscription ("I am all that has been and is and shall be") is quoted here
+- **SRC_FAULKNER_PYRAMID_TEXTS** → 32 additional Egyptian entities (34 total; was 2)
+  (Atum, Shu, Tefnut, Geb, Nut, Osiris, Isis, Seth, Nephthys, Horus, Ra, Thoth, Anubis,
+  Hathor, Ptah, Maat, Hu, Sia, Serqet, Khepri, Wepwawet, Nekhbet, Wadjet, Min, Sobek,
+  Khnum, Seshat, Seker, Aker, Hapy, Montu, Duat + the 2 already linked);
+  oldest surviving religious corpus (c. 2375-2181 BCE); these are the primary attestations
+  for all these deities; Atum (PT 600), Osiris resurrection theology (PT 219-222), Anubis
+  ("upon his mountain"), Hu and Sia in Ra's barque, Aker at the horizons
+- **SRC_HERODOTUS_HISTORIES** → 11 additional entities (13 total; was 2)
+  Egyptian: Osiris (= Dionysus, 2.42, 2.144), Isis (= Demeter, 2.41, 2.59),
+  Horus (= Apollo, 2.144), Amun / Zeus Ammon (2.42; Siwa oracle), Thoth (= Hermes, 2.52);
+  Zoroastrian: Ahura Mazda (1.131; first Greek account of Persian religion),
+  Anahita (1.131; as Aphrodite Ourania);
+  Arabian: Al-Uzza (3.8; "Alilat" = Aphrodite Ourania);
+  Cross-traditional: Heracles (2.44; distinguished from Phoenician Melqart),
+  Dionysus (2.49; traced to Egypt / Osiris), Zeus Ammon already counted
+- **SRC_FOSTER_BEFORE_MUSES** → 13 Mesopotamian entities
+  (Marduk, Tiamat, Apsu, Kingu, Nabu, Ashur, Ereshkigal, Inanna/Ishtar, Nergal, Enki/Ea,
+  Enlil, Adad/Ishkur, Lamashtu);
+  Akkadian literary corpus: Enuma Elish (tablets I-VII), Descent of Ishtar, Nergal and
+  Ereshkigal, Atrahasis Epic, Adapa, Erra and Ishum, Lamashtu incantation texts;
+  fills the gap created by adding SRC_FOSTER_BEFORE_MUSES in the Mesopotamian remediation
+  without linking any entities to it at that time
+- **SRC_BURKERT_ORIENT_REV** → 13 entities across traditions
+  (Inanna/Ishtar, Aphrodite, Kronos, Zeus, Typhon, Kumarbi, Teshub, Ullikummi,
+  Gilgamesh, Heracles, Enki/Ea, Prometheus, Adonis);
+  primary scholarly source for Near Eastern → Greek transmission in the Orientalizing period
+  (8th-6th c. BCE); documents the Inanna→Aphrodite, Kumarbi→Kronos, and Gilgamesh→Heracles
+  parallels; used in relationship-chain rationales throughout but not previously linked as entity_sources
+- **SRC_BUNDAHISHN** → 16 Zoroastrian entities (complete tradition coverage)
+  (Ahura Mazda, Angra Mainyu, all 6 Amesha Spentas, Mithra, Anahita, Sraosha, Atar,
+  Daevas, Aeshma Daeva, Fravashis);
+  Pahlavi cosmological text (c. 9th c. CE) that is the most systematic ancient account
+  of Zoroastrian cosmogony; supplements the Avesta with cosmological detail absent from
+  the liturgical corpus
+- **SRC_MANDAEAN_BOOK_JOHN** → 15 Mandaean entities (complete tradition coverage)
+  (Hayyi Rabbi, Manda d-Hayyi, John the Baptist, Hibil Ziwa, Ruha, Ptahil, Abathur,
+  Anosh, Sitil, Yushamin, Melka d-Nhura, Mana Rabba, Ur, Jordan, Planets);
+  Draşa d-Yahya; primary Mandaean liturgical text alongside the Ginza Rba (already linked);
+  central text for the Mandaean John the Baptist tradition
+- **SRC_MANICHAEAN_PSALM_BOOK** → 15 Manichaean entities (complete tradition coverage)
+  (Father of Greatness, Mother of Life, Primal Man, Five Sons, Living Spirit, Great Builder,
+  Column of Glory, Jesus Splendour, Light Mind, World of Light, King of Darkness, Matter,
+  Archons, Demons, Light Particles);
+  Allberry Psalm Book; Coptic Manichaean hymnal from Medinet Madi (c. 4th c. CE);
+  preserves Manichaean cosmological theology in its primary liturgical form
+- **SRC_WYATT_RELIGIOUS_TEXTS** → 12 Canaanite entities (was 2: Dagon, Resheph)
+  SRC_CROSS_CANAANITE_MYTH → 10 Canaanite entities (was 2)
+  SRC_DAY_GODS_CONFLICT → 3 Canaanite entities
+  Entities: El, Baal, Anat, Asherah, Astarte, Mot, Yam, Lotan, Kothar, Shapash, Yarikh, Rephaim;
+  the full Ugaritic pantheon now covered by both the primary KTU translation (Wyatt) and the
+  standard Canaanite theology monograph (Cross); Cross and Day provide the academic framework
+  for interpreting the mythological texts and their Israelite reception
+- **SRC_2TJ_COLLINS** → 4 Israelite Second Temple entities
+  (Noah, Adam, Elijah, Moses); Collins, The Apocalyptic Imagination (3rd ed. 2016);
+  documents the Second Temple apocalyptic reception of these prophetic/patriarchal figures
+  (Noah in 1 Enoch's Book of Noah; Elijah's eschatological return; Moses in the Testament
+  of Moses; Adam as apocalyptic archetype)
+- Result: 1128 entities, 1303 relationships, 100 sources, 0 unresolved
+- Tradition source ratios after remediation: Egyptian 14.8 (was ~44), Canaanite 2.3,
+  Zoroastrian 4.0, Israelite (prophets) 1.0, Mesopotamian 6.0, Roman 7.3, Norse 6.7
+
 #### Mesopotamian tradition audit and remediation (audit_mesopotamian_remediation.sql)
 - Added period PER_MES_UR_III (Ur III / Sumerian Renaissance, -2112 to -2004): the core period
   for the surviving Sumerian literary corpus (Inanna hymns, Nanna hymns, laments, Gilgamesh poems);
