@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict pfLgrzfGw6gVJUj3Sc2ZCByTka1YzbvR7z7auIIRekhxPSYSWOdPc1hRJEOlz3j
+\restrict QppgFheyeUAq4hYIcqmg8VMTmOzt2ulHaWOHyfhv8A6rnE9PGOov2I1QpydXfGz
 
 -- Dumped from database version 17.10 (Debian 17.10-1.pgdg13+1)
 -- Dumped by pg_dump version 17.10 (Debian 17.10-1.pgdg13+1)
@@ -1182,10 +1182,11 @@ INSERT INTO public.sources VALUES ('SRC_QURAN', 'Qur’an', NULL, 'primary text'
 INSERT INTO public.sources VALUES ('SRC_HADITH_GENERAL', 'Hadith general reference layer', NULL, 'primary/reception corpus', 'Islamic angelology, eschatology, jinn, and devotional traditions');
 INSERT INTO public.sources VALUES ('SRC_ISLAM_EI2', 'Encyclopaedia of Islam entries', NULL, 'reference work', 'Islamic religious beings, angelology, jinn, demons, eschatology, and saints');
 INSERT INTO public.sources VALUES ('SRC_3_ENOCH', '3 Enoch / Sefer Hekhalot', NULL, 'primary/reception text', 'Hekhalot angelology, Metatron, heavenly ascent, celestial bureaucracy');
-INSERT INTO public.sources VALUES ('SRC_HEKHALOT_LITERATURE', 'Hekhalot literature general reference layer', NULL, 'primary/reception corpus', 'Merkabah mysticism, heavenly palaces, angels, ascent traditions');
 INSERT INTO public.sources VALUES ('SRC_ZOHAR', 'Zohar', NULL, 'primary/reception text', 'Kabbalistic divine emanations, Shekhinah, sefirot, mystical symbolism');
 INSERT INTO public.sources VALUES ('SRC_SCHOLEM_KABBALAH', 'Gershom Scholem, Kabbalah', NULL, 'secondary source', 'Jewish mysticism, Kabbalah, sefirot, angelology, and esoteric traditions');
 INSERT INTO public.sources VALUES ('SRC_TESTAMENT_SOLOMON', 'F. C. Conybeare, “The Testament of Solomon,” Jewish Quarterly Review 11 (1898): 1–45', 'https://www.jstor.org/stable/1450398', 'primary text / scholarly translation', 'Late antique Solomonic demonology; Conybeare edition and translation of the Testament of Solomon; named demons, angelic controls, afflictions, decans, and ritual subjugation traditions');
+INSERT INTO public.sources VALUES ('SRC_3_ENOCH_ALEXANDER_OTP', 'P. Alexander, 3 Enoch, in Old Testament Pseudepigrapha vol. 1', NULL, 'critical scholarly translation', 'Metatron, Sar Torah, angelic hierarchies, heavenly ascent');
+INSERT INTO public.sources VALUES ('SRC_HEKHALOT_SCHAFER_SYNOPSE', 'Peter Schäfer, Synopse zur Hekhalot-Literatur', NULL, 'critical edition', 'Hekhalot textual corpus; Merkabah ascent, throne beings, angelic liturgy');
 
 
 --
@@ -3185,14 +3186,9 @@ INSERT INTO public.entity_aliases VALUES (159, 'ENT_ISL_ALI', 'Imam Ali', 'title
 INSERT INTO public.entity_aliases VALUES (160, 'ENT_ISL_HUSAYN', 'Imam Husayn', 'title/common name', 'English', 'SRC_ISLAM_EI2', 'high', 'candidate_verified_name', 'Common devotional/title form.');
 INSERT INTO public.entity_aliases VALUES (161, 'ENT_ISL_MAHDI', 'Hidden Imam', 'title/common name', 'English', 'SRC_ISLAM_EI2', 'high', 'candidate_verified_name', 'Twelver Shi''a title.');
 INSERT INTO public.entity_aliases VALUES (162, 'ENT_ISL_MAHDI', 'The Mahdi', 'title/common name', 'English', 'SRC_ISLAM_EI2', 'high', 'candidate_verified_name', 'Common eschatological title.');
-INSERT INTO public.entity_aliases VALUES (163, 'ENT_JM_METATRON', 'Metatron Sar ha-Panim', 'title/form', 'Hebrew/English', 'SRC_3_ENOCH', 'medium', 'needs_review', 'Metatron as Prince of the Presence.');
-INSERT INTO public.entity_aliases VALUES (164, 'ENT_JM_METATRON', 'Prince of the Presence', 'translation/title', 'English', 'SRC_3_ENOCH', 'high', 'candidate_verified_name', 'English title.');
-INSERT INTO public.entity_aliases VALUES (165, 'ENT_JM_SANDALPHON', 'Sandalfon', 'variant transliteration', 'Hebrew/English', 'SRC_HEKHALOT_LITERATURE', 'medium', 'needs_review', 'Variant transliteration.');
 INSERT INTO public.entity_aliases VALUES (166, 'ENT_JM_RAZIEL', 'Angel of Secrets', 'translation/title', 'English', 'SRC_SCHOLEM_KABBALAH', 'high', 'candidate_verified_name', 'Raziel as angel of mysteries.');
 INSERT INTO public.entity_aliases VALUES (167, 'ENT_JM_SHEKHINAH', 'Shekinah', 'variant transliteration', 'English', 'SRC_ZOHAR', 'high', 'candidate_verified_name', 'Common English spelling.');
 INSERT INTO public.entity_aliases VALUES (168, 'ENT_JM_ADAM_KADMON', 'Primordial Adam', 'translation/title', 'English', 'SRC_SCHOLEM_KABBALAH', 'high', 'candidate_verified_name', 'English rendering.');
-INSERT INTO public.entity_aliases VALUES (169, 'ENT_JM_OPHANIM', 'Wheels', 'translation/common name', 'English', 'SRC_HEKHALOT_LITERATURE', 'high', 'candidate_verified_name', 'Ophanim as wheels.');
-INSERT INTO public.entity_aliases VALUES (170, 'ENT_JM_CHAYYOT', 'Living Creatures', 'translation/common name', 'English', 'SRC_HEKHALOT_LITERATURE', 'high', 'candidate_verified_name', 'Chayyot as living creatures.');
 INSERT INTO public.entity_aliases VALUES (171, 'ENT_JM_SEFIROT', 'Sephiroth', 'variant transliteration', 'English', 'SRC_SCHOLEM_KABBALAH', 'high', 'candidate_verified_name', 'Common English variant.');
 INSERT INTO public.entity_aliases VALUES (172, 'ENT_JM_KETER', 'Crown', 'translation/common name', 'English', 'SRC_ZOHAR', 'high', 'candidate_verified_name', 'English translation.');
 INSERT INTO public.entity_aliases VALUES (173, 'ENT_JM_HOKHMAH', 'Wisdom', 'translation/common name', 'English', 'SRC_ZOHAR', 'high', 'candidate_verified_name', 'English translation.');
@@ -3203,6 +3199,12 @@ INSERT INTO public.entity_aliases VALUES (177, 'ENT_CHR_APOLLYON', 'Destroyer', 
 INSERT INTO public.entity_aliases VALUES (178, 'ENT_CHR_LEVIATHAN', 'Leviathan', 'standard form', 'English/Hebrew reception', 'SRC_DDD_CHRISTIAN', 'high', 'candidate_verified_name', 'Biblical chaos monster name.');
 INSERT INTO public.entity_aliases VALUES (179, 'ENT_CHR_BEHEMOTH', 'Behemoth', 'standard form', 'English/Hebrew reception', 'SRC_DDD_CHRISTIAN', 'high', 'candidate_verified_name', 'Biblical chaos monster name.');
 INSERT INTO public.entity_aliases VALUES (180, 'ENT_CHR_DRAGON_REVELATION', 'Great Red Dragon', 'title/form', 'English', 'SRC_DDD_CHRISTIAN', 'high', 'candidate_verified_name', 'Revelation dragon title/form.');
+INSERT INTO public.entity_aliases VALUES (165, 'ENT_JM_SANDALPHON', 'Sandalfon', 'variant transliteration', 'Hebrew/English', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'medium', 'needs_review', 'Variant transliteration.');
+INSERT INTO public.entity_aliases VALUES (169, 'ENT_JM_OPHANIM', 'Wheels', 'translation/common name', 'English', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'high', 'candidate_verified_name', 'Ophanim as wheels.');
+INSERT INTO public.entity_aliases VALUES (170, 'ENT_JM_CHAYYOT', 'Living Creatures', 'translation/common name', 'English', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'high', 'candidate_verified_name', 'Chayyot as living creatures.');
+INSERT INTO public.entity_aliases VALUES (163, 'ENT_JM_METATRON', 'Metatron Sar ha-Panim', 'title/form', 'Hebrew/English', 'SRC_3_ENOCH_ALEXANDER_OTP', 'medium', 'candidate_verified_name', 'Metatron as Prince of the Presence.');
+INSERT INTO public.entity_aliases VALUES (164, 'ENT_JM_METATRON', 'Prince of the Presence', 'translation/title', 'English', 'SRC_3_ENOCH_ALEXANDER_OTP', 'high', 'candidate_verified_name', 'English title.');
+INSERT INTO public.entity_aliases VALUES (181, 'ENT_JM_SAR_TORAH', 'Prince of Torah', 'translation/title', 'English', 'SRC_3_ENOCH_ALEXANDER_OTP', 'high', 'candidate_verified_name', 'English rendering of Sar Torah.');
 
 
 --
@@ -5720,7 +5722,9 @@ INSERT INTO public.entity_relationships VALUES (737, 'ENT_GNO_ANTHROPOS', 'align
 INSERT INTO public.entity_relationships VALUES (738, 'ENT_VAL_ANTHROPOS', 'aligned_with', 'ENT_HER_ANTHROPOS', 'medium', 'Hermetic Anthropos overlaps with cross-Gnostic primordial human patterns.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (743, 'ENT_LAT_PLANETARY_RULERS', 'aligned_with', 'ENT_GNO_ARCHONS', 'medium', 'Planetary rulers overlap structurally with archontic cosmic governance.', 'SRC_GREEK_MAGICAL_PAPYRI', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (754, 'ENT_HER_THE_ONE', 'aligned_with', 'ENT_GNO_MONAD', 'medium', 'The One and Monad overlap as supreme unity/source categories across Hermetic, Gnostic, and Neoplatonic contexts.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1211, 'ENT_JM_METATRON', 'member_of', 'ENT_ANGELS', 'high', NULL, 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (734, 'ENT_GNO_ANTHROPOS', 'identified_with', 'ENT_VAL_ANTHROPOS', 'medium', 'Hermetic Anthropos overlaps with cross-Gnostic primordial human patterns.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1212, 'ENT_JM_METATRON', 'mediates', 'ENT_TORAH', 'medium', NULL, 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (750, 'ENT_LAT_DAIMONES', 'identified_with', 'ENT_LAT_DAIMONES', 'high', 'Late antique daimones overlap with broader Greek daimonic categories.', 'SRC_IAMBLICHUS_DE_MYSTERIIS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (752, 'ENT_LAT_HEROES', 'identified_with', 'ENT_LAT_HEROES', 'medium', 'Late antique heroic beings overlap with Greek hero cult categories.', 'SRC_IAMBLICHUS_DE_MYSTERIIS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (736, 'ENT_HER_ANTHROPOS', 'identified_with', 'ENT_VAL_ANTHROPOS', 'medium', 'Hermetic Anthropos overlaps with cross-Gnostic primordial human patterns.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
@@ -5741,6 +5745,7 @@ INSERT INTO public.entity_relationships VALUES (744, 'ENT_THEURGY', 'undergoes_p
 INSERT INTO public.entity_relationships VALUES (745, 'ENT_LAT_PURIFIED_SOULS', 'undergoes_process', 'ENT_THEURGIC_ASENT', 'medium', 'Purified souls belong to ascent/purification cosmologies.', 'SRC_IAMBLICHUS_DE_MYSTERIIS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (751, 'ENT_LAT_DECANS', 'aligned_with', 'ENT_FATE', 'medium', 'Decans are associated with time, fate, and astral influence.', 'SRC_GREEK_MAGICAL_PAPYRI', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (760, 'ENT_HER_NOUS', 'reveals', 'ENT_REVELATION', 'medium', 'Hermetic Nous functions as revealer/teacher in Hermetic discourse.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1217, 'ENT_ENOCH', 'undergoes_process', 'ENT_HEAVENLY_JOURNEY', 'high', NULL, 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (757, 'ENT_LAT_AGATHOS_DAIMON_HERMETIC', 'patron_of', 'ENT_PROTECTION', 'medium', 'Agathos Daimon carries good/protective daimonic associations.', 'SRC_ASCLEPIUS_HERMETICA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (762, 'ENT_GNO_NOUS', 'reveals', 'ENT_REVELATION', 'medium', 'Hermetic Nous functions as revealer/teacher in Hermetic discourse.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (763, 'ENT_VAL_NOUS', 'reveals', 'ENT_REVELATION', 'medium', 'Hermetic Nous functions as revealer/teacher in Hermetic discourse.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
@@ -5752,6 +5757,8 @@ INSERT INTO public.entity_relationships VALUES (768, 'ENT_THEURGY', 'associated_
 INSERT INTO public.entity_relationships VALUES (732, 'ENT_CHR_ANTICHRIST', 'opposes', 'ENT_GNO_CHRIST', 'high', 'Antichrist is an eschatological opponent of Christ.', 'SRC_DDD_CHRISTIAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (733, 'ENT_CHR_DEVIL', 'opposes', 'ENT_GNO_CHRIST', 'high', 'The Devil is opposed to Christ in Christian theology.', 'SRC_DDD_CHRISTIAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (769, 'ENT_HER_NOUS', 'embodies', 'ENT_WISDOM', 'high', 'Hermetic Nous is divine intellect/wisdom.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1218, 'ENT_ENOCH', 'patron_of', 'ENT_WRITING', 'medium', NULL, 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1219, 'ENT_ENOCH', 'mediates', 'ENT_REVELATION', 'medium', NULL, 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (797, 'ENT_ROM_JUPITER', 'patron_of', 'ENT_SOVEREIGNTY', 'high', 'Jupiter is central to Roman sovereignty, oaths, and state religion.', 'SRC_ROMAN_OCD', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (798, 'ENT_ROM_JUNO', 'patron_of', 'ENT_SOVEREIGNTY', 'medium', 'Juno is associated with queenship and state protection.', 'SRC_ROMAN_OCD', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (810, 'ENT_CEL_MORRIGAN', 'patron_of', 'ENT_DEATH', 'medium', 'Morrígan is associated with battlefield death and prophecy.', 'SRC_MACCANA_CELTIC_MYTH', 'reviewed');
@@ -5946,11 +5953,9 @@ INSERT INTO public.entity_relationships VALUES (1010, 'ENT_ISL_YAJUJ_MAJUJ', 'al
 INSERT INTO public.entity_relationships VALUES (1040, 'ENT_JM_KETER', 'identified_with', 'ENT_CROWN', 'high', 'Keter means Crown.', 'SRC_SCHOLEM_KABBALAH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1016, 'ENT_ISL_HUSAYN', 'mediates', 'ENT_INTERCESSION', 'medium', 'Husayn is associated with intercession/devotional mediation in Shi''a piety.', 'SRC_ISLAM_EI2', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1009, 'ENT_ISL_MALAK_AL_MAWT', 'identified_with', 'ENT_ISL_AZRAIL', 'medium', 'Azrail is a later/common name for the Angel of Death.', 'SRC_HADITH_GENERAL', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1042, 'ENT_JM_METATRON', 'identified_with', 'ENT_ENOCH', 'high', 'Metatron is often identified with transformed Enoch in 3 Enoch traditions.', 'SRC_3_ENOCH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1013, 'ENT_ISL_RIJAL_GHAYB', 'teaches', 'ENT_HIDDEN_KNOWLEDGE', 'medium', 'The invisible men belong to hidden/esoteric sainthood traditions.', 'SRC_ISLAM_EI2', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1014, 'ENT_ISL_ABDAL', 'teaches', 'ENT_HIDDEN_KNOWLEDGE', 'medium', 'Abdal belong to esoteric saintly cosmology.', 'SRC_ISLAM_EI2', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1003, 'ENT_ISL_MIKAIL', 'embodies', 'ENT_PROVISION', 'high', 'Mikail is associated with provision and mercy.', 'SRC_HADITH_GENERAL', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1037, 'ENT_JM_MERKABAH', 'undergoes_process', 'ENT_THEURGIC_ASENT', 'high', 'Merkabah mysticism is associated with heavenly ascent.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1005, 'ENT_ISL_SHAYATIN', 'deceives_or_tempts', 'ENT_TEMPTATION', 'high', 'Shayatin tempt and mislead humans.', 'SRC_QURAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1006, 'ENT_ISL_IBLIS', 'deceives_or_tempts', 'ENT_TEMPTATION', 'high', 'Iblis tempts humanity.', 'SRC_QURAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1034, 'ENT_JM_ADAM_KADMON', 'aligned_with', 'ENT_HER_ANTHROPOS', 'medium', 'Adam Kadmon overlaps structurally with primordial human/anthropos patterns.', 'SRC_SCHOLEM_KABBALAH', 'reviewed');
@@ -5966,6 +5971,8 @@ INSERT INTO public.entity_relationships VALUES (701, 'ENT_CHR_POWERS', 'member_o
 INSERT INTO public.entity_relationships VALUES (702, 'ENT_CHR_VIRTUES', 'member_of', 'ENT_CHR_ANGELS', 'high', 'Virtues are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1004, 'ENT_ISL_ISRAFIL', 'eschatological_role', 'ENT_RESURRECTION', 'high', 'Israfil sounds the trumpet of resurrection.', 'SRC_HADITH_GENERAL', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1036, 'ENT_JM_ADAM_KADMON', 'aligned_with', 'ENT_VAL_ANTHROPOS', 'medium', 'Adam Kadmon overlaps structurally with primordial human/anthropos patterns.', 'SRC_SCHOLEM_KABBALAH', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1037, 'ENT_JM_MERKABAH', 'undergoes_process', 'ENT_THEURGIC_ASENT', 'high', 'Merkabah mysticism is associated with heavenly ascent.', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1042, 'ENT_JM_METATRON', 'identified_with', 'ENT_ENOCH', 'high', 'Metatron is often identified with transformed Enoch in 3 Enoch traditions.', 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (703, 'ENT_CHR_DOMINIONS', 'member_of', 'ENT_CHR_ANGELS', 'high', 'Dominions are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (704, 'ENT_CHR_THRONES', 'member_of', 'ENT_CHR_ANGELS', 'high', 'Thrones are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1007, 'ENT_ISL_MAHDI', 'eschatological_role', 'ENT_APOCALYPSE', 'high', 'The Mahdi is an eschatological figure.', 'SRC_ISLAM_EI2', 'reviewed');
@@ -5980,20 +5987,21 @@ INSERT INTO public.entity_relationships VALUES (1041, 'ENT_JM_SHEKHINAH', 'embod
 INSERT INTO public.entity_relationships VALUES (1043, 'ENT_JM_SHEKHINAH', 'embodies', 'ENT_FEMININE_DIVINE', 'medium', 'Shekhinah is often symbolically feminized in Kabbalistic traditions.', 'SRC_ZOHAR', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1026, 'ENT_ISL_ALI', 'embodies', 'ENT_WALAYA', 'high', 'Ali is central to walaya in Shi''a and esoteric Islamic traditions.', 'SRC_ISLAM_EI2', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1056, 'ENT_CHR_BEHEMOTH', 'aligned_with', 'ENT_CHAOS', 'medium', 'Behemoth functions as a primordial/chaotic monster in reception.', 'SRC_DDD_CHRISTIAN', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1044, 'ENT_JM_MERKABAH', 'undergoes_process', 'ENT_HEAVENLY_JOURNEY', 'high', 'Merkabah traditions concern ascent through heavenly realms.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (626, 'ENT_SET_ELELETH', 'reveals', 'ENT_REVELATION', 'medium', 'Eleleth functions as a revelatory instructor in some Sethian texts.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (684, 'ENT_OPH_EVE_ZOE', 'reveals', 'ENT_REVELATION', 'medium', 'Eve/Zoe functions as life-giving or awakening figure in Gnostic reinterpretations.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1057, 'ENT_CHR_LEVIATHAN', 'aligned_with', 'ENT_CHAOS', 'high', 'Leviathan is a chaos monster in biblical and Christian reception.', 'SRC_DDD_CHRISTIAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1015, 'ENT_ISL_ALI', 'teaches', 'ENT_HIDDEN_KNOWLEDGE', 'medium', 'Ali is associated with esoteric knowledge in Shi''a and Sufi traditions.', 'SRC_ISLAM_EI2', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1050, 'ENT_JM_MERKABAH', 'identified_with', 'ENT_THRONE', 'high', 'Merkabah is the divine throne-chariot.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (588, 'ENT_ISR_AZAZEL', 'associated_ritual', 'ENT_SCAPEGOAT', 'high', 'Azazel is associated with the scapegoat ritual in Levitical tradition.', 'SRC_DDD_BIBLE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (714, 'ENT_CHR_DEMONS', 'associated_ritual', 'ENT_POSSESSION', 'high', 'Demons are strongly associated with possession in Christian demonology.', 'SRC_CHRISTIAN_DEMONOLOGY_GENERAL', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1052, 'ENT_JM_BINAH', 'embodies', 'ENT_UNDERSTANDING', 'high', 'Binah means Understanding.', 'SRC_SCHOLEM_KABBALAH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (497, 'ENT_MES_ERESHKIGAL', 'dwells_in', 'ENT_UNDERWORLD', 'high', 'Ereshkigal is queen of the underworld.', 'SRC_BLACK_GREEN_MESO', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1049, 'ENT_JM_METATRON', 'mediates', 'ENT_REVELATION', 'medium', 'Metatron mediates heavenly revelation and celestial bureaucracy.', 'SRC_3_ENOCH', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1054, 'ENT_JM_SAR_TORAH', 'teaches', 'ENT_WISDOM', 'medium', 'Sar Torah is associated with heavenly wisdom and learning.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1048, 'ENT_JM_SANDALPHON', 'associated_ritual', 'ENT_PRAYER', 'high', 'Sandalphon is associated with prayer and heavenly mediation.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1051, 'ENT_JM_SAR_TORAH', 'teaches', 'ENT_TORAH', 'high', 'Sar Torah is the Prince of Torah.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1044, 'ENT_JM_MERKABAH', 'undergoes_process', 'ENT_HEAVENLY_JOURNEY', 'high', 'Merkabah traditions concern ascent through heavenly realms.', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1050, 'ENT_JM_MERKABAH', 'identified_with', 'ENT_THRONE', 'high', 'Merkabah is the divine throne-chariot.', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1048, 'ENT_JM_SANDALPHON', 'associated_ritual', 'ENT_PRAYER', 'high', 'Sandalphon is associated with prayer and heavenly mediation.', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1051, 'ENT_JM_SAR_TORAH', 'teaches', 'ENT_TORAH', 'high', 'Sar Torah is the Prince of Torah.', 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1054, 'ENT_JM_SAR_TORAH', 'teaches', 'ENT_WISDOM', 'medium', 'Sar Torah is associated with heavenly wisdom and learning.', 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1049, 'ENT_JM_METATRON', 'mediates', 'ENT_REVELATION', 'medium', 'Metatron mediates heavenly revelation and celestial bureaucracy.', 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1055, 'ENT_JM_METATRON', 'patron_of', 'ENT_WRITING', 'high', 'Metatron functions as heavenly scribe.', 'SRC_3_ENOCH_ALEXANDER_OTP', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (705, 'ENT_CHR_CHERUBIM', 'member_of', 'ENT_CHR_ANGELS', 'high', 'Cherubim are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (706, 'ENT_CHR_SERAPHIM', 'member_of', 'ENT_CHR_ANGELS', 'high', 'Seraphim are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (707, 'ENT_CHR_ARCHANGELS', 'member_of', 'ENT_CHR_ANGELS', 'high', 'Archangels are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
@@ -6003,7 +6011,6 @@ INSERT INTO public.entity_relationships VALUES (724, 'ENT_CHR_VIRTUES', 'member_
 INSERT INTO public.entity_relationships VALUES (725, 'ENT_CHR_DOMINIONS', 'member_of', 'ENT_ANGELS', 'high', 'Dominions are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (726, 'ENT_CHR_THRONES', 'member_of', 'ENT_ANGELS', 'high', 'Thrones are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (366, 'ENT_ZEUS_KTESIOS_CULT', 'patron_of', 'ENT_PROTECTION', 'medium', 'Zeus Ktesios protects household possessions.', 'SRC_THEOI_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1055, 'ENT_JM_METATRON', 'patron_of', 'ENT_WRITING', 'high', 'Metatron functions as heavenly scribe.', 'SRC_3_ENOCH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (727, 'ENT_CHR_CHERUBIM', 'member_of', 'ENT_ANGELS', 'high', 'Cherubim are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (728, 'ENT_CHR_SERAPHIM', 'member_of', 'ENT_ANGELS', 'high', 'Seraphim are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (729, 'ENT_CHR_ARCHANGELS', 'member_of', 'ENT_ANGELS', 'high', 'Archangels are an angelic order.', 'SRC_PSEUDO_DIONYSIUS_CELESTIAL_HIERARCHY', 'reviewed');
@@ -6122,9 +6129,6 @@ INSERT INTO public.entity_relationships VALUES (995, 'ENT_ISL_IFRIT', 'member_of
 INSERT INTO public.entity_relationships VALUES (975, 'ENT_MANICH_JESUS_SPLENDOUR', 'reveals', 'ENT_REVELATION', 'high', 'Jesus Splendour functions as a revealer.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (987, 'ENT_ISL_JIBRIL', 'reveals', 'ENT_REVELATION', 'high', 'Jibril delivers revelation.', 'SRC_QURAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (979, 'ENT_MANICH_FATHER_GREATNESS', 'rules', 'ENT_MANICH_WORLD_LIGHT', 'high', 'The Father of Greatness is supreme deity of the World of Light.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1028, 'ENT_JM_OPHANIM', 'member_of', 'ENT_ANGELS', 'high', 'Ophanim are angelic beings associated with the throne vision.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1029, 'ENT_JM_CHAYYOT', 'member_of', 'ENT_ANGELS', 'high', 'Chayyot are angelic living creatures.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (1030, 'ENT_JM_HASHMALLIM', 'member_of', 'ENT_ANGELS', 'high', 'Hashmallim are radiant angelic beings.', 'SRC_HEKHALOT_LITERATURE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1038, 'ENT_JM_SEFIROT', 'has_member', 'ENT_JM_BINAH', 'high', 'Binah is a sephirah.', 'SRC_ZOHAR', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1046, 'ENT_JM_SEFIROT', 'has_member', 'ENT_JM_HOKHMAH', 'high', 'Hokhmah is a sephirah.', 'SRC_ZOHAR', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1047, 'ENT_JM_SEFIROT', 'has_member', 'ENT_JM_KETER', 'high', 'Keter is a sephirah.', 'SRC_ZOHAR', 'reviewed');
@@ -6143,6 +6147,9 @@ INSERT INTO public.entity_relationships VALUES (770, 'ENT_GNO_NOUS', 'embodies',
 INSERT INTO public.entity_relationships VALUES (771, 'ENT_VAL_NOUS', 'embodies', 'ENT_WISDOM', 'high', 'Hermetic Nous is divine intellect/wisdom.', 'SRC_CORPUS_HERMETICUM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1053, 'ENT_JM_HOKHMAH', 'embodies', 'ENT_WISDOM', 'high', 'Hokhmah means Wisdom.', 'SRC_SCHOLEM_KABBALAH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1045, 'ENT_JM_RAZIEL', 'teaches', 'ENT_HIDDEN_KNOWLEDGE', 'high', 'Raziel is angel of secrets/mysteries.', 'SRC_SCHOLEM_KABBALAH', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1028, 'ENT_JM_OPHANIM', 'member_of', 'ENT_ANGELS', 'high', 'Ophanim are angelic beings associated with the throne vision.', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1029, 'ENT_JM_CHAYYOT', 'member_of', 'ENT_ANGELS', 'high', 'Chayyot are angelic living creatures.', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1030, 'ENT_JM_HASHMALLIM', 'member_of', 'ENT_ANGELS', 'high', 'Hashmallim are radiant angelic beings.', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
 
 
 --
@@ -17160,19 +17167,19 @@ INSERT INTO public.staging_relationships VALUES ('Dragon of Revelation', 'oppose
 -- Name: entity_aliases_alias_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.entity_aliases_alias_id_seq', 180, true);
+SELECT pg_catalog.setval('public.entity_aliases_alias_id_seq', 181, true);
 
 
 --
 -- Name: entity_relationships_relationship_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1210, true);
+SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1219, true);
 
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict pfLgrzfGw6gVJUj3Sc2ZCByTka1YzbvR7z7auIIRekhxPSYSWOdPc1hRJEOlz3j
+\unrestrict QppgFheyeUAq4hYIcqmg8VMTmOzt2ulHaWOHyfhv8A6rnE9PGOov2I1QpydXfGz
 
