@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict pSU1jIcpNAwIa5XDJN4MYOSLljdD158z509FBIcJwml2LIzElm0DkP0FixhOY2i
+\restrict sznHC1pb7p6DYz5GvDIX4NPKz92TsvqSLWsEsyqjGFH4DKvi81cpHccj1cWJ1JC
 
 -- Dumped from database version 17.10 (Debian 17.10-1.pgdg13+1)
 -- Dumped by pg_dump version 17.10 (Debian 17.10-1.pgdg13+1)
@@ -5141,13 +5141,9 @@ INSERT INTO public.entity_relationships VALUES (181, 'ENT_ZEUS', 'parent_of', 'E
 INSERT INTO public.entity_relationships VALUES (183, 'ENT_ZEUS', 'parent_of', 'ENT_MUSES', 'medium', 'The Muses are commonly daughters of Zeus and Mnemosyne.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (185, 'ENT_ASCLEPIUS', 'parent_of', 'ENT_PODALIRIUS', 'medium', 'Podalirius is a son of Asclepius in heroic healing tradition.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (248, 'ENT_EGY_ATUM', 'cult_form_of', 'ENT_EGY_RA', 'medium', 'Atum is an evening/creator solar form related to Ra in solar theology.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (249, 'ENT_EGY_THOTH', 'aligned_with', 'ENT_EGY_ISIS', 'medium', 'Thoth and Isis both occupy major magical and healing roles.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (951, 'ENT_GNO_ARCHONS', 'belongs_to_realm', 'ENT_DARKNESS', 'high', 'Manichaean archons are powers of Darkness.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (250, 'ENT_EGY_THOTH', 'aligned_with', 'ENT_EGY_KHONSU', 'medium', 'Thoth and Khonsu share lunar associations.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (254, 'ENT_EGY_THOTH', 'aligned_with', 'ENT_EGY_SESHAT', 'high', 'Thoth and Seshat share writing, record-keeping, and measurement domains.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (256, 'ENT_EGY_SIA', 'aligned_with', 'ENT_EGY_THOTH', 'medium', 'Sia as perception/intelligence overlaps with Thoth’s knowledge domain.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (274, 'ENT_EGY_MERETSEGER', 'aligned_with', 'ENT_EGY_AMUN', 'medium', 'Meretseger belongs to Theban necropolis religion in the orbit of Theban cult.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (338, 'ENT_EGY_ISIS', 'aligned_with', 'ENT_EGY_THOTH', 'medium', 'Isis and Thoth both operate in magical and healing traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (579, 'ENT_ISR_MICHAEL', 'opposes', 'ENT_ISR_BELIAL', 'medium', 'Michael and Belial represent opposed heavenly/adversarial forces in Second Temple-style dualistic frameworks.', 'SRC_DDD_BIBLE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (590, 'ENT_GNO_ZOE', 'member_of', 'ENT_GNO_AEONS', 'medium', 'Zoe/Life appears as an aeonic figure in several systems.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (591, 'ENT_GNO_NOUS', 'member_of', 'ENT_GNO_AEONS', 'medium', 'Nous/Mind appears as an aeonic/intellect principle.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
@@ -5156,7 +5152,6 @@ INSERT INTO public.entity_relationships VALUES (953, 'ENT_CHR_DEMONS', 'belongs_
 INSERT INTO public.entity_relationships VALUES (964, 'ENT_MANICH_FATHER_GREATNESS', 'belongs_to_realm', 'ENT_LIGHT', 'high', 'The Father of Greatness belongs to and rules the World of Light.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (966, 'ENT_MANICH_ARCHONS', 'belongs_to_realm', 'ENT_MANICH_MATTER', 'high', 'Manichaean archons participate in material/dark captivity.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (967, 'ENT_GNO_ARCHONS', 'belongs_to_realm', 'ENT_MANICH_MATTER', 'high', 'Manichaean archons participate in material/dark captivity.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (945, 'ENT_MAN_UR', 'aligned_with', 'ENT_DARKNESS', 'high', 'Ur is associated with darkness/lower-world monstrous power.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (968, 'ENT_MANICH_KING_DARKNESS', 'aligned_with', 'ENT_MANICH_MATTER', 'high', 'King of Darkness belongs to the dark/material principle.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (969, 'ENT_MANICH_LIGHT_PARTICLES', 'aligned_with', 'ENT_MANICH_MATTER', 'high', 'Light particles are trapped in matter.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (573, 'ENT_ISR_MICHAEL', 'patron_of', 'ENT_SOVEREIGNTY', 'medium', 'Michael acts as a heavenly prince under divine authority.', 'SRC_DDD_BIBLE', 'reviewed');
@@ -5176,6 +5171,11 @@ INSERT INTO public.entity_relationships VALUES (594, 'ENT_GNO_ANTHROPOS', 'membe
 INSERT INTO public.entity_relationships VALUES (563, 'ENT_ISR_BEHEMOTH', 'aligned_with', 'ENT_EARTH', 'medium', 'Behemoth is a land monster paired with Leviathan in later apocalyptic imagination.', 'SRC_DDD_BIBLE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (572, 'ENT_ISR_LEVIATHAN', 'aligned_with', 'ENT_WATER', 'high', 'Leviathan is a sea monster associated with chaotic waters.', 'SRC_DDD_BIBLE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (761, 'ENT_LAT_AGATHOS_DAIMON_HERMETIC', 'reveals', 'ENT_REVELATION', 'medium', 'Hermetic Agathos Daimon functions in revelatory teacher traditions.', 'SRC_ASCLEPIUS_HERMETICA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (250, 'ENT_EGY_THOTH', 'paired_with', 'ENT_EGY_KHONSU', 'medium', 'Thoth and Khonsu share lunar associations.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (254, 'ENT_EGY_THOTH', 'paired_with', 'ENT_EGY_SESHAT', 'high', 'Thoth and Seshat share writing, record-keeping, and measurement domains.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (249, 'ENT_EGY_THOTH', 'paired_with', 'ENT_EGY_ISIS', 'medium', 'Thoth and Isis both occupy major magical and healing roles.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (338, 'ENT_EGY_ISIS', 'paired_with', 'ENT_EGY_THOTH', 'medium', 'Isis and Thoth both operate in magical and healing traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (945, 'ENT_MAN_UR', 'belongs_to_realm', 'ENT_DARKNESS', 'high', 'Ur is associated with darkness/lower-world monstrous power.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (652, 'ENT_SOTER', 'savior_of', 'ENT_SALVATION', 'high', 'Soter means Savior and is associated with restoration/salvation.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (553, 'ENT_ISR_SOPHIA', 'embodies', 'ENT_WISDOM', 'high', 'Sophia/Wisdom is personified wisdom.', 'SRC_DDD_BIBLE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (97, 'ENT_DEMETER', 'aligned_with', 'ENT_IACCHUS', 'medium', 'Iacchus is associated with Eleusinian mystery procession.', 'SRC_THEOI_GODS', 'reviewed');
@@ -5185,11 +5185,11 @@ INSERT INTO public.entity_relationships VALUES (99, 'ENT_CABEIRI', 'syncretized_
 INSERT INTO public.entity_relationships VALUES (650, 'ENT_VAL_BRIDAL_CHAMBER', 'aligned_with', 'ENT_SALVATION', 'medium', 'The bridal chamber symbolizes union/restoration in Valentinian sacramental imagination.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (753, 'ENT_THEURGY', 'aligned_with', 'ENT_MAGIC', 'medium', 'Theurgy and magic overlap ritually but require conceptual distinction.', 'SRC_IAMBLICHUS_DE_MYSTERIIS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (918, 'ENT_MAN_JORDAN', 'aligned_with', 'ENT_WATER', 'high', 'Jordan/living water is a ritual water category.', 'SRC_DROWER_MANDAEANS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (936, 'ENT_MAN_RUHA', 'aligned_with', 'ENT_MAN_PLANETS', 'high', 'Ruha is associated with lower planetary powers.', 'SRC_GINZA_RBA', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (928, 'ENT_MAN_PTAHIL', 'aligned_with', 'ENT_EARTH', 'medium', 'Ptahil is tied to material-world formation.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (920, 'ENT_MAN_HIBIL_ZIWA', 'dwells_in', 'ENT_UNDERWORLD', 'medium', 'Hibil Ziwa is associated with descent into lower/chthonic realms.', 'SRC_GINZA_RBA', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (932, 'ENT_MAN_MANA_RABBA', 'aligned_with', 'ENT_GNO_NOUS', 'medium', 'Mana Rabba as Great Mind overlaps with divine Mind/Nous categories.', 'SRC_GINZA_RBA', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (935, 'ENT_MAN_MANA_RABBA', 'aligned_with', 'ENT_VAL_NOUS', 'medium', 'Mana Rabba as Great Mind overlaps with divine Mind/Nous categories.', 'SRC_GINZA_RBA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (932, 'ENT_MAN_MANA_RABBA', 'identified_with', 'ENT_GNO_NOUS', 'medium', 'Mana Rabba as Great Mind overlaps with divine Mind/Nous categories.', 'SRC_GINZA_RBA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (935, 'ENT_MAN_MANA_RABBA', 'identified_with', 'ENT_VAL_NOUS', 'medium', 'Mana Rabba as Great Mind overlaps with divine Mind/Nous categories.', 'SRC_GINZA_RBA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (928, 'ENT_MAN_PTAHIL', 'belongs_to_realm', 'ENT_EARTH', 'medium', 'Ptahil is tied to material-world formation.', 'SRC_GINZA_RBA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (936, 'ENT_MAN_RUHA', 'member_of', 'ENT_MAN_PLANETS', 'high', 'Ruha is associated with lower planetary powers.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1068, 'ENT_CHR_ABADDON', 'dwells_in', 'ENT_ABYSS', 'high', 'Abaddon is associated with the abyss in apocalyptic tradition.', 'SRC_DDD_CHRISTIAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (91, 'ENT_CERBERUS', 'guardian_of', 'ENT_HADES', 'medium', 'Cerberus guards the realm of Hades.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (92, 'ENT_CERBERUS', 'guardian_of', 'ENT_PERSEPHONE', 'medium', 'Cerberus guards the underworld ruled by Hades and Persephone.', 'SRC_THEOI_GODS', 'reviewed');
@@ -5256,7 +5256,6 @@ INSERT INTO public.entity_relationships VALUES (1092, 'ENT_ISR_URIEL', 'opposes'
 INSERT INTO public.entity_relationships VALUES (1093, 'ENT_LAT_ANAEL', 'opposes', 'ENT_LAT_ONOSKELIS', 'medium', 'Anael is associated with angelic/planetary authority over passions and anti-demonic constraint in Solomonic-type traditions.', 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (226, 'ENT_EGY_APEP', 'opposes', 'ENT_EGY_RA', 'high', 'Apep is the enemy of Ra in the nocturnal solar journey.', 'SRC_HORNUNG_DUAT', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1094, 'ENT_LAT_DECAN_ARTOSAEL', 'member_of', 'ENT_LAT_DECANS', 'medium', 'This demon belongs to the decan-spirit sequence in the Testament of Solomon.', 'SRC_TESTAMENT_SOLOMON', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (241, 'ENT_EGY_HU', 'aligned_with', 'ENT_EGY_RA', 'medium', 'Hu accompanies authoritative divine utterance in solar/theological contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (297, 'ENT_EGY_AMMIT', 'causes_affliction', 'ENT_DEAD', 'medium', 'Ammit devours the condemned dead in judgment contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1095, 'ENT_LAT_DECAN_BARSAPHAEL', 'member_of', 'ENT_LAT_DECANS', 'medium', 'This demon belongs to the decan-spirit sequence in the Testament of Solomon.', 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (315, 'ENT_THANATOS', 'embodies', 'ENT_DEAD', 'high', 'Thanatos personifies death and is directly associated with the dead.', 'SRC_THEOI_GODS', 'reviewed');
@@ -5264,8 +5263,9 @@ INSERT INTO public.entity_relationships VALUES (1096, 'ENT_LAT_DECAN_BELBEL', 'm
 INSERT INTO public.entity_relationships VALUES (1097, 'ENT_LAT_DECAN_KOURTAEL', 'member_of', 'ENT_LAT_DECANS', 'medium', 'This demon belongs to the decan-spirit sequence in the Testament of Solomon.', 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1098, 'ENT_LAT_DECAN_KOURTAEL_2', 'member_of', 'ENT_LAT_DECANS', 'medium', 'This demon belongs to the decan-spirit sequence in the Testament of Solomon.', 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1099, 'ENT_LAT_DECAN_MARMARETH', 'member_of', 'ENT_LAT_DECANS', 'medium', 'This demon belongs to the decan-spirit sequence in the Testament of Solomon.', 'SRC_TESTAMENT_SOLOMON', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (243, 'ENT_EGY_MAAT', 'aligned_with', 'ENT_EGY_RA', 'high', 'Maat is central to solar and cosmic order.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (215, 'ENT_EGY_WEPWAWET', 'aligned_with', 'ENT_EGY_ANUBIS', 'medium', 'Both are jackal/canine funerary or way-opening deities.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (215, 'ENT_EGY_WEPWAWET', 'paired_with', 'ENT_EGY_ANUBIS', 'medium', 'Both are jackal/canine funerary or way-opening deities.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (241, 'ENT_EGY_HU', 'embodies', 'ENT_EGY_RA', 'medium', 'Hu accompanies authoritative divine utterance in solar/theological contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (243, 'ENT_EGY_MAAT', 'embodies', 'ENT_EGY_RA', 'high', 'Maat is central to solar and cosmic order.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (223, 'ENT_EGY_ANUBIS', 'belongs_to_realm', 'ENT_EGY_OSIRIS', 'high', 'Anubis is closely associated with Osirian funerary theology.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (239, 'ENT_EGY_RA', 'opposes', 'ENT_EGY_APEP', 'high', 'Apep is the enemy of Ra in the nocturnal solar journey.', 'SRC_HORNUNG_DUAT', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (217, 'ENT_EGY_HAPY_SON_OF_HORUS', 'member_of', 'ENT_EGY_FOUR_SONS_OF_HORUS', 'high', 'Hapy is one of the Four Sons of Horus.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
@@ -5285,19 +5285,19 @@ INSERT INTO public.entity_relationships VALUES (202, 'ENT_EGY_GEB', 'parent_of',
 INSERT INTO public.entity_relationships VALUES (265, 'ENT_EGY_MAFDET', 'protects', 'ENT_EGY_RA', 'medium', 'Mafdet functions as a protective destroyer of dangerous beings in royal/solar contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (267, 'ENT_EGY_SERQET', 'protects', 'ENT_EGY_OSIRIS', 'medium', 'Serqet participates in funerary protection around Osirian theology.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (278, 'ENT_EGY_AKER', 'protects', 'ENT_EGY_RA', 'medium', 'Aker is associated with horizon/underworld protection in solar-afterlife contexts.', 'SRC_HORNUNG_DUAT', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (263, 'ENT_EGY_PTAH', 'aligned_with', 'ENT_EGY_SESHAT', 'medium', 'Ptah and Seshat overlap in craft, measurement, and temple foundation contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (264, 'ENT_EGY_PTAH', 'aligned_with', 'ENT_EGY_TATENEN', 'medium', 'Ptah and Tatenen overlap in Memphite creator/earth theology.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (252, 'ENT_EGY_SESHAT', 'aligned_with', 'ENT_EGY_PTAH', 'medium', 'Seshat and Ptah overlap in temple foundation, measurement, and craft/order contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (253, 'ENT_EGY_HU', 'aligned_with', 'ENT_EGY_PTAH', 'medium', 'Hu as authoritative utterance overlaps with Ptah’s creative speech theology.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (259, 'ENT_EGY_NEITH', 'aligned_with', 'ENT_EGY_PTAH', 'medium', 'Neith and Ptah share creator/craft associations in some theological contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (253, 'ENT_EGY_HU', 'embodies', 'ENT_EGY_PTAH', 'medium', 'Hu as authoritative utterance overlaps with Ptah’s creative speech theology.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (279, 'ENT_EGY_SHESMETET', 'paired_with', 'ENT_EGY_SEKHMET', 'medium', 'Shesmetet overlaps with lioness/fierce protective goddess traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (252, 'ENT_EGY_SESHAT', 'paired_with', 'ENT_EGY_PTAH', 'medium', 'Seshat and Ptah overlap in temple foundation, measurement, and craft/order contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (268, 'ENT_EGY_HATHOR', 'paired_with', 'ENT_EGY_SEKHMET', 'medium', 'Hathor and Sekhmet overlap in solar/lioness goddess transformations.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (280, 'ENT_EGY_BASTET', 'paired_with', 'ENT_EGY_SEKHMET', 'medium', 'Bastet and Sekhmet are linked through feline protective goddess traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (263, 'ENT_EGY_PTAH', 'paired_with', 'ENT_EGY_SESHAT', 'medium', 'Ptah and Seshat overlap in craft, measurement, and temple foundation contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (259, 'ENT_EGY_NEITH', 'identified_with', 'ENT_EGY_PTAH', 'medium', 'Neith and Ptah share creator/craft associations in some theological contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (264, 'ENT_EGY_PTAH', 'identified_with', 'ENT_EGY_TATENEN', 'medium', 'Ptah and Tatenen overlap in Memphite creator/earth theology.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (247, 'ENT_EGY_SIA', 'embodies', 'ENT_EGY_RA', 'medium', 'Sia accompanies solar/theological knowledge traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (251, 'ENT_EGY_THOTH', 'judges', 'ENT_EGY_MAAT', 'high', 'Thoth and Maat are closely linked in judgment, truth, and cosmic order.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (247, 'ENT_EGY_SIA', 'aligned_with', 'ENT_EGY_RA', 'medium', 'Sia accompanies solar/theological knowledge traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (268, 'ENT_EGY_HATHOR', 'aligned_with', 'ENT_EGY_SEKHMET', 'medium', 'Hathor and Sekhmet overlap in solar/lioness goddess transformations.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (287, 'ENT_EGY_HAPY_NILE', 'embodies', 'ENT_NILE', 'high', 'Hapy personifies Nile inundation.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (275, 'ENT_EGY_WADJET', 'guardian_of', 'ENT_EGY_HORUS', 'medium', 'Wadjet is a royal protective cobra goddess associated with kingship and Horus.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (276, 'ENT_EGY_NEKHBET', 'guardian_of', 'ENT_EGY_HORUS', 'medium', 'Nekhbet is a royal protective vulture goddess associated with kingship and Horus.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (279, 'ENT_EGY_SHESMETET', 'aligned_with', 'ENT_EGY_SEKHMET', 'medium', 'Shesmetet overlaps with lioness/fierce protective goddess traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (280, 'ENT_EGY_BASTET', 'aligned_with', 'ENT_EGY_SEKHMET', 'medium', 'Bastet and Sekhmet are linked through feline protective goddess traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (258, 'ENT_EGY_KHNUM', 'paired_with', 'ENT_EGY_HEKET', 'medium', 'Khnum and Heket are linked in creation/birth traditions.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (273, 'ENT_EGY_TAWERET', 'paired_with', 'ENT_EGY_HEKET', 'medium', 'Both are connected to childbirth and protective birth contexts.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (277, 'ENT_EGY_WADJET', 'paired_with', 'ENT_EGY_NEKHBET', 'high', 'Wadjet and Nekhbet form the Two Ladies protective royal pair.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
@@ -5411,7 +5411,6 @@ INSERT INTO public.entity_relationships VALUES (351, 'ENT_CYCLOPES_CRAFTSMEN', '
 INSERT INTO public.entity_relationships VALUES (354, 'ENT_DAEDALUS', 'patron_of', 'ENT_TECHNOLOGY', 'high', 'Daedalus is a mythic craftsman and inventor.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (355, 'ENT_PROMETHEUS', 'patron_of', 'ENT_TECHNOLOGY', 'medium', 'Prometheus is a culture hero associated with fire and human technical capacity.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (356, 'ENT_EGY_THOTH', 'patron_of', 'ENT_WRITING', 'high', 'Thoth is a major Egyptian god of writing and scribal knowledge.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (402, 'ENT_EGY_SETH', 'aligned_with', 'ENT_CONFLICT', 'high', 'Seth is associated with violence, disorder, and divine conflict.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (410, 'ENT_ENYO', 'embodies', 'ENT_WAR', 'high', 'Enyo is a war goddess/personification.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (414, 'ENT_EGY_AMMIT', 'causes_affliction', 'ENT_DEATH', 'medium', 'Ammit is associated with destruction of the condemned dead.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (421, 'ENT_MOROS', 'embodies', 'ENT_DEATH', 'medium', 'Moros is associated with doom and mortality.', 'SRC_THEOI_GODS', 'reviewed');
@@ -5445,6 +5444,7 @@ INSERT INTO public.entity_relationships VALUES (73, 'ENT_MUSES', 'has_member', '
 INSERT INTO public.entity_relationships VALUES (74, 'ENT_MUSES', 'has_member', 'ENT_CLIO', 'high', 'Clio is one of the Muses.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (453, 'ENT_MES_ERESHKIGAL', 'rules', 'ENT_DEAD', 'high', 'Ereshkigal rules the underworld and the dead.', 'SRC_BLACK_GREEN_MESO', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1115, 'ENT_LAT_DECAN_SPHENDONAEL', 'causes_affliction', 'ENT_DISEASE', 'medium', 'This decan demon is associated with bodily disease or affliction in the Testament of Solomon.', 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (402, 'ENT_EGY_SETH', 'embodies', 'ENT_CONFLICT', 'high', 'Seth is associated with violence, disorder, and divine conflict.', 'SRC_WILKINSON_EGYPTIAN_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (429, 'ENT_APOLLO', 'patron_of', 'ENT_MUSIC', 'high', 'Apollo is a major Greek god of music.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (394, 'ENT_PRIAPUS', 'patron_of', 'ENT_FERTILITY', 'high', 'Priapus is a Greek rustic fertility god.', 'SRC_THEOI_GODS', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (399, 'ENT_APHRODITE', 'patron_of', 'ENT_LOVE', 'high', 'Aphrodite is the major Greek goddess of love and beauty.', 'SRC_THEOI_GODS', 'reviewed');
@@ -5614,7 +5614,7 @@ INSERT INTO public.entity_relationships VALUES (207, 'ENT_EGY_TEFNUT', 'parent_o
 INSERT INTO public.entity_relationships VALUES (1144, 'ENT_LAT_DECAN_PHETH', 'member_of', 'ENT_LAT_DECANS', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1145, 'ENT_LAT_DECAN_AKTON', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1146, 'ENT_LAT_DECAN_ALATH', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (615, 'ENT_SET_GERADAMAS', 'aligned_with', 'ENT_GNO_ANTHROPOS', 'high', 'Geradamas is a primordial heavenly Adam/human figure.', 'SRC_NHC', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (631, 'ENT_SET_EPINNOIA', 'embodies', 'ENT_WISDOM', 'medium', 'Epinoia/afterthought overlaps with insight, awakening, and wisdom motifs.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (619, 'ENT_SET_AUTOGENES', 'emanates_from', 'ENT_SET_BARBELO', 'high', 'Autogenes is closely associated with Barbelo in Sethian emanation structures.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (598, 'ENT_GNO_DEMIURGE', 'creator_of', 'ENT_CREATION', 'high', 'The Demiurge is the lower world-maker.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (597, 'ENT_GNO_SOPHIA', 'participates_in_creation', 'ENT_CREATION', 'medium', 'Sophia’s fall often triggers lower creation/demiurgic generation.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
@@ -5627,10 +5627,8 @@ INSERT INTO public.entity_relationships VALUES (601, 'ENT_GNO_SAKLAS', 'cult_for
 INSERT INTO public.entity_relationships VALUES (618, 'ENT_SET_YOUEL', 'aligned_with', 'ENT_SET_BARBELO', 'medium', 'Youel is associated with Barbelo traditions and revelatory instruction.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (617, 'ENT_SET_NOREA', 'opposes', 'ENT_GNO_ARCHONS', 'medium', 'Norea resists archontic powers in related traditions.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (628, 'ENT_SET_NOREA', 'aligned_with', 'ENT_SALVATION', 'medium', 'Norea appears as a saved/revealed figure resisting archontic powers.', 'SRC_NHC', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (616, 'ENT_SET_ADAMAS', 'aligned_with', 'ENT_GNO_ANTHROPOS', 'medium', 'Adamas overlaps with the heavenly human/primordial human pattern.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (629, 'ENT_SET_SETH', 'parent_of', 'ENT_SET_SEED_OF_SETH', 'high', 'The Seed of Seth is the spiritual/elect lineage associated with Seth.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (623, 'ENT_SET_BARBELO', 'emanates_from', 'ENT_GNO_MONAD', 'high', 'Barbelo is the first emanation/thought from the transcendent source in Sethian systems.', 'SRC_NHC', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (631, 'ENT_SET_EPINNOIA', 'aligned_with', 'ENT_WISDOM', 'medium', 'Epinoia/afterthought overlaps with insight, awakening, and wisdom motifs.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1147, 'ENT_LAT_DECAN_ALLEBORITH', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1148, 'ENT_LAT_DECAN_ANATRETH', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1149, 'ENT_LAT_DECAN_ANOSTER', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
@@ -5663,6 +5661,8 @@ INSERT INTO public.entity_relationships VALUES (1162, 'ENT_LAT_DECAN_BIANAKITH',
 INSERT INTO public.entity_relationships VALUES (1163, 'ENT_LAT_DECAN_HEPHESIKIRETH', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1164, 'ENT_LAT_DECAN_ICHTHION', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1165, 'ENT_LAT_DECAN_PHTHENOTH', 'causes_affliction', 'ENT_DISEASE', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (615, 'ENT_SET_GERADAMAS', 'identified_with', 'ENT_GNO_ANTHROPOS', 'high', 'Geradamas is a primordial heavenly Adam/human figure.', 'SRC_NHC', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (616, 'ENT_SET_ADAMAS', 'identified_with', 'ENT_GNO_ANTHROPOS', 'medium', 'Adamas overlaps with the heavenly human/primordial human pattern.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (645, 'ENT_VAL_SOTER', 'identified_with', 'ENT_GNO_CHRIST', 'medium', 'Soter/ Savior overlaps with Christic restoration in Valentinian systems.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (653, 'ENT_VAL_BYTHOS', 'spouse_of', 'ENT_VAL_SIGE', 'medium', 'Bythos and Sige form a primal Valentinian pair in some accounts.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (677, 'ENT_OPH_SERPENT', 'aligned_with', 'ENT_FORBIDDEN_KNOWLEDGE', 'medium', 'The serpent is associated with forbidden/hidden knowledge in Eden reinterpretation traditions.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
@@ -5709,7 +5709,7 @@ INSERT INTO public.entity_relationships VALUES (1208, 'ENT_LAT_RATHANAEL', 'oppo
 INSERT INTO public.entity_relationships VALUES (715, 'ENT_CHR_ANTICHRIST', 'deceives_or_tempts', 'ENT_DECEPTION', 'medium', 'Antichrist traditions include deception and false appearance.', 'SRC_DDD_CHRISTIAN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1209, 'ENT_ISR_SOLOMON', 'rules', 'ENT_LAT_WINGED_DRAGON', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (1210, 'ENT_LAT_BAZAZATH', 'opposes', 'ENT_LAT_WINGED_DRAGON', 'medium', NULL, 'SRC_TESTAMENT_SOLOMON', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (698, 'ENT_THO_SOLITARY', 'aligned_with', 'ENT_UNION', 'medium', 'The solitary/single one may symbolize integration or restored unity.', 'SRC_NHC', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (698, 'ENT_THO_SOLITARY', 'associated_ritual', 'ENT_UNION', 'medium', 'The solitary/single one may symbolize integration or restored unity.', 'SRC_NHC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (688, 'ENT_OPH_EVE_ZOE', 'identified_with', 'ENT_VAL_ZOE', 'high', 'Eve/Zoe overlaps with the Life/Zoe revealer pattern.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (689, 'ENT_OPH_EVE_ZOE', 'identified_with', 'ENT_GNO_ZOE', 'high', 'Eve/Zoe overlaps with the Life/Zoe revealer pattern.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (717, 'ENT_CHR_DEVIL', 'identified_with', 'ENT_ISR_SATAN', 'high', 'The Devil is identified with Satan in Christian reception.', 'SRC_DDD_CHRISTIAN', 'reviewed');
@@ -5887,13 +5887,14 @@ INSERT INTO public.entity_relationships VALUES (925, 'ENT_MAN_SITIL', 'belongs_t
 INSERT INTO public.entity_relationships VALUES (926, 'ENT_MAN_MELKA_D_NHURA', 'belongs_to_realm', 'ENT_LIGHT', 'high', 'Melka d-Nhura means King of Light.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (948, 'ENT_MANICH_JESUS_SPLENDOUR', 'identified_with', 'ENT_GNO_CHRIST', 'medium', 'Jesus Splendour overlaps with Christic revealer/savior traditions in Manichaeism.', 'SRC_LIEU_MANICHAEISM', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (927, 'ENT_MAN_HAYYI_RABBI', 'belongs_to_realm', 'ENT_LIGHT', 'high', 'Hayyi Rabbi is supreme source of the world of light.', 'SRC_GINZA_RBA', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (930, 'ENT_MAN_RUHA', 'aligned_with', 'ENT_GNO_ARCHONS', 'medium', 'Ruha and planetary powers overlap structurally with archontic lower-world rulers.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (939, 'ENT_MAN_JOHN_BAPTIST', 'associated_ritual', 'ENT_MAN_JORDAN', 'high', 'John is associated with Jordan/living water baptismal tradition.', 'SRC_MANDAEAN_BOOK_JOHN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (923, 'ENT_MAN_PTAHIL', 'participates_in_creation', 'ENT_CREATION', 'high', 'Ptahil participates in material/world creation.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (950, 'ENT_MANICH_GREAT_BUILDER', 'participates_in_creation', 'ENT_CREATION', 'medium', 'Great Builder participates in cosmic construction/ordering.', 'SRC_MANICHAEAN_KEPHALAIA', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (913, 'ENT_MAN_MANA_RABBA', 'aligned_with', 'ENT_HER_NOUS', 'medium', 'Mana Rabba as Great Mind overlaps with divine Mind/Nous categories.', 'SRC_GINZA_RBA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (930, 'ENT_MAN_RUHA', 'identified_with', 'ENT_GNO_ARCHONS', 'medium', 'Ruha and planetary powers overlap structurally with archontic lower-world rulers.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (940, 'ENT_SAINT_JOHN_BAPTIST', 'associated_ritual', 'ENT_MAN_JORDAN', 'high', 'John is associated with Jordan/living water baptismal tradition.', 'SRC_MANDAEAN_BOOK_JOHN', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (944, 'ENT_MAN_ABATHUR', 'judges', 'ENT_SCALES', 'high', 'Abathur is associated with scales and judgment.', 'SRC_GINZA_RBA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (913, 'ENT_MAN_MANA_RABBA', 'identified_with', 'ENT_HER_NOUS', 'medium', 'Mana Rabba as Great Mind overlaps with divine Mind/Nous categories.', 'SRC_GINZA_RBA', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (916, 'ENT_MAN_PLANETS', 'embodies', 'ENT_FATE', 'medium', 'Planetary powers are associated with fate/determinative lower-world order.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (917, 'ENT_MAN_RUHA', 'embodies', 'ENT_DESIRE', 'medium', 'Ruha has associations with sexuality/desire in adversarial cosmology.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (941, 'ENT_MAN_HAYYI_RABBI', 'embodies', 'ENT_LIFE', 'high', 'Hayyi Rabbi means the Great Life.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (921, 'ENT_MAN_JOHN_BAPTIST', 'identified_with', 'ENT_SAINT_JOHN_BAPTIST', 'high', 'Mandaean John corresponds to the broader John the Baptist figure.', 'SRC_MANDAEAN_BOOK_JOHN', 'reviewed');
@@ -5912,7 +5913,6 @@ INSERT INTO public.entity_relationships VALUES (947, 'ENT_MANICH_LIGHT_MIND', 's
 INSERT INTO public.entity_relationships VALUES (929, 'ENT_MAN_YUSHAMIN', 'undergoes_process', 'ENT_FALL', 'medium', 'Yushamin is associated with rebellion/failure in emanation traditions.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (943, 'ENT_MAN_HIBIL_ZIWA', 'undergoes_process', 'ENT_DESCENT', 'high', 'Hibil Ziwa descends into lower realms in Mandaean myth.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (946, 'ENT_MANICH_COLUMN_GLORY', 'undergoes_process', 'ENT_THEURGIC_ASENT', 'high', 'Column of Glory is associated with ascent of light.', 'SRC_MANICHAEAN_KEPHALAIA', 'reviewed');
-INSERT INTO public.entity_relationships VALUES (916, 'ENT_MAN_PLANETS', 'aligned_with', 'ENT_FATE', 'medium', 'Planetary powers are associated with fate/determinative lower-world order.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (910, 'ENT_MAN_PLANETS', 'belongs_to_realm', 'ENT_PLANETARY_SPHERES', 'high', 'Seven planets correspond to lower planetary/cosmic powers.', 'SRC_GINZA_RBA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (673, 'ENT_OPH_SABAOTH', 'member_of', 'ENT_GNO_ARCHONS', 'high', 'Sabaoth is an archontic ruler in these lists.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (674, 'ENT_GNO_SABAOTH', 'member_of', 'ENT_GNO_ARCHONS', 'high', 'Sabaoth is an archontic ruler in these lists.', 'SRC_LAYTON_GNOSTIC', 'reviewed');
@@ -17191,5 +17191,5 @@ SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1226
 -- PostgreSQL database dump complete
 --
 
-\unrestrict pSU1jIcpNAwIa5XDJN4MYOSLljdD158z509FBIcJwml2LIzElm0DkP0FixhOY2i
+\unrestrict sznHC1pb7p6DYz5GvDIX4NPKz92TsvqSLWsEsyqjGFH4DKvi81cpHccj1cWJ1JC
 
