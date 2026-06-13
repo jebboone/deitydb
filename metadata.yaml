@@ -1,0 +1,518 @@
+title: DeityDB
+description_html: |
+  <p>DeityDB is an open comparative database of spiritual beings across Western religious traditions.</p>
+  <p>It maps gods, angels, demons, aeons, prophets, saints, heroes, spirits, monsters, and cosmological
+  realms — together with the scholarly sources and reception chains that connect them across traditions
+  and centuries.</p>
+  <p>The database distinguishes entity kinds rather than collapsing everything into "gods," and tracks
+  how divine figures were received and reinterpreted as they moved between traditions.</p>
+  <p>Traditions covered: Greek · Egyptian · Mesopotamian · Canaanite/Ugaritic · Israelite/Second Temple ·
+  Roman · Celtic (Irish, Welsh, Gaulish) · Germanic/Norse · Christian · Gnostic · Mandaean · Manichaean ·
+  Zoroastrian · Islamic · Jewish Mystical · Hermetic · Etruscan · Scythian · Phrygian · Pre-Islamic
+  Arabian · South Arabian/Sabaean · Phoenician · Hittite/Hurrian · Mycenaean · Late Antique ritual</p>
+  <p><strong>v1.2.0</strong> — 1,170 entities · 1,352 relationships · 114 sources · 0 unresolved references</p>
+  <p>Source and contributing: <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a></p>
+license: MIT
+license_url: https://opensource.org/licenses/MIT
+source: jebboone/deitydb
+source_url: https://github.com/jebboone/deitydb
+
+databases:
+  deitydb:
+    title: DeityDB v1.2.0
+    description_html: |
+      <p>Start with the <strong>Canned queries</strong> below, or browse the tables directly.
+      The main tables are <em>entities</em>, <em>entity_relationships</em>, and <em>sources</em>.
+      Use <em>v_public_tradition_overview</em> for a quick summary of database coverage by tradition.</p>
+
+    hidden_tables:
+      - claims
+      - entity_duplicate_review
+      - entity_merge_log
+      - entity_metals
+      - entity_scores
+      - import_batches
+      - classification_audit
+      - rule_sets
+      - semantic_relationships
+      - staging_entities
+      - staging_relationships
+      - places
+      - animals
+      - metals
+      - plants
+      - regions
+      - epithets
+      - functions
+      - cult_centers
+      - relationships
+
+    tables:
+      entities:
+        title: Entities
+        description_html: |
+          The core table. 1,170 entities across 25+ traditions spanning gods, angels, demons, aeons,
+          prophets, saints, heroes, spirits, monsters, personified abstractions, cosmological realms,
+          and ritual categories. Use <strong>category</strong> to filter by functional type
+          (146 values: Underworld Deity, Hero, Adversarial Being, Revealer Figure, etc.).
+          Use <strong>tradition</strong> to filter by tradition. The <strong>short_note</strong>
+          column contains a scholarly description with source citations.
+        label_column: canonical_name
+        searchable: true
+        columns:
+          entity_id:
+            description: Stable identifier (e.g. ENT_GRK_ZEUS, ENT_EGY_OSIRIS, ENT_ISL_MUSA)
+          canonical_name:
+            description: Primary English name used in the database
+          greek_name:
+            description: Greek-script name, where applicable
+          tradition:
+            description: Religious or cultural tradition of origin
+          entity_type:
+            description: Granular type classification (476 distinct values)
+          category:
+            description: Broader functional category (146 values — recommended for filtering)
+          primary_domains:
+            description: Primary divine domains, comma-separated
+          evidence_confidence:
+            description: "Sourcing quality: A = direct primary-text attestation; B = strong secondary; C = inference; D = speculative"
+          chthonic_flag:
+            description: True if this entity has underworld or chthonic associations
+          serpent_flag:
+            description: True if this entity has serpent or dragon associations
+          short_note:
+            description: Scholarly description with source citations
+
+      entity_relationships:
+        title: Relationships
+        description_html: |
+          1,352 typed, source-backed relationships between entities. Each row records a directed
+          relationship (subject → type → object) with a justifying source and rationale note.
+          See <em>relationship_types</em> for the full controlled vocabulary of 70 relationship types.
+          Key types: <em>reception_of</em> / <em>received_as</em> (transmission across traditions),
+          <em>equated_with</em> (interpretatio graeca / analogues), <em>parent_of</em> (genealogy),
+          <em>member_of</em> (collective membership), <em>emanates_from</em> (Gnostic/Neoplatonic structure).
+        columns:
+          subject_entity_id:
+            description: The entity initiating or holding the relationship
+          relationship_type:
+            description: Typed relationship from the controlled vocabulary (see relationship_types table)
+          object_entity_id:
+            description: The entity receiving or targeted by the relationship
+          confidence:
+            description: "high / medium / low / speculative"
+          rationale:
+            description: Scholarly justification for the relationship, with source citations
+          source_id:
+            description: Primary source justifying this relationship
+          period_id:
+            description: Historical period in which this relationship is attested (null = all periods)
+
+      sources:
+        title: Sources
+        description_html: |
+          114 sources grounding every entity classification and relationship in the database.
+          Primary texts include the Pyramid Texts (c. 2375 BCE), Homer, Hesiod, Herodotus,
+          the Masoretic Text, Nag Hammadi corpus, Avesta, Ginza Rba, Quran, and more.
+          Secondary scholarship covers standard academic monographs for each tradition.
+        label_column: title
+        columns:
+          source_id:
+            description: Stable identifier (e.g. SRC_HOMER_ILIAD_ODYSSEY, SRC_QURAN)
+          title:
+            description: Full citation
+          source_type:
+            description: "e.g. primary text, secondary monograph, primary epigraphic, primary liturgical"
+          scope:
+            description: What the source covers and how it is used in DeityDB
+
+      relationship_types:
+        title: Relationship Types
+        description_html: |
+          The 70 typed relationship types that form DeityDB's ontological vocabulary.
+          Most are directed with a defined inverse (e.g. <em>parent_of</em> / <em>child_of</em>,
+          <em>rules</em> / <em>ruled_by</em>, <em>received_as</em> / <em>reception_of</em>).
+        label_column: relationship_type
+        columns:
+          relationship_type:
+            description: The relationship type name
+          inverse_relationship_type:
+            description: The inverse of this relationship type, if defined
+          description:
+            description: Definition and usage guidance
+
+      entity_sources:
+        title: Entity Sources
+        description_html: |
+          2,936 links between entities and the sources that attest them, with evidence type
+          and passage-level notes. The primary evidence layer: every entity classification
+          traces to at least one record here.
+        columns:
+          evidence_type:
+            description: "e.g. Direct attestation, Secondary analysis, Epigraphic, Numismatic"
+          source_note:
+            description: Specific passage citations and notes on how this source attests the entity
+
+      entity_periods:
+        title: Entity Periods
+        description_html: |
+          1,205 period assignments linking entities to the historical periods when they are
+          attested. An entity may span multiple periods. 100% of Greek entities (466/466)
+          are assigned; Egyptian tradition is fully covered; total coverage exceeds 70%.
+        columns:
+          confidence:
+            description: "high / medium / low — certainty of the period assignment"
+          rationale:
+            description: Justification with source citations
+
+      periods:
+        title: Periods
+        description_html: |
+          56 historical periods covering all traditions, from the Predynastic Egyptian period
+          (c. 3200 BCE) to the 20th-century occultist reception layer. Used to anchor entity
+          classifications and relationships in time.
+        label_column: period_name
+        columns:
+          start_year:
+            description: Start year (negative = BCE)
+          end_year:
+            description: End year (negative = BCE)
+          notes:
+            description: Description of the period and its significance for this tradition
+
+      entity_functions:
+        title: Entity Functions
+        description_html: |
+          664 functional domain assignments linking entities to their attested divine functions
+          (war, healing, wisdom, agriculture, death, fate, writing, etc.). Supplements the
+          primary_domains column on the entity record itself.
+
+      entity_aliases:
+        title: Aliases
+        description_html: |
+          181 alternate names, epithets, and variant spellings. Useful for finding an entity
+          by a name that is not used as the canonical_name (e.g. "Ishtar" for Inanna,
+          "Magna Mater" for Cybele).
+        columns:
+          alias:
+            description: Alternate name, epithet, or variant spelling
+
+      names:
+        title: Names (multilingual)
+        description_html: |
+          479 name records in various languages and scripts — Greek, Hebrew, Arabic, Coptic,
+          Egyptian transliteration, Sumerian, Akkadian, and others.
+
+      entity_regions:
+        title: Cult Regions
+        description_html: |
+          429 links between entities and the geographic regions where they were worshipped
+          or attested.
+
+      entity_cult_centers:
+        title: Cult Centers
+        description_html: |
+          63 links between entities and their principal cult sites (e.g. Apollo at Delphi,
+          Amun at Karnak, Athena on the Acropolis, Marduk at Babylon).
+
+      entity_tradition_tags:
+        title: Tradition Tags
+        description_html: |
+          853 fine-grained tradition labels beyond the primary tradition field.
+          Examples: Orphic, Hermetic, Valentinian, Ismaili, Shi'a, Lurianic, Thelemic,
+          Pessinuntine. Useful for filtering entities within a broad tradition.
+
+      entity_epithets:
+        title: Epithets
+        description_html: |
+          27 cultic epithet links (e.g. Zeus Ammon, Apollo Smintheus, Aphrodite Urania).
+
+      entity_animals:
+        title: Animal Associations
+        description_html: |
+          45 links between entities and their sacred or associated animals.
+
+      entity_plants:
+        title: Plant Associations
+        description_html: |
+          29 links between entities and sacred or associated plants.
+
+      # Public summary views
+      v_public_tradition_overview:
+        title: Tradition Overview
+        description: Entity counts by tradition — a quick summary of database coverage.
+
+      v_public_relationship_overview:
+        title: Relationship Type Overview
+        description: Count of each relationship type used across the database.
+
+      v_public_relationship_triples:
+        title: All Relationships (readable)
+        description: Every relationship rendered as (subject name, type, object name) with confidence and source.
+
+      v_public_underworld_entities:
+        title: Underworld Entities
+        description: All chthonic and underworld-associated entities across traditions.
+
+      v_public_adversarial_beings:
+        title: Adversarial Beings
+        description: Demons, adversarial figures, and hostile entities across traditions.
+
+      v_public_angelic_beings:
+        title: Angelic Beings
+        description: Angels, divine messengers, and heavenly beings across traditions.
+
+      v_public_revealer_figures:
+        title: Revealer Figures
+        description: Prophets, revealers, and divine-knowledge transmitters across traditions.
+
+      v_public_serpent_dragon_beings:
+        title: Serpent and Dragon Beings
+        description: Serpent and dragon figures across traditions.
+
+      v_public_wisdom_knowledge_beings:
+        title: Wisdom and Knowledge Figures
+        description: Wisdom deities, scribal gods, and knowledge-bearing figures.
+
+      v_release_metrics:
+        title: Release Metrics
+        description: Current database statistics — entity, relationship, and source counts.
+
+    canned_queries:
+
+      tradition-overview:
+        title: "Tradition overview"
+        description_html: Entity and relationship counts across all covered traditions.
+        sql: |
+          SELECT tradition, entity_count
+          FROM v_public_tradition_overview
+          ORDER BY entity_count DESC
+
+      browse-tradition:
+        title: "Browse a tradition"
+        description_html: |
+          Enter a tradition name exactly as it appears in the tradition overview —
+          e.g. <em>Greek</em>, <em>Egyptian</em>, <em>Islamic</em>, <em>Gnostic</em>,
+          <em>Celtic/Welsh</em>, <em>Etruscan</em>, <em>Scythian</em>, <em>Phrygian</em>.
+        sql: |
+          SELECT entity_id, canonical_name, entity_type, category, primary_domains, short_note
+          FROM entities
+          WHERE tradition = :tradition
+          ORDER BY canonical_name
+
+      browse-category:
+        title: "Browse by functional category"
+        description_html: |
+          Filter all entities by functional category. Examples:
+          <em>Underworld Deity</em>, <em>Adversarial Being</em>, <em>Revealer Figure</em>,
+          <em>Wisdom Deity</em>, <em>Hero</em>, <em>Saint</em>, <em>Storm Deity</em>,
+          <em>Psychopomp</em>, <em>Trickster Figure</em>, <em>Primordial Deity</em>,
+          <em>Aeon</em>, <em>Titan</em>, <em>Daimon</em>, <em>Olympian</em>. Case-sensitive.
+        sql: |
+          SELECT entity_id, canonical_name, tradition, entity_type, primary_domains, short_note
+          FROM entities
+          WHERE category = :category
+          ORDER BY tradition, canonical_name
+
+      entity-relationships:
+        title: "All relationships for an entity"
+        description_html: |
+          Enter any part of an entity name to see every relationship it holds as subject or
+          object. Try <em>Osiris</em>, <em>Zeus</em>, <em>Metatron</em>, <em>Inanna</em>,
+          <em>Cybele</em>, <em>Marduk</em>.
+        sql: |
+          SELECT
+            s.canonical_name AS subject,
+            s.tradition      AS subject_tradition,
+            r.relationship_type,
+            o.canonical_name AS object,
+            o.tradition      AS object_tradition,
+            r.confidence,
+            r.rationale
+          FROM entity_relationships r
+          JOIN entities s ON s.entity_id = r.subject_entity_id
+          JOIN entities o ON o.entity_id = r.object_entity_id
+          WHERE s.canonical_name LIKE '%' || :entity_name || '%'
+             OR o.canonical_name LIKE '%' || :entity_name || '%'
+          ORDER BY r.relationship_type, s.canonical_name
+
+      reception-chain:
+        title: "Trace a reception chain"
+        description_html: |
+          Follow how a divine figure was received and transformed across traditions. Enter any
+          part of an entity name to trace its transmission history.
+          <ul>
+            <li><em>Matar</em> → Phrygian Matar Kubileya → Greek Cybele → Roman Magna Mater</li>
+            <li><em>Lugus</em> → Gaulish Lugus → Irish Lugh → Welsh Lleu Llaw Gyffes</li>
+            <li><em>Osiris</em> → Egyptian Osiris → Ptolemaic Serapis → Christian parallels</li>
+            <li><em>Moses</em> → Israelite Moses → Islamic Musa</li>
+            <li><em>Tiamat</em> → Mesopotamian chaos → Canaanite Lotan → Israelite Leviathan</li>
+          </ul>
+          Follows <em>reception_of</em> and <em>received_as</em> links up to 8 hops.
+        sql: |
+          WITH RECURSIVE chain(
+            subject_id, object_id,
+            subject_name, subject_tradition,
+            object_name, object_tradition,
+            rel_type, confidence, depth
+          ) AS (
+            SELECT
+              r.subject_entity_id, r.object_entity_id,
+              s.canonical_name, s.tradition,
+              o.canonical_name, o.tradition,
+              r.relationship_type, r.confidence, 1
+            FROM entity_relationships r
+            JOIN entities s ON s.entity_id = r.subject_entity_id
+            JOIN entities o ON o.entity_id = r.object_entity_id
+            WHERE r.relationship_type IN ('reception_of', 'received_as')
+              AND (s.canonical_name LIKE '%' || :entity_name || '%'
+                   OR o.canonical_name LIKE '%' || :entity_name || '%')
+            UNION ALL
+            SELECT
+              r.subject_entity_id, r.object_entity_id,
+              s.canonical_name, s.tradition,
+              o.canonical_name, o.tradition,
+              r.relationship_type, r.confidence, c.depth + 1
+            FROM entity_relationships r
+            JOIN entities s ON s.entity_id = r.subject_entity_id
+            JOIN entities o ON o.entity_id = r.object_entity_id
+            JOIN chain c ON c.object_id = r.subject_entity_id
+            WHERE r.relationship_type IN ('reception_of', 'received_as')
+              AND c.depth < 8
+          )
+          SELECT DISTINCT
+            subject_name, subject_tradition,
+            rel_type AS relationship,
+            object_name, object_tradition,
+            confidence, depth
+          FROM chain
+          ORDER BY depth, subject_tradition
+
+      cross-traditional-parallels:
+        title: "Cross-traditional equations and identifications"
+        description_html: |
+          All <em>equated_with</em>, <em>identified_with</em>, and <em>syncretized_with</em>
+          relationships — showing how ancient writers (Herodotus, Plutarch) and modern
+          scholars recognized the same divine functions across traditions.
+        sql: |
+          SELECT
+            s.canonical_name AS entity,
+            s.tradition      AS from_tradition,
+            r.relationship_type,
+            o.canonical_name AS parallel,
+            o.tradition      AS to_tradition,
+            r.confidence,
+            r.rationale
+          FROM entity_relationships r
+          JOIN entities s ON s.entity_id = r.subject_entity_id
+          JOIN entities o ON o.entity_id = r.object_entity_id
+          WHERE r.relationship_type IN ('equated_with', 'identified_with', 'syncretized_with')
+          ORDER BY s.tradition, s.canonical_name
+
+      divine-genealogies:
+        title: "Divine genealogies"
+        description_html: All parent/child relationships across traditions.
+        sql: |
+          SELECT
+            s.canonical_name AS parent,
+            s.tradition      AS tradition,
+            o.canonical_name AS child,
+            r.confidence,
+            r.rationale
+          FROM entity_relationships r
+          JOIN entities s ON s.entity_id = r.subject_entity_id
+          JOIN entities o ON o.entity_id = r.object_entity_id
+          WHERE r.relationship_type = 'parent_of'
+          ORDER BY s.tradition, s.canonical_name
+
+      most-connected:
+        title: "Most connected entities"
+        description_html: |
+          The 50 entities with the most outgoing relationships — the central nodes in the
+          divine network. High connectivity marks figures that function as cross-traditional
+          convergence points or cosmological anchors.
+        sql: |
+          SELECT
+            e.canonical_name,
+            e.tradition,
+            e.category,
+            COUNT(*) AS relationship_count
+          FROM entity_relationships r
+          JOIN entities e ON e.entity_id = r.subject_entity_id
+          GROUP BY e.entity_id, e.canonical_name, e.tradition, e.category
+          ORDER BY relationship_count DESC
+          LIMIT 50
+
+      underworld-entities:
+        title: "Underworld and chthonic entities"
+        description_html: All underworld and chthonic-associated entities across traditions.
+        sql: |
+          SELECT canonical_name, tradition, category
+          FROM v_public_underworld_entities
+          ORDER BY tradition, canonical_name
+
+      adversarial-beings:
+        title: "Adversarial and demonic beings"
+        description_html: Demons, adversarial figures, and hostile entities across traditions.
+        sql: |
+          SELECT canonical_name, tradition, category
+          FROM v_public_adversarial_beings
+          ORDER BY tradition, canonical_name
+
+      angelic-beings:
+        title: "Angelic beings"
+        description_html: Angels, divine messengers, and heavenly beings across traditions.
+        sql: |
+          SELECT canonical_name, tradition, category
+          FROM v_public_angelic_beings
+          ORDER BY tradition, canonical_name
+
+      revealer-figures:
+        title: "Revealer and prophetic figures"
+        description_html: Prophets, revealers, and divine-knowledge transmitters across traditions.
+        sql: |
+          SELECT canonical_name, tradition, category
+          FROM v_public_revealer_figures
+          ORDER BY tradition, canonical_name
+
+      wisdom-knowledge:
+        title: "Wisdom and knowledge figures"
+        description_html: Wisdom deities, scribal gods, and knowledge-bearing figures.
+        sql: |
+          SELECT canonical_name, tradition, category
+          FROM v_public_wisdom_knowledge_beings
+          ORDER BY tradition, canonical_name
+
+      serpent-dragon:
+        title: "Serpent and dragon beings"
+        description_html: Serpent and dragon figures across all traditions.
+        sql: |
+          SELECT canonical_name, tradition, category
+          FROM v_public_serpent_dragon_beings
+          ORDER BY tradition, canonical_name
+
+      source-bibliography:
+        title: "Source bibliography"
+        description_html: |
+          All 114 sources used in DeityDB, ranked by how many entities they attest —
+          primary texts alongside the secondary scholarship used to interpret them.
+        sql: |
+          SELECT
+            s.title,
+            s.source_type,
+            COUNT(es.entity_id) AS entities_linked,
+            s.scope
+          FROM sources s
+          LEFT JOIN entity_sources es ON es.source_id = s.source_id
+          GROUP BY s.source_id, s.title, s.source_type, s.scope
+          ORDER BY entities_linked DESC
+
+      relationship-vocabulary:
+        title: "Relationship type vocabulary"
+        description_html: |
+          The 70 typed relationship types that form DeityDB's ontological vocabulary,
+          with their inverse forms and definitions.
+        sql: |
+          SELECT relationship_type, inverse_relationship_type, description
+          FROM relationship_types
+          ORDER BY relationship_type
