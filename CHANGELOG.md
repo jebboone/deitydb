@@ -2,8 +2,9 @@
 
 ## v1.1.0 (in progress)
 
-### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian
+### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean
 ### Systematic reception chains: Mesopotamian → Greek (with Hittite intermediary)
+### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian entities
 
 #### Hittite/Hurrian tradition seed (add_hittite_hurrian_layer.sql)
 - Added period PER_HTT_EMPIRE (Hittite Empire, c. 1650–1180 BCE)
@@ -78,6 +79,65 @@
 - Pre-Islamic Arabian deities provide the immediate substrate for the Islamic reception layer
   already in DB; the Quran names Al-Lat, Al-Uzza, and Manat explicitly (53:19-20)
 - Result: 1100 entities, 1231 relationships, 88 sources, 0 unresolved, 4 new traditions
+
+#### Canaanite foundational expansion (add_canaanite_expansion.sql)
+- Added source SRC_WYATT_RELIGIOUS_TEXTS (N. Wyatt, Religious Texts from Ugarit, 2002)
+- Added 2 entities:
+  ENT_CAN_DAGON (grain/sky deity; father of Baal; KTU 1.5 VI 24; attested from Ebla c. 2400 BCE),
+  ENT_CAN_RESHEPH (plague/war deity; gatekeeper at El's court; Cypriot bilingual inscriptions)
+- Added 3 relationship chains (6 rows):
+  - ENT_CAN_DAGON → parent_of → ENT_CAN_BAAL (medium): KTU 1.5 VI 24 "Baal son of Dagon"
+  - ENT_CAN_BAAL → child_of → ENT_CAN_DAGON (medium): inverse
+  - ENT_CAN_RESHEPH → received_as → ENT_APOLLO (medium): Cypriot bilingual inscriptions
+    equate them explicitly; plague-deity bow-and-arrow complex; West (1997)
+
+#### Hittite foundational expansion (add_hittite_expansion.sql)
+- Added 3 entities:
+  ENT_HTT_TELIPINU (vanishing deity; CTH 324-325; paradigm seasonal disappearance myth),
+  ENT_HTT_INARAS (protective goddess; devises Illuyanka's defeat by feasting trap),
+  ENT_HTT_HANNAHANNA (divine grandmother; sends the bee that finds Telipinu)
+- Added 5 relationships:
+  - ENT_HTT_TELIPINU → received_as → ENT_DEMETER (low): vanishing-deity narrative structure;
+    vegetation fails during deity's absence; West (1997) on transmission through Anatolian contact
+  - ENT_MES_DUMUZI_TAMMUZ → received_as → ENT_HTT_TELIPINU (low): older Mesopotamian
+    dying-vegetation tradition as probable substrate for the Hittite myth
+  - ENT_HTT_INARAS → guides → ENT_HTT_TARHUNNA (high): Inaras devises the trap by which
+    Tarhunna defeats Illuyanka (CTH 321 §§1-8); links new entity to existing Illuyanka chain
+
+#### South Arabian / Sabaean layer (add_south_arabian_sabaean.sql)
+- Added period PER_SABAEAN (Sabaean and South Arabian Period, c. 1200 BCE–275 CE)
+- Added source SRC_HOYLAND_ARABIA (Robert G. Hoyland, Arabia and the Arabs, Routledge 2001)
+- Added 4 entities:
+  ENT_SAB_ALMAQAH (Sabaean chief lunar deity; patron of Marib; hundreds of dedicatory inscriptions),
+  ENT_SAB_ATHTAR (pan-South-Arabian Venus deity, uniquely masculine; cognate with Ishtar/Astarte),
+  ENT_SAB_SHAMS (South Arabian sun goddess, uniquely feminine; standard triad member),
+  ENT_SAB_AMM (Qatabanian chief lunar deity; "divine uncle" kinship-patron pattern)
+- Added 3 reception chain pairs (6 rows):
+  - ENT_CAN_ASTARTE → received_as → ENT_SAB_ATHTAR (low): Semitic Venus name-cognate
+    (*ʿAttar-); South Arabia preserves the masculine form; Cross (1973)
+  - ENT_SAB_ALMAQAH → received_as → ENT_ARA_HUBAL (low): South Arabian lunar-deity-as-patron
+    pattern as older substrate for North Arabian pre-Islamic lunar deity tradition
+  - ENT_SAB_ATHTAR → received_as → ENT_ARA_AL_UZZA (low): Venus deity tradition transmitted
+    north through incense trade routes; feminized in North Arabian reception
+
+#### Mesopotamian foundational expansion (add_mesopotamian_expansion.sql)
+- Added source SRC_GEORGE_GILGAMESH (Andrew R. George, The Babylonian Gilgamesh Epic, OUP 2003)
+- Added 5 entities:
+  ENT_MES_ANZU (divine storm bird/chaos monster; steals Tablet of Destinies; defeated by Ninurta),
+  ENT_MES_NINSUN ("Lady Wild Cow"; divine mother of Gilgamesh; dream interpreter; cult at Ur),
+  ENT_MES_GILGAMESH (hero/semi-divine king of Uruk; protagonist of oldest literary epic),
+  ENT_MES_ENKIDU (wild man created by Aruru; Gilgamesh's companion; first treatment of friendship and loss),
+  ENT_MES_UTNAPISHTIM (flood survivor granted immortality; Gilgamesh Tablet XI; precursor to biblical Noah)
+- Added 5 internal relationships:
+  - ENT_MES_NINSUN → parent_of → ENT_MES_GILGAMESH (high): explicit in Epic Tablets I-III
+  - ENT_MES_GILGAMESH → child_of → ENT_MES_NINSUN (high): inverse
+  - ENT_MES_GILGAMESH → paired_with → ENT_MES_ENKIDU (high): paradigm hero-companion pair
+  - ENT_MES_ENKIDU → paired_with → ENT_MES_GILGAMESH (high): inverse
+  - ENT_MES_NINURTA → slays → ENT_MES_ANZU (high): Anzu myth; Ninurta recaptures Tablet of Destinies
+- Reception chain deferred: ENT_MES_UTNAPISHTIM → received_as → ENT_ISR_NOAH (high confidence;
+  highest-documented Mesopotamian→Israelite narrative transmission) — deferred until ENT_ISR_NOAH
+  is added in the Israelite expansion
+- Result after all four expansion scripts: 1114 entities, 1251 relationships, 91 sources, 0 unresolved
 
 ### Systematic reception history — Egyptian → Hellenistic/Christian layer
 - Added SRC_PLUTARCH_ISIS_OSIRIS (Plutarch, *De Iside et Osiride*, c. 100–120 CE; primary text;
