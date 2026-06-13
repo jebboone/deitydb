@@ -2,6 +2,94 @@
 
 ## v1.1.0 (in progress)
 
+### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean, Welsh, Etruscan, Scythian, Phrygian, Gaulish expansion
+### Systematic reception chains: Mesopotamian → Greek (with Hittite intermediary); Phrygian → Greek (Cybele); Gaulish → Irish/Welsh (Lugus); Scythian → Greek (Herodotean equated_with)
+### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian, Etruscan, Scythian, Phrygian entities
+### Egyptian tradition audit and remediation (0 unperiodized Egyptian entities)
+### Mycenaean / Linear B religion layer (Bronze Age Greek substrate)
+### Greek periodization: 466/466 entities assigned (from 3% coverage to 100%)
+### Roman primary sourcing: Virgil, Livy, Cicero De Natura Deorum, Varro Antiquitates
+
+#### Greek periodization completion (add_greek_period_assignments.sql)
+- **Problem addressed**: 466 Greek entities at 3% period coverage (15/466 assigned)
+- Bulk assignment strategy: PER_GRK_ARCHAIC baseline (Homer/Hesiod); PER_GRK_CLASSICAL for tragedy/philosophical figures; PER_GRK_HELLENISTIC for genuinely later entities; PER_GRK_ROMAN for Glycon (Lucian 2nd c. CE)
+- Coverage by cluster: protogenoi (29), titans (24), daimones/personifications (71), heroes (39), river gods (39), nymph collectives (19), nereids (19), individual nymphs (11), oceanids (10), muses (9), and ~177 in smaller clusters
+- Classical additions: Erinyes (Aeschylus Oresteia), Eros (Plato Symposium), Medea/Ajax/Orestes (Euripides/Sophocles), Pan (Herodotus post-Marathon), Bendis (Plato Republic), Sabazios (Aristophanes)
+- Hellenistic additions: Tyche as city-fortune goddess, Agathos Daimon (Ptolemaic), Melinoe (Orphic Hymns), Great Gods of Samothrace, Hermaphroditus, Priapus
+- Result: 466/466 Greek entities periodized (100%); 0 unresolved relationships
+
+#### Welsh internal relationships (add_welsh_internal_relationships.sql)
+- **Problem addressed**: 15 Welsh entities had only 2 relationships (the two reception chains added in the original Mabinogion layer)
+- Added 26 typed relationships explicitly attested in the Four Branches of the Mabinogi (SRC_MABINOGION):
+  - Arawn and Gwyn ap Nudd: rules/dwells_in ENT_WEL_ANNWN
+  - Pwyll ↔ Rhiannon: spouse_of (Branch 1); Manawydan ↔ Rhiannon: spouse_of (Branch 3)
+  - Pwyll and Rhiannon → parent_of → Pryderi
+  - Bran ↔ Branwen, Bran ↔ Manawydan, Branwen ↔ Manawydan: sibling_of (Branch 2)
+  - Dôn → parent_of → Gwydion and Aranrhod; Gwydion ↔ Aranrhod: sibling_of (Branch 4)
+  - Aranrhod → parent_of → Lleu Llaw Gyffes (the three tyngedau narrative)
+  - Math and Gwydion: creator_of Blodeuwedd; Lleu ↔ Blodeuwedd: spouse_of
+  - Math → teaches → Gwydion
+- Welsh entities now have 28 total relationships (was 2)
+
+#### Etruscan tradition layer (add_etruscan_layer.sql)
+- New tradition: Etruscan (0 entities previously)
+- Added 3 sources: SRC_PYRGI_TABLETS (c. -500, bilingual Etruscan/Phoenician; equates Uni with Astarte), SRC_PIACENZA_LIVER (c. -100, bronze haruspicy model), SRC_DEGRUMMOND_ETRUSCAN (De Grummond 2006)
+- Added 3 periods: PER_ETR_ARCHAIC (-700 to -480), PER_ETR_CLASSICAL (-480 to -300), PER_ETR_LATE (-300 to -89)
+- Added 12 entities: Tinia (Jupiter), Uni (Juno; Pyrgi tablets), Menrva (Minerva), Charun (underworld coercive escort), Tuchulcha (Tomba dell'Orco demon), Voltumna (Etruscan League deity), Lasa (winged attendant spirits), Thesan (dawn), Turan (love), Nethuns (sea), Fufluns (Dionysus), Usil (sun)
+- 7 relationships: Tinia-Uni spouse_of; syncretized_with: Jupiter↔Tinia, Juno↔Uni, Minerva↔Menrva (Capitoline triad as Etruscan import); Lasa member_of Turan
+
+#### Roman primary sources (add_roman_primary_sources.sql)
+- **Problem addressed**: All 22 Roman entities had only secondary sources (OCD, Beard, Ovid Fasti)
+- Added 4 primary sources: SRC_VIRGIL_AENEID, SRC_LIVY_AUC, SRC_CICERO_DE_NATURA, SRC_VARRO_ANTIQ
+- 60 entity_source rows with passage-level notes:
+  - Virgil Aeneid: Juno as primary antagonist (1.4-7), Penates Trojan origin (2.293-295), Shield of Aeneas/Vulcan (8.370-625), Gates of Janus (7.607-615), Saturn's golden age Latium (8.319-327)
+  - Livy AUC: Quirinus apotheosis (1.16.3), Janus gates (1.19.2), Vestal institution (1.20.3), Mars as Romulus's father (1.4.1), Ceres temple 493 BCE (2.41.8)
+  - Cicero DND: philosophical treatment of all 22 deities; Stoic allegorizations; etymology Ceres < gero, Mercury < reason/speech, Janus = uniquely Roman doorway deity without Greek parallel
+  - Varro Antiquitates (via Augustine): Lares as souls of dead (7.6), Genius taxonomy (7.13), Vesta-as-earth (7.16), Penates vs. di selecti (7.5)
+- All 22 Roman entities now have 5-7 sources (up from 3)
+
+#### Celtic/Gaulish expansion (add_celtic_gaulish_expansion.sql)
+- Added 4 sources: SRC_LUCAN_BELLUM_CIVILE (1.444-446 naming Esus/Teutates/Taranis), SRC_DELAMARRE_GAULISH (linguistic dictionary), SRC_DUVAL_DIEUX_GAULE (Duval 1976), SRC_OLMSTED_GODS_CELTS (comparative Indo-European)
+- Added 4 Gaulish entities:
+  ENT_CEL_LUGUS (~50 inscription attestations; pan-Celtic many-skilled deity; Lugdunum place names; Caesar's Mercurius equation; source of Irish Lugh, Welsh Lleu)
+  ENT_CEL_ROSMERTA (~20 Roman-period dedications; "Good Provider" sovereignty goddess; paired with Mercury)
+  ENT_CEL_MAPONOS ("Divine Son"; Chamalieres defixio + British Apollo inscriptions; Welsh Mabon cognate)
+  ENT_CEL_MATRES (1000+ votive inscriptions; triple seated mothers; most epigraphically attested Celtic deity category)
+- 34 entity_source rows; Esus/Teutates/Taranis now linked to Lucan as primary Latin attestation
+- Gaulish entities now have 3-5 sources (up from 1); 11 total Gaulish entities (up from 7)
+- Reception chains: Lugh reception_of Lugus (high); Lleu reception_of Lugus (medium)
+
+#### Scythian religion layer (add_scythian_layer.sql)
+- New tradition: Scythian (0 entities previously)
+- Source: SRC_HERODOTUS_HISTORIES already registered; added SRC_CUNLIFFE_SCYTHIANS (OUP 2019)
+- Period: PER_SCYTH_ARCHAIC (-700 to -300)
+- Added 7 entities from Herodotus Histories 4.59-62 (the only sustained ancient account of Scythian divine names):
+  ENT_SCYTH_TABITI (= Hestia; supreme deity; fire-cult), ENT_SCYTH_PAPAEUS (= Zeus; sky-father),
+  ENT_SCYTH_API (= Gaia; earth-mother; wife of Papaeus), ENT_SCYTH_OETOSYRUS (= Apollo; sun deity),
+  ENT_SCYTH_ARTIMPASA (= Aphrodite Urania; moon/love; Enarees transvestite priests, Hdt. 4.67),
+  ENT_SCYTH_THAGIMASADAS (= Poseidon; sea; Royal Scythians only),
+  ENT_SCYTH_SWORD_ARES (war cult of the iron sword/akinakes; only Scythian deity with built altar; Hdt. 4.62)
+- Relationships: equated_with (Tabiti↔Hestia, Papaeus↔Zeus, Api↔Gaia); spouse_of Papaeus↔Api
+
+#### Phrygian tradition layer (add_phrygian_layer.sql)
+- New tradition: Phrygian (ENT_CYBELE and ENT_ATTIS previously in DB as tradition='Greek')
+- Added 2 sources: SRC_ROLLER_CYBELE (Roller 1999, U. California Press — standard monograph), SRC_PHRYGIAN_INSCRIPTIONS (Brixhe/Lejeune corpus)
+- Period: PER_PHRYG_IRON_AGE (-1200 to -300)
+- Added 2 entities:
+  ENT_PHRYG_MATAR ("Matar Kubileya" — pre-Hellenic Mountain Mother; rock-cut shrine dedications at Midas City 8th c. BCE; the Anatolian original of Greek/Roman Cybele)
+  ENT_PHRYG_AGDISTIS (hermaphroditic primordial deity; Pessinuntine myth; Pausanias 7.17.10-12; origin point of the Cybele-Attis complex)
+- Reception chains: ENT_CYBELE reception_of ENT_PHRYG_MATAR (high); ENT_CYBELE and ENT_ATTIS emanates_from ENT_PHRYG_AGDISTIS
+- Also linked SRC_ROLLER_CYBELE to ENT_CYBELE, ENT_ATTIS, ENT_SABAZIOS (Greek-tradition entities now cross-linked to Phrygian scholarship)
+
+#### End-of-session metrics
+- 1168 entities (up from 1143) | 1349 relationships (up from 1305) | 114 sources (up from 100)
+- 0 unresolved relationship references | 0 unreviewed duplicates
+- New traditions added: Etruscan, Scythian, Phrygian
+- Greek tradition: 466/466 entities periodized (100%); was 15/466 (3%)
+- Welsh tradition: 28 relationships (was 2)
+- Roman tradition: all 22 entities have primary-source coverage (Virgil, Livy, Cicero, Varro)
+- Gaulish tradition: 11 entities, 4 new sources; Esus/Teutates/Taranis have Lucan as primary attestation
+
 ### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean
 ### Systematic reception chains: Mesopotamian → Greek (with Hittite intermediary)
 ### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian entities
