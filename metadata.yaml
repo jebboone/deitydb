@@ -17,6 +17,9 @@ license_url: https://opensource.org/licenses/MIT
 source: jebboone/deitydb
 source_url: https://github.com/jebboone/deitydb
 
+extra_css_urls:
+  - url: "/custom/deitydb.css"
+
 databases:
   deitydb:
     title: DeityDB v1.2.0

@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}DeityDB — Comparative Religion Database{% endblock %}
+{% block body_class %}index deitydb-index{% endblock %}
+
+{% block content %}
+
+{# ── HERO ─────────────────────────────────────────────────────────── #}
+<div class="db-hero">
+  <h1>DeityDB</h1>
+  <p class="subtitle">
+    A source-traceable comparative-religion database mapping divine beings,
+    cosmologies, and theological relationships across sixty-two Western traditions.
+  </p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-number">1,170</span>
+      <span class="hero-stat-label">Entities</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-number">1,352</span>
+      <span class="hero-stat-label">Relationships</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-number">62</span>
+      <span class="hero-stat-label">Traditions</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-number">114</span>
+      <span class="hero-stat-label">Sources</span>
+    </div>
+  </div>
+</div>
+
+{# ── START EXPLORING ───────────────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Start Exploring</h2>
+  <p class="db-section-desc">Browse pre-built queries or search directly — no SQL required.</p>
+  <div class="query-grid">
+
+    <a href="{{ urls.query('deitydb', 'tradition-overview') }}" class="query-card">
+      <span class="query-card-icon">🌍</span>
+      <span class="query-card-title">Tradition Overview</span>
+      <span class="query-card-desc">All 62 traditions ranked by entity count — a one-page map of the database.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'browse-tradition') }}" class="query-card">
+      <span class="query-card-icon">📜</span>
+      <span class="query-card-title">Browse a Tradition</span>
+      <span class="query-card-desc">Enter a tradition name to list all its entities — Greek, Egyptian, Islamic, Gnostic, Norse, and more.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'entity-relationships') }}" class="query-card">
+      <span class="query-card-icon">🔗</span>
+      <span class="query-card-title">Entity Relationships</span>
+      <span class="query-card-desc">Explore every relationship for a named entity — who it rules, opposes, emanates from, or is received as.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'reception-chain') }}" class="query-card">
+      <span class="query-card-icon">🔄</span>
+      <span class="query-card-title">Reception Chain</span>
+      <span class="query-card-desc">Trace how a figure was received and renamed across traditions — follow Moses to Musa to Idris.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'cross-traditional-parallels') }}" class="query-card">
+      <span class="query-card-icon">⚖️</span>
+      <span class="query-card-title">Cross-Traditional Parallels</span>
+      <span class="query-card-desc">Find entities explicitly linked across tradition boundaries through parallel_to and syncretized_with relationships.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'most-connected') }}" class="query-card">
+      <span class="query-card-icon">⭐</span>
+      <span class="query-card-title">Most Connected Entities</span>
+      <span class="query-card-desc">The fifty entities with the most relationships — the theological hubs of the network.</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── BROWSE BY TYPE ────────────────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Browse by Entity Type</h2>
+  <p class="db-section-desc">Pre-filtered views for major categories across all traditions.</p>
+  <div class="query-grid">
+
+    <a href="{{ urls.query('deitydb', 'angelic-beings') }}" class="query-card">
+      <span class="query-card-icon">✦</span>
+      <span class="query-card-title">Angelic Beings</span>
+      <span class="query-card-desc">Angels, divine messengers, and celestial servants across Jewish, Christian, Islamic, and Zoroastrian traditions.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'adversarial-beings') }}" class="query-card">
+      <span class="query-card-icon">⚔️</span>
+      <span class="query-card-title">Adversarial Beings</span>
+      <span class="query-card-desc">Demons, adversaries, tempters, and powers of chaos from Mesopotamia to medieval Europe.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'underworld-entities') }}" class="query-card">
+      <span class="query-card-icon">🌑</span>
+      <span class="query-card-title">Underworld Entities</span>
+      <span class="query-card-desc">Psychopomps, death deities, and rulers of the realm below — Anubis to Azrael.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'revealer-figures') }}" class="query-card">
+      <span class="query-card-icon">💡</span>
+      <span class="query-card-title">Revealer Figures</span>
+      <span class="query-card-desc">Prophets, teachers, and transmitters of divine knowledge — from Enoch to Muhammad.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'wisdom-knowledge') }}" class="query-card">
+      <span class="query-card-icon">📚</span>
+      <span class="query-card-title">Wisdom &amp; Knowledge</span>
+      <span class="query-card-desc">Scribal deities, Sophia figures, and personified wisdom from Thoth to Hokhmah.</span>
+    </a>
+
+    <a href="{{ urls.query('deitydb', 'serpent-dragon') }}" class="query-card">
+      <span class="query-card-icon">🐍</span>
+      <span class="query-card-title">Serpent &amp; Dragon Beings</span>
+      <span class="query-card-desc">Primordial serpents, chaos dragons, and serpent-deities — Leviathan to Apep.</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── TRADITION GRID (JS-loaded) ────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Browse by Tradition</h2>
+  <p class="db-section-desc">Select a tradition to see all its entities.</p>
+  <div class="tradition-grid" id="tradition-grid">
+    <span class="loading-text">Loading traditions…</span>
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── ABOUT ─────────────────────────────────────────────────────────── #}
+<div class="about-strip">
+  <div class="about-strip-inner">
+    <div>
+      <h3>About DeityDB</h3>
+      <p>
+        DeityDB is a source-traceable comparative-religion ontology covering sixty-two
+        traditions — from Greek and Egyptian antiquity through Second Temple Judaism,
+        Gnosticism, Islam, and medieval Jewish mysticism. Every entity and relationship
+        traces to an academic or primary source.
+      </p>
+      <p>
+        Traditions covered include Greek, Egyptian, Mesopotamian, Canaanite/Ugaritic,
+        Israelite/Second Temple, Roman, Celtic, Germanic/Norse, Christian, Gnostic,
+        Mandaean, Manichaean, Zoroastrian, Islamic (incl. Sufi and Shīʿa), Jewish
+        mystical, Hermetic, Etruscan, Scythian, Phrygian, and more.
+      </p>
+      <p>
+        <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a>
+        &nbsp;·&nbsp; MIT License &nbsp;·&nbsp; v1.2.0
+      </p>
+    </div>
+    <div>
+      <h3>Data &amp; Methodology</h3>
+      <p>
+        Entities are classified by kind — gods, angels, demons, aeons, archons, prophets,
+        saints, heroes, spirits, and cosmological realms — and never collapsed into a
+        single category. Relationships are typed (patron_of, emanates_from, opposes,
+        reception_of, parallel_to…) for precise ontological queries.
+      </p>
+      <p>
+        The full PostgreSQL schema and seed data are open-source. Every classification
+        traces to a source record, prioritising academic editions and primary texts.
+        Contributions are welcome via pull request on GitHub.
+      </p>
+      <p>
+        Want to run custom queries?
+        <a href="/deitydb">Open the full SQL explorer →</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+(async () => {
+  const grid = document.getElementById('tradition-grid');
+  try {
+    const r = await fetch('/deitydb/v_public_tradition_overview.json?_shape=array&_size=200');
+    if (!r.ok) throw new Error(r.status);
+    const rows = await r.json();
+    grid.innerHTML = rows.map(row => {
+      const name  = row.tradition   || '';
+      const count = row.entity_count || '';
+      const url   = '/deitydb/browse-tradition?tradition=' + encodeURIComponent(name);
+      return '<a href="' + url + '" class="tradition-chip">'
+           + '<span class="trad-name">' + escHtml(name) + '</span>'
+           + '<span class="trad-count">' + count + '</span>'
+           + '</a>';
+    }).join('');
+  } catch(e) {
+    grid.innerHTML = '<span class="loading-text">Could not load tradition list.</span>';
+  }
+  function escHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+})();
+</script>
+
+{% endblock %}
