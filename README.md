@@ -8,24 +8,26 @@ The goal is to make religious entities queryable across traditions instead of le
 
 ## Current Release — v1.1.0
 
-- 1,100+ entities
-- 1,300+ relationships
-- 100 sources
-- 40+ tradition labels
+- 1,168 entities
+- 1,349 relationships
+- 114 sources
+- 60+ tradition labels
 - 0 unresolved relationship references
 - duplicate-name review complete
 - diachronic reception chains across traditions
 - public query views included
+- 100% Greek entity period coverage (466/466)
+- all Roman entities have primary-source coverage (Virgil, Livy, Cicero, Varro)
 
 ## Included Traditions
 
-- Greek
+- Greek (466 entities; 100% period coverage)
 - Egyptian
 - Mesopotamian
 - Canaanite / Ugaritic
 - Israelite / Second Temple
 - Roman
-- Celtic (Irish and Welsh)
+- Celtic (Irish, Welsh, and Gaulish)
 - Germanic / Norse
 - Christian
 - Gnostic
@@ -36,6 +38,9 @@ The goal is to make religious entities queryable across traditions instead of le
 - Jewish mystical
 - Hermetic
 - Late antique ritual traditions
+- Etruscan (Pyrgi tablets; Piacenza liver)
+- Scythian (Herodotus Histories 4.59–62)
+- Phrygian (Matar Kubileya; Agdistis; Roller 1999)
 - Pre-Islamic Arabian
 - South Arabian / Sabaean
 - Phoenician Iron Age
@@ -115,7 +120,7 @@ This allows comparison without collapsing every tradition into the same theologi
 
 See `CONTRIBUTING.md` and `GOOD_FIRST_ISSUES.md`.
 
-High-value areas: primary-source sourcing, Greek and Egyptian depth, heresiology (Irenaeus, Epiphanius), Islamic tafsir / sira / Sufi expansion, Jewish Kabbalistic expansion, data visualization, API or web interface.
+High-value areas: heresiology (Irenaeus, Epiphanius), Islamic tafsir / sira / Sufi expansion, Jewish Kabbalistic expansion, Moses → Musa / Elijah → Ilyas reception chains, Works and Days personifications (Pandora, Five Ages), Greek tragedy source registration (Aeschylus, Sophocles, Euripides), data visualization, API or web interface.
 
 ## License
 
