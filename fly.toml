@@ -16,6 +16,7 @@ primary_region = 'iad'
   min_machines_running = 0
   processes = ['app']
 
+
 [[vm]]
   memory = '256mb'
   cpu_kind = 'shared'
