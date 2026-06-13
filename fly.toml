@@ -1,0 +1,23 @@
+# fly.toml — DeityDB Datasette deployment on Fly.io
+# Edit `app` to match the name you chose when running `fly launch`.
+
+app = "deitydb-explorer"
+primary_region = "iad"
+
+[build]
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1
