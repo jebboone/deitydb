@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+
+{% block title %}DeityDB — Query Explorer{% endblock %}
+
+{% block extra_head %}
+{{- super() -}}
+{% include "_codemirror.html" %}
+{% endblock %}
+
+{% block body_class %}db db-{{ database|to_css_class }} deitydb-database{% endblock %}
+
+{% block content %}
+
+{# ── Page header ─────────────────────────────────────────────────── #}
+<div class="db-page-header">
+  <div class="db-page-header-inner">
+    <h1>DeityDB Explorer</h1>
+    <p>
+      A comparative database of spiritual beings across sixty-two Western traditions.
+      Choose a query below, or write your own SQL at the bottom.
+      &nbsp;·&nbsp; <a href="/">← Back to overview</a>
+    </p>
+  </div>
+</div>
+
+{# ── BROWSE THE DATA ──────────────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Browse the Data</h2>
+  <p class="db-section-desc">Start with a tradition or functional category.</p>
+  <div class="query-grid">
+
+    <a href="{{ urls.query(database, 'tradition-overview') }}" class="query-card">
+      <span class="query-card-icon">🌍</span>
+      <span class="query-card-title">Tradition Overview</span>
+      <span class="query-card-desc">All 62 traditions with entity and relationship counts at a glance.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'browse-tradition') }}" class="query-card">
+      <span class="query-card-icon">📜</span>
+      <span class="query-card-title">Browse a Tradition</span>
+      <span class="query-card-desc">Enter a tradition name — Greek, Egyptian, Islamic, Gnostic, Norse — to list all its entities.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'browse-category') }}" class="query-card">
+      <span class="query-card-icon">🗂️</span>
+      <span class="query-card-title">Browse by Category</span>
+      <span class="query-card-desc">Filter by functional category — Underworld Deity, Hero, Adversarial Being, Wisdom Figure, etc.</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── ENTITY EXPLORER ──────────────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Entity Explorer</h2>
+  <p class="db-section-desc">Investigate individual entities and how they connect.</p>
+  <div class="query-grid">
+
+    <a href="{{ urls.query(database, 'entity-relationships') }}" class="query-card">
+      <span class="query-card-icon">🔗</span>
+      <span class="query-card-title">Entity Relationships</span>
+      <span class="query-card-desc">All relationships for a named entity — what it rules, opposes, emanates from, or is received as.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'reception-chain') }}" class="query-card">
+      <span class="query-card-icon">🔄</span>
+      <span class="query-card-title">Reception Chain</span>
+      <span class="query-card-desc">Trace how a figure was received and renamed across traditions, following up to 8 hops.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'divine-genealogies') }}" class="query-card">
+      <span class="query-card-icon">🌳</span>
+      <span class="query-card-title">Divine Genealogies</span>
+      <span class="query-card-desc">Parent–child and sibling relationships across all traditions.</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── CROSS-TRADITION ANALYSIS ─────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Cross-Tradition Analysis</h2>
+  <p class="db-section-desc">Find patterns that span multiple traditions.</p>
+  <div class="query-grid">
+
+    <a href="{{ urls.query(database, 'cross-traditional-parallels') }}" class="query-card">
+      <span class="query-card-icon">⚖️</span>
+      <span class="query-card-title">Cross-Traditional Parallels</span>
+      <span class="query-card-desc">Entities explicitly linked across tradition boundaries via parallel_to and syncretized_with relationships.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'most-connected') }}" class="query-card">
+      <span class="query-card-icon">⭐</span>
+      <span class="query-card-title">Most Connected Entities</span>
+      <span class="query-card-desc">The top 50 entities by total relationship count — the theological hubs of the network.</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── BROWSE BY TYPE ────────────────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Browse by Entity Type</h2>
+  <p class="db-section-desc">Pre-filtered views for major categories across all traditions.</p>
+  <div class="query-grid">
+
+    <a href="{{ urls.query(database, 'angelic-beings') }}" class="query-card">
+      <span class="query-card-icon">✦</span>
+      <span class="query-card-title">Angelic Beings</span>
+      <span class="query-card-desc">Angels, divine messengers, and celestial servants across Jewish, Christian, Islamic, and Zoroastrian traditions.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'adversarial-beings') }}" class="query-card">
+      <span class="query-card-icon">⚔️</span>
+      <span class="query-card-title">Adversarial Beings</span>
+      <span class="query-card-desc">Demons, adversaries, tempters, and powers of chaos from Mesopotamia to medieval Europe.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'underworld-entities') }}" class="query-card">
+      <span class="query-card-icon">🌑</span>
+      <span class="query-card-title">Underworld Entities</span>
+      <span class="query-card-desc">Psychopomps, death deities, and rulers of the realm below — Anubis to Azrael.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'revealer-figures') }}" class="query-card">
+      <span class="query-card-icon">💡</span>
+      <span class="query-card-title">Revealer Figures</span>
+      <span class="query-card-desc">Prophets, teachers, and transmitters of divine knowledge — from Enoch to Muhammad.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'wisdom-knowledge') }}" class="query-card">
+      <span class="query-card-icon">📚</span>
+      <span class="query-card-title">Wisdom &amp; Knowledge</span>
+      <span class="query-card-desc">Scribal deities, Sophia figures, and personified wisdom from Thoth to Hokhmah.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'serpent-dragon') }}" class="query-card">
+      <span class="query-card-icon">🐍</span>
+      <span class="query-card-title">Serpent &amp; Dragon Beings</span>
+      <span class="query-card-desc">Primordial serpents, chaos dragons, and serpent-deities — Leviathan to Apep.</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── REFERENCE ────────────────────────────────────────────────────── #}
+<div class="db-section">
+  <h2>Reference</h2>
+  <p class="db-section-desc">Source materials and relationship vocabulary.</p>
+  <div class="query-grid">
+
+    <a href="{{ urls.query(database, 'source-bibliography') }}" class="query-card">
+      <span class="query-card-icon">📖</span>
+      <span class="query-card-title">Source Bibliography</span>
+      <span class="query-card-desc">All 114 sources with citation counts — primary texts and academic references.</span>
+    </a>
+
+    <a href="{{ urls.query(database, 'relationship-vocabulary') }}" class="query-card">
+      <span class="query-card-icon">🔤</span>
+      <span class="query-card-title">Relationship Vocabulary</span>
+      <span class="query-card-desc">All relationship types with definitions and usage counts.</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── CUSTOM SQL ───────────────────────────────────────────────────── #}
+{% if allow_execute_sql %}
+<div class="sql-section">
+  <div class="sql-section-inner">
+    <p class="sql-section-label">Custom SQL Query</p>
+    <form class="sql" action="{{ urls.database(database) }}" method="get">
+      <p>
+        <textarea id="sql-editor" name="sql">{% if tables %}select * from {{ tables[0].name|escape_sqlite }} limit 10{% else %}select sqlite_version(){% endif %}</textarea>
+      </p>
+      <p>
+        <button id="sql-format" type="button" hidden>Format SQL</button>
+        <input type="submit" value="Run Query">
+      </p>
+    </form>
+  </div>
+</div>
+{% endif %}
+
+{# ── RAW TABLES (collapsed) ───────────────────────────────────────── #}
+{% if tables or views %}
+<div class="db-section">
+  <details class="tables-details">
+    <summary>
+      Raw Tables &amp; Views
+      <small>(for researchers and contributors)</small>
+    </summary>
+
+    {% if tables %}
+    <div class="tables-grid">
+      {% for table in tables %}{% if show_hidden or not table.hidden %}
+      <a href="{{ urls.table(database, table.name) }}" class="table-link">
+        <span class="table-name">{{ table.name }}</span>
+        {% if table.count is not none %}<span class="table-count">{{ "{:,}".format(table.count) }}</span>{% endif %}
+      </a>
+      {% endif %}{% endfor %}
+    </div>
+    {% endif %}
+
+    {% if views %}
+    <div class="tables-grid" style="margin-top:8px">
+      {% for view in views %}
+      <a href="{{ urls.database(database) }}/{{ view.name|urlencode }}" class="table-link table-link-view">
+        <span class="table-name">{{ view.name }}</span>
+        <span class="table-type">view</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if hidden_count and not show_hidden %}
+    <p style="padding:8px 16px 0; font-size:0.82rem; color:var(--muted)">
+      <a href="{{ urls.database(database) }}?_show_hidden=1">{{ "{:,}".format(hidden_count) }}
+        hidden table{% if hidden_count != 1 %}s{% endif %}</a> not shown.
+    </p>
+    {% endif %}
+  </details>
+</div>
+{% endif %}
+
+{% include "_codemirror_foot.html" %}
+
+{% endblock %}

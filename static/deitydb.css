@@ -1,0 +1,581 @@
+/* ===================================================================
+   DeityDB — Custom Datasette stylesheet
+   Scholarly aesthetic: navy / gold / warm cream
+   =================================================================== */
+
+:root {
+  --navy:       #1e3a5f;
+  --navy-mid:   #2d5282;
+  --navy-light: #3d6b9e;
+  --gold:       #c9a84c;
+  --gold-dark:  #a07c30;
+  --cream:      #faf8f5;
+  --white:      #ffffff;
+  --text:       #2c2c2c;
+  --muted:      #6b7280;
+  --border:     #e2d9c5;
+  --border-dark:#c8bfaf;
+  --card-shadow: 0 1px 4px rgba(30,58,95,0.09);
+}
+
+/* ── Base ─────────────────────────────────────────────────────────── */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a { color: var(--navy-mid); }
+a:hover { color: var(--gold-dark); }
+
+h1, h2, h3 {
+  font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-weight: normal;
+}
+
+/* ── Nav / Header ─────────────────────────────────────────────────── */
+
+header nav {
+  background: var(--navy) !important;
+  padding: 0 24px !important;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+header nav a,
+header nav a:visited {
+  color: #cfd9e8 !important;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header nav a:hover { color: var(--gold) !important; }
+
+header nav ol.crumbs { display: flex; gap: 6px; align-items: center; list-style: none; margin: 0; padding: 0; }
+header nav ol.crumbs li + li::before { content: '/'; color: #5a7aaa; margin-right: 6px; }
+header nav ol.crumbs a { font-size: 13px; }
+
+/* ── Content wrapper ──────────────────────────────────────────────── */
+
+div.not-footer { min-height: calc(100vh - 52px); }
+section.content { padding: 0 !important; }
+
+/* ── Page header (query/table pages) ─────────────────────────────── */
+
+.page-header {
+  border-left: 4px solid var(--gold) !important;
+  border-color: var(--gold) !important;
+  padding: 24px 24px 16px !important;
+  margin-bottom: 0 !important;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-header h1 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin: 0 0 4px;
+}
+
+/* ── Description / metadata boxes ────────────────────────────────── */
+
+.metadata-description {
+  background: var(--white);
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.metadata-description p { margin: 0 0 8px; }
+.metadata-description p:last-child { margin: 0; }
+
+.description-source-license {
+  background: #f0f5fc;
+  border-left: 4px solid var(--navy-light);
+  padding: 12px 16px;
+  border-radius: 0 6px 6px 0;
+  margin: 16px 24px 0;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+/* ── Section layout ───────────────────────────────────────────────── */
+
+.db-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.db-section h2 {
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin: 0 0 6px;
+}
+
+.db-section-desc {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 20px;
+}
+
+hr.db-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* ── Hero (index page) ────────────────────────────────────────────── */
+
+.db-hero {
+  background: linear-gradient(150deg, var(--navy) 0%, var(--navy-mid) 100%);
+  color: white;
+  padding: 72px 24px 80px;
+  text-align: center;
+}
+
+.db-hero h1 {
+  font-size: 3rem;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+  color: white;
+}
+
+.db-hero .subtitle {
+  font-size: 1.05rem;
+  color: #a8c4e0;
+  max-width: 640px;
+  margin: 0 auto 40px;
+  line-height: 1.75;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-stat { text-align: center; }
+
+.hero-stat-number {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--gold);
+  font-family: Georgia, serif;
+  line-height: 1.1;
+}
+
+.hero-stat-label {
+  font-size: 0.72rem;
+  color: #a8c4e0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ── Database page header ─────────────────────────────────────────── */
+
+.db-page-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 24px 24px;
+}
+
+.db-page-header-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.db-page-header h1 {
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin: 0 0 6px;
+}
+
+.db-page-header p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ── Query cards ──────────────────────────────────────────────────── */
+
+.query-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.query-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 20px 18px;
+  text-decoration: none !important;
+  display: block;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+  box-shadow: var(--card-shadow);
+}
+
+.query-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 4px 16px rgba(30,58,95,0.13);
+  transform: translateY(-2px);
+}
+
+.query-card-icon {
+  font-size: 1.35rem;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.query-card-title {
+  display: block;
+  font-weight: 600;
+  font-size: 0.93rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.query-card-desc {
+  display: block;
+  font-size: 0.81rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── Tradition grid ───────────────────────────────────────────────── */
+
+.tradition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 8px;
+}
+
+.tradition-chip {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 9px 12px;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.tradition-chip:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.trad-name {
+  font-size: 0.82rem;
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.12s;
+}
+
+.tradition-chip:hover .trad-name { color: white; }
+
+.trad-count {
+  font-size: 0.72rem;
+  color: var(--muted);
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 1px 6px;
+  flex-shrink: 0;
+  transition: background 0.12s, color 0.12s;
+}
+
+.tradition-chip:hover .trad-count {
+  background: rgba(255,255,255,0.18);
+  color: #cfd9e8;
+}
+
+.loading-text {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.88rem;
+  grid-column: 1 / -1;
+  padding: 12px 0;
+}
+
+/* ── About strip ──────────────────────────────────────────────────── */
+
+.about-strip {
+  background: var(--navy);
+  padding: 52px 24px;
+}
+
+.about-strip-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+
+.about-strip h3 {
+  color: var(--gold);
+  font-size: 1rem;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.about-strip p {
+  color: #a8c4e0;
+  font-size: 0.85rem;
+  line-height: 1.75;
+  margin: 0 0 12px;
+}
+
+.about-strip p:last-child { margin: 0; }
+.about-strip a { color: var(--gold); }
+.about-strip a:hover { color: #e8c86a; }
+
+/* ── SQL section ──────────────────────────────────────────────────── */
+
+.sql-section {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+}
+
+.sql-section-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.sql-section-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+form.sql { padding: 0 !important; background: none !important; }
+
+form.sql textarea,
+#sql-editor,
+.CodeMirror {
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 13px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px !important;
+  background: #f7f5f2 !important;
+  min-height: 80px;
+  width: 100% !important;
+}
+
+form.sql input[type=submit],
+form.sql button[type=submit] {
+  background: var(--navy) !important;
+  color: white !important;
+  border: none !important;
+  padding: 8px 22px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-size: 0.88rem !important;
+  margin-top: 8px;
+  transition: background 0.12s;
+}
+
+form.sql input[type=submit]:hover { background: var(--navy-mid) !important; }
+
+/* ── Tables details (collapsible) ────────────────────────────────── */
+
+.tables-details {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tables-details summary {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--white);
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tables-details summary::before {
+  content: '▸';
+  font-size: 0.75rem;
+  transition: transform 0.15s;
+}
+
+.tables-details[open] summary::before { transform: rotate(90deg); }
+.tables-details summary small { color: var(--border-dark); }
+
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 6px;
+  padding: 12px 16px 16px;
+  background: #f7f5f2;
+  border-top: 1px solid var(--border);
+}
+
+.table-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  text-decoration: none !important;
+  font-size: 0.8rem;
+  transition: border-color 0.12s;
+}
+
+.table-link:hover { border-color: var(--navy-light); }
+
+.table-name { color: var(--text); }
+.table-count, .table-type {
+  font-size: 0.7rem;
+  color: var(--muted);
+  background: var(--cream);
+  padding: 1px 5px;
+  border-radius: 8px;
+}
+
+/* ── Parameter forms (parametrized query pages) ───────────────────── */
+
+form[action*="deitydb"] p input[type=text],
+input[name="tradition"], input[name="category"],
+input[name="entity_name"] {
+  border: 1px solid var(--border-dark) !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  font-size: 0.9rem !important;
+  width: 320px;
+  max-width: 100%;
+  background: var(--white);
+  color: var(--text);
+}
+
+/* ── Query / table result pages ───────────────────────────────────── */
+
+.rows-and-columns {
+  padding: 0 24px 24px;
+  overflow-x: auto;
+}
+
+.rows-and-columns table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.85rem;
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border);
+}
+
+.rows-and-columns thead th {
+  background: var(--navy) !important;
+  color: white;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  border-bottom: none;
+}
+
+.rows-and-columns tbody tr:nth-child(even) { background: #f8f5f0; }
+.rows-and-columns tbody tr:hover { background: #eef4fb; }
+
+.rows-and-columns td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  color: var(--text);
+  max-width: 400px;
+}
+
+.rows-and-columns td a { color: var(--navy-mid); }
+
+/* ── Footer ───────────────────────────────────────────────────────── */
+
+footer.ft {
+  background: var(--navy) !important;
+  color: #7a99be !important;
+  padding: 16px 24px !important;
+  text-align: center;
+  font-size: 0.78rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+footer.ft a { color: var(--gold) !important; }
+footer.ft a:hover { color: #e8c86a !important; }
+
+/* ── Pagination ───────────────────────────────────────────────────── */
+
+.pagination {
+  padding: 16px 24px;
+  font-size: 0.85rem;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  text-decoration: none;
+  background: var(--white);
+  transition: border-color 0.12s, background 0.12s;
+}
+
+.pagination a:hover {
+  border-color: var(--navy);
+  background: var(--navy);
+  color: white;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+
+@media (max-width: 700px) {
+  .db-hero h1 { font-size: 2.1rem; }
+  .db-hero .subtitle { font-size: 0.95rem; }
+  .hero-stats { gap: 24px; }
+  .about-strip-inner { grid-template-columns: 1fr; gap: 28px; }
+  .query-grid { grid-template-columns: 1fr; }
+  .tradition-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}

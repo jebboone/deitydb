@@ -8,10 +8,15 @@ WORKDIR /data
 COPY deitydb.sqlite .
 COPY metadata.yaml .
 
+COPY templates/ /templates/
+COPY static/    /static_files/
+
 EXPOSE 8080
 
 CMD ["datasette", "serve", "deitydb.sqlite", \
      "--metadata", "metadata.yaml", \
+     "--template-dir", "/templates", \
+     "--static", "custom:/static_files", \
      "--host", "0.0.0.0", \
      "--port", "8080", \
      "--cors"]
