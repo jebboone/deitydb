@@ -6,10 +6,10 @@ It includes gods, angels, demons, spirits, saints, heroes, aeons, archons, jinn,
 
 The goal is to make religious entities queryable across traditions instead of leaving them isolated inside separate mythological silos.
 
-## Current Release — v1.1.0
+## Current Release — v1.2.0
 
-- 1,168 entities
-- 1,349 relationships
+- 1,170 entities
+- 1,352 relationships
 - 114 sources
 - 60+ tradition labels
 - 0 unresolved relationship references
@@ -120,7 +120,7 @@ This allows comparison without collapsing every tradition into the same theologi
 
 See `CONTRIBUTING.md` and `GOOD_FIRST_ISSUES.md`.
 
-High-value areas: heresiology (Irenaeus, Epiphanius), Islamic tafsir / sira / Sufi expansion, Jewish Kabbalistic expansion, Moses → Musa / Elijah → Ilyas reception chains, Works and Days personifications (Pandora, Five Ages), Greek tragedy source registration (Aeschylus, Sophocles, Euripides), data visualization, API or web interface.
+High-value areas: heresiology (Irenaeus, Epiphanius), Islamic tafsir / sira / Sufi expansion, Jewish Kabbalistic expansion, Works and Days personifications (Pandora, Five Ages), Greek tragedy source registration (Aeschylus, Sophocles, Euripides), data visualization, API or web interface.
 
 ## License
 
