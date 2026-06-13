@@ -1,0 +1,72 @@
+entity_id,canonical_name,tradition,category,primary_domains
+ENT_CAN_ANAT,Anat,Canaanite/Ugaritic,War Deity,war; fertility; protection
+ENT_CAN_ASTARTE,Astarte,Canaanite/Ugaritic,War Deity,love; fertility; sexuality; sovereignty
+ENT_CAN_ASHERAH,Athirat/Asherah,Canaanite/Ugaritic,Fertility Deity,motherhood; sea; fertility; divine consort
+ENT_CAN_BAAL,Baal Hadad,Canaanite/Ugaritic,Storm Deity,storm; rain; fertility; kingship
+ENT_CAN_YARIKH,Yarikh,Canaanite/Ugaritic,Moon Deity,moon; cycles; fertility
+ENT_CEL_CERNUNNOS,Cernunnos,Celtic/Gaulish,Animal Deity,horns; animals; wild nature; wealth; liminality
+ENT_CEL_NANTOSUELTA,Nantosuelta,Celtic/Gaulish,Household Deity,household; prosperity; fertility; land
+ENT_CEL_SUCELLUS,Sucellus,Celtic/Gaulish,Craft Deity,hammer; abundance; protection; agriculture
+ENT_CEL_EPONA,Epona,Celtic/Gaulish/Roman,Animal Deity,horses; protection; fertility; travel
+ENT_CEL_BRIGID,Brigid,Celtic/Irish,Craft Deity,poetry; smithcraft; healing; fire; fertility
+ENT_AGRICULTURE,Agriculture,Cross-traditional,Abstraction,agriculture; cultivation; crops; farming
+ENT_CRAFT,Craft,Cross-traditional,Abstraction,craft; artisanship; making; skilled work; material formation
+ENT_EARTH,Earth,Cross-traditional,Abstraction,earth; land; ground; material world
+ENT_FERTILITY,Fertility,Cross-traditional,Abstraction,fertility; generation; reproduction; growth
+ENT_FIRE,Fire,Cross-traditional,Abstraction,fire; flame; hearth; forge; purification
+ENT_PROSPERITY,Prosperity,Cross-traditional,Abstraction,prosperity; household abundance; flourishing; good fortune
+ENT_WEALTH,Wealth,Cross-traditional,Abstraction,wealth; property; treasure; possessions
+ENT_EGY_AKER,Aker,Egyptian,Earth Deity,earth; horizon; underworld; protection
+ENT_EGY_ANUKET,Anuket,Egyptian,Nile Deity,Nile; cataracts; fertility; nourishment
+ENT_EGY_BANEBDJEDET,Banebdjedet,Egyptian,Fertility Deity,fertility; virility; ba; Mendes
+ENT_EGY_BASTET,Bastet,Egyptian,Feline Deity,protection; joy; fertility; domesticity
+ENT_EGY_GEB,Geb,Egyptian,Earth Deity,earth; fertility; kingship; creation
+ENT_EGY_HAPY_NILE,Hapy,Egyptian,Nile Deity,Nile inundation; fertility; abundance; nourishment
+ENT_EGY_HEKET,Heket,Egyptian,Creator Deity,birth; fertility; creation; frog; childbirth
+ENT_EGY_HERYSHAF,Heryshaf,Egyptian,Creator Deity,kingship; fertility; creation
+ENT_EGY_KHNUM,Khnum,Egyptian,Creator Deity,creation; pottery; Nile; fertility
+ENT_EGY_MIN,Min,Egyptian,Fertility Deity,fertility; sexuality; desert roads; harvest
+ENT_EGY_RENENUTET,Renenutet,Egyptian,Fertility Deity,nourishment; harvest; destiny; protection; naming
+ENT_EGY_SOBEK,Sobek,Egyptian,Crocodile Deity,water; fertility; protection; kingship
+ENT_EGY_TATENEN,Tatenen,Egyptian,Earth Deity,earth; emergence; creation; fertility
+ENT_NOR_FREYJA,Freyja,Germanic/Norse,War Deity,love; fertility; seidr; war; dead
+ENT_NOR_FREYR,Freyr,Germanic/Norse,Fertility Deity,fertility; kingship; peace; prosperity; agriculture
+ENT_NOR_NJORD,Njord,Germanic/Norse,Sea Deity,sea; wealth; ships; prosperity
+ENT_NOR_THOR,Thor,Germanic/Norse,Storm Deity,thunder; protection; strength; giants; fertility
+ENT_NOR_VANIR,Vanir,Germanic/Norse,Divine Collective,fertility; prosperity; peace; divine family
+ENT_AGATHOS_DAIMON,Agathos Daimon,Greek,Household Spirit,household prosperity; protection
+ENT_APHRODITE,Aphrodite,Greek,Olympian,love; beauty; fertility
+ENT_CARPO,Carpo,Greek,Seasonal Deity,fruit; harvest; autumn; seasonal abundance
+ENT_CRONUS,Cronus,Greek,Titan,kingship; harvest/time by later association
+ENT_CYBELE,Cybele,Greek,Fertility Deity,mountains; fertility; wild nature
+ENT_DEMETER,Demeter,Greek,Agrarian Deity,grain; agriculture; mystery cult
+ENT_DESPOINA,Despoina,Greek,Chthonic Deity,mystery cult; underworld/earth
+ENT_GAIA,Gaia,Greek,Primordial Power,earth; generation
+ENT_HESTIA,Hestia,Greek,Household Deity,hearth; household fire
+ENT_HYMENAIOS,Hymenaios,Greek,Love Deity,marriage; wedding song; union; fertility
+ENT_PLOUTON,Plouton,Greek,Underworld Deity,underground wealth; fertility
+ENT_PLUTUS,Plutus,Greek,Fertility Deity,wealth; agrarian abundance
+ENT_POSEIDON,Poseidon,Greek,Olympian,sea; earthquakes; horses
+ENT_PRIAPUS,Priapus,Greek,Fertility Deity,gardens; fertility; livestock
+ENT_PYTHON,Python,Greek,Oracle Figure,Delphic earth oracle
+ENT_SABAZIOS,Sabazios,Greek,Mystery Deity,protection; initiation; fertility
+ENT_TRIPTOLEMUS,Triptolemus,Greek,Fertility Deity,agriculture; grain transmission
+ENT_TYCHON,Tychon,Greek,Fate Deity,fortune; chance; success; prosperity
+ENT_ZEUS_CHTHONIOS_CULT,Zeus Chthonios,Greek,Chthonic Deity,earth; underworld; chthonic power; fertility
+ENT_ZEUS_KTESIOS_CULT,Zeus Ktesios,Greek,Household Deity,property protection; household prosperity; storage; abundance
+ENT_MAN_PTAHIL,Ptahil,Mandaean,Creator Deity,world-maker; lower creation; material world
+ENT_MES_ADAD_ISHKUR,Adad/Ishkur,Mesopotamian,Storm Deity,storm; thunder; rain; fertility
+ENT_MES_DUMUZI_TAMMUZ,Dumuzi/Tammuz,Mesopotamian,Fertility Deity,shepherding; fertility; dying god; vegetation
+ENT_MES_GESHTINANNA,Geshtinanna,Mesopotamian,Fertility Deity,sister of Dumuzi; underworld; scribal wisdom; fertility
+ENT_MES_NINHURSAG,Ninhursag,Mesopotamian,Fertility Deity,motherhood; birth; mountains; fertility
+ENT_MES_NINURTA,Ninurta,Mesopotamian,War Deity,war; agriculture; kingship; heroic combat
+ENT_MES_NISABA,Nisaba,Mesopotamian,Agrarian Deity,writing; grain; accounting; scribal arts
+ENT_ROM_BACCHUS,Bacchus/Liber,Roman,Mystery Deity,wine; liberation; ecstasy; fertility
+ENT_ROM_CERES,Ceres,Roman,Agrarian Deity,grain; agriculture; fertility; plebeian cult
+ENT_ROM_MARS,Mars,Roman,War Deity,war; agriculture; fatherhood; Roman people
+ENT_ROM_PLUTO,Pluto/Dis Pater,Roman,Underworld Deity,underworld; wealth; dead; chthonic sovereignty
+ENT_ROM_SATURN,Saturn,Roman,Agrarian Deity,sowing; agriculture; golden age; time
+ENT_ROM_VENUS,Venus,Roman,Fertility Deity,love; beauty; fertility; ancestry
+ENT_ROM_VESTA,Vesta,Roman,Household Deity,hearth; sacred fire; household; state continuity
+ENT_ZOR_ANAHITA,Anahita,Zoroastrian,Fertility Deity,water; fertility; purity
+ENT_ZOR_SPENTA_ARMATI,Spenta Armaiti,Zoroastrian,Fertility Deity,earth; devotion; piety
