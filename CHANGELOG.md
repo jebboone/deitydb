@@ -80,6 +80,29 @@
   already in DB; the Quran names Al-Lat, Al-Uzza, and Manat explicitly (53:19-20)
 - Result: 1100 entities, 1231 relationships, 88 sources, 0 unresolved, 4 new traditions
 
+#### Israelite patriarchs and prophets (add_israelite_patriarchs_prophets.sql)
+- Added source SRC_HEBREW_BIBLE (Masoretic Text / BHS-BHQ; first explicit Israelite primary text source)
+- Patched ENT_ISR_SOLOMON stub: added entity_type ("King / Wisdom figure"), evidence_confidence A,
+  short_note, and SRC_HEBREW_BIBLE source link
+- Added 4 entities:
+  ENT_ISR_NOAH (flood patriarch; Genesis 6-9; Ezekiel 14:14; 1 Enoch 106-107),
+  ENT_ISR_ADAM (first human; tselem elohim Genesis 1:26-27; J source Genesis 2-3),
+  ENT_ISR_ELIJAH (9th c. BCE; 1 Kings 17-19; 2 Kings 2:11 fiery ascent; Malachi 4:5 eschatological return),
+  ENT_ISR_MOSES (Exodus 2–Deuteronomy 34; face-to-face with Yahweh; paradigm lawgiver)
+- Added 5 reception chain pairs (10 rows):
+  - ENT_MES_UTNAPISHTIM → received_as → ENT_ISR_NOAH (high, PER_ISR_EXILIC):
+    highest-confidence cross-traditional narrative transmission; deferred since
+    add_mesopotamian_expansion.sql; now activated; George (2003) documents the parallels
+  - ENT_ISR_ELIJAH → received_as → ENT_SAINT_JOHN_BAPTIST (high, PER_ISR_SECOND_TEMPLE):
+    Matthew 11:14, 17:12 explicit; Malachi 4:5 prophetic basis; best-documented
+    Hebrew Bible prophet → NT reception chain in the dataset
+  - ENT_ISR_ADAM → received_as → ENT_JM_ADAM_KADMON (medium): tselem elohim →
+    Lurianic primordial divine human; Scholem (1974)
+  - ENT_ISR_ADAM → received_as → ENT_SET_ADAMAS (medium): critical Gnostic reception
+    of Genesis 1-6 via Apocryphon of John (Nag Hammadi II,1); Meyer (2003)
+- Deferred: Moses→Musa (ENT_ISL_MUSA not yet in DB) and Elijah→Ilyas (ENT_ISL_ILYAS not yet in DB)
+- Result: 1118 entities, 1259 relationships, 92 sources, 0 unresolved
+
 #### Canaanite foundational expansion (add_canaanite_expansion.sql)
 - Added source SRC_WYATT_RELIGIOUS_TEXTS (N. Wyatt, Religious Texts from Ugarit, 2002)
 - Added 2 entities:
