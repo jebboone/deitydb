@@ -2,6 +2,29 @@
 
 ## v1.1.0 (in progress)
 
+### Systematic reception history — Egyptian → Hellenistic/Christian layer
+- Added SRC_PLUTARCH_ISIS_OSIRIS (Plutarch, *De Iside et Osiride*, c. 100–120 CE; primary text;
+  fullest surviving Greco-Roman account of Egyptian religion, Serapis creation, interpretatio graeca)
+- Added 9 reception chain pairs (18 relationship rows):
+  - ENT_EGY_OSIRIS → ENT_SYN_SERAPIS (high, PER_GRK_HELLENISTIC): Ptolemaic syncretic creation
+    (Plutarch De Is. 28; Tacitus Histories 4.83); highest-confidence Egyptian→syncretic chain
+  - ENT_EGY_HORUS → ENT_SYN_HARPOCRATES (high, PER_GRK_HELLENISTIC): Horus-the-child finger-gesture
+    misread as silence deity; Horus-child-with-Isis visual model for Christ-child-with-Virgin
+  - ENT_EGY_ANUBIS → ENT_SYN_HERMANUBIS (high, PER_GRK_HELLENISTIC): psychopomp function fusion
+  - ENT_HERMES → ENT_SYN_HERMANUBIS (high, PER_GRK_HELLENISTIC): the Greek side of the Hermanubis fusion
+  - ENT_EGY_AMUN → ENT_SYN_ZEUS_AMMON (high, PER_GRK_CLASSICAL): Herodotus 2.42 attests identification
+  - ENT_ZEUS → ENT_SYN_ZEUS_AMMON (high, PER_GRK_CLASSICAL): the Greek side of the Zeus-Ammon fusion
+  - ENT_EGY_HATHOR → ENT_APHRODITE (medium, PER_GRK_CLASSICAL): Herodotus 2.41; shared love/beauty
+    domains and sacred cow; second source of Aphrodite alongside Canaanite Astarte chain
+  - ENT_EGY_SETH → ENT_CHR_DEVIL (medium, PER_PATRISTIC): Plutarch's Seth/Typhon as cosmic evil;
+    Late Antique Coptic Satan identification; iconographic contribution to demonic imagery
+  - ENT_EGY_ISIS → ENT_SAINT_MARY (medium, PER_PATRISTIC): Isis lactans → Virgo lactans iconography;
+    Queen of Heaven title; star-crown; mourning at divine son's death; R.E. Witt (1971) documents
+- Syncretic targets (ENT_SYN_SERAPIS, ENT_SYN_HARPOCRATES, ENT_SYN_HERMANUBIS, ENT_SYN_ZEUS_AMMON)
+  now have full reception ancestry chains
+- ENT_EGY_THOTH → ENT_HER_TRISMEGISTUS already in DB from seed data; not repeated
+- Result: 1175 relationships, 82 sources, 0 unresolved
+
 ### Systematic reception history — Jewish Mystical reception layer
 - Added SRC_ALPHABET_BEN_SIRA (9th–11th c. CE; primary source for Lilith as Adam's first wife)
 - Added ENT_JM_LILITH (Isaiah 34:14 lilit → Talmud → Alphabet of Ben Sira → Kabbalistic demoness)
