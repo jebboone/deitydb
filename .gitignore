@@ -5,6 +5,9 @@ CLAUDE.md
 .env
 *.local
 
+# Generated SQLite export (built from PostgreSQL; not checked in)
+deitydb.sqlite
+
 # OS
 .DS_Store
 Thumbs.db
