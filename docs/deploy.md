@@ -6,10 +6,15 @@ served from a SQLite export of the PostgreSQL database.
 ## Prerequisites
 
 ```bash
-pip install datasette db-to-sqlite
+pip install "datasette==0.65.2" db-to-sqlite
 brew install flyctl          # or: curl -L https://fly.io/install.sh | sh
 fly auth login
 ```
+
+> **Version note:** The Dockerfile pins `datasette==0.65.2`. Datasette 1.0+
+> renamed "canned queries" to "stored queries" and removed the clean
+> `/database/query-name` URL route. Use 0.65.2 for both local testing and
+> production to keep URLs consistent with `metadata.yaml`.
 
 ## Step 1 — Export PostgreSQL → SQLite
 

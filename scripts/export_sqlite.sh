@@ -52,13 +52,28 @@ done
 
 echo ""
 echo "==> Verifying..."
-sqlite3 "$OUTPUT" "SELECT COUNT(*) || ' entities'      FROM entities;"
-sqlite3 "$OUTPUT" "SELECT COUNT(*) || ' relationships' FROM entity_relationships;"
-sqlite3 "$OUTPUT" "SELECT COUNT(*) || ' sources'       FROM sources;"
-sqlite3 "$OUTPUT" "SELECT COUNT(*) || ' entity_periods' FROM entity_periods;"
-echo ""
-echo "Tables in $OUTPUT:"
-sqlite3 "$OUTPUT" ".tables"
+python3 - <<PYEOF
+import sqlite3, sys
+con = sqlite3.connect("$OUTPUT")
+cur = con.cursor()
+counts = [
+    ("entities",         "SELECT COUNT(*) FROM entities"),
+    ("relationships",    "SELECT COUNT(*) FROM entity_relationships"),
+    ("sources",          "SELECT COUNT(*) FROM sources"),
+    ("entity_periods",   "SELECT COUNT(*) FROM entity_periods"),
+]
+for label, sql in counts:
+    n = cur.execute(sql).fetchone()[0]
+    print(f"  {label:<20} {n}")
+
+views = [r[0] for r in cur.execute(
+    "SELECT name FROM sqlite_master WHERE type='table' AND name LIKE 'v_public%' ORDER BY name"
+).fetchall()]
+print(f"\n  Materialised views: {len(views)}")
+for v in views:
+    print(f"    {v}")
+PYEOF
 echo ""
 echo "Export complete: $OUTPUT"
-echo "Test locally with:  datasette serve $OUTPUT --metadata metadata.yaml"
+echo "Test locally with:  datasette serve $OUTPUT --metadata metadata.yaml  # requires datasette==0.65.2"
+echo "Or via Docker:      docker build -t deitydb . && docker run -p 8001:8080 deitydb"

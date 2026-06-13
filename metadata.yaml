@@ -278,7 +278,7 @@ databases:
         title: Release Metrics
         description: Current database statistics — entity, relationship, and source counts.
 
-    canned_queries:
+    queries:
 
       tradition-overview:
         title: "Tradition overview"
