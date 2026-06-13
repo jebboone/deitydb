@@ -7,9 +7,6 @@ These are well-defined, self-contained tasks that don't require deep familiarity
 **Register Greek tragedy authors as sources and link their entities**
 Aeschylus, Sophocles, and Euripides are not yet registered as sources. Many entities they attest are linked only to Apollodorus or Burkert. Task: register `SRC_AESCHYLUS`, `SRC_SOPHOCLES`, `SRC_EURIPIDES` (following the format in `scripts/add_greek_primary_sources.sql`) and add `entity_sources` rows for the entities they attest with specific play/line citations (e.g. Aeschylus *Oresteia* → Erinyes, Orestes, Clytemnestra; Sophocles *Ajax* → Ajax; Euripides *Medea* → Medea, Jason; *Bacchae* → Dionysus, Pentheus, Cadmus).
 
-**Add reception chains: Moses → Musa, Elijah → Ilyas**
-`ENT_ISL_MUSA` and `ENT_ISL_ILYAS` are not yet in the database. These are the two most important Hebrew prophet → Quranic prophet reception chains. The Quran names both explicitly; the source `SRC_QURAN` is already registered. Task: add the two Islamic entities and the `received_as` relationship pairs.
-
 **Review period coverage for Gaulish and Gnostic entities**
 Run:
 ```sql

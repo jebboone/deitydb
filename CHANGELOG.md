@@ -1,14 +1,13 @@
 # Changelog
 
-## v1.1.0 (in progress)
+## v1.2.0
 
-### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean, Welsh, Etruscan, Scythian, Phrygian, Gaulish expansion
-### Systematic reception chains: Mesopotamian → Greek (with Hittite intermediary); Phrygian → Greek (Cybele); Gaulish → Irish/Welsh (Lugus); Scythian → Greek (Herodotean equated_with)
-### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian, Etruscan, Scythian, Phrygian entities
-### Egyptian tradition audit and remediation (0 unperiodized Egyptian entities)
-### Mycenaean / Linear B religion layer (Bronze Age Greek substrate)
-### Greek periodization: 466/466 entities assigned (from 3% coverage to 100%)
-### Roman primary sourcing: Virgil, Livy, Cicero De Natura Deorum, Varro Antiquitates
+### New tradition layers: Etruscan (12 entities; Pyrgi tablets, Piacenza liver), Scythian (7 entities; Herodotus 4.59–62), Phrygian (Matar Kubileya; Agdistis)
+### Celtic/Gaulish expansion: Lugus, Rosmerta, Maponos, Matres (11 total Gaulish entities; Lucan as primary Latin attestation for Esus/Teutates/Taranis)
+### Welsh internal relationships: 26 typed relationships from the Four Branches of the Mabinogi (was 2)
+### Greek periodization: 466/466 entities (3% → 100%); bulk Archaic + targeted Classical/Hellenistic/Roman
+### Roman primary sourcing: Virgil Aeneid, Livy AUC, Cicero De Natura Deorum, Varro Antiquitates
+### Pre-release cleanup: ENT_ISL_MUSA + ENT_ISL_ILYAS added; 0 associated_with remaining; Tinia→Voltumna removed
 
 #### Greek periodization completion (add_greek_period_assignments.sql)
 - **Problem addressed**: 466 Greek entities at 3% period coverage (15/466 assigned)
@@ -81,20 +80,35 @@
 - Reception chains: ENT_CYBELE reception_of ENT_PHRYG_MATAR (high); ENT_CYBELE and ENT_ATTIS emanates_from ENT_PHRYG_AGDISTIS
 - Also linked SRC_ROLLER_CYBELE to ENT_CYBELE, ENT_ATTIS, ENT_SABAZIOS (Greek-tradition entities now cross-linked to Phrygian scholarship)
 
-#### End-of-session metrics
-- 1168 entities (up from 1143) | 1349 relationships (up from 1305) | 114 sources (up from 100)
-- 0 unresolved relationship references | 0 unreviewed duplicates
-- New traditions added: Etruscan, Scythian, Phrygian
-- Greek tradition: 466/466 entities periodized (100%); was 15/466 (3%)
-- Welsh tradition: 28 relationships (was 2)
+#### Pre-release cleanup (pre_release_cleanup.sql)
+- Removed speculative ENT_ETR_TINIA → rules → ENT_ETR_VOLTUMNA (not directly attested; Voltumna was an independent Etruscan League deity)
+- Retyped 3 remaining associated_with edges → paired_with:
+  - ENT_EGY_OSIRIS ↔ ENT_EGY_HAPY_NILE: Nile fertility pair; Pyramid Texts Utterance 442
+  - ENT_EGY_SIA ↔ ENT_EGY_THOTH: paired cognitive deities on the solar barque; Book of the Dead ch. 17
+  - ENT_THEURGY ↔ ENT_MAGIC: overlapping late-antique ritual categories; Iamblichus De Mysteriis I.1-2
+- Added ENT_ISL_MUSA (Musa/Moses; Quran 2:51-61, 7:103-162, 20:9-98, 28:3-43; 136 Quranic mentions across 36 suras)
+- Added ENT_ISL_ILYAS (Ilyas/Elijah; Quran 6:85, 37:123-132; Baal-worship confrontation parallel to 1 Kings 18)
+- Reception chains: ENT_ISL_MUSA reception_of ENT_ISR_MOSES (high); ENT_ISL_ILYAS reception_of ENT_ISR_ELIJAH (high)
+- 0 associated_with remaining | 0 unresolved relationships
+
+#### Release metrics — v1.2.0
+- 1170 entities | 1352 relationships | 114 sources | 0 associated_with | 0 unresolved
+- New traditions added this release: Etruscan, Scythian, Phrygian
+- Greek tradition: 466/466 entities periodized (100%); was 15/466 (3%) at start of release
+- Welsh tradition: 28 relationships (was 2); all Four Branches of the Mabinogi mapped
 - Roman tradition: all 22 entities have primary-source coverage (Virgil, Livy, Cicero, Varro)
 - Gaulish tradition: 11 entities, 4 new sources; Esus/Teutates/Taranis have Lucan as primary attestation
+- Islamic tradition: ENT_ISL_MUSA and ENT_ISL_ILYAS complete the Islamic prophet corpus
 
-### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean
-### Systematic reception chains: Mesopotamian → Greek (with Hittite intermediary)
-### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian entities
-### Egyptian tradition audit and remediation
+## v1.1.0
+
+### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean, Welsh (Mabinogion)
+### Systematic reception chains: Mesopotamian → Greek; Egyptian → Hellenistic/Christian; Islamic; Patristic demonization; Zoroastrian → Israelite; Jewish Mystical
+### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian; Greek primary sources (Homer, Apollodorus, Pausanias, Homeric Hymns, Hesiod)
+### Egyptian tradition audit and remediation (0 unperiodized Egyptian entities; Pyramid Texts sourcing for 34 entities)
 ### Mycenaean / Linear B religion layer (Bronze Age Greek substrate)
+### Temporal/diachronic layer: period_id column on entity_relationships; 26 periods; received_as / reception_of relationship types
+### Sourcing campaign complete: 577 previously unsourced entities → 0; aligned_with eliminated (51 edges retyped)
 
 #### Hittite/Hurrian tradition seed (add_hittite_hurrian_layer.sql)
 - Added period PER_HTT_EMPIRE (Hittite Empire, c. 1650–1180 BCE)
