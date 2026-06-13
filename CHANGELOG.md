@@ -5,6 +5,7 @@
 ### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean
 ### Systematic reception chains: Mesopotamian → Greek (with Hittite intermediary)
 ### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian entities
+### Mycenaean / Linear B religion layer (Bronze Age Greek substrate)
 
 #### Hittite/Hurrian tradition seed (add_hittite_hurrian_layer.sql)
 - Added period PER_HTT_EMPIRE (Hittite Empire, c. 1650–1180 BCE)
@@ -79,6 +80,28 @@
 - Pre-Islamic Arabian deities provide the immediate substrate for the Islamic reception layer
   already in DB; the Quran names Al-Lat, Al-Uzza, and Manat explicitly (53:19-20)
 - Result: 1100 entities, 1231 relationships, 88 sources, 0 unresolved, 4 new traditions
+
+#### Mycenaean / Linear B religion (add_mycenaean_linear_b_layer.sql)
+- Added 2 sources: SRC_VENTRIS_CHADWICK (Documents in Mycenaean Greek, CUP 1973; primary Linear B reference),
+  SRC_BURKERT_GREEK_RELIGION (Burkert, Greek Religion, Harvard 1985; standard secondary)
+- Added 3 Mycenaean entities:
+  ENT_MYC_POTNIA (po-ti-ni-ja; "the Mistress"; most-attested Mycenaean deity; unqualified great goddess
+  who appears also as Athana Potnia, Potnia of the Labyrinth, etc.; substrate for multiple Classical goddesses),
+  ENT_MYC_DIWIA (di-u-ja at Pylos; feminine form of Zeus; corresponds to Classical Dione at Dodona),
+  ENT_MYC_ENYALIOS (e-nu-wa-ri-jo; independent war deity; appears SEPARATELY from Ares on PY Tn 316;
+  later absorbed into Ares as an epithet in the Classical period)
+- Assigned PER_GRK_MYCENAEAN to 7 Olympians with secure Linear B attestation:
+  Zeus (di-we), Poseidon (po-se-da-o; more prominent than Zeus at Pylos), Hermes (e-ma-a),
+  Dionysus (di-wo-nu-so; overturns "late import" theory), Hera (e-ra), Athena (a-ta-na po-ti-ni-ja), Ares (a-re)
+- Apollo explicitly excluded: ABSENT from all Linear B tablets — most significant negative finding
+- Added 3 reception chains (6 rows):
+  - ENT_MYC_POTNIA → received_as → ENT_ATHENA (high): KN V 52 "Athana Potnia" is Athena's earliest attestation;
+    she originates within the Mycenaean Potnia tradition
+  - ENT_MYC_DIWIA → received_as → ENT_DIONE (medium): identical name derivation (feminine of Zeus);
+    Dodona cult preserves her older independent goddess status
+  - ENT_MYC_ENYALIOS → received_as → ENT_ARES (medium): PY Tn 316 proves they were distinct Mycenaean
+    deities; post-Dark-Age consolidation merged them
+- Result: 1121 entities, 1265 relationships, 94 sources, 0 unresolved
 
 #### Israelite patriarchs and prophets (add_israelite_patriarchs_prophets.sql)
 - Added source SRC_HEBREW_BIBLE (Masoretic Text / BHS-BHQ; first explicit Israelite primary text source)
