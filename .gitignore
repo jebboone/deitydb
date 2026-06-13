@@ -1,0 +1,10 @@
+# Claude Code project instructions — not part of the public project
+CLAUDE.md
+
+# Local environment
+.env
+*.local
+
+# OS
+.DS_Store
+Thumbs.db

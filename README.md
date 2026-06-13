@@ -6,19 +6,18 @@ It includes gods, angels, demons, spirits, saints, heroes, aeons, archons, jinn,
 
 The goal is to make religious entities queryable across traditions instead of leaving them isolated inside separate mythological silos.
 
-## Current Release Candidate
+## Current Release — v1.1.0
 
-- 1,000+ entities
-- 900+ relationships
-- 60+ sources
+- 1,100+ entities
+- 1,300+ relationships
+- 100 sources
 - 40+ tradition labels
 - 0 unresolved relationship references
 - duplicate-name review complete
+- diachronic reception chains across traditions
 - public query views included
 
 ## Included Traditions
-
-Current coverage includes:
 
 - Greek
 - Egyptian
@@ -26,18 +25,22 @@ Current coverage includes:
 - Canaanite / Ugaritic
 - Israelite / Second Temple
 - Roman
-- Celtic
+- Celtic (Irish and Welsh)
 - Germanic / Norse
 - Christian
 - Gnostic
 - Mandaean
 - Manichaean
 - Zoroastrian
-- Islamic
-- Sufi and Shi'a Islamic
+- Islamic (including Sufi and Shi'a)
 - Jewish mystical
 - Hermetic
 - Late antique ritual traditions
+- Pre-Islamic Arabian
+- South Arabian / Sabaean
+- Phoenician Iron Age
+- Hittite / Hurrian
+- Mycenaean / Linear B
 
 ## What Can DeityDB Do?
 
@@ -49,49 +52,39 @@ Example questions:
 - How do angels, jinn, daimones, archons, and aeons compare?
 - Which figures function as holy human intermediaries rather than gods?
 - How do concepts like wisdom, justice, death, protection, and revelation move across traditions?
+- How did Greek gods get reinterpreted as demons in early Christian sources?
+- Which Mesopotamian figures have reception chains into Greek mythology?
 
 ## Public Views
 
-Useful views include:
+```sql
+SELECT * FROM v_release_metrics;
+SELECT * FROM v_public_tradition_overview;
+SELECT * FROM v_public_relationship_overview;
+SELECT * FROM v_public_revealer_figures;
+SELECT * FROM v_public_underworld_entities;
+SELECT * FROM v_public_angelic_beings;
+SELECT * FROM v_public_adversarial_beings;
+SELECT * FROM v_public_serpent_dragon_beings;
+SELECT * FROM v_public_wisdom_knowledge_beings;
+SELECT * FROM v_public_relationship_triples LIMIT 50;
+```
 
-- `v_release_metrics`
-- `v_public_tradition_overview`
-- `v_public_relationship_overview`
-- `v_public_revealer_figures`
-- `v_public_underworld_entities`
-- `v_public_angelic_beings`
-- `v_public_adversarial_beings`
-- `v_public_serpent_dragon_beings`
-- `v_public_wisdom_knowledge_beings`
-- `v_public_relationship_triples`
+See `examples/sample_queries.sql` for more.
 
-## Contributing
+## Quick Start
 
-Contributors are welcome.
+Requires Docker.
 
-High-value contribution areas:
+```bash
+git clone https://github.com/jebboone/deitydb.git
+cd deitydb
+docker run --name deitydb -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres:15
+docker exec -i deitydb psql -U postgres -c "CREATE DATABASE deitydb;"
+docker exec -i deitydb psql -U postgres -d deitydb < schema_postgres.sql
+```
 
-* primary-source upgrades
-* Greek and Egyptian source refinement
-* Irenaeus and early Christian heresiology
-* Islamic tafsir, sira, and Sufi traditions
-* Jewish mystical and Kabbalistic expansion
-* data visualization
-* API or web interface development
-* scholarly review of existing relationship types
-
-## License
-
-MIT License.
-
-Copyright (c) Jeb Boone
-
-## Sample Queries
-
-See:
-
-```text
-examples/sample_queries.sql
+See `docs/install.md` for the full setup guide including seed data and views.
 
 ## Design Principle
 
@@ -99,21 +92,31 @@ DeityDB does not treat all religious entities as gods.
 
 It distinguishes between:
 
-* gods
-* angels
-* demons
-* jinn
-* saints
-* prophets
-* imams
-* heroes
-* aeons
-* archons
-* daimones
-* spirits
-* monsters
-* cosmological realms
-* ritual categories
-* personified abstractions
+- gods
+- angels
+- demons
+- jinn
+- saints
+- prophets
+- imams
+- heroes
+- aeons
+- archons
+- daimones
+- spirits
+- monsters
+- cosmological realms
+- ritual categories
+- personified abstractions
 
 This allows comparison without collapsing every tradition into the same theological category.
+
+## Contributing
+
+See `CONTRIBUTING.md` and `GOOD_FIRST_ISSUES.md`.
+
+High-value areas: primary-source sourcing, Greek and Egyptian depth, heresiology (Irenaeus, Epiphanius), Islamic tafsir / sira / Sufi expansion, Jewish Kabbalistic expansion, data visualization, API or web interface.
+
+## License
+
+MIT. Copyright (c) Jeb Boone.
