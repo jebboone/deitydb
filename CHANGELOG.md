@@ -355,6 +355,76 @@
 - Tradition source ratios after remediation: Egyptian 14.8 (was ~44), Canaanite 2.3,
   Zoroastrian 4.0, Israelite (prophets) 1.0, Mesopotamian 6.0, Roman 7.3, Norse 6.7
 
+#### Egyptian period completion (add_egyptian_period_completion.sql)
+- **Problem addressed**: 21 Egyptian entities still had no period assignments after the bulk
+  Egyptian audit pass; these were the remaining specialist clusters: Horus forms, Four Sons
+  of Horus (collective + 4 individual), Ogdoad, Elephantine deities, and minor deities
+- **0 unperiodized Egyptian entities remain** (was 21)
+- **Four Sons of Horus** (5 entities):
+  ENT_EGY_FOUR_SONS_OF_HORUS, ENT_EGY_IMSETY, ENT_EGY_HAPY_SON_OF_HORUS,
+  ENT_EGY_DUAMUTEF, ENT_EGY_QEBEHSENUEF → PER_EGY_OLD_KINGDOM (high; PT Utterance 552);
+  the collective also assigned PER_EGY_NEW_KINGDOM (BD 151 standardization of their canopic jar roles)
+- **Horus forms** (4 entities):
+  ENT_EGY_HAROERIS (Great Horus) → PER_EGY_EARLY_DYNASTIC (high; Narmer Palette) + PER_EGY_OLD_KINGDOM;
+  ENT_EGY_HARSIESE → PER_EGY_OLD_KINGDOM + PER_EGY_NEW_KINGDOM;
+  ENT_EGY_HARAKHTY → PER_EGY_OLD_KINGDOM (PT 266) + PER_EGY_NEW_KINGDOM (Amduat);
+  ENT_EGY_HARSOMTUS → PER_EGY_NEW_KINGDOM (medium) + PER_EGY_PTOLEMAIC (high; Edfu/Dendera)
+- **Elephantine deities** (2 entities):
+  ENT_EGY_SATET → PER_EGY_EARLY_DYNASTIC (high; Khasekhemwy vase, Dynasty 2) + PER_EGY_OLD_KINGDOM;
+  ENT_EGY_ANUKET → PER_EGY_OLD_KINGDOM + PER_EGY_NEW_KINGDOM (Seheil inscriptions)
+- **Other deities** (10 entities):
+  ENT_EGY_OGDOAD → PER_EGY_OLD_KINGDOM (medium) + PER_EGY_MIDDLE_KINGDOM (high; Coffin Texts)
+    + PER_EGY_NEW_KINGDOM (high; Amduat/BD);
+  ENT_EGY_IHY → PER_EGY_OLD_KINGDOM (PT 334 "Ihy, son of Hathor, golden one");
+  ENT_EGY_ASH → PER_EGY_EARLY_DYNASTIC (Dynasty 1 wine jars) + PER_EGY_OLD_KINGDOM;
+  ENT_EGY_SHAI → PER_EGY_MIDDLE_KINGDOM (Coffin Texts) + PER_EGY_NEW_KINGDOM (BD 25, 30);
+  ENT_EGY_RERET → PER_EGY_OLD_KINGDOM (hippopotamus constellation);
+  ENT_EGY_SHESMETET → PER_EGY_OLD_KINGDOM (PT 317);
+  ENT_EGY_HERYSHAF → PER_EGY_OLD_KINGDOM + PER_EGY_FIRST_INTERMEDIATE (Herakleopolis royal capital);
+  ENT_EGY_BANEBDJEDET → PER_EGY_EARLY_DYNASTIC + PER_EGY_NEW_KINGDOM (Contendings of Horus and Seth);
+  ENT_EGY_NEFERHOTEP → PER_EGY_MIDDLE_KINGDOM (low; cult context to verify);
+  ENT_EGY_PTAH_SEKER_OSIRIS → PER_EGY_NEW_KINGDOM + PER_EGY_PTOLEMAIC (high; syncretic funerary triad)
+- Additional SRC_FAULKNER_PYRAMID_TEXTS entity_sources links added for 12 entities not previously linked
+- Period coverage after completion: Old Kingdom 56, New Kingdom 30, Early Dynastic 12, Middle Kingdom 11
+- Result: 1128 entities, 1303 relationships, 100 sources, 0 unresolved
+
+#### Welsh tradition layer — Mabinogion (add_welsh_mabinogion_layer.sql)
+- **Problem addressed**: SRC_MABINOGION was registered in the sources table with 0 entity links
+  because no Welsh entities existed in the database; the Celtic tradition was entirely Irish and Gaulish
+- **New period**: PER_CEL_MEDIEVAL_WELSH (Celtic/Welsh, 1050-1400 CE): composition of the Four
+  Branches of the Mabinogi (c. 1050-1120 CE); preserved in the White Book of Rhydderch (c. 1350)
+  and Red Book of Hergest (c. 1382)
+- **15 new entities** (tradition: 'Celtic/Welsh'), all linked to SRC_MABINOGION as primary_attestation:
+  - *First Branch* (Pwyll Pendefig Dyfed):
+    ENT_WEL_RHIANNON (sovereignty goddess; *Rigantona; magical white horse; Epona cognate),
+    ENT_WEL_PWYLL (prince of Dyfed; exchanges kingdoms with Arawn; earns title Pen Annwn),
+    ENT_WEL_ARAWN (lord of Annwn; hunts with the Cŵn Annwn, the white red-tipped Otherworld hounds),
+    ENT_WEL_PRYDERI (the only character in all four branches; tragic hero figure)
+  - *Second Branch* (Branwen ferch Llŷr):
+    ENT_WEL_BRAN (Bendigeidfran; divine giant king; possessor of the Cauldron of Rebirth; speaking head),
+    ENT_WEL_BRANWEN (tragic queen; trains a starling to carry a message to Bran),
+    ENT_WEL_MANAWYDAN (patient craftsman; Second and Third Branch)
+  - *Fourth Branch* (Math fab Mathonwy):
+    ENT_WEL_MATH (magician-king of Gwynedd; the foot-holder taboo),
+    ENT_WEL_GWYDION (trickster magician; the Fourth Branch's primary agent),
+    ENT_WEL_LLEU_LLAW_GYFFES (solar hero; "skillful hand"; three tyngedau; eagle transformation),
+    ENT_WEL_BLODEUWEDD (flower-woman created from oak, broom, and meadowsweet; transformed to owl),
+    ENT_WEL_ARANRHOD (star goddess; "Silver Wheel"; places three magical taboos on her own son Lleu),
+    ENT_WEL_DON (ancestral mother; "Children of Dôn" = Welsh divine family)
+  - *Otherworld geography and Culhwch ac Olwen*:
+    ENT_WEL_ANNWN (the Welsh Otherworld; First Branch + Preiddeu Annwfn; cosmological realm),
+    ENT_WEL_GWYN_AP_NUDD (Otherworld king; controls the demons of Annwn; the May Day eternal combat)
+- **Secondary source links** (6 rows): SRC_GREEN_CELTIC_GODS for Rhiannon/Epona, Brân head-cult,
+  Gwyn ap Nudd, Lleu/Lugus; SRC_MACCANA_CELTIC_MYTH for Lleu/Lugh, Manawydan/Manannán
+- **Iron Age period links** (low confidence): Rhiannon, Lleu, Dôn, Bran — pan-Celtic prototype roots
+- **2 reception chains** (name-cognate / structural parallels to existing Irish entities):
+  ENT_WEL_LLEU_LLAW_GYFFES → reception_of → ENT_CEL_LUGH (medium): *Lugus prototype; many-skilled;
+    Green (1992); Mac Cana (1970)
+  ENT_WEL_MANAWYDAN → reception_of → ENT_CEL_MANANNAN (low): *Manawydanō name-cognate;
+    divergent development (Welsh: craftsman; Irish: sea-god); Mac Cana (1970)
+- SRC_MABINOGION: 0 → 15 entity links
+- Result: 1143 entities, 1305 relationships, 100 sources, 0 unresolved
+
 #### Mesopotamian tradition audit and remediation (audit_mesopotamian_remediation.sql)
 - Added period PER_MES_UR_III (Ur III / Sumerian Renaissance, -2112 to -2004): the core period
   for the surviving Sumerian literary corpus (Inanna hymns, Nanna hymns, laments, Gilgamesh poems);
