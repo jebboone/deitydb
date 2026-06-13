@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict QppgFheyeUAq4hYIcqmg8VMTmOzt2ulHaWOHyfhv8A6rnE9PGOov2I1QpydXfGz
+\restrict IruQx6EIYE2ZXoBb5ZR9HQW3M5BEALZaGses8op6iekuMPDasA6glCqakCjJmSO
 
 -- Dumped from database version 17.10 (Debian 17.10-1.pgdg13+1)
 -- Dumped by pg_dump version 17.10 (Debian 17.10-1.pgdg13+1)
@@ -144,6 +144,7 @@ INSERT INTO public.entities VALUES ('ENT_MUSES', 'Muses', NULL, 'Greek', 'Goddes
 INSERT INTO public.entities VALUES ('ENT_CABEIRI', 'Cabeiri', NULL, 'Greek', 'Mystery gods collective', 'Mystery Deity', 'initiation; protection; craft mystery', 'mystery;local cult', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 3, false, false, 'Major or widely attested Greek religious/mythological entity.');
 INSERT INTO public.entities VALUES ('ENT_PAN', 'Pan', NULL, 'Greek', 'Rustic god', 'Rustic Deity', 'mountains; shepherds; wild nature', 'rustic;mountain', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 5, false, false, 'Major or widely attested Greek religious/mythological entity.');
 INSERT INTO public.entities VALUES ('ENT_DIOSCURI', 'Dioscuri', NULL, 'Greek', 'Hero-gods collective', 'Deified Mortal', 'sailors; horsemen; protection', 'hero cult;apotheosis', 'Greek world', 'Archaic-Classical/Roman reception', 'A', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 0, false, false, 'Major or widely attested Greek religious/mythological entity.');
+INSERT INTO public.entities VALUES ('ENT_JM_SERAPHIM', 'Seraphim', NULL, 'Jewish Mystical', NULL, 'Angelic Collective', 'fiery angels; throne liturgy; heavenly hierarchy; Merkabah tradition', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.entities VALUES ('ENT_AEACUS', 'Aeacus', NULL, 'Greek', 'Underworld judge', 'Underworld Judge', 'judge of dead', 'hero;underworld', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 3, true, false, 'Chthonic, underworld, or local cult seed entity.');
 INSERT INTO public.entities VALUES ('ENT_EURYNOMOS', 'Eurynomos', NULL, 'Greek', 'Underworld daimon', 'Underworld Being', 'corpse decay', 'chthonic', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 5, true, false, 'Chthonic, underworld, or local cult seed entity.');
 INSERT INTO public.entities VALUES ('ENT_BRIMO', 'Brimo', NULL, 'Greek', 'Goddess/epithet', 'Chthonic Deity', 'underworld power; terrifying goddess', 'epithet;chthonic', 'Greek world', 'Archaic-Classical/Roman reception', 'B', 'candidate_verified_name', 'Literary attestation in classical/mythographic tradition; cult evidence varies by entity.', 5, true, false, 'Chthonic, underworld, or local cult seed entity.');
@@ -5792,6 +5793,11 @@ INSERT INTO public.entity_relationships VALUES (644, 'ENT_GNO_LOGOS', 'member_of
 INSERT INTO public.entity_relationships VALUES (812, 'ENT_CEL_LUGH', 'opposes', 'ENT_CEL_FOMORIANS', 'high', 'Lugh is central to the conflict with the Fomorians.', 'SRC_LEBOR_GABALA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (813, 'ENT_CEL_TUATHA', 'opposes', 'ENT_CEL_FOMORIANS', 'high', 'The Tuatha Dé Danann oppose the Fomorians in Irish myth.', 'SRC_LEBOR_GABALA', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (800, 'ENT_ROM_MANES', 'dwells_in', 'ENT_UNDERWORLD', 'medium', 'Manes belong to the ancestral/dead sphere.', 'SRC_ROMAN_OCD', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1220, 'ENT_JM_SERAPHIM', 'member_of', 'ENT_ANGELS', 'high', NULL, 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1221, 'ENT_JM_CHAYYOT', 'associated_ritual', 'ENT_THRONE', 'medium', NULL, 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1222, 'ENT_JM_OPHANIM', 'associated_ritual', 'ENT_THRONE', 'medium', NULL, 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1223, 'ENT_JM_HASHMALLIM', 'associated_ritual', 'ENT_THRONE', 'medium', NULL, 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
+INSERT INTO public.entity_relationships VALUES (1224, 'ENT_JM_SERAPHIM', 'associated_ritual', 'ENT_THRONE', 'medium', NULL, 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (773, 'ENT_ROM_CERES', 'patron_of', 'ENT_AGRICULTURE', 'high', 'Ceres is goddess of grain and agriculture.', 'SRC_ROMAN_OCD', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (807, 'ENT_CEL_GOIBNIU', 'patron_of', 'ENT_CRAFT', 'high', 'Goibniu is a divine smith.', 'SRC_MACCANA_CELTIC_MYTH', 'reviewed');
 INSERT INTO public.entity_relationships VALUES (774, 'ENT_ROM_VENUS', 'identified_with', 'ENT_APHRODITE', 'high', 'Venus is the Roman counterpart of Aphrodite.', 'SRC_ROMAN_OCD', 'reviewed');
@@ -15765,6 +15771,7 @@ INSERT INTO public.entity_sources VALUES ('ENT_LAT_IAMETH', 'SRC_TESTAMENT_SOLOM
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_IAX', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_RATHANAEL', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
 INSERT INTO public.entity_sources VALUES ('ENT_LAT_WINGED_DRAGON', 'SRC_TESTAMENT_SOLOMON', 'primary_attestation', NULL);
+INSERT INTO public.entity_sources VALUES ('ENT_JM_SERAPHIM', 'SRC_HEKHALOT_SCHAFER_SYNOPSE', 'primary_attestation', NULL);
 
 
 --
@@ -17174,12 +17181,12 @@ SELECT pg_catalog.setval('public.entity_aliases_alias_id_seq', 181, true);
 -- Name: entity_relationships_relationship_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1219, true);
+SELECT pg_catalog.setval('public.entity_relationships_relationship_id_seq', 1224, true);
 
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict QppgFheyeUAq4hYIcqmg8VMTmOzt2ulHaWOHyfhv8A6rnE9PGOov2I1QpydXfGz
+\unrestrict IruQx6EIYE2ZXoBb5ZR9HQW3M5BEALZaGses8op6iekuMPDasA6glCqakCjJmSO
 
