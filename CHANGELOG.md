@@ -233,6 +233,44 @@
   Homer now #3 source by entity count (113); Apollodorus #5 (93); 100 total sources milestone
 - No change to entity or relationship counts: 1128 entities, 1303 relationships, 100 sources
 
+#### Hesiod Theogony linkage pass (add_hesiod_theogony_links.sql)
+- **Problem addressed**: SRC_HESIOD_THEOGONY ("Hesiod, Theogony and Works and Days") was linked
+  to only 39 entities, all of them cross-traditional personified abstractions or two Greek entities
+  (ENT_KRONOS and ENT_OURANOS, linked incidentally when created as chain targets in earlier scripts);
+  the Olympians, all Titans, all primordials, sea deities, and Hecate had no Hesiod links
+- **89 new entity_sources rows → 128 total links (was 39)**
+- Organized by Theogony structure:
+  - **Protogenoi / First Principles** (Theogony 116-132 + Nyx's offspring):
+    Chaos, Gaia, Tartarus, Eros Primordial, Erebus, Nyx, Aether, Hemera, Pontus, Ourea, Thalassa,
+    Uranus, Moros, Ker, Moirai, Selene, Helios, Eos (18 entities)
+  - **Named children of Nyx** (Theogony 211-225):
+    Thanatos, Hypnos, Nemesis, Eris, Dolos, Oizys, Keres (7 entities; Moirai already above)
+  - **Catalog of Eris's offspring** (Theogony 226-232):
+    Ponos, Limos, Algea, Hysminai, Makhai, Neikea, Amphilogiai, Pseudologoi, Dysnomia,
+    Ate, Atë, Horkos (12 entities; many with no other source links)
+  - **Twelve Titans** (Theogony 133-138):
+    Oceanus, Coeus, Crius, Hyperion, Iapetus, Themis, Rhea, Mnemosyne, Phoebe, Tethys,
+    Cronus (stub distinct from ENT_KRONOS), Theia (12 entities)
+  - **Second-generation Titans and Oceanids** (Theogony 337-406, 507-616):
+    Atlas, Prometheus, Epimetheus, Menoetius, Leto, Asteria, Astraeus, Perses Titan, Pallas Titan,
+    Dione, Metis, Eurybia, Clymene Titaness, Styx (14 entities)
+  - **Hecate** (Theogony 411-452): the most extensive individual praise passage in the entire Theogony
+    (40+ lines); Hesiod is the primary ancient text for Hecate's theology (1 entity)
+  - **Olympians** (Theogony 453-506, 886-1020): births and genealogies for all 15:
+    Zeus, Hera, Poseidon, Demeter, Hestia, Hades, Athena (born from Zeus's head after Metis swallowed),
+    Apollo, Artemis, Ares, Hephaestus (born of Hera alone — Hesiodic variant), Hermes, Aphrodite
+    (sea-foam birth — Hesiodic variant vs. Homer's daughter of Zeus/Dione), Persephone, Dionysus
+  - **Sea deities / children of Pontus** (Theogony 233-264):
+    Nereus (with 50 Nereids named by Hesiod), Thaumas, Phorcys, Ceto, Eurybia Sea, Triton (6 entities)
+  - **Works and Days**: Elpis (hope in the jar; Works and Days 94-98 is the ONLY ancient source
+    naming her in this role), Aidos (leaves earth with Nemesis at the end of the Iron Age; WD 197-201)
+  - **Other**: Iris (daughter of Thaumas; Theogony 265-266), Phoebe at Delphi (secondary reference
+    to the Titaness Phoebe as grandmother of Apollo and holder of the Delphic oracle before him)
+- Note: ENT_APHRODITE and ENT_HEPHAESTUS now have BOTH Homer and Hesiod as primary sources,
+  with the two texts attesting incompatible traditions (Aphrodite: sea-born vs. daughter of Zeus/Dione;
+  Hephaestus: parthenogenic/Hera alone vs. son of Zeus and Hera)
+- Result: 1128 entities, 1303 relationships, 100 sources, 0 unresolved
+
 #### Zero-link and low-link source remediation (add_source_linkage_remediation.sql)
 - **Problem addressed**: Source audit found 14 registered sources with 0 or near-0 entity links;
   most traditions had primary sources in the sources table but not linked to their own entities;
