@@ -5,6 +5,7 @@
 ### New tradition layers: Hittite/Hurrian, Phoenician Iron Age, Pre-Islamic Arabian, South Arabian/Sabaean
 ### Systematic reception chains: Mesopotamian → Greek (with Hittite intermediary)
 ### Foundational expansion: Canaanite, Hittite, South Arabian, Mesopotamian entities
+### Egyptian tradition audit and remediation
 ### Mycenaean / Linear B religion layer (Bronze Age Greek substrate)
 
 #### Hittite/Hurrian tradition seed (add_hittite_hurrian_layer.sql)
@@ -80,6 +81,34 @@
 - Pre-Islamic Arabian deities provide the immediate substrate for the Islamic reception layer
   already in DB; the Quran names Al-Lat, Al-Uzza, and Manat explicitly (53:19-20)
 - Result: 1100 entities, 1231 relationships, 88 sources, 0 unresolved, 4 new traditions
+
+#### Egyptian audit remediation (audit_egyptian_remediation.sql)
+- Added source SRC_FAULKNER_PYRAMID_TEXTS (R.O. Faulkner, OUP 1969; c. 2375-2181 BCE;
+  oldest religious corpus in the world; primary attestation for all Old Kingdom period assignments)
+- **Critical structural fix**: Atum → parent_of → Shu and Atum → parent_of → Tefnut (both high;
+  PT Utterance 600); the Ennead genealogy was fully mapped but its apex was unrooted
+- **Divine triad links**:
+  Theban Triad: Amun ↔ Mut (spouse_of); Amun → parent_of → Khonsu; Mut → parent_of → Khonsu
+  Memphis Triad: Ptah ↔ Sekhmet (spouse_of); both were absent despite Sekhmet being member_of Ptah
+- **4 new entities** (older strata gaps):
+  ENT_EGY_WOSRET (Old Kingdom; "the Powerful One"; Pyramid Texts; Senusret name etymology; Mut precursor),
+  ENT_EGY_IAH (Old Kingdom; primary lunar deity in Pyramid Texts; predates Khonsu's prominence),
+  ENT_EGY_MESKHENET (Middle Kingdom; birth brick goddess; Papyrus Westcar; fate at birth and judgment),
+  ENT_EGY_PAKHET (Middle Kingdom; "She Who Scratches"; Speos Artemidos; later equated with Artemis)
+- **Bulk period assignments** (43 rows):
+  Predynastic/Early Dynastic: Horus (Narmer Palette c. 3100 BCE), Seth, Neith, Wadjet, Nekhbet,
+  Min (Coptos colossi; among oldest Egyptian art), Wepwawet, Seshat
+  Old Kingdom (Pyramid Texts c. 2375 BCE): Atum, Shu, Tefnut, Geb, Nut, Isis, Nephthys,
+  Hathor, Ptah, Thoth (corrected from Middle Kingdom only), Bastet, Sekhmet, Sobek, Khnum,
+  Khepri, Khonsu, Montu, Heket, Serqet, Sopdu, Seker, Aker, Duat, Sia, Hu, Hapy, Nefertem, Tatenen
+  Middle Kingdom: Mut, Renenutet; New Kingdom: Bes, Taweret, Meretseger, Amun-Ra, Ra-Horakhty
+  Period coverage: 12 → 75 Egyptian entities assigned (21 remaining: Horus-forms, canopic jar
+  gods, Ogdoad collective, minor deities)
+- **3 reception chains** (6 rows; all Herodotus-explicit):
+  ENT_EGY_NEITH → received_as → ENT_ATHENA (high): Histories 2.28, 2.59 explicit; Sais = Athena's city
+  ENT_EGY_PTAH → received_as → ENT_HEPHAESTUS (high): Histories 3.37 explicit; Memphis = "Hephaestia"
+  ENT_EGY_MIN → received_as → ENT_PAN (high): Histories 2.46 explicit; Akhmim → Panopolis
+- Result: 1125 entities, 1281 relationships, 95 sources, 0 unresolved
 
 #### Mycenaean / Linear B religion (add_mycenaean_linear_b_layer.sql)
 - Added 2 sources: SRC_VENTRIS_CHADWICK (Documents in Mycenaean Greek, CUP 1973; primary Linear B reference),
