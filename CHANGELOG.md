@@ -21,6 +21,17 @@
 - Replaced all 51 `aligned_with` edges with typed relations
 - Re-added `associated_with` to relationship_types (3 defensible uses remain)
 
+### 20th-century Thelemic reception layer
+- Added period PER_20C_OCCULT (1900-2000) for Thelema, Wicca, and later occultism
+- Added SRC_CROWLEY_BOOK_OF_LAW (Liber AL vel Legis, 1904/1909; primary text)
+- Added 4 Thelemic entities (all evidence_confidence A, sourced to The Book of the Law):
+  ENT_THL_NUIT, ENT_THL_HADIT, ENT_THL_RA_HOOR_KHUIT, ENT_THL_AIWASS
+- Added 11 transmission chains anchored to PER_20C_OCCULT:
+  Nut→Nuit, Horus→Ra-Hoor-Khuit, Ra→Ra-Hoor-Khuit, Ra-Horakhty→Ra-Hoor-Khuit,
+  Harpocrates→Ra-Hoor-Khuit, Mahatmas→Aiwass (plus reception_of inverses)
+- All entities explicitly labeled as 20th-century Thelemic reception; none
+  presented as continuations of ancient Egyptian religion
+
 ### 19th-century occultism reception layer
 - Added 4 source records: SRC_LEVI_DOGME_RITUEL, SRC_BLAVATSKY_SECRET_DOCTRINE,
   SRC_HUTTON_TRIUMPH, SRC_HANEGRAAFF_DGW
