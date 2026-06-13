@@ -195,6 +195,85 @@
   - ENT_SAB_ATHTAR → received_as → ENT_ARA_AL_UZZA (low): Venus deity tradition transmitted
     north through incense trade routes; feminized in North Arabian reception
 
+#### Greek primary source layer (add_greek_primary_sources.sql)
+- **Problem addressed**: Greek tradition held 466 entities with 12 sources (38.8 entities/source);
+  the top 10 sources were all Theoi.com secondary reference indexes; Homer was entirely absent
+- Added 4 new primary sources (reaching 100 sources total):
+  SRC_HOMER_ILIAD_ODYSSEY (Iliad c. 750 BCE + Odyssey c. 725 BCE; Lattimore/Wilson translations)
+  SRC_HOMERIC_HYMNS (33 hymns, 7th-5th c. BCE; M.L. West, Loeb 2003)
+  SRC_APOLLODORUS_LIBRARY (Pseudo-Apollodorus, Library/Bibliotheca, 1st-2nd c. CE; Robin Hard, OUP 2008)
+  SRC_PAUSANIAS_DESCRIPTION (Pausanias, Description of Greece, c. 143-176 CE; Loeb 1918-1935)
+- Homer linkages (113 entities): all 12 Olympians, Hades, Persephone, Dionysus, Hestia;
+  primordials and Titans named in Homer (Gaia, Ouranos, Tartarus, Nyx, Erebus, Oceanus, Aether,
+  Cronus/Kronos, Rhea, Tethys, Hyperion, Leto, Atlas, Themis, Dione, Iapetus);
+  daimones active in the epics (Iris, Eris, Deimos, Phobos, Enyo, Hypnos, Thanatos, Ate, Litae,
+  Moirai, Ker, Nemesis, Horkos); sea deities (Nereus, Thetis, Amphitrite, Proteus, Ino-Leucothea);
+  15 Nereids from the Iliad XVIII catalog; wind gods (Boreas, Zephyrus, Notus, Eurus, Aeolus, Anemoi);
+  river gods (Scamander, Acheloos); Trojan War heroes (Achilles, Odysseus, Ajax, Hector, Diomedes,
+  Menelaus, Helen, Bellerophon, Heracles, Theseus, Perseus, Orestes, Protesilaus, Meleager, Machaon,
+  Podalirius, Asclepius, Castor, Polydeuces, Pelops, Cadmus, Ganymede, Tiresias, Calypso)
+- Homeric Hymns linkages (23 entities): specific deities addressed in individual hymns:
+  Demeter (HH 2; Eleusinian Mysteries foundation myth), Apollo (HH 3; Delos + Delphi), Hermes (HH 4;
+  theft of cattle + lyre invention), Aphrodite (HH 5, 6, 10), Ares (HH 8), Artemis (HH 9, 27),
+  Athena (HH 11, 28; birth from Zeus's head), Hera (HH 12), Rhea/Mother of Gods (HH 14),
+  Heracles (HH 15), Asclepius (HH 16), Poseidon (HH 22), Zeus (HH 23), Hestia (HH 24, 29),
+  Gaia (HH 30), Helios (HH 31), Selene (HH 32), Pan (HH 19), Hephaestus (HH 20),
+  Dionysus (HH 7; pirates myth), Persephone (HH 2), Python (HH 3)
+- Apollodorus linkages (93 entities): comprehensive coverage of Olympians, chthonic deities,
+  primordials, Titans, major heroes (Heracles full career, Perseus, Theseus, Jason/Medea,
+  Achilles, Odysseus, Bellerophon, Cadmus, Orestes, Tiresias, Atalanta), monsters (Typhon, Chimera,
+  Nemean Lion, Medusa, Cerberus), and underworld figures
+- Pausanias linkages (29 entities): Olympians at their principal sanctuaries (Zeus at Olympia,
+  Hera at Argos, Athena on the Acropolis, Apollo at Delphi, Demeter at Eleusis); hero cults
+  (Heracles, Achilles, Ajax, Theseus, Protesilaus, Pelops, Orpheus, Iphigenia, Hippolytus);
+  healing cult (Asclepius at Epidaurus — fullest ancient description); mystery cults
+  (Demeter/Kore at Eleusis); special sanctuaries (Nemesis at Rhamnous, Hades at Elis — the
+  only ancient Panhellenic temple to Hades; Pan in Arcadia and at Athens)
+- Result: 16 sources for Greek tradition (up from 12); ratio 29.1 entities/source (down from 38.8);
+  Homer now #3 source by entity count (113); Apollodorus #5 (93); 100 total sources milestone
+- No change to entity or relationship counts: 1128 entities, 1303 relationships, 100 sources
+
+#### Mesopotamian tradition audit and remediation (audit_mesopotamian_remediation.sql)
+- Added period PER_MES_UR_III (Ur III / Sumerian Renaissance, -2112 to -2004): the core period
+  for the surviving Sumerian literary corpus (Inanna hymns, Nanna hymns, laments, Gilgamesh poems);
+  fills the gap between PER_MES_EARLY and PER_MES_OLD_BAB
+- Added source SRC_FOSTER_BEFORE_MUSES (Benjamin Foster, Before the Muses, 3rd ed., CDL Press 2005):
+  the comprehensive Akkadian literary anthology; ETCSL covers Sumerian, Foster covers Akkadian;
+  now sourcing Tiamat, Apsu, Kingu, Marduk, Nabu, Ashur, Lamashtu, Pazuzu
+- Added 3 missing entities with full source links:
+  ENT_MES_NINLIL ("Lady of the Grain"; Enlil's consort; mother of Nanna/Sin; Enlil and Ninlil ETCSL 1.2.1;
+    cult at Nippur from Early Dynastic; Enlil had no spouse in the dataset before this fix)
+  ENT_MES_NINGAL ("Great Lady"; Nanna's consort; mother of Inanna and Utu; Lamentation over
+    Destruction of Ur ETCSL 2.2.2; major cult at Ur; Harran cult survives into the Sabian period)
+  ENT_MES_NAMMU (primordial sea goddess of Eridu theology; listed before Anu in Enki and the World
+    Order; mother of Enki per Enki and Ninmah ETCSL 1.1.2; among oldest attested Mesopotamian deities)
+- Bulk PER_MES_EARLY period assignments (14 deities): Anu, Enlil, Enki/Ea, Inanna/Ishtar, Nanna/Sin,
+  Utu/Shamash, Ninhursag, Ereshkigal, Dumuzi/Tammuz, Geshtinanna, Nergal, Ninurta, Nisaba,
+  Adad/Ishkur — all attested in Fara-period tablets (c. 2600 BCE); previously 29/33 entities
+  were assigned only to PER_MES_NEO_ASS (-900 to -539 BCE)
+- PER_MES_OLD_BAB assignments: Tiamat, Apsu, Kingu, Marduk, Nabu, Ashur, Lamashtu, Pazuzu
+  (the Babylonian theological tradition that gives these entities their canonical form)
+- Additional PER_MES_UR_III assignments: Inanna (Enheduanna hymns c. 2285-2250 BCE; oldest
+  attributed literary works), Nanna (Ur III dynastic patron deity), Enlil (Nippur theological
+  capital), Dumuzi (Inanna-Dumuzi love poetry in Ur III manuscripts)
+- Missing internal relationships (9 relationship pairs, 18 rows total):
+  Anu, Enlil, Enki → member_of → Anunnaki (the three chief gods were not linked to their collective)
+  Enki ↔ Ninhursag (paired_with): Enki and Ninhursag myth (ETCSL 1.1.1) is foundational
+  Ereshkigal ↔ Inanna (sibling_of): Descent of Inanna explicitly calls Ereshkigal "her sister"
+  Enlil ↔ Ninlil (spouse_of) + Enlil → parent_of → Nanna/Sin
+  Ninlil → parent_of → Nanna/Sin
+  Nanna ↔ Ningal (spouse_of) + Ningal → parent_of → Inanna and Utu
+  Nammu → parent_of → Enki
+- Reception chains (3 pairs, 6 rows):
+  ENT_MES_INANNA_ISHTAR → received_as → ENT_APHRODITE (medium): direct Cypriot path alongside
+    existing Inanna→Astarte→Aphrodite chain; Queen of Heaven / Venus star / love-war combination;
+    Burkert (1992)
+  ENT_MES_NANNA_SIN → received_as → ENT_SELENE (low): Hellenistic lunar deity equation;
+    Sin of Harran identified with Selene in the Sabian / interpretatio graeca tradition
+  ENT_MES_ENKI_EA → received_as → ENT_PROMETHEUS (low): divine benefactor against divine assembly;
+    structural parallel noted by West (1997); direct transmission unconfirmed
+- Result: 1128 entities, 1303 relationships, 96 sources, 0 unresolved
+
 #### Mesopotamian foundational expansion (add_mesopotamian_expansion.sql)
 - Added source SRC_GEORGE_GILGAMESH (Andrew R. George, The Babylonian Gilgamesh Epic, OUP 2003)
 - Added 5 entities:
