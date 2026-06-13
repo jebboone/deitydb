@@ -2,6 +2,71 @@
 
 ## v1.1.0 (in progress)
 
+### Systematic reception history — Jewish Mystical reception layer
+- Added SRC_ALPHABET_BEN_SIRA (9th–11th c. CE; primary source for Lilith as Adam's first wife)
+- Added ENT_JM_LILITH (Isaiah 34:14 lilit → Talmud → Alphabet of Ben Sira → Kabbalistic demoness)
+- Added 8 reception chain pairs (16 relationship rows):
+  - ENT_ENOCH → ENT_JM_METATRON (high): 3 Enoch narrates the patriarch's angelic transformation
+  - ENT_ISR_SOPHIA → ENT_JM_SHEKHINAH (medium): Wisdom hypostasis → divine feminine presence
+  - ENT_ISR_SOPHIA → ENT_JM_HOKHMAH (medium): Proverbs 8 Wisdom → second sefirah
+  - ENT_GNO_SOPHIA → ENT_JM_SHEKHINAH (medium): exiled aeon → exiled divine presence
+  - ENT_CAN_ASHERAH → ENT_JM_SHEKHINAH (low): Patai's goddess-beside-God continuity thesis
+  - ENT_ISR_AZAZEL → ENT_GNO_SAMAEL (medium): expelled being → adversarial angel of death
+  - ENT_ISR_SATAN → ENT_GNO_SAMAEL (medium): accuser → Kabbalistic prince of the sitra achra
+  - ENT_MES_LAMASHTU → ENT_JM_LILITH (low): Mesopotamian child-harming demoness → lilit
+
+### Systematic reception history — Islamic reception layer + Mithra→Mithras
+- Added SRC_VAN_BLADEL_ARABIC_HERMES (Van Bladel, OUP 2009 — definitive Idris=Hermes study)
+- Added ENT_ISL_IDRIS (Quranic prophet; identified with Enoch in Islamic commentary
+  and with Hermes Trismegistus in Islamic-Hermetic philosophy; nodal convergence figure)
+- Added 11 reception chain pairs (22 relationship rows):
+  - ENT_ISR_GABRIEL → ENT_ISL_JIBRIL (high): direct Quranic naming (2:97-98)
+  - ENT_ISR_MICHAEL → ENT_ISL_MIKAIL (high): direct Quranic naming (2:98)
+  - ENT_ISR_SATAN → ENT_ISL_IBLIS (high): cosmic adversary; Shaytan cognate with satan
+  - ENT_ISR_AZAZEL → ENT_ISL_IBLIS (medium): Iblis's pre-fall name Azazil in tafsir
+  - ENT_ISR_WATCHERS → ENT_ISL_HARUT (medium): angels teaching forbidden arts in Babylon
+  - ENT_ISR_WATCHERS → ENT_ISL_MARUT (medium): paired with Harut in Quran 2:102
+  - ENT_CHR_ANTICHRIST → ENT_ISL_DAJJAL (medium): false messiah via Jewish-Christian apocalyptic
+  - ENT_ISR_ANGEL_OF_DEATH → ENT_ISL_AZRAIL (medium): named Angel of Death tradition
+  - ENT_ENOCH → ENT_ISL_IDRIS (high): universally identified in Islamic commentary
+  - ENT_HER_TRISMEGISTUS → ENT_ISL_IDRIS (medium): Idris=Hermes in 9th–12th c. philosophy
+  - ENT_ZOR_MITHRA → ENT_SYN_MITHRAS (medium): Iranian Mithra → Roman mystery cult deity
+
+### Systematic reception history — Greek Olympians → Patristic demonization
+- Added SRC_JUSTIN_MARTYR_APOLOGIES (1st/2nd Apologies, c. 150–165 CE) and SRC_AUGUSTINE_CITY_OF_GOD (413–426 CE)
+- Added 13 reception chain pairs (26 relationship rows) covering all major Olympians:
+  - Apollo → ENT_CHR_APOLLYON (high): Revelation 9:11 wordplay; Justin Martyr 1 Apol. 24
+  - Zeus → ENT_CHR_DEVIL (medium): chief Olympian structurally mapped to prince of demons
+  - Pan → ENT_CHR_DEVIL (medium): iconographic origin of the Devil's physical form
+  - Hera, Poseidon, Athena, Ares, Hephaestus, Artemis, Aphrodite, Demeter,
+    Dionysus → ENT_CHR_DEMONS (medium): Justin Martyr 1 Apol. 9, 24–25; Augustine II–VIII
+  - Hestia → ENT_CHR_DEMONS (low): Augustine City of God IV.23 general condemnation
+- Note: ENT_HECATE already handled (ENT_REC_HECATE_PATRISTIC); ENT_HERMES omitted
+  (Justin Martyr uses Hermes as a positive Logos parallel; Hermetic chain already in DB)
+
+### Systematic reception history — Zoroastrian → Israelite/Second Temple layer
+- Added SRC_TOBIT (Book of Tobit, primary text, c. 3rd–2nd c. BCE)
+- Added ENT_ZOR_AESHMA_DAEVA (Zoroastrian demon of wrath; Yasna 29.2, Vidēvdād 10; previously missing)
+- Fixed ENT_LAT_ASMODEUS stub: added entity_type, evidence_confidence, sourcing, period
+- Added 3 reception chain pairs (6 relationship rows):
+  - ENT_ZOR_AESHMA_DAEVA → ENT_LAT_ASMODEUS (high): philologically secure name derivation
+  - ENT_ZOR_ANGRA_MAINYU → ENT_ISR_SATAN (medium): cosmic adversary structural influence during exile
+  - ENT_ZOR_AMESHA_SPENTAS → ENT_ISR_MICHAEL (low): named divine council structural parallel
+- All chains period-anchored (PER_ZOR_ACHAEMENID, PER_ISR_EXILIC, PER_ISR_SECOND_TEMPLE)
+
+### Systematic reception history — Canaanite/Mesopotamian/Israelite layer
+- Added SRC_CROSS_CANAANITE_MYTH (Frank Moore Cross, 1973) and SRC_DAY_GODS_CONFLICT (John Day, 1985)
+- Added 10 reception chain pairs (20 relationship rows) covering:
+  - Mesopotamian→Canaanite: ENT_MES_TIAMAT→ENT_CAN_LOTAN, ENT_MES_INANNA_ISHTAR→ENT_CAN_ASTARTE
+  - Canaanite→Israelite: ENT_CAN_LOTAN→ENT_ISR_LEVIATHAN (high), ENT_CAN_MOT→ENT_ISR_SHEOL (high),
+    ENT_CAN_YAM→ENT_ISR_LEVIATHAN (medium), ENT_CAN_EL→ENT_ISR_YAHWEH (medium),
+    ENT_CAN_ASHERAH→ENT_ISR_SOPHIA (low, contested)
+  - Mesopotamian→Israelite direct (exilic contact): ENT_MES_TIAMAT→ENT_ISR_LEVIATHAN,
+    ENT_MES_APKALLU→ENT_ISR_WATCHERS
+  - Canaanite→Greek: ENT_CAN_ASTARTE→ENT_APHRODITE (via Phoenician Cyprus)
+- All chains period-anchored (PER_CAN_BRONZE_AGE, PER_ISR_EXILIC, PER_ISR_SECOND_TEMPLE, PER_GRK_ARCHAIC)
+- 0 unresolved relationships maintained
+
 ### Temporal / Diachronic layer
 - Added `period_id` column to `entity_relationships` (upgrade_v1_1_temporal.sql)
 - Added 26 period records (total: 44) covering all major traditions + reception eras
