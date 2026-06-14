@@ -11,7 +11,7 @@ description_html: |
   Zoroastrian · Islamic · Jewish Mystical · Hermetic · Etruscan · Scythian · Phrygian · Pre-Islamic
   Arabian · South Arabian/Sabaean · Phoenician · Hittite/Hurrian · Mycenaean · Late Antique ritual ·
   Baltic · Slavic · Moabite · Ammonite · Edomite · Thracian · Armenian · Finnish · Urartian · Meroitic · Iberian/Lusitanian · Aramean · Luwian · Elamite</p>
-  <p><strong>v1.19.0</strong> — 1,238 entities · 2,113 relationships · 144 sources · 0 unresolved references</p>
+  <p><strong>v1.20.0</strong> — 1,251 entities · 2,143 relationships · 145 sources · 0 unresolved references</p>
   <p>Source and contributing: <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a></p>
 license: MIT
 license_url: https://opensource.org/licenses/MIT
@@ -23,7 +23,7 @@ extra_css_urls:
 
 databases:
   deitydb:
-    title: DeityDB v1.19.0
+    title: DeityDB v1.20.0
     description_html: |
       <p>Start with the <strong>Canned queries</strong> below, or browse the tables directly.
       The main tables are <em>entities</em>, <em>entity_relationships</em>, and <em>sources</em>.

@@ -1,5 +1,50 @@
 # Changelog
 
+## v1.20.0 — 2026-06-14
+
+### Expansion: Valentinian pleroma, Dacian tradition, Italic/Sabine tradition
+
+**Valentinian pleroma expansion** (`add_valentinian_expansion.sql`):
+- **NEW SOURCE**: SRC_IRENAEUS_AH (Irenaeus, Adversus Haereses I.1-9, c. 180 CE — the fullest
+  ancient account of Valentinian theology; Rousseau & Doutreleau SC 263-264 edition)
+- **NEW ENTITIES (6)**: ENT_VAL_DECAD (ten-aeon collective from Logos+Zoe), ENT_VAL_DODECAD
+  (twelve-aeon collective from Anthropos+Ecclesia), ENT_VAL_MONOGENES (Only-begotten, Decad),
+  ENT_VAL_PISTIS (Faith, Dodecad), ENT_VAL_AGAPE (Love, Dodecad), ENT_VAL_THELETOS (Will,
+  Dodecad — paired with Sophia, the 30th aeon; his absence triggers the Fall).
+- **CRITICAL FIX — Yaldabaoth**: ENT_GNO_YALDABAOTH had only 1 relationship (cult_form_of
+  Demiurge). Added 5 relationships: parent_of from Achamoth, member_of Archons,
+  identified_with Saklas, aligned_with Samael, opposes Sophia.
+- **STRUCTURAL CHAIN**: Nous emanates_from Bythos; Aletheia emanates_from Sige; Logos+Zoe
+  parent_of Decad; Anthropos+Ecclesia parent_of Dodecad; individual aeons member_of their
+  collectives; Sophia member_of Dodecad; Sophia spouse_of Theletos.
+
+**Dacian tradition** (`add_dacian_layer.sql`):
+- **NEW ENTITY (1)**: ENT_DAC_DERZELAS — Dacian chthonic deity of vigor and abundance,
+  attested on coins at Odessos (mod. Varna, Bulgaria), 3rd–2nd c. BCE. Tradition: "Dacian".
+- **NEW RELATIONSHIPS (3)**: Zalmoxis aligned_with Dionysus (mystery cult structural parallel;
+  Herodotus, Plato); Derzelas aligned_with Zalmoxis (shared chthonic-vitalistic domain);
+  Derzelas aligned_with Gebeleizis (regional Dacian storm/chthonic divine pair).
+
+**Italic/Sabine tradition** (`add_italic_sabine.sql`):
+- **NEW PERIOD**: PER_ITA_ARCHAIC (Archaic Italic, c. 900–509 BCE)
+- **NEW ENTITIES (6)**: ENT_ITA_FAUNUS (wildlands, prophecy, Lupercalia), ENT_ITA_PICUS
+  (prophetic woodpecker, first king of Latium, father of Faunus per Virgil Aen. 7.48),
+  ENT_ITA_OPS (Sabine abundance goddess, Saturn's consort), ENT_ITA_CARMENTA (prophetic
+  goddess, Carmentalia, patron of childbirth, co-credited with Latin alphabet), ENT_ITA_FLORA
+  (goddess of flowering plants, Floralia, identified with Greek Chloris in Ovid Fasti 5.195),
+  ENT_ITA_SILVANUS (forest boundary guardian, primarily worshipped by slaves/freedmen).
+- **RELATIONSHIPS (10)**: Picus parent_of Faunus (high); Faunus aligned_with Pan (high — explicit
+  ancient identification); Picus aligned_with Mars (medium — Picus Martius, woodpecker of Mars);
+  Ops spouse_of Saturn (high); Silvanus aligned_with Pan (medium); Silvanus aligned_with Faunus
+  (medium); Carmenta aligned_with Hermes (medium — mother of Evander with Mercury per Ovid/Livy);
+  Carmenta reception_of Mnemosyne (low — Camenae identified with Muses by Livius Andronicus);
+  Flora aligned_with Demeter (low); Flora aligned_with Ceres (medium — consecutive festival calendar).
+
+Counts: +13 entities (1,251 total), +30 relationships (2,143 total),
++1 source (145 total), 0 unresolved references.
+
+---
+
 ## v1.19.0 — 2026-06-14
 
 ### Enrichment: Hermopolis Ogdoad cluster
