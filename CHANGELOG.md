@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.26.0 — 2026-06-14
+
+### New layer: formative Sufism (8th–10th c.)
+
+First of two planned mystical layers, built oldest-first per the bottom-up priority:
+early Sufism (Hasan al-Basri d. 728 → al-Hallaj d. 922) predates Kabbalah proper
+(12th–13th c.) by ~300–400 years, so it lands before the Jewish-mystical/Kabbalistic
+layer. The great systematizers (al-Ghazali d. 1111, Ibn al-ʿArabi d. 1240, Rumi d. 1273)
+are deliberately deferred to a later stratum. (`add_sufi_formative_layer.sql`)
+
+**New sources (2):** SRC_SCHIMMEL_SUFISM (Schimmel, *Mystical Dimensions of Islam*, 1975);
+SRC_HUJWIRI_KASHF (al-Hujwiri, *Kashf al-Mahjub*, c. 1075 — earliest Persian Sufi treatise).
+
+**New entities (12):**
+- *6 mystics:* Hasan al-Basri (asceticism/zuhd), Rabiʿa al-ʿAdawiyya (divine love),
+  Dhuʾl-Nun al-Misri (maʿrifa), Abu Yazid al-Bistami (intoxicated fanaʾ), al-Junayd
+  al-Baghdadi (sober school, fanaʾ→baqaʾ), al-Hallaj (the "Anaʾl-Haqq" martyr).
+- *6 doctrines:* Fanaʾ, Baqaʾ, Maʿrifa, Mahabba, Dhikr, Tariqa.
+
+**Relationships (21):** figures embody/teach their signature doctrines; silsila links
+(Junayd teaches Hallaj; Junayd reception_of Hasan al-Basri); doctrine structure
+(Fanaʾ ⇄ Baqaʾ; Fanaʾ/Baqaʾ/Maʿrifa/Dhikr member_of Tariqa); comparative-layer
+integration (Mahabba→Love, Maʿrifa→Hidden Knowledge, Fanaʾ→Union); and sainthood
+(Junayd/Bistami embodies Walaya, tying into the existing Qutb/Abdal hierarchy).
+
+Counts: **1,263** entities (+12) / **2,200** relationships (+21) / **147** sources (+2);
+0 unsourced entities, 0 unsourced relationships, 0 orphans, 0 unresolved references.
+
+---
+
 ## v1.25.0 — 2026-06-14
 
 ### Enrichment: Etruscan and Celtic/Gaulish (completes the thin-tradition pass)
