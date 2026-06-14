@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.15.0 — 2026-06-14
+
+### Dataset expansion: Elamite tradition
+
+**Elamite layer** (`add_elamite_layer.sql`) — new tradition, 4 entities:
+- Sources: `SRC_POTTS_ELAM` (Potts, *The Archaeology of Elam*, Cambridge UP 1999 — standard
+  comprehensive reference), `SRC_CARTER_STOLPER_ELAM` (Carter & Stolper, *Elam: Surveys of
+  Political History and Archaeology*, UC Press 1984 — classic historical survey).
+- Period: `PER_ELAM_CLASSICAL` (Kingdom of Elam, −2200 to −539 BCE).
+- **Inshushinak** (`ENT_ELAM_INSHUSHINAK`, conf A): "Lord of Susa"; principal deity of Susa
+  and lord of the dead / divine judge; attested from Old Elamite through Neo-Elamite periods;
+  Chogha Zanbil dedicated jointly to him and Napirisha; patron_of Dead;
+  aligned_with ENT_MES_UTU_SHAMASH (medium — parallel judicial deity of neighboring tradition).
+- **Kiririsha** (`ENT_ELAM_KIRIRISHA`, conf A): "the Great Goddess"; principal Elamite mother
+  goddess; cult at Liyan (Bushehr) and Chogha Zanbil; Middle Elamite divine triad member;
+  patron_of Fertility; aligned_with ENT_MES_INANNA_ISHTAR (medium);
+  aligned_with ENT_ZOR_ANAHITA (low — later Iranian great goddess succession);
+  spouse_of ENT_ELAM_NAPIRISHA (high — Chogha Zanbil paired temples).
+- **Napirisha** (`ENT_ELAM_NAPIRISHA`, conf A): "the Great God"; supreme deity of the Middle
+  Elamite / Untash-Napirisha period; Chogha Zanbil ziggurat built for him c. 1250 BCE;
+  famous bronze statue c. 1340 BCE (Louvre Sb 2731); water/healing domains;
+  patron_of Healing; aligned_with ENT_MES_ENKI_EA (medium — water deity parallel).
+- **Humban** (`ENT_ELAM_HUMBAN`, conf A): chief deity of Old and Neo-Elamite periods;
+  dominant theophoric element in Neo-Elamite royal names (Humban-Haltash, Humban-Numena,
+  Humban-Undasha); cult objects deported to Nineveh by Assurbanipal after 647 BCE sacking
+  of Susa; aligned_with ENT_MES_ENLIL (medium — parallel chief divine authorities of
+  neighboring civilizations).
+
+Counts: +4 entities (1,234 total), +9 relationships (2,076 total), +2 sources (143 total),
++1 tradition (76 total), 0 unresolved references.
+
+---
+
 ## v1.14.0 — 2026-06-14
 
 ### Dataset expansion: Phrygian expansion + Luwian tradition
