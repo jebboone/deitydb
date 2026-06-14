@@ -1,5 +1,61 @@
 # Changelog
 
+## v1.18.0 — 2026-06-14
+
+### Expansion: Enochian / Second Temple Apocalyptic cluster
+
+**Enochian expansion** (`add_enochian_expansion.sql`): The core Enochian layer
+(Enoch, Azazel, Shemihazah, Watchers, Mastema) already existed and was well-connected.
+This expansion targets the specific gaps: the three absent archangels completing the
+1 Enoch 20 seven-archangel council, the Nephilim (the foundational product of the
+Watcher transgression and progenitors of Second Temple demonology), enrichment of
+thin entities (Behemoth/Leviathan pairing, Mastema/Satan alignment), and a
+substantive short_note for Shemihazah.
+
+**New entities (4):**
+- **Raguel** (`ENT_ISR_RAGUEL`, conf A): Archangel who "takes vengeance on the world
+  of the luminaries" (1 Enoch 20:4); oversees cosmic-astronomical order; venerated
+  in Ethiopian Orthodox tradition; completes the 7-archangel council alongside
+  Michael, Gabriel, Raphael, Uriel (all already in DB), Remiel, and Sariel.
+- **Remiel** (`ENT_ISR_REMIEL`, conf A): Archangel "whom God set over those who rise"
+  (1 Enoch 20:8); resurrection/souls of the dead; appears as "Jeremiel" in 4 Ezra
+  4:36; confirmed in 2 Baruch 55:3; cross-linked to ENT_ZOR_AMERETAT (low —
+  Zoroastrian immortality/resurrection parallel).
+- **Sariel** (`ENT_ISR_SARIEL`, conf A): Archangel "set over the spirits, who sin in
+  the spirit" (1 Enoch 20:6); named on War Scroll battle tower (1QM 9:15-16)
+  alongside Michael, Gabriel, Raphael — replacing Uriel in the DSS four-archangel
+  schema; one of the best-attested archangels in Dead Sea Scrolls literature.
+- **Nephilim** (`ENT_ISR_NEPHILIM`, conf A): Giant hybrid offspring of Watchers and
+  human women (Gen 6:1-4; 1 Enoch 6-7); their violence precipitates the Flood
+  judgment; their disembodied spirits become the post-Flood demons of Second Temple
+  demonology (1 Enoch 15:8-12); child_of both ENT_ISR_WATCHERS and
+  ENT_ISR_BENE_ELOHIM; parent entity Shemihazah; opposes ENT_ISR_YAHWEH.
+
+**Entity update:**
+- **Shemihazah** (`ENT_ISR_SHEMIHAZAH`): Replaced one-line stub with full short_note
+  (Mount Hermon oath, Watcher list, specific teaching domain, Michael's binding
+  command 1 Enoch 10:11-12, DSS Book of Giants attestation, contrast with Mastema).
+
+**New relationships (14):**
+- `ENT_ISR_BEHEMOTH paired_with ENT_ISR_LEVIATHAN` (high — 1 Enoch 60:7-9; Job 40-41;
+  4 Ezra 6:49-52; rabbinic eschatological feast tradition; the canonical pair)
+- `ENT_ISR_MASTEMA aligned_with ENT_ISR_SATAN` (high — same adversarial/accuser
+  function; Mastema in Jubilees = Satan in Job/DSS; Jubilees 17:16 binding of Isaac test)
+- `ENT_ISR_BENE_ELOHIM member_of ENT_ISR_WATCHERS` (high — Gen 6 Bene Elohim = 1 Enoch
+  Watchers; the two tradition-names for the same divine beings)
+- `ENT_ISR_WATCHERS parent_of ENT_ISR_NEPHILIM` + `ENT_ISR_SHEMIHAZAH parent_of
+  ENT_ISR_NEPHILIM` + `ENT_ISR_NEPHILIM child_of ENT_ISR_BENE_ELOHIM` (genealogy chain)
+- `ENT_ISR_NEPHILIM opposes ENT_ISR_YAHWEH` (high — their corruption precipitates Flood)
+- Raguel, Remiel, Sariel each: `aligned_with` existing archangels; Remiel `aligned_with`
+  ENT_ZOR_AMERETAT (low — resurrection/immortality parallel); Sariel, Raguel each
+  `opposes ENT_ISR_WATCHERS` (domain overlap)
+- New source: `SRC_JUBILEES` (VanderKam, CSCO 510-511, 1989 — anchors Mastema material)
+
+Counts: +4 entities (1,238 total), +14 relationships (2,106 total),
++1 source (144 total), 0 unresolved references.
+
+---
+
 ## v1.17.0 — 2026-06-14
 
 ### Structural quality: category audit, orphan fix, Zoroastrian cross-links
