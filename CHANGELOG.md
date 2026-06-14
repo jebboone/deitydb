@@ -1,5 +1,44 @@
 # Changelog
 
+## v1.29.0 — 2026-06-14
+
+### Gnostic expansion I: the Sethian system of the Apocryphon of John
+
+Builds out the interior of the existing Sethian skeleton, sourced at the text level.
+(`add_sethian_apocryphon_john.sql`)
+
+**New sources (4):** Apocryphon of John (NHC II/III/IV + BG 8502); Hypostasis of the
+Archons (NHC II,4); Gospel of the Egyptians (NHC III/IV); and Piwowarczyk's *Lexicon of
+Spiritual Powers in the Nag Hammadi Library* (the scholarly onomastic reference).
+
+**New entities (20):**
+- *Barbelo's pentad:* Prognosis (Foreknowledge), Aphtharsia (Incorruptibility),
+  Aionia Zoe (Eternal Life).
+- *The twelve aeons of the Four Luminaries* (three each): Harmozel — Charis, Aletheia,
+  Morphe; Oroiael — Aisthesis, Mneme (+ Epinoia); Daveithe — Synesis, Agape, Idea;
+  Eleleth — Teleios, Eirene (+ Sophia).
+- *Demiurgic apparatus:* Heimarmene (Fate), the Twelve Authorities (= Seven Kings of the
+  Heavens + Five over the Chaos), the Seventy-two Angels (body-craftsmen, from the Book
+  of Zoroaster interpolation), the Four Demons of the Passions, and the Souls of the
+  Repentant. (Undifferentiated swarms mapped as sourced collectives, not 72 individual
+  hapax names.)
+
+**Relationships (34):** Barbelo's aeons emanate from her; the 12 aeons member_of their
+luminaries; the heavenly humans placed in the luminaries (Adamas→Harmozel, Seth→Oroiael,
+Seed of Seth→Daveithe, repentant souls→Eleleth); Autogenes identified_with Christ and
+rules the luminaries; the fall genealogy **Yaldabaoth emanates_from Sophia**; the archon
+hierarchy (Yaldabaoth parent_of the Twelve Authorities = 7 Kings + 5 over the Chaos);
+Heimarmene embodies Fate; the Four Demons causes_affliction Humans; plus comparative
+links (Aletheia→Truth, Mneme→Memory, Synesis→Understanding, Agape→Love).
+
+Note: the Sethian aeons Aletheia, Agape, and Eirene are suffixed "(Sethian)" to
+distinguish them from the existing Valentinian/Greek homonyms.
+
+Counts: **1,301** entities (+20) / **2,273** relationships (+34) / **154** sources (+4);
+0 unsourced, 0 orphans, 0 unresolved, 0 unreviewed duplicates.
+
+---
+
 ## v1.28.0 — 2026-06-14
 
 ### Layer: later Sufism — the systematizers and metaphysicians (11th–13th c.)
