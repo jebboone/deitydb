@@ -42,6 +42,8 @@ VIEWS=(
   v_public_revealer_figures
   v_public_serpent_dragon_beings
   v_public_wisdom_knowledge_beings
+  v_public_domain_overview
+  v_public_comparative_domains
   v_release_metrics
 )
 
