@@ -1,5 +1,46 @@
 # Changelog
 
+## v1.5.0 — 2026-06-14
+
+### Dataset expansion: Baltic and Slavic traditions; Egyptian gap fill
+
+**Egyptian additions** (`add_aten_amarna.sql`):
+- **Aten** (`ENT_EGY_ATEN`): Amarna-period solar disk deity; one of the
+  most historically significant Egyptian figures — the Akhenaten monotheistic
+  revolution (c. 1353-1336 BCE). Source: new `SRC_MURNANE_AMARNA` (Murnane 1995
+  critical edition of the Great Hymn to the Aten and Amarna boundary stelae).
+  Relationships: cult_form_of Ra, identified_with Ra-Horakhty, opposes Amun.
+- **Anhur** (`ENT_EGY_ANHUR`): hunting and war deity of Thinis; attested from
+  the Pyramid Texts; identified with Shu in the New Kingdom; received as
+  Onuris/Ares by the Greeks. Relationships: identified_with Shu, reception_of Ra.
+- Total Egyptian tradition: 89 → **91 entities**.
+
+**Baltic tradition** (`add_baltic_layer.sql`) — new tradition, 0 → **10 entities**:
+- Sources: `SRC_GIMBUTAS_BALTS` (Gimbutas 1963), `SRC_GREIMAS_LITHUANIAN` (Greimas 1992).
+- Period: `PER_BALT_PAGAN` (Baltic Pre-Christian Period, −2000 to 1400 CE).
+- Entities: Dievas (sky god, PIE *Dyēus), Perkūnas (thunder, cognate with Thor/Parjanya),
+  Velnias (chthonic/cattle/dead), Laima (fate), Saulė (sun goddess, feminine),
+  Meness (moon deity, masculine), Gabija (hearth fire), Žemyna (earth),
+  Medeina (forest), Ragana (witch-spirit, conf B).
+- Key relationships: Perkūnas opposes Velnias (the core Baltic cosmic myth),
+  Saulė paired_with Meness, Perkūnas judges Meness, Dievas aligned_with Zeus,
+  Perkūnas aligned_with Thor, Gabija embodies Fire, Žemyna embodies Earth.
+
+**Slavic tradition** (`add_slavic_layer.sql`) — new tradition, 0 → **9 entities**:
+- Sources: `SRC_PRIMARY_CHRONICLE_PVL` (Nestor's Primary Chronicle, c. 1113 CE),
+  `SRC_BRUCKNER_SLAVIC_MYTH` (Brückner 1918).
+- Period: `PER_SLAV_PAGAN` (Slavic Pre-Christian Period, −500 to 1100 CE).
+- Kiev Pantheon (AD 980 PVL entry, conf A): Perun (thunder), Mokosh (earth/fate),
+  Dažbog (solar), Stribog (wind), Simargl (guardian, conf B), Khors (solar/Iranian, conf B).
+- Additional attested: Veles (chthonic/cattle; oath treaties AD 945, 971),
+  Svarog (fire/sky; Hypatian Chronicle Malalas gloss), Rod (ancestral fate; conf B).
+- Key relationships: Perun opposes Veles (core Slavic cosmic myth), Svarog parent_of
+  Dažbog, Perun aligned_with Perkūnas, Perun aligned_with Thor, Veles aligned_with
+  Velnias, Mokosh aligned_with Laima, Perun embodies Storm.
+
+**Totals**: 1,172 → **1,193 entities** (+21); 1,961 → **1,986 relationships** (+25);
+115 → **120 sources** (+5); 0 unresolved relationship references maintained.
+
 ## v1.4.0 — 2026-06-13
 
 ### Visualizations
