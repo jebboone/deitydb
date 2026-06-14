@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.14.0 — 2026-06-14
+
+### Dataset expansion: Phrygian expansion + Luwian tradition
+
+**Phrygian expansion** (`add_phrygian_expansion.sql`):
+- **Attis** (`ENT_ATTIS`): reclassified from Greek seed stub to full Phrygian entity.
+  Vegetation deity and dying-and-rising consort of Matar Kubileya; myth of self-castration
+  under a pine tree (Pausanias 7.17.9-12; Arnobius *Adversus Nationes* 5.5-7; Catullus 63;
+  Ovid *Fasti* 4.179-246); annual Roman festival cycle (Canna Intrat → Arbor Intrat →
+  Sanguem → Hilaria); Galli priests. New relationships:
+  paired_with ENT_PHRYG_MATAR (high); aligned_with ENT_DIONYSUS (medium — dying-and-rising
+  parallel noted by Firmicus Maternus, *De Errore* 3.1).
+- Sources: `SRC_VERMASEREN_CYBELE_ATTIS` (Vermaseren, *Cybele and Attis*, Thames & Hudson 1977),
+  `SRC_TARACHA_ANATOLIA` (Taracha, *Religions of Second Millennium Anatolia*, Harrassowitz 2009).
+- New period: `PER_LUW_NEO_HITTITE` (Neo-Hittite / Luwian Iron Age, −1200 to −700).
+
+**Luwian tradition** — 1 new entity:
+- **Kubaba** (`ENT_LUW_KUBABA`, conf A): city goddess of Carchemish (principal Neo-Hittite
+  state, c. 1000–717 BCE); enthroned on a lion, holding pomegranate and mirror; name
+  "Kubaba" → Phrygian "Kubileya" is one of the most etymologically secure deity receptions
+  in Anatolian history. Completes the reception chain:
+  **Kubaba → Matar Kubileya → Cybele** (ENT_CYBELE reception_of ENT_PHRYG_MATAR already
+  existed; ENT_PHRYG_MATAR reception_of ENT_LUW_KUBABA is the new link).
+
+Counts: +1 entity (1,230 total), +3 relationships (2,067 total), +2 sources (141 total),
++1 tradition (75 total, Luwian added), 0 unresolved references.
+
+---
+
 ## v1.13.0 — 2026-06-14
 
 ### Dataset expansion: Meroitic, Iberian/Lusitanian, and Aramean traditions
