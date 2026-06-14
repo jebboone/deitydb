@@ -38,14 +38,26 @@
       </p>
     </div>
 
-    {# SVG graph #}
+    {# Loading state #}
+    <div class="gp-loading" id="gp-loading" hidden>
+      <div class="gp-loading-spinner"></div>
+      <p>Loading relationships…</p>
+    </div>
+
+    {# Error state #}
+    <div class="gp-error" id="gp-error" hidden>
+      <p class="gp-error-msg" id="gp-error-msg">An error occurred.</p>
+      <button class="gp-seed" onclick="gpReset()">Try again</button>
+    </div>
+
+    {# SVG graph — inserted dynamically #}
     <svg id="gp-svg" hidden aria-label="Relationship graph"></svg>
 
     {# Floating toolbar #}
     <div class="gp-toolbar" id="gp-toolbar" hidden>
       <span class="gp-stats" id="gp-stats"></span>
       <button class="gp-tbtn" id="gp-fit"   title="Fit graph to screen">⊞ Fit</button>
-      <button class="gp-tbtn" id="gp-reset" title="Clear and start over">↺ Reset</button>
+      <button class="gp-tbtn" id="gp-reset-btn" title="Clear and start over">↺ Reset</button>
     </div>
 
     {# Hover tooltip #}
@@ -63,26 +75,23 @@
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
+/* ── Namespace guard ─────────────────────────────────────────────── */
+if (typeof d3 === 'undefined') {
+  document.getElementById('gp-empty').hidden = true;
+  var errEl = document.getElementById('gp-error');
+  errEl.hidden = false;
+  document.getElementById('gp-error-msg').textContent = 'Could not load the D3 visualization library. Check your internet connection and reload.';
+} else {
 (function () {
 'use strict';
 
-/* ── Tradition colour palette (matches entity browser) ──────────── */
+/* ── Tradition colour palette ────────────────────────────────────── */
 var TRAD_COLOR = {
-  greek:        '#3b6fd4',
-  egyptian:     '#d4873b',
-  mesopotamian: '#c43b8f',
-  christian:    '#2a8a4f',
-  islamic:      '#1a9e76',
-  jewish:       '#c4923b',
-  gnostic:      '#7c3bd4',
-  northern:     '#3b9dc4',
-  roman:        '#c43b3b',
-  zoroastrian:  '#c47c3b',
-  hermetic:     '#3ba8a0',
-  cross:        '#6b7280',
-  other:        '#94a3b8',
+  greek:'#3b6fd4', egyptian:'#d4873b', mesopotamian:'#c43b8f',
+  christian:'#2a8a4f', islamic:'#1a9e76', jewish:'#c4923b',
+  gnostic:'#7c3bd4', northern:'#3b9dc4', roman:'#c43b3b',
+  zoroastrian:'#c47c3b', hermetic:'#3ba8a0', cross:'#6b7280', other:'#94a3b8',
 };
-
 var TRAD_LABEL = {
   greek:'Greek', egyptian:'Egyptian', mesopotamian:'Mesopotamian',
   christian:'Christian', islamic:'Islamic', jewish:'Jewish/Israelite',
@@ -90,18 +99,16 @@ var TRAD_LABEL = {
   zoroastrian:'Zoroastrian', hermetic:'Hermetic/Late Antique',
   cross:'Cross-traditional', other:'Other',
 };
-
-function tradKey(trad) {
-  if (!trad) return 'other';
-  var t = trad.toLowerCase();
+function tradKey(t) {
+  if (!t) return 'other';
+  t = t.toLowerCase();
   if (t.startsWith('greek'))        return 'greek';
   if (t.startsWith('egyptian'))     return 'egyptian';
   if (t.startsWith('mesopotamian')) return 'mesopotamian';
   if (t.includes('christian') || t.includes('biblical')) return 'christian';
   if (t.includes('islamic') || t.includes('sufi') || t.includes("shi'a")) return 'islamic';
   if (t.includes('jewish') || t.includes('israelite') || t.includes('second temple')) return 'jewish';
-  if (t.includes('gnostic') || t.includes('valentinian') || t.includes('sethian') ||
-      t.includes('mandaean') || t.includes('manichaean')) return 'gnostic';
+  if (t.includes('gnostic') || t.includes('mandaean') || t.includes('manichaean') || t.includes('valentinian')) return 'gnostic';
   if (t.includes('celtic') || t.includes('norse') || t.includes('germanic')) return 'northern';
   if (t.includes('roman') || t.includes('etruscan')) return 'roman';
   if (t.includes('zoroastrian')) return 'zoroastrian';
@@ -109,361 +116,343 @@ function tradKey(trad) {
   if (t.includes('cross-traditional')) return 'cross';
   return 'other';
 }
-
-/* ── Relationship short labels ──────────────────────────────────── */
 var REL_SHORT = {
   parent_of:'parent of', spouse_of:'spouse of', patron_of:'patron of',
   member_of:'member of', has_member:'has member', equated_with:'equated with',
   reception_of:'reception of', received_as:'received as', opposes:'opposes',
   slays:'slays', guides:'guides', reveals:'reveals', dwells_in:'dwells in',
-  rules:'rules', protects:'protects', savior_of:'savior of',
-  embodies:'embodies', paired_with:'paired with', emanates_from:'from',
-  identified_with:'identified with', associated_with:'associated',
-  syncretized_with:'syncretized', causes_affliction:'afflicts',
+  rules:'rules', protects:'protects', embodies:'embodies', paired_with:'paired with',
+  emanates_from:'emanates from', identified_with:'identified with',
+  syncretized_with:'syncretized with', causes_affliction:'afflicts',
+  associated_with:'associated with', cult_form_of:'cult form of',
 };
-function relShort(t) { return REL_SHORT[t] || t.replace(/_/g,' '); }
+function relLabel(t) { return REL_SHORT[t] || (t || '').replace(/_/g, ' '); }
 
-/* ── Graph state ────────────────────────────────────────────────── */
-var gNodes    = [];
-var gLinks    = [];
-var nodeMap   = {};
-var linkSet   = new Set();
-var expanded  = new Set();
+/* ── State ───────────────────────────────────────────────────────── */
+var nodes = [];      /* array of node objects with d3 .x .y .vx .vy */
+var links = [];      /* array of link objects (source/target resolved by d3) */
+var nodeMap = {};    /* entity_id → node object */
+var linkSet = new Set();   /* "src|type|tgt" → dedup */
+var expanded = new Set();  /* entity_ids that have been expanded */
+var simulation = null;
+var svgSel, gSel, linkG, nodeG, labelG, zoomBehavior;
 
-/* ── D3 handles ─────────────────────────────────────────────────── */
-var svg, g, linkLayer, nodeLayer, labelLayer;
-var sim, zoom;
-var W, H;
+/* ── DOM refs ────────────────────────────────────────────────────── */
+var canvasEl   = document.getElementById('gp-canvas');
+var emptyEl    = document.getElementById('gp-empty');
+var loadingEl  = document.getElementById('gp-loading');
+var errorEl    = document.getElementById('gp-error');
+var errorMsgEl = document.getElementById('gp-error-msg');
+var svgEl      = document.getElementById('gp-svg');
+var toolbarEl  = document.getElementById('gp-toolbar');
+var legendEl   = document.getElementById('gp-legend');
+var statsEl    = document.getElementById('gp-stats');
+var tipEl      = document.getElementById('gp-tooltip');
 
-function initSVG() {
-  var container = document.getElementById('gp-canvas');
-  W = container.clientWidth;
-  H = container.clientHeight;
+/* ── Show/hide helpers ───────────────────────────────────────────── */
+function showOnly(state) {
+  /* state: 'empty' | 'loading' | 'error' | 'graph' */
+  emptyEl.hidden   = (state !== 'empty');
+  loadingEl.hidden = (state !== 'loading');
+  errorEl.hidden   = (state !== 'error');
+  svgEl.hidden     = (state !== 'graph');
+  toolbarEl.hidden = (state !== 'graph');
+  legendEl.hidden  = (state !== 'graph');
+}
 
-  svg = d3.select('#gp-svg').attr('width', W).attr('height', H);
+/* ── SVG init (lazy) ─────────────────────────────────────────────── */
+function ensureSVG() {
+  if (svgSel) return;
+
+  svgSel = d3.select(svgEl);
 
   /* Arrow marker */
-  svg.append('defs').append('marker')
-    .attr('id', 'gp-arr')
+  svgSel.append('defs').append('marker')
+    .attr('id', 'gp-arrow')
     .attr('viewBox', '0 -4 8 8')
-    .attr('refX', 3).attr('refY', 0)
+    .attr('refX', 4).attr('refY', 0)
     .attr('markerWidth', 5).attr('markerHeight', 5)
     .attr('orient', 'auto')
-    .append('path').attr('d', 'M0,-4L8,0L0,4Z').attr('fill', '#94a3b8');
+    .append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', '#94a3b8');
 
-  g = svg.append('g');
-  linkLayer  = g.append('g').attr('class', 'gp-link-layer');
-  nodeLayer  = g.append('g').attr('class', 'gp-node-layer');
-  labelLayer = g.append('g').attr('class', 'gp-label-layer');
+  gSel   = svgSel.append('g').attr('class', 'gp-root');
+  linkG  = gSel.append('g').attr('class', 'gp-links');
+  nodeG  = gSel.append('g').attr('class', 'gp-nodes');
+  labelG = gSel.append('g').attr('class', 'gp-labels');
 
-  sim = d3.forceSimulation([])
-    .force('link',    d3.forceLink([]).id(function(d){ return d.id; }).distance(100).strength(0.5))
-    .force('charge',  d3.forceManyBody().strength(-320))
-    .force('center',  d3.forceCenter(W/2, H/2))
-    .force('collide', d3.forceCollide(function(d){ return nodeR(d) + 10; }))
+  zoomBehavior = d3.zoom()
+    .scaleExtent([0.05, 5])
+    .on('zoom', function(ev) { gSel.attr('transform', ev.transform); });
+  svgSel.call(zoomBehavior).on('dblclick.zoom', null);
+}
+
+function getSize() {
+  return { W: canvasEl.clientWidth || 800, H: canvasEl.clientHeight || 600 };
+}
+
+/* ── Force simulation ────────────────────────────────────────────── */
+function startSim() {
+  var sz = getSize();
+  if (simulation) simulation.stop();
+
+  simulation = d3.forceSimulation(nodes)
+    .force('link',   d3.forceLink(links).id(function(d){ return d.id; }).distance(90).strength(0.4))
+    .force('charge', d3.forceManyBody().strength(-280))
+    .force('center', d3.forceCenter(sz.W / 2, sz.H / 2))
+    .force('collide',d3.forceCollide(22))
+    .alphaDecay(0.02)
     .on('tick', tick);
-
-  zoom = d3.zoom().scaleExtent([0.08, 4]).on('zoom', function(ev){
-    g.attr('transform', ev.transform);
-  });
-  svg.call(zoom);
-  svg.on('dblclick.zoom', null);
-
-  window.addEventListener('resize', function() {
-    var c = document.getElementById('gp-canvas');
-    W = c.clientWidth; H = c.clientHeight;
-    svg.attr('width', W).attr('height', H);
-    sim.force('center', d3.forceCenter(W/2, H/2)).alpha(0.05).restart();
-  });
 }
 
-/* ── Node radius based on visible degree ───────────────────────── */
-function nodeR(d) {
-  var deg = 0;
-  gLinks.forEach(function(l) {
-    var s = typeof l.source === 'object' ? l.source.id : l.source;
-    var t = typeof l.target === 'object' ? l.target.id : l.target;
-    if (s === d.id || t === d.id) deg++;
-  });
-  return Math.max(10, Math.min(26, 10 + deg * 1.4));
-}
-
-/* ── Render / update ────────────────────────────────────────────── */
-function render() {
-  /* Links */
-  var lSel = linkLayer.selectAll('line.gp-link').data(gLinks, function(d){ return d.id; });
-  lSel.join(
-    function(enter) {
-      return enter.append('line')
-        .attr('class', 'gp-link')
-        .attr('stroke', function(d){
-          return (d.conf === 'low' || d.conf === 'speculative') ? '#d1d5db' : '#94a3b8';
-        })
-        .attr('stroke-width', function(d){ return d.conf === 'high' ? 1.8 : 1.2; })
-        .attr('stroke-dasharray', function(d){
-          return (d.conf === 'low' || d.conf === 'speculative') ? '5,3' : null;
-        })
-        .attr('marker-end', 'url(#gp-arr)')
-        .on('mouseenter', onLinkEnter)
-        .on('mouseleave', hideTooltip);
-    },
-    function(update) { return update; },
-    function(exit)   { return exit.remove(); }
-  );
-
-  /* Nodes */
-  nodeLayer.selectAll('circle.gp-node')
-    .data(gNodes, function(d){ return d.id; })
-    .join(
-      function(enter) {
-        return enter.append('circle')
-          .attr('class', 'gp-node')
-          .attr('r', nodeR)
-          .attr('fill', function(d){ return TRAD_COLOR[tradKey(d.trad)] || TRAD_COLOR.other; })
-          .attr('cursor', 'pointer')
-          .call(d3.drag()
-            .on('start', onDragStart)
-            .on('drag',  onDrag)
-            .on('end',   onDragEnd))
-          .on('click', onNodeClick)
-          .on('mouseenter', onNodeEnter)
-          .on('mouseleave', hideTooltip);
-      },
-      function(update) { return update; },
-      function(exit)   { return exit.remove(); }
-    )
-    .attr('stroke', function(d){ return expanded.has(d.id) ? '#ffffff' : 'rgba(255,255,255,0.55)'; })
-    .attr('stroke-width', function(d){ return expanded.has(d.id) ? 2.5 : 1.5; });
-
-  /* Labels */
-  labelLayer.selectAll('text.gp-label')
-    .data(gNodes, function(d){ return d.id; })
-    .join(
-      function(enter) {
-        return enter.append('text')
-          .attr('class', 'gp-label')
-          .attr('text-anchor', 'middle')
-          .attr('fill', '#1a2f4e')
-          .attr('font-size', '11px')
-          .attr('font-family', 'inherit')
-          .attr('pointer-events', 'none')
-          .attr('paint-order', 'stroke')
-          .attr('stroke', 'rgba(250,248,245,0.85)')
-          .attr('stroke-width', '3px')
-          .attr('stroke-linejoin', 'round')
-          .text(function(d){ return d.name.length > 15 ? d.name.slice(0,13)+'…' : d.name; });
-      },
-      function(update) { return update; },
-      function(exit)   { return exit.remove(); }
-    );
-
-  sim.nodes(gNodes);
-  sim.force('link').links(gLinks);
-  sim.alpha(0.4).restart();
-  updateStats();
-  updateLegend();
-}
-
+/* ── Tick ────────────────────────────────────────────────────────── */
 function tick() {
-  linkLayer.selectAll('line.gp-link')
+  linkG.selectAll('line')
     .attr('x1', function(d){ return d.source.x; })
     .attr('y1', function(d){ return d.source.y; })
     .attr('x2', function(d){
       var dx = d.target.x - d.source.x, dy = d.target.y - d.source.y;
-      var dist = Math.sqrt(dx*dx + dy*dy) || 1;
-      return d.target.x - (dx/dist) * (nodeR(d.target) + 5);
+      var r = Math.sqrt(dx*dx + dy*dy) || 1;
+      return d.target.x - (dx/r) * 20;
     })
     .attr('y2', function(d){
       var dx = d.target.x - d.source.x, dy = d.target.y - d.source.y;
-      var dist = Math.sqrt(dx*dx + dy*dy) || 1;
-      return d.target.y - (dy/dist) * (nodeR(d.target) + 5);
+      var r = Math.sqrt(dx*dx + dy*dy) || 1;
+      return d.target.y - (dy/r) * 20;
     });
 
-  nodeLayer.selectAll('circle.gp-node')
+  nodeG.selectAll('circle')
     .attr('cx', function(d){ return d.x; })
     .attr('cy', function(d){ return d.y; });
 
-  labelLayer.selectAll('text.gp-label')
+  labelG.selectAll('text')
     .attr('x', function(d){ return d.x; })
-    .attr('y', function(d){ return d.y + nodeR(d) + 13; });
+    .attr('y', function(d){ return d.y + 28; });
 }
 
-/* ── Drag ───────────────────────────────────────────────────────── */
-function onDragStart(ev, d) {
-  if (!ev.active) sim.alphaTarget(0.3).restart();
-  d.fx = d.x; d.fy = d.y;
-}
-function onDrag(ev, d) { d.fx = ev.x; d.fy = ev.y; }
-function onDragEnd(ev, d) {
-  if (!ev.active) sim.alphaTarget(0);
-  /* keep fixed so user repositioning persists */
-}
+/* ── Render ──────────────────────────────────────────────────────── */
+function render() {
+  /* Links */
+  linkG.selectAll('line').data(links, function(d){ return d.lid; })
+    .join('line')
+    .attr('class', 'gp-link')
+    .attr('stroke', function(d){
+      return (d.conf === 'low' || d.conf === 'speculative') ? '#d1d5db' : '#94a3b8';
+    })
+    .attr('stroke-width', function(d){ return d.conf === 'high' ? 2 : 1.2; })
+    .attr('stroke-dasharray', function(d){
+      return (d.conf === 'low' || d.conf === 'speculative') ? '5,3' : null;
+    })
+    .attr('marker-end', 'url(#gp-arrow)')
+    .on('mouseenter', onLinkOver)
+    .on('mouseleave', hideTip);
 
-/* ── Node click: expand ─────────────────────────────────────────── */
-async function onNodeClick(ev, d) {
-  ev.stopPropagation();
-  hideTooltip();
-  if (expanded.has(d.id)) return;  /* already expanded */
-  await loadNeighbourhood(d.id);
-  expanded.add(d.id);
-  render();
-}
+  /* Nodes */
+  var nodeSel = nodeG.selectAll('circle').data(nodes, function(d){ return d.id; })
+    .join('circle')
+    .attr('class', 'gp-node')
+    .attr('r', 16)
+    .attr('fill', function(d){ return TRAD_COLOR[tradKey(d.trad)] || TRAD_COLOR.other; })
+    .attr('stroke', function(d){ return expanded.has(d.id) ? '#fff' : 'rgba(255,255,255,0.6)'; })
+    .attr('stroke-width', function(d){ return expanded.has(d.id) ? 2.5 : 1.5; })
+    .attr('cursor', 'pointer')
+    .on('mouseenter', onNodeOver)
+    .on('mouseleave', hideTip)
+    .on('click', onNodeClick);
 
-/* ── Tooltip ────────────────────────────────────────────────────── */
-var tipEl = document.getElementById('gp-tooltip');
+  nodeG.selectAll('circle')
+    .call(d3.drag()
+      .on('start', function(ev, d){ if (!ev.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('drag',  function(ev, d){ d.fx = ev.x; d.fy = ev.y; })
+      .on('end',   function(ev, d){ if (!ev.active) simulation.alphaTarget(0); }));
 
-function onNodeEnter(ev, d) {
-  var deg = 0;
-  gLinks.forEach(function(l) {
-    var s = typeof l.source === 'object' ? l.source.id : l.source;
-    var t = typeof l.target === 'object' ? l.target.id : l.target;
-    if (s === d.id || t === d.id) deg++;
-  });
-  var isExpanded = expanded.has(d.id);
-  tipEl.innerHTML =
-    '<strong>' + esc(d.name) + '</strong>' +
-    (d.trad  ? '<span class="gt-trad">'   + esc(d.trad)  + '</span>' : '') +
-    (d.type  ? '<span class="gt-type">'   + esc(d.type)  + '</span>' : '') +
-    '<span class="gt-deg">' + deg + ' edge' + (deg !== 1 ? 's' : '') + ' visible</span>' +
-    (isExpanded
-      ? '<span class="gt-hint gt-done">✓ Expanded</span>'
-      : '<span class="gt-hint">Click to expand</span>');
-  positionTip(ev);
-  tipEl.hidden = false;
-}
+  /* Labels */
+  labelG.selectAll('text').data(nodes, function(d){ return d.id; })
+    .join('text')
+    .attr('class', 'gp-label')
+    .attr('text-anchor', 'middle')
+    .attr('fill', '#1a2f4e')
+    .attr('font-size', '11px')
+    .attr('pointer-events', 'none')
+    .attr('paint-order', 'stroke')
+    .attr('stroke', 'rgba(250,248,245,0.9)')
+    .attr('stroke-width', '3')
+    .attr('stroke-linejoin', 'round')
+    .text(function(d){ return d.name.length > 14 ? d.name.slice(0,12) + '…' : d.name; });
 
-function onLinkEnter(ev, d) {
-  var s = typeof d.source === 'object' ? d.source.name : d.source;
-  var t = typeof d.target === 'object' ? d.target.name : d.target;
-  tipEl.innerHTML =
-    '<span class="gt-rel">' + esc(relShort(d.type)) + '</span>' +
-    '<span class="gt-conn">' + esc(s) + ' → ' + esc(t) + '</span>';
-  positionTip(ev);
-  tipEl.hidden = false;
-}
+  /* Update simulation */
+  simulation.nodes(nodes);
+  simulation.force('link').links(links);
+  simulation.alpha(0.5).restart();
 
-function positionTip(ev) {
-  var rect = document.getElementById('gp-canvas').getBoundingClientRect();
-  var x = ev.clientX - rect.left + 14;
-  var y = ev.clientY - rect.top  - 12;
-  if (x + 220 > rect.width)  x = ev.clientX - rect.left - 210;
-  if (y + 100 > rect.height) y = ev.clientY - rect.top  - 80;
-  tipEl.style.left = Math.max(4, x) + 'px';
-  tipEl.style.top  = Math.max(4, y) + 'px';
+  statsEl.textContent = nodes.length + ' nodes · ' + links.length + ' edges';
+  updateLegend();
 }
 
-function hideTooltip() { tipEl.hidden = true; }
-
-/* ── Data fetching ──────────────────────────────────────────────── */
-async function fetchSQL(sql) {
-  var r = await fetch('/deitydb.json?sql=' + encodeURIComponent(sql) + '&_shape=array&_size=250');
-  if (!r.ok) throw new Error('SQL ' + r.status);
-  var data = await r.json();
-  if (!Array.isArray(data)) throw new Error('bad response');
-  return data;
+/* ── Data helpers ────────────────────────────────────────────────── */
+function addNode(id, name, trad, type) {
+  if (nodeMap[id]) return;
+  var n = { id: id, name: name || id, trad: trad || '', type: type || '' };
+  nodes.push(n);
+  nodeMap[id] = n;
 }
 
-async function loadNeighbourhood(entityId) {
+function addLink(src, tgt, type, conf) {
+  var k = src + '|' + type + '|' + tgt;
+  if (linkSet.has(k)) return;
+  linkSet.add(k);
+  links.push({ lid: k, source: src, target: tgt, type: type, conf: conf || '' });
+}
+
+/* ── Fetch neighbourhood ─────────────────────────────────────────── */
+async function fetchNeighbourhood(entityId) {
   var safe = entityId.replace(/'/g, "''");
   var sql =
-    'SELECT er.relationship_type,' +
-    ' er.subject_entity_id, s.canonical_name AS sname, s.tradition AS strad, s.entity_type AS stype,' +
-    ' er.object_entity_id,  o.canonical_name AS oname, o.tradition AS otrad, o.entity_type AS otype,' +
-    ' er.confidence' +
+    'SELECT er.relationship_type AS rtype,' +
+    ' er.subject_entity_id AS sid, s.canonical_name AS sname, s.tradition AS strad, s.entity_type AS stype,' +
+    ' er.object_entity_id  AS oid, o.canonical_name AS oname, o.tradition AS otrad, o.entity_type AS otype,' +
+    ' er.confidence AS conf' +
     ' FROM entity_relationships er' +
     ' JOIN entities s ON s.entity_id = er.subject_entity_id' +
     ' JOIN entities o ON o.entity_id = er.object_entity_id' +
     " WHERE er.subject_entity_id = '" + safe + "'" +
     "    OR er.object_entity_id  = '" + safe + "'" +
-    ' ORDER BY er.relationship_type, s.canonical_name';
+    ' ORDER BY rtype';
 
-  var rows = await fetchSQL(sql);
-  rows.forEach(function(r) {
-    addNode(r.subject_entity_id, r.sname, r.strad, r.stype);
-    addNode(r.object_entity_id,  r.oname, r.otrad, r.otype);
-    addLink(r.subject_entity_id, r.object_entity_id, r.relationship_type, r.confidence);
+  var url = '/deitydb.json?sql=' + encodeURIComponent(sql) + '&_shape=array&_size=500';
+  var resp = await fetch(url);
+  if (!resp.ok) throw new Error('HTTP ' + resp.status);
+  var data = await resp.json();
+  if (!Array.isArray(data)) throw new Error('Unexpected response from API');
+
+  data.forEach(function(row) {
+    addNode(row.sid, row.sname, row.strad, row.stype);
+    addNode(row.oid, row.oname, row.otrad, row.otype);
+    addLink(row.sid, row.oid, row.rtype, row.conf);
   });
 }
 
-function addNode(id, name, trad, type) {
-  if (nodeMap[id]) return;
-  var n = { id: id, name: name, trad: trad, type: type };
-  gNodes.push(n);
-  nodeMap[id] = n;
-}
-
-function addLink(src, tgt, type, conf) {
-  var key = src + '|' + type + '|' + tgt;
-  if (linkSet.has(key)) return;
-  linkSet.add(key);
-  gLinks.push({ id: key, source: src, target: tgt, type: type, conf: conf });
-}
-
-/* ── Start / reset ──────────────────────────────────────────────── */
-async function startGraph(entityId, entityName) {
-  resetState();
-  document.getElementById('gp-empty').hidden    = true;
-  document.getElementById('gp-svg').hidden      = false;
-  document.getElementById('gp-toolbar').hidden  = false;
-  document.getElementById('gp-legend').hidden   = false;
-
+/* ── Start graph ─────────────────────────────────────────────────── */
+async function startGraph(entityId) {
   try {
-    await loadNeighbourhood(entityId);
-  } catch(e) {
-    document.getElementById('gp-stats').textContent = 'Load error — try again';
-    return;
-  }
+    gpReset(/* keepSVG */ true);
+    showOnly('loading');
 
-  expanded.add(entityId);
-  render();
-  setTimeout(fitGraph, 1000);
+    ensureSVG();
+
+    await fetchNeighbourhood(entityId);
+    expanded.add(entityId);
+
+    showOnly('graph');
+    render();
+
+    /* Fit after sim settles */
+    setTimeout(fitGraph, 800);
+  } catch (err) {
+    errorMsgEl.textContent = 'Could not load graph: ' + err.message;
+    showOnly('error');
+    console.error('[DeityDB graph]', err);
+  }
 }
 
-function resetState() {
-  gNodes = []; gLinks = [];
-  Object.keys(nodeMap).forEach(function(k){ delete nodeMap[k]; });
-  linkSet.clear(); expanded.clear();
-  if (linkLayer) {
-    linkLayer.selectAll('*').remove();
-    nodeLayer.selectAll('*').remove();
-    labelLayer.selectAll('*').remove();
+/* ── Node click: expand ──────────────────────────────────────────── */
+async function onNodeClick(ev, d) {
+  ev.stopPropagation();
+  hideTip();
+  if (expanded.has(d.id)) return;
+  try {
+    await fetchNeighbourhood(d.id);
+    expanded.add(d.id);
+    render();
+  } catch(err) {
+    console.error('[DeityDB graph expand]', err);
   }
-  if (sim) sim.stop();
 }
 
+/* ── Fit to screen ───────────────────────────────────────────────── */
 function fitGraph() {
-  if (!gNodes.length) return;
-  var box;
-  try { box = g.node().getBBox(); } catch(e) { return; }
-  if (!box || !box.width || !box.height) return;
-  var pad = 50;
-  var sc = Math.min(
-    (W - pad*2) / box.width,
-    (H - pad*2) / box.height,
-    1.8
-  );
-  var tx = W/2 - sc * (box.x + box.width/2);
-  var ty = H/2 - sc * (box.y + box.height/2);
-  svg.transition().duration(600)
-    .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(sc));
+  if (!gSel || !nodes.length) return;
+  var bbox;
+  try { bbox = gSel.node().getBBox(); } catch(e) { return; }
+  if (!bbox || bbox.width < 1 || bbox.height < 1) return;
+  var sz  = getSize();
+  var pad = 60;
+  var sc  = Math.min((sz.W - pad*2) / bbox.width, (sz.H - pad*2) / bbox.height, 2);
+  sc = Math.max(sc, 0.05);
+  var tx  = sz.W/2 - sc * (bbox.x + bbox.width/2);
+  var ty  = sz.H/2 - sc * (bbox.y + bbox.height/2);
+  svgSel.transition().duration(600)
+    .call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(sc));
 }
 
-function updateStats() {
-  var el = document.getElementById('gp-stats');
-  if (el) el.textContent = gNodes.length + ' nodes · ' + gLinks.length + ' edges';
+/* ── Reset ───────────────────────────────────────────────────────── */
+function gpReset(keepSVG) {
+  nodes.length = 0;
+  links.length = 0;
+  Object.keys(nodeMap).forEach(function(k){ delete nodeMap[k]; });
+  linkSet.clear();
+  expanded.clear();
+  if (simulation) { simulation.stop(); simulation = null; }
+  if (gSel) {
+    linkG.selectAll('*').remove();
+    nodeG.selectAll('*').remove();
+    labelG.selectAll('*').remove();
+  }
+  if (!keepSVG) {
+    showOnly('empty');
+    document.getElementById('gp-search').value = '';
+  }
+  startSim();  /* reinitialise fresh sim */
 }
 
+/* ── Legend ──────────────────────────────────────────────────────── */
 function updateLegend() {
   var seen = {};
-  gNodes.forEach(function(n) { seen[tradKey(n.trad)] = TRAD_LABEL[tradKey(n.trad)] || n.trad; });
-  var el = document.getElementById('gp-legend-trads');
-  el.innerHTML = Object.keys(seen).map(function(k) {
+  nodes.forEach(function(n) {
+    var k = tradKey(n.trad);
+    seen[k] = TRAD_LABEL[k] || n.trad || 'Other';
+  });
+  var html = Object.keys(seen).map(function(k) {
     return '<span class="gp-leg-item"><span class="gp-leg-dot" style="background:' +
-      TRAD_COLOR[k] + '"></span>' + seen[k] + '</span>';
+      TRAD_COLOR[k] + '"></span>' + esc(seen[k]) + '</span>';
   }).join('');
+  document.getElementById('gp-legend-trads').innerHTML = html;
 }
 
-/* ── Autocomplete ───────────────────────────────────────────────── */
+/* ── Tooltips ────────────────────────────────────────────────────── */
+function onNodeOver(ev, d) {
+  tipEl.innerHTML =
+    '<strong>' + esc(d.name) + '</strong>' +
+    (d.trad ? '<span class="gt-trad">' + esc(d.trad) + '</span>' : '') +
+    (d.type ? '<span class="gt-type">' + esc(d.type) + '</span>' : '') +
+    (expanded.has(d.id)
+      ? '<span class="gt-hint gt-done">✓ Expanded</span>'
+      : '<span class="gt-hint">Click to expand</span>');
+  placeTip(ev);
+  tipEl.hidden = false;
+}
+
+function onLinkOver(ev, d) {
+  var sn = typeof d.source === 'object' ? d.source.name : d.source;
+  var tn = typeof d.target === 'object' ? d.target.name : d.target;
+  tipEl.innerHTML =
+    '<span class="gt-rel">' + esc(relLabel(d.type)) + '</span>' +
+    '<span class="gt-conn">' + esc(sn) + ' → ' + esc(tn) + '</span>';
+  placeTip(ev);
+  tipEl.hidden = false;
+}
+
+function placeTip(ev) {
+  var rect = canvasEl.getBoundingClientRect();
+  var x = ev.clientX - rect.left + 14, y = ev.clientY - rect.top - 12;
+  if (x + 220 > rect.width)  x = ev.clientX - rect.left - 215;
+  if (y + 110 > rect.height) y = ev.clientY - rect.top  - 90;
+  tipEl.style.left = Math.max(4, x) + 'px';
+  tipEl.style.top  = Math.max(4, y) + 'px';
+}
+
+function hideTip() { tipEl.hidden = true; }
+
+/* ── Autocomplete ────────────────────────────────────────────────── */
 var searchEl = document.getElementById('gp-search');
 var sugEl    = document.getElementById('gp-suggestions');
 var acTimer;
@@ -472,7 +461,7 @@ searchEl.addEventListener('input', function() {
   clearTimeout(acTimer);
   var q = this.value.trim();
   if (q.length < 2) { sugEl.hidden = true; return; }
-  acTimer = setTimeout(function(){ fetchAC(q); }, 200);
+  acTimer = setTimeout(function(){ runAC(q); }, 200);
 });
 
 searchEl.addEventListener('keydown', function(ev) {
@@ -484,82 +473,72 @@ searchEl.addEventListener('keydown', function(ev) {
   }
 });
 
-async function fetchAC(q) {
+async function runAC(q) {
   try {
     var url = '/deitydb/entities.json?_shape=array&_size=10' +
       '&_col=entity_id&_col=canonical_name&_col=tradition' +
       '&canonical_name__icontains=' + encodeURIComponent(q);
-    var r = await fetch(url);
-    var rows = await r.json();
-    renderAC(rows);
+    var data = await (await fetch(url)).json();
+    if (!data.length) { sugEl.hidden = true; return; }
+    sugEl.innerHTML = data.map(function(r) {
+      return '<div class="gp-sug" role="option" tabindex="0" data-id="' + esc(r.entity_id) + '">' +
+        '<span class="gs-name">' + esc(r.canonical_name) + '</span>' +
+        '<span class="gs-trad">' + esc(r.tradition || '') + '</span></div>';
+    }).join('');
+    sugEl.hidden = false;
+    sugEl.querySelectorAll('[role=option]').forEach(function(el) {
+      el.addEventListener('click', pickSug);
+      el.addEventListener('keydown', function(ev) {
+        if (ev.key === 'Enter') { pickSug.call(this); }
+        if (ev.key === 'ArrowDown') { ev.preventDefault(); var n=this.nextElementSibling; if(n) n.focus(); }
+        if (ev.key === 'ArrowUp')   { ev.preventDefault(); var p=this.previousElementSibling; if(p) p.focus(); else searchEl.focus(); }
+        if (ev.key === 'Escape')    { sugEl.hidden=true; searchEl.focus(); }
+      });
+    });
   } catch(e) { sugEl.hidden = true; }
 }
 
-function renderAC(rows) {
-  if (!rows || !rows.length) { sugEl.hidden = true; return; }
-  sugEl.innerHTML = rows.map(function(r) {
-    return '<div class="gp-sug" role="option" tabindex="0" data-id="' + r.entity_id + '">' +
-      '<span class="gs-name">' + esc(r.canonical_name) + '</span>' +
-      '<span class="gs-trad">' + esc(r.tradition || '') + '</span>' +
-    '</div>';
-  }).join('');
-  sugEl.hidden = false;
-
-  sugEl.querySelectorAll('[role=option]').forEach(function(el) {
-    el.addEventListener('click', pickSug);
-    el.addEventListener('keydown', function(ev) {
-      if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pickSug.call(this, ev); }
-      if (ev.key === 'ArrowDown') { ev.preventDefault(); var n = this.nextElementSibling; if (n) n.focus(); }
-      if (ev.key === 'ArrowUp')   { ev.preventDefault(); var p = this.previousElementSibling; if (p) p.focus(); else searchEl.focus(); }
-      if (ev.key === 'Escape')    { sugEl.hidden = true; searchEl.focus(); }
-    });
-  });
-}
-
 function pickSug() {
-  var id   = this.dataset.id;
-  var name = this.querySelector('.gs-name').textContent;
-  searchEl.value = name;
+  var id = this.dataset.id;
+  searchEl.value = this.querySelector('.gs-name').textContent;
   sugEl.hidden = true;
-  startGraph(id, name);
+  startGraph(id);
 }
 
 document.addEventListener('click', function(ev) {
   if (!ev.target.closest('#gp-ac')) sugEl.hidden = true;
 });
 
-/* ── Seed buttons ───────────────────────────────────────────────── */
-document.querySelectorAll('button.gp-seed').forEach(function(btn) {
+/* ── Seed buttons ────────────────────────────────────────────────── */
+document.querySelectorAll('button.gp-seed[data-id]').forEach(function(btn) {
   btn.addEventListener('click', function() {
-    var id   = this.dataset.id;
-    var name = this.textContent.trim();
-    searchEl.value = name;
-    startGraph(id, name);
+    searchEl.value = this.textContent.trim();
+    startGraph(this.dataset.id);
   });
 });
 
-/* ── Toolbar ────────────────────────────────────────────────────── */
+/* ── Toolbar ─────────────────────────────────────────────────────── */
 document.getElementById('gp-fit').addEventListener('click', fitGraph);
-document.getElementById('gp-reset').addEventListener('click', function() {
-  resetState();
-  document.getElementById('gp-empty').hidden   = false;
-  document.getElementById('gp-svg').hidden     = true;
-  document.getElementById('gp-toolbar').hidden = true;
-  document.getElementById('gp-legend').hidden  = true;
-  searchEl.value = '';
-  sim.stop();
+document.getElementById('gp-reset-btn').addEventListener('click', function() { gpReset(); });
+
+/* ── Resize ──────────────────────────────────────────────────────── */
+window.addEventListener('resize', function() {
+  if (!simulation) return;
+  var sz = getSize();
+  simulation.force('center', d3.forceCenter(sz.W/2, sz.H/2)).alpha(0.05).restart();
 });
 
-/* ── Helpers ────────────────────────────────────────────────────── */
+/* ── Utility ─────────────────────────────────────────────────────── */
 function esc(s) {
-  return String(s||'')
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return String(s || '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-/* ── Boot ───────────────────────────────────────────────────────── */
-initSVG();
+/* ── Boot: init sim immediately so it's ready ─────────────────────── */
+ensureSVG();
+startSim();
 
 })();
+}
 </script>
 {% endblock %}
