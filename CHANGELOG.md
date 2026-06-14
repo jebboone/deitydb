@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.24.0 — 2026-06-14
+
+### Enrichment: Baltic and Slavic traditions (thinnest layers)
+
+The two thinnest covered traditions — Baltic (1.30 edges/entity) and Slavic (1.44) —
+enriched with 23 source-backed relationships (`enrich_baltic_slavic.sql`). Most are
+domain links into the abstraction layer, so these cognate Indo-European gods now also
+surface in `v_public_comparative_domains`. No new entities or sources.
+
+**Baltic (11 edges):** Saulė embodies Sun; Mēness embodies Moon; Perkūnas embodies Storm
++ patron_of Justice; Laima embodies Fate; Žemyna patron_of Fertility; Velnias dwells_in
+Underworld + patron_of Magic; Dievas patron_of Sovereignty; Medeina patron_of Animals;
+Saulė aligned_with Helios (PIE *seh2ul- solar reflex). Sources: Gimbutas (The Balts),
+Greimas (Of Gods and Men).
+
+**Slavic (12 edges):** Perun patron_of Sovereignty (head of the 980 Kiev pantheon);
+Veles dwells_in Underworld + patron_of Magic; Dažbog embodies Sun + patron_of Wealth;
+Khors embodies Sun; Stribog embodies Wind; Mokosh embodies Fate + patron_of Fertility;
+Svarog patron_of Craft + aligned_with Hephaestus (explicit in the Slavic Malalas gloss);
+Rod patron_of Fate. Sources: Brückner (Mitologia Słowiańska), Primary Chronicle.
+
+Result: edge density Baltic 1.30 → 2.40, Slavic 1.44 → 2.78 (above the Egyptian baseline).
+Counts: 1,251 entities / **2,162** relationships (+23) / 145 sources; 0 unsourced, 0
+unresolved.
+
+---
+
 ## v1.23.0 — 2026-06-14
 
 ### Disambiguation: sharpen the Dead / Death / Underworld abstraction cluster
