@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.9.0 — 2026-06-14
+
+### Dataset expansion: Finnish tradition
+
+**Finnish layer** (`add_finnish_layer.sql`) — new tradition, 7 entities:
+- Sources: `SRC_KALEVALA` (Lönnrot 1849; Bosley trans. OUP 1989 — primary),
+  `SRC_AGRICOLA_PRIMER` (Agricola 1551 Finnish Psalter — earliest written attestation),
+  `SRC_PENTIKÄINEN_KALEVALA` (Pentikäinen, *Kalevala Mythology*, Indiana UP 1999).
+- Period: `PER_FINN_TRADITIONAL` (Pre-Christian Finnish, −500 to 1300 CE).
+- **Ukko** (`ENT_FINN_UKKO`, conf A): supreme thunder/sky deity; name = "old man";
+  Agricola 1551 names him first among Finnish deities; Kalevala invokes him as
+  "thou of gods the highest"; patron_of Storm; aligned_with Thor, Perkūnas, Perun.
+- **Väinämöinen** (`ENT_FINN_VAINAMOINEN`, conf A): shaman-bard and culture hero;
+  son of Ilmatar; spends 700 years in womb; greatest singer (kantele); descends to
+  Tuonela (realm of the dead); departs at Kalevala's end (Runo 50);
+  aligned_with Orpheus (shaman-bard parallel).
+- **Ilmatar** (`ENT_FINN_ILMATAR`, conf A): air spirit and water mother; Kalevala Runo 1
+  cosmogony — her floating on the primordial sea leads to the duck's egg breaking into
+  the world; parent_of Väinämöinen.
+- **Tapio** (`ENT_FINN_TAPIO`, conf A): lord of the forest realm Tapiola; Agricola 1551;
+  hunters invoked him before entering the forest; spouse_of Mielikki.
+- **Mielikki** (`ENT_FINN_MIELIKKI`, conf A): goddess of the forest and bears;
+  Tapio's wife; "mistress of the woodland" (Kalevala Runo 14); patroness of the bear
+  hunt; aligned_with Baltic Medeina.
+- **Ahti** (`ENT_FINN_AHTI`, conf A): sea/water deity; lord of the underwater realm
+  Ahtola; Agricola 1551; wife Vellamo governs water's surface; fishermen's patron.
+- **Louhi** (`ENT_FINN_LOUHI`, conf A): shamanistic mistress of Pohjola (the Far North);
+  primary antagonist of the Kalevala; demands the Sampo as bride-price; steals the sun
+  and moon (Runo 47-49); shape-shifts into an eagle-hawk; opposes Väinämöinen.
+
+**Totals**: 1,205 → **1,212 entities** (+7); 2,019 → **2,029 relationships** (+10);
+127 → **130 sources** (+3); 69 → **70 traditions** (+Finnish); 0 unresolved references maintained.
+
 ## v1.8.0 — 2026-06-14
 
 ### Dataset expansion: Armenian tradition
