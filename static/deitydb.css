@@ -23,6 +23,11 @@
 
 /* ── Base ─────────────────────────────────────────────────────────── */
 
+/* Browsers only apply display:none for [hidden] via the UA stylesheet,
+   which any author-level display rule (display:flex, display:grid, etc.)
+   overrides. This rule restores the correct behaviour globally. */
+[hidden] { display: none !important; }
+
 * { box-sizing: border-box; }
 
 body {
