@@ -1,0 +1,385 @@
+{% extends "base.html" %}
+{% block title %}Browse Entities — DeityDB{% endblock %}
+{% block body_class %}deitydb-explore{% endblock %}
+
+{% block content %}
+<div class="explore-page">
+
+  <div class="explore-hero">
+    <h1>Browse Entities</h1>
+    <p class="explore-subtitle">Search and filter 1,172 divine figures, spirits, and cosmic beings across 62 traditions. Click any card to see its relationships.</p>
+  </div>
+
+  <div class="explore-controls">
+    <input type="search" id="ex-search" class="explore-search"
+           placeholder="Search by name, type, domain…" autocomplete="off" spellcheck="false">
+    <div class="explore-filters">
+      <select id="ex-tradition" class="explore-select" aria-label="Filter by tradition">
+        <option value="">All traditions</option>
+      </select>
+      <select id="ex-sort" class="explore-select" aria-label="Sort order">
+        <option value="rels">Most connected first</option>
+        <option value="alpha">A → Z</option>
+      </select>
+    </div>
+    <div class="explore-meta">
+      <span id="ex-count" class="explore-count" aria-live="polite">Loading…</span>
+    </div>
+  </div>
+
+  <div id="ex-loading" class="explore-loading" aria-label="Loading entities">
+    <div class="explore-spinner" role="status"></div>
+    <p>Loading entities…</p>
+  </div>
+
+  <div class="explore-grid" id="ex-grid" hidden></div>
+
+</div>
+
+{# ── Side panel ────────────────────────────────────────────────────── #}
+<div class="ex-overlay" id="ex-overlay" hidden aria-hidden="true">
+  <div class="ex-panel" id="ex-panel" role="dialog" aria-modal="true" aria-labelledby="ex-panel-name">
+    <button class="ex-panel-close" id="ex-close" aria-label="Close panel">✕</button>
+    <div class="ex-panel-body" id="ex-panel-body"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+'use strict';
+
+/* ── Relationship label map ─────────────────────────────────────── */
+var REL = {
+  parent_of:      'is parent of',
+  child_of:       'is child of',
+  spouse_of:      'is spouse of',
+  sibling_of:     'is sibling of',
+  patron_of:      'is patron of',
+  member_of:      'is member of',
+  equated_with:   'is equated with',
+  reception_of:   'is a reception of',
+  received_as:    'was received as',
+  syncretized_with: 'was syncretized with',
+  parallel_to:    'is parallel to',
+  aspect_of:      'is an aspect of',
+  opposes:        'opposes',
+  slays:          'slays',
+  guides:         'guides',
+  reveals:        'reveals to',
+  dwells_in:      'dwells in',
+  rules:          'rules over',
+  protects:       'protects',
+  savior_of:      'is savior of',
+  embodies:       'embodies',
+  paired_with:    'is paired with',
+  emanates_from:  'emanates from',
+  associated_with:'is associated with',
+  aligned_with:   'is aligned with',
+  emanated_by:    'was emanated by',
+};
+
+function relLabel(type) {
+  return REL[type] || type.replace(/_/g, ' ');
+}
+
+/* ── Tradition → badge colour key ──────────────────────────────── */
+function tradKey(tradition) {
+  if (!tradition) return 'other';
+  var t = tradition.toLowerCase();
+  if (t.startsWith('greek'))   return 'greek';
+  if (t.startsWith('egyptian')) return 'egyptian';
+  if (t.startsWith('mesopotamian')) return 'mesopotamian';
+  if (t.includes('christian') || t.includes('biblical')) return 'christian';
+  if (t.includes('islamic') || t.includes('sufi') || t.includes("shi'a")) return 'islamic';
+  if (t.includes('jewish') || t.includes('israelite') || t.includes('second temple')) return 'jewish';
+  if (t.includes('gnostic') || t.includes('valentinian') || t.includes('sethian') ||
+      t.includes('mandaean') || t.includes('manichaean')) return 'gnostic';
+  if (t.includes('celtic') || t.includes('norse') || t.includes('germanic')) return 'northern';
+  if (t.includes('roman') || t.includes('etruscan')) return 'roman';
+  if (t.includes('zoroastrian')) return 'zoroastrian';
+  if (t.includes('hermetic') || t.includes('late antique') || t.includes('thelemic')) return 'hermetic';
+  if (t.includes('cross-traditional')) return 'cross';
+  return 'other';
+}
+
+/* ── State ─────────────────────────────────────────────────────── */
+var all = [], counts = {}, filtered = [];
+
+/* ── Fetch helpers ─────────────────────────────────────────────── */
+async function loadEntities() {
+  var cols = ['entity_id','canonical_name','tradition','entity_type','category',
+              'primary_domains','short_note'];
+  var url = '/deitydb/entities.json?_shape=array&_size=2000&_col=' + cols.join('&_col=');
+  var r = await fetch(url);
+  if (!r.ok) throw new Error('entities fetch failed');
+  return r.json();
+}
+
+async function loadRelCounts() {
+  var sql = encodeURIComponent(
+    'SELECT entity_id, SUM(n) AS c FROM (' +
+    'SELECT subject_entity_id AS entity_id, COUNT(*) AS n ' +
+    'FROM entity_relationships GROUP BY subject_entity_id ' +
+    'UNION ALL ' +
+    'SELECT object_entity_id, COUNT(*) ' +
+    'FROM entity_relationships GROUP BY object_entity_id' +
+    ') GROUP BY entity_id'
+  );
+  var r = await fetch('/deitydb.json?sql=' + sql + '&_shape=array&_size=2000');
+  if (!r.ok) return {};
+  var rows = await r.json();
+  var map = {};
+  if (Array.isArray(rows)) rows.forEach(function(row) { map[row.entity_id] = row.c; });
+  return map;
+}
+
+async function loadEntityRels(entityId) {
+  var safe = entityId.replace(/'/g, "''");
+  var sql = encodeURIComponent(
+    'SELECT er.relationship_type,' +
+    ' er.subject_entity_id, s.canonical_name AS sname,' +
+    ' er.object_entity_id, o.canonical_name AS oname,' +
+    ' er.confidence' +
+    ' FROM entity_relationships er' +
+    ' JOIN entities s ON s.entity_id = er.subject_entity_id' +
+    ' JOIN entities o ON o.entity_id = er.object_entity_id' +
+    " WHERE er.subject_entity_id = '" + safe + "'" +
+    "    OR er.object_entity_id  = '" + safe + "'" +
+    ' ORDER BY er.relationship_type, s.canonical_name'
+  );
+  var r = await fetch('/deitydb.json?sql=' + sql + '&_shape=array&_size=300');
+  if (!r.ok) throw new Error('rels fetch failed');
+  return r.json();
+}
+
+/* ── Card rendering ─────────────────────────────────────────────── */
+function makeCard(e) {
+  var n = counts[e.entity_id] || 0;
+  var key = tradKey(e.tradition);
+
+  var typeStr = [e.entity_type, e.category]
+    .filter(Boolean)
+    .map(function(s) { return s.length > 36 ? s.slice(0, 34) + '…' : s; })
+    .join(' · ');
+
+  var btn = document.createElement('button');
+  btn.className = 'entity-card';
+  btn.type = 'button';
+  btn.setAttribute('aria-label', e.canonical_name + ' — ' + (e.tradition || '') + ' — ' + n + ' relationships');
+  btn.innerHTML =
+    '<div class="ec-top">' +
+      '<span class="ec-badge trad-' + key + '">' + (e.tradition || 'Unknown') + '</span>' +
+    '</div>' +
+    '<div class="ec-name">' + esc(e.canonical_name) + '</div>' +
+    (typeStr ? '<div class="ec-type">' + esc(typeStr) + '</div>' : '') +
+    '<div class="ec-foot">' +
+      '<span class="ec-rels"><span class="ec-dot"></span>' + n + ' rel' + (n !== 1 ? 's' : '') + '</span>' +
+    '</div>';
+
+  btn.addEventListener('click', function() { openPanel(e); });
+  return btn;
+}
+
+function renderGrid() {
+  var grid = document.getElementById('ex-grid');
+  grid.innerHTML = '';
+  var frag = document.createDocumentFragment();
+  filtered.forEach(function(e) { frag.appendChild(makeCard(e)); });
+  grid.appendChild(frag);
+
+  var count = document.getElementById('ex-count');
+  count.textContent = filtered.length === all.length
+    ? all.length.toLocaleString() + ' entities'
+    : filtered.length.toLocaleString() + ' of ' + all.length.toLocaleString() + ' entities';
+}
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* ── Filtering ──────────────────────────────────────────────────── */
+var debounceTimer;
+function applyFilters() {
+  var query = (document.getElementById('ex-search').value || '').toLowerCase().trim();
+  var trad  = document.getElementById('ex-tradition').value;
+  var sort  = document.getElementById('ex-sort').value;
+
+  filtered = all.filter(function(e) {
+    if (trad && e.tradition !== trad) return false;
+    if (query) {
+      var hay = [e.canonical_name, e.entity_type, e.category,
+                 e.primary_domains, e.tradition, e.short_note]
+        .filter(Boolean).join(' ').toLowerCase();
+      if (hay.indexOf(query) === -1) return false;
+    }
+    return true;
+  });
+
+  if (sort === 'alpha') {
+    filtered.sort(function(a, b) {
+      return a.canonical_name.localeCompare(b.canonical_name);
+    });
+  } else {
+    filtered.sort(function(a, b) {
+      return (counts[b.entity_id] || 0) - (counts[a.entity_id] || 0);
+    });
+  }
+
+  renderGrid();
+}
+
+/* ── Tradition dropdown ─────────────────────────────────────────── */
+function populateTraditions(entities) {
+  var sel = document.getElementById('ex-tradition');
+  var totals = {};
+  entities.forEach(function(e) {
+    if (e.tradition) totals[e.tradition] = (totals[e.tradition] || 0) + 1;
+  });
+  Object.keys(totals).sort().forEach(function(t) {
+    var opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t + ' (' + totals[t] + ')';
+    sel.appendChild(opt);
+  });
+}
+
+/* ── Detail panel ───────────────────────────────────────────────── */
+function openPanel(entity) {
+  var overlay = document.getElementById('ex-overlay');
+  var body    = document.getElementById('ex-panel-body');
+  overlay.hidden = false;
+  overlay.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('panel-open');
+
+  var n = counts[entity.entity_id] || 0;
+  var metaRows = [
+    entity.entity_type ? ['Type',     esc(entity.entity_type)]   : null,
+    entity.category    ? ['Category', esc(entity.category)]      : null,
+    entity.primary_domains ? ['Domains', esc(entity.primary_domains)] : null,
+    entity.tradition   ? ['Tradition', esc(entity.tradition)]    : null,
+  ].filter(Boolean);
+
+  var metaHtml = metaRows.map(function(r) {
+    return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
+  }).join('');
+
+  body.innerHTML =
+    '<div id="ex-panel-name" class="ex-pname">' + esc(entity.canonical_name) + '</div>' +
+    '<span class="ec-badge trad-' + tradKey(entity.tradition) + ' ex-ptrad">' +
+      esc(entity.tradition || 'Unknown') +
+    '</span>' +
+    (metaHtml ? '<dl class="ex-pmeta">' + metaHtml + '</dl>' : '') +
+    (entity.short_note ? '<p class="ex-pnote">' + esc(entity.short_note) + '</p>' : '') +
+    '<div class="ex-prels-wrap">' +
+      '<h3 class="ex-prels-h">' + n + ' Relationship' + (n !== 1 ? 's' : '') + '</h3>' +
+      '<div id="ex-rels" class="ex-rels"><div class="ex-panel-loading">Loading…</div></div>' +
+    '</div>';
+
+  document.getElementById('ex-close').focus();
+
+  loadEntityRels(entity.entity_id).then(function(rows) {
+    var list = document.getElementById('ex-rels');
+    if (!list) return;
+    if (!Array.isArray(rows) || rows.length === 0) {
+      list.innerHTML = '<p class="ex-no-rels">No relationships found.</p>';
+      return;
+    }
+
+    var asSubj = rows.filter(function(r) { return r.subject_entity_id === entity.entity_id; });
+    var asObj  = rows.filter(function(r) { return r.object_entity_id  === entity.entity_id; });
+
+    var html = '';
+
+    if (asSubj.length) {
+      html += '<ul class="ex-rel-ul">';
+      asSubj.forEach(function(r) {
+        var conf = (r.confidence === 'low' || r.confidence === 'speculative')
+          ? ' <span class="ex-rel-conf">' + r.confidence + '</span>' : '';
+        html +=
+          '<li class="ex-rel-li">' +
+            '<span class="ex-rel-type">' + esc(relLabel(r.relationship_type)) + '</span> ' +
+            '<span class="ex-rel-target">' + esc(r.oname) + '</span>' +
+            conf +
+          '</li>';
+      });
+      html += '</ul>';
+    }
+
+    if (asObj.length) {
+      html += '<h4 class="ex-rel-subh">Referenced by</h4><ul class="ex-rel-ul">';
+      asObj.forEach(function(r) {
+        var conf = (r.confidence === 'low' || r.confidence === 'speculative')
+          ? ' <span class="ex-rel-conf">' + r.confidence + '</span>' : '';
+        html +=
+          '<li class="ex-rel-li ex-rel-inbound">' +
+            '<span class="ex-rel-source">' + esc(r.sname) + '</span> ' +
+            '<span class="ex-rel-type">' + esc(relLabel(r.relationship_type)) + '</span> ' +
+            '<span class="ex-rel-this">this entity</span>' +
+            conf +
+          '</li>';
+      });
+      html += '</ul>';
+    }
+
+    list.innerHTML = html;
+  }).catch(function() {
+    var list = document.getElementById('ex-rels');
+    if (list) list.innerHTML = '<p class="ex-no-rels">Could not load relationships.</p>';
+  });
+}
+
+function closePanel() {
+  var overlay = document.getElementById('ex-overlay');
+  overlay.hidden = true;
+  overlay.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('panel-open');
+}
+
+/* ── Init ───────────────────────────────────────────────────────── */
+async function init() {
+  var loadEl = document.getElementById('ex-loading');
+  try {
+    var results = await Promise.all([loadEntities(), loadRelCounts()]);
+    all    = results[0];
+    counts = results[1];
+  } catch (err) {
+    loadEl.innerHTML = '<p class="explore-error">Failed to load entity data. Please refresh the page.</p>';
+    return;
+  }
+
+  all.sort(function(a, b) {
+    return (counts[b.entity_id] || 0) - (counts[a.entity_id] || 0);
+  });
+
+  populateTraditions(all);
+  filtered = all.slice();
+  renderGrid();
+
+  loadEl.hidden = true;
+  document.getElementById('ex-grid').hidden = false;
+
+  /* filter listeners */
+  var searchEl = document.getElementById('ex-search');
+  searchEl.addEventListener('input', function() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(applyFilters, 160);
+  });
+  document.getElementById('ex-tradition').addEventListener('change', applyFilters);
+  document.getElementById('ex-sort').addEventListener('change', applyFilters);
+
+  /* panel close */
+  document.getElementById('ex-close').addEventListener('click', closePanel);
+  document.getElementById('ex-overlay').addEventListener('click', function(ev) {
+    if (ev.target === ev.currentTarget) closePanel();
+  });
+  document.addEventListener('keydown', function(ev) {
+    if (ev.key === 'Escape' && !document.getElementById('ex-overlay').hidden) closePanel();
+  });
+}
+
+init();
+})();
+</script>
+{% endblock %}

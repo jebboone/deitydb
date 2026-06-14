@@ -23,7 +23,7 @@ CMD ["datasette", "serve", "deitydb.sqlite", \
      "--static", "custom:/static_files", \
      "--plugins-dir", "/plugins", \
      "--setting", "sql_time_limit_ms", "2000", \
-     "--setting", "max_returned_rows", "1000", \
+     "--setting", "max_returned_rows", "2000", \
      "--host", "0.0.0.0", \
      "--port", "8080", \
      "--cors"]
