@@ -367,7 +367,8 @@ databases:
             FROM entity_relationships r
             JOIN entities s ON s.entity_id = r.subject_entity_id
             JOIN entities o ON o.entity_id = r.object_entity_id
-            WHERE r.relationship_type IN ('reception_of', 'received_as')
+            WHERE length(coalesce(:entity_name, '')) >= 2
+              AND r.relationship_type IN ('reception_of', 'received_as')
               AND (s.canonical_name LIKE '%' || :entity_name || '%'
                    OR o.canonical_name LIKE '%' || :entity_name || '%')
             UNION ALL
