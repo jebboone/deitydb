@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.27.0 — 2026-06-14
+
+### New layer: complete the Kabbalistic Tree of Life
+
+Second of the two mystical layers (after formative Sufism, v1.26.0). The Jewish-mystical
+tradition already held its older Hekhalot/Merkavah stratum (Merkabah, Metatron, angelic
+orders, Sar Torah) and the Sefirot top triad (Keter, Hokhmah, Binah); this completes the
+medieval (12th–13th c.) Tree of Life. The later Lurianic apparatus (Tzimtzum, Shevirat
+ha-Kelim, Tikkun — 16th c. Safed) is deliberately deferred. (`complete_kabbalah_tree.sql`)
+
+**New entities (8):** Ein Sof (the Infinite) and the seven lower Sefirot — Chesed,
+Gevurah (Din), Tiferet, Netzach, Hod, Yesod, Malkhut. Sources: Zohar, Scholem (*Kabbalah*).
+
+**Relationships (22):**
+- *Emanation chain* (seder hishtalshelut): Keter emanates_from Ein Sof, then the full
+  cascade Keter→Hokhmah→Binah→Chesed→Gevurah→Tiferet→Netzach→Hod→Yesod→Malkhut.
+- *Tree membership:* Sefirot has_member each of the 7 new Sefirot (now 10 of 10).
+- *Attribute / comparative links:* Chesed embodies Love, Gevurah embodies Judgment,
+  Tiferet embodies Beauty, Malkhut embodies Sovereignty.
+- *Identity:* Malkhut identified_with Shekhinah (the indwelling presence).
+
+Counts: **1,271** entities (+8) / **2,222** relationships (+22) / 147 sources; 0 unsourced
+entities, 0 unsourced relationships, 0 orphans, 0 unresolved references.
+
+---
+
 ## v1.26.0 — 2026-06-14
 
 ### New layer: formative Sufism (8th–10th c.)
