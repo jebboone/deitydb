@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.22.3 — 2026-06-14
+
+### Reproducibility: total view fidelity — schema rebuilds the live DB exactly
+
+Back-filled the last 16 internal views into `schema/views.sql` (dumped from the live
+instance, dependency-ordered as emitted by pg_dump, normalised to `CREATE OR REPLACE`):
+`entity_relationships_expanded` (inverse-expanded edges), `v_entity_relationships_full`,
+`v_entity_correspondences`, `v_entity_taxonomy_summary`, `v_entity_traditions`,
+`v_category_distribution`, `v_entity_epithet_relationships`, `v_entity_epithet_summary`,
+`v_associated_with_conversion_candidates`, `v_possible_duplicate_entities`,
+`v_relationships_needing_review`, `v_priority_relationship_review`, `v_review_by_tradition`,
+`v_review_dashboard`, `v_staging_entity_duplicates`, `v_staging_relationships_resolved`.
+
+`schema/views.sql` now defines all 30 views (14 curated public/metrics + 16 internal).
+
+**Verified:** a throwaway database built through `tables.sql → constraints.sql →
+views.sql` (`ON_ERROR_STOP=1`) is now an exact structural replica of the live instance —
+**36 tables, 30 views, 77 constraints, 47 indexes**, with zero live views missing. The
+schema layer is fully reproducible. No data change.
+
+---
+
 ## v1.22.2 — 2026-06-14
 
 ### Reproducibility: commit table + constraint DDL — bootstrap now works end-to-end
