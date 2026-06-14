@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.4.0 — 2026-06-13
+
+### Visualizations
+
+- **Entity browser** (`/explore`): client-side searchable grid of all 1,172 entities.
+  Filter by tradition (62 options), search by name/type/domain, sort by relationship
+  count or alphabetically. Clicking any card opens a slide-in detail panel with
+  metadata and all relationships grouped by type.
+
+- **Relationship graph** (`/graph`): D3 v7 force-directed graph. Autocomplete search
+  launches any entity as the root node; clicking any node expands its 1-hop
+  neighbourhood; nodes coloured by tradition. Supports pan/zoom and Fit-to-screen.
+  Graph state is additive — each click extends without resetting the layout.
+
+### Bug fixes
+
+- **CSS `[hidden]` / `display` cascade** (three separate sites): our global
+  `[hidden] { display: none !important }` rule prevented `element.hidden = false`
+  from un-hiding elements whose CSS carried an explicit `display` value
+  (`display: block` on `#gp-svg`, `display: grid` on `.explore-grid`,
+  `display: flex` on `.ex-overlay`). Fixed by switching those show/hide calls to
+  `element.style.display` which takes precedence over the cascade.
+
+- **Autocomplete filter**: `canonical_name__icontains` is silently ignored in
+  Datasette 0.65.2 (returns all rows); changed to `canonical_name__contains`.
+
 ## v1.3.0 — 2026-06-13
 
 ### Relationship graph completion — 0 zero-rel entities
