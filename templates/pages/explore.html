@@ -32,12 +32,12 @@
     <p>Loading entities…</p>
   </div>
 
-  <div class="explore-grid" id="ex-grid" hidden></div>
+  <div class="explore-grid" id="ex-grid" style="display:none"></div>
 
 </div>
 
 {# ── Side panel ────────────────────────────────────────────────────── #}
-<div class="ex-overlay" id="ex-overlay" hidden aria-hidden="true">
+<div class="ex-overlay" id="ex-overlay" style="display:none" aria-hidden="true">
   <div class="ex-panel" id="ex-panel" role="dialog" aria-modal="true" aria-labelledby="ex-panel-name">
     <button class="ex-panel-close" id="ex-close" aria-label="Close panel">✕</button>
     <div class="ex-panel-body" id="ex-panel-body"></div>
@@ -249,7 +249,7 @@ function populateTraditions(entities) {
 function openPanel(entity) {
   var overlay = document.getElementById('ex-overlay');
   var body    = document.getElementById('ex-panel-body');
-  overlay.hidden = false;
+  overlay.style.display = 'flex';
   overlay.setAttribute('aria-hidden', 'false');
   document.body.classList.add('panel-open');
 
@@ -332,7 +332,7 @@ function openPanel(entity) {
 
 function closePanel() {
   var overlay = document.getElementById('ex-overlay');
-  overlay.hidden = true;
+  overlay.style.display = 'none';
   overlay.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('panel-open');
 }
@@ -357,8 +357,8 @@ async function init() {
   filtered = all.slice();
   renderGrid();
 
-  loadEl.hidden = true;
-  document.getElementById('ex-grid').hidden = false;
+  loadEl.style.display = 'none';
+  document.getElementById('ex-grid').style.display = 'grid';
 
   /* filter listeners */
   var searchEl = document.getElementById('ex-search');
@@ -375,7 +375,7 @@ async function init() {
     if (ev.target === ev.currentTarget) closePanel();
   });
   document.addEventListener('keydown', function(ev) {
-    if (ev.key === 'Escape' && !document.getElementById('ex-overlay').hidden) closePanel();
+    if (ev.key === 'Escape' && document.getElementById('ex-overlay').style.display !== 'none') closePanel();
   });
 }
 
