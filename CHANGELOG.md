@@ -1,5 +1,67 @@
 # Changelog
 
+## v1.17.0 — 2026-06-14
+
+### Structural quality: category audit, orphan fix, Zoroastrian cross-links
+
+Three structural improvement scripts applied — no new entities or sources,
+only improvements to data completeness and graph connectivity.
+
+**Category audit** (`audit_category_fill.sql`):
+90 entities across 20 traditions were missing `category` and/or `primary_domains`,
+making them invisible to all category-filtered public views. All 90 are now
+fully classified:
+- Celtic/Welsh (15): Arawn, Gwyn ap Nudd, Rhiannon, Math, Gwydion, Don, Lleu,
+  Manawydan, Pryderi, Pwyll, Blodeuwedd, Bran, Branwen, Aranrhod, Annwn
+- Etruscan (12): Tinia, Uni, Menrva, Turan, Usil, Fufluns, Nethuns, Thesan,
+  Voltumna, Lasa, Charun, Tuchulcha
+- Scythian (7): Tabiti, Papaeus, Artimpasa, Api, Sword Ares, Oetosyrus, Thagimasadas
+- Hittite + Hittite/Hurrian (12): Arinna, Tarhunna, Hannahanna, Telipinu, Inaras,
+  Illuyanka, Teshub, Hepat, Kumarbi, Shaushka, Alalu, Ullikummi
+- And all remaining gaps in Canaanite, Celtic/Gaulish, Egyptian, Greek (Titans),
+  Islamic, Israelite, Jewish Mystical, Mesopotamian, Mycenaean, Phoenician,
+  Phrygian, Pre-Islamic Arabian, South Arabian, Zoroastrian
+- Zero entities missing category after this script.
+
+**Orphan fix** (`fix_orphan_entities.sql`):
+6 entities had zero relationships and were fully disconnected from the graph.
+Each now has 1–2 sourced relationships:
+- **ENT_SLAV_ROD** → `aligned_with ENT_ZEUS` (medium — supreme creator deity parallel;
+  Brückner/Primary Chronicle)
+- **ENT_BALT_RAGANA** → `opposes ENT_BALT_LAIMA` (medium — dark/light fate contrast;
+  Greimas) + `aligned_with ENT_HECATE` (medium — nocturnal sorceress/crossroads parallel)
+- **ENT_SLAV_STRIBOG** → `aligned_with ENT_SLAV_DAZBOG` (medium — paired in Primary
+  Chronicle as complementary sky-force deities)
+- **ENT_SLAV_SIMARGL** → `aligned_with ENT_SLAV_PERUN` (low — co-listed in 980 CE
+  Kiev pantheon; guardian within Perun's divine assembly)
+- **ENT_SLAV_KHORS** → `aligned_with ENT_SLAV_DAZBOG` (high — consistently paired in
+  Primary Chronicle and Igor Tale as complementary solar deities)
+- **ENT_FINN_AHTI** → `aligned_with ENT_POSEIDON` (low — structural parallel as
+  supreme sea deity; Kalevala Runo 5)
+- Global orphan count: 0. All 1,234 entities are now graph-connected.
+
+**Zoroastrian cross-links** (`add_zoroastrian_crosslinks.sql`):
+The 6 Amesha Spentas previously had only inward relationships (member_of, embodies).
+They are now linked to their closest Jewish archangel and Gnostic aeon counterparts,
+completing the most important missing cluster in comparative theology:
+- **Vohu Manah** (Good Mind) → `aligned_with ENT_GNO_NOUS` (medium — semantic parallel:
+  divine Mind/Intelligence as first emanation)
+- **Asha Vahishta** (Best Truth/Fire) → `aligned_with ENT_ISR_URIEL` (medium — domain:
+  truth/fire/divine light; Uriel as angel of fire in 1 Enoch 20:2)
+- **Khshathra Vairya** (Dominion) → `aligned_with ENT_ISR_MICHAEL` (medium — domain:
+  divine sovereignty/kingdom; Daniel 10:13 Michael as heavenly warrior-king)
+- **Spenta Armaiti** (Holy Devotion) → `aligned_with ENT_GNO_SOPHIA` (medium — domain:
+  divine feminine wisdom/devotion; both feminine emanations of supreme divinity)
+- **Haurvatat** (Wholeness) → `aligned_with ENT_ISR_RAPHAEL` (medium — domain:
+  healing/wholeness/water; "God has healed"; Tobit 12:14–15)
+- **Ameretat** (Immortality) → `aligned_with ENT_GNO_ZOE` (medium — semantic: both
+  embody the life/deathlessness principle)
+
+Counts: +0 entities (1,234 total), +13 relationships (2,092 total),
+0 unresolved references.
+
+---
+
 ## v1.16.0 — 2026-06-14
 
 ### Enrichment: Pre-Islamic Arabian / Nabataean deities
