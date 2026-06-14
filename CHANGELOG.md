@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.22.2 — 2026-06-14
+
+### Reproducibility: commit table + constraint DDL — bootstrap now works end-to-end
+
+`schema/bootstrap.sql` loads `tables.sql` → `constraints.sql` → `views.sql`, but
+`schema/tables.sql` did not exist and `constraints.sql` held only three hand-written
+constraints — so a from-scratch rebuild failed immediately. The full table and
+constraint DDL lived only in the running Postgres instance.
+
+- **`schema/tables.sql`** (new): all 36 tables, 5 sequences, and column defaults,
+  dumped from the live instance via `pg_dump --section=pre-data` (views stripped —
+  they belong to `views.sql`; `search_path`/`\restrict` meta removed so the shared
+  bootstrap session keeps the default `public` search path).
+- **`schema/constraints.sql`** (regenerated): all 71 `ADD CONSTRAINT` (31 PK, 38 FK,
+  2 UNIQUE) plus 14 indexes, via `pg_dump --section=post-data`. Supersedes the earlier
+  three-constraint hand-written stub (which it reproduces).
+
+**Verified end-to-end:** building a throwaway database through
+`tables.sql → constraints.sql → views.sql` with `ON_ERROR_STOP=1` exits clean and
+reproduces the live schema exactly — **36 tables, 77 constraints, 47 indexes** (parity
+with live) — and the real data (1,251 entities + sources) loads into it with every FK
+and constraint satisfied.
+
+Known remaining gap (non-blocking): the live instance also has ~14 internal diagnostic
+views (review dashboards, taxonomy summaries, staging helpers) not yet in `views.sql`;
+the bootstrap produces all 11 public views + metrics. No data change.
+
+---
+
 ## v1.22.1 — 2026-06-14
 
 ### Reproducibility: commit the full public-view DDL to schema/views.sql
