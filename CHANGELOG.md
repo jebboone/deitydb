@@ -1,5 +1,35 @@
 # Changelog
 
+## Public Web Explorer — 2026-06-13
+
+Launched a public read-only Datasette explorer at https://deitydb-explorer.fly.dev/
+
+### Infrastructure
+- `scripts/export_sqlite.sh` — exports PostgreSQL → SQLite via db-to-sqlite; materializes 10 public views as tables for Datasette compatibility
+- `Dockerfile` — Python 3.12-slim, Datasette pinned to 0.65.2 (1.0+ removed the `/database/query-name` URL route); non-root `datasette` user
+- `fly.toml` — Fly.io deployment, scale-to-zero, 256 MB, `iad` region
+- `metadata.yaml` — 16 canned queries under the `queries:` key (Datasette 0.65.2 uses `queries:`, not `canned_queries:`)
+- `.github/workflows/fly-deploy.yml` — manual dispatch workflow (SQLite is not committed; deploys require a local export first)
+
+### Security hardening
+- `plugins/security_headers.py` — ASGI wrapper injecting `x-content-type-options`, `x-frame-options`, `referrer-policy`, `permissions-policy` on every response
+- SQL execution limits: `sql_time_limit_ms=2000`, `max_returned_rows=1000`
+
+### Custom UI
+- `templates/base.html` — custom Datasette base template with site-wide sticky nav (replaces default breadcrumb nav on all pages including built-in query/table result pages)
+- `templates/_site_nav.html` — DeityDB brand, Explore / About / Contribute / GitHub links, active-state highlighting, mobile hamburger menu
+- `templates/index.html` — homepage: Blake's *Ancient of Days* art hero, stat strip, 12 query cards in two grids, JS-loaded tradition grid, about strip
+- `templates/database.html` — query explorer: 5 organized sections (Browse, Entity Explorer, Cross-Tradition, Browse by Type, Reference), collapsible raw tables, custom SQL editor
+- `templates/about.html` — project About page: description, design-principle cards, tradition coverage, citation format, tech stack; Flammarion engraving + Raphael *School of Athens* art
+- `templates/contribute.html` — Contribute page: 6 pathway cards, data standards, 4-step getting-started guide; Paradise Lost frontispiece art
+- `plugins/custom_pages.py` — `register_routes` hook serving `/about` and `/contribute`
+- `static/deitydb.css` — navy/gold/cream design system, art hero with dark overlay, responsive at 700px and 860px
+
+### Canned queries (all at `/deitydb/<name>`)
+tradition-overview, browse-tradition, browse-category, entity-relationships, reception-chain, divine-genealogies, cross-traditional-parallels, most-connected, underworld-entities, adversarial-beings, angelic-beings, revealer-figures, wisdom-knowledge, serpent-dragon, source-bibliography, relationship-vocabulary
+
+---
+
 ## v1.2.0
 
 ### New tradition layers: Etruscan (12 entities; Pyrgi tablets, Piacenza liver), Scythian (7 entities; Herodotus 4.59–62), Phrygian (Matar Kubileya; Agdistis)

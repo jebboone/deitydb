@@ -6,6 +6,8 @@ DeityDB is a comparative database of spiritual entities across Western religious
 
 ## Areas Where Help Is Needed
 
+The live public explorer is at **https://deitydb-explorer.fly.dev/** — browse and query the data without any local setup.
+
 High-value contribution areas include:
 
 * Primary source extraction
@@ -19,7 +21,7 @@ High-value contribution areas include:
 * Documentation
 * SQL optimization
 * Data visualization
-* Web and API development
+* Web and API development (explorer source in `Dockerfile`, `templates/`, `static/`, `plugins/`)
 
 ## Data Standards
 
