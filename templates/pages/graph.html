@@ -50,8 +50,8 @@
       <button class="gp-seed" id="gp-retry">Try again</button>
     </div>
 
-    {# SVG graph — inserted dynamically #}
-    <svg id="gp-svg" hidden aria-label="Relationship graph"></svg>
+    {# SVG graph — inserted dynamically; visibility controlled via style.display #}
+    <svg id="gp-svg" style="display:none" aria-label="Relationship graph"></svg>
 
     {# Floating toolbar #}
     <div class="gp-toolbar" id="gp-toolbar" hidden>
@@ -151,11 +151,13 @@ var tipEl      = document.getElementById('gp-tooltip');
 
 /* ── Show/hide helpers ───────────────────────────────────────────── */
 function showOnly(state) {
-  /* state: 'empty' | 'loading' | 'error' | 'graph' */
+  /* state: 'empty' | 'loading' | 'error' | 'graph'
+     Use style.display for the SVG directly — the [hidden]+!important combo
+     can make svgEl.hidden=false fail to un-hide it in some browsers.      */
   emptyEl.hidden   = (state !== 'empty');
   loadingEl.hidden = (state !== 'loading');
   errorEl.hidden   = (state !== 'error');
-  svgEl.hidden     = (state !== 'graph');
+  svgEl.style.display = (state === 'graph') ? 'block' : 'none';
   toolbarEl.hidden = (state !== 'graph');
   legendEl.hidden  = (state !== 'graph');
 }
@@ -251,6 +253,8 @@ function render() {
     .join('circle')
     .attr('class', 'gp-node')
     .attr('r', 16)
+    .attr('cx', function(d){ return d.x; })
+    .attr('cy', function(d){ return d.y; })
     .attr('fill', function(d){ return TRAD_COLOR[tradKey(d.trad)] || TRAD_COLOR.other; })
     .attr('stroke', function(d){ return expanded.has(d.id) ? '#fff' : 'rgba(255,255,255,0.6)'; })
     .attr('stroke-width', function(d){ return expanded.has(d.id) ? 2.5 : 1.5; })
@@ -270,6 +274,8 @@ function render() {
     .join('text')
     .attr('class', 'gp-label')
     .attr('text-anchor', 'middle')
+    .attr('x', function(d){ return d.x; })
+    .attr('y', function(d){ return d.y + 28; })
     .attr('fill', '#1a2f4e')
     .attr('font-size', '11px')
     .attr('pointer-events', 'none')
@@ -350,13 +356,17 @@ async function startGraph(entityId) {
     await fetchNeighbourhood(entityId);
     expanded.add(entityId);
 
-    /* Stamp SVG with explicit pixel dimensions — belt-and-suspenders
-       against height:100% not resolving in flex contexts              */
     var _sz = getSize();
+    if (!_sz.W) _sz.W = window.innerWidth  || 800;
+    if (!_sz.H) _sz.H = window.innerHeight - 56 || 600;
+
     svgEl.setAttribute('width',  _sz.W);
     svgEl.setAttribute('height', _sz.H);
-    svgEl.style.width  = _sz.W + 'px';
-    svgEl.style.height = _sz.H + 'px';
+    /* Do NOT override position:absolute CSS with inline width/height —
+       the CSS top/right/bottom/left stretch already fills the canvas.
+       Only stamp the SVG coordinate-space attributes above.            */
+    svgEl.style.width  = '';
+    svgEl.style.height = '';
 
     /* Re-centre force with verified dimensions */
     if (simulation) {
@@ -365,6 +375,7 @@ async function startGraph(entityId) {
 
     showOnly('graph');
     render();
+    tick(); /* one synchronous tick so nodes appear before first rAF */
 
     /* Fit after sim settles */
     setTimeout(fitGraph, 800);
