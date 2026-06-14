@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.21.0 — 2026-06-14
+
+### Quality: full relationship sourcing — 0 unsourced relationships
+
+**Source backfill** (`fix_sourcing_batch11_unsourced_relationships.sql`):
+An audit (`audit_quality_snapshot.sql`) found 99 relationships with no `source_id` —
+the last gap against CLAUDE.md rule 2 (every relationship traces to a source record).
+All 99 are real, defensible edges that simply never had the FK populated. Each was
+assigned a source already linked to one of its endpoints (no new sources introduced),
+using the source that documents the actual claim:
+- **reception_of / embodies / rules / equated_with / etc.** → the SUBJECT's attesting
+  source (the tradition making the claim).
+- **received_as** → the OBJECT's source (the later/receiving tradition documenting the
+  reception).
+
+Largest clusters: Solomonic demonology (20 → SRC_TESTAMENT_SOLOMON: afflictions,
+binding, decans); Thelemic receptions (11 → SRC_CROWLEY_BOOK_OF_LAW); Hermetic
+Hermes/Thoth→Trismegistus (11 → SRC_CORPUS_HERMETICUM); Nag Hammadi Gnostic (5 →
+SRC_NHC); Behemoth/Leviathan chaos monsters (5 → SRC_DDD_BIBLE); Christian
+Devil/Lucifer (6 → SRC_CHRISTIAN_DEMONOLOGY_GENERAL); plus Manichaean, Kabbalistic,
+Mesopotamian, Canaanite, Zoroastrian, Norse, and Greek single edges.
+
+Also committed `audit_quality_snapshot.sql` (re-runnable health snapshot) and
+`pre_release_cleanup.sql` (previously applied, now tracked).
+
+Counts unchanged: 1,251 entities / 2,143 relationships / 145 sources;
+**0 unsourced relationships**, 0 orphans, 0 unsourced entities, 0 unresolved references.
+
+---
+
 ## v1.20.0 — 2026-06-14
 
 ### Expansion: Valentinian pleroma, Dacian tradition, Italic/Sabine tradition
