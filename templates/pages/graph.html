@@ -509,7 +509,7 @@ async function runAC(q) {
   try {
     var url = '/deitydb/entities.json?_shape=array&_size=10' +
       '&_col=entity_id&_col=canonical_name&_col=tradition' +
-      '&canonical_name__icontains=' + encodeURIComponent(q);
+      '&canonical_name__contains=' + encodeURIComponent(q);
     var data = await (await fetch(url)).json();
     if (!data.length) { sugEl.hidden = true; return; }
     sugEl.innerHTML = data.map(function(r) {
