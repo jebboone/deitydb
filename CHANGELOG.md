@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.8.0 — 2026-06-14
+
+### Dataset expansion: Armenian tradition
+
+**Armenian layer** (`add_armenian_layer.sql`) — new tradition, 6 entities:
+- Sources: `SRC_KHORENATSI_HISTORY` (Movses Khorenatsi, *History of Armenia*, 5th c. CE;
+  Thomson trans. Harvard 1978), `SRC_AGATHANGELOS_HISTORY` (Agathangelos, *History of the
+  Armenians*, 5th c. CE; Thomson trans. SUNY 1976), `SRC_RUSSELL_ZOR_ARMENIA` (Russell,
+  *Zoroastrianism in Armenia*, Harvard Iranian Series 5, 1987).
+- Period: `PER_ARM_PAGAN` (Pre-Christian Armenian, −500 to 301 CE — Armenia adopted
+  Christianity as state religion in 301 CE under Tiridates III).
+- **Aramazd** (`ENT_ARM_ARAMAZD`, conf A): supreme sky-father deity; name derives from Ahura
+  Mazda by regular sound change; Agathangelos §22 explicitly equates with Zeus; cult at Ani,
+  Bagaran, and Ashtishat; father of Anahit, Vahagn, and Nane.
+- **Anahit** (`ENT_ARM_ANAHIT`, conf A): most beloved Armenian deity; "glory of our nation and
+  vivifier" (Agathangelos §22); gold statue at Erez described by Strabo; reception of Zoroastrian
+  Anahita; syncretized with Artemis (primary, Agathangelos) and Aphrodite (secondary).
+- **Vahagn** (`ENT_ARM_VAHAGN`, conf A): war deity and dragon-slayer; son of Aramazd; the Vahagn
+  birth hymn (Khorenatsi I.31) is the oldest surviving Armenian poem, describing his birth from
+  sea, fire, and sky; syncretized with Heracles (Agathangelos §22).
+- **Astghik** (`ENT_ARM_ASTGHIK`, conf A): goddess of love, beauty, and water; name means "little
+  star"; Vardavar water festival survives into the Christian period; syncretized with Aphrodite;
+  paired with Vahagn; the place name Ashtishat ("city of Ashtart") reveals a Semitic substratum.
+- **Tir** (`ENT_ARM_TIR`, conf A): scribe of Aramazd, god of writing, dreams, and wisdom; temple
+  at Artashat; Agathangelos §22 equates him with both Hermes (primary) and Apollo (secondary).
+- **Nane** (`ENT_ARM_NANE`, conf A): daughter of Aramazd; war and wisdom goddess; Agathangelos §22
+  equates with Athena ("mother of virtues, teacher of virtue"); temple at Tiliē.
+
+**Totals**: 1,199 → **1,205 entities** (+6); 2,004 → **2,019 relationships** (+15);
+124 → **127 sources** (+3); 68 → **69 traditions** (+Armenian); 0 unresolved references maintained.
+
 ## v1.7.0 — 2026-06-14
 
 ### Dataset expansion: Thracian tradition
