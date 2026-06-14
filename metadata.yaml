@@ -10,8 +10,8 @@ description_html: |
   Roman · Celtic (Irish, Welsh, Gaulish) · Germanic/Norse · Christian · Gnostic · Mandaean · Manichaean ·
   Zoroastrian · Islamic · Jewish Mystical · Hermetic · Etruscan · Scythian · Phrygian · Pre-Islamic
   Arabian · South Arabian/Sabaean · Phoenician · Hittite/Hurrian · Mycenaean · Late Antique ritual ·
-  Baltic · Slavic · Moabite · Ammonite · Edomite · Thracian · Armenian · Finnish · Urartian</p>
-  <p><strong>v1.10.0</strong> — 1,216 entities · 2,038 relationships · 132 sources · 0 unresolved references</p>
+  Baltic · Slavic · Moabite · Ammonite · Edomite · Thracian · Armenian · Finnish · Urartian · Meroitic · Iberian/Lusitanian · Aramean</p>
+  <p><strong>v1.13.0</strong> — 1,229 entities · 2,064 relationships · 139 sources · 0 unresolved references</p>
   <p>Source and contributing: <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a></p>
 license: MIT
 license_url: https://opensource.org/licenses/MIT
@@ -23,7 +23,7 @@ extra_css_urls:
 
 databases:
   deitydb:
-    title: DeityDB v1.10.0
+    title: DeityDB v1.13.0
     description_html: |
       <p>Start with the <strong>Canned queries</strong> below, or browse the tables directly.
       The main tables are <em>entities</em>, <em>entity_relationships</em>, and <em>sources</em>.
@@ -55,7 +55,7 @@ databases:
       entities:
         title: Entities
         description_html: |
-          The core table. 1,216 entities across 30+ traditions spanning gods, angels, demons, aeons,
+          The core table. 1,229 entities across 30+ traditions spanning gods, angels, demons, aeons,
           prophets, saints, heroes, spirits, monsters, personified abstractions, cosmological realms,
           and ritual categories. Use <strong>category</strong> to filter by functional type
           (146 values: Underworld Deity, Hero, Adversarial Being, Revealer Figure, etc.).
@@ -90,7 +90,7 @@ databases:
       entity_relationships:
         title: Relationships
         description_html: |
-          2,038 typed, source-backed relationships between entities. Each row records a directed
+          2,064 typed, source-backed relationships between entities. Each row records a directed
           relationship (subject → type → object) with a justifying source and rationale note.
           See <em>relationship_types</em> for the full controlled vocabulary of 70 relationship types.
           Key types: <em>reception_of</em> / <em>received_as</em> (transmission across traditions),
@@ -499,7 +499,7 @@ databases:
       source-bibliography:
         title: "Source bibliography"
         description_html: |
-          All 132 sources used in DeityDB, ranked by how many entities they attest —
+          All 139 sources used in DeityDB, ranked by how many entities they attest —
           primary texts alongside the secondary scholarship used to interpret them.
         sql: |
           SELECT
