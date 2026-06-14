@@ -350,6 +350,19 @@ async function startGraph(entityId) {
     await fetchNeighbourhood(entityId);
     expanded.add(entityId);
 
+    /* Stamp SVG with explicit pixel dimensions — belt-and-suspenders
+       against height:100% not resolving in flex contexts              */
+    var _sz = getSize();
+    svgEl.setAttribute('width',  _sz.W);
+    svgEl.setAttribute('height', _sz.H);
+    svgEl.style.width  = _sz.W + 'px';
+    svgEl.style.height = _sz.H + 'px';
+
+    /* Re-centre force with verified dimensions */
+    if (simulation) {
+      simulation.force('center', d3.forceCenter(_sz.W / 2, _sz.H / 2));
+    }
+
     showOnly('graph');
     render();
 
