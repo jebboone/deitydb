@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.7.0 — 2026-06-14
+
+### Dataset expansion: Thracian tradition
+
+**Thracian layer** (`add_thracian_layer.sql`) — new tradition, 5 entities (3 reclassified + 2 new):
+- Sources: `SRC_ARCHIBALD_ODRYSIAN` (Archibald, *The Odrysian Kingdom of Thrace*, 1998),
+  `SRC_PLATO_REPUBLIC` (Plato, *Republic*, c. 375 BCE).
+- Period: `PER_THRA_IRON_AGE` (Thracian Iron Age and Classical Period, −700 to 150 CE).
+- **Sabazios** (`ENT_SABAZIOS`, reclassified Greek → Thracian, conf A): Thracian sky-thunder god
+  received into Athenian mystery religion by the 5th c. BCE (Aristophanes *Wasps* 422 BCE);
+  syncretized with Dionysus (Herodotus 5.7) and Zeus (Roman-period "Zeus Sabazios" votive tablets).
+  Removed stale seed relationship (`member_of ENT_PHRYG_MATAR`).
+- **Bendis** (`ENT_BENDIS`, reclassified Greek → Thracian, conf A): Thracian moon/hunting goddess;
+  official Athenian state cult established by decree by 429 BCE; Plato opens the *Republic* (327a)
+  at her Piraeus festival. Equated with Artemis (high), Selene (medium), Hecate (medium).
+- **Cotys** (`ENT_COTYS`, reclassified Greek → Thracian, conf B): goddess of orgiastic mystery rites;
+  the Cotytia attested in Attic comedy (Eupolis fr. 85), Aeschylus *Edoni* fr. 57, and Theopompus;
+  equated with Rhea/Cybele in Greek interpretation.
+- **Zalmoxis** (`ENT_THRA_ZALMOXIS`, new, conf A): deity/deified revealer figure of the Getae;
+  Herodotus 4.94-96 (longest ancient account); Plato *Charmides* 156d-157c (soul-doctrine);
+  patron of the dead and revealer of immortality to the Getae. Aligned with Orpheus (structural
+  Thracian mystery parallel; Burkert 1987).
+- **Gebeleizis** (`ENT_THRA_GEBELEIZIS`, new, conf B): Getae sky/thunder deity; Herodotus 4.94
+  (sole attestation — Getae shoot arrows at sky to threaten him during storms); patron of Storm;
+  possibly the same deity as Zalmoxis in a different aspect (Eliade 1970, vs. Archibald 1998 caution).
+
+**Totals**: 1,197 → **1,199 entities** (+2 new); 1,997 → **2,004 relationships** (+7);
+122 → **124 sources** (+2); 67 → **68 traditions** (+Thracian); 0 unresolved references maintained.
+
 ## v1.6.0 — 2026-06-14
 
 ### Dataset expansion: Moabite, Ammonite, and Edomite traditions
