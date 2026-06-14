@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.6.0 — 2026-06-14
+
+### Dataset expansion: Moabite, Ammonite, and Edomite traditions
+
+**Transjordanian Iron Age layer** (`add_transjordanian_layer.sql`) — 3 new traditions, 4 entities:
+- Sources: `SRC_MESHA_STELE` (Mesha Stele c. 840 BCE / Dearman 1989 edition),
+  `SRC_BARTLETT_EDOM` (Bartlett 1989).
+- Period: `PER_TRANSJORDAN_IRON_AGE` (Iron Age Transjordanian, −1200 to −500 BCE).
+- **Kemosh** (`ENT_MOA_KEMOSH`, Moabite, conf A): national deity of Moab; named 9 times
+  in the Mesha Stele (c. 840 BCE); attested across 4 independent biblical books spanning
+  9th–6th c. BCE. War and storm deity; goes into exile at national defeat (Jer 48).
+- **Ashtar-Kemosh** (`ENT_MOA_ASHTAR_KEMOSH`, Moabite, conf B): compound warrior form
+  of Kemosh attested once in the Mesha Stele ḥērem formula (line 17); conflates Kemosh
+  with the warrior-Venus Ashtar tradition.
+- **Milkom** (`ENT_AMM_MILKOM`, Ammonite, conf A): national deity of Ammon; "the King"
+  (*mlk); attested in 1 Kgs 11, 2 Kgs 23, Jer 49, Zeph 1 and Ammonite personal names.
+- **Qos** (`ENT_EDO_QOS`, Edomite, conf B): national deity of Edom; not named as deity
+  in the Hebrew Bible but securely attested through Edomite onomastic inscriptions
+  (7th–5th c. BCE) including the Qos-gabr theophoric name in Assyrian annals.
+- Relationships: Kemosh and Milkom opposed_by Yahweh (theological polemic structure
+  in Judges 11, Jeremiah); Kemosh and Milkom aligned_with each other (parallel national
+  deity theology); Kemosh reception_of Baal Hadad (typological inheritance);
+  Ashtar-Kemosh cult_form_of Kemosh, aligned_with Astarte.
+
+**Totals**: 1,193 → **1,197 entities** (+4); 1,986 → **1,997 relationships** (+11);
+120 → **122 sources** (+2); 0 unresolved relationship references maintained.
+
 ## v1.5.0 — 2026-06-14
 
 ### Dataset expansion: Baltic and Slavic traditions; Egyptian gap fill
