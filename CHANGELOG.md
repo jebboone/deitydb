@@ -1,5 +1,33 @@
 # Changelog
 
+## v1.16.0 — 2026-06-14
+
+### Enrichment: Pre-Islamic Arabian / Nabataean deities
+
+**Pre-Islamic Arabian enrichment** (`enrich_pre_islamic_arabian.sql`):
+Dushara, Al-Uzza, Manat, and Al-Lat already existed as well-noted entities
+(backed by SRC_HEALEY_NABATAEAN_RELIGION, SRC_HERODOTUS_HISTORIES, SRC_QURAN)
+but lacked `category`, `primary_domains`, and two key relationships:
+
+- **category / primary_domains added** to all four: Dushara (High Deity;
+  divine supremacy, mountain, sky, aniconic baetyl cult), Al-Uzza (Love Deity;
+  Venus/morning star, love, war), Manat (Underworld Deity; fate, death, moon,
+  tribal oaths), Al-Lat (High Deity; sun, fertility, motherhood, war).
+- **Al-Lat received_as Aphrodite (high)**: Herodotus 3.8 (c. 430 BCE) is the
+  earliest explicit ancient Arabian-Greek deity equation — he names "Alilat" and
+  states "Alilat is the same as Aphrodite [Ourania]." This primary-text equation
+  was unrepresented in the graph despite SRC_HERODOTUS_HISTORIES already being
+  linked to Al-Lat. Al-Lat now has two Greek equations: Aphrodite (high, Herodotus)
+  and Athena (medium, Palmyrene-period identification).
+- **Dushara aligned_with Zeus (medium)**: Greek and Roman sources (incl. Epiphanius,
+  *Panarion* 51.22) identified Dushara with both Dionysus (his existing relationship)
+  and Zeus/Jupiter as the supreme deity of the Arabs. The Zeus equation reflects his
+  sky-sovereignty function alongside the vegetation/wine Dionysus aspect.
+
+Counts: +0 entities (1,234 total), +3 relationships (2,079 total), 0 unresolved references.
+
+---
+
 ## v1.15.0 — 2026-06-14
 
 ### Dataset expansion: Elamite tradition
