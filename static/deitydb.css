@@ -1035,6 +1035,57 @@ footer.ft a:hover { color: var(--gold-light) !important; }
   color: white;
 }
 
+/* ── Datasette result page elements ───────────────────────────────── */
+
+/* SQL block above results — keep from overflowing */
+pre#sql-query {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.82rem;
+  background: #f7f5f2;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  margin: 0 0 12px;
+}
+
+/* Export / download links row */
+p.export-links {
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 4px 24px 12px;
+  margin: 0;
+}
+
+p.export-links a { color: var(--navy-mid); }
+
+/* SQL form heading */
+form.sql h3 {
+  font-size: 0.82rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+}
+
+/* Canned query edit link */
+a.canned-query-edit-sql {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-left: 12px;
+}
+
+/* Zero results notice */
+p.zero-results {
+  padding: 16px 24px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.88rem;
+}
+
 /* ── Responsive ───────────────────────────────────────────────────── */
 
 @media (max-width: 860px) {
@@ -1044,6 +1095,7 @@ footer.ft a:hover { color: var(--gold-light) !important; }
 }
 
 @media (max-width: 700px) {
+  /* ── Nav ── */
   .site-nav { padding: 0 16px; }
   .site-nav-links {
     display: none;
@@ -1056,22 +1108,69 @@ footer.ft a:hover { color: var(--gold-light) !important; }
     gap: 2px;
     border-top: 1px solid rgba(255,255,255,0.1);
     z-index: 99;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   }
   .site-nav-links.open { display: flex; }
-  .nav-link { padding: 9px 14px; font-size: 0.9rem; }
+  .nav-link { padding: 10px 14px; font-size: 0.92rem; }
+  .nav-link-ext { border: none; }
   .nav-toggle { display: flex; }
 
-  .db-hero { padding: 64px 16px 72px; }
-  .db-hero h1 { font-size: 2.2rem; }
-  .db-hero .subtitle { font-size: 0.95rem; }
-  .hero-stats { gap: 28px; }
+  /* ── Hero ── */
+  .db-hero { padding: 56px 16px 64px; }
+  .db-hero h1 { font-size: 2.1rem; }
+  .db-hero .subtitle { font-size: 0.93rem; margin-bottom: 36px; }
+  .hero-art-credit { display: none; }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .hero-stat-number { font-size: 2rem; }
 
-  .page-art-hero-inner { padding: 56px 16px 52px; }
-  .page-art-hero-inner h1 { font-size: 2rem; }
+  /* ── Art hero pages ── */
+  .page-art-hero-inner { padding: 52px 16px 44px; }
+  .page-art-hero-inner h1 { font-size: 1.8rem; }
+  .page-art-hero-inner p { font-size: 0.92rem; }
 
+  /* ── Section padding ── */
+  .db-section { padding: 28px 16px; }
+  .db-page-header { padding: 20px 16px 16px; }
+  .db-page-header h1 { font-size: 1.3rem; }
+  .page-header { padding: 20px 16px 14px !important; }
+  .page-header h1 { font-size: 1.2rem; }
+  .metadata-description { padding: 12px 16px; font-size: 0.84rem; }
+  .about-strip { padding: 36px 16px; }
+  .sql-section { padding: 24px 16px; }
+  .prose-section { padding: 32px 16px; }
+
+  /* ── Data tables: tighter on mobile ── */
+  .rows-and-columns { padding: 0 0 20px; }
+  .rows-and-columns thead th { padding: 8px 10px; font-size: 0.7rem; }
+  .rows-and-columns td { padding: 7px 10px; font-size: 0.8rem; max-width: 220px; }
+  p.export-links { padding: 4px 16px 10px; }
+  p.zero-results { padding: 12px 16px; }
+
+  /* ── SQL form on result pages: hide SQL block, keep inputs ── */
+  pre#sql-query { display: none; }
+  .show-hide-sql { display: none; }
+  form.sql h3 { margin-bottom: 8px; }
+
+  /* ── Cards ── */
   .query-grid { grid-template-columns: 1fr; }
-  .tradition-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
   .principles-grid { grid-template-columns: 1fr; }
   .contrib-cards { grid-template-columns: 1fr; }
-  .prose-section { padding: 36px 16px; }
+  .query-card { padding: 18px 16px 16px; }
+
+  /* ── Tradition grid ── */
+  .tradition-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 6px; }
+  .tradition-chip { padding: 7px 10px; }
+  .trad-name { font-size: 0.79rem; }
+
+  /* ── About strip ── */
+  .about-strip-inner { padding: 0; }
+
+  /* ── Contribute steps ── */
+  .inline-code { font-size: 0.75rem; word-break: break-all; }
 }

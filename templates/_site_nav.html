@@ -16,7 +16,12 @@
   </button>
 </div>
 <script>
-document.getElementById('nav-toggle').addEventListener('click', function() {
-  document.getElementById('site-nav-links').classList.toggle('open');
-});
+(function() {
+  var toggle = document.getElementById('nav-toggle');
+  var links  = document.getElementById('site-nav-links');
+  toggle.addEventListener('click', function() { links.classList.toggle('open'); });
+  links.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() { links.classList.remove('open'); });
+  });
+})();
 </script>
