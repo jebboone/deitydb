@@ -1,5 +1,80 @@
 # Changelog
 
+## v1.3.0 — 2026-06-13
+
+### Relationship graph completion — 0 zero-rel entities
+
+Systematic expansion connecting every entity in the database to the relationship
+graph. Result: **0 zero-rel entities** across all 1,172 entities; **1,961 total
+relationships** (+609 from v1.2.0 baseline of 1,352).
+
+- **expand_greek_relationships_v2.sql** (+68 rels): Greek abstraction parent chains
+  (Eris→10 Strife children, Theogony 226-232; Nyx→Apate/Philotes/Momos, Theogony
+  211-225); 14 embodies edges (Dikaiosyne/Nomos→Justice, Hysminai/Machai→War, etc.);
+  primordials (Chaos→Erebus/Nyx, Theogony 116-120; Gaia→Ourea/Pontus, Theogony
+  129-132); hero relationships (Aphrodite→Aeneas; Athena protects Odysseus/Cecrops;
+  Hector slays Protesilaus, Epitome 3.30). Greek zero-rel: 294→240.
+
+- **expand_greek_aquatic_v1.sql** (+101 rels): All river deities (Potamoi)
+  with Oceanus parent chains from Theogony 337-345; 18 named Nereids; 12 named
+  Oceanids; sea deities (Nereus, Thaumas, Phorcys, Eurybia from Theogony 233-239);
+  Ino→Leucothea and Melicertes→Palaemon reception chains; Scamander opposes Achilles
+  (Iliad 21). Greek zero-rel: 240→24 (aquatic cluster cleared).
+
+- **expand_greek_relationships_v3.sql** (+90 rels): Oracle figures (Apollo
+  patron_of Cassandra/Tiresias/Calchas/Amphiaraus; Phoebe reveals to Apollo at
+  Delphi, Aeschylus Eumenides 1-19); Nyx additional children (Morpheus, Phobetor,
+  Phantasos, Hesperides, Nosoi); Dionysian cluster (Dionysus patron_of Maenads/
+  Thyiads/Satyrs/Silenus; Rhea patron_of Korybantes/Kouretes, Theogony 477-484);
+  underworld batch (Plouton/Hades rules+dwells_in; Brimo; Melinoe; Ascalaphus);
+  myth pairs (Eos/Tithonus, Dionysus/Ariadne Theogony 947-949, Pan/Syrinx,
+  Aphrodite/Psyche). Greek zero-rel: 240→97.
+
+- **expand_egyptian_v1.sql** (+31 rels): Horus forms (Harsiese, Haroeris, Harakhty,
+  Harsomtus as reception_of Horus); ram deities (Heryshaf, Banebdjedet); Ogdoad
+  primordials (Tenemu/Tenemut member_of Ogdoad); necropolis/birth cluster
+  (Meretseger, Neferhotep, Meskhenet, Shai); Pakhet reception_of Sekhmet; Wosret
+  received_as Mut. Egyptian zero-rel: 16→0.
+
+- **expand_hittite_scythian_v1.sql** (+17 rels): Hittite: Arinna paired_with
+  Tarhunna (Hoffner, Hittite Myths), equated_with Hepat, patron_of Sovereignty;
+  Hannahanna guides Telipinu. Hittite/Hurrian: Alalu in Kumarbi Cycle (Song of
+  Kumarbi). Scythian: all four Herodotus 4.59-62 equations (Artimpasa=Aphrodite,
+  Oetosyrus=Apollo, Sword Ares=Ares, Thagimasadas=Poseidon). Both traditions: 0.
+
+- **expand_misc_zero_rel_v1.sql** (+12 rels): Cross-traditional virtue pair
+  (Generosity/Poverty); Francis patron_of Poverty; Nicholas patron_of Generosity;
+  Quirinus patron_of Sovereignty, paired_with Mars, reception_of Mars (Ovid Fasti
+  2.475-512); Valentinian Ennoia paired_with Bythos+Sige, emanates_from Bythos.
+
+- **expand_greek_relationships_v4.sql** (+108 rels): Full sweep of 97 remaining
+  Greek zero-rel entities across 15 thematic sections: abstraction pairs/oppositions
+  (Aidos/Nemesis Works & Days 197-200; Hybris/Sophrosyne; Arete/Kakia Xenophon Mem.
+  2.1; Poine/Penia/Poros Plato Symp. 203b; Dolos from Nyx via Hyginus Fab. pref.;
+  Lyssa from Nyx via Eur. Heracles 822-873); Erinyes cluster (Alastor, Poinai);
+  Corycian nymphs (Paus. 10.32.2); Hecate retinue (Lamia, Gello, Mormo, Empusa,
+  Empousa, Mormolykeia); Eros Primordial (Chaos parent, Theogony 120; equated_with
+  Phanes); Gaia→Meliae (Theogony 187); all underworld spirits (Cocytus/Phlegethon,
+  Lampades, Melinoe, Minthe, Orphne, Gorgyra, Leuce, Eurynomos); war daimons
+  (Alala, Homados, Pallas); all remaining Oceanids (Peitho, Perseis, Pleione, Neda);
+  Naiad sub-collectives (Crenaiae, Heleionomai, Limnades, Pegaeae, Potameides);
+  Bendis, Cotys, Dactyls cluster; nymphs (Adrasteia, Amaltheia, Beroe, Chelone).
+
+- **expand_greek_relationships_v4b.sql** (+11 rels): Final 7 Greek zero-rel:
+  Amechania/Penia, Epiphron/Sophrosyne, Praxis/Techne, Thrasos/Hybris+Aidos;
+  Eurynome Primordial+Ophion (Apollonius Argonautica 1.503-511, Pelasgian rulers);
+  Thesis/Phanes (Orphic). Greek zero-rel: 0.
+
+- **expand_syncretic_zero_rel_v1.sql** (+17 rels): Clears all remaining 10 entities
+  across syncretic traditions — Greek/Anatolian (Corybantes/Rhea), Greek/Phrygian
+  (Marsyas vs Apollo, Apollodorus 1.4.2), Greek/Phrygian/Cretan (Dactyls/Rhea),
+  Greek/Rhodian (Telchines/Poseidon), Greek/Roman (Sibyl/Apollo Ovid Met. 14.130;
+  Telesphorus/Asclepius; Trivia reception_of Hecate Ovid Met. 7.177), South Arabian
+  (ʿAmm equated_with Sin; Shams equated_with Utu/Shamash), Thelemic (Hadit paired_with
+  Nuit + Ra-Hoor-Khuit, Liber AL vel Legis). Total zero-rel: 0.
+
+---
+
 ## Public Web Explorer — 2026-06-13
 
 Launched a public read-only Datasette explorer at https://deitydb-explorer.fly.dev/
