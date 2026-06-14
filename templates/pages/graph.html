@@ -47,7 +47,7 @@
     {# Error state #}
     <div class="gp-error" id="gp-error" hidden>
       <p class="gp-error-msg" id="gp-error-msg">An error occurred.</p>
-      <button class="gp-seed" onclick="gpReset()">Try again</button>
+      <button class="gp-seed" id="gp-retry">Try again</button>
     </div>
 
     {# SVG graph — inserted dynamically #}
@@ -291,7 +291,15 @@ function render() {
 /* ── Data helpers ────────────────────────────────────────────────── */
 function addNode(id, name, trad, type) {
   if (nodeMap[id]) return;
-  var n = { id: id, name: name || id, trad: trad || '', type: type || '' };
+  /* seed position near canvas centre so nodes are visible on first tick */
+  var sz = getSize();
+  var angle = nodes.length * 2.4;  /* golden-angle spiral */
+  var r = Math.min(sz.W, sz.H) * 0.03 * Math.sqrt(nodes.length + 1);
+  var n = {
+    id: id, name: name || id, trad: trad || '', type: type || '',
+    x: sz.W / 2 + r * Math.cos(angle),
+    y: sz.H / 2 + r * Math.sin(angle),
+  };
   nodes.push(n);
   nodeMap[id] = n;
 }
@@ -517,9 +525,10 @@ document.querySelectorAll('button.gp-seed[data-id]').forEach(function(btn) {
   });
 });
 
-/* ── Toolbar ─────────────────────────────────────────────────────── */
+/* ── Toolbar + error retry ───────────────────────────────────────── */
 document.getElementById('gp-fit').addEventListener('click', fitGraph);
 document.getElementById('gp-reset-btn').addEventListener('click', function() { gpReset(); });
+document.getElementById('gp-retry').addEventListener('click', function() { gpReset(); });
 
 /* ── Resize ──────────────────────────────────────────────────────── */
 window.addEventListener('resize', function() {

@@ -1627,10 +1627,12 @@ body.panel-open { overflow: hidden; }
 }
 
 /* ── SVG ──────────────────────────────────────────────────────────── */
+/* position:absolute+inset:0 avoids the height:100% flex-child resolution
+   ambiguity — the SVG always fills the canvas regardless of browser quirks */
 #gp-svg {
+  position: absolute;
+  inset: 0;
   display: block;
-  width: 100%;
-  height: 100%;
   cursor: grab;
 }
 #gp-svg:active { cursor: grabbing; }
