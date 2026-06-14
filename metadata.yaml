@@ -11,7 +11,7 @@ description_html: |
   Zoroastrian · Islamic · Jewish Mystical · Hermetic · Etruscan · Scythian · Phrygian · Pre-Islamic
   Arabian · South Arabian/Sabaean · Phoenician · Hittite/Hurrian · Mycenaean · Late Antique ritual ·
   Baltic · Slavic · Moabite · Ammonite · Edomite · Thracian · Armenian · Finnish · Urartian · Meroitic · Iberian/Lusitanian · Aramean · Luwian · Elamite</p>
-  <p><strong>v1.15.0</strong> — 1,234 entities · 2,076 relationships · 143 sources · 0 unresolved references</p>
+  <p><strong>v1.16.0</strong> — 1,234 entities · 2,079 relationships · 143 sources · 0 unresolved references</p>
   <p>Source and contributing: <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a></p>
 license: MIT
 license_url: https://opensource.org/licenses/MIT
@@ -23,7 +23,7 @@ extra_css_urls:
 
 databases:
   deitydb:
-    title: DeityDB v1.15.0
+    title: DeityDB v1.16.0
     description_html: |
       <p>Start with the <strong>Canned queries</strong> below, or browse the tables directly.
       The main tables are <em>entities</em>, <em>entity_relationships</em>, and <em>sources</em>.
@@ -90,7 +90,7 @@ databases:
       entity_relationships:
         title: Relationships
         description_html: |
-          2,076 typed, source-backed relationships between entities. Each row records a directed
+          2,079 typed, source-backed relationships between entities. Each row records a directed
           relationship (subject → type → object) with a justifying source and rationale note.
           See <em>relationship_types</em> for the full controlled vocabulary of 70 relationship types.
           Key types: <em>reception_of</em> / <em>received_as</em> (transmission across traditions),
