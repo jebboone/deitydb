@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.10.0 — 2026-06-14
+
+### Dataset expansion: Urartian tradition
+
+**Urartian layer** (`add_urartian_layer.sql`) — new tradition, 4 entities:
+- Sources: `SRC_ZIMANSKY_URARTU` (Zimansky, *Ecology and Empire*, Oriental Institute 1985 —
+  standard English-language monograph on Urartian structure and religion),
+  `SRC_PIOTROVSKY_URARTU` (Piotrovsky, *Ancient Civilization of Urartu*, 1969 — based on
+  excavations at Karmir Blur/Teishebaini).
+- Period: `PER_URA_IRON_AGE` (Kingdom of Urartu, −860 to −590 BCE).
+- **Khaldi** (`ENT_URA_KHALDI`, conf A): supreme deity and national war god; formula "By the
+  greatness of Khaldi" heads every royal campaign annals inscription; cult center at Musasir
+  (sacked by Sargon II 714 BCE, documented in Sargon's 8th campaign letter);
+  patron_of War; aligned_with Assyrian Ashur (parallel national war deities of rival Iron Age kingdoms).
+- **Teisheba** (`ENT_URA_TEISHEBA`, conf A): storm/thunder deity; linguistically cognate with
+  Hurrian Teshub by regular sound change (Hurrian Teš(u)b → Urartian Teišeba — the most
+  secure deity-to-deity etymology in Anatolian religion); bull iconography; city Teishebaini
+  (Karmir Blur, "city of Teisheba") named for him;
+  reception_of ENT_HTT_TESHUB (high); patron_of Storm; aligned_with Tarhunna.
+- **Shivini** (`ENT_URA_SHIVINI`, conf A): sun deity; winged sun disk iconography shared
+  with Shamash and Aten; oath-witness and divine order function; third in the triad
+  Khaldi-Teisheba-Shivini mirroring Hurrian Teshub-Shaushka-Shimegi;
+  aligned_with Utu/Shamash; aligned_with Hittite Sun Goddess of Arinna.
+- **Arubani** (`ENT_URA_ARUBANI`, conf B): "the deity of Khaldi" in dedicatory inscriptions;
+  likely Khaldi's divine consort; arts/beauty/fertility domains; probable Urartian reception
+  of the Hurrian Shaushka tradition (Shaushka = Teshub's consort → Arubani = Khaldi's consort);
+  spouse_of Khaldi; aligned_with ENT_HTT_SHAUSHKA.
+
+Counts: +4 entities (1,216 total), +9 relationships (2,038 total), +2 sources (132 total),
++1 tradition (71 total), 0 unresolved references maintained.
+
+---
+
 ## v1.9.0 — 2026-06-14
 
 ### Dataset expansion: Finnish tradition
