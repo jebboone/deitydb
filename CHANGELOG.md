@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.28.0 — 2026-06-14
+
+### Layer: later Sufism — the systematizers and metaphysicians (11th–13th c.)
+
+Builds on the formative Sufi layer (v1.26.0), oldest-first: al-Qushayri (d. 1074) →
+al-Ghazali (d. 1111) → ʿAbd al-Qadir al-Jilani (d. 1166) → Suhrawardi (d. 1191) →
+Ibn al-ʿArabi (d. 1240) → Rumi (d. 1273). (`add_sufi_classical_systematizers.sql`)
+
+**New period:** PER_ISL_MEDIEVAL (1258–1517, post-Abbasid) for Rumi.
+
+**New sources (3):** al-Ghazali, *Ihya Ulum al-Din*; Ibn al-ʿArabi, *Fusus al-Hikam*;
+Rumi, *Masnavi*.
+
+**New entities (10):** 6 figures (above) + 4 doctrines — Wahdat al-Wujud (unity of
+being), Insan al-Kamil (the Perfect Man), Ishraq (Illumination), Samaʿ (spiritual
+audition / whirling).
+
+**Relationships (17):** doctrine attributions (Ibn al-ʿArabi teaches wahdat al-wujud +
+the Perfect Man; Suhrawardi teaches ishraq; Rumi embodies mahabba + associated_ritual
+samaʿ); path codification (Qushayri/Ghazali/Jilani teach Tariqa); silsila reception
+(Ghazali reception_of Junayd; Ibn al-ʿArabi reception_of Hallaj); sainthood (Ibn
+al-ʿArabi, Jilani embodies Walaya). Comparative integration: wahdat al-wujud → Union,
+ishraq → Light, samaʿ → Dhikr, and **Insan al-Kamil aligned_with Adam Kadmon (Jewish)
+and Anthropos (Gnostic)** — uniting the Perfect Man / cosmic Anthropos motif across the
+Sufi, Kabbalistic, and Gnostic traditions.
+
+Counts: **1,281** entities (+10) / **2,239** relationships (+17) / **150** sources (+3);
+0 unsourced entities, 0 unsourced relationships, 0 orphans, 0 unresolved references.
+
+---
+
 ## v1.27.0 — 2026-06-14
 
 ### New layer: complete the Kabbalistic Tree of Life
