@@ -1,5 +1,66 @@
 # Changelog
 
+## v1.13.0 — 2026-06-14
+
+### Dataset expansion: Meroitic, Iberian/Lusitanian, and Aramean traditions
+
+**Meroitic layer** (`add_meroitic_layer.sql`) — new tradition, 5 entities:
+- Sources: `SRC_TÖRÖK_MEROE` (Török, *Kingdom of Kush*, Brill 1997 — standard handbook),
+  `SRC_ZABKAR_APEDEMAK` (Žabkar, *Apedemak*, Aris & Phillips 1975 — dedicated monograph).
+- Period: `PER_MER_NAPATAN_MEROITIC` (Napatan–Meroitic Kingdom of Kush, −750 to 350 CE).
+- **Apedemak** (`ENT_MER_APEDEMAK`, conf A): indigenous lion war god with no Egyptian counterpart;
+  temples at Musawwarat es-Sufra (c. 270 BCE) and Naga (c. 1–20 CE); three iconographic forms
+  including unique multi-headed variant; patron_of War; aligned_with Sekhmet and Horus.
+- **Arensnuphis** (`ENT_MER_ARENSNUPHIS`, conf A): "Good Companion"; explicitly syncretized with
+  Anhur/Onuris in Greek dedications at Philae ("Arensnuphis Onuphris"); syncretized_with ENT_EGY_ANHUR.
+- **Mandulis** (`ENT_MER_MANDULIS`, conf A): solar deity of Lower Nubia at Kalabsha (Talmis);
+  ~30 Greek votive inscriptions including the Isidoros Hymn; aligned_with Ra and Horus.
+- **Sebiumeker** (`ENT_MER_SEBIUMEKER`, conf B): indigenous creator deity at Musawwarat es-Sufra;
+  human-form (no Egyptian equivalent); patron_of Fertility.
+- **Amesemi** (`ENT_MER_AMESEMI`, conf B): Meroitic goddess, Apedemak's consort; hawk-crown
+  iconography; spouse_of Apedemak; aligned_with Isis.
+
+**Iberian/Lusitanian layer** (`add_iberian_layer.sql`) — new tradition, 5 entities:
+- Sources: `SRC_BLÁZQUEZ_RELIGIONES` (Blázquez, *Religiones primitivas de Hispania*, CSIC 1962 —
+  foundational epigraphic catalogue), `SRC_OLIVARES_IBERIAN` (Olivares Pedreño, *Los dioses de
+  la Hispania céltica*, Real Academia de la Historia 2002).
+- Period: `PER_IB_IRON_AGE` (Pre-Roman and Roman-period Hispanian Indigenous Religion, −600 to 400 CE).
+- **Endovelicus** (`ENT_IB_ENDOVELICUS`, conf A): healing/oracular deity; ~80 Latin inscriptions
+  from sanctuary at São Miguel da Mota, Alandroal; incubation cult; patron_of Healing;
+  aligned_with Asclepius.
+- **Ataegina** (`ENT_IB_ATAEGINA`, conf A): chthonic regeneration goddess of Lusitania and
+  Baetica; explicitly inscribed "Dea sancta Ataegina Turibrigensis Proserpina" at Turobriga;
+  patron_of Underworld; syncretized_with ENT_ROM_PROSERPINA (high — ancient inscription).
+- **Trebaruna** (`ENT_IB_TREBARUNA`, conf B): attested in Lusitanian language on Bronze Plaque of
+  Arronches (c. 1st c. CE); treb- = "settlement"; territorial/oath deity; patron_of War (low).
+- **Bandua** (`ENT_IB_BANDUA`, conf A): most widely distributed NW Iberian deity (~25+ inscriptions);
+  PIE *bondho- "bond/obligation"; war/oath; aligned_with ENT_ROM_MARS.
+- **Nabia** (`ENT_IB_NABIA`, conf A): river/mountain goddess; attested across Lusitania and
+  NW Hispania; name cognate with river Navia; patron_of Fertility.
+
+**Aramean layer** (`add_aramean_layer.sql`) — new tradition, 3 entities:
+- Sources: `SRC_LUCIAN_DEA_SYRIA` (Lucian, *De Dea Syria*, c. 150 CE; trans. Attridge & Oden,
+  SBL 1976 — primary text for Hierapolis cult), `SRC_LIPINSKI_ARAMEANS` (Lipiński, *The Aramaeans*,
+  Peeters 2000 — comprehensive reference), `SRC_KAIZER_PALMYRA` (Kaizer, *Religious Life of
+  Palmyra*, Steiner 2002 — Palmyrene inscriptional corpus).
+- Period: `PER_ARA_IRON_AGE` (Aramean and Syrian Hellenistic Religion, −1100 to 650 CE).
+- **Atargatis** (`ENT_ARA_ATARGATIS`, conf A): "the Syrian Goddess" of Hierapolis-Bambyce; name
+  = Atar (Astarte) + Ata/Anat; sacred fish-pools, lion throne, galli priests; spread to Delos,
+  Athens, Rome; reception_of ENT_CAN_ASTARTE (high); syncretized_with ENT_APHRODITE (high);
+  aligned_with ENT_MES_INANNA_ISHTAR.
+- **Baalshamin** (`ENT_ARA_BAALSHAMIN`, conf A): "Lord of Heaven"; Palmyrene temple (131 CE,
+  destroyed by ISIL 2015); consistently rendered as Zeus in Greek-Palmyrene bilinguals;
+  Dan 11:31 "abomination of desolation" = Zeus/Baalshamin; patron_of Storm;
+  aligned_with ENT_ZEUS (high); aligned_with ENT_CAN_BAAL (medium).
+- **Hadad of Damascus** (`ENT_ARA_HADAD_DAMASCUS`, conf A): Aramean storm deity of Aram-Damascus;
+  Hadad = "thunderer" (Aramaic); Ben-Hadad / Hadadezer royal names; Tiglath-Pileser III deported
+  his cult statue 732 BCE; reception_of ENT_CAN_BAAL (high); patron_of Storm.
+
+Counts: +13 entities (1,229 total), +26 relationships (2,064 total), +7 sources (139 total),
++3 traditions (74 total), 0 unresolved references maintained throughout all three layers.
+
+---
+
 ## v1.10.0 — 2026-06-14
 
 ### Dataset expansion: Urartian tradition
