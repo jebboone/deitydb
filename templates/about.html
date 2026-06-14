@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+{% block title %}About — DeityDB{% endblock %}
+{% block body_class %}deitydb-about{% endblock %}
+
+{% block content %}
+
+{# ── HERO ──────────────────────────────────────────────────────────── #}
+<div class="page-art-hero" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Flammarion.jpg/1280px-Flammarion.jpg')">
+  <div class="page-art-hero-inner">
+    <h1>About DeityDB</h1>
+    <p>A source-traceable ontology of divine beings, cosmologies, and theological relationships across the Western religious imagination.</p>
+  </div>
+</div>
+
+{# ── WHAT IS DEITYDB ────────────────────────────────────────────────── #}
+<div class="prose-section">
+  <div class="prose-section-inner prose-two-col">
+    <div class="prose-block">
+      <h2>What is DeityDB?</h2>
+      <p>
+        DeityDB is an open-source comparative-religion database covering sixty-two traditions —
+        from Greek and Egyptian antiquity through Second Temple Judaism, Gnosticism, Islam,
+        and medieval Jewish and Christian mysticism. It maps over 1,170 entities, 1,352 relationships,
+        and 114 sources into a structured, queryable graph.
+      </p>
+      <p>
+        The project's core commitment is <strong>source traceability</strong>: every entity classification
+        and every relationship traces to a specific academic edition or primary text in the source
+        registry. Nothing is asserted without citation.
+      </p>
+      <p>
+        The data lives in a PostgreSQL database with a formal schema. This public explorer serves
+        a read-only SQLite snapshot so anyone can query it without installation.
+      </p>
+    </div>
+    <div class="prose-block">
+      <h2>Why build this?</h2>
+      <p>
+        Comparative religion scholarship is rich but fragmented. Pantheons are documented
+        tradition by tradition, making cross-cultural patterns hard to see at scale. DeityDB
+        attempts to bridge that gap with a typed graph model that treats traditions as data
+        rather than isolated silos.
+      </p>
+      <p>
+        It distinguishes entity <em>kinds</em> — gods, angels, demons, aeons, archons, jinn,
+        saints, heroes, daimones, cosmological realms — rather than collapsing everything into
+        a single "deity" category. Relationships are typed (patron_of, emanates_from, reception_of,
+        syncretized_with…) for precise ontological queries.
+      </p>
+      <p>
+        The goal is a scholarly resource useful for researchers, students, and anyone curious
+        about how divine beings travel across traditions.
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── METHODOLOGY ─────────────────────────────────────────────────────── #}
+<div class="prose-section prose-section-alt">
+  <div class="prose-section-inner">
+    <h2>Design Principles</h2>
+    <div class="principles-grid">
+
+      <div class="principle-card">
+        <span class="principle-icon">⧫</span>
+        <h3>Entity kinds, not categories</h3>
+        <p>Gods, angels, demons, aeons, archons, jinn, saints, prophets, imams, heroes, daimones,
+        spirits, monsters, cosmological realms, ritual categories, and personified abstractions
+        are kept distinct. Collapsing them would lose theologically significant distinctions.</p>
+      </div>
+
+      <div class="principle-card">
+        <span class="principle-icon">📜</span>
+        <h3>Source-first classification</h3>
+        <p>Every entity and relationship traces to a record in the sources table —
+        academic editions, primary texts, authoritative reference works.
+        Unsourced assertions are flagged and queued for verification, not silently accepted.</p>
+      </div>
+
+      <div class="principle-card">
+        <span class="principle-icon">🔗</span>
+        <h3>Typed relationships</h3>
+        <p>The schema prefers precise relationship types — patron_of, dwells_in, rules,
+        opposes, emanates_from, member_of, reception_of, parallel_to, syncretized_with —
+        over generic edges. Vague "associated_with" links are treated as placeholders
+        pending a typed replacement.</p>
+      </div>
+
+      <div class="principle-card">
+        <span class="principle-icon">🌍</span>
+        <h3>Diachronic tracking</h3>
+        <p>The reception_of relationship chain traces how figures travel across traditions
+        and accumulate new attributes. Moses → Musa → Idris → Enoch is a computable
+        path through the graph, not a footnote.</p>
+      </div>
+
+      <div class="principle-card">
+        <span class="principle-icon">✓</span>
+        <h3>Zero dangling references</h3>
+        <p>The database enforces referential integrity: every relationship references
+        entity IDs that exist. The release target is 0 unresolved references,
+        validated by automated pre-flight checks before every commit.</p>
+      </div>
+
+      <div class="principle-card">
+        <span class="principle-icon">⚖️</span>
+        <h3>Open and reproducible</h3>
+        <p>The full PostgreSQL schema, seed data, and upgrade scripts are open-source
+        under the MIT license. Every transformation produces a re-runnable SQL script
+        committed to the repository. The data is yours to fork, extend, or critique.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── TRADITIONS COVERAGE ─────────────────────────────────────────────── #}
+<div class="prose-section">
+  <div class="prose-section-inner">
+    <h2>Traditions Covered</h2>
+    <p class="db-section-desc">
+      The database currently covers sixty-two distinct tradition labels. Coverage depth varies —
+      some traditions have dozens of entities with full relationship graphs; others are nascent
+      and marked for expansion. See the
+      <a href="/deitydb/tradition-overview">Tradition Overview</a> for entity counts.
+    </p>
+    <div class="tradition-tags">
+      <span class="trad-tag">Greek</span>
+      <span class="trad-tag">Egyptian</span>
+      <span class="trad-tag">Mesopotamian</span>
+      <span class="trad-tag">Canaanite / Ugaritic</span>
+      <span class="trad-tag">Israelite / Second Temple</span>
+      <span class="trad-tag">Roman</span>
+      <span class="trad-tag">Celtic</span>
+      <span class="trad-tag">Germanic / Norse</span>
+      <span class="trad-tag">Christian</span>
+      <span class="trad-tag">Gnostic</span>
+      <span class="trad-tag">Mandaean</span>
+      <span class="trad-tag">Manichaean</span>
+      <span class="trad-tag">Zoroastrian</span>
+      <span class="trad-tag">Islamic</span>
+      <span class="trad-tag">Sufi</span>
+      <span class="trad-tag">Shīʿa</span>
+      <span class="trad-tag">Jewish Mystical</span>
+      <span class="trad-tag">Kabbalistic</span>
+      <span class="trad-tag">Hermetic</span>
+      <span class="trad-tag">Late-Antique Ritual</span>
+      <span class="trad-tag">Hekhalot</span>
+      <span class="trad-tag">Etruscan</span>
+      <span class="trad-tag trad-tag-more">+ 39 more</span>
+    </div>
+
+    <div class="coverage-note">
+      <strong>Planned expansions:</strong>
+      Deeper Greek and Egyptian sourcing · Irenaeus / early-Christian heresiology ·
+      Islamic tafsīr, sīra, and Sufi literature · Kabbalistic and Lurianic Judaism ·
+      Decan / astrological spirit layer · Funerary and psychopomp audit
+    </div>
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── CITATION / TECHNICAL ────────────────────────────────────────────── #}
+<div class="prose-section">
+  <div class="prose-section-inner prose-two-col">
+    <div class="prose-block">
+      <h2>How to Cite</h2>
+      <div class="citation-box">
+        <p>
+          Boone, Jeb. <em>DeityDB: A Comparative Religion Ontology</em>, v1.2.0.
+          2026. <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a>.
+          MIT License.
+        </p>
+      </div>
+      <p style="margin-top:16px; font-size:0.85rem; color:var(--muted)">
+        For citing specific relationships or classifications, note the source IDs from the
+        <a href="/deitydb/source-bibliography">source bibliography</a> query — each record
+        points to the academic edition or primary text underpinning the claim.
+      </p>
+    </div>
+    <div class="prose-block">
+      <h2>Technical Stack</h2>
+      <ul class="tech-list">
+        <li><strong>PostgreSQL</strong> — primary database (PL/pgSQL schema)</li>
+        <li><strong>SQLite</strong> — read-only public snapshot (via db-to-sqlite)</li>
+        <li><strong>Datasette 0.65.2</strong> — web explorer and JSON API</li>
+        <li><strong>Docker + Fly.io</strong> — containerized, scale-to-zero hosting</li>
+        <li><strong>MIT License</strong> — schema, seed data, and scripts are open-source</li>
+      </ul>
+      <p style="font-size:0.85rem; color:var(--muted); margin-top:12px">
+        The full PostgreSQL setup and seed pipeline are documented in
+        <a href="https://github.com/jebboone/deitydb">CONTRIBUTING.md</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+{# ── ART STRIP ───────────────────────────────────────────────────────── #}
+<div class="art-strip" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Raphael_School_of_Athens.jpg/1280px-Raphael_School_of_Athens.jpg')">
+  <div class="art-strip-inner">
+    <p class="art-caption">
+      Raphael, <em>The School of Athens</em> (1509–1511) · Apostolic Palace, Vatican City · Public domain
+    </p>
+    <div class="art-strip-cta">
+      <a href="/deitydb" class="btn-primary">Explore the Data</a>
+      <a href="/contribute" class="btn-secondary">Contribute</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
