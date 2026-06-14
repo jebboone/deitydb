@@ -1,0 +1,24 @@
+# Manual Fly.io deploy workflow.
+#
+# Triggered manually (workflow_dispatch) rather than on push because
+# deitydb.sqlite is generated from the live PostgreSQL database and is not
+# committed to the repository. Deploys must be run from a machine that has
+# already exported the SQLite file via scripts/export_sqlite.sh.
+#
+# To deploy: Actions → Fly Deploy → Run workflow, or run locally:
+#   ~/.fly/bin/fly deploy
+
+name: Fly Deploy
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    name: Deploy app
+    runs-on: ubuntu-latest
+    concurrency: deploy-group
+    steps:
+      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --remote-only
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}

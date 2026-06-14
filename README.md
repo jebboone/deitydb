@@ -6,6 +6,18 @@ It includes gods, angels, demons, spirits, saints, heroes, aeons, archons, jinn,
 
 The goal is to make religious entities queryable across traditions instead of leaving them isolated inside separate mythological silos.
 
+## Live Explorer
+
+**https://deitydb-explorer.fly.dev/**
+
+A public read-only web interface with pre-built queries and a full SQL explorer — no installation required.
+
+- [Tradition Overview](https://deitydb-explorer.fly.dev/deitydb/tradition-overview) — all 62 traditions by entity count
+- [Cross-Traditional Parallels](https://deitydb-explorer.fly.dev/deitydb/cross-traditional-parallels) — entities linked across tradition boundaries
+- [Reception Chains](https://deitydb-explorer.fly.dev/deitydb/reception-chain) — trace how a figure was renamed across traditions
+- [Angelic Beings](https://deitydb-explorer.fly.dev/deitydb/angelic-beings), [Adversarial Beings](https://deitydb-explorer.fly.dev/deitydb/adversarial-beings), [Underworld Entities](https://deitydb-explorer.fly.dev/deitydb/underworld-entities), [Revealer Figures](https://deitydb-explorer.fly.dev/deitydb/revealer-figures)
+- [About the project](https://deitydb-explorer.fly.dev/about) · [How to contribute](https://deitydb-explorer.fly.dev/contribute)
+
 ## Current Release — v1.2.0
 
 - 1,170 entities
