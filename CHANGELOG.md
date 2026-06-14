@@ -1,5 +1,40 @@
 # Changelog
 
+## v1.22.0 — 2026-06-14
+
+### Feature: comparative-domain public views
+
+DeityDB's purpose is comparing divine functions *across* traditions and kinds, but
+none of the existing public views pivoted on that axis — they were all theme rosters
+(underworld beings, serpents, angels…). The "Cross-traditional" tradition turns out
+to be the comparative substrate: 118 abstraction/domain nodes (War, Healing,
+Sovereignty, Disease, Underworld, Wisdom…) that 658 typed edges from 45 traditions
+point at.
+
+**New views** (`add_comparative_domains_views.sql`):
+- **`v_public_comparative_domains`** (detail): every (domain, entity) pairing — which
+  deities/beings across every tradition `embodies` / `patron_of` / `rules` /
+  `causes_affliction` / `dwells_in` / `reveals` each shared domain, with confidence
+  and source. 658 rows.
+- **`v_public_domain_overview`** (index): per domain, entity count + tradition count +
+  the relationship kinds involved. Widest-reaching: Protection (30 entities / 14
+  traditions), War (29 / 14), Dead (42 / 13), Sovereignty (28 / 13), Fertility (17 / 13).
+
+**Wiring:**
+- `metadata.yaml`: both views documented; new Datasette queries `comparative-domains-index`
+  and a parameterized `browse-domain` (`WHERE domain = :domain`). Fixed stale source
+  count (143 → 145).
+- `scripts/export_sqlite.sh`: both views materialised into the SQLite/Datasette export.
+- `examples/sample_queries.sql`: index + single-domain comparison examples.
+
+These are the **first public views with committed DDL** — the existing nine
+`v_public_*` views live only in the running Postgres instance. **Follow-up:** back-fill
+`schema/views.sql` with the other nine so the public API is fully reproducible.
+
+No data changes: 1,251 entities / 2,143 relationships / 145 sources.
+
+---
+
 ## v1.21.0 — 2026-06-14
 
 ### Quality: full relationship sourcing — 0 unsourced relationships

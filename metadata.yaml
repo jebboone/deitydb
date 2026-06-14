@@ -278,11 +278,43 @@ databases:
         title: Wisdom and Knowledge Figures
         description: Wisdom deities, scribal gods, and knowledge-bearing figures.
 
+      v_public_domain_overview:
+        title: Comparative Domains (index)
+        description: Browsable index of the cross-traditional domain layer — for each domain (War, Healing, Sovereignty, ...), how many entities and how many traditions reach it.
+
+      v_public_comparative_domains:
+        title: Comparative Domains (detail)
+        description: Every (domain, entity) pairing across traditions — which deities and beings embody, patronise, rule, or afflict each shared domain. The comparative core of DeityDB.
+
       v_release_metrics:
         title: Release Metrics
         description: Current database statistics — entity, relationship, and source counts.
 
     queries:
+
+      comparative-domains-index:
+        title: "Comparative domains — index"
+        description_html: |
+          The cross-traditional domain layer: each shared function (War, Healing,
+          Sovereignty, Disease, ...) with how many entities and traditions reach it.
+          Click into a domain name in the detail query below.
+        sql: |
+          SELECT domain, entities, traditions, relationship_kinds
+          FROM v_public_domain_overview
+          ORDER BY traditions DESC, entities DESC
+
+      browse-domain:
+        title: "Compare a domain across traditions"
+        description_html: |
+          Enter a domain exactly as it appears in the comparative-domains index —
+          e.g. <em>Sovereignty</em>, <em>War</em>, <em>Healing</em>, <em>Underworld</em>,
+          <em>Wisdom</em>, <em>Fertility</em>, <em>Disease</em>. Returns the deities and
+          beings across every tradition that fill it, with the typed relationship and source.
+        sql: |
+          SELECT entity, entity_tradition, entity_kind, relationship_type, confidence, source_id
+          FROM v_public_comparative_domains
+          WHERE domain = :domain
+          ORDER BY entity_tradition, entity
 
       tradition-overview:
         title: "Tradition overview"
@@ -499,7 +531,7 @@ databases:
       source-bibliography:
         title: "Source bibliography"
         description_html: |
-          All 143 sources used in DeityDB, ranked by how many entities they attest —
+          All 145 sources used in DeityDB, ranked by how many entities they attest —
           primary texts alongside the secondary scholarship used to interpret them.
         sql: |
           SELECT

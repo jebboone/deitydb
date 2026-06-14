@@ -127,3 +127,21 @@ ORDER BY s.tradition, s.canonical_name;
 SELECT DISTINCT tradition
 FROM entities
 ORDER BY tradition;
+
+-- =====================================================
+-- Comparative domains: index of shared functions and their cross-tradition reach
+-- =====================================================
+
+SELECT domain, entities, traditions, relationship_kinds
+FROM v_public_domain_overview
+ORDER BY traditions DESC, entities DESC;
+
+-- =====================================================
+-- Compare a single domain across traditions
+-- (the core comparative query: who fills 'Sovereignty' everywhere?)
+-- =====================================================
+
+SELECT entity, entity_tradition, entity_kind, relationship_type, confidence
+FROM v_public_comparative_domains
+WHERE domain = 'Sovereignty'
+ORDER BY entity_tradition, entity;
