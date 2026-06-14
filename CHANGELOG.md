@@ -1,5 +1,43 @@
 # Changelog
 
+## v1.19.0 — 2026-06-14
+
+### Enrichment: Hermopolis Ogdoad cluster
+
+**Hermopolis Ogdoad enrichment** (`enrich_hermopolis_ogdoad.sql`):
+All 8 Ogdoad entities existed in the DB with correct structural relationships
+(member_of + male spouse_of), but 7 had one-liner short_notes and none had
+cross-tradition links or reciprocal female spouse_of relationships.
+
+**Short_notes enriched (8):** Nun (primordial watery abyss, Pyramid Texts attestation,
+benben emergence), Naunet (counter-heaven water, serpent iconography), Heh (primordial
+infinity, dual role as Ogdoad force and individual eternity deity, palm-rib iconography),
+Hauhet (female boundlessness, serpent head, structural symmetry), Kek (primordial
+darkness as creative potential, corrects internet folk etymology confusion),
+Kauket (female darkness, serpent iconography), Amunet (female hidden, Karnak cult
+persistence, Mut displacement in Theban triad), Ogdoad collective (Hermopolitan
+cosmology full account, khmun etymology, Ennead comparison, Gnostic Ogdoad reception,
+Thoth as organizing agent).
+
+**Reciprocal spouse_of relationships (4):** Naunet↔Nun, Hauhet↔Heh, Kauket↔Kek
+(all high), Amunet↔Amun (medium — complicated by Mut's New Kingdom displacement).
+
+**Cross-tradition links (2):**
+- `ENT_EGY_NUN aligned_with ENT_MES_APSU` (medium — both primordial male water-abyss
+  pre-creation; most direct Egyptian-Mesopotamian cosmogony parallel)
+- `ENT_EGY_NUN aligned_with ENT_MES_NAMMU` (medium — Sumerian primordial sea parallel;
+  gender-inverted but same creative-matrix function)
+
+**Thoth ↔ Ogdoad (1):**
+- `ENT_EGY_THOTH patron_of ENT_EGY_OGDOAD` (medium — Hermopolis patron deity;
+  in some traditions the creative Logos who gives voice to the Ogdoad's primordial forces;
+  lays the primordial cosmic egg)
+
+Counts: +0 entities (1,238 total), +7 relationships (2,113 total),
+0 unresolved references.
+
+---
+
 ## v1.18.0 — 2026-06-14
 
 ### Expansion: Enochian / Second Temple Apocalyptic cluster
