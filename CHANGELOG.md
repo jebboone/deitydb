@@ -1,5 +1,39 @@
 # Changelog
 
+## v1.23.0 — 2026-06-14
+
+### Disambiguation: sharpen the Dead / Death / Underworld abstraction cluster
+
+An audit of the 118-node "Cross-traditional" abstraction layer (CLAUDE.md rule 3)
+found it remarkably well-curated — apparent synonyms mostly encode real theological
+distinctions (Binah vs Hokhmah, the individual Muses, Phobos/Deimos = Fear/Terror, the
+Celtic Otherworld vs the chthonic Underworld). No node merges were warranted; merging
+would have flattened genuine theology.
+
+The one real conflation was the **Dead (the deceased) / Death (the force) /
+Underworld (the realm)** cluster, where six edges blurred the force/people/place
+boundary (`disambiguate_death_cluster.sql`):
+- **Deleted** `Thanatos embodies Dead` (exact duplicate of the correct
+  `Thanatos embodies Death`).
+- **Deleted** `Sheol belongs_to_realm Death` (redundant; Sheol already correctly
+  `belongs_to_realm Underworld`).
+- **Retyped** `Osiris patron_of Death` → `rules Underworld` (Osiris rules the Duat but
+  had **no** Underworld edge — gap filled; rationale updated).
+- **Retyped** `Nergal patron_of Death` → `rules Underworld` (Mesopotamian underworld
+  sovereign; same gap; rationale updated).
+- **Deleted** `Ereshkigal patron_of Death` (redundant — already `rules Dead` +
+  `dwells_in Underworld`; a realm-queen, not the death-force).
+- **Deleted** `Anubis patron_of Death` (redundant — already `guides`/`guardian_of Dead`;
+  funerary patron, not the death-force).
+
+The Death-force node now holds only genuine personifications (Thanatos, Mot, Keres,
+Moros, Azrail, Angel of Death…) plus the battlefield-death patrons Morrígan and Odin.
+
+Counts: 1,251 entities / **2,139** relationships (−4) / 145 sources; source_id preserved
+on retypes; 0 unsourced relationships, 0 orphans, 0 unresolved references.
+
+---
+
 ## v1.22.3 — 2026-06-14
 
 ### Reproducibility: total view fidelity — schema rebuilds the live DB exactly
