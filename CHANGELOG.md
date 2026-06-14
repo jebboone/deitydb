@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.22.1 — 2026-06-14
+
+### Reproducibility: commit the full public-view DDL to schema/views.sql
+
+`schema/bootstrap.sql` loads `schema/views.sql`, but that file defined only three
+early placeholder views (`relationship_distribution`, `unresolved_relationships`,
+`generic_associations`) that no longer exist in the database — while the views
+actually in use (the eleven `v_public_*` plus `v_release_metrics` and its two staging
+dependencies) lived only in the running Postgres instance. The public API could not
+be rebuilt from source.
+
+`schema/views.sql` now contains the canonical DDL for **all live views**, dumped from
+the instance (`pg_get_viewdef`) and ordered so dependencies precede dependents:
+- staging diagnostics `v_unreviewed_duplicate_entities`, `v_staging_relationship_unresolved`
+- `v_release_metrics`
+- the eleven `v_public_*` views (overview, thematic rosters, and the v1.22.0
+  comparative-domain pair)
+
+All use `CREATE OR REPLACE` (idempotent) and were verified to apply against the live DB
+with no diff. The three obsolete placeholders were removed (unreferenced; superseded by
+`v_public_relationship_overview` and the staging diagnostics). No data or view-output
+change — website surfaces unaffected.
+
+---
+
 ## v1.22.0 — 2026-06-14
 
 ### Feature: comparative-domain public views
