@@ -1,5 +1,33 @@
 # Changelog
 
+## v1.25.0 — 2026-06-14
+
+### Enrichment: Etruscan and Celtic/Gaulish (completes the thin-tradition pass)
+
+The last two thin traditions — Etruscan (1.33 edges/entity) and Celtic/Gaulish (1.40) —
+enriched with 17 source-backed relationships (`enrich_etruscan_celtic_gaulish.sql`).
+Enrichment matched to attestation: well-documented gods get more edges, sparsely-attested
+ones (e.g. Taranis, known mainly from one line of Lucan) only a single high-confidence
+link. No new entities or sources.
+
+**Etruscan (10 edges):** Tinia embodies Storm + patron_of Sovereignty; Uni patron_of
+Sovereignty + aligned_with Astarte (explicit in the bilingual Pyrgi Gold Tablets);
+Menrva patron_of Craft + Wisdom + reception_of Athena; Turan patron_of Love + embodies
+Beauty + reception_of Aphrodite. Source: De Grummond, *Etruscan Myth*; Pyrgi Tablets.
+
+**Celtic/Gaulish (7 edges):** Taranis aligned_with Jupiter (wheel-god interpretatio);
+Sucellus ⇄ Nantosuelta (paired divine couple); Lugus equated_with Mercury (Caesar's
+"most honoured god of Gaul") + patron_of Craft; Matres patron_of Motherhood; Cernunnos
+patron_of Fertility. Sources: Green, *Dictionary of Celtic Myth*; Duval, *Les dieux de
+la Gaule*.
+
+Result: edge density Etruscan 1.33 → 2.17, Celtic/Gaulish 1.40 → 2.10. With v1.24.0,
+all four originally-thin traditions (Baltic, Slavic, Etruscan, Celtic/Gaulish) now sit
+above 2.0 edges/entity. Counts: 1,251 entities / **2,179** relationships (+17) / 145
+sources; 0 unsourced, 0 unresolved.
+
+---
+
 ## v1.24.0 — 2026-06-14
 
 ### Enrichment: Baltic and Slavic traditions (thinnest layers)
