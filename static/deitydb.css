@@ -1627,11 +1627,12 @@ body.panel-open { overflow: hidden; }
 }
 
 /* ── SVG ──────────────────────────────────────────────────────────── */
-/* position:absolute+inset:0 avoids the height:100% flex-child resolution
-   ambiguity — the SVG always fills the canvas regardless of browser quirks */
+/* Use position:absolute + explicit t/r/b/l instead of height:100%
+   — height:100% on a flex-determined parent can resolve to 0 in some
+   browsers.  JS also stamps explicit width/height attrs at start time. */
 #gp-svg {
   position: absolute;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   display: block;
   cursor: grab;
 }
