@@ -1,0 +1,22 @@
+{% set _path = request.path if request else '' %}
+<div class="site-nav">
+  <a href="/" class="site-nav-brand">
+    <span class="brand-glyph">✦</span>
+    DeityDB
+  </a>
+  <nav class="site-nav-links" id="site-nav-links">
+    <a href="/deitydb"   class="nav-link{% if _path.startswith('/deitydb') %} active{% endif %}">Explore</a>
+    <a href="/about"     class="nav-link{% if _path == '/about' %} active{% endif %}">About</a>
+    <a href="/contribute" class="nav-link{% if _path == '/contribute' %} active{% endif %}">Contribute</a>
+    <a href="https://github.com/jebboone/deitydb" class="nav-link nav-link-ext"
+       target="_blank" rel="noopener noreferrer">GitHub&nbsp;↗</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+<script>
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('site-nav-links').classList.toggle('open');
+});
+</script>

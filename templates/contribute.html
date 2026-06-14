@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% block title %}Contribute — DeityDB{% endblock %}
+{% block body_class %}deitydb-contribute{% endblock %}
+
+{% block content %}
+
+{# ── HERO ──────────────────────────────────────────────────────────── #}
+<div class="page-art-hero" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/86/Paradise_Lost_1.jpg')">
+  <div class="page-art-hero-inner">
+    <h1>Contribute to DeityDB</h1>
+    <p>This is a community-first scholarly resource. Contributions of data, code, and corrections are welcome.</p>
+  </div>
+</div>
+
+{# ── WAYS TO CONTRIBUTE ──────────────────────────────────────────────── #}
+<div class="prose-section">
+  <div class="prose-section-inner">
+    <h2>Ways to Contribute</h2>
+    <div class="contrib-cards">
+
+      <div class="contrib-card">
+        <span class="contrib-icon">📋</span>
+        <h3>Add or correct entity data</h3>
+        <p>
+          Found a missing deity, angel, demon, or cosmological concept? Know a better
+          source for an existing classification? The seed data lives in CSV files and SQL
+          scripts in the repository — open a PR with your addition and a citation.
+        </p>
+        <p>
+          Every entity needs: a name, a kind (god/angel/demon/etc.), a tradition, and
+          at least one source record. See the schema for required fields.
+        </p>
+        <a href="https://github.com/jebboone/deitydb/blob/main/CONTRIBUTING.md" class="contrib-link">
+          Read CONTRIBUTING.md →
+        </a>
+      </div>
+
+      <div class="contrib-card">
+        <span class="contrib-icon">🔗</span>
+        <h3>Add relationships</h3>
+        <p>
+          Relationships are the heart of the graph. If you can cite a typed relationship —
+          patron_of, emanates_from, reception_of, syncretized_with — between two existing
+          entities, add it to the relationships seed file.
+        </p>
+        <p>
+          Prefer typed relations over generic ones. "Hephaestus is associated_with fire"
+          should be "Hephaestus patron_of smithcraft" with a source.
+        </p>
+        <a href="https://github.com/jebboone/deitydb" class="contrib-link">
+          Browse the repository →
+        </a>
+      </div>
+
+      <div class="contrib-card">
+        <span class="contrib-icon">📚</span>
+        <h3>Add sources</h3>
+        <p>
+          The source registry tracks academic editions and primary texts. If you're using
+          a work not yet in the database, add a source record first, then cite it in your
+          entity or relationship additions.
+        </p>
+        <p>
+          Academic editions, critical translations, and peer-reviewed reference works are
+          prioritised over popular summaries.
+        </p>
+        <a href="/deitydb/source-bibliography" class="contrib-link">
+          Browse existing sources →
+        </a>
+      </div>
+
+      <div class="contrib-card">
+        <span class="contrib-icon">🐛</span>
+        <h3>Report errors</h3>
+        <p>
+          Misclassifications, wrong tradition labels, duplicate entities, broken
+          relationships — all are bugs. Open a GitHub issue with the entity ID, the
+          problem, and your source.
+        </p>
+        <p>
+          Particularly valuable: corrections to any "associated_with" relationships
+          that should be typed more precisely.
+        </p>
+        <a href="https://github.com/jebboone/deitydb/issues" class="contrib-link">
+          Open an issue →
+        </a>
+      </div>
+
+      <div class="contrib-card">
+        <span class="contrib-icon">💻</span>
+        <h3>Contribute code</h3>
+        <p>
+          The PostgreSQL schema, migration scripts, validation queries, and this Datasette
+          explorer are all open-source. Schema improvements, new public views, and
+          validation test additions are especially welcome.
+        </p>
+        <a href="https://github.com/jebboone/deitydb" class="contrib-link">
+          View the repository →
+        </a>
+      </div>
+
+      <div class="contrib-card">
+        <span class="contrib-icon">🌍</span>
+        <h3>Expand tradition coverage</h3>
+        <p>
+          Several traditions are planned but nascent: deeper Islamic tafsīr and Sufi sources,
+          Kabbalistic and Lurianic Judaism, early-Christian heresiology (Irenaeus, Tertullian),
+          Scythian, Phrygian, and Etruscan entities.
+        </p>
+        <p>
+          If you have domain expertise in one of these areas and academic sources to hand,
+          reach out or open a PR.
+        </p>
+        <a href="https://github.com/jebboone/deitydb/issues" class="contrib-link">
+          See open expansion issues →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── DATA STANDARDS ──────────────────────────────────────────────────── #}
+<div class="prose-section prose-section-alt">
+  <div class="prose-section-inner">
+    <h2>Data Standards</h2>
+    <div class="prose-two-col">
+      <div class="prose-block">
+        <h3>What we accept</h3>
+        <ul class="standards-list">
+          <li>Entities with a clear name, kind, and tradition</li>
+          <li>Relationships that appear in academic or primary sources</li>
+          <li>Typed relationships (patron_of, opposes, emanates_from…)</li>
+          <li>New source records for works not yet in the registry</li>
+          <li>Corrections to existing classifications with a better source</li>
+        </ul>
+      </div>
+      <div class="prose-block">
+        <h3>What we don't accept</h3>
+        <ul class="standards-list standards-list-no">
+          <li>Fabricated primary sources or AI-generated citations</li>
+          <li>Unsourced internet summaries or Wikipedia-only citations</li>
+          <li>Generic "associated_with" relationships without typed alternatives</li>
+          <li>Entities from living religious traditions without scholarly consensus</li>
+          <li>Non-Western traditions (outside current scope — see roadmap)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="db-divider">
+
+{# ── GETTING STARTED ─────────────────────────────────────────────────── #}
+<div class="prose-section">
+  <div class="prose-section-inner">
+    <h2>Getting Started</h2>
+    <div class="steps">
+
+      <div class="step">
+        <span class="step-num">1</span>
+        <div class="step-body">
+          <h3>Fork and clone</h3>
+          <code class="inline-code">git clone https://github.com/jebboone/deitydb</code>
+          <p>The repository includes the full PostgreSQL schema, seed data CSVs, upgrade scripts, and validation tests.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num">2</span>
+        <div class="step-body">
+          <h3>Set up the database</h3>
+          <p>Run PostgreSQL in Docker (see the README) and load the schema and seed data. The setup is fully reproducible from a fresh container.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="step-body">
+          <h3>Run validation</h3>
+          <code class="inline-code">psql -d deitydb -f tests/validate_relationships.sql</code>
+          <p>All tests should pass (0 unresolved references, 0 duplicate IDs) before opening a PR.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num">4</span>
+        <div class="step-body">
+          <h3>Open a pull request</h3>
+          <p>Include the entity/relationship IDs you're adding or modifying, and cite the source. Update CHANGELOG.md for schema-affecting changes.</p>
+        </div>
+      </div>
+
+    </div>
+    <p style="margin-top:28px">
+      <a href="https://github.com/jebboone/deitydb/blob/main/CONTRIBUTING.md" class="btn-primary">
+        Read the full contributor guide
+      </a>
+    </p>
+  </div>
+</div>
+
+{% endblock %}
