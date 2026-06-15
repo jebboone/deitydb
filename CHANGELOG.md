@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.43.0 — 2026-06-14
+
+### Content normalization I: Zoroastrian build-out
+
+A shift from sourcing rigor to **balancing the dataset**, which was heavily weighted
+toward the Gnostic bloc (186) and thin on the late-antique traditions that fed it.
+Zoroastrianism — the Iranian dualist substrate upstream of the Second Temple Jewish,
+Gnostic, and Manichaean material — was the thinnest of the majors at 16 entities.
+This pass brings it to a solid canonical core of **53** (`build_zoroastrian_core.sql`),
+every figure attested to its Avestan or Pahlavi locus:
+
+- **Yazatas & divine beings (+17):** Spenta Mainyu (the Bounteous Spirit, Yasna 30),
+  Verethragna, Tishtrya, Rashnu, Vayu, Haoma, Apam Napat, Ashi, Daena, Chista, Hvar
+  Khshaeta (Sun), Mah (Moon), Asman, Khvarenah (the divine Glory), Geush Urvan,
+  Nairyosangha, Drvaspa — each to its dedicated Yasht.
+- **Primordial / eschatological / heroic (+7):** Zurvan (Time, the Zurvanite father
+  of the twin spirits), Gayomard (the first man), the Saoshyant (the future savior),
+  Yima, Thraetaona, Keresaspa, and the prophet Zarathustra.
+- **The daeva counter-pantheon (+13):** Aka Manah, Indra, Saurva and Nanghaithya
+  (the arch-daevas mirroring the Amesha Spentas), plus Az, Jeh, Astovidatu, Vizaresh,
+  Nasu, Apaosha, Bushyasta, the dragon Azhi Dahaka, and the Druj (the Lie itself).
+
+The classic Avestan antagonisms are wired as typed edges (Spenta vs Angra Mainyu,
+Aka Manah vs Vohu Manah, Saurva vs Khshathra, Tishtrya vs Apaosha, Sraosha vs Aeshma,
+Thraetaona slays Azhi Dahaka, the Saoshyant defeats Ahriman). +3 sources (211 total:
+Denkard, Menog-i Khrad, Zaehner's *Zurvan*). 0 unsourced; 0 unresolved relationships.
+
+---
+
 ## v1.42.0 — 2026-06-14
 
 ### Sourcing rigor VII: the Greek long tail
