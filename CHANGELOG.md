@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.54.0 — 2026-06-15
+
+### Content deepening: Eastern Orthodox Christianity
+
+Balances the Western-leaning Christian set with the Byzantine and Slavic Orthodox
+dimension (`build_eastern_orthodox.sql`), under a distinct `Christian/Orthodox` tag.
+Christian-family **65 → 86** (a new Orthodox bloc of 21):
+
+- **Great-martyrs & unmercenary healers:** Demetrios of Thessaloniki, Theodore the
+  Soldier, Panteleimon (chief of the Anargyroi), Paraskevi, Menas, and Mary of Egypt.
+- **The Three Holy Hierarchs** (Basil the Great, Gregory the Theologian, John Chrysostom,
+  wired to their joint feast) plus Athanasius, and the hesychast mystics **Gregory Palamas**
+  and **Symeon the New Theologian**.
+- **Monastic wonderworkers:** Simeon Stylites, John Climacus, the Slavic Cyril and
+  Methodius, Sergius of Radonezh, Seraphim of Sarov, and Vladimir (baptiser of the Rus').
+- **Distinctively Orthodox:** the **Protection of the Theotokos (Pokrov)** as a Marian
+  veneration-form, and the **Uncreated Light** — the Taboric/Palamite divine energies,
+  wired as proceeding from the Father and shining from Christ at the Transfiguration.
+
+Cross-linked to the existing Western set (Athanasius → Antony, Panteleimon → Cosmas &
+Damian, Demetrios → George). +3 primary sources (243 total: the Synaxarion, Palamas'
+Triads, the Philokalia) and a new Byzantine/Slavic Orthodox period. 0 unsourced;
+0 unresolved; duplicate discipline clean.
+
+---
+
 ## v1.53.0 — 2026-06-15
 
 ### Content deepening: Islam — the Shi'a Imamate and the angels
