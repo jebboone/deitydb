@@ -1,5 +1,33 @@
 # Changelog
 
+## v1.34.0 — 2026-06-14
+
+### Gnostic expansion IV: the Jeuian ascent-archons (Bruce Codex)
+
+The soul's ascent through the first three aeons in the (Second) Book of Jeu, with the
+ritual mechanism of passage. (`add_jeuian_ascent_archons.sql`)
+
+**New entities (10):**
+- *Gate-archons:* Proteth, Persomphon, Chous (first aeon); Chouncheoch (second);
+  Choucho (third).
+- *Ascent realms:* the First, Second, and Third Aeons of the Ascent.
+- *Ritual mechanism:* the Baptism of Fire and the Seals of the Light.
+
+**Relationships (21):** each archon rules its aeon; **the third aeon is guarded by
+Yaldabaoth together with Choucho** — a direct bridge between the Jeuian ascent and the
+Sethian demiurge; the archons are members of the archontic order; and the ritual
+apparatus (Jesus administers the Baptism of Fire, which purifies, mediates salvation, is
+kept by the Virgin of the Light, and opens onto the Treasury of the Light; the Seals
+mediate the soul's passage past the archons).
+
+Sourced to the Books of Jeu (Bruce Codex) and the Pistis Sophia. Builds on the Pistis
+Sophia / Jeuian layer (v1.30.0).
+
+Counts: **1,363** entities (+10) / **2,401** relationships (+21) / 160 sources;
+0 unsourced, 0 orphans, 0 unresolved, 0 unreviewed duplicates.
+
+---
+
 ## v1.33.0 — 2026-06-14
 
 ### Valentinian deepening II: the Eastern/Western split + soteriology
