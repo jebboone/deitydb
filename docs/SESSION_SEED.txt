@@ -1,6 +1,6 @@
 ================================================================================
-DEITYDB — SESSION SEED  (current as of v1.61.0, 2026-06-15)
-*** v1.61.0 fully PUBLISHED (Postgres + git + local Datasette + fly.io live).
+DEITYDB — SESSION SEED  (current as of v1.62.0, 2026-06-15)
+*** v1.62.0 fully PUBLISHED (Postgres + git + local Datasette + fly.io live).
 ================================================================================
 A source-traceable comparative-religion database of spiritual entities (gods,
 angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
@@ -8,10 +8,10 @@ monsters, cosmological realms, ritual categories, personified abstractions)
 across Western/Near-Eastern traditions. It distinguishes entity KINDS rather than
 collapsing everything into "gods."
 
-CURRENT SCALE: 2,107 entities · 3,400 relationships · 272 sources · 81 tradition
-labels · ~96% of entities backed by a primary text or scholarly edition ·
+CURRENT SCALE: 2,109 entities · 3,412 relationships (577 cross-tradition
+comparative links) · 273 sources · 81 tradition labels · ~96% primary/scholarly ·
 0 unsourced · 0 unresolved relationship refs · 0 duplicate source-pairs ·
-0 unreviewed duplicates. Version 1.61.0.
+0 unreviewed duplicates. Version 1.62.0.
 
 --------------------------------------------------------------------------------
 INFRASTRUCTURE / TOPOLOGY
@@ -134,7 +134,24 @@ WHAT'S BEEN DONE (the arc)
 - CHRONOLOGY repaired (v1.51.0): re-dated Zoroastrianism to Achaemenid (was wrongly
   Sasanian/post-Christ); backfilled period links for ~150 entities. Only the 118
   Cross-traditional abstractions remain (correctly) undated.
-- Project-health audits done; live site auto-versioning; docs current at v1.61.0.
+- Project-health audits done; live site auto-versioning; docs current at v1.62.0.
+- CROSS-TRADITION LINKS FEATURED (v1.62.0): audited the graph -> 577 genuine
+  religion-to-religion comparative links (reception_of/received_as/syncretized_with/
+  identified_with/equated_with/aligned_with/cult_form_of between two REAL traditions;
+  EXCLUDES the Cross-traditional abstraction layer = domain views). Two NEW public
+  views in schema/views.sql: v_public_cross_tradition_links (every such link) +
+  v_public_cross_tradition_matrix (tradition-pair web). MUST add new v_public_* views
+  to BOTH schema/views.sql AND the VIEWS=() list in scripts/export_sqlite.sh (they're
+  materialised into sqlite as tables -- Datasette can't run the PG views). Surfaced:
+  gold "Comparative Core" block atop homepage (templates/index.html + .featured-section
+  in static/deitydb.css) + 3 canned queries (cross-tradition-links / -web / -for) in
+  metadata.yaml. GAP FILLED: Germanic/Norse was nearly an island (4->14 cross-links)
+  via link_germanic_interpretatio.sql -- Tacitus Germania interpretatio + weekday
+  calques as equated_with (Odin=Mercury, Tyr=Mars, Thor=Hercules+Jupiter, Frigg=Venus,
+  Nerthus=Tellus, Alcis=Dioscuri) vs modern cognates as aligned_with (Odin~Hermes,
+  Tyr~Zeus etymological-caveated, Alcis~Divine Twins); +2 new entities Nerthus & the
+  Alcis (SRC_TACITUS_GERMANIA); +Don~Danu Welsh/Irish cognate. RULE: interpretatio
+  (ancient, citable) = equated_with; cognate/functional (modern scholarship) = aligned_with.
 - MEDIEVAL WESTERN CHRISTIANITY (v1.61.0, build_medieval_western_christianity.sql):
   Christian (Western) 54->97 (+43). The major-cultus medieval Latin saints the
   roster had skipped: mendicant/monastic founders (Dominic, Clare, Anthony of
