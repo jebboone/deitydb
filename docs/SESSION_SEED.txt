@@ -1,5 +1,5 @@
 ================================================================================
-DEITYDB — SESSION SEED  (current as of v1.57.0, 2026-06-15)
+DEITYDB — SESSION SEED  (current as of v1.58.0, 2026-06-15)
 ================================================================================
 A source-traceable comparative-religion database of spiritual entities (gods,
 angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
@@ -7,10 +7,10 @@ monsters, cosmological realms, ritual categories, personified abstractions)
 across Western/Near-Eastern traditions. It distinguishes entity KINDS rather than
 collapsing everything into "gods."
 
-CURRENT SCALE: 1,702 entities · 2,820 relationships · 249 sources · 80 tradition
+CURRENT SCALE: 1,799 entities · 2,945 relationships · 254 sources · 80 tradition
 labels · ~95% of entities backed by a primary text or scholarly edition ·
 0 unsourced · 0 unresolved relationship refs · 0 duplicate source-pairs ·
-0 unreviewed duplicates. Version 1.57.0.
+0 unreviewed duplicates. Version 1.58.0.
 
 --------------------------------------------------------------------------------
 INFRASTRUCTURE / TOPOLOGY
@@ -133,7 +133,21 @@ WHAT'S BEEN DONE (the arc)
 - CHRONOLOGY repaired (v1.51.0): re-dated Zoroastrianism to Achaemenid (was wrongly
   Sasanian/post-Christ); backfilled period links for ~150 entities. Only the 118
   Cross-traditional abstractions remain (correctly) undated.
-- Project-health audits done; live site auto-versioning; docs current at v1.57.0.
+- Project-health audits done; live site auto-versioning; docs current at v1.58.0.
+- EGYPTIAN DEEPENING (v1.58.0, deepen_egyptian.sql): Egyptian 91 -> 188 (+97).
+  Triggered by a tradition-distribution audit (Greek 462 vs Egyptian 91 ~5x;
+  Greek's size is legitimate but the gap was a cataloguing artifact). Added,
+  all primary-sourced + period-linked, via 4 parallel research passes: the 42
+  Assessors of Maat (BD 125) + collective; the Duat cast (Amduat/Book of
+  Gates/Litany of Re, +22 -- Af-Ra, Mau-aa, Heka, barque crew, gate-serpents,
+  the realms, Twelve Hours, 75 Forms of Re); the astronomical decans (Sopdet,
+  Sah, the system; the Testament-of-Solomon ENT_LAT_DECAN_* wired reception_of
+  it); 4 deified humans; 25 nome/local gods + omissions (incl. bulls
+  Apis/Mnevis/Buchis). NOTE: the 36 individual decan names were deliberately
+  NOT reconstructed (readings contested -> would be fabrication). Mandulis not
+  added (already ENT_MER_MANDULIS, Meroitic). New sources: SRC_FAULKNER_BOOK_OF_DEAD,
+  SRC_BUDGE_PAPYRUS_ANI, SRC_PIANKOFF_LITANY_RE, SRC_NEUGEBAUER_PARKER_EAT,
+  SRC_HABACHI_HEQAIB. Coverage 94.8% -> 95.1%.
 - CHRISTIAN-THEURGIC BRIDGE (v1.57.0, build_christian_theurgy.sql): the Pseudo-
   Dionysian corpus as a new tradition tag 'Christian/Theurgic' (+20, ENT_DIO_).
   The nine existing ENT_CHR_ angelic orders wired into Dionysius's three celestial
@@ -153,7 +167,13 @@ OPEN / OPTIONAL NEXT DIRECTIONS (all minor — no structural gaps remain)
   Elamite 4, Phrygian 3) could each be deepened.
 - Quranic prophets (mostly human prophets — methodology-limited).
 - Classical/late-antique pagan is SATURATED (Greek 462 reference-grade, Late
-  Antique Ritual 64) — not worth more.
+  Antique Ritual 64) — not worth more. NOTE: Greek being the largest tradition
+  is CORRECT and intentional — the Greek literary record simply names far more
+  discrete divine beings than any other tradition. Do not "rebalance" it down.
+  After the v1.58.0 Egyptian deepening, Egyptian (188) is the clear #2. If a
+  future distribution audit flags an outlier, the question is whether that
+  tradition's *attested* roster has been under-mined (as Egypt was), not whether
+  Greek is "too big."
 - Possible new feature work: data visualization, an API, more public views.
 - (DONE v1.57.0: the Pseudo-Dionysius / Christian-theurgy layer — was the
   most-recommended remaining content gap; it bridged the Hermetic/Theurgic and
