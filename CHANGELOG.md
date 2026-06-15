@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.31.0 — 2026-06-14
+
+### Gnostic expansion III: breadth beyond Sethian — the other currents
+
+Adds the divine/spiritual entities of the Simonian, Basilidean, Marcionite, Saturnilian,
+and Carpocratian currents, which survive mainly through the heresiologists.
+(`add_gnostic_schools_entities.sql`)
+
+**Methodology note:** DeityDB holds spiritual entities, not authors — so the school
+*founders* (Basilides, Marcion, Valentinus, Carpocrates, Ptolemy, Heracleon, Marcus,
+Cerinthus, Bardaisan) are excluded as historical theologians. Two humans are included
+because their sects raised them to functional godhood: **Simon Magus** (worshipped as the
+supreme Great Power) and **Epiphanes** (deified with a temple-cult per Clement).
+
+**New sources (3):** Hippolytus, *Refutatio*; Clement of Alexandria, *Stromata* /
+*Excerpta ex Theodoto*; Tertullian, *Adversus Marcionem* (joining the existing Irenaeus).
+
+**New entities (9):** Basilidean — Unbegotten Father, **Abrasax** (lord of the 365
+heavens), the Great Archon; Simonian — the Great Power, **Helena/Ennoia** (the earliest
+fallen-Wisdom figure), Simon Magus; Marcionite — the **Stranger God**; Saturnilian — the
+Seven World-Creating Angels; Carpocratian — Epiphanes.
+
+**Relationships (15):** Basilidean emanation (Great Archon from the Unbegotten; Abrasax
+rules the archons and aligns with Heimarmene/the 365); Simonian myth (Simon identified
+with the Great Power, paired with Helena; **Helena aligned_with Sophia** as the prototype
+of the fallen-Wisdom myth); Marcion's Stranger God opposes the Demiurge; the Seven Angels
+align with the Hebdomad; supreme principles aligned with the Monad.
+
+Counts: **1,323** entities (+9) / **2,313** relationships (+15) / **159** sources (+3);
+0 unsourced, 0 orphans, 0 unresolved, 0 unreviewed duplicates.
+
+---
+
 ## v1.30.0 — 2026-06-14
 
 ### Gnostic expansion II: the Pistis Sophia / Jeuian light-world
