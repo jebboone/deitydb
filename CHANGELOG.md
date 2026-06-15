@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.46.0 — 2026-06-14
+
+### Content normalization IV: Manichaean build-out
+
+Fills in the canonical cast of the Manichaean dualist cosmology, previously only a
+15-entity skeleton (`build_manichaean_core.sql`). Manichaean **15 → 32**, each entity
+to a primary Manichaean source (the Kephalaia, the Coptic Psalm-Book, the Cologne
+Mani Codex):
+
+- **The evocations of the three creations:** the Friend of the Lights, the Third
+  Messenger and the Maiden of Light (whose epiphany frees the swallowed light), and
+  the **five sons of the Living Spirit** — the Keeper of Splendour (Splenditenens),
+  Adamas of Light, the King of Glory, the King of Honour, and the Porter (Omophoros).
+- **The awakening and the suffering light:** the Call and Answer (Xroshtag and
+  Padvaxtag) that rouse the Primal Man, and Jesus patibilis — the world-soul crucified
+  throughout matter.
+- **The dark anthropogony:** the demoness Az (wired as a reception of the Zoroastrian
+  Az from v1.43.0), and the archons Ashqalun and Nebroel who fashion the first human
+  pair; plus the Five Worlds of Darkness.
+- **The apostle:** Mani, the incarnate Paraclete, and his heavenly Twin (the Syzygos).
+- The eschatological Last Statue.
+
++1 source (220 total: the Cologne Mani Codex). The cross-tradition Az homonym is
+registered as intentionally distinct. 0 unsourced; 0 unresolved; duplicates clean.
+
+---
+
 ## v1.45.0 — 2026-06-14
 
 ### Content normalization III: Jewish rabbinic + Hekhalot/Merkavah
