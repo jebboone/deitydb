@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.51.0 — 2026-06-15
+
+### Chronology repair: re-date Zoroastrianism and backfill the period layer
+
+A pre-Christ coverage audit surfaced two problems in the chronology layer, both fixed
+here (`backfill_entity_periods.sql`):
+
+- **Zoroastrianism was mis-dated to the wrong side of the Christ event.** 15 of the 16
+  original Zoroastrian entities were tagged only to the Sasanian period (224 CE), wrongly
+  placing Ahura Mazda, the Amesha Spentas and Mithra — Avestan figures whose Gathas predate
+  the Achaemenids — in the post-Christ era. Every Zoroastrian entity now carries a
+  `PER_ZOR_ACHAEMENID` origin link (Sasanian kept as the continuation). Zoroastrian
+  pre-Christ entities: **1 → 53**.
+- **The content-normalization program (v1.43–1.50) had added ~150 entities without any
+  `entity_periods` link.** Each tradition's additions are now wired to its period: the
+  Jewish Second Temple build → Second Temple; the Roman additions → Republic/Imperial by
+  date; the Greek hybrids → Hellenistic; and the Manichaean, Mandaean, Christian/patristic,
+  Hermetic/theurgic and rabbinic-Hekhalot additions to their respective late-antique periods.
+
+Whole-dataset chronology: **undated entities 293 → 118** — and the remaining 118 are exactly
+the Cross-traditional abstraction layer (Truth, Death, Fate…), which is intentionally
+timeless. Pre-Christ-origin entities now total **926**.
+
+---
+
 ## v1.50.1 — 2026-06-15
 
 ### Vocabulary hygiene: normalize evidence_type
