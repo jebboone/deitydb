@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.50.0 — 2026-06-14
+
+### Content normalization VIII: Hermetic/Theurgic build-out
+
+Fills in the Hermetic cosmic drama and the Chaldean–Neoplatonic theurgic hierarchy
+(`build_hermetic_theurgic.sql`), beyond the bare metaphysical core the DB had. Hermetic/
+Theurgic **5 → 22**, grounded in the user's theurgy library (Christian Bull's *Tradition
+of Hermes Trismegistus*; Proclus's *On the Hieratic Art*) plus the core primaries:
+
+- **The Hermetic drama (Corpus Hermeticum):** Poimandres (the revealing Mind), the
+  Demiurge and the seven Governors, Heimarmene (Fate), and the Ogdoad and Ennead — the
+  eighth and ninth spheres of ascent (Discourse on the Eighth and Ninth, NHC VI.6).
+- **The Chaldean orders (Chaldean Oracles):** the Paternal Intellect (the Father), the
+  cosmic Hecate (the World-Soul, wired as a reception of the Greek goddess), and the
+  mediating Iynges, Synocheis and Teletarchs.
+- **The Neoplatonic hierarchy (Plotinus, Proclus, Iamblichus):** the henads, the World
+  Soul, the personal daimon, the material daimones, and the encosmic and hypercosmic gods.
+
+The Gnostic Demiurge is now wired as a polemical inversion (`reception_of`) of the good
+Hermetic/Platonic craftsman. +6 sources (234 total: the Chaldean Oracles, Plotinus'
+Enneads, Proclus' Elements and Hieratic Art, the Discourse on the Eighth and Ninth, Bull).
+The cross-tradition homonyms (Demiurge, Heimarmene, Hecate, Ogdoad) are registered as
+intentionally distinct. Whole-dataset rigor **94.3%**. 0 unsourced; 0 unresolved.
+
+---
+
 ## v1.49.0 — 2026-06-14
 
 ### Content normalization VII: Christian/patristic build-out
