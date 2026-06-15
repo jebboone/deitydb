@@ -1,5 +1,46 @@
 # Changelog
 
+## v1.58.0 — 2026-06-15
+
+### Content deepening: the Egyptian roster (91 → 188)
+
+A distribution audit showed Greek (462) dwarfing Egyptian (91) by ~5×. Greek's
+size is legitimate (the Greek literary record individually names far more
+figures than any other tradition), but the *gap* was a cataloguing artifact:
+Egypt's textual corpus names a comparably vast cast that had not been mined to
+the same depth. This build closes that gap (`deepen_egyptian.sql`), +97
+entities, all verified to a primary text / scholarly edition by four parallel
+research passes (uncertain readings deliberately excluded — nothing fabricated).
+
+- **The 42 Assessors of Maat** (Book of the Dead, Spell 125) — the full
+  tribunal of the Negative Confession, each judge with its city and the sin it
+  hears denied, wired to a new collective (`presided_over_by` Osiris,
+  `embodies` Maat, in the Duat). Was entirely absent.
+- **The Duat cast** (Amduat / Book of Gates / Litany of Re, +22) — Af-Ra (the
+  night sun), the great cat Mau-aa who slays Apophis, Heka, the named barque
+  crew, the world-encircling serpent and the gate-guardian serpents, the four
+  races of mankind, the damned, and the regions (Field of Reeds, Field of
+  Offerings, Rosetau, Imhet, Wernes, the Lake of Fire), the Twelve Hours, and
+  the 75 Forms of Re.
+- **The astronomical decans** (+3) — Sopdet (Sirius), Sah (Orion), and the
+  decanal system as a collective; the existing Testament-of-Solomon
+  decan-demons (`ENT_LAT_DECAN_*`) are wired as its Hellenistic `reception_of`.
+  (The 36 individual decan names are NOT reconstructed — readings are contested
+  and inventing them would be fabrication.)
+- **Deified humans** (+4) — Imhotep, Amenhotep son of Hapu, Heqaib, Isi of Edfu.
+- **Nome / local gods + pan-Egyptian omissions** (+25) — Andjety, Wenut, Nemty,
+  Hemen, Khentekhtai, Ipy/Opet, Dedwen, Igai, Ha, Weneg, Kherty, Wadj-wer,
+  Khentamentiu; the sacred bulls Apis/Mnevis/Buchis; Hesat, Mehet-Weret,
+  Iusaaset, Neper, Werethekau, Tayet, Renpet, Nehmetawy, Tutu/Tithoes — with
+  syncretism edges (Andjety/Khentamentiu→Osiris, Apis→Serapis, etc.).
+
+Mandulis was *not* added (already present as Meroitic). Sources: Faulkner's
+Book of the Dead, Budge's Papyrus of Ani, Piankoff's Litany of Re,
+Neugebauer–Parker's Egyptian Astronomical Texts, Habachi's Sanctuary of
+Heqaib, plus the existing Hornung/Wilkinson/Pinch/Faulkner-Pyramid set.
+Integrity preserved (0 unsourced / 0 unresolved / 0 dup-pairs / 0 unreviewed
+duplicates). Primary/scholarly coverage 94.8% → **95.1%**.
+
 ## v1.57.0 — 2026-06-15
 
 ### Content deepening: the Pseudo-Dionysian / Christian-theurgic layer
