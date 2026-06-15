@@ -12,18 +12,18 @@ The goal is to make religious entities queryable across traditions instead of le
 
 A public read-only web interface with pre-built queries and a full SQL explorer — no installation required.
 
-- [Tradition Overview](https://deitydb-explorer.fly.dev/deitydb/tradition-overview) — all 78 traditions by entity count
+- [Tradition Overview](https://deitydb-explorer.fly.dev/deitydb/tradition-overview) — all 80 traditions by entity count
 - [Cross-Traditional Parallels](https://deitydb-explorer.fly.dev/deitydb/cross-traditional-parallels) — entities linked across tradition boundaries
 - [Reception Chains](https://deitydb-explorer.fly.dev/deitydb/reception-chain) — trace how a figure was renamed across traditions
 - [Angelic Beings](https://deitydb-explorer.fly.dev/deitydb/angelic-beings), [Adversarial Beings](https://deitydb-explorer.fly.dev/deitydb/adversarial-beings), [Underworld Entities](https://deitydb-explorer.fly.dev/deitydb/underworld-entities), [Revealer Figures](https://deitydb-explorer.fly.dev/deitydb/revealer-figures)
 - [About the project](https://deitydb-explorer.fly.dev/about) · [How to contribute](https://deitydb-explorer.fly.dev/contribute)
 
-## Current Release — v1.56.0
+## Current Release — v1.57.0
 
-- 1,682 entities
-- 2,760 relationships
-- 244 sources
-- 78 tradition labels
+- 1,702 entities
+- 2,820 relationships
+- 249 sources
+- 80 tradition labels
 - 0 unresolved relationship references; 0 unsourced entities or relationships
 - ~94% of entities backed by a primary text or scholarly edition
 - duplicate-name review complete
