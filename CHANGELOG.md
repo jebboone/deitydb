@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.52.0 — 2026-06-15
+
+### Content deepening: the Mesopotamian pantheon
+
+Doubles the Mesopotamian pantheon — the biggest pre-Christ content gap by importance —
+from 36 to **76** (`deepen_mesopotamian.sql`), each entity to a primary source (ETCSL,
+Enuma Elish, Atrahasis, Gilgamesh, Foster's *Before the Muses*) or Black & Green:
+
+- **City-patron & functional gods:** Gula (the great physician), Nanshe, Ningirsu, Bau,
+  Ninazu, Ningishzida, Shara, Ishtaran, Zababa, Damu, Ninkasi, Nanaya, Nuska.
+- **The Enuma Elish theogony:** Lahmu, Anshar, Kishar, Mummu — wired as the full descent
+  Apsu → Lahmu → Anshar → Anu — plus the Marduk circle (Damkina, Sarpanit) and Belet-ili
+  (Mami), the creatrix of Atrahasis.
+- **The underworld court:** Namtar, Neti, Belet-seri, and Gugalanna (the Bull of Heaven).
+- **The monster & demon register:** Asag (slain by Ninurta), Humbaba, the Mushhushshu
+  dragon, the Sebitti (the Seven / Pleiades), Bashmu, Girtablullu, Kusarikku, Ugallu,
+  Lilitu (a forerunner of Lilith), and the edimmu ghost.
+- **The Erra Epic:** Erra, his herald Ishum, and the Sebitti; plus the sages Adapa and
+  Etana and the deified hero-king Lugalbanda (father of Gilgamesh).
+
++3 primary sources (237 total). Every figure period-linked (Early Dynastic/Ur III, Old
+Babylonian, or Neo-Assyrian). 0 unsourced; 0 unresolved; duplicate discipline clean.
+
+---
+
 ## v1.51.0 — 2026-06-15
 
 ### Chronology repair: re-date Zoroastrianism and backfill the period layer
