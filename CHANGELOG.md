@@ -1,5 +1,47 @@
 # Changelog
 
+## v1.57.0 — 2026-06-15
+
+### Content deepening: the Pseudo-Dionysian / Christian-theurgic layer
+
+Adds the Corpus Dionysiacum (c. 500 CE) as the bridge between the
+Hermetic/Theurgic (Iamblichus/Proclus) bloc and the Christian bloc
+(`build_christian_theurgy.sql`). New tradition tag **`Christian/Theurgic`**
+(+20 entities); id prefix `ENT_DIO_`.
+
+**The Celestial Hierarchy.** The nine angelic orders are organised into
+Dionysius's three triads — First (Seraphim, Cherubim, Thrones), Second
+(Dominions, Virtues, Powers), Third (Principalities, Archangels, Angels). The
+existing `ENT_CHR_*` orders are **wired into** the triads, not duplicated;
+divine light is `transmits`-chained down the triads, and the whole hierarchy
+`emanates_from` the Thearchy.
+
+**The Ecclesiastical Hierarchy.** The earthly mirror: the clergy triad
+(Hierarchs/Bishops → Priests → Deacons), the initiate triad (Monks → Holy
+People → the Purified catechumens/penitents/energumens), and the three
+sacraments-as-*theourgiai* (Illumination/Baptism, the Synaxis/Eucharist, the
+consecration of the Myron/Chrism). The church `symbolizes` the celestial
+hierarchy, which `transmits` light down to it.
+
+**The theology.** The superessential **Thearchy** (Godhead); the **Divine
+Names** (cataphatic — wired `embodies` to the existing Beauty/Light/Life/
+Love/Wisdom/Truth abstractions, with **the Good** as chief name); the
+**Divine Darkness** (apophatic, the Mystical Theology); **deification
+(theosis)**; and **procession & return** (proodos/epistrophe).
+
+**The cross-tradition bridge** (realising the user's Theurgy Study Group
+thesis): the Celestial Hierarchy is `reception_of` the Iamblichan
+**Hypercosmic/Encosmic gods**; the Thearchy and the Divine Darkness are
+`reception_of` the Neoplatonic **One**; procession/return is received from
+**Proclus**; and **theosis** is aligned with theurgic *henosis* and with the
+**Orthodox Uncreated Light** (its Palamite systematisation). Sources: the
+Parker translation of the corpus (1897, public domain) + Rorem's commentary
++ Shaw, *Theurgy and the Soul*.
+
+Whole-DB integrity preserved (0 unsourced / 0 unresolved / 0 duplicate
+source-pairs / 0 unreviewed duplicates). Primary/scholarly coverage 94.3% →
+**94.8%**.
+
 ## v1.56.0 — 2026-06-15
 
 ### Content deepening: the Norse and Anatolian pantheons
