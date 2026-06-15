@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.48.0 — 2026-06-14
+
+### Content normalization VI: Roman build-out
+
+Extends beyond the Dii Consentes core into the distinctively Roman strata
+(`build_roman_core.sql`). Roman **23 → 43**, each entity to a primary Latin source
+(Ovid, Livy, Cicero, Varro, Catullus, Suetonius, the inscriptions):
+
+- **The deified state-virtues:** Fortuna, Victoria, Fides, Concordia, Salus, Spes, Pax,
+  Libertas, Pietas, Virtus, and Dea Roma — the cults of the personified Roman order.
+- **The rustic gods:** Pomona and Vertumnus (the Ovidian pair), and Tellus Mater. (The
+  archaic Faunus, Silvanus, Flora and Ops already live under Italic/Sabine and were
+  enriched there with this pass's sourcing rather than duplicated.)
+- **War:** Bellona.
+- **The late-antique and imperial cults:** Sol Invictus (Aurelian's unconquered Sun,
+  identified with Mithras), the Magna Mater (received from Phrygian Cybele) and her
+  consort Attis, and the deified emperors **Divus Julius** and **Divus Augustus** —
+  humans raised to godhood, squarely within the methodology.
+- Cupid, son of Venus.
+
++3 sources (224 total: the Latin inscriptions/CIL, Suetonius, Catullus). The cross-
+tradition homonyms (Attis Phrygian/Roman) are registered as intentionally distinct,
+with reception edges (Roman Attis ← Phrygian Attis; Magna Mater ← Cybele). 0 unsourced;
+0 unresolved; duplicate discipline clean.
+
+---
+
 ## v1.47.0 — 2026-06-14
 
 ### Content normalization V: Mandaean build-out
