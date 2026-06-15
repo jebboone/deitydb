@@ -18,11 +18,11 @@ A public read-only web interface with pre-built queries and a full SQL explorer 
 - [Angelic Beings](https://deitydb-explorer.fly.dev/deitydb/angelic-beings), [Adversarial Beings](https://deitydb-explorer.fly.dev/deitydb/adversarial-beings), [Underworld Entities](https://deitydb-explorer.fly.dev/deitydb/underworld-entities), [Revealer Figures](https://deitydb-explorer.fly.dev/deitydb/revealer-figures)
 - [About the project](https://deitydb-explorer.fly.dev/about) · [How to contribute](https://deitydb-explorer.fly.dev/contribute)
 
-## Current Release — v1.50.0
+## Current Release — v1.56.0
 
-- 1,535 entities
-- 2,601 relationships
-- 234 sources
+- 1,682 entities
+- 2,760 relationships
+- 244 sources
 - 78 tradition labels
 - 0 unresolved relationship references; 0 unsourced entities or relationships
 - ~94% of entities backed by a primary text or scholarly edition
@@ -31,9 +31,11 @@ A public read-only web interface with pre-built queries and a full SQL explorer 
 - public query views, including a comparative-domains pivot (compare a function like
   Sovereignty or Healing across every tradition)
 - 100% Greek entity period coverage (462/462)
-- the late-antique traditions built to canonical depth: Zoroastrian, Jewish (Second
-  Temple, rabbinic, Hekhalot), Manichaean, Mandaean, Roman, Christian/patristic, and
-  Hermetic/Theurgic (the Corpus Hermeticum and the Chaldean–Neoplatonic theurgic orders)
+- pantheons built to canonical depth across the whole timeline: Mesopotamian, Egyptian,
+  Greek, Canaanite, Israelite, Roman, Norse, and Anatolian (Hittite/Hurrian/Luwian) before
+  the Common Era; and forward through Zoroastrian, Manichaean, Mandaean, Gnostic,
+  Hermetic/Theurgic, Jewish (Second Temple → rabbinic → Lurianic Kabbalah), Christian
+  (patristic and Eastern Orthodox), and Islamic (incl. the Shi'a Imamate)
 
 ## Included Traditions
 
