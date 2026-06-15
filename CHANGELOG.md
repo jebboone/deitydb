@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.36.0 — 2026-06-14
+
+### Sourcing rigor I: Greek catalogue clusters → primary texts
+
+Start of a program to bring the rest of the database to the sourcing standard set by the
+Gnostic material. An audit found Greek the largest gap: 462 entities (37% of the DB), of
+which **290 were sourced only to the Theoi.com index** — no primary text — even though
+Hesiod, Homer, Apollodorus, and Pausanias were already in the registry.
+
+This pass (`source_greek_hesiodic_v1.sql`) attaches the actual primary attestation,
+**additively** (the Theoi reference is kept as a convenient index), to the clean
+catalogue clusters, each matched to its correct source with a cited locus — not
+blanket-assigned by type:
+- Muses, Moirai, Charites, Nereids, Oceanids, the cosmogonic primordials, the astral
+  deities, and Ker/Moros → **Hesiod, Theogony** (specific passages); Nereids also →
+  **Homer, Iliad 18**.
+- The Athenian Horai (Auxo/Carpo/Thallo) → **Pausanias 9.35** (not Hesiod's Eunomia/
+  Dike/Eirene); the individually-named Hesperides → **Apollodorus 2.5.11** (Hesiod names
+  them only as a group).
+- The Orphic primordials (Phanes, Chronos, Ophion, Ananke…) were deliberately **deferred**
+  — they need an Orphic source, not Hesiod.
+
+Result: Greek entities with a primary source **37% → 45%**; ref-only **290 → 253**. No
+entity/relationship/source counts changed (this adds source *links*); 0 unsourced
+entities. (Remaining Greek clusters — rivers, nymphs, daimon-personifications, heroes —
+follow in subsequent passes.)
+
+---
+
 ## v1.35.0 — 2026-06-14
 
 ### Gnostic expansion V: completing the Sethian corpus
