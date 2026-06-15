@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.35.0 — 2026-06-14
+
+### Gnostic expansion V: completing the Sethian corpus
+
+The remaining major Sethian figures beyond the Apocryphon of John, sourced from Meyer's
+*Nag Hammadi Scriptures* (newly in the Drive) and Burns, *Apocalypse of an Alien God*
+(2014). (`complete_sethian_corpus.sql`)
+
+**New sources (2):** SRC_NAG_HAMMADI_SCRIPTURES (Meyer 2007); SRC_BURNS_ALIEN_GOD (2014).
+
+**New entities (8):**
+- *Trimorphic Protennoia:* Protennoia (the threefold First Thought, identical with Barbelo,
+  descending as Voice/Father, Sound/Mother, Word/Son).
+- *Platonizing treatises (Zostrianos, Allogenes):* the Barbeline triad — Kalyptos (the
+  Hidden), Protophanes (the First-Appearing), and Autogenes (placed as the third) — plus
+  the Triple-Powered One (Existence–Life–Mind) that mediates Barbelo from the One.
+- *Gospel of the Egyptians:* Doxomedon (the great aeon/throne-realm), Plesithea (virgin
+  mother of Seth's seed), Hormos (the vessel who sows the seed), and Nebruel (the demon
+  joined with Sakla to beget the lower powers).
+
+**Relationships (15):** Protennoia identified with Barbelo and revealing the gnosis; the
+Barbeline triad (Kalyptos/Protophanes/Autogenes member_of Barbelo; Barbelo from the
+Triple-Powered One); the Invisible Spirit enthroned in Doxomedon; Plesithea parent_of the
+seed of Seth; Nebruel paired with Sakla; and **Eleleth descending to rescue Norea**
+(Hypostasis of the Archons).
+
+Counts: **1,371** entities (+8) / **2,416** relationships (+15) / **162** sources (+2);
+0 unsourced, 0 orphans, 0 unresolved, 0 unreviewed duplicates.
+
+---
+
 ## v1.34.0 — 2026-06-14
 
 ### Gnostic expansion IV: the Jeuian ascent-archons (Bruce Codex)
