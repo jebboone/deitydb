@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.53.0 — 2026-06-15
+
+### Content deepening: Islam — the Shi'a Imamate and the angels
+
+Begins the forward (CE) build-out. The Islamic core was strong but Shi'a had only 4
+entities and **the Prophet Muhammad was missing entirely**. This deepens it
+(`deepen_islamic_shia.sql`); Islamic-family **54 → 73**, Shi'a **4 → 17**:
+
+- **The Prophet Muhammad** (the Seal of the Prophets — a notable prior omission) and
+  **Fatima al-Zahra**.
+- **The nine missing Twelve Imams** (the 2nd and 4th–11th): Hasan, Zayn al-Abidin,
+  al-Baqir, al-Sadiq, al-Kazim, al-Rida, al-Jawad, al-Hadi, al-Askari — wired as the full
+  father-to-son Imamate lineage (Ali → … → al-Askari → the Mahdi).
+- **The holy collectives:** the Ahl al-Bayt (the Five of the Cloak / Panjtan) and the
+  Fourteen Infallibles (Ma'sumin), with each member wired in; plus the doctrine of Imamah.
+- **The angels of paradise and hell:** Malik (keeper of Hell) and the Zabaniya he
+  commands, Ridwan (keeper of Paradise), the Bearers of the Throne, and the Hur (houris).
+
++3 primary sources (240 total): al-Mufid's *Kitab al-Irshad* (the canonical Twelver
+biography of the Imams), Ibn Ishaq's *Sira*, and Sahih al-Bukhari. All period-linked
+(Early/Classical Islamic). 0 unsourced; 0 unresolved; duplicate discipline clean.
+
+---
+
 ## v1.52.0 — 2026-06-15
 
 ### Content deepening: the Mesopotamian pantheon
