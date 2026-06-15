@@ -18,11 +18,11 @@ A public read-only web interface with pre-built queries and a full SQL explorer 
 - [Angelic Beings](https://deitydb-explorer.fly.dev/deitydb/angelic-beings), [Adversarial Beings](https://deitydb-explorer.fly.dev/deitydb/adversarial-beings), [Underworld Entities](https://deitydb-explorer.fly.dev/deitydb/underworld-entities), [Revealer Figures](https://deitydb-explorer.fly.dev/deitydb/revealer-figures)
 - [About the project](https://deitydb-explorer.fly.dev/about) · [How to contribute](https://deitydb-explorer.fly.dev/contribute)
 
-## Current Release — v1.60.0
+## Current Release — v1.61.0
 
-- 2,064 entities
-- 3,380 relationships
-- 270 sources
+- 2,107 entities
+- 3,400 relationships
+- 272 sources
 - 81 tradition labels
 - 0 unresolved relationship references; 0 unsourced entities or relationships
 - ~94% of entities backed by a primary text or scholarly edition
