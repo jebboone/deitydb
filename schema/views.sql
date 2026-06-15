@@ -228,6 +228,50 @@ WHERE o.tradition = 'Cross-traditional'
 GROUP BY o.canonical_name, o.entity_type
 ORDER BY traditions DESC, entities DESC;
 
+-- ----------------------------------------------------------------------------
+-- Cross-tradition links (v1.62.0): the comparative-religion core surfaced.
+-- Every typed relationship that connects two DIFFERENT real traditions by a
+-- comparative/genetic verb (transmission, syncretism, identification, cognate),
+-- excluding the Cross-traditional abstraction layer (that is the domain views).
+-- ----------------------------------------------------------------------------
+CREATE OR REPLACE VIEW v_public_cross_tradition_links AS
+SELECT s.canonical_name AS entity,
+       s.tradition       AS tradition,
+       r.relationship_type,
+       o.canonical_name AS linked_entity,
+       o.tradition       AS linked_tradition,
+       r.confidence,
+       r.rationale,
+       r.source_id
+FROM entity_relationships r
+JOIN entities s ON s.entity_id = r.subject_entity_id
+JOIN entities o ON o.entity_id = r.object_entity_id
+WHERE s.tradition <> o.tradition
+  AND s.tradition <> 'Cross-traditional'
+  AND o.tradition <> 'Cross-traditional'
+  AND r.relationship_type IN ('reception_of','received_as','syncretized_with',
+        'identified_with','equated_with','aligned_with','cult_form_of','reveals')
+ORDER BY s.tradition, s.canonical_name, r.relationship_type, o.tradition;
+
+-- The tradition-to-tradition web: how many comparative links bridge each pair
+-- of traditions (direction-normalised), and by which kinds of link.
+CREATE OR REPLACE VIEW v_public_cross_tradition_matrix AS
+SELECT least(s.tradition, o.tradition)    AS tradition_a,
+       greatest(s.tradition, o.tradition) AS tradition_b,
+       count(*)                            AS links,
+       count(DISTINCT r.relationship_type) AS link_types,
+       string_agg(DISTINCT r.relationship_type, ', ' ORDER BY r.relationship_type) AS link_kinds
+FROM entity_relationships r
+JOIN entities s ON s.entity_id = r.subject_entity_id
+JOIN entities o ON o.entity_id = r.object_entity_id
+WHERE s.tradition <> o.tradition
+  AND s.tradition <> 'Cross-traditional'
+  AND o.tradition <> 'Cross-traditional'
+  AND r.relationship_type IN ('reception_of','received_as','syncretized_with',
+        'identified_with','equated_with','aligned_with','cult_form_of','reveals')
+GROUP BY least(s.tradition, o.tradition), greatest(s.tradition, o.tradition)
+ORDER BY links DESC, tradition_a, tradition_b;
+
 -- ============================================================================
 -- Internal diagnostic & review views (back-filled v1.22.3 for total fidelity).
 -- Review dashboards, taxonomy/correspondence summaries, the inverse-expanded
