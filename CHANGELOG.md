@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.31.1 — 2026-06-14
+
+### Source audit + remediation
+
+Added `scripts/audit_sources.sql` (re-runnable source-integrity audit) and fixed its
+findings:
+- **0 unsourced entities, 0 unsourced relationships, 0 dangling source FKs** — clean.
+- Linked two primary-text sources that had been added in v1.29.0 but cited to nothing:
+  `SRC_GOSPEL_EGYPTIANS` (→ Seth, Seed of Seth, Four Luminaries, Barbelo, Adamas) and
+  `SRC_HYPOSTASIS_ARCHONS` (→ Norea, Sabaoth, Eleleth) — proper multi-text attestation.
+- Filled the missing `scope` on `SRC_NEW_TESTAMENT`.
+
+Reported, not changed: 4 pre-existing orphan sources (the Pleiades / ToposText /
+Digital Egypt gazetteers and an internal heuristic marker), and the `source_type` field's
+~39 near-duplicate values — flagged for a future normalisation pass to a controlled
+vocabulary. No entity/relationship counts changed (1,323 / 2,313 / 159).
+
+---
+
 ## v1.31.0 — 2026-06-14
 
 ### Gnostic expansion III: breadth beyond Sethian — the other currents
