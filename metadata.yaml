@@ -12,7 +12,7 @@ description_html: |
   Arabian · South Arabian/Sabaean · Phoenician · Hittite/Hurrian · Mycenaean · Late Antique ritual ·
   Baltic · Slavic · Moabite · Ammonite · Edomite · Thracian · Dacian · Armenian · Finnish · Urartian · Meroitic · Iberian/Lusitanian · Aramean · Luwian · Elamite · Italic/Sabine · Nabataean ·
   Gnostic currents: Sethian · Valentinian · Ophite/Archontic · Simonian · Basilidean · Marcionite · Saturnilian · Carpocratian (with the Pistis Sophia / Books of Jeu material)</p>
-  <p><strong>v1.35.0</strong> — 1,371 entities · 2,416 relationships · 162 sources · 0 unresolved references</p>
+  <p><strong>Current release: v1.35.0.</strong> Live entity, relationship, source, and tradition counts appear on the home page and in the <code>v_release_metrics</code> view; 0 unresolved relationship references.</p>
   <p>Source and contributing: <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a></p>
 license: MIT
 license_url: https://opensource.org/licenses/MIT
@@ -56,7 +56,7 @@ databases:
       entities:
         title: Entities
         description_html: |
-          The core table. 1,371 entities across 78 traditions spanning gods, angels, demons, aeons,
+          The core table — every entity in the database, spanning gods, angels, demons, aeons,
           prophets, saints, heroes, spirits, monsters, personified abstractions, cosmological realms,
           and ritual categories. Use <strong>category</strong> to filter by functional type
           (146 values: Underworld Deity, Hero, Adversarial Being, Revealer Figure, etc.).
@@ -161,8 +161,8 @@ databases:
       entity_periods:
         title: Entity Periods
         description_html: |
-          1,408 period assignments linking entities to the historical periods when they are
-          attested. An entity may span multiple periods. 100% of Greek entities (462/462)
+          Period assignments linking entities to the historical periods when they are
+          attested. An entity may span multiple periods. All Greek entities
           are assigned; Egyptian tradition is fully covered; total coverage exceeds 70%.
         columns:
           confidence:
@@ -532,7 +532,7 @@ databases:
       source-bibliography:
         title: "Source bibliography"
         description_html: |
-          All 162 sources used in DeityDB, ranked by how many entities they attest —
+          Every source used in DeityDB, ranked by how many entities they attest —
           primary texts alongside the secondary scholarship used to interpret them.
         sql: |
           SELECT

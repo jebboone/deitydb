@@ -18,10 +18,10 @@
     <div class="prose-block">
       <h2>What is DeityDB?</h2>
       <p>
-        DeityDB is an open-source comparative-religion database covering seventy-eight traditions —
+        DeityDB is an open-source comparative-religion database covering {{ db_traditions }} traditions —
         from Greek and Egyptian antiquity through Second Temple Judaism, Gnosticism, Islam,
-        and medieval Jewish and Christian mysticism. It maps over 1,371 entities, 2,416 relationships,
-        and 162 sources into a structured, queryable graph.
+        and medieval Jewish and Christian mysticism. It maps over {{ db_entities }} entities, {{ db_relationships }} relationships,
+        and {{ db_sources }} sources into a structured, queryable graph.
       </p>
       <p>
         The project's core commitment is <strong>source traceability</strong>: every entity classification
@@ -123,7 +123,7 @@
   <div class="prose-section-inner">
     <h2>Traditions Covered</h2>
     <p class="db-section-desc">
-      The database currently covers seventy-eight distinct tradition labels. Coverage depth varies —
+      The database currently covers {{ db_traditions }} distinct tradition labels. Coverage depth varies —
       some traditions have dozens of entities with full relationship graphs; others are nascent
       and marked for expansion. See the
       <a href="/deitydb/tradition-overview">Tradition Overview</a> for entity counts.
