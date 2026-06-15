@@ -95,11 +95,11 @@ INSERT INTO entity_relationships (subject_entity_id, relationship_type, object_e
  ('ENT_ROM_DIVUS_AUGUSTUS','child_of','ENT_ROM_DIVUS_JULIUS','high','Augustus was the adopted son and heir of the deified Julius Caesar.','SRC_SUETONIUS','reviewed')
 ON CONFLICT DO NOTHING;
 
--- ── Enrich the existing Italic/Sabine gods (rather than duplicate them as Roman) ──
+-- ── Enrich the existing Italic/Sabine gods (rather than duplicate them as Roman).
+--    NB: Faunus/Flora/Ops already cite Ovid Fasti / Varro in the seed data, so only
+--    Silvanus gets a new (inscriptional) source here — re-adding the others would create
+--    redundant (entity_id, source_id) pairs under a different evidence_type. ──
 INSERT INTO entity_sources (entity_id, source_id, evidence_type, source_note) VALUES
- ('ENT_ITA_OPS','SRC_VARRO_ANTIQ','Direct attestation','Varro, De Lingua Latina 5.57, 64: Ops, goddess of plenty, consort of Saturn.'),
- ('ENT_ITA_FAUNUS','SRC_OVID_FASTI','Direct attestation','Ovid, Fasti 2.193-242, 267-452: Faunus, the Lupercalia and the Faunalia.'),
- ('ENT_ITA_FLORA','SRC_OVID_FASTI','Direct attestation','Ovid, Fasti 5.183-378: Flora gives her own account of the Floralia.'),
  ('ENT_ITA_SILVANUS','SRC_CIL','Direct attestation','CIL: Silvanus is among the most frequently dedicated-to gods of the Latin inscriptions.')
 ON CONFLICT DO NOTHING;
 INSERT INTO entity_relationships (subject_entity_id, relationship_type, object_entity_id, confidence, rationale, source_id, review_status) VALUES
