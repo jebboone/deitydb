@@ -12,52 +12,41 @@ The goal is to make religious entities queryable across traditions instead of le
 
 A public read-only web interface with pre-built queries and a full SQL explorer — no installation required.
 
-- [Tradition Overview](https://deitydb-explorer.fly.dev/deitydb/tradition-overview) — all 62 traditions by entity count
+- [Tradition Overview](https://deitydb-explorer.fly.dev/deitydb/tradition-overview) — all 78 traditions by entity count
 - [Cross-Traditional Parallels](https://deitydb-explorer.fly.dev/deitydb/cross-traditional-parallels) — entities linked across tradition boundaries
 - [Reception Chains](https://deitydb-explorer.fly.dev/deitydb/reception-chain) — trace how a figure was renamed across traditions
 - [Angelic Beings](https://deitydb-explorer.fly.dev/deitydb/angelic-beings), [Adversarial Beings](https://deitydb-explorer.fly.dev/deitydb/adversarial-beings), [Underworld Entities](https://deitydb-explorer.fly.dev/deitydb/underworld-entities), [Revealer Figures](https://deitydb-explorer.fly.dev/deitydb/revealer-figures)
 - [About the project](https://deitydb-explorer.fly.dev/about) · [How to contribute](https://deitydb-explorer.fly.dev/contribute)
 
-## Current Release — v1.2.0
+## Current Release — v1.35.0
 
-- 1,170 entities
-- 1,352 relationships
-- 114 sources
-- 60+ tradition labels
-- 0 unresolved relationship references
+- 1,371 entities
+- 2,416 relationships
+- 162 sources
+- 78 tradition labels
+- 0 unresolved relationship references; 0 unsourced entities or relationships
 - duplicate-name review complete
 - diachronic reception chains across traditions
-- public query views included
-- 100% Greek entity period coverage (466/466)
+- public query views, including a comparative-domains pivot (compare a function like
+  Sovereignty or Healing across every tradition)
+- 100% Greek entity period coverage (462/462)
 - all Roman entities have primary-source coverage (Virgil, Livy, Cicero, Varro)
 
 ## Included Traditions
 
-- Greek (466 entities; 100% period coverage)
-- Egyptian
-- Mesopotamian
-- Canaanite / Ugaritic
-- Israelite / Second Temple
-- Roman
-- Celtic (Irish, Welsh, and Gaulish)
-- Germanic / Norse
-- Christian
-- Gnostic
-- Mandaean
-- Manichaean
-- Zoroastrian
-- Islamic (including Sufi and Shi'a)
-- Jewish mystical
-- Hermetic
-- Late antique ritual traditions
-- Etruscan (Pyrgi tablets; Piacenza liver)
-- Scythian (Herodotus Histories 4.59–62)
-- Phrygian (Matar Kubileya; Agdistis; Roller 1999)
-- Pre-Islamic Arabian
-- South Arabian / Sabaean
-- Phoenician Iron Age
-- Hittite / Hurrian
-- Mycenaean / Linear B
+Seventy-eight tradition labels in all, including:
+
+- Greek (462 entities; 100% period coverage)
+- Egyptian, Mesopotamian, Canaanite / Ugaritic, Israelite / Second Temple
+- Roman, Etruscan, Italic / Sabine
+- Celtic (Irish, Welsh, Gaulish), Germanic / Norse, Baltic, Slavic, Finnish, Thracian, Dacian
+- Phrygian, Hittite / Hurrian, Urartian, Elamite, Armenian, Mycenaean / Linear B
+- Phoenician Iron Age, Aramean, Nabataean, Pre-Islamic / South Arabian, Transjordanian
+  (Moabite, Ammonite, Edomite), Scythian, Iberian / Lusitanian, Meroitic
+- Christian, Zoroastrian, Islamic (including Sufi and Shi'a), Jewish mystical (Merkavah and
+  Kabbalah), Hermetic, late-antique ritual traditions
+- Gnostic currents: Sethian, Valentinian, Ophite / Archontic, Simonian, Basilidean,
+  Marcionite, Saturnilian, Carpocratian, Mandaean, Manichaean
 
 ## What Can DeityDB Do?
 
@@ -85,6 +74,10 @@ SELECT * FROM v_public_adversarial_beings;
 SELECT * FROM v_public_serpent_dragon_beings;
 SELECT * FROM v_public_wisdom_knowledge_beings;
 SELECT * FROM v_public_relationship_triples LIMIT 50;
+
+-- Comparative-domain views: compare a divine function across every tradition
+SELECT * FROM v_public_domain_overview;
+SELECT * FROM v_public_comparative_domains WHERE domain = 'Sovereignty';
 ```
 
 See `examples/sample_queries.sql` for more.
@@ -132,7 +125,11 @@ This allows comparison without collapsing every tradition into the same theologi
 
 See `CONTRIBUTING.md` and `GOOD_FIRST_ISSUES.md`.
 
-High-value areas: heresiology (Irenaeus, Epiphanius), Islamic tafsir / sira / Sufi expansion, Jewish Kabbalistic expansion, Works and Days personifications (Pandora, Five Ages), Greek tragedy source registration (Aeschylus, Sophocles, Euripides), data visualization, API or web interface.
+High-value areas: Christian mystical currents, Byzantine and patristic angelology, the
+remaining Naassene/Peratae and minor Gnostic groups, Works and Days personifications
+(Pandora, Five Ages), Greek tragedy source registration (Aeschylus, Sophocles, Euripides),
+data visualization, and API or web-interface work. (The earlier targets — heresiology,
+Sufism, and Kabbalah — are now substantially covered.)
 
 ## License
 
