@@ -289,11 +289,56 @@ databases:
         title: Comparative Domains (detail)
         description: Every (domain, entity) pairing across traditions — which deities and beings embody, patronise, rule, or afflict each shared domain. The comparative core of DeityDB.
 
+      v_public_cross_tradition_links:
+        title: Cross-Tradition Links ★
+        description: The comparative-religion core — every link where one tradition's figure is received, syncretised, equated, or recognised as a cognate of another tradition's (reception_of, received_as, syncretized_with, identified_with, equated_with, aligned_with, cult_form_of). 577 connections across the religions of the ancient and late-antique world.
+
+      v_public_cross_tradition_matrix:
+        title: Cross-Tradition Web ★
+        description: The tradition-to-tradition web — for every pair of traditions, how many comparative links bridge them and by what kinds. Shows the connective spine of the dataset (Greek↔Roman, Egyptian↔Late-Antique-Ritual, Christian↔Greek, Islamic↔Israelite, …).
+
       v_release_metrics:
         title: Release Metrics
         description: Current database statistics — entity, relationship, and source counts.
 
     queries:
+
+      cross-tradition-links:
+        title: "★ Cross-tradition links — the comparative core"
+        description_html: |
+          The heart of DeityDB: every link where one tradition's figure is
+          <em>received</em>, <em>syncretised</em>, <em>equated</em>, or recognised as a
+          <em>cognate</em> of another's — 577 connections across the religions of the
+          ancient and late-antique world. Filter by tradition with the queries below,
+          or browse all here.
+        sql: |
+          SELECT entity, tradition, relationship_type, linked_entity, linked_tradition,
+                 confidence, rationale, source_id
+          FROM v_public_cross_tradition_links
+
+      cross-tradition-web:
+        title: "★ Cross-tradition web — which traditions connect"
+        description_html: |
+          The tradition-to-tradition web. For every pair of traditions, how many
+          comparative links bridge them and by what kinds. The connective spine of the
+          dataset — Greek and Egyptian are the great hubs.
+        sql: |
+          SELECT tradition_a, tradition_b, links, link_types, link_kinds
+          FROM v_public_cross_tradition_matrix
+
+      cross-tradition-for:
+        title: "★ Cross-tradition links for one tradition"
+        description_html: |
+          Every comparative bridge into and out of one tradition. Enter a tradition name
+          exactly as it appears in the tradition overview — e.g. <em>Roman</em>,
+          <em>Egyptian</em>, <em>Norse</em> (as <em>Germanic/Norse</em>), <em>Zoroastrian</em>,
+          <em>Gnostic</em>.
+        sql: |
+          SELECT entity, tradition, relationship_type, linked_entity, linked_tradition,
+                 confidence, rationale
+          FROM v_public_cross_tradition_links
+          WHERE tradition = :tradition OR linked_tradition = :tradition
+          ORDER BY relationship_type, entity
 
       comparative-domains-index:
         title: "Comparative domains — index"
@@ -431,23 +476,18 @@ databases:
       cross-traditional-parallels:
         title: "Cross-traditional equations and identifications"
         description_html: |
-          All <em>equated_with</em>, <em>identified_with</em>, and <em>syncretized_with</em>
-          relationships — showing how ancient writers (Herodotus, Plutarch) and modern
-          scholars recognized the same divine functions across traditions.
+          Only the <em>equation</em> links — <em>equated_with</em>, <em>identified_with</em>,
+          and <em>syncretized_with</em> — showing how ancient writers (Herodotus, Tacitus,
+          Plutarch) and modern scholars recognised the same divine figure across traditions.
+          For the fuller picture (including <em>reception_of</em> and cognate <em>aligned_with</em>
+          links) see <strong>★ Cross-tradition links</strong> above.
         sql: |
-          SELECT
-            s.canonical_name AS entity,
-            s.tradition      AS from_tradition,
-            r.relationship_type,
-            o.canonical_name AS parallel,
-            o.tradition      AS to_tradition,
-            r.confidence,
-            r.rationale
-          FROM entity_relationships r
-          JOIN entities s ON s.entity_id = r.subject_entity_id
-          JOIN entities o ON o.entity_id = r.object_entity_id
-          WHERE r.relationship_type IN ('equated_with', 'identified_with', 'syncretized_with')
-          ORDER BY s.tradition, s.canonical_name
+          SELECT entity, tradition AS from_tradition, relationship_type,
+                 linked_entity AS parallel, linked_tradition AS to_tradition,
+                 confidence, rationale
+          FROM v_public_cross_tradition_links
+          WHERE relationship_type IN ('equated_with', 'identified_with', 'syncretized_with')
+          ORDER BY tradition, entity
 
       divine-genealogies:
         title: "Divine genealogies"

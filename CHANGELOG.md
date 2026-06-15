@@ -1,5 +1,44 @@
 # Changelog
 
+## v1.62.0 — 2026-06-15
+
+### Feature the cross-tradition links — the comparative core
+
+An audit of the relationship graph found the database's best feature buried:
+**577 genuine religion-to-religion comparative links** (reception, syncretism,
+equation, cognate) were scattered, while the canned "parallels" query showed
+only a third of them and nothing surfaced the tradition-to-tradition web. This
+release surfaces them and fills the biggest gap.
+
+**New public views** (`schema/views.sql`):
+- `v_public_cross_tradition_links` — every comparative link between two
+  *different real traditions* (the 8 comparative verbs), excluding the
+  abstraction layer; entity, tradition, link type, linked entity, linked
+  tradition, confidence, rationale, source.
+- `v_public_cross_tradition_matrix` — the tradition-to-tradition web:
+  per tradition-pair, how many links bridge them and of what kinds.
+
+**Surfaced prominently:** a gold-accented "Comparative Core" feature block now
+leads the homepage; three new canned queries (★ all links, ★ the web, ★ links
+for one tradition); the `cross-traditional-parallels` query rebuilt on the new
+view; the stale homepage card referencing a nonexistent `parallel_to` fixed.
+
+**Gap filled — Germanic/Norse was nearly an island** (4 cross-links → 14):
+added the well-attested *interpretatio romana* from Tacitus's *Germania* and
+the weekday calques, with ancient identifications (`equated_with`) kept strictly
+distinct from modern cognate/functional comparisons (`aligned_with`): Odin=
+Mercury, Tyr=Mars, Thor=Hercules (strength) and Thor=Jupiter (thunder, the
+Thursday calque), Frigg=Venus, Nerthus="Terra Mater" (Tellus), the Alcis=the
+Dioscuri; plus cognate edges Odin~Hermes, Tyr~Zeus (etymological, *dyew-, with
+a caveat note), Alcis~the Divine Twins. Two new Tacitus-attested entities
+(Nerthus, the Alcis) + Njord `reception_of` Nerthus; and the Welsh↔Irish
+cognate Dôn~Danu. Contested equations (Freyja↔Venus, the Suebian "Isis")
+deliberately excluded. The sqlite export now materialises the two new views.
+
+Integrity preserved (0 unsourced / 0 unresolved / 0 dup-pairs / 0 unreviewed
+duplicates). Now **2,109 entities**, 3,412 relationships, 273 sources, 81
+traditions, **577 cross-tradition comparative links**.
+
 ## v1.61.0 — 2026-06-15
 
 ### Content deepening: medieval Western Christianity

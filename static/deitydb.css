@@ -192,6 +192,17 @@ section.content { padding: 0 !important; }
 
 /* ── Browse CTA banner ───────────────────────────────────────────── */
 .browse-cta-section { border-bottom: 1px solid var(--border); padding-top: 28px; padding-bottom: 28px; }
+
+/* Featured "comparative core" section — gold-accented to mark the headline feature. */
+.featured-section {
+  background: linear-gradient(135deg, rgba(201,168,76,0.10) 0%, rgba(201,168,76,0.03) 100%);
+  border: 1px solid var(--gold);
+  border-left: 4px solid var(--gold);
+  border-radius: 10px;
+  padding: 28px 32px;
+  margin-top: 28px;
+}
+.featured-section h2 { color: var(--navy); }
 .browse-cta {
   display: flex;
   align-items: center;
