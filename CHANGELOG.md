@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.30.0 — 2026-06-14
+
+### Gnostic expansion II: the Pistis Sophia / Jeuian light-world
+
+The late-Gnostic (3rd–4th c.) Treasury-of-Light cosmology of the Askew and Bruce
+codices, sourced from the primary texts. (`add_pistis_sophia_jeuian.sql`)
+
+**New sources (2):** Pistis Sophia (Askew Codex); the Books of Jeu (Bruce Codex).
+
+**New entities (13):**
+- *Upper light-world:* First Mystery (the manifest face of the Ineffable; identified with
+  the risen Christ), the Treasury of the Light (with the Twenty-four Invisibles and the
+  Five Helpers), Jeu (overseer of the Light / First Man), the Virgin of the Light (judge
+  of souls) and her Receivers, and Zorokothora Melchizedek (the great Receiver/Purifier
+  of the Light).
+- *The fall narrative:* Pistis Sophia (the penitent fallen aeon, identified with the
+  Gnostic Sophia), the Thirteenth Aeon, Authades ("the Arrogant"), Adamas the Tyrant, and
+  the Lion-faced Power.
+
+**Relationships (25):** light-world structure (First Mystery emanates from the Monad and
+is identified with Christ; the Invisibles and Helpers in the Treasury; Jeu orders the
+Treasury and aeons); soul-judgment (the Virgin of the Light judges the Dead and directs
+her Receivers; Melchizedek mediates Salvation); and the fall (Pistis Sophia opposed by
+Authades and Adamas the Tyrant, afflicted by the Lion-faced Power, undergoes Salvation,
+and is carried out of the Chaos by the archangels Michael and Gabriel).
+
+Note: "Adamas the Tyrant" (evil archon) is kept distinct from the Sethian heavenly Adamas.
+
+Counts: **1,314** entities (+13) / **2,298** relationships (+25) / **156** sources (+2);
+0 unsourced, 0 orphans, 0 unresolved, 0 unreviewed duplicates.
+
+---
+
 ## v1.29.0 — 2026-06-14
 
 ### Gnostic expansion I: the Sethian system of the Apocryphon of John
