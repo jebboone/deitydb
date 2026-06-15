@@ -12,7 +12,7 @@ description_html: |
   Arabian · South Arabian/Sabaean · Phoenician · Hittite/Hurrian · Mycenaean · Late Antique ritual ·
   Baltic · Slavic · Moabite · Ammonite · Edomite · Thracian · Dacian · Armenian · Finnish · Urartian · Meroitic · Iberian/Lusitanian · Aramean · Luwian · Elamite · Italic/Sabine · Nabataean ·
   Gnostic currents: Sethian · Valentinian · Ophite/Archontic · Simonian · Basilidean · Marcionite · Saturnilian · Carpocratian (with the Pistis Sophia / Books of Jeu material)</p>
-  <p><strong>Current release: v1.50.0.</strong> Live entity, relationship, source, and tradition counts appear on the home page and in the <code>v_release_metrics</code> view; 0 unresolved relationship references.</p>
+  <p>The live release version and the entity, relationship, source, and tradition counts appear on the home page and in the <code>v_release_metrics</code> view; 0 unresolved relationship references.</p>
   <p>Source and contributing: <a href="https://github.com/jebboone/deitydb">github.com/jebboone/deitydb</a></p>
 license: MIT
 license_url: https://opensource.org/licenses/MIT
@@ -24,7 +24,7 @@ extra_css_urls:
 
 databases:
   deitydb:
-    title: DeityDB v1.50.0
+    title: DeityDB
     description_html: |
       <p>Start with the <strong>Canned queries</strong> below, or browse the tables directly.
       The main tables are <em>entities</em>, <em>entity_relationships</em>, and <em>sources</em>.
