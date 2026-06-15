@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.40.0 — 2026-06-14
+
+### Sourcing rigor V: Christian and Israelite/Second Temple → primary texts
+
+The rigor program moves off Greek to the next gaps (`source_christian_israelite.sql`).
+Both traditions were sourced only to reference works (DDD, Butler's Lives, the Catholic
+Encyclopedia); this adds the actual primary attestation, additively:
+- **Israelite/Second Temple** → Hebrew Bible (Yahweh, Satan, Behemoth, Leviathan, Sheol,
+  Ruach, Bene Elohim, Scapegoat, Sophia/Wisdom, the Angel of Death, Belial — each with
+  chapter-and-verse); Tobit → Book of Tobit; Belial also → Jubilees.
+- **Christian** → New Testament (John the Baptist, Joseph, Mary Magdalene, Mary Theotokos,
+  Paul, Peter, the Devil, Demons, Antichrist, Baptism, Mission — each with references);
+  saints → the Golden Legend (Blaise, Catherine, Cosmas & Damian, Francis, George, Lucy,
+  Nicholas), Anthony & Monasticism → Athanasius's *Life of Antony*, Benedict → Gregory's
+  *Dialogues* II.
+
+New sources: SRC_ATHANASIUS_LIFE_ANTONY, SRC_GREGORY_DIALOGUES (170 total).
+
+Result: **Israelite/Second Temple 54% → 100%** primary (0 ref-only); **Christian 37% →
+92%** (3 regional saints — Eligius, Dunstan, Roch — remain on hagiographic reference works,
+their primary Vitae not yet registered). 0 duplicate pairs; 0 unsourced entities.
+
+---
+
 ## v1.39.0 — 2026-06-14
 
 ### Sourcing rigor IV: the Aspis daimones and the Choice of Heracles
