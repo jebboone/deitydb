@@ -1,9 +1,7 @@
 ================================================================================
 DEITYDB — SESSION SEED  (current as of v1.59.0, 2026-06-15)
-*** NOTE: v1.59.0 is applied to Postgres + committed/pushed + local Datasette,
-*** but the fly.io DEPLOY IS PENDING — fly had a macaroon-auth/deploy outage
-*** (major incident 15:03 UTC 2026-06-15). Re-run: export PATH="$HOME/.fly/bin:$PATH";
-*** flyctl deploy -a deitydb-explorer  (once fly recovers; check status.flyio.net).
+*** v1.59.0 fully PUBLISHED (Postgres + git + local Datasette + fly.io live).
+*** The earlier fly macaroon-auth outage cleared and the deploy went through.
 ================================================================================
 A source-traceable comparative-religion database of spiritual entities (gods,
 angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
