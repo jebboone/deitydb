@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.44.0 — 2026-06-14
+
+### Content normalization II: Jewish Second Temple build-out
+
+Deepens the Second Temple apocalyptic angelology and demonology
+(`build_jewish_second_temple.sql`), continuing the rebalancing away from the
+Gnostic over-weighting. Israelite/Second Temple **26 → 46**, every entity to a
+primary locus:
+
+- **Asmodeus** (Tobit) — previously missing entirely; bound by Raphael, and wired
+  as the ancestor of the existing late-antique ritual/Solomonic Asmodeus.
+- **The 1QS "Two Spirits" dualism** — the Prince of Light (≈ Michael) and the Angel
+  of Darkness (≈ Belial), the Spirit of Truth and the Spirit of Deceit — a direct
+  structural parallel to the Zoroastrian Spenta/Angra Mainyu axis added in v1.43.0.
+- **The heavenly Melchizedek** (11Q13), who judges Belial.
+- **Named Watcher-chiefs** (Kokabiel, Baraqiel, Penemue, Gadreel) and **giants**
+  (Ohyah, Hahyah, Mahaway) — the last three cross-linking the Manichaean *Book of
+  Giants* already in the DB.
+- **Danielic / Enochic heavenly figures** — Phanuel, Saraqael, the Angel of the
+  Presence (Jubilees), the Princes of the Nations (opposed by Michael), the Son of
+  Man, and the Ancient of Days (as a theophanic form of Yahweh); plus the chaos-
+  dragon Rahab.
+
++5 Dead Sea Scrolls / 2 Enoch sources (216 total: 1QS, 11Q13, 1QM, the Book of
+Giants, 2 Enoch). Duplicate-name discipline preserved (the Asmodeus homonym
+registered as intentionally distinct). 0 unsourced; 0 unresolved relationships.
+
+---
+
 ## v1.43.0 — 2026-06-14
 
 ### Content normalization I: Zoroastrian build-out
