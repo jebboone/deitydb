@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.50.1 — 2026-06-15
+
+### Vocabulary hygiene: normalize evidence_type
+
+Normalizes `entity_sources.evidence_type` from 25 ad-hoc values to a controlled
+vocabulary of 5 (`normalize_evidence_type.sql`), mirroring the earlier `source_type`
+normalization:
+
+- **direct attestation** (1,717) — the entity is directly named/described in a primary text
+- **scholarly attestation** (1,134) — established or discussed via secondary scholarship
+- **index attestation** (1,026) — listed in a reference index/aggregator (the Theoi indices, DDD, …)
+- **inscriptional attestation** (20) — attested in a primary inscription or material artifact
+- **probable attestation** (1) — uncertain / probable identification
+
+Inconsistent evidence_type strings (e.g. `primary_attestation` vs `Direct attestation`)
+were the root cause of the recurring duplicate `(entity_id, source_id)` pairs flagged in
+the v1.50.0 health audit: because evidence_type is part of the primary key, the same
+citation could slip in twice under two spellings. Folding them to a single controlled term
+makes future `ON CONFLICT` inserts dedupe correctly. 0 duplicate pairs; 0 unsourced.
+
+---
+
 ## v1.50.0 — 2026-06-14
 
 ### Content normalization VIII: Hermetic/Theurgic build-out
