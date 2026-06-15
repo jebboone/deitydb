@@ -1,5 +1,57 @@
 # Changelog
 
+## v1.59.0 — 2026-06-15
+
+### Cross-tradition gap audit: deepen six under-mined traditions + wire Orthodoxy
+
+A whole-dataset distribution + relationship-density audit (the same lens as
+the v1.58.0 Egyptian pass) found several traditions thin *relative to their
+attested record*, plus one connectivity defect. All additions verified to
+primary/scholarly sources by four parallel research passes; uncertain
+readings, human heroes, and epithets-of-major-gods deliberately excluded.
+
+- **Roman 43 → 94** (`deepen_roman.sql`): the *indigitamenta* — the minor
+  functional deities recorded by Varro and preserved by Augustine/Servius/
+  Tertullian. Fabius Pictor's twelve farming gods (Vervactor…Promitor), the
+  grain-growth and life-stage indigitamenta (Seia, Vagitanus, Cunina,
+  Cardea…), and named minor cult gods (Feronia, Semo Sancus, Summanus,
+  Veiovis, Consus, Pales, Angerona, Anna Perenna, Portunus, Febris…).
+- **Celtic/Irish 12 → 46** (`deepen_celtic_irish.sql`): the Morrígna (Badb,
+  Macha, Nemain), the sovereignty trio (Ériu/Banba/Fódla), the Tuatha Dé
+  family (Boann, Midir, Étaín, Bodb Derg…), the craft-gods, and the Fomorians
+  (Balor, Bres, Elatha, Cethlenn, Ethniu…); the Mag Tuired myth wired as a graph.
+- **Celtic/Welsh 15 → 39** (`deepen_celtic_welsh.sql`): the Houses of Llŷr,
+  Dôn, and Beli (Llŷr, Penarddun, Gofannon, Amaethon, Dylan, Mabon, Modron,
+  Lludd, Creiddylad, Efnysien…) and the Taliesin/Culhwch cast (Ceridwen,
+  Olwen, Ysbaddaden…).
+- **Celtic/Gaulish 10 → 30 + new tag `Celtic/British` (9)**
+  (`deepen_celtic_gaulish_british.sql`): the Gallo-Roman and Romano-British
+  inscriptional gods (Belenus, Grannus, Sirona, Sequana, Lenus, Camulos;
+  Nodens, Sulis, Coventina, Brigantia, Cocidius…), each with its Roman
+  interpretatio wired.
+- **Etruscan 12 → 31; Canaanite/Ugaritic 14 → 23; Phoenician 4 → 12**
+  (`deepen_etruscan_semitic.sql`): the Liver of Piacenza + mirror pantheon
+  (Aplu, Turms, Sethlans, Aita, Phersipnai, Vanth…); the Baal Cycle daughters
+  and dawn/dusk twins (Pidray, Tallay, Arsay, Shahar, Shalim, Nikkal, Horon…);
+  the distinct Phoenician/Punic cult gods (Baal-Shamem, Baalat Gebal, Adonis,
+  Shadrapa…). Homonyms registered intentional_distinct: Adonis (Phoenician↔
+  Greek, reception wired), Athtar (Ugaritic↔South Arabian), Brigantia (British
+  ↔Irish Brigid).
+- **Christian/Orthodox wiring** (`wire_orthodox.sql`): the 21 Orthodox saints
+  had only 0.57 edges/entity (they existed but floated). Added typed edges —
+  warrior-saints→War, healers→Healing, hierarchs→Wisdom, monastics→Monasticism,
+  the hesychast mystics→the Uncreated Light→theosis — raising density to 1.71.
+
+**Audit conclusion recorded:** Greek (462) being the largest tradition is
+*correct* — its literary record simply names more discrete beings. The fix is
+always to mine an under-represented tradition's *attested* roster up to depth,
+never to shrink Greek. Genuinely attestation-limited traditions (Baltic,
+Slavic, Thracian, Scythian, Aramean, Elamite…) were left as-is.
+
+Integrity preserved (0 unsourced / 0 unresolved / 0 dup-pairs / 0 unreviewed
+duplicates). Primary/scholarly coverage 95.1% → **95.4%**. Now 1,973 entities,
+3,119 relationships, 264 sources, 81 traditions.
+
 ## v1.58.0 — 2026-06-15
 
 ### Content deepening: the Egyptian roster (91 → 188)
