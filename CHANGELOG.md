@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.33.0 — 2026-06-14
+
+### Valentinian deepening II: the Eastern/Western split + soteriology
+
+The Oriental/Italic division (Thomassen's central thesis), represented through entities
+rather than teachers (Ptolemy, Heracleon, Theodotus, Axionicus are authors, excluded).
+Sourced to Thomassen, Irenaeus AH, Clement's *Excerpta ex Theodoto* (the Eastern witness),
+Hippolytus *Haer.* VI 35, and Tertullian *Adv. Valent.* (the "two schools").
+(`add_valentinian_east_west.sql`)
+
+**New entities (8):**
+- *Threefold anthropology:* Pneumatic, Psychic, Hylic (the three natures/classes).
+- *Spiritual Seed* — the pneumatic elect sown by Achamoth (Thomassen's title concept).
+- *Psychic Christ* — the clearest marker of the split: the **Western** school gave the
+  Saviour a psychic body from the Demiurge and made the psychics the target of salvation;
+  the **Eastern** school held the Saviour's body to be wholly spiritual.
+- *Angels of the Savior* — the seed's syzygy-partners in the bridal-chamber reunion.
+- *Apolytrosis* — the redemption/release sacrament.
+- *The Middle (Mesotes)* — the intermediate realm: Achamoth in the Ogdoad, the Demiurge
+  ruling the Hebdomad below.
+
+**Relationships (17):** the anthropology's origin in Achamoth's states (spiritual seed
+from her vision; psychic from her conversion/Epistrophe; hylic from her passions/Lype);
+Achamoth parent_of the Demiurge, who embodies the Psychic and rules the Middle; the psychic
+Christ from the Demiurge, aligned with the Soter; and the reunion soteriology (spiritual
+seed paired_with the angels of the Saviour, undergoes Salvation; apolytrosis bound to the
+bridal chamber).
+
+Counts: **1,353** entities (+8) / **2,380** relationships (+17) / 160 sources;
+0 unsourced, 0 orphans, 0 unresolved, 0 unreviewed duplicates.
+
+---
+
 ## v1.32.0 — 2026-06-14
 
 ### Valentinian deepening: the complete 30-aeon Pleroma + Sophia's passions
