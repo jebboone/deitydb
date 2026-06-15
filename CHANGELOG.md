@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.45.0 — 2026-06-14
+
+### Content normalization III: Jewish rabbinic + Hekhalot/Merkavah
+
+Completes the Jewish-tradition rebalancing (`build_jewish_rabbinic_hekhalot.sql`)
+with the late-antique rabbinic and Merkavah-mystical strata. Jewish Mystical
+**24 → 39**; the whole Jewish bloc now **92** (from 56):
+
+- **Rabbinic demonology:** Dumah (prince of Gehenna), Ketev Meriri (the noonday
+  demon), the demon-queens Agrat bat Mahlat and Naamah, the shedim and mazzikin,
+  the lilin (Lilith's brood), and the destroying angels Af and Hemah. Lilith is now
+  wired as the consort of Samael.
+- **Hekhalot / Merkavah throne-princes:** Anafiel (set above Metatron in 3 Enoch),
+  Akatriel (the enthroned Name seen in Berakhot 7a), Yahoel (the Name-bearing guide
+  of the *Apocalypse of Abraham*, wired as Metatron's precursor), Zagzagel, and the
+  offices of the Sar ha-Panim and Sar ha-Olam (both identified with Metatron).
+- **Cosmology:** Gehenna (developed from Sheol) and the Ziz, completing the
+  primordial triad with Behemoth and Leviathan.
+
++3 sources (219 total: the Babylonian Talmud, the Apocalypse of Abraham, the classical
+Midrash). Whole-dataset rigor holds at **93.9%**. 0 unsourced; 0 unresolved; duplicate
+discipline clean.
+
+**Rebalancing scorecard (v1.42 → v1.45):** the Gnostic : Jewish : Zoroastrian ratio
+moved from **186 : 56 : 16** to **177 : 92 : 53** — the late-antique Iranian and
+Jewish substrates that fed the Gnostic material are now proportionate to it.
+
+---
+
 ## v1.44.0 — 2026-06-14
 
 ### Content normalization II: Jewish Second Temple build-out
