@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.47.0 — 2026-06-14
+
+### Content normalization V: Mandaean build-out
+
+Fills in the Mandaean lightworld and underworld, previously a 15-entity skeleton
+(`build_mandaean_core.sql`). Mandaean **15 → 31**, each entity to a primary Mandaean
+source (the Ginza Rabba, the Qolasta):
+
+- **The lightworld and its uthras:** the Uthras themselves, Simat Hayyi (the Treasure
+  of Life, consort of the Great Life), the great uthra Yawar Ziwa, and the celestial
+  prototypes Adam Kasia and Hawwa Kasia.
+- **The living water:** the Jordan's guardian uthras Shilmai and Nidbai, the baptism-
+  uthra Bihram, and Kushta (Truth, the sacred handclasp).
+- **The cosmic realms:** the World of Light (Alma d-Nhura), the World of Darkness, the
+  material earth Tibil (made by Ptahil), and the matartas (the soul's purgatory
+  watch-stations, over which Abathur presides).
+- **The dark powers:** Krun (the "mountain of flesh," chief king of the darkness), the
+  Twelve zodiacal rulers (children of Ruha, with the Seven Planets), and Sauriel, the
+  angel of death.
+
++1 source (221 total: the Qolasta). The "World of Light" homonym (now Mandaean and
+Manichaean) is registered as intentionally distinct. 0 unsourced; 0 unresolved.
+
+**Rebalancing complete (v1.43 → v1.47):** the four late-antique traditions that fed
+the Gnostic material are now at solid canonical depth — Zoroastrian 16→53, Jewish
+56→92, Manichaean 15→32, Mandaean 15→31 — without diluting the sourcing rigor
+(still ~94%).
+
+---
+
 ## v1.46.0 — 2026-06-14
 
 ### Content normalization IV: Manichaean build-out
