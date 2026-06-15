@@ -1,5 +1,45 @@
 # Changelog
 
+## v1.61.0 — 2026-06-15
+
+### Content deepening: medieval Western Christianity
+
+Adds the major-*cultus* medieval Western (Latin) saints the Christian roster
+deliberately skipped (`build_medieval_western_christianity.sql`). Christian
+(Western) 54 → **97**, +43, verified against Farmer's *Oxford Dictionary of
+Saints*, Butler's *Lives*, and the *Golden Legend*; each entered for genuine
+major cultus (shrine, pilgrimage, patronage), not as an author.
+
+- **Mendicant & monastic founders:** Dominic, Clare of Assisi, Anthony of
+  Padua, Bernard of Clairvaux, Bruno (Carthusians), Norbert (Norbertines),
+  Romuald (Camaldolese), Bridget of Sweden (Birgittines), Scholastica.
+- **Mystics with cultus:** Catherine of Siena, Hildegard of Bingen, Gertrude
+  the Great, Mechtild of Hackeborn, Catherine of Genoa.
+- **Martyr / political saints:** Thomas Becket, Stanislaus of Kraków, John of
+  Nepomuk, Wenceslaus, Boniface (Apostle of Germany), Adalbert of Prague,
+  Olaf of Norway, Canute of Denmark.
+- **Royal / dynastic saints:** Louis IX of France, Edward the Confessor,
+  Stephen I of Hungary, Elizabeth of Hungary, Margaret of Scotland, Henry II
+  and Cunigunde, Casimir of Poland.
+- **Pilgrimage / helper cults:** James the Greater (Santiago de Compostela),
+  the Three Kings (Cologne), Faith of Conques, Leonard of Noblac, Giles, the
+  Fourteen Holy Helpers, Denis of Paris, Genevieve of Paris, Cuthbert,
+  Swithun, Edmund the Martyr, Walburga, Brigid of Kildare.
+
+Wired the order-founder, family, and devotional edges (Clare→Francis,
+Catherine of Siena→Dominic, Scholastica↔Benedict, Henry II↔Cunigunde…), and a
+cross-tradition cross-link: **Brigid of Kildare `reception_of` the Irish
+goddess Brigid**. Per house rule, the scholastic Doctors-qua-authors (Aquinas,
+Bonaventure, Anselm, Albert, Scotus) are excluded; the four included "Doctors"
+(Anthony of Padua, Bernard, Catherine of Siena, Hildegard) are in for popular
+cultus. Julian of Norwich and Mechtild of Magdeburg excluded (no Latin cultus).
+
+Also reclassified `SRC_FARMER_SAINTS` from "reference work" to "secondary
+scholarship" (a single-author critical scholarly dictionary). Integrity
+preserved (0 unsourced / 0 unresolved / 0 dup-pairs / 0 unreviewed duplicates);
+ref-only stays at the by-design 88. Coverage 95.7% → **95.8%**. Now
+**2,107 entities**, 3,400 relationships, 272 sources, 81 traditions.
+
 ## v1.60.0 — 2026-06-15
 
 ### Connectivity enrichment + deeper Mesopotamian & Norse
