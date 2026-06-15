@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.39.0 — 2026-06-14
+
+### Sourcing rigor IV: the Aspis daimones and the Choice of Heracles
+
+Fourth Greek pass (`source_greek_aspis_xenophon.sql`), after locating the Hesiodic *Aspis*
+(in the Evelyn-White Loeb volume, with H. C. Mason's 2015 commentary) and adding Xenophon:
+- **Aspis war-daimones** → Hesiod, *Shield of Heracles*: Proioxis (154), Palioxis (154),
+  Homados (155), Achlys (264–270); with Mason (2015) as secondary commentary.
+- **Ioke and Alke** → Homer, *Iliad* 5.738–742 (figures worked on Athena's aegis).
+- **Kakia and Arete** → Xenophon, *Memorabilia* 2.1.21–34 (Prodicus's Choice of Heracles).
+
+New sources: SRC_HESIOD_ASPIS, SRC_MASON_ASPIS, SRC_XENOPHON_MEMORABILIA (168 total).
+Greek primary coverage **65% → 66%**; ref-only **161 → 154**; 0 duplicate (entity_id,
+source_id) pairs.
+
+---
+
 ## v1.38.1 — 2026-06-14
 
 ### Cleanup: de-duplicate entity_sources
