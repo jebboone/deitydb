@@ -1,5 +1,41 @@
 # Changelog
 
+## v1.32.0 — 2026-06-14
+
+### Valentinian deepening: the complete 30-aeon Pleroma + Sophia's passions
+
+Grounded in Irenaeus *Adv. Haer.* I.1–4 and Einar Thomassen's *The Spiritual Seed*
+(Brill, 2006), the definitive study of Valentinianism. (`deepen_valentinian_pleroma.sql`)
+
+The Ogdoad already existed; the existing `ENT_GNO_SOPHIA` (30th aeon, spouse of Theletos)
+and `ENT_VAL_MONOGENES` (Decad) were reused, not duplicated.
+
+**New source:** SRC_THOMASSEN_SEED.
+
+**New entities (22):**
+- *Decad member-aeons (9):* Bythios, Mixis, Ageratos, Henosis, Autophyes, Hedone,
+  Akinetos, Syncrasis, Macaria (completing the Decad to 10 with Monogenes).
+- *Dodecad member-aeons (8):* Parakletos, Patrikos, Elpis, Metrikos, Aeinous, Synesis,
+  Ekklesiastikos, Makariotes (completing the Dodecad to 12 with Pistis, Agape, Sophia,
+  Theletos).
+- *Sophia's passions (5):* Enthymesis (her cast-out intention = the lower Sophia/Achamoth)
+  and the fourfold passion — Lype (grief), Phobos (fear), Aporia (perplexity), Epistrophe
+  (conversion, the redemptive turning).
+
+**Relationships (50):** the 17 member-aeons placed in their Decad/Dodecad; the ten
+syzygies as reciprocal `spouse_of` pairs; the fall (Enthymesis emanates from Sophia,
+Horos guards the Pleroma and separates it, Achamoth = Enthymesis, Achamoth parent_of the
+four passions); and comparative links (Henosis→Union, Synesis→Understanding,
+Parakletos→Holy Spirit, Phobos→Fear, Epistrophe→Salvation).
+
+The full Pleroma now resolves: **Ogdoad (8) + Decad (10) + Dodecad (12) = 30 aeons.**
+Homonyms suffixed "(Valentinian)" (Hedone, Macaria, Elpis, Synesis, Phobos).
+
+Counts: **1,345** entities (+22) / **2,363** relationships (+50) / **160** sources (+1);
+0 unsourced, 0 orphans, 0 unresolved, 0 unreviewed duplicates.
+
+---
+
 ## v1.31.2 — 2026-06-14
 
 ### Hygiene: normalize the source_type vocabulary
