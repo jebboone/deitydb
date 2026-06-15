@@ -1,5 +1,49 @@
 # Changelog
 
+## v1.60.0 — 2026-06-15
+
+### Connectivity enrichment + deeper Mesopotamian & Norse
+
+A fresh multi-dimensional audit (density, chronology, source-rigor) found the
+top gap was **connectivity, not roster**: the traditions expanded in v1.59.0
+(and some pre-existing nodes) were under-wired, leaving many near-isolated
+entities invisible to the comparative-relationship views. Two phases:
+
+**Phase 1 — enrichment** (`enrich_underwired_traditions.sql`): added meaningful
+typed edges (interpretatio/`embodies`/family/triad/domain/healing patronage) —
+no new entities — lifting edge-density to the healthy range: Roman 1.27→1.90,
+Etruscan 1.26→1.94, Celtic/Irish 1.72→2.04, Canaanite/Ugaritic →3.39, Celtic/
+British 1.11→2.00, Gaulish/Welsh/Phoenician →1.72–1.75. Wired the obvious
+missing interpretatio of the major Roman gods (Vulcan→Hephaestus, Neptune→
+Poseidon, Pluto→Hades, Bacchus→Dionysus, Vesta→Hestia, Tellus→Gaia) and the
+deified virtues (Fortuna→Tyche, Pax→Eirene, Spes→Elpis, Salus→Hygieia,
+Concordia→Homonoia). Also fixed the 2 stray ref-only entities (Ogmios→Lucian's
+*Heracles*, Andraste→Cassius Dio) — ref-only outside the by-design set is now 0.
+
+**Phase 2 — roster** deepened the two traditions still under their attested
+depth:
+- **Mesopotamian 76 → 117** (`deepen_mesopotamian_v2.sql`): civic/functional
+  gods (Ninshubur, Isimud, Ishara, Pabilsag, Dagan, Tishpak, Enbilulu, the
+  grain/flocks/building gods), the Seven Sages by name (the apkallu), underworld
+  officials & demons (Humut-tabal, Hushbishag, Sulak, the Lamassu/Shedu
+  guardian pair), and the primordial theogony (Lahamu, Enmesharra, Alala &
+  Belili). From Black & Green, Lambert's *Babylonian Creation Myths*, and the
+  Uruk List of Sages.
+- **Germanic/Norse 46 → 96** (`deepen_norse.sql`): the myth-families wired as a
+  graph — Loki's kin (Fárbauti, Laufey, Angrboða, Sigyn), Thor's sons (Móði,
+  Magni), the sun/moon/day/night genealogy (Sól, Máni, Nótt, Dagr, Mundilfari,
+  Dellingr), Odin's ancestry (Borr, Bestla), the Mead of Poetry cycle
+  (Suttungr, Gunnlöð, Fjalar, Galar), the dwarf-smiths (Brokkr, Sindri), and
+  the named giants, dwarves, and mythological animals (Sleipnir, Huginn &
+  Muninn, Geri & Freki, the Ragnarök wolves). From the Poetic & Prose Eddas,
+  Simek, and Lindow. Entity-kinds kept strictly distinct (god/giant/dwarf/
+  animal/collective); disguises (Þökk=Loki) and pure name-list filler excluded.
+
+Homonyms registered intentional_distinct: Alala (Mesopotamian primordial ↔
+Greek war-cry). Integrity preserved (0 unsourced / 0 unresolved / 0 dup-pairs /
+0 unreviewed duplicates). Primary/scholarly coverage 95.4% → **95.7%**. Now
+**2,064 entities**, 3,380 relationships, 270 sources, 81 traditions.
+
 ## v1.59.0 — 2026-06-15
 
 ### Cross-tradition gap audit: deepen six under-mined traditions + wire Orthodoxy
