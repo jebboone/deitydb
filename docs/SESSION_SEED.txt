@@ -1,0 +1,163 @@
+================================================================================
+DEITYDB — SESSION SEED  (current as of v1.56.0, 2026-06-15)
+================================================================================
+A source-traceable comparative-religion database of spiritual entities (gods,
+angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
+monsters, cosmological realms, ritual categories, personified abstractions)
+across Western/Near-Eastern traditions. It distinguishes entity KINDS rather than
+collapsing everything into "gods."
+
+CURRENT SCALE: 1,682 entities · 2,760 relationships · 244 sources · 78 tradition
+labels · ~94% of entities backed by a primary text or scholarly edition ·
+0 unsourced · 0 unresolved relationship refs · 0 duplicate source-pairs ·
+0 unreviewed duplicates. Version 1.56.0.
+
+--------------------------------------------------------------------------------
+INFRASTRUCTURE / TOPOLOGY
+--------------------------------------------------------------------------------
+- Working dir: /home/jeb/deitydb  (IS a git repo despite env banner; remote
+  git@github.com:jebboone/deitydb.git, branch main, SSH auth)
+- Postgres (source of truth): Docker container `deitydb`, user postgres / db
+  deitydb / port 5432.  Query:  docker exec deitydb psql -U postgres -d deitydb -P pager=off -c "..."
+  (use `docker exec -i ... < file.sql` to run a script file)
+- Datasette (local preview): container `deitydb-dev` on :8080, serves a baked
+  sqlite (Datasette pinned 0.65.2)
+- Live public site: https://deitydb-explorer.fly.dev  (fly app deitydb-explorer)
+- Python venv (for export): /home/jeb/projects/deitydb/.venv  (has db-to-sqlite)
+- flyctl: $HOME/.fly/bin  (authed as jebboone2@gmail.com)
+- Commit trailer: Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+--------------------------------------------------------------------------------
+PUBLISH CYCLE (run after applying SQL to Postgres)
+--------------------------------------------------------------------------------
+1. bump VERSION (e.g. sed -i 's/^1\.56\.0/1.57.0/' VERSION) + add CHANGELOG.md entry
+2. source /home/jeb/projects/deitydb/.venv/bin/activate
+   bash scripts/export_sqlite.sh deitydb.sqlite      # Postgres -> sqlite
+3. docker build -t deitydb .                           # bakes sqlite+metadata+templates+plugins+VERSION
+4. docker rm -f deitydb-dev; docker run -d --name deitydb-dev -p 8080:8080 deitydb
+5. export PATH="$HOME/.fly/bin:$PATH"; flyctl deploy -a deitydb-explorer
+6. verify live (curl https://deitydb-explorer.fly.dev/deitydb.json?sql=...), then
+   git add scripts/<file>.sql CHANGELOG.md VERSION ; git commit ; git push origin HEAD
+- Website stats AUTO-UPDATE: plugins/release_stats.py exposes db_entities/
+  db_relationships/db_sources/db_traditions (from v_release_metrics) AND db_version
+  (from the VERSION file, COPYied into the image). Templates use {{ db_* }} / {{ db_version }}.
+  metadata.yaml is now VERSION-FREE on purpose — don't re-add a hardcoded version.
+  README.md + CLAUDE.md DO carry a hardcoded "Current Release" snapshot — bump them manually.
+
+--------------------------------------------------------------------------------
+SCHEMA ESSENTIALS  (schema/bootstrap.sql -> tables.sql, constraints.sql, views.sql)
+--------------------------------------------------------------------------------
+- entities(entity_id PK, canonical_name, greek_name, tradition, entity_type,
+  category, primary_domains, tags, cult_scope, primary_period, evidence_confidence
+  CHECK A/B/C/D, review_status, inclusion_basis, earth_association_score 0-5,
+  chthonic_flag, serpent_flag, short_note).  Use review_status 'candidate_verified_name'.
+- entity_sources(entity_id, source_id, evidence_type, source_note).  PK =
+  (entity_id, source_id, evidence_type).  (entity_id,source_id) is value-unique now.
+- entity_relationships(subject_entity_id, relationship_type, object_entity_id,
+  confidence['high'/'medium'/'low'], rationale, source_id, review_status['reviewed']).
+  UNIQUE(subject,type,object). relationship_type FK -> relationship_types.
+- entity_periods(entity_id, period_id, confidence['A'..], rationale, source_id,
+  review_status).  PK(entity_id,period_id) — many-to-many.
+- periods(period_id, tradition, period_name, start_year, end_year, notes) — 71
+  periods with integer years (BCE negative). The "Christ event" ~ year 1.
+- sources(source_id, title, url, source_type, scope).
+- entity_duplicate_review(canonical_name, entity_id, duplicate_group_note,
+  decision='intentional_distinct') — register cross-tradition homonyms here.
+- v_release_metrics: entities/relationships/sources/tradition_tags(=853 tag rows,
+  NOT the 78 distinct traditions)/unreviewed_duplicates/unresolved_relationships.
+
+CONTROLLED VOCABULARIES (keep clean; normalized via scripts, no CHECK constraint):
+- source_type (6): 'primary text', 'secondary scholarship', 'reference work',
+  'primary inscription/artifact', 'heresiological source', 'internal'.
+- evidence_type (5): 'direct attestation', 'scholarly attestation',
+  'index attestation', 'inscriptional attestation', 'probable attestation'.
+  USE THESE EXACT STRINGS in new entity_sources rows.
+
+--------------------------------------------------------------------------------
+GOTCHAS (learned the hard way — don't repeat)
+--------------------------------------------------------------------------------
+1. relationship_type 'created_by' DOES NOT EXIST. Use 'creator_of' (subject->object).
+   This rolled back two whole transactions. Check relationship_types before using a verb.
+2. Cross-tradition HOMONYMS (same canonical_name, different tradition) raise
+   v_release_metrics.unreviewed_duplicates. Fix: add BOTH entities to
+   entity_duplicate_review (decision 'intentional_distinct'); often also wire a
+   reception_of edge. Same-tradition-continuum dups (e.g. Italic vs Roman Faunus)
+   should instead be MERGED, not split.
+3. ALWAYS add entity_periods links for new entities (earlier passes forgot, leaving
+   ~150 undated; v1.51.0 backfilled them). Pick the right period_id from `periods`.
+4. evidence_type used to be 25 ad-hoc values that caused duplicate (entity,source)
+   pairs (same citation under two spellings). Normalized in v1.50.1 — keep using
+   the 5 controlled values so ON CONFLICT dedupes correctly.
+5. Use ON CONFLICT DO NOTHING on every insert. Verify after every script:
+   unsourced / unresolved_rel / dup_pairs / unreviewed_duplicates all = 0.
+6. db title / version: metadata.yaml is version-free; VERSION drives the footer.
+
+--------------------------------------------------------------------------------
+HOUSE STYLE FOR A CONTENT BUILD-OUT (the repeatable pattern)
+--------------------------------------------------------------------------------
+One committed script per tradition in scripts/, structured: (a) INSERT new sources;
+(b) INSERT entities (full attrs); (c) INSERT entity_sources (each -> its primary
+locus, normalized evidence_type); (d) INSERT entity_periods; (e) INSERT
+entity_relationships (typed verbs, wire the actual myth/theogony as a graph, not a
+flat list); (f) register any homonyms in entity_duplicate_review; (g) verify block.
+Then run the publish cycle. Entity-id convention: ENT_<TRAD>_<NAME>
+(e.g. ENT_MES_, ENT_NOR_, ENT_ISL_, ENT_JM_, ENT_HTT_, ENT_ORTH_, ENT_HER_, ENT_ZOR_).
+
+METHODOLOGY RULES (enforce):
+- Prefer typed relations (patron_of, embodies, opposes, emanates_from, slays,
+  child_of, member_of, consort_of, identified_with, reception_of...). Treat
+  associated_with as a code smell.
+- Every entity needs >=1 source; prioritize PRIMARY texts / scholarly editions.
+  NEVER fabricate a source or a citation locus. If no clean primary locus exists,
+  leave it / flag it rather than invent.
+- Humans only if "raised to functional godhood / great cultic esteem" (Mary
+  Theotokos, the Imams, deified emperors, great wonderworker-saints). EXCLUDE
+  theologians/authors qua authors.
+- Don't collapse entity kinds. Keep the strict graph (0 dangling refs).
+- Cross-tradition influence is a feature: wire reception_of/syncretized_with edges
+  (e.g. Zoroastrian Az -> Manichaean Az; Greek Hecate -> Chaldean Hecate; Gnostic
+  Demiurge reception_of the Hermetic/Platonic Demiurge; Aeshma -> Asmodeus theme).
+
+--------------------------------------------------------------------------------
+WHAT'S BEEN DONE (the arc)
+--------------------------------------------------------------------------------
+- Sourcing-rigor program COMPLETE (whole dataset 93.6% -> ~94% primary/scholarly):
+  Greek (Hesiod/Homer/tragedians/Ovid/Nonnus/etc.), Christian/Israelite, scattered
+  singles, the Greek long tail. evidence_type + source_type vocabularies normalized.
+- CONTENT REBALANCING (was Gnostic-skewed): Zoroastrian 16->53, Jewish 56->112
+  (Second Temple, rabbinic/Hekhalot, AND Lurianic Kabbalah), Manichaean 15->32,
+  Mandaean 15->31, Roman 23->43, Christian 65->86 (patristic + Eastern Orthodox),
+  Hermetic/Theurgic 5->22, Islam 54->73 (incl. full Shi'a Imamate + Muhammad/Fatima).
+- PRE-CHRIST DEEPENING (audit roadmap, now CLOSED): Mesopotamian 36->76,
+  Norse 20->46, Anatolian (Hittite/Hurrian/Luwian) 13->34.
+- CHRONOLOGY repaired (v1.51.0): re-dated Zoroastrianism to Achaemenid (was wrongly
+  Sasanian/post-Christ); backfilled period links for ~150 entities. Only the 118
+  Cross-traditional abstractions remain (correctly) undated.
+- Project-health audits done; live site auto-versioning; docs current at v1.56.0.
+
+--------------------------------------------------------------------------------
+OPEN / OPTIONAL NEXT DIRECTIONS (all minor — no structural gaps remain)
+--------------------------------------------------------------------------------
+- Deeper Western/medieval Christianity (Latin doctors are deliberately excluded;
+  could add more medieval saints with major cultus).
+- Phoenician (4) and other minor pre-Christ Semitic (Aramean 3, Urartian 4,
+  Elamite 4, Phrygian 3) could each be deepened.
+- Quranic prophets (mostly human prophets — methodology-limited).
+- Classical/late-antique pagan is SATURATED (Greek 462 reference-grade, Late
+  Antique Ritual 64) — not worth more.
+- Possible new feature work: data visualization, an API, more public views.
+
+--------------------------------------------------------------------------------
+MEMORY FILES (/home/jeb/.claude/projects/-home-jeb/memory/)
+--------------------------------------------------------------------------------
+- MEMORY.md (index)
+- deitydb-topology.md      — infra/publish details
+- deitydb-content-balance.md — the rebalancing+deepening program (most current log)
+- deitydb-sourcing-rigor.md  — the rigor program + vocab normalization
+- deitydb-gnostic-research.md — the user's Gnostic build-out + Drive materials
+- deitydb-followups.md      — older follow-ups
+USER CONTEXT: jebboone2@gmail.com. Personal research area = Gnosticism + theurgy/
+Neoplatonism (has a large Theurgy Study Group corpus + key texts in Google Drive;
+local text library at /mnt/c/Users/jebbo/OneDrive/Documents/Texts/, Drive-synced).
+Prefers thorough, primary-sourced, autonomous execution with publish-at-the-end.
+================================================================================
