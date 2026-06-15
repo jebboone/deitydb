@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.56.0 — 2026-06-15
+
+### Content deepening: the Norse and Anatolian pantheons
+
+Closes the last two thin pre-Christ pantheons flagged in the coverage audit
+(`build_norse_core.sql`, `build_anatolian_core.sql`).
+
+**Germanic/Norse 20 → 46:** the missing Aesir (Heimdall, Bragi, Idun, Sif, Hodr, Vidar,
+Vali, Forseti, Ullr, Nanna), the sea-powers Aegir and Ran, the wisdom-beings Mimir,
+Kvasir and Gullveig, the giantess-goddess Skadi, the primordial cosmogony (Ymir,
+Audhumla, Buri, Surtr) and the great jötnar (Thrym, Hrungnir), the hound Garm, and the
+three named Norns (Urd, Verdandi, Skuld). The myth-cycle is wired — Hodr slays Baldr,
+Vali avenges him, Vidar slays Fenrir, Surtr slays Freyr, Odin slays Ymir, Thor slays
+Hrungnir. All to the Poetic and Prose Eddas.
+
+**Anatolian (Hittite / Hurrian / Luwian) ~13 → 34:** the Hurrian Kumarbi-cycle gods
+(Sharruma, Kushuh, Shimige, Aranzah, Tashmishu, Seri & Hurri, Hazzi, Hutena & Hutellura),
+the Hittite cult pantheon (Kamrusepa, Istanu, Mezzulla, Wurunkatte, Lelwani, Halki), and
+the Luwian Iron Age gods (Tarhunz, Tiwaz, Arma, Runtiya, Santa, Iyarri, Maliya). The
+theogony and the household of Teshub are wired. To Hoffner's *Hittite Myths* and Taracha's
+*Religions of Second Millennium Anatolia*.
+
+No new sources needed (the Eddas and the Anatolian references were already registered).
+Every figure period-linked. 0 unsourced; 0 unresolved; duplicate discipline clean.
+
+**This closes the pre-Christ content roadmap from the audit** (Mesopotamian, Norse,
+Anatolian all now at canonical depth).
+
+---
+
 ## v1.55.0 — 2026-06-15
 
 ### Content deepening: Lurianic / theosophical Kabbalah
