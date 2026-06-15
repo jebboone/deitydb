@@ -1,7 +1,6 @@
 ================================================================================
-DEITYDB — SESSION SEED  (current as of v1.59.0, 2026-06-15)
-*** v1.59.0 fully PUBLISHED (Postgres + git + local Datasette + fly.io live).
-*** The earlier fly macaroon-auth outage cleared and the deploy went through.
+DEITYDB — SESSION SEED  (current as of v1.60.0, 2026-06-15)
+*** v1.60.0 fully PUBLISHED (Postgres + git + local Datasette + fly.io live).
 ================================================================================
 A source-traceable comparative-religion database of spiritual entities (gods,
 angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
@@ -9,10 +8,10 @@ monsters, cosmological realms, ritual categories, personified abstractions)
 across Western/Near-Eastern traditions. It distinguishes entity KINDS rather than
 collapsing everything into "gods."
 
-CURRENT SCALE: 1,973 entities · 3,119 relationships · 264 sources · 81 tradition
-labels · ~95% of entities backed by a primary text or scholarly edition ·
+CURRENT SCALE: 2,064 entities · 3,380 relationships · 270 sources · 81 tradition
+labels · ~96% of entities backed by a primary text or scholarly edition ·
 0 unsourced · 0 unresolved relationship refs · 0 duplicate source-pairs ·
-0 unreviewed duplicates. Version 1.59.0.
+0 unreviewed duplicates. Version 1.60.0.
 
 --------------------------------------------------------------------------------
 INFRASTRUCTURE / TOPOLOGY
@@ -135,7 +134,21 @@ WHAT'S BEEN DONE (the arc)
 - CHRONOLOGY repaired (v1.51.0): re-dated Zoroastrianism to Achaemenid (was wrongly
   Sasanian/post-Christ); backfilled period links for ~150 entities. Only the 118
   Cross-traditional abstractions remain (correctly) undated.
-- Project-health audits done; live site auto-versioning; docs current at v1.59.0.
+- Project-health audits done; live site auto-versioning; docs current at v1.60.0.
+- CONNECTIVITY ENRICHMENT + MES/NORSE DEEPENING (v1.60.0): a density/chronology/
+  source-rigor audit found the top gap was CONNECTIVITY not roster. Phase 1
+  (enrich_underwired_traditions.sql): typed edges, NO new entities, lifted
+  Roman 1.27->1.90, Etruscan ->1.94, Irish ->2.04, Ugaritic ->3.39, British
+  1.11->2.00, Gaulish/Welsh/Phoenician ->~1.73; wired major-Roman interpretatio
+  + deified virtues; fixed 2 ref-only (Ogmios->Lucian, Andraste->Cassius Dio).
+  Phase 2: Mesopotamian 76->117 (deepen_mesopotamian_v2.sql -- civic gods, the
+  named apkallu sages, underworld demons, primordial theogony) + Germanic/Norse
+  46->96 (deepen_norse.sql -- myth-families wired: Loki's kin, Thor's sons,
+  sun/moon/day/night, Odin's ancestry, Mead of Poetry, dwarf-smiths, named
+  giants/dwarves/animals). LESSON RE-CONFIRMED: adding a roster batch drops that
+  tradition's edge-density -- ALWAYS wire new entities into their collectives/
+  families in the SAME pass (Norse needed a member_of-collective supplement to
+  hold ~1.58). Homonym: Alala (Mesopotamian/Greek war-cry) registered both sides.
 - CROSS-TRADITION GAP AUDIT (v1.59.0): audited ALL 81 traditions by count +
   relationship density; deepened six under-built ones (verified by 4 research
   passes, all primary-sourced + period-linked) and fixed one wiring defect:
