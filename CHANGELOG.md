@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.38.0 — 2026-06-14
+
+### Sourcing rigor III: Greek nymphs, heroes, and daimon stragglers
+
+Third Greek pass (`source_greek_nymphs_heroes.sql`), using the newly-added Plato
+*Symposium* (SRC_PLATO_SYMPOSIUM) and Hesiod *Works & Days* (SRC_HESIOD_WORKS_DAYS):
+- **Heroes / deified mortals** (39) → **Apollodorus, *Library*** (the mythographic
+  handbook); the Trojan/Odyssean heroes also → Homer.
+- **Nymphs** → Homeric Hymns (the nymph-classes); Meliae → Hesiod *Theog.* 187; Calypso →
+  *Odyssey* 5; genealogical nymphs (Aegina, Cyrene, Adrasteia, Idaia) → Apollodorus;
+  local-cult nymphs (Corycia, Neda, Dirce) → Pausanias.
+- **Daimon stragglers** → Penia/Poros → Plato *Symposium* 203b; Aidos/Elpis/Pheme/Arete
+  and the two Strifes → Hesiod *Works & Days*.
+
+Result: Greek entities with a primary source **56% → 65%**; ref-only **202 → 161** (290 →
+161 over three passes; 37% → 65% coverage). +2 sources (165 total); 0 unsourced.
+
+The remaining ~161 Greek ref-only are the long tail — later/obscure personifications and
+collectives (e.g. the Shield daimones, tragedian and Xenophon personifications, Nonnan
+nymphs) that need primary texts not yet in the registry.
+
+---
+
 ## v1.37.0 — 2026-06-14
 
 ### Sourcing rigor II: Greek Orphic primordials, rivers, and Hesiodic daimones
