@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.38.1 — 2026-06-14
+
+### Cleanup: de-duplicate entity_sources
+
+The Greek rigor passes' bulk-by-type inserts added `evidence_type='Direct attestation'`
+rows for sources some entities already carried under a different `evidence_type` — and
+since the entity_sources PK is `(entity_id, source_id, evidence_type)`, these did not
+conflict, leaving 78 redundant rows (plus 2 pre-existing original-data duplicates).
+`dedupe_entity_sources.sql` removes them, keeping the more specific citation. No coverage
+change (the metrics key on source *type*, not these rows); Greek primary coverage holds at
+65%, 0 duplicate (entity_id, source_id) pairs remain.
+
+Noted TODO: the `evidence_type` vocabulary is itself inconsistent across the dataset
+(snake_case `primary_attestation` vs `Primary text` vs `Direct attestation`) and would
+benefit from the same controlled-vocabulary normalisation already applied to `source_type`.
+
+---
+
 ## v1.38.0 — 2026-06-14
 
 ### Sourcing rigor III: Greek nymphs, heroes, and daimon stragglers
