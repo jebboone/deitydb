@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.49.0 — 2026-06-14
+
+### Content normalization VII: Christian/patristic build-out
+
+Fills in the parts of the Christian cosmos the DB had skipped (`build_christian_patristic.sql`):
+the divine persons, the apocalyptic cast, the Gospel demons, and the great martyrs of
+the patristic age. Christian family **45 → 65**, each entity to a primary source:
+
+- **The divine persons:** God the Father and the Holy Spirit (with Jesus Christ, already
+  present, completing the Trinity), to the New Testament and the Nicene Creed.
+- **The apocalyptic cast of Revelation:** the Beast (666), the False Prophet, the Whore
+  of Babylon, and the Four Horsemen.
+- **The Gospel demons:** Beelzebul (the prince of demons, identified with Satan), Mammon,
+  and Legion.
+- **The martyrs and patristic saints:** the protomartyr Stephen, Perpetua and Felicity,
+  Thecla, Lawrence, Sebastian, Agnes, Cecilia, Christopher, Barbara, Margaret of Antioch,
+  and Martin of Tours — figures of major intercessory cultus, joining the saints already
+  in the set.
+
++4 sources (228 total: the Nicene Creed, the Passion of Perpetua, the Acts of Paul and
+Thecla, Sulpicius' Life of Martin). The "Holy Spirit" homonym (Gnostic/Christian) is
+registered as intentionally distinct. Whole-dataset rigor rose to **94.2%**. 0 unsourced;
+0 unresolved; duplicate discipline clean.
+
+**Rebalancing scorecard (v1.42 → v1.49):** Zoroastrian 16→53, Jewish 56→92, Manichaean
+15→32, Mandaean 15→31, Roman 23→43, Christian 45→65 — the late-antique religious world
+is now represented in proportion, with sourcing rigor higher than when the program began.
+
+---
+
 ## v1.48.0 — 2026-06-14
 
 ### Content normalization VI: Roman build-out
