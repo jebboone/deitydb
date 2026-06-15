@@ -8,6 +8,7 @@ RUN pip install --no-cache-dir "datasette==0.65.2" \
 WORKDIR /data
 COPY deitydb.sqlite .
 COPY metadata.yaml .
+COPY VERSION .
 
 COPY templates/ /templates/
 COPY static/    /static_files/
