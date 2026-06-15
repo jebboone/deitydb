@@ -1,5 +1,40 @@
 # Changelog
 
+## v1.42.0 — 2026-06-14
+
+### Sourcing rigor VII: the Greek long tail
+
+The last large rigor gap closed (`source_greek_long_tail.sql`). The ~154 Greek
+entities still sourced only to the Theoi index are now matched to verified
+**primary-text loci**, each cited to its exact ancient passage. +32 public-domain
+sources (208 total): Ovid (*Metamorphoses*, *Heroides*), Nonnus' *Dionysiaca*,
+Lucian's *Alexander* (Glycon), Strabo, Diodorus Siculus, Callimachus, Theocritus,
+Apuleius (*Golden Ass* — Psyche), Virgil's *Georgics* (Aristaeus), Apollonius'
+*Argonautica*, Damascius (the Orphic Rhapsodic theogony), Aeschylus (*Oresteia*,
+*Suppliants*), Euripides (*Bacchae*, *Heracles*, *Heracleidae*), Pindar, four
+Aristophanes comedies, Sappho, Alcaeus, Theognis, Posidippus, Hyginus, Mnaseas,
+Philostratus, Zenobius (preserving Sappho fr. 178), Servius, and the *Suda*.
+
+Coverage of the cluster: the cosmogonic/Hesiodic catalogues (Charites, Horae,
+Muses, Nereids, Oceanids, Erinyes, Cyclopes) → *Theogony*; the metamorphosis
+nymphs (Daphne, Echo, Syrinx, Salmacis, Arethusa) → Ovid; the underworld rivers
+→ *Odyssey* 10 / Plato; the Asklepian and Eleusinian figures, cult-forms, and
+local heroes (Trophonius, Amphiaraus, Despoina) → Pausanias; the monsters (Hydra,
+Geryon, Scylla, Minotaur) → Apollodorus / Homer; the dream-daimones
+(Morpheus, Phantasos, Phobetor) → Ovid *Met.* 11; the Orphic primordials (Ophion,
+Eurynome, Hydros, Thesis) → Apollonius / Damascius; the mystery collectives
+(Kabeiroi, Korybantes, Kouretes, Telchines) → Strabo / Diodorus.
+
+Whole-dataset primary/scholarly coverage **82.8% → 93.6%**; ref-only 236 → 88.
+The remaining 88 are the **Cross-traditional abstractions (81**, appropriately
+referenced to Eliade's *Encyclopedia of Religion* — cross-cultural concepts not
+tied to a single primary text) and **7 Greek figures** that survive only through
+scholia, lexica, or cult-epithets with no clean primary locus (Lampades,
+Mormolykeia, Eleutheria, Soter, Soteria, Kakodaimon, Aceso). 0 duplicate pairs;
+0 unsourced.
+
+---
+
 ## v1.41.0 — 2026-06-14
 
 ### Sourcing rigor VI: the scattered singles
