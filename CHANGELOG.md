@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.55.0 — 2026-06-15
+
+### Content deepening: Lurianic / theosophical Kabbalah
+
+Adds the theosophical superstructure on top of the existing Sefirot, Ein Sof and Adam
+Kadmon (`build_lurianic_kabbalah.sql`). Jewish Mystical **39 → 59**:
+
+- **The five partzufim** (divine configurations) wired to their sefirot: Arikh Anpin
+  (Keter) and the concealed Atika Kadisha, Abba (Hokhmah), Imma (Binah), Zeir Anpin (the
+  six emotive sefirot) and Nukva (Malkhut / the Shekhinah) — with Zeir Anpin born of Abba
+  and Imma, and Nukva his consort.
+- **The four worlds (ABYA)** as a descent: Atziluth → Beriah → Yetzirah → Assiah.
+- **The Lurianic cosmogony**, wired as a chain: the **Tzimtzum** (the self-contraction of
+  Ein Sof), the Reshimu and the Kav (from which Adam Kadmon emanates), Olam ha-Tohu and the
+  **Shevirat ha-Kelim** (the breaking of the vessels), the scattered **Netzotzot** (holy
+  sparks), and the **Tikkun** that gathers them and overcomes the shells.
+- **The realm of evil:** the **Qliphoth** (the shells from the broken vessels) and the
+  **Sitra Achra**, ruled by Samael with Lilith — plus **Da'at**, the hidden sefirah.
+
++1 primary source (244 total: Hayyim Vital's *Etz Hayyim*, alongside the Zohar) and a new
+Lurianic/Safed Kabbalah period. 0 unsourced; 0 unresolved; duplicate discipline clean.
+
+---
+
 ## v1.54.0 — 2026-06-15
 
 ### Content deepening: Eastern Orthodox Christianity
