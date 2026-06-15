@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.41.0 — 2026-06-14
+
+### Sourcing rigor VI: the scattered singles
+
+Mop-up of the ref-only entities outside the big Greek and Cross-traditional sets
+(`source_scattered_singles.sql`). +6 public-domain primary sources (176 total): the three
+regional saints' Vitae (Eligius, Dunstan, Roch — **Christian now 100% primary**), and
+three Shi'a primaries (Nahj al-Balagha, al-Tabari's *History*, al-Kulayni's *al-Kafi*).
+- **Christian/Biblical** (Abaddon, Apollyon, Behemoth, the Dragon of Revelation, Leviathan)
+  → Revelation / Job.
+- **Christian reception** (the patristic Hecate → Augustine's *City of God*; Lucifer →
+  Isaiah 14:12 + Luke 10:18).
+- **Shi'a** — Ali → Nahj al-Balagha + al-Tabari + Quran 5:55; Husayn → al-Tabari (Karbala)
+  + Quran 33:33; the Mahdi & the Occultation → al-Kafi; Walaya → Quran 5:55.
+- **Jewish** Torah → the Pentateuch; **Pre-Islamic Arabian** Hubal → Hoyland.
+- **Greek hybrid sub-traditions** → Greek primary texts (Adrasteia/Marsyas → Apollodorus;
+  Protogonos/Corybantes → Orphic Hymns; Dactyls/Telesphorus/Sibyl → Pausanias; Trivia →
+  Virgil; Aion → the Greek Magical Papyri).
+
+Whole-dataset primary/scholarly coverage **80.9% → 82.8%**; ref-only 262 → 236. The
+remainder is the Greek long tail (~154, needs Nonnus/Pindar/the tragedians), the
+Cross-traditional abstractions (~81, appropriately referenced to Eliade), and the Telchines
+(needs Strabo/Diodorus). 0 duplicate pairs; 0 unsourced.
+
+---
+
 ## v1.40.0 — 2026-06-14
 
 ### Sourcing rigor V: Christian and Israelite/Second Temple → primary texts
