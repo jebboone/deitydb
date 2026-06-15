@@ -1,6 +1,6 @@
 ================================================================================
-DEITYDB — SESSION SEED  (current as of v1.60.0, 2026-06-15)
-*** v1.60.0 fully PUBLISHED (Postgres + git + local Datasette + fly.io live).
+DEITYDB — SESSION SEED  (current as of v1.61.0, 2026-06-15)
+*** v1.61.0 fully PUBLISHED (Postgres + git + local Datasette + fly.io live).
 ================================================================================
 A source-traceable comparative-religion database of spiritual entities (gods,
 angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
@@ -8,10 +8,10 @@ monsters, cosmological realms, ritual categories, personified abstractions)
 across Western/Near-Eastern traditions. It distinguishes entity KINDS rather than
 collapsing everything into "gods."
 
-CURRENT SCALE: 2,064 entities · 3,380 relationships · 270 sources · 81 tradition
+CURRENT SCALE: 2,107 entities · 3,400 relationships · 272 sources · 81 tradition
 labels · ~96% of entities backed by a primary text or scholarly edition ·
 0 unsourced · 0 unresolved relationship refs · 0 duplicate source-pairs ·
-0 unreviewed duplicates. Version 1.60.0.
+0 unreviewed duplicates. Version 1.61.0.
 
 --------------------------------------------------------------------------------
 INFRASTRUCTURE / TOPOLOGY
@@ -134,7 +134,28 @@ WHAT'S BEEN DONE (the arc)
 - CHRONOLOGY repaired (v1.51.0): re-dated Zoroastrianism to Achaemenid (was wrongly
   Sasanian/post-Christ); backfilled period links for ~150 entities. Only the 118
   Cross-traditional abstractions remain (correctly) undated.
-- Project-health audits done; live site auto-versioning; docs current at v1.60.0.
+- Project-health audits done; live site auto-versioning; docs current at v1.61.0.
+- MEDIEVAL WESTERN CHRISTIANITY (v1.61.0, build_medieval_western_christianity.sql):
+  Christian (Western) 54->97 (+43). The major-cultus medieval Latin saints the
+  roster had skipped: mendicant/monastic founders (Dominic, Clare, Anthony of
+  Padua, Bernard, Bruno, Norbert, Romuald, Bridget of Sweden, Scholastica),
+  mystics w/cultus (Catherine of Siena, Hildegard, Gertrude, Mechtild of
+  Hackeborn, Catherine of Genoa), martyr/political saints (Becket, Stanislaus,
+  Nepomuk, Wenceslaus, Boniface, Adalbert, Olaf, Canute), royal saints (Louis
+  IX, Edward Confessor, Stephen I Hungary, Elizabeth Hungary, Margaret Scotland,
+  Henry II & Cunigunde, Casimir), pilgrimage/helper cults (James/Compostela,
+  Three Kings/Cologne, Faith of Conques, Leonard, Giles, Fourteen Holy Helpers,
+  Denis, Genevieve, Cuthbert, Swithun, Edmund, Walburga, Brigid of Kildare).
+  All ENT_SAINT_ ids. Brigid of Kildare reception_of the Irish goddess Brigid
+  (ENT_CEL_BRIGID). RULES applied: scholastic Doctors-qua-authors EXCLUDED
+  (Aquinas/Bonaventure/Anselm/Albert/Scotus); 4 included Doctors (Anthony of
+  Padua/Bernard/Catherine Siena/Hildegard) for popular cultus; Julian of
+  Norwich + Mechtild of Magdeburg excluded (no Latin cultus). GOTCHA: sourcing
+  43 saints only to Farmer (which had been classed 'reference work') tanked
+  coverage 95.7->94.1 -- FIXED by reclassifying SRC_FARMER_SAINTS to 'secondary
+  scholarship' (it's a single-author critical dictionary, genuinely scholarship,
+  not an aggregator) -> coverage 95.8%. Wired family/order/cultus edges so the
+  +43 did NOT drop Christian density (held 1.70).
 - CONNECTIVITY ENRICHMENT + MES/NORSE DEEPENING (v1.60.0): a density/chronology/
   source-rigor audit found the top gap was CONNECTIVITY not roster. Phase 1
   (enrich_underwired_traditions.sql): typed edges, NO new entities, lifted
@@ -193,8 +214,7 @@ WHAT'S BEEN DONE (the arc)
 --------------------------------------------------------------------------------
 OPEN / OPTIONAL NEXT DIRECTIONS (all minor — no structural gaps remain)
 --------------------------------------------------------------------------------
-- Deeper Western/medieval Christianity (Latin doctors are deliberately excluded;
-  could add more medieval saints with major cultus).
+- ~~Deeper Western/medieval Christianity~~ DONE v1.61.0 (Christian Western 54->97).
 - Phoenician (4) and other minor pre-Christ Semitic (Aramean 3, Urartian 4,
   Elamite 4, Phrygian 3) could each be deepened.
 - Quranic prophets (mostly human prophets — methodology-limited).
