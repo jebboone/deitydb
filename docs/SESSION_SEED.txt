@@ -1,5 +1,9 @@
 ================================================================================
-DEITYDB — SESSION SEED  (current as of v1.58.0, 2026-06-15)
+DEITYDB — SESSION SEED  (current as of v1.59.0, 2026-06-15)
+*** NOTE: v1.59.0 is applied to Postgres + committed/pushed + local Datasette,
+*** but the fly.io DEPLOY IS PENDING — fly had a macaroon-auth/deploy outage
+*** (major incident 15:03 UTC 2026-06-15). Re-run: export PATH="$HOME/.fly/bin:$PATH";
+*** flyctl deploy -a deitydb-explorer  (once fly recovers; check status.flyio.net).
 ================================================================================
 A source-traceable comparative-religion database of spiritual entities (gods,
 angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
@@ -7,10 +11,10 @@ monsters, cosmological realms, ritual categories, personified abstractions)
 across Western/Near-Eastern traditions. It distinguishes entity KINDS rather than
 collapsing everything into "gods."
 
-CURRENT SCALE: 1,799 entities · 2,945 relationships · 254 sources · 80 tradition
+CURRENT SCALE: 1,973 entities · 3,119 relationships · 264 sources · 81 tradition
 labels · ~95% of entities backed by a primary text or scholarly edition ·
 0 unsourced · 0 unresolved relationship refs · 0 duplicate source-pairs ·
-0 unreviewed duplicates. Version 1.58.0.
+0 unreviewed duplicates. Version 1.59.0.
 
 --------------------------------------------------------------------------------
 INFRASTRUCTURE / TOPOLOGY
@@ -133,7 +137,24 @@ WHAT'S BEEN DONE (the arc)
 - CHRONOLOGY repaired (v1.51.0): re-dated Zoroastrianism to Achaemenid (was wrongly
   Sasanian/post-Christ); backfilled period links for ~150 entities. Only the 118
   Cross-traditional abstractions remain (correctly) undated.
-- Project-health audits done; live site auto-versioning; docs current at v1.58.0.
+- Project-health audits done; live site auto-versioning; docs current at v1.59.0.
+- CROSS-TRADITION GAP AUDIT (v1.59.0): audited ALL 81 traditions by count +
+  relationship density; deepened six under-built ones (verified by 4 research
+  passes, all primary-sourced + period-linked) and fixed one wiring defect:
+  Roman 43->94 (deepen_roman.sql, the indigitamenta); Celtic/Irish 12->46
+  (deepen_celtic_irish.sql); Celtic/Welsh 15->39 (deepen_celtic_welsh.sql);
+  Celtic/Gaulish 10->30 + NEW TAG 'Celtic/British' 9 (deepen_celtic_gaulish_
+  british.sql, the inscriptional gods w/ Roman interpretatio); Etruscan 12->31,
+  Canaanite/Ugaritic 14->23, Phoenician 4->12 (deepen_etruscan_semitic.sql);
+  and wire_orthodox.sql lifted Christian/Orthodox from 0.57 to 1.71 edges/entity.
+  Homonyms registered intentional_distinct: Adonis (Phoenician+Greek, reception
+  wired), Athtar (Ugaritic+S.Arabian), Brigantia (British+Irish Brigid). LESSON
+  RE-LEARNED: v_release_metrics requires BOTH sides of a homonym pair in
+  entity_duplicate_review, not just the new entity. STANDING CONCLUSION: Greek
+  being #1 (462) is CORRECT (its record names more discrete beings); always mine
+  an under-built tradition up to its attested depth, never shrink Greek;
+  attestation-limited traditions (Baltic/Slavic/Thracian/Scythian/Aramean/
+  Elamite/Urartian/Phrygian/Mycenaean...) are correctly small — leave them.
 - EGYPTIAN DEEPENING (v1.58.0, deepen_egyptian.sql): Egyptian 91 -> 188 (+97).
   Triggered by a tradition-distribution audit (Greek 462 vs Egyptian 91 ~5x;
   Greek's size is legitimate but the gap was a cataloguing artifact). Added,
