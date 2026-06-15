@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.37.0 — 2026-06-14
+
+### Sourcing rigor II: Greek Orphic primordials, rivers, and Hesiodic daimones
+
+Second Greek pass (`source_greek_hesiodic_v2.sql`), using the newly-added **Orphic Hymns**
+(SRC_ORPHIC_HYMNS), all additive to the Theoi index:
+- **Orphic primordials** → Orphic Hymns: Phanes (H.6), Physis (H.10), Chronos and Ananke
+  (the Orphic cosmogony); plus Orphic-hymn attestation for Nyx/Ouranos/Aether.
+- **River-gods (Potamoi)** → Hesiod, *Theogony* 337–345 (sons of Oceanus and Tethys); the
+  rivers that act in the Iliad (Scamander, Xanthus, Simoeis, Aesepus, Granicus, Satnioeis,
+  Titaresius, Spercheios, Axius, Caicus…) also → Homer.
+- **Hesiodic daimon-personifications**, matched by genealogy → Hesiod, *Theogony*:
+  children of Night (211–225: Apate, Geras, Momos, Oizys, Philotes, Eris), children of
+  Strife (226–232: Ponos, Limos, Algea, Neikea, Dysnomia, Ate, Horkos…), children of Styx
+  (383–385: Zelos, Kratos, Bia), Deimos/Phobos/Harmonia (933–937), Eros/Himeros (201);
+  Enyo and Kydoimos → Homer.
+
+Result: Greek entities with a primary source **45% → 56%**; ref-only **253 → 202** (290 →
+202 over both passes). +1 source (163 total); no entity/relationship change; 0 unsourced.
+
+Still deferred (need sources not yet in the registry): the philosophical personifications
+(Penia/Poros — Plato *Symposium*), *Works & Days* and Shield daimones, and the obscure
+Orphic-theogony figures (Ophion, Hydros, Thesis…).
+
+---
+
 ## v1.36.0 — 2026-06-14
 
 ### Sourcing rigor I: Greek catalogue clusters → primary texts
