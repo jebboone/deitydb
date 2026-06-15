@@ -1,5 +1,5 @@
 ================================================================================
-DEITYDB — SESSION SEED  (current as of v1.56.0, 2026-06-15)
+DEITYDB — SESSION SEED  (current as of v1.57.0, 2026-06-15)
 ================================================================================
 A source-traceable comparative-religion database of spiritual entities (gods,
 angels, demons, jinn, aeons, archons, daimones, saints, prophets, imams, heroes,
@@ -7,10 +7,10 @@ monsters, cosmological realms, ritual categories, personified abstractions)
 across Western/Near-Eastern traditions. It distinguishes entity KINDS rather than
 collapsing everything into "gods."
 
-CURRENT SCALE: 1,682 entities · 2,760 relationships · 244 sources · 78 tradition
-labels · ~94% of entities backed by a primary text or scholarly edition ·
+CURRENT SCALE: 1,702 entities · 2,820 relationships · 249 sources · 80 tradition
+labels · ~95% of entities backed by a primary text or scholarly edition ·
 0 unsourced · 0 unresolved relationship refs · 0 duplicate source-pairs ·
-0 unreviewed duplicates. Version 1.56.0.
+0 unreviewed duplicates. Version 1.57.0.
 
 --------------------------------------------------------------------------------
 INFRASTRUCTURE / TOPOLOGY
@@ -133,7 +133,16 @@ WHAT'S BEEN DONE (the arc)
 - CHRONOLOGY repaired (v1.51.0): re-dated Zoroastrianism to Achaemenid (was wrongly
   Sasanian/post-Christ); backfilled period links for ~150 entities. Only the 118
   Cross-traditional abstractions remain (correctly) undated.
-- Project-health audits done; live site auto-versioning; docs current at v1.56.0.
+- Project-health audits done; live site auto-versioning; docs current at v1.57.0.
+- CHRISTIAN-THEURGIC BRIDGE (v1.57.0, build_christian_theurgy.sql): the Pseudo-
+  Dionysian corpus as a new tradition tag 'Christian/Theurgic' (+20, ENT_DIO_).
+  The nine existing ENT_CHR_ angelic orders wired into Dionysius's three celestial
+  triads (NOT duplicated); the Ecclesiastical Hierarchy (clergy + initiate triads
+  + 3 sacraments-as-theourgiai); the theology (Thearchy, Divine Names [embodies the
+  existing abstractions], the Good, Divine Darkness, theosis, procession/return).
+  Cross-tradition reception_of bridges to the Iamblichan Hypercosmic/Encosmic gods
+  + the Neoplatonic One + Proclus, and theosis aligned with henosis + the Orthodox
+  Uncreated Light. Sources: Parker trans. (public domain) + Rorem + Shaw.
 
 --------------------------------------------------------------------------------
 OPEN / OPTIONAL NEXT DIRECTIONS (all minor — no structural gaps remain)
@@ -146,6 +155,11 @@ OPEN / OPTIONAL NEXT DIRECTIONS (all minor — no structural gaps remain)
 - Classical/late-antique pagan is SATURATED (Greek 462 reference-grade, Late
   Antique Ritual 64) — not worth more.
 - Possible new feature work: data visualization, an API, more public views.
+- (DONE v1.57.0: the Pseudo-Dionysius / Christian-theurgy layer — was the
+  most-recommended remaining content gap; it bridged the Hermetic/Theurgic and
+  Christian blocs. The user has a deeper "Ancient Christian Magic" / Meyer ritual
+  corpus in Drive (Christian Theurgy Sessions 9-12) that could seed a further
+  late-antique Christian-ritual/PGM-adjacent layer if they want to continue.)
 
 --------------------------------------------------------------------------------
 MEMORY FILES (/home/jeb/.claude/projects/-home-jeb/memory/)
