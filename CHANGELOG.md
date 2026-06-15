@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.31.2 — 2026-06-14
+
+### Hygiene: normalize the source_type vocabulary
+
+Collapsed `sources.source_type` from ~39 ad-hoc near-duplicate values to a controlled
+vocabulary of 6 (`normalize_source_types.sql`):
+
+| source_type | count |
+|---|---|
+| primary text | 75 |
+| secondary scholarship | 48 |
+| reference work | 27 |
+| primary inscription/artifact | 4 |
+| heresiological source | 4 |
+| internal | 1 |
+
+Translation-anthologies and critical editions of primary scripture (Layton, Meyer, the
+OTP translations, the Schäfer Hekhalot synopse, etc.) fold into *primary text*; the Theoi
+indices, gazetteers, dictionaries and encyclopedias into *reference work*. Also corrected
+one misclassification: Irenaeus's *Adversus Haereses* moved from *primary text* to
+*heresiological source*, joining Hippolytus/Clement/Tertullian. No entity/relationship
+changes (1,323 / 2,313 / 159).
+
+---
+
 ## v1.31.1 — 2026-06-14
 
 ### Source audit + remediation
