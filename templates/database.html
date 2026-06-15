@@ -16,7 +16,7 @@
   <div class="db-page-header-inner">
     <h1>DeityDB Explorer</h1>
     <p>
-      A comparative database of spiritual beings across seventy-eight Western traditions.
+      A comparative database of spiritual beings across {{ db_traditions }} Western traditions.
       Choose a query below, or write your own SQL at the bottom.
       &nbsp;·&nbsp; <a href="/">← Back to overview</a>
     </p>
@@ -32,7 +32,7 @@
     <a href="{{ urls.query(database, 'tradition-overview') }}" class="query-card">
       <span class="query-card-icon">🌍</span>
       <span class="query-card-title">Tradition Overview</span>
-      <span class="query-card-desc">All 78 traditions with entity and relationship counts at a glance.</span>
+      <span class="query-card-desc">All {{ db_traditions }} traditions with entity and relationship counts at a glance.</span>
     </a>
 
     <a href="{{ urls.query(database, 'browse-tradition') }}" class="query-card">
@@ -160,7 +160,7 @@
     <a href="{{ urls.query(database, 'source-bibliography') }}" class="query-card">
       <span class="query-card-icon">📖</span>
       <span class="query-card-title">Source Bibliography</span>
-      <span class="query-card-desc">All 162 sources with citation counts — primary texts and academic references.</span>
+      <span class="query-card-desc">All {{ db_sources }} sources with citation counts — primary texts and academic references.</span>
     </a>
 
     <a href="{{ urls.query(database, 'relationship-vocabulary') }}" class="query-card">

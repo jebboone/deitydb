@@ -10,26 +10,26 @@
   <h1>DeityDB</h1>
   <p class="subtitle">
     A source-traceable comparative-religion database mapping divine beings,
-    cosmologies, and theological relationships across seventy-eight Western traditions.
+    cosmologies, and theological relationships across {{ db_traditions }} Western traditions.
   </p>
   <div class="hero-art-credit">
     William Blake, <em>The Ancient of Days</em> (1794) · British Museum · Public domain
   </div>
   <div class="hero-stats">
     <div class="hero-stat">
-      <span class="hero-stat-number">1,371</span>
+      <span class="hero-stat-number">{{ db_entities }}</span>
       <span class="hero-stat-label">Entities</span>
     </div>
     <div class="hero-stat">
-      <span class="hero-stat-number">2,416</span>
+      <span class="hero-stat-number">{{ db_relationships }}</span>
       <span class="hero-stat-label">Relationships</span>
     </div>
     <div class="hero-stat">
-      <span class="hero-stat-number">78</span>
+      <span class="hero-stat-number">{{ db_traditions }}</span>
       <span class="hero-stat-label">Traditions</span>
     </div>
     <div class="hero-stat">
-      <span class="hero-stat-number">162</span>
+      <span class="hero-stat-number">{{ db_sources }}</span>
       <span class="hero-stat-label">Sources</span>
     </div>
   </div>
@@ -40,7 +40,7 @@
   <div class="browse-cta">
     <div class="browse-cta-text">
       <h2>Browse &amp; Visualize</h2>
-      <p>Explore all 1,371 entities without writing SQL — search and filter by tradition, type, and domain, or trace how entities connect in an interactive relationship graph.</p>
+      <p>Explore all {{ db_entities }} entities without writing SQL — search and filter by tradition, type, and domain, or trace how entities connect in an interactive relationship graph.</p>
     </div>
     <div class="browse-cta-btns">
       <a href="/explore" class="browse-cta-btn">Browse Entities →</a>
@@ -58,7 +58,7 @@
     <a href="{{ urls.query('deitydb', 'tradition-overview') }}" class="query-card">
       <span class="query-card-icon">🌍</span>
       <span class="query-card-title">Tradition Overview</span>
-      <span class="query-card-desc">All 78 traditions ranked by entity count — a one-page map of the database.</span>
+      <span class="query-card-desc">All {{ db_traditions }} traditions ranked by entity count — a one-page map of the database.</span>
     </a>
 
     <a href="{{ urls.query('deitydb', 'browse-tradition') }}" class="query-card">
@@ -160,7 +160,7 @@
     <div>
       <h3>About DeityDB</h3>
       <p>
-        DeityDB is a source-traceable comparative-religion ontology covering seventy-eight
+        DeityDB is a source-traceable comparative-religion ontology covering {{ db_traditions }}
         traditions — from Greek and Egyptian antiquity through Second Temple Judaism,
         Gnosticism, Islam, and medieval Jewish mysticism. Every entity and relationship
         traces to an academic or primary source.
