@@ -1,5 +1,45 @@
 # Changelog
 
+## v1.67.0 — 2026-06-16
+
+### Early-antiquity fringe completion (Nabataean → Aksum)
+
+Brought the long tail of small/peripheral ancient pantheons up to their attested
+depth, completing the early-antique coverage to the limit of the surviving record.
++78 entities, +161 relationships, +3 sources, +2 periods, +2 traditions (six
+parallel research passes; primary/scholarly-sourced, period-linked, fully wired,
+0 rejected, scorecard clean).
+
+- **Nabataean (NEW tradition, +6):** Shai al-Qaum, Aʿra of Bostra, al-Kutbaʾ,
+  Manotu of Hegra, al-ʿUzza of Petra, plus a Nabataean Pantheon collective that
+  wires in the existing shared Arabian gods (Dushara, Allat, al-ʿUzza, Manat,
+  Hubal) and their interpretatio (Dushara=Dionysus, Allat=Athena, al-ʿUzza=Aphrodite).
+- **Pre-Islamic Arabian (5→17):** the Kaʿba/sanctuary idols of Ibn al-Kalbi's
+  Book of Idols and Qurʾan 71:23 — Isaf & Naʾila, Manaf, Dhu'l-Khalasa, Ruda,
+  Nuhm, al-Fals, Saʿd, Quzaḥ, Suwaʿ, Yaʿuq.
+- **South Arabian (4→16):** Wadd, Anbay, Sayin, Sin/Hawl, Taʾlab, Hawbas, the
+  solar Ladies (Dhat-Himyam, Dhat-Baʿdan, Dhat-Zahran), Basamum, Nasr, Yaghuth.
+- **Aksumite / Ethiopian (NEW tradition, +5):** Ezana's pre-Christian triad
+  Astar–Beher–Medr and the war-god Mahrem (=Ares), with the Dʿmt-period South-
+  Arabian gods (Almaqah, ʿAthtar, Hawbas, Dhat-Himyam) wired into the Aksumite
+  pantheon. New period PER_DMT_AKSUM.
+- **Aramean (3→15):** the Palmyrene set (Bel, Yarhibol, Aglibol, Malakbel,
+  Allat-of-Palmyra), Sin of Harran, Rakib-El & Sahar of Samʾal, Kubaba of
+  Carchemish, Elagabal of Emesa, the Edessene star-twins Azizos & Monimos.
+- **Urartian (4→11):** the Khaldi-Teisheba-Shivini supreme triad collective,
+  Bagmashtu, Selardi, Tushpuea, Huba (=Hurrian Hepat), Sardi, the Spear of Khaldi.
+- **Iberian/Lusitanian (5→13), Mycenaean (3→10), Thracian (5→9), Meroitic (5→7),
+  Elamite (20→23):** Lusitanian votive gods (Cosus, Reue, Bormanicus…); genuinely-
+  distinct Linear B deities (Mistress of the Labyrinth, Drimios, Trisheros…); the
+  Thracian Horseman, Pleistoros, Zibelthiurdos; the Meroitic Aritene & Mash; the
+  Elamite Napir, Tirutur, Suhsipa.
+
+Homonyms kept distinct (Allat-of-Palmyra/Manotu/al-ʿUzza-of-Petra as cult-forms
+cross-linked to the pan-Arabian originals; Yaghuth/Nasr deduplicated to their
+South-Arabian entries). Bare god-list names with no content deliberately excluded
+(e.g. the Urartian "Ua"). The Phoenician pass returned zero rather than pad.
+scripts/gen_fringe.py, scripts/build_fringe.sql, scripts/_fringe/.
+
 ## v1.66.1 — 2026-06-16
 
 ### Surface the occult layer on the public site
