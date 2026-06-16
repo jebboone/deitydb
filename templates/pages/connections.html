@@ -6,10 +6,14 @@
 <style>
 .cx-page{max-width:1180px;margin:0 auto;padding:8px 16px 60px}
 .cx-head h1{margin:0 0 4px}
-.cx-sub{color:#5a5246;max-width:760px;margin:0 0 6px}
-.cx-note{color:#7c7569;font-size:.86rem;margin:0 0 14px}
-.cx-legend{display:flex;align-items:center;gap:8px;font-size:.78rem;color:#7c7569;margin:0 0 14px}
-.cx-ramp{height:12px;width:140px;border-radius:3px;background:linear-gradient(90deg,#f1ecf7,#5b2a9e)}
+.cx-sub{color:#5a5246;max-width:780px;margin:0 0 10px}
+.cx-note{color:#7c7569;font-size:.86rem;margin:0 0 12px}
+.cx-bar{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0 0 14px}
+.cx-toggle{display:inline-flex;border:1px solid #d8cdbb;border-radius:8px;overflow:hidden}
+.cx-toggle button{border:0;background:#faf8f5;color:#5a5246;font-weight:600;padding:7px 14px;cursor:pointer;font-size:.9rem}
+.cx-toggle button.on{background:#5b2a9e;color:#fff}
+.cx-legend{display:flex;align-items:center;gap:8px;font-size:.78rem;color:#7c7569}
+.cx-ramp{height:12px;width:130px;border-radius:3px;background:linear-gradient(90deg,#f1ecf7,#5b2a9e)}
 .cx-scroll{overflow:auto;border:1px solid #e7dccb;border-radius:8px;background:#fff;max-width:100%}
 table.cx-heat{border-collapse:collapse}
 table.cx-heat th.cx-corner{position:sticky;left:0;top:0;z-index:3;background:#fff}
@@ -20,6 +24,10 @@ table.cx-heat td.cx-cell{width:26px;height:26px;border:1px solid #fff;text-align
 table.cx-heat td.cx-cell.empty{background:#faf8f5;cursor:default}
 table.cx-heat td.cx-cell.diag{background:#ece6da;cursor:default}
 table.cx-heat td.cx-cell.sel{outline:2px solid #d4a93b;outline-offset:-2px}
+.cx-const{position:relative;border:1px solid #e7dccb;border-radius:8px;background:#fdfcfb;overflow:hidden}
+.cx-const svg{display:block;width:100%;height:560px}
+.cx-conhint{position:absolute;left:12px;bottom:10px;font-size:.76rem;color:#9a8f7c;pointer-events:none}
+.cx-tip{position:fixed;z-index:50;background:#2b2440;color:#fff;font-size:.8rem;padding:5px 9px;border-radius:6px;pointer-events:none;display:none;max-width:260px}
 .cx-panel{margin-top:22px;border:1px solid #e7dccb;border-radius:8px;background:#fff;padding:18px 20px;display:none}
 .cx-panel h2{margin:0 0 2px;font-size:1.2rem}
 .cx-panel .cx-pmeta{color:#7c7569;font-size:.84rem;margin:0 0 14px}
@@ -29,18 +37,33 @@ table.cx-heat td.cx-cell.sel{outline:2px solid #d4a93b;outline-offset:-2px}
 .cx-link a:hover{text-decoration:underline}
 .cx-verb{display:inline-block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#7c3bd4;background:#f1ecf7;border-radius:10px;padding:1px 8px;margin:0 4px}
 .cx-rat{display:block;color:#6a6258;font-size:.85rem;margin-top:2px}
-.cx-empty-pick{color:#7c7569;font-style:italic}
 </style>
 
 <div class="cx-page">
   <div class="cx-head">
     <h1>Connections</h1>
-    <p class="cx-sub">The comparative heart of DeityDB: where one tradition's figures are received into, syncretized with, equated to, or descend from another's. Darker squares = more links. <strong>Click any square</strong> to read the actual connections.</p>
-    <div class="cx-legend"><span>Fewer</span><span class="cx-ramp"></span><span>More links</span></div>
-    <p class="cx-note" id="cx-note">Loading the cross-tradition web…</p>
+    <p class="cx-sub">The comparative heart of DeityDB: where one tradition's figures are received into, syncretized with, equated to, or descend from another's. <strong>Click a square (or a line) to read the actual connections.</strong></p>
   </div>
 
-  <div class="cx-scroll"><div id="cx-grid"></div></div>
+  <div class="cx-bar">
+    <div class="cx-toggle" role="tablist">
+      <button id="cx-tab-heat" class="on" role="tab">▦ Heatmap</button>
+      <button id="cx-tab-const" role="tab">✦ Constellation</button>
+    </div>
+    <div class="cx-legend"><span>Fewer</span><span class="cx-ramp"></span><span>More links</span></div>
+  </div>
+  <p class="cx-note" id="cx-note">Loading the cross-tradition web…</p>
+
+  <div id="cx-heat-view">
+    <div class="cx-scroll"><div id="cx-grid"></div></div>
+  </div>
+
+  <div id="cx-const-view" style="display:none">
+    <div class="cx-const">
+      <svg id="cx-svg" aria-label="Constellation of traditions"></svg>
+      <span class="cx-conhint">Drag nodes · scroll to zoom · click a line to read its links · click a tradition to focus</span>
+    </div>
+  </div>
 
   <div class="cx-panel" id="cx-panel">
     <h2 id="cx-panel-title"></h2>
@@ -49,112 +72,213 @@ table.cx-heat td.cx-cell.sel{outline:2px solid #d4a93b;outline-offset:-2px}
   </div>
 </div>
 
+<div class="cx-tip" id="cx-tip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 (function () {
 'use strict';
 var VERBS = "'reception_of','received_as','syncretized_with','identified_with','equated_with','aligned_with','cult_form_of','reveals'";
 var TOP_N = 30;
-var gridEl = document.getElementById('cx-grid');
-var noteEl = document.getElementById('cx-note');
-var panelEl = document.getElementById('cx-panel');
-var ptitle = document.getElementById('cx-panel-title');
-var pmeta = document.getElementById('cx-panel-meta');
-var pbody = document.getElementById('cx-panel-body');
+
+/* tradition-family palette (matches the entity graph) */
+var TRAD_COLOR = {greek:'#3b6fd4',egyptian:'#d4873b',mesopotamian:'#c43b8f',christian:'#2a8a4f',islamic:'#1a9e76',jewish:'#c4923b',gnostic:'#7c3bd4',northern:'#3b9dc4',roman:'#c43b3b',zoroastrian:'#c47c3b',hermetic:'#3ba8a0',cross:'#6b7280',other:'#94a3b8'};
+function tradKey(t){t=(t||'').toLowerCase();
+  if(t.indexOf('greek')===0)return'greek';
+  if(t.indexOf('egyptian')===0)return'egyptian';
+  if(t.indexOf('mesopotamian')===0)return'mesopotamian';
+  if(t.indexOf('christian')>=0||t.indexOf('biblical')>=0)return'christian';
+  if(t.indexOf('islamic')>=0||t.indexOf('sufi')>=0||t.indexOf("shi'a")>=0)return'islamic';
+  if(t.indexOf('jewish')>=0||t.indexOf('israelite')>=0||t.indexOf('second temple')>=0)return'jewish';
+  if(t.indexOf('gnostic')>=0||t.indexOf('mandaean')>=0||t.indexOf('manichaean')>=0||t.indexOf('valentinian')>=0)return'gnostic';
+  if(t.indexOf('celtic')>=0||t.indexOf('norse')>=0||t.indexOf('germanic')>=0)return'northern';
+  if(t.indexOf('roman')>=0||t.indexOf('etruscan')>=0||t.indexOf('italic')>=0)return'roman';
+  if(t.indexOf('zoroastrian')>=0||t.indexOf('persian')>=0)return'zoroastrian';
+  if(t.indexOf('hermetic')>=0||t.indexOf('late antique')>=0||t.indexOf('thelemic')>=0)return'hermetic';
+  if(t.indexOf('cross-traditional')>=0)return'cross';
+  return'other';}
+
+/* DOM */
+var gridEl=document.getElementById('cx-grid');
+var noteEl=document.getElementById('cx-note');
+var panelEl=document.getElementById('cx-panel');
+var ptitle=document.getElementById('cx-panel-title');
+var pmeta=document.getElementById('cx-panel-meta');
+var pbody=document.getElementById('cx-panel-body');
+var tipEl=document.getElementById('cx-tip');
+var heatView=document.getElementById('cx-heat-view');
+var constView=document.getElementById('cx-const-view');
+var tabHeat=document.getElementById('cx-tab-heat');
+var tabConst=document.getElementById('cx-tab-const');
+
+/* shared data (filled by init) */
+var rows=[], map={}, totals={}, allTrads=[], maxLinks=0;
+var selectedTd=null, constBuilt=false;
 
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function sqlStr(s){return String(s).replace(/'/g,"''");}
 function clip(s,n){s=String(s||'');return s.length>n?s.slice(0,n-1)+'…':s;}
-function lerp(t){var a=[241,236,247],b=[91,42,158];return 'rgb('+Math.round(a[0]+(b[0]-a[0])*t)+','+Math.round(a[1]+(b[1]-a[1])*t)+','+Math.round(a[2]+(b[2]-a[2])*t)+')';}
+function lerp(t){var a=[241,236,247],b=[91,42,158];return'rgb('+Math.round(a[0]+(b[0]-a[0])*t)+','+Math.round(a[1]+(b[1]-a[1])*t)+','+Math.round(a[2]+(b[2]-a[2])*t)+')';}
+function showTip(ev,txt){tipEl.textContent=txt;tipEl.style.display='block';tipEl.style.left=(ev.clientX+12)+'px';tipEl.style.top=(ev.clientY-10)+'px';}
+function hideTip(){tipEl.style.display='none';}
 
-var map = {};   /* "A|B" -> links */
-var selectedTd = null;
+async function init(){
+  try{ rows=await(await fetch('/deitydb/v_public_cross_tradition_matrix.json?_shape=array&_size=500')).json(); }
+  catch(e){ noteEl.textContent='Could not load the connection data.'; return; }
+  if(!Array.isArray(rows)||!rows.length){ noteEl.textContent='No connection data found.'; return; }
 
-async function init() {
-  var rows;
-  try {
-    rows = await (await fetch('/deitydb/v_public_cross_tradition_matrix.json?_shape=array&_size=500')).json();
-  } catch (e) { noteEl.textContent = 'Could not load the connection data.'; return; }
-  if (!Array.isArray(rows) || !rows.length) { noteEl.textContent = 'No connection data found.'; return; }
-
-  var totals = {}, max = 0;
   rows.forEach(function(r){
-    map[r.tradition_a + '|' + r.tradition_b] = r;
-    map[r.tradition_b + '|' + r.tradition_a] = r;
-    totals[r.tradition_a] = (totals[r.tradition_a]||0) + r.links;
-    totals[r.tradition_b] = (totals[r.tradition_b]||0) + r.links;
-    if (r.links > max) max = r.links;
+    map[r.tradition_a+'|'+r.tradition_b]=r; map[r.tradition_b+'|'+r.tradition_a]=r;
+    totals[r.tradition_a]=(totals[r.tradition_a]||0)+r.links;
+    totals[r.tradition_b]=(totals[r.tradition_b]||0)+r.links;
+    if(r.links>maxLinks) maxLinks=r.links;
   });
-  var allTrads = Object.keys(totals).sort(function(a,b){ return totals[b]-totals[a]; });
-  var trads = allTrads.slice(0, TOP_N);
+  allTrads=Object.keys(totals).sort(function(a,b){return totals[b]-totals[a];});
+  noteEl.innerHTML='Across '+allTrads.length+' traditions and '+rows.length+' connected pairs. The heatmap shows the '+Math.min(TOP_N,allTrads.length)+' most-connected; the constellation shows them all. Full table: <a href="/deitydb/v_public_cross_tradition_matrix">v_public_cross_tradition_matrix</a>.';
+  renderHeatmap();
+}
 
-  noteEl.innerHTML = 'Showing the ' + trads.length + ' most cross-connected traditions of ' + allTrads.length +
-    '. The full table is at <a href="/deitydb/v_public_cross_tradition_matrix">v_public_cross_tradition_matrix</a>.';
-
-  var logmax = Math.log(max + 1);
-  var html = '<table class="cx-heat"><thead><tr><th class="cx-corner"></th>';
-  trads.forEach(function(t){ html += '<th class="cx-col"><div class="cx-col-lbl" title="'+esc(t)+'">'+esc(clip(t,22))+'</div></th>'; });
-  html += '</tr></thead><tbody>';
+/* ── Heatmap ─────────────────────────────────────────────────────── */
+function renderHeatmap(){
+  var trads=allTrads.slice(0,TOP_N);
+  var logmax=Math.log(maxLinks+1);
+  var html='<table class="cx-heat"><thead><tr><th class="cx-corner"></th>';
+  trads.forEach(function(t){html+='<th class="cx-col"><div class="cx-col-lbl" title="'+esc(t)+'">'+esc(clip(t,22))+'</div></th>';});
+  html+='</tr></thead><tbody>';
   trads.forEach(function(rt){
-    html += '<tr><th class="cx-row" title="'+esc(rt)+'">'+esc(clip(rt,24))+'</th>';
+    html+='<tr><th class="cx-row" title="'+esc(rt)+'">'+esc(clip(rt,24))+'</th>';
     trads.forEach(function(ct){
-      if (rt === ct) { html += '<td class="cx-cell diag"></td>'; return; }
-      var r = map[rt + '|' + ct];
-      if (!r) { html += '<td class="cx-cell empty"></td>'; return; }
-      var t = Math.log(r.links + 1) / logmax;
-      var bg = lerp(t), fg = t > 0.5 ? '#fff' : '#3b2a55';
-      html += '<td class="cx-cell" style="background:'+bg+';color:'+fg+'"' +
-        ' data-a="'+esc(rt)+'" data-b="'+esc(ct)+'"' +
-        ' title="'+esc(rt)+' ↔ '+esc(ct)+': '+r.links+' link'+(r.links===1?'':'s')+' ('+esc(r.link_kinds)+')">'+
-        r.links+'</td>';
+      if(rt===ct){html+='<td class="cx-cell diag"></td>';return;}
+      var r=map[rt+'|'+ct];
+      if(!r){html+='<td class="cx-cell empty"></td>';return;}
+      var t=Math.log(r.links+1)/logmax, bg=lerp(t), fg=t>0.5?'#fff':'#3b2a55';
+      html+='<td class="cx-cell" style="background:'+bg+';color:'+fg+'" data-a="'+esc(rt)+'" data-b="'+esc(ct)+'" title="'+esc(rt)+' ↔ '+esc(ct)+': '+r.links+' link'+(r.links===1?'':'s')+' ('+esc(r.link_kinds)+')">'+r.links+'</td>';
     });
-    html += '</tr>';
+    html+='</tr>';
   });
-  html += '</tbody></table>';
-  gridEl.innerHTML = html;
-
+  gridEl.innerHTML=html+'</tbody></table>';
   gridEl.querySelectorAll('td.cx-cell[data-a]').forEach(function(td){
-    td.addEventListener('click', function(){
-      if (selectedTd) selectedTd.classList.remove('sel');
-      selectedTd = td; td.classList.add('sel');
-      openPair(td.dataset.a, td.dataset.b);
+    td.addEventListener('click',function(){
+      if(selectedTd)selectedTd.classList.remove('sel');
+      selectedTd=td; td.classList.add('sel');
+      openPair(td.dataset.a,td.dataset.b);
     });
   });
 }
 
-async function openPair(a, b) {
-  panelEl.style.display = 'block';
-  ptitle.textContent = a + '  ↔  ' + b;
-  pmeta.textContent = 'Loading connections…';
-  pbody.innerHTML = '';
-  panelEl.scrollIntoView({ behavior:'smooth', block:'nearest' });
+/* ── Constellation (force graph of traditions) ───────────────────── */
+function idOf(x){return typeof x==='object'?x.id:x;}
+function buildConstellation(){
+  if(constBuilt) return; constBuilt=true;
+  var wrap=document.querySelector('.cx-const');
+  if(typeof d3==='undefined'){ wrap.innerHTML='<p style="padding:24px;color:#7c7569">Could not load the visualization library.</p>'; return; }
+  var W=wrap.clientWidth||900, H=560;
+  var svg=d3.select('#cx-svg').attr('viewBox','0 0 '+W+' '+H);
+  var g=svg.append('g');
+  svg.call(d3.zoom().scaleExtent([0.2,4]).on('zoom',function(e){g.attr('transform',e.transform);}));
+  svg.on('click',function(){clearFocus();});
 
-  var sql =
-    "SELECT s.entity_id sid, s.canonical_name sname, s.tradition strad," +
-    " r.relationship_type rel, o.entity_id oid, o.canonical_name oname, o.tradition otrad," +
-    " r.confidence conf, r.rationale rat, r.source_id src" +
-    " FROM entity_relationships r" +
-    " JOIN entities s ON s.entity_id = r.subject_entity_id" +
-    " JOIN entities o ON o.entity_id = r.object_entity_id" +
-    " WHERE ((s.tradition = '" + sqlStr(a) + "' AND o.tradition = '" + sqlStr(b) + "')" +
-    "    OR  (s.tradition = '" + sqlStr(b) + "' AND o.tradition = '" + sqlStr(a) + "'))" +
-    " AND r.relationship_type IN (" + VERBS + ")" +
+  var nodes=allTrads.map(function(t){return{id:t,total:totals[t]};});
+  var links=rows.map(function(r){return{source:r.tradition_a,target:r.tradition_b,links:r.links};});
+  var maxTot=d3.max(nodes,function(d){return d.total;})||1;
+  var rScale=d3.scaleSqrt().domain([0,maxTot]).range([5,26]);
+  var labelMin=allTrads.length>20?(totals[allTrads[19]]||0):0;  /* label ~top 20 */
+
+  var sim=d3.forceSimulation(nodes)
+    .force('link',d3.forceLink(links).id(function(d){return d.id;}).distance(function(d){return 130-Math.min(80,d.links*2.2);}).strength(0.25))
+    .force('charge',d3.forceManyBody().strength(-280))
+    .force('center',d3.forceCenter(W/2,H/2))
+    .force('collide',d3.forceCollide(function(d){return rScale(d.total)+6;}));
+
+  var link=g.append('g').selectAll('line').data(links).join('line')
+    .attr('stroke','#b9a9d6').attr('stroke-opacity',0.45)
+    .attr('stroke-width',function(d){return Math.max(1,Math.log(d.links+1)*1.7);})
+    .attr('cursor','pointer')
+    .on('mouseenter',function(e,d){showTip(e,idOf(d.source)+' ↔ '+idOf(d.target)+': '+d.links+' links');})
+    .on('mousemove',function(e,d){showTip(e,idOf(d.source)+' ↔ '+idOf(d.target)+': '+d.links+' links');})
+    .on('mouseleave',hideTip)
+    .on('click',function(e,d){e.stopPropagation();openPair(idOf(d.source),idOf(d.target));});
+
+  var node=g.append('g').selectAll('circle').data(nodes).join('circle')
+    .attr('r',function(d){return rScale(d.total);})
+    .attr('fill',function(d){return TRAD_COLOR[tradKey(d.id)]||TRAD_COLOR.other;})
+    .attr('stroke','#fff').attr('stroke-width',1.5).attr('cursor','pointer')
+    .on('mouseenter',function(e,d){showTip(e,d.id+' · '+d.total+' cross-links');})
+    .on('mousemove',function(e,d){showTip(e,d.id+' · '+d.total+' cross-links');})
+    .on('mouseleave',hideTip)
+    .on('click',function(e,d){e.stopPropagation();focusTradition(d.id);})
+    .call(d3.drag()
+      .on('start',function(e,d){if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
+      .on('drag',function(e,d){d.fx=e.x;d.fy=e.y;})
+      .on('end',function(e,d){if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+
+  var label=g.append('g').selectAll('text').data(nodes.filter(function(d){return d.total>=labelMin;})).join('text')
+    .text(function(d){return clip(d.id,18);})
+    .attr('font-size','10px').attr('text-anchor','middle').attr('fill','#3b2a55')
+    .attr('paint-order','stroke').attr('stroke','rgba(253,252,251,0.9)').attr('stroke-width',3)
+    .attr('stroke-linejoin','round').attr('pointer-events','none');
+
+  sim.on('tick',function(){
+    link.attr('x1',function(d){return d.source.x;}).attr('y1',function(d){return d.source.y;})
+        .attr('x2',function(d){return d.target.x;}).attr('y2',function(d){return d.target.y;});
+    node.attr('cx',function(d){return d.x;}).attr('cy',function(d){return d.y;});
+    label.attr('x',function(d){return d.x;}).attr('y',function(d){return d.y-rScale(d.total)-4;});
+  });
+
+  /* focus / dim */
+  var adj={};
+  links.forEach(function(d){var a=idOf(d.source),b=idOf(d.target);(adj[a]=adj[a]||{})[b]=1;(adj[b]=adj[b]||{})[a]=1;});
+  function focusTradition(t){
+    node.attr('opacity',function(d){return d.id===t||(adj[t]&&adj[t][d.id])?1:0.12;});
+    label.attr('opacity',function(d){return d.id===t||(adj[t]&&adj[t][d.id])?1:0.12;});
+    link.attr('stroke-opacity',function(d){return idOf(d.source)===t||idOf(d.target)===t?0.85:0.05;})
+        .attr('stroke',function(d){return idOf(d.source)===t||idOf(d.target)===t?'#7c3bd4':'#b9a9d6';});
+  }
+  function clearFocus(){
+    node.attr('opacity',1); label.attr('opacity',1);
+    link.attr('stroke-opacity',0.45).attr('stroke','#b9a9d6');
+  }
+}
+
+/* ── View toggle ─────────────────────────────────────────────────── */
+tabHeat.addEventListener('click',function(){
+  tabHeat.classList.add('on'); tabConst.classList.remove('on');
+  heatView.style.display=''; constView.style.display='none';
+});
+tabConst.addEventListener('click',function(){
+  tabConst.classList.add('on'); tabHeat.classList.remove('on');
+  constView.style.display=''; heatView.style.display='none';
+  buildConstellation();
+});
+
+/* ── Shared drill-down panel ─────────────────────────────────────── */
+async function openPair(a,b){
+  panelEl.style.display='block';
+  ptitle.textContent=a+'  ↔  '+b;
+  pmeta.textContent='Loading connections…'; pbody.innerHTML='';
+  panelEl.scrollIntoView({behavior:'smooth',block:'nearest'});
+  var sql=
+    "SELECT s.entity_id sid, s.canonical_name sname, s.tradition strad,"+
+    " r.relationship_type rel, o.entity_id oid, o.canonical_name oname, o.tradition otrad,"+
+    " r.confidence conf, r.rationale rat, r.source_id src"+
+    " FROM entity_relationships r"+
+    " JOIN entities s ON s.entity_id = r.subject_entity_id"+
+    " JOIN entities o ON o.entity_id = r.object_entity_id"+
+    " WHERE ((s.tradition = '"+sqlStr(a)+"' AND o.tradition = '"+sqlStr(b)+"')"+
+    "    OR  (s.tradition = '"+sqlStr(b)+"' AND o.tradition = '"+sqlStr(a)+"'))"+
+    " AND r.relationship_type IN ("+VERBS+")"+
     " ORDER BY r.relationship_type, s.canonical_name";
-
   var data;
-  try {
-    data = await (await fetch('/deitydb.json?sql=' + encodeURIComponent(sql) + '&_shape=array&_size=500')).json();
-  } catch (e) { pmeta.textContent = 'Could not load these connections.'; return; }
-  if (!Array.isArray(data) || !data.length) { pmeta.textContent = 'No comparative links found between these traditions.'; return; }
-
-  pmeta.textContent = data.length + ' comparative link' + (data.length === 1 ? '' : 's') + ' — click any name to open it in the graph.';
-  pbody.innerHTML = data.map(function(r){
-    return '<div class="cx-link">' +
-      '<a href="/graph?start=' + encodeURIComponent(r.sid) + '">' + esc(r.sname) + '</a>' +
-      ' <span class="cx-trad">(' + esc(r.strad) + ')</span>' +
-      '<span class="cx-verb">' + esc(String(r.rel).replace(/_/g,' ')) + '</span>' +
-      '<a href="/graph?start=' + encodeURIComponent(r.oid) + '">' + esc(r.oname) + '</a>' +
-      ' <span class="cx-trad">(' + esc(r.otrad) + ')</span>' +
-      (r.rat ? '<span class="cx-rat">' + esc(r.rat) + (r.src ? '  · ' + esc(r.src) : '') + '</span>' : '') +
+  try{ data=await(await fetch('/deitydb.json?sql='+encodeURIComponent(sql)+'&_shape=array&_size=500')).json(); }
+  catch(e){ pmeta.textContent='Could not load these connections.'; return; }
+  if(!Array.isArray(data)||!data.length){ pmeta.textContent='No comparative links found between these traditions.'; return; }
+  pmeta.textContent=data.length+' comparative link'+(data.length===1?'':'s')+' — click any name to open it in the graph.';
+  pbody.innerHTML=data.map(function(r){
+    return '<div class="cx-link">'+
+      '<a href="/graph?start='+encodeURIComponent(r.sid)+'">'+esc(r.sname)+'</a> <span class="cx-trad">('+esc(r.strad)+')</span>'+
+      '<span class="cx-verb">'+esc(String(r.rel).replace(/_/g,' '))+'</span>'+
+      '<a href="/graph?start='+encodeURIComponent(r.oid)+'">'+esc(r.oname)+'</a> <span class="cx-trad">('+esc(r.otrad)+')</span>'+
+      (r.rat?'<span class="cx-rat">'+esc(r.rat)+(r.src?'  · '+esc(r.src):'')+'</span>':'')+
       '</div>';
   }).join('');
 }
