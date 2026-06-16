@@ -1,5 +1,42 @@
 # Changelog
 
+## v1.66.0 — 2026-06-16
+
+### Late-antique & early-medieval occult build
+
+Added four under-represented occult corpora the user requested (entities rarely
+surfaced in mainstream-tradition rosters), via four parallel research passes:
+
+- **Greco-Egyptian Magical / PGM (+6, new tradition):** the genuinely-new named
+  powers of the Greek Magical Papyri — the Headless One (Akephalos), the
+  Kosmokrator, the aerial-and-chthonic daimones, and the protective name-powers
+  Ablanathanalba and Sesengenbarpharanges — under a new collective, "The Invoked
+  Powers of the Magical Papyri." Crucially, the ~17 PGM-invoked gods that ALREADY
+  existed (Iao, Sabaoth, Abrasax, Aion, Seth/Typhon, Helios, Ra, Selene, Hekate,
+  Ereshkigal, Bes, Harpocrates, Agathos Daimon, Ananke, Pan, Mithras) were wired
+  INTO that collective rather than duplicated — making it a cross-tradition hub of
+  9 distinct traditions, modeling how late-antique magic fused Greek, Egyptian,
+  Jewish and Mesopotamian powers.
+- **Jewish magical angelology (+19, Jewish Mystical):** the angels of the seven
+  firmaments of Sefer ha-Razim (encampment-chiefs Aurpnial/Boel-of-dreams/Pesakir
+  and the third- and sixth-firmament princes), the sword-angels of the Sword of
+  Moses (Margioiel, Vehadrziolo, Totrisi — Soqedhozi already present), Af Bri the
+  rain-angel, and the Teaching of Raziel.
+- **Astral Magic / Picatrix (+11, new tradition):** the seven planetary spirits
+  (each cross-linked to its classical cognate), the Perfect Nature (the sage's
+  celestial guardian), the 28 lunar mansions and the 36 decans.
+- **Solomonic Magic (+11, new tradition):** the seven planetary angels of the
+  grimoire tradition (Cassiel, Sachiel, Anael, Samael-of-Mars new; Michael/
+  Raphael/Gabriel wired from the existing canonical archangels), the angels and
+  notae of the Ars Notoria, the angelic kings of the air and beatific-vision
+  operation of the Liber Juratus, and the Semiforas of the Liber Razielis.
+
++47 entities, +133 relationships, +7 sources (Sefer ha-Razim, Sword of Moses,
+Sefer Raziel, Picatrix, Liber Juratus, Ars Notoria, Liber Razielis), +3 traditions.
+All primary-sourced, period-linked, fully wired (0 orphans), homonyms kept distinct
+(grimoire Anael/Samael vs Testament-of-Solomon/Gnostic), 0 rejected, scorecard
+clean. scripts/gen_occult.py, scripts/build_occult.sql, scripts/_occult/.
+
 ## v1.65.0 — 2026-06-16
 
 ### Deep-past enrichment (archaic Sumerian, predynastic Egyptian, Elamite)
