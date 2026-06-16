@@ -9,7 +9,7 @@
   <div class="gp-header">
     <div class="gp-header-text">
       <h1>Relationship Graph</h1>
-      <p class="gp-subtitle">Search for any entity to see how it connects. Click nodes to expand their relationships.</p>
+      <p class="gp-subtitle">Search for an entity, then click a node to <strong>expand</strong> its connections — and click it again to <strong>collapse</strong> them. Start small and grow only what you want.</p>
     </div>
     <div class="gp-search-wrap">
       <div class="gp-ac" id="gp-ac">
@@ -56,6 +56,7 @@
     {# Floating toolbar #}
     <div class="gp-toolbar" id="gp-toolbar" hidden>
       <span class="gp-stats" id="gp-stats"></span>
+      <button class="gp-tbtn" id="gp-collapse" title="Collapse back to the focal entity">⊟ Collapse all</button>
       <button class="gp-tbtn" id="gp-fit"   title="Fit graph to screen">⊞ Fit</button>
       <button class="gp-tbtn" id="gp-reset-btn" title="Clear and start over">↺ Reset</button>
     </div>
@@ -67,7 +68,7 @@
 
   {# ── Legend ───────────────────────────────────────────────────────── #}
   <div class="gp-legend" id="gp-legend" hidden>
-    <span class="gp-legend-hint">Click node to expand  ·  Drag to reposition  ·  Scroll to zoom</span>
+    <span class="gp-legend-hint"><strong>+</strong> expand  ·  <strong>−</strong> collapse  ·  drag to move  ·  scroll to zoom</span>
     <div class="gp-legend-trads" id="gp-legend-trads"></div>
   </div>
 
@@ -128,14 +129,28 @@ var REL_SHORT = {
 };
 function relLabel(t) { return REL_SHORT[t] || (t || '').replace(/_/g, ' '); }
 
-/* ── State ───────────────────────────────────────────────────────── */
-var nodes = [];      /* array of node objects with d3 .x .y .vx .vy */
-var links = [];      /* array of link objects (source/target resolved by d3) */
-var nodeMap = {};    /* entity_id → node object */
-var linkSet = new Set();   /* "src|type|tgt" → dedup */
-var expanded = new Set();  /* entity_ids that have been expanded */
+/* ── State ───────────────────────────────────────────────────────────
+   master = everything ever fetched. The VISIBLE graph (nodes/links) is
+   recomputed from master each time something is expanded or collapsed:
+   a node is visible iff it's the focal node OR a neighbour of a visible
+   *expanded* node. Collapsing a node therefore hides exactly what was
+   only reachable through it.                                            */
+var master = {
+  nodes: {},          /* id → {id,name,trad,type}                        */
+  adj:   {},          /* id → { neighbourId: true } (undirected)         */
+  edges: {},          /* "sid|type|tid" → {lid,sid,tid,type,conf}        */
+  edgeList: [],       /* same edge objects, as an array                  */
+};
+var pool     = {};         /* id → persistent d3 node obj (keeps x/y)    */
+var fetched  = new Set();  /* ids whose neighbourhood has been loaded    */
+var expanded = new Set();  /* ids currently showing their neighbours     */
+var visibleIds = new Set();/* ids in the current visible graph           */
+var rootId   = null;       /* the focal entity (always visible)          */
+
+var nodes = [];      /* CURRENT visible node objects (from pool)         */
+var links = [];      /* CURRENT visible link objects (rebuilt each pass) */
 var simulation = null;
-var svgSel, gSel, linkG, nodeG, labelG, zoomBehavior;
+var svgSel, gSel, linkG, nodeG, labelG, indG, zoomBehavior;
 
 /* ── DOM refs ────────────────────────────────────────────────────── */
 var canvasEl   = document.getElementById('gp-canvas');
@@ -151,9 +166,6 @@ var tipEl      = document.getElementById('gp-tooltip');
 
 /* ── Show/hide helpers ───────────────────────────────────────────── */
 function showOnly(state) {
-  /* state: 'empty' | 'loading' | 'error' | 'graph'
-     Use style.display for the SVG directly — the [hidden]+!important combo
-     can make svgEl.hidden=false fail to un-hide it in some browsers.      */
   emptyEl.hidden   = (state !== 'empty');
   loadingEl.hidden = (state !== 'loading');
   errorEl.hidden   = (state !== 'error');
@@ -165,10 +177,8 @@ function showOnly(state) {
 /* ── SVG init (lazy) ─────────────────────────────────────────────── */
 function ensureSVG() {
   if (svgSel) return;
-
   svgSel = d3.select(svgEl);
 
-  /* Arrow marker */
   svgSel.append('defs').append('marker')
     .attr('id', 'gp-arrow')
     .attr('viewBox', '0 -4 8 8')
@@ -181,6 +191,7 @@ function ensureSVG() {
   linkG  = gSel.append('g').attr('class', 'gp-links');
   nodeG  = gSel.append('g').attr('class', 'gp-nodes');
   labelG = gSel.append('g').attr('class', 'gp-labels');
+  indG   = gSel.append('g').attr('class', 'gp-inds');
 
   zoomBehavior = d3.zoom()
     .scaleExtent([0.05, 5])
@@ -196,7 +207,6 @@ function getSize() {
 function startSim() {
   var sz = getSize();
   if (simulation) simulation.stop();
-
   simulation = d3.forceSimulation(nodes)
     .force('link',   d3.forceLink(links).id(function(d){ return d.id; }).distance(90).strength(0.4))
     .force('charge', d3.forceManyBody().strength(-280))
@@ -226,9 +236,31 @@ function tick() {
     .attr('cx', function(d){ return d.x; })
     .attr('cy', function(d){ return d.y; });
 
+  indG.selectAll('text')
+    .attr('x', function(d){ return d.x; })
+    .attr('y', function(d){ return d.y; });
+
   labelG.selectAll('text')
     .attr('x', function(d){ return d.x; })
     .attr('y', function(d){ return d.y + 28; });
+}
+
+/* ── Node interaction state helpers ──────────────────────────────── */
+function hiddenCount(id) {
+  var nb = master.adj[id]; if (!nb) return 0;
+  var n = 0;
+  for (var k in nb) { if (!visibleIds.has(k)) n++; }
+  return n;
+}
+/* A node invites a click to EXPAND if it's not already expanded and
+   either hasn't been fetched yet, or has neighbours still hidden.      */
+function canExpand(id) {
+  return !expanded.has(id) && (!fetched.has(id) || hiddenCount(id) > 0);
+}
+function indicator(d) {
+  if (expanded.has(d.id)) return '−';   /* − collapse */
+  if (canExpand(d.id))    return '+';          /* + expand   */
+  return '';
 }
 
 /* ── Render ──────────────────────────────────────────────────────── */
@@ -249,15 +281,23 @@ function render() {
     .on('mouseleave', hideTip);
 
   /* Nodes */
-  var nodeSel = nodeG.selectAll('circle').data(nodes, function(d){ return d.id; })
+  nodeG.selectAll('circle').data(nodes, function(d){ return d.id; })
     .join('circle')
     .attr('class', 'gp-node')
-    .attr('r', 16)
+    .attr('r', function(d){ return d.id === rootId ? 19 : 16; })
     .attr('cx', function(d){ return d.x; })
     .attr('cy', function(d){ return d.y; })
     .attr('fill', function(d){ return TRAD_COLOR[tradKey(d.trad)] || TRAD_COLOR.other; })
-    .attr('stroke', function(d){ return expanded.has(d.id) ? '#fff' : 'rgba(255,255,255,0.6)'; })
-    .attr('stroke-width', function(d){ return expanded.has(d.id) ? 2.5 : 1.5; })
+    .attr('stroke', function(d){
+      if (d.id === rootId)        return '#f5c542';                /* focal: gold  */
+      if (expanded.has(d.id))     return '#ffffff';                /* expanded     */
+      return 'rgba(255,255,255,0.55)';                             /* collapsed    */
+    })
+    .attr('stroke-width', function(d){
+      if (d.id === rootId)    return 3.5;
+      if (expanded.has(d.id)) return 2.5;
+      return 1.5;
+    })
     .attr('cursor', 'pointer')
     .on('mouseenter', onNodeOver)
     .on('mouseleave', hideTip)
@@ -267,7 +307,21 @@ function render() {
     .call(d3.drag()
       .on('start', function(ev, d){ if (!ev.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
       .on('drag',  function(ev, d){ d.fx = ev.x; d.fy = ev.y; })
-      .on('end',   function(ev, d){ if (!ev.active) simulation.alphaTarget(0); }));
+      .on('end',   function(ev, d){ if (!ev.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+  /* Expand / collapse indicator inside each node */
+  indG.selectAll('text').data(nodes, function(d){ return d.id; })
+    .join('text')
+    .attr('class', 'gp-ind')
+    .attr('text-anchor', 'middle')
+    .attr('dy', '0.34em')
+    .attr('pointer-events', 'none')
+    .attr('fill', 'rgba(255,255,255,0.95)')
+    .attr('font-size', '15px')
+    .attr('font-weight', '700')
+    .attr('x', function(d){ return d.x; })
+    .attr('y', function(d){ return d.y; })
+    .text(indicator);
 
   /* Labels */
   labelG.selectAll('text').data(nodes, function(d){ return d.id; })
@@ -285,40 +339,72 @@ function render() {
     .attr('stroke-linejoin', 'round')
     .text(function(d){ return d.name.length > 14 ? d.name.slice(0,12) + '…' : d.name; });
 
-  /* Update simulation */
   simulation.nodes(nodes);
   simulation.force('link').links(links);
   simulation.alpha(0.5).restart();
 
-  statsEl.textContent = nodes.length + ' nodes · ' + links.length + ' edges';
+  statsEl.textContent = nodes.length + ' shown · ' + links.length + ' links';
   updateLegend();
 }
 
-/* ── Data helpers ────────────────────────────────────────────────── */
-function addNode(id, name, trad, type) {
-  if (nodeMap[id]) return;
-  /* seed position near canvas centre so nodes are visible on first tick */
+/* ── Master-store helpers ────────────────────────────────────────── */
+function addMasterNode(id, name, trad, type) {
+  if (!master.nodes[id]) master.nodes[id] = { id:id, name:name||id, trad:trad||'', type:type||'' };
+  if (!master.adj[id]) master.adj[id] = {};
+}
+function addMasterEdge(sid, tid, type, conf) {
+  var k = sid + '|' + type + '|' + tid;
+  if (master.edges[k]) return;
+  var e = { lid:k, sid:sid, tid:tid, type:type, conf:conf || '' };
+  master.edges[k] = e;
+  master.edgeList.push(e);
+  (master.adj[sid] = master.adj[sid] || {})[tid] = true;
+  (master.adj[tid] = master.adj[tid] || {})[sid] = true;
+}
+function makeNode(id) {
+  var m = master.nodes[id] || { id:id, name:id, trad:'', type:'' };
   var sz = getSize();
-  var angle = nodes.length * 2.4;  /* golden-angle spiral */
-  var r = Math.min(sz.W, sz.H) * 0.03 * Math.sqrt(nodes.length + 1);
-  var n = {
-    id: id, name: name || id, trad: trad || '', type: type || '',
-    x: sz.W / 2 + r * Math.cos(angle),
-    y: sz.H / 2 + r * Math.sin(angle),
+  var anchor = (rootId && pool[rootId]) ? pool[rootId] : { x: sz.W/2, y: sz.H/2 };
+  var ang = Object.keys(pool).length * 2.39996;   /* golden angle */
+  var r = 60 + 14 * Math.sqrt(Object.keys(pool).length + 1);
+  return {
+    id:id, name:m.name, trad:m.trad, type:m.type,
+    x: anchor.x + r * Math.cos(ang),
+    y: anchor.y + r * Math.sin(ang),
   };
-  nodes.push(n);
-  nodeMap[id] = n;
 }
 
-function addLink(src, tgt, type, conf) {
-  var k = src + '|' + type + '|' + tgt;
-  if (linkSet.has(k)) return;
-  linkSet.add(k);
-  links.push({ lid: k, source: src, target: tgt, type: type, conf: conf || '' });
+/* Recompute the visible subgraph from master via reachability through
+   expanded nodes, then rebuild the nodes/links arrays.                 */
+function computeVisible() {
+  var vis = new Set();
+  if (rootId) vis.add(rootId);
+  var queue = Array.from(vis);
+  while (queue.length) {
+    var id = queue.shift();
+    if (!expanded.has(id)) continue;            /* leaves contribute nothing */
+    var nb = master.adj[id] || {};
+    for (var m in nb) { if (!vis.has(m)) { vis.add(m); queue.push(m); } }
+  }
+  visibleIds = vis;
+
+  nodes = [];
+  vis.forEach(function(id){
+    if (!pool[id]) pool[id] = makeNode(id);
+    nodes.push(pool[id]);
+  });
+
+  links = [];
+  master.edgeList.forEach(function(e){
+    if (vis.has(e.sid) && vis.has(e.tid)) {
+      links.push({ lid:e.lid, source:e.sid, target:e.tid, type:e.type, conf:e.conf });
+    }
+  });
 }
 
-/* ── Fetch neighbourhood ─────────────────────────────────────────── */
+/* ── Fetch neighbourhood into the master store ───────────────────── */
 async function fetchNeighbourhood(entityId) {
+  if (fetched.has(entityId)) return;
   var safe = entityId.replace(/'/g, "''");
   var sql =
     'SELECT er.relationship_type AS rtype,' +
@@ -332,52 +418,43 @@ async function fetchNeighbourhood(entityId) {
     "    OR er.object_entity_id  = '" + safe + "'" +
     ' ORDER BY rtype';
 
-  var url = '/deitydb.json?sql=' + encodeURIComponent(sql) + '&_shape=array&_size=500';
+  var url = '/deitydb.json?sql=' + encodeURIComponent(sql) + '&_shape=array&_size=1000';
   var resp = await fetch(url);
   if (!resp.ok) throw new Error('HTTP ' + resp.status);
   var data = await resp.json();
   if (!Array.isArray(data)) throw new Error('Unexpected response from API');
 
   data.forEach(function(row) {
-    addNode(row.sid, row.sname, row.strad, row.stype);
-    addNode(row.oid, row.oname, row.otrad, row.otype);
-    addLink(row.sid, row.oid, row.rtype, row.conf);
+    addMasterNode(row.sid, row.sname, row.strad, row.stype);
+    addMasterNode(row.oid, row.oname, row.otrad, row.otype);
+    addMasterEdge(row.sid, row.oid, row.rtype, row.conf);
   });
+  fetched.add(entityId);
 }
 
-/* ── Start graph ─────────────────────────────────────────────────── */
+/* ── Start graph (new focal entity) ──────────────────────────────── */
 async function startGraph(entityId) {
   try {
     gpReset(/* keepSVG */ true);
     showOnly('loading');
-
     ensureSVG();
 
     await fetchNeighbourhood(entityId);
+    rootId = entityId;
     expanded.add(entityId);
 
     var _sz = getSize();
     if (!_sz.W) _sz.W = window.innerWidth  || 800;
     if (!_sz.H) _sz.H = window.innerHeight - 56 || 600;
-
     svgEl.setAttribute('width',  _sz.W);
     svgEl.setAttribute('height', _sz.H);
-    /* Do NOT override position:absolute CSS with inline width/height —
-       the CSS top/right/bottom/left stretch already fills the canvas.
-       Only stamp the SVG coordinate-space attributes above.            */
-    svgEl.style.width  = '';
-    svgEl.style.height = '';
+    svgEl.style.width = ''; svgEl.style.height = '';
+    if (simulation) simulation.force('center', d3.forceCenter(_sz.W / 2, _sz.H / 2));
 
-    /* Re-centre force with verified dimensions */
-    if (simulation) {
-      simulation.force('center', d3.forceCenter(_sz.W / 2, _sz.H / 2));
-    }
-
+    computeVisible();
     showOnly('graph');
     render();
-    tick(); /* one synchronous tick so nodes appear before first rAF */
-
-    /* Fit after sim settles */
+    tick();
     setTimeout(fitGraph, 800);
   } catch (err) {
     errorMsgEl.textContent = 'Could not load graph: ' + err.message;
@@ -386,18 +463,34 @@ async function startGraph(entityId) {
   }
 }
 
-/* ── Node click: expand ──────────────────────────────────────────── */
+/* ── Node click: toggle expand ⇄ collapse ────────────────────────── */
 async function onNodeClick(ev, d) {
   ev.stopPropagation();
   hideTip();
-  if (expanded.has(d.id)) return;
-  try {
-    await fetchNeighbourhood(d.id);
-    expanded.add(d.id);
+  if (expanded.has(d.id)) {
+    /* collapse: hide everything only reachable through this node */
+    expanded.delete(d.id);
+    computeVisible();
     render();
-  } catch(err) {
-    console.error('[DeityDB graph expand]', err);
+  } else {
+    /* expand: load on first open, then reveal its neighbours */
+    if (!fetched.has(d.id)) {
+      try { await fetchNeighbourhood(d.id); }
+      catch(err) { console.error('[DeityDB graph expand]', err); return; }
+    }
+    expanded.add(d.id);
+    computeVisible();
+    render();
   }
+}
+
+/* ── Collapse all back to the focal node ─────────────────────────── */
+function collapseAll() {
+  if (!rootId) return;
+  expanded = new Set([rootId]);
+  computeVisible();
+  render();
+  setTimeout(fitGraph, 400);
 }
 
 /* ── Fit to screen ───────────────────────────────────────────────── */
@@ -418,22 +511,23 @@ function fitGraph() {
 
 /* ── Reset ───────────────────────────────────────────────────────── */
 function gpReset(keepSVG) {
-  nodes.length = 0;
-  links.length = 0;
-  Object.keys(nodeMap).forEach(function(k){ delete nodeMap[k]; });
-  linkSet.clear();
-  expanded.clear();
+  master.nodes = {}; master.adj = {}; master.edges = {}; master.edgeList = [];
+  Object.keys(pool).forEach(function(k){ delete pool[k]; });
+  fetched.clear(); expanded.clear(); visibleIds = new Set();
+  rootId = null;
+  nodes = []; links = [];
   if (simulation) { simulation.stop(); simulation = null; }
   if (gSel) {
     linkG.selectAll('*').remove();
     nodeG.selectAll('*').remove();
     labelG.selectAll('*').remove();
+    indG.selectAll('*').remove();
   }
   if (!keepSVG) {
     showOnly('empty');
     document.getElementById('gp-search').value = '';
   }
-  startSim();  /* reinitialise fresh sim */
+  startSim();
 }
 
 /* ── Legend ──────────────────────────────────────────────────────── */
@@ -452,20 +546,26 @@ function updateLegend() {
 
 /* ── Tooltips ────────────────────────────────────────────────────── */
 function onNodeOver(ev, d) {
+  var hint;
+  if (expanded.has(d.id)) {
+    hint = '<span class="gt-hint gt-done">− Click to collapse</span>';
+  } else {
+    var hc = fetched.has(d.id) ? hiddenCount(d.id) : null;
+    hint = '<span class="gt-hint">+ Click to expand' +
+           (hc !== null ? ' (' + hc + ' more)' : '') + '</span>';
+  }
   tipEl.innerHTML =
     '<strong>' + esc(d.name) + '</strong>' +
     (d.trad ? '<span class="gt-trad">' + esc(d.trad) + '</span>' : '') +
     (d.type ? '<span class="gt-type">' + esc(d.type) + '</span>' : '') +
-    (expanded.has(d.id)
-      ? '<span class="gt-hint gt-done">✓ Expanded</span>'
-      : '<span class="gt-hint">Click to expand</span>');
+    hint;
   placeTip(ev);
   tipEl.hidden = false;
 }
 
 function onLinkOver(ev, d) {
-  var sn = typeof d.source === 'object' ? d.source.name : d.source;
-  var tn = typeof d.target === 'object' ? d.target.name : d.target;
+  var sn = typeof d.source === 'object' ? d.source.name : (master.nodes[d.source] || {}).name || d.source;
+  var tn = typeof d.target === 'object' ? d.target.name : (master.nodes[d.target] || {}).name || d.target;
   tipEl.innerHTML =
     '<span class="gt-rel">' + esc(relLabel(d.type)) + '</span>' +
     '<span class="gt-conn">' + esc(sn) + ' → ' + esc(tn) + '</span>';
@@ -550,6 +650,7 @@ document.querySelectorAll('button.gp-seed[data-id]').forEach(function(btn) {
 });
 
 /* ── Toolbar + error retry ───────────────────────────────────────── */
+document.getElementById('gp-collapse').addEventListener('click', collapseAll);
 document.getElementById('gp-fit').addEventListener('click', fitGraph);
 document.getElementById('gp-reset-btn').addEventListener('click', function() { gpReset(); });
 document.getElementById('gp-retry').addEventListener('click', function() { gpReset(); });
@@ -567,7 +668,7 @@ function esc(s) {
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-/* ── Boot: init sim immediately so it's ready ─────────────────────── */
+/* ── Boot ────────────────────────────────────────────────────────── */
 ensureSVG();
 startSim();
 
