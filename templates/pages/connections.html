@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block title %}Connections — DeityDB{% endblock %}
+{% block body_class %}deitydb-connections{% endblock %}
+
+{% block content %}
+<style>
+.cx-page{max-width:1180px;margin:0 auto;padding:8px 16px 60px}
+.cx-head h1{margin:0 0 4px}
+.cx-sub{color:#5a5246;max-width:760px;margin:0 0 6px}
+.cx-note{color:#7c7569;font-size:.86rem;margin:0 0 14px}
+.cx-legend{display:flex;align-items:center;gap:8px;font-size:.78rem;color:#7c7569;margin:0 0 14px}
+.cx-ramp{height:12px;width:140px;border-radius:3px;background:linear-gradient(90deg,#f1ecf7,#5b2a9e)}
+.cx-scroll{overflow:auto;border:1px solid #e7dccb;border-radius:8px;background:#fff;max-width:100%}
+table.cx-heat{border-collapse:collapse}
+table.cx-heat th.cx-corner{position:sticky;left:0;top:0;z-index:3;background:#fff}
+table.cx-heat thead th.cx-col{vertical-align:bottom;padding:6px 0 8px;font-weight:600}
+.cx-col-lbl{writing-mode:vertical-rl;transform:rotate(180deg);font-size:.72rem;color:#3b2a55;white-space:nowrap;max-height:150px;overflow:hidden;text-overflow:ellipsis}
+table.cx-heat th.cx-row{position:sticky;left:0;z-index:2;background:#fff;text-align:right;padding:0 10px 0 8px;font-size:.78rem;font-weight:600;color:#3b2a55;white-space:nowrap;max-width:170px;overflow:hidden;text-overflow:ellipsis}
+table.cx-heat td.cx-cell{width:26px;height:26px;border:1px solid #fff;text-align:center;font-size:9px;cursor:pointer;user-select:none}
+table.cx-heat td.cx-cell.empty{background:#faf8f5;cursor:default}
+table.cx-heat td.cx-cell.diag{background:#ece6da;cursor:default}
+table.cx-heat td.cx-cell.sel{outline:2px solid #d4a93b;outline-offset:-2px}
+.cx-panel{margin-top:22px;border:1px solid #e7dccb;border-radius:8px;background:#fff;padding:18px 20px;display:none}
+.cx-panel h2{margin:0 0 2px;font-size:1.2rem}
+.cx-panel .cx-pmeta{color:#7c7569;font-size:.84rem;margin:0 0 14px}
+.cx-link{padding:9px 0;border-top:1px solid #f0ebe2;font-size:.95rem;line-height:1.5}
+.cx-link:first-of-type{border-top:0}
+.cx-link a{color:#5b2a9e;font-weight:600;text-decoration:none}
+.cx-link a:hover{text-decoration:underline}
+.cx-verb{display:inline-block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#7c3bd4;background:#f1ecf7;border-radius:10px;padding:1px 8px;margin:0 4px}
+.cx-rat{display:block;color:#6a6258;font-size:.85rem;margin-top:2px}
+.cx-empty-pick{color:#7c7569;font-style:italic}
+</style>
+
+<div class="cx-page">
+  <div class="cx-head">
+    <h1>Connections</h1>
+    <p class="cx-sub">The comparative heart of DeityDB: where one tradition's figures are received into, syncretized with, equated to, or descend from another's. Darker squares = more links. <strong>Click any square</strong> to read the actual connections.</p>
+    <div class="cx-legend"><span>Fewer</span><span class="cx-ramp"></span><span>More links</span></div>
+    <p class="cx-note" id="cx-note">Loading the cross-tradition web…</p>
+  </div>
+
+  <div class="cx-scroll"><div id="cx-grid"></div></div>
+
+  <div class="cx-panel" id="cx-panel">
+    <h2 id="cx-panel-title"></h2>
+    <p class="cx-pmeta" id="cx-panel-meta"></p>
+    <div id="cx-panel-body"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+'use strict';
+var VERBS = "'reception_of','received_as','syncretized_with','identified_with','equated_with','aligned_with','cult_form_of','reveals'";
+var TOP_N = 30;
+var gridEl = document.getElementById('cx-grid');
+var noteEl = document.getElementById('cx-note');
+var panelEl = document.getElementById('cx-panel');
+var ptitle = document.getElementById('cx-panel-title');
+var pmeta = document.getElementById('cx-panel-meta');
+var pbody = document.getElementById('cx-panel-body');
+
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function sqlStr(s){return String(s).replace(/'/g,"''");}
+function clip(s,n){s=String(s||'');return s.length>n?s.slice(0,n-1)+'…':s;}
+function lerp(t){var a=[241,236,247],b=[91,42,158];return 'rgb('+Math.round(a[0]+(b[0]-a[0])*t)+','+Math.round(a[1]+(b[1]-a[1])*t)+','+Math.round(a[2]+(b[2]-a[2])*t)+')';}
+
+var map = {};   /* "A|B" -> links */
+var selectedTd = null;
+
+async function init() {
+  var rows;
+  try {
+    rows = await (await fetch('/deitydb/v_public_cross_tradition_matrix.json?_shape=array&_size=500')).json();
+  } catch (e) { noteEl.textContent = 'Could not load the connection data.'; return; }
+  if (!Array.isArray(rows) || !rows.length) { noteEl.textContent = 'No connection data found.'; return; }
+
+  var totals = {}, max = 0;
+  rows.forEach(function(r){
+    map[r.tradition_a + '|' + r.tradition_b] = r;
+    map[r.tradition_b + '|' + r.tradition_a] = r;
+    totals[r.tradition_a] = (totals[r.tradition_a]||0) + r.links;
+    totals[r.tradition_b] = (totals[r.tradition_b]||0) + r.links;
+    if (r.links > max) max = r.links;
+  });
+  var allTrads = Object.keys(totals).sort(function(a,b){ return totals[b]-totals[a]; });
+  var trads = allTrads.slice(0, TOP_N);
+
+  noteEl.innerHTML = 'Showing the ' + trads.length + ' most cross-connected traditions of ' + allTrads.length +
+    '. The full table is at <a href="/deitydb/v_public_cross_tradition_matrix">v_public_cross_tradition_matrix</a>.';
+
+  var logmax = Math.log(max + 1);
+  var html = '<table class="cx-heat"><thead><tr><th class="cx-corner"></th>';
+  trads.forEach(function(t){ html += '<th class="cx-col"><div class="cx-col-lbl" title="'+esc(t)+'">'+esc(clip(t,22))+'</div></th>'; });
+  html += '</tr></thead><tbody>';
+  trads.forEach(function(rt){
+    html += '<tr><th class="cx-row" title="'+esc(rt)+'">'+esc(clip(rt,24))+'</th>';
+    trads.forEach(function(ct){
+      if (rt === ct) { html += '<td class="cx-cell diag"></td>'; return; }
+      var r = map[rt + '|' + ct];
+      if (!r) { html += '<td class="cx-cell empty"></td>'; return; }
+      var t = Math.log(r.links + 1) / logmax;
+      var bg = lerp(t), fg = t > 0.5 ? '#fff' : '#3b2a55';
+      html += '<td class="cx-cell" style="background:'+bg+';color:'+fg+'"' +
+        ' data-a="'+esc(rt)+'" data-b="'+esc(ct)+'"' +
+        ' title="'+esc(rt)+' ↔ '+esc(ct)+': '+r.links+' link'+(r.links===1?'':'s')+' ('+esc(r.link_kinds)+')">'+
+        r.links+'</td>';
+    });
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  gridEl.innerHTML = html;
+
+  gridEl.querySelectorAll('td.cx-cell[data-a]').forEach(function(td){
+    td.addEventListener('click', function(){
+      if (selectedTd) selectedTd.classList.remove('sel');
+      selectedTd = td; td.classList.add('sel');
+      openPair(td.dataset.a, td.dataset.b);
+    });
+  });
+}
+
+async function openPair(a, b) {
+  panelEl.style.display = 'block';
+  ptitle.textContent = a + '  ↔  ' + b;
+  pmeta.textContent = 'Loading connections…';
+  pbody.innerHTML = '';
+  panelEl.scrollIntoView({ behavior:'smooth', block:'nearest' });
+
+  var sql =
+    "SELECT s.entity_id sid, s.canonical_name sname, s.tradition strad," +
+    " r.relationship_type rel, o.entity_id oid, o.canonical_name oname, o.tradition otrad," +
+    " r.confidence conf, r.rationale rat, r.source_id src" +
+    " FROM entity_relationships r" +
+    " JOIN entities s ON s.entity_id = r.subject_entity_id" +
+    " JOIN entities o ON o.entity_id = r.object_entity_id" +
+    " WHERE ((s.tradition = '" + sqlStr(a) + "' AND o.tradition = '" + sqlStr(b) + "')" +
+    "    OR  (s.tradition = '" + sqlStr(b) + "' AND o.tradition = '" + sqlStr(a) + "'))" +
+    " AND r.relationship_type IN (" + VERBS + ")" +
+    " ORDER BY r.relationship_type, s.canonical_name";
+
+  var data;
+  try {
+    data = await (await fetch('/deitydb.json?sql=' + encodeURIComponent(sql) + '&_shape=array&_size=500')).json();
+  } catch (e) { pmeta.textContent = 'Could not load these connections.'; return; }
+  if (!Array.isArray(data) || !data.length) { pmeta.textContent = 'No comparative links found between these traditions.'; return; }
+
+  pmeta.textContent = data.length + ' comparative link' + (data.length === 1 ? '' : 's') + ' — click any name to open it in the graph.';
+  pbody.innerHTML = data.map(function(r){
+    return '<div class="cx-link">' +
+      '<a href="/graph?start=' + encodeURIComponent(r.sid) + '">' + esc(r.sname) + '</a>' +
+      ' <span class="cx-trad">(' + esc(r.strad) + ')</span>' +
+      '<span class="cx-verb">' + esc(String(r.rel).replace(/_/g,' ')) + '</span>' +
+      '<a href="/graph?start=' + encodeURIComponent(r.oid) + '">' + esc(r.oname) + '</a>' +
+      ' <span class="cx-trad">(' + esc(r.otrad) + ')</span>' +
+      (r.rat ? '<span class="cx-rat">' + esc(r.rat) + (r.src ? '  · ' + esc(r.src) : '') + '</span>' : '') +
+      '</div>';
+  }).join('');
+}
+
+init();
+})();
+</script>
+{% endblock %}

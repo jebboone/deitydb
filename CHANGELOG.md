@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.62.2 — 2026-06-16
+
+### Non-technical discovery: graph starting points + a clickable connections map
+
+Two additions for visitors who don't write SQL (all canned queries and public
+views already carry plain-language descriptions; this targets *discovery*).
+
+**Graph starting points.** The `/graph` empty state now offers curated, grouped
+entry points — *Famous figures* (Zeus, Apollo, Ra, Isis, Odin…), *Cross-tradition
+bridges* (Hermes, Hecate, Mithras, Sol Invictus, Sophia, Thoth), and *Whole worlds*
+(the Aesir, the Archons, the 42 Assessors of Maat, the Decans, the Indigitamenta) —
+so users land on a rich network instead of a blank search box. Added a
+`/graph?start=ENT_ID` deep link.
+
+**Connections (`/connections`).** A new page turns `v_public_cross_tradition_matrix`
+from a table into an interactive heatmap: the most cross-connected traditions on
+both axes, each square shaded by how many comparative links bridge that pair.
+Click a square to read the actual sourced links (received_as / syncretized_with /
+equated_with / …), each name linking straight into the graph. Added to the nav.
+
+Frontend-only (`templates/pages/{graph,connections}.html`, `_site_nav.html`);
+no schema or data change.
+
 ## v1.62.1 — 2026-06-16
 
 ### Relationship graph: expand AND collapse
