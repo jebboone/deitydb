@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.62.4 — 2026-06-16
+
+### Onboarding aids for first-time visitors
+
+- **First-visit welcome.** A dismissible welcome dialog on the homepage orients
+  newcomers to the three no-SQL ways in — Browse, Graph, Connections — each a
+  one-line plain-language description and a direct link. Shown once
+  (localStorage), closable by button, backdrop click, or Esc.
+- **Connections surfaced on the homepage.** The "Browse & Visualize" call-to-action
+  now includes the Connections map alongside Browse and the Graph.
+
+Frontend-only.
+
 ## v1.62.3 — 2026-06-16
 
 ### Connections: a "constellation" view
