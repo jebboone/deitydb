@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.63.1 — 2026-06-16
+
+### Audit follow-through: completeness fixes + more orphan wiring
+
+- Filled the **85 missing `evidence_confidence`** values by a transparent,
+  source-tied rule (Cross-traditional abstraction -> A; any primary source -> B;
+  reference/secondary-only -> C). `scripts/audit_fixes_v1.sql`.
+- Retyped the **15 `associated_with`** code-smell edges to precise relations
+  (bull-cults -> cult_form_of; doorway/grain minor gods -> presided_over_by;
+  counterparts and shared-cult pairs -> paired_with). Same script.
+- Wired **17 more orphans (39 -> 22)** via `scripts/wire_orphans_v2.sql`: non-saint
+  isolates to existing domain abstractions (Halki->Agriculture, Maliya->Water,
+  Runtiya->Animals, Tayet->Craft, Ugallu->Thresholds, the Four Races protected_by
+  Ra, Keresaspa slays the Dragon); saints to existing domains (Cecilia->Music,
+  Martin->Monasticism, Sebastian opposes Disease); and a new **Royal Saints**
+  collective for the orphaned canonized monarchs (Louis IX, Olaf, Wenceslaus,
+  Stephen I, Edmund, Canute, Casimir).
+
+The 22 remaining orphans are deliberately left — saints whose only patronages are
+places/nations/conditions not modeled as entities, plus a few genuine isolates —
+rather than wired with off-ontology entities or forced edges. Entities 2,109 ->
+2,110; relationships 3,468 -> 3,485; 0 unsourced, 0 unresolved, 0 unreviewed dups.
+
 ## v1.63.0 — 2026-06-16
 
 ### Connectivity audit — wired 49 orphan entities into the graph
