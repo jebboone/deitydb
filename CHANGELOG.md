@@ -1,5 +1,49 @@
 # Changelog
 
+## v1.67.2 — 2026-06-16
+
+### Second scholarly-audit pass: deep-past (v1.65) + occult (v1.66) cohorts
+
+Applied the same adversarial five-agent scholarly audit (plus deterministic
+integrity battery) to the two other large agent-built batches that had never been
+audited — 112 entities. Integrity was clean (0 orphans/unsourced/unperiodized,
+0 homonym collisions, all verbs typed). Encouragingly, NO fabrications were found
+in the high-risk Jewish-magical cluster: all twelve Sefer ha-Razim angel names
+verified against the Rebiger & Schaefer and Morgan editions, including embedded
+roster details (Michael/Gabriel under Klmial, Nuriel under Dlqial, the E/W sixth-
+firmament split). Corrections this release:
+
+- **Removed (4) — entities that should not exist:** ENT_ELAM_TEPTI ("Tepti/Temti"
+  is the Elamite word *lord* / a theophoric element, not a deity); ENT_PGM_
+  ABLANATHANALBA and ENT_PGM_SESENGENBARPHARANGES (*voces magicae* / magic words,
+  not addressable powers — per Brashear, Gager); ENT_SOL_GENON (not an attested
+  Ars Notoria angel in Véronèse's edition; garbled).
+- **Anachronism re-sourced:** the standardized seven planetary-angel set
+  (Cassiel/Sachiel/Anael/Samael…) was attributed to the 13c Liber Razielis but is
+  the 16c Agrippa Scale of Seven (De occulta philosophia II.10, 1533). Added
+  SRC_AGRIPPA_OCCULTA, re-sourced the standardized attributions, downgraded the
+  four affected entities to C, and reworded notes (Sachiel's 13c precursor is
+  Satquiel; the Venus/Mars attributions are Agrippa-era).
+- **Homonym-as-identity fixed:** ENT_SOL_ANAEL / ENT_LAT_ANAEL and ENT_SOL_
+  SAMAEL_MARS / ENT_GNO_SAMAEL retyped identified_with → aligned_with (same name,
+  distinct figures); likewise Ninegal "identified_with Inanna" and Narundi
+  "equated_with Ishtar" softened to aligned_with (Belet-ekallim is a distinct
+  palace goddess; Narundi's Ishtar link is loose).
+- **Invented/incorrect relationships:** removed Nirah "child_of Ishtaran" (he is
+  Ishtaran's messenger/sukkal, not son); Ninkurra "child_of Enki" → "child_of
+  Ninshar" (the Enki-Ninhursag sequence); Nebethetepet "spouse_of Atum" →
+  "paired_with" (she personifies Atum's creative hand); removed spurious Bat
+  "protected_by Horus" and Sed "patron_of Horus".
+- **Over-specified domains stripped:** Af Bri → rain/Water (not Protection);
+  Iabet's Sun, Aha's Apep, Pesakir's vacuous "Magic", Boel's "Revelation" (it is
+  dream-divination), Sefer-Raziel-Teaching's Healing, and the beatific-vision
+  operation's Protection — all removed or corrected. Picatrix-spirit → Olympian
+  alignments (Zeus/Ares/Aphrodite/Hermes/Helios/Selene) recalibrated high → medium.
+- Note corrections on ~11 entities (Henkhisesui flagged Late-Period, Narundi
+  re-dated, etc.).
+
+Net: -4 entities; scorecard clean. scripts/build_qa2_fixes.sql.
+
 ## v1.67.1 — 2026-06-16
 
 ### Scholarly audit corrections to the early-antiquity fringe (v1.67.0)
