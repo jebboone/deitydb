@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.62.3 — 2026-06-16
+
+### Connections: a "constellation" view
+
+The `/connections` page gains a second view, toggled alongside the heatmap: a
+force-directed **constellation of traditions** — every tradition is a node sized
+by how many cross-tradition links it carries, every edge weighted by how many
+links bridge that pair, coloured by tradition family. Hover for counts, drag and
+zoom, click a tradition to focus on its neighbours, and click any line to read
+the underlying sourced links (the same drill-down as the heatmap, each name
+deep-linking into the entity graph). Frontend-only.
+
 ## v1.62.2 — 2026-06-16
 
 ### Non-technical discovery: graph starting points + a clickable connections map
