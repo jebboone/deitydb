@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.62.1 — 2026-06-16
+
+### Relationship graph: expand AND collapse
+
+Acting on user feedback — *"Is there a way to collapse the nodes on the
+relationship graph? Sometimes I want to de-overwhelm myself…"* — the `/graph`
+explorer now supports collapsing, not just expanding. The visible graph is
+recomputed from a reachability rule: a node is shown only while it is reachable
+from the focal entity *through expanded nodes*. So:
+
+- click a node to **expand** its connections; click it again to **collapse**
+  them (hiding everything reachable only through it),
+- `+` / `−` glyphs inside each node show whether a click will expand or collapse,
+- a **Collapse all** button returns to the focal entity's immediate network,
+- the focal node is ringed in gold; hover shows how many more connections a node
+  will reveal.
+
+Frontend-only (`templates/pages/graph.html`); no schema or data change.
+
 ## v1.62.0 — 2026-06-15
 
 ### Feature the cross-tradition links — the comparative core
