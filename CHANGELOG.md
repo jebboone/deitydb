@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.64.0 — 2026-06-16
+
+### Jewish angelology expansion
+
+Roughly doubled the Jewish angel roster (~36 -> 73). Added the 3 Enoch / Hekhalot
+angelic princes — the cosmic-phenomenon princes of 3 Enoch 14 (hail, wind, thunder,
+rain, snow, the spheres of the sun and moon, the constellations, day and night) and
+the throne-princes of Metatron's retinue (Kerubiel, Seraphiel, Hayliel, Rikbiel,
+the two Soperiel scribes of the living and the dead, Soqedhozi the weigher of merits,
+Hadraniel, Anpiel, Radueriel) — the missing classic angelic ranks (Cherubim, Erelim,
+Malachim, Elohim, Ishim) gathered under a new Heavenly Host collective, and
+medieval/Kabbalistic archangels (Kemuel, Zadkiel, Haniel, Zaphkiel). All
+primary/scholarly-sourced (3 Enoch, the Hekhalot Synopse, Maimonides Mishneh Torah,
+the Zohar), period-linked to a new Merkavah/Hekhalot period (200-700 CE), and fully
+wired (no orphans created). +37 entities, +47 relationships, +1 source, +1 period.
+Homonyms kept distinct (Baraqiel/Kokabiel remain the 1 Enoch Watchers; the Jewish
+Cherubim registered intentional_distinct from the Christian). scripts/build_jewish_angelology.sql.
+
 ## v1.63.2 — 2026-06-16
 
 ### Connectivity batch 3 — enriched under-wired Egyptian & Mesopotamian entities
