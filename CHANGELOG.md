@@ -1,5 +1,41 @@
 # Changelog
 
+## v1.65.0 — 2026-06-16
+
+### Deep-past enrichment (archaic Sumerian, predynastic Egyptian, Elamite)
+
+Thickened the oldest strata of the dataset and used the build as an empirical test
+of the Egypt<->Mesopotamia independence finding.
+
+- **Archaic Sumerian / Early Dynastic (+31):** deities from the earliest god-lists
+  (Fara, Abu Salabikh, the Zame Hymns) most rosters skip — Lagash-pantheon figures
+  (Hendursaga, Nin-MAR.KI, Gatumdug, Nindara, Igalima, Shulshaga, Shul-utula, the
+  sons of Ningirsu), the Isin healing circle (Ninisina, Gunura), the Adab/Kesh sons
+  of Ninhursag (Ashgi, Panigingarra), the craft/birth circle (Ninmug, Ninildu,
+  Ninkurra, Ninshar, Ninimma), Gibil the fire god, Ningirima of the earliest
+  incantations, the Uruk Kullaba tutelaries (Mes-sanga-Unug, Ninirigal), Nungal of
+  prisons, and others. (Pabilsag was already present; the build enriched it.)
+- **Predynastic / Old Kingdom Egyptian (+18):** Bat (the Narmer-Palette cow-goddess),
+  Mehit, the Souls of Pe and Souls of Nekhen, the directional pair Iabet/Imentet,
+  Nebethetepet (the creative hand of Atum), the archaic feline/serpent/scorpion
+  tutelaries (Seret, Sepa, Hededet), the Letopolis/Athribis falcon gods, Aha (the
+  Middle Kingdom antecedent of Bes), and Sefkhet-Abwy of the foundation rite.
+- **Elamite (+16, from 4 to 20):** the genuine eastern bridge — Pinikir (=Ishtar/
+  Ninsianna), Simut (=Nergal), Nahhunte (=Shamash), Manzat, Ruhurater, the Susian
+  afterlife judges Lagamal and Ishmekarab, Narundi, and the Tchoga Zanbil cult
+  deities. New source SRC_HENKELMAN_ELAM (Henkelman, The Other Gods Who Are).
+
++65 entities, +141 relationships, +1 source, all primary/scholarly-sourced,
+period-linked, fully wired (no orphans), 0 rejected, scorecard clean.
+
+**Empirical result:** adding these 65 archaic entities raised the pre-2000 BCE
+stratum from 152 to 217 entities but left direct Egypt<->Mesopotamia comparative
+links unchanged at 2, while Elam<->Mesopotamia links rose to 11. Deepening
+attestation in the era most vulnerable to sampling bias did NOT manufacture
+Egypt<->Mesopotamia connections — evidence that their independence is real, not an
+artifact of thin sourcing, and that east-west contact ran through Elam.
+scripts/gen_deep_past.py, scripts/build_deep_past.sql, scripts/_deeppast/.
+
 ## v1.64.0 — 2026-06-16
 
 ### Jewish angelology expansion
