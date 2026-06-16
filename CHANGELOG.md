@@ -1,5 +1,55 @@
 # Changelog
 
+## v1.67.1 — 2026-06-16
+
+### Scholarly audit corrections to the early-antiquity fringe (v1.67.0)
+
+An adversarial five-agent scholarly audit (plus a deterministic integrity pass)
+of the v1.67.0 fringe section. Integrity was clean (0 orphans/unsourced/unperiodized,
+0 homonym collisions, all relationships typed). The scholarly pass found and this
+release fixes:
+
+- **Duplicate merged:** ENT_SAB_SIN_HAWL and ENT_SAB_SAYIN are the SAME Hadramite
+  national god (s1yn); "Sin/Hawl" is a superseded transcription that wrongly
+  assimilated him to the Mesopotamian moon-god. Merged into ENT_SAB_SAYIN (solar
+  vs lunar character noted as debated).
+- **Fabricated attestation removed:** the Meroitic Aritene/Mash pair carried an
+  invented joint citation ("Haramadeye / REM 0277") and invented relationships.
+  Corrected: Mash is the genuinely-attested sun god (upgraded B; Sedeinga "priest
+  of Masha", Mash-Amani = Amun-Ra); Aritene downgraded to C as a contested
+  (Priese 1984) and largely superseded solar reading. Fabricated edges removed.
+- **Conflation undone:** ENT_ELAM_NAPIR was loaded with the supreme god
+  Napirisha's attributes (Untash-Napirisha, Tchoga Zanbil, "protector of the
+  gods"). Reworded (name = "god"; lunar reading flagged non-consensus); the
+  Napirisha material and the spurious guardian_of-Humban link removed.
+- **Contradicted/inverted links removed:** Tirutur "member_of Humban" (the Ayapir
+  sanctuary is Tirutur's own); Suhsipa "belongs_to_realm Underworld" (Henkelman
+  explicitly excludes it — husa = sacred grove, not netherworld).
+- **Mistag fixed:** Kubaba retagged Aramean → Luwian (Neo-Hittite Carchemish);
+  the Kubaba→Kybele descent reworded as debated.
+- **Misattribution fixed:** Julian equates Azizos with Ares and Monimos with
+  Hermes (not Venus); notes corrected and those equations added.
+- **Removed:** ENT_URA_SARDI (a bare god-list star-name whose only domain wrongly
+  pointed at the Sun, duplicating Shivini).
+- **Over-specified domains stripped:** speculative domains on Linear B cult-
+  recipients (Potnia-of-the-Labyrinth→Earth, Iphimedeia→Fertility, Trisheros→
+  Death, Qe-ra-si-ja→Animals) removed; a new "Deities of the Pylos Tn 316 Tablet"
+  collective keeps them connected. Drimios downgraded A→B (single-line attestation).
+- **Domain-vs-interpretatio cleanup:** moved interpretatio targets out of
+  presides_over (al-Kutbaʾ→Writing not Wealth; al-ʿUzza-of-Petra embodies Venus;
+  Dushara's contested solar domain removed).
+- **Source transparency:** re-anchored the five Qurʾan-71:23 idols + the idol
+  collective from SRC_QURAN (which only names them) to SRC_HOYLAND_ARABIA
+  (epigraphic scholarship), retaining Qurʾan as a secondary name-attestation.
+  Note corrections: Dhu'l-Khalasa at Tabala (Tihama/Asir, not Yemen); Shai
+  al-Qaum "builds no tomb" embellishment dropped; Saʿd reframed as a tribal betyl.
+- **Connectivity:** added attested interpretatio for leaf war/sun gods (Cosus,
+  Pleistoros, Kandaon → Ares; Elagabal → Helios; Beher equated_with Poseidon;
+  Astar aligned_with Zeus; Selardi verb normalized).
+
+Net: -2 entities (1 merge, 1 removal) +1 collective; scorecard clean.
+scripts/build_fringe_audit_fixes.sql.
+
 ## v1.67.0 — 2026-06-16
 
 ### Early-antiquity fringe completion (Nabataean → Aksum)
