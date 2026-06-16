@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.63.0 — 2026-06-16
+
+### Connectivity audit — wired 49 orphan entities into the graph
+
+A sweeping dataset audit found the integrity excellent (0 unsourced, 0 unresolved,
+0 unreviewed duplicates, all non-abstraction entities period-linked) but surfaced
+**88 entities with zero relationships** — fully sourced yet invisible to the graph,
+Connections, and every relationship view. Batch 1 of the remediation wires **49 of
+them (+56 typed, source-backed edges)**, researched per tradition against
+primary/scholarly sources:
+
+- **Egyptian (14)** — nome/local gods, Duat realms (Fields of Reeds/Offerings),
+  deified humans (Heqaib, Isi of Edfu), barque crew, Werethekau → Magic.
+- **Mesopotamian/Anatolian (11)** — civic gods → the Anunnaki; sun-gate monsters
+  (Girtablullu, Kusarikku) → Shamash; disease demons (Sulak, Edimmu) → Disease;
+  syncretisms (Zababa→Ninurta, Nanaya→Inanna, Lelwani→Ereshkigal).
+- **Roman/Celtic (12)** — deified virtues → Greek interpretatio (Libertas→Eleutheria,
+  Pietas→Eusebeia); fever/exhalation goddesses → Disease; river/spring gods → Water.
+- **Zoroastrian (7)** — yazatas emanate from Ahura Mazda; Vizaresh → the daevas.
+- **Christian (4)** — Barbara, Christopher, Margaret, Denis → the Fourteen Holy Helpers.
+
+Saints were kept strictly as **venerated humans** (no divine framing). The remaining
+~39 orphans — mostly saints whose patronages (nations, crafts, places) are not yet
+entities — were deliberately left rather than wired with forced or fabricated edges.
+Relationships 3,412 → 3,468. Idempotent script: `scripts/wire_orphans_v1.sql`.
+
 ## v1.62.6 — 2026-06-16
 
 ### Rich entity pages + global search
