@@ -40,11 +40,12 @@
   <div class="browse-cta">
     <div class="browse-cta-text">
       <h2>Browse &amp; Visualize</h2>
-      <p>Explore all {{ db_entities }} entities without writing SQL — search and filter by tradition, type, and domain, or trace how entities connect in an interactive relationship graph.</p>
+      <p>Explore all {{ db_entities }} entities without writing SQL — search and filter every figure, trace how one connects in an interactive relationship graph, or see how whole traditions link on the Connections map.</p>
     </div>
     <div class="browse-cta-btns">
       <a href="/explore" class="browse-cta-btn">Browse Entities →</a>
       <a href="/graph"   class="browse-cta-btn browse-cta-btn-alt">Relationship Graph →</a>
+      <a href="/connections" class="browse-cta-btn browse-cta-btn-alt">Connections →</a>
     </div>
   </div>
 </div>
@@ -257,6 +258,51 @@
   function escHtml(s) {
     return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
+})();
+</script>
+
+{# ── First-visit welcome (onboarding aid) ──────────────────────────── #}
+<style>
+.dw-overlay{position:fixed;inset:0;background:rgba(20,16,30,.55);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
+.dw-overlay[hidden]{display:none}
+.dw-modal{background:#fdfcfb;border-radius:14px;max-width:540px;width:100%;padding:28px 26px 24px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.dw-modal h2{margin:0 0 8px;font-size:1.5rem}
+.dw-lead{color:#5a5246;margin:0 0 18px;line-height:1.5}
+.dw-x{position:absolute;top:10px;right:14px;border:0;background:none;font-size:1.6rem;color:#9a8f7c;cursor:pointer;line-height:1}
+.dw-paths{display:flex;flex-direction:column;gap:10px;margin:0 0 18px}
+.dw-path{display:flex;gap:13px;align-items:center;padding:12px 14px;border:1px solid #e7dccb;border-radius:9px;text-decoration:none;color:#2b2440;background:#fff;transition:border-color .15s,transform .05s}
+.dw-path:hover{border-color:#7c3bd4;transform:translateY(-1px)}
+.dw-ic{font-size:1.35rem;width:30px;text-align:center;flex:0 0 30px}
+.dw-path .dw-txt{font-size:.9rem;line-height:1.35}
+.dw-go{display:block;width:100%;border:0;background:#5b2a9e;color:#fff;font-weight:600;padding:11px;border-radius:8px;cursor:pointer;font-size:.95rem}
+.dw-go:hover{background:#4a2280}
+</style>
+<div class="dw-overlay" id="dw-overlay" hidden>
+  <div class="dw-modal" role="dialog" aria-modal="true" aria-labelledby="dw-title">
+    <button class="dw-x" id="dw-x" aria-label="Close">×</button>
+    <h2 id="dw-title">Welcome to DeityDB 👋</h2>
+    <p class="dw-lead">A map of gods, spirits, and the threads that connect them across {{ db_traditions }} traditions. Three ways to explore — <strong>no SQL needed</strong>:</p>
+    <div class="dw-paths">
+      <a href="/explore" class="dw-path"><span class="dw-ic">🔎</span><span class="dw-txt"><strong>Browse</strong> — search &amp; filter every figure</span></a>
+      <a href="/graph" class="dw-path"><span class="dw-ic">◉</span><span class="dw-txt"><strong>Graph</strong> — see how one figure connects; click to expand, click again to collapse</span></a>
+      <a href="/connections" class="dw-path"><span class="dw-ic">✦</span><span class="dw-txt"><strong>Connections</strong> — how whole traditions link, as a heatmap or constellation</span></a>
+    </div>
+    <button class="dw-go" id="dw-go">Explore on my own</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='deitydb_welcomed_v1', ov=document.getElementById('dw-overlay');
+  if(!ov) return;
+  try{ if(localStorage.getItem(KEY)){ return; } }catch(e){}
+  ov.hidden=false;
+  function seen(){ try{ localStorage.setItem(KEY,'1'); }catch(e){} }
+  function close(){ ov.hidden=true; seen(); }
+  document.getElementById('dw-x').addEventListener('click', close);
+  document.getElementById('dw-go').addEventListener('click', close);
+  ov.addEventListener('click', function(e){ if(e.target===ov) close(); });
+  ov.querySelectorAll('.dw-path').forEach(function(a){ a.addEventListener('click', seen); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !ov.hidden) close(); });
 })();
 </script>
 
