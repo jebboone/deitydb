@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Entity — DeityDB{% endblock %}
+{% block body_class %}deitydb-entity{% endblock %}
+
+{% block content %}
+<style>
+.en-page{max-width:880px;margin:0 auto;padding:8px 16px 60px}
+.en-search{position:relative;max-width:460px;margin:0 0 22px}
+.en-search input{width:100%;padding:11px 14px;border:1px solid #d8cdbb;border-radius:8px;font-size:1rem}
+.en-sug{position:absolute;left:0;right:0;top:46px;background:#fff;border:1px solid #d8cdbb;border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.12);z-index:20;overflow:hidden}
+.en-sug[hidden]{display:none}
+.en-sug-item{display:flex;justify-content:space-between;gap:10px;padding:9px 13px;cursor:pointer}
+.en-sug-item:hover,.en-sug-item.hi{background:#f3efe6}
+.en-sug-item .st{color:#9a8f7c;font-size:.82rem}
+.en-loading,.en-error{color:#7c7569;padding:24px 4px}
+.en-head{border-bottom:1px solid #ece6da;padding-bottom:18px;margin-bottom:18px}
+.en-head h1{margin:0 0 6px;font-size:2rem}
+.en-greek{color:#8a8170;font-weight:400;font-size:1.2rem}
+.en-chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px}
+.en-chip{font-size:.78rem;border-radius:20px;padding:3px 11px;background:#f1ecf7;color:#5b2a9e;font-weight:600}
+.en-chip.trad{color:#fff}
+.en-note{font-size:1.08rem;color:#3a342c;margin:0 0 14px;line-height:1.55}
+.en-domains{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.en-dom{font-size:.8rem;background:#f6efe3;border:1px solid #e7dccb;border-radius:6px;padding:2px 9px;color:#6a5d44}
+.en-when{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.en-per{font-size:.78rem;background:#eef4ef;border:1px solid #cfe3d6;border-radius:6px;padding:2px 9px;color:#2a6a47}
+.en-aka{color:#6a6258;font-size:.9rem;margin:0 0 14px}
+.en-graph-btn{display:inline-block;background:#5b2a9e;color:#fff;font-weight:600;text-decoration:none;padding:10px 18px;border-radius:8px;font-size:.95rem}
+.en-graph-btn:hover{background:#4a2280}
+.en-sec{margin:24px 0 0}
+.en-sec h2{font-size:1.15rem;margin:0 0 10px;color:#3b2a55}
+.en-relgrp{margin:0 0 12px}
+.en-verb{font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:#7c3bd4;font-weight:700;margin:0 0 3px}
+.en-rel-list a{color:#5b2a9e;text-decoration:none;font-weight:600}
+.en-rel-list a:hover{text-decoration:underline}
+.en-rel-list .rt{color:#9a8f7c;font-weight:400;font-size:.85rem}
+.en-src{padding:8px 0;border-top:1px solid #f0ebe2;font-size:.9rem}
+.en-src:first-child{border-top:0}
+.en-src a{color:#5b2a9e}
+.en-src .stype{color:#9a8f7c;font-size:.8rem}
+</style>
+
+<div class="en-page">
+  <div class="en-search">
+    <input id="en-q" type="search" placeholder="Search for another figure…" autocomplete="off" spellcheck="false" aria-label="Search entities">
+    <div id="en-sug" class="en-sug" role="listbox" hidden></div>
+  </div>
+
+  <div id="en-loading" class="en-loading">Loading…</div>
+  <div id="en-error" class="en-error" hidden></div>
+  <div id="en-body" hidden>
+    <div class="en-head">
+      <h1 id="en-name"></h1>
+      <div class="en-chips" id="en-chips"></div>
+      <p class="en-note" id="en-note"></p>
+      <div class="en-domains" id="en-domains"></div>
+      <div class="en-when" id="en-when"></div>
+      <p class="en-aka" id="en-aka" hidden></p>
+      <a class="en-graph-btn" id="en-graph" href="#">◉ Open in relationship graph</a>
+    </div>
+    <div class="en-sec" id="en-rels-sec" hidden><h2>Relationships</h2><div id="en-rels"></div></div>
+    <div class="en-sec" id="en-src-sec" hidden><h2>Sources</h2><div id="en-sources"></div></div>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+var TRAD_COLOR={greek:'#3b6fd4',egyptian:'#d4873b',mesopotamian:'#c43b8f',christian:'#2a8a4f',islamic:'#1a9e76',jewish:'#c4923b',gnostic:'#7c3bd4',northern:'#3b9dc4',roman:'#c43b3b',zoroastrian:'#c47c3b',hermetic:'#3ba8a0',other:'#94a3b8'};
+function tradKey(t){t=(t||'').toLowerCase();
+  if(t.indexOf('greek')===0)return'greek'; if(t.indexOf('egyptian')===0)return'egyptian'; if(t.indexOf('mesopotamian')===0)return'mesopotamian';
+  if(t.indexOf('christian')>=0)return'christian'; if(t.indexOf('islamic')>=0||t.indexOf('sufi')>=0||t.indexOf("shi'a")>=0)return'islamic';
+  if(t.indexOf('jewish')>=0||t.indexOf('israelite')>=0||t.indexOf('second temple')>=0)return'jewish';
+  if(t.indexOf('gnostic')>=0||t.indexOf('mandaean')>=0||t.indexOf('manichaean')>=0||t.indexOf('valentinian')>=0)return'gnostic';
+  if(t.indexOf('celtic')>=0||t.indexOf('norse')>=0||t.indexOf('germanic')>=0||t.indexOf('baltic')>=0||t.indexOf('slavic')>=0||t.indexOf('finnish')>=0)return'northern';
+  if(t.indexOf('roman')>=0||t.indexOf('etruscan')>=0||t.indexOf('italic')>=0)return'roman';
+  if(t.indexOf('zoroastrian')>=0||t.indexOf('persian')>=0)return'zoroastrian';
+  if(t.indexOf('hermetic')>=0||t.indexOf('late antique')>=0||t.indexOf('thelemic')>=0)return'hermetic'; return'other';}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function sqlStr(s){return String(s).replace(/'/g,"''");}
+function fmtY(y){return y<0?Math.abs(y)+' BCE':y+' CE';}
+function verb(s){return String(s||'').replace(/_/g,' ');}
+async function jsql(sql){var r=await fetch('/deitydb.json?sql='+encodeURIComponent(sql)+'&_shape=array&_size=500');if(!r.ok)throw new Error(r.status);return r.json();}
+
+var bodyEl=document.getElementById('en-body'), loadEl=document.getElementById('en-loading'), errEl=document.getElementById('en-error');
+
+function getId(){try{return new URLSearchParams(window.location.search).get('id');}catch(e){return null;}}
+
+async function load(id){
+  loadEl.hidden=false; bodyEl.hidden=true; errEl.hidden=true;
+  try{
+    var e=(await jsql("SELECT * FROM entities WHERE entity_id='"+sqlStr(id)+"'"))[0];
+    if(!e){ throw new Error('Entity not found.'); }
+    var rels=await jsql(
+      "SELECT er.relationship_type rel, CASE WHEN er.subject_entity_id='"+sqlStr(id)+"' THEN 'out' ELSE 'in' END dir,"+
+      " CASE WHEN er.subject_entity_id='"+sqlStr(id)+"' THEN er.object_entity_id ELSE er.subject_entity_id END oid,"+
+      " CASE WHEN er.subject_entity_id='"+sqlStr(id)+"' THEN o.canonical_name ELSE s.canonical_name END oname,"+
+      " CASE WHEN er.subject_entity_id='"+sqlStr(id)+"' THEN o.tradition ELSE s.tradition END otrad"+
+      " FROM entity_relationships er JOIN entities s ON s.entity_id=er.subject_entity_id JOIN entities o ON o.entity_id=er.object_entity_id"+
+      " WHERE er.subject_entity_id='"+sqlStr(id)+"' OR er.object_entity_id='"+sqlStr(id)+"' ORDER BY dir DESC, rel, oname");
+    var pers=await jsql("SELECT p.period_name nm, p.start_year sy, p.end_year ey FROM entity_periods ep JOIN periods p ON p.period_id=ep.period_id WHERE ep.entity_id='"+sqlStr(id)+"' ORDER BY p.start_year");
+    var aka=await jsql("SELECT alias_name nm FROM entity_aliases WHERE entity_id='"+sqlStr(id)+"' ORDER BY alias_name");
+    var srcs=await jsql("SELECT s.title title, s.url url, s.source_type st, es.evidence_type ev FROM entity_sources es JOIN sources s ON s.source_id=es.source_id WHERE es.entity_id='"+sqlStr(id)+"' ORDER BY s.title");
+    render(e,rels,pers,aka,srcs);
+  }catch(err){ errEl.textContent='Could not load this entity: '+err.message; errEl.hidden=false; loadEl.hidden=true; }
+}
+
+function render(e,rels,pers,aka,srcs){
+  document.title=e.canonical_name+' — DeityDB';
+  document.getElementById('en-name').innerHTML=esc(e.canonical_name)+(e.greek_name?' <span class="en-greek">'+esc(e.greek_name)+'</span>':'');
+  var tc=TRAD_COLOR[tradKey(e.tradition)]||TRAD_COLOR.other;
+  var chips='<span class="en-chip trad" style="background:'+tc+'">'+esc(e.tradition||'')+'</span>';
+  if(e.entity_type)chips+='<span class="en-chip">'+esc(e.entity_type)+'</span>';
+  if(e.category&&e.category!==e.entity_type)chips+='<span class="en-chip">'+esc(e.category)+'</span>';
+  if(e.evidence_confidence)chips+='<span class="en-chip">Evidence '+esc(e.evidence_confidence)+'</span>';
+  document.getElementById('en-chips').innerHTML=chips;
+  document.getElementById('en-note').textContent=e.short_note||'';
+  document.getElementById('en-domains').innerHTML=(e.primary_domains||'').split(/[;,]/).map(function(d){d=d.trim();return d?'<span class="en-dom">'+esc(d)+'</span>':'';}).join('');
+  document.getElementById('en-when').innerHTML=pers.map(function(p){return '<span class="en-per">'+esc(p.nm)+' ('+esc(fmtY(p.sy))+' – '+esc(fmtY(p.ey))+')</span>';}).join('');
+  if(aka.length){var el=document.getElementById('en-aka');el.hidden=false;el.innerHTML='<strong>Also known as:</strong> '+aka.map(function(a){return esc(a.nm);}).join(', ');}
+  document.getElementById('en-graph').href='/graph?start='+encodeURIComponent(e.entity_id);
+
+  /* relationships grouped by direction + verb */
+  if(rels.length){
+    document.getElementById('en-rels-sec').hidden=false;
+    var groups={}; var order=[];
+    rels.forEach(function(r){var key=r.dir+'|'+r.rel; if(!groups[key]){groups[key]=[];order.push(key);} groups[key].push(r);});
+    var html=order.map(function(key){
+      var parts=key.split('|'), dir=parts[0], rel=parts[1], list=groups[key];
+      var label=(dir==='out'?'':'is ')+verb(rel)+(dir==='out'?'':' by');
+      return '<div class="en-relgrp"><div class="en-verb">'+esc(label)+'</div><div class="en-rel-list">'+
+        list.map(function(r){return '<a href="/entity?id='+encodeURIComponent(r.oid)+'">'+esc(r.oname)+'</a> <span class="rt">'+esc(r.otrad)+'</span>';}).join(' · ')+
+        '</div></div>';
+    }).join('');
+    document.getElementById('en-rels').innerHTML=html;
+  }
+  /* sources */
+  if(srcs.length){
+    document.getElementById('en-src-sec').hidden=false;
+    document.getElementById('en-sources').innerHTML=srcs.map(function(s){
+      var t=s.url?'<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>':esc(s.title);
+      return '<div class="en-src">'+t+' <span class="stype">'+esc(s.st||'')+(s.ev?' · '+esc(s.ev):'')+'</span></div>';
+    }).join('');
+  }
+  loadEl.hidden=true; bodyEl.hidden=false;
+}
+
+/* ── search box (also the global search) ─────────────────────────── */
+var qEl=document.getElementById('en-q'), sugEl=document.getElementById('en-sug'), tmr;
+qEl.addEventListener('input',function(){clearTimeout(tmr);var q=this.value.trim();if(q.length<2){sugEl.hidden=true;return;}tmr=setTimeout(function(){ac(q);},200);});
+async function ac(q){
+  try{
+    var d=await(await fetch('/deitydb/entities.json?_shape=array&_size=10&_col=entity_id&_col=canonical_name&_col=tradition&canonical_name__contains='+encodeURIComponent(q))).json();
+    if(!d.length){sugEl.hidden=true;return;}
+    sugEl.innerHTML=d.map(function(r){return '<div class="en-sug-item" data-id="'+esc(r.entity_id)+'"><span>'+esc(r.canonical_name)+'</span><span class="st">'+esc(r.tradition||'')+'</span></div>';}).join('');
+    sugEl.hidden=false;
+    sugEl.querySelectorAll('.en-sug-item').forEach(function(it){it.addEventListener('click',function(){window.location='/entity?id='+encodeURIComponent(this.dataset.id);});});
+  }catch(e){sugEl.hidden=true;}
+}
+document.addEventListener('click',function(e){if(!e.target.closest('.en-search'))sugEl.hidden=true;});
+
+/* boot */
+var id=getId();
+if(id){ load(id); }
+else { loadEl.hidden=true; errEl.hidden=false; errEl.innerHTML='Search for a figure above, or <a href="/explore">browse all entities</a>.'; }
+})();
+</script>
+{% endblock %}
