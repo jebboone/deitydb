@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.63.2 — 2026-06-16
+
+### Connectivity batch 3 — enriched under-wired Egyptian & Mesopotamian entities
+
+**+66 typed, source-backed edges** adding family, pantheon, syncretism, and domain
+links to degree-1 entities (researched per cluster by four agents, schema-validated,
+0 rejected). Egyptian single-edge entities 83 -> 65; Mesopotamian 57 -> 20.
+Examples: Nefertem child_of Sekhmet & Ptah; Mehen opposes Apep; Neper
+syncretized_with Osiris; Bau -> Healing, Ishtaran -> Justice, Tishpak/Zababa -> War,
+Ishara/Nanaya -> Love; Kishar parent_of Anu; Humbaba slain_by Enkidu;
+Belet-seri / Geshtinanna / Neti -> the Underworld. (Boilerplate per-Assessor
+"presides_over Truth" spokes were dropped as noise.) Relationships 3,485 -> 3,551;
+0 unsourced, 0 unresolved, 0 unreviewed dups. `scripts/wire_singleedge_v1.sql`.
+
 ## v1.63.1 — 2026-06-16
 
 ### Audit follow-through: completeness fixes + more orphan wiring
