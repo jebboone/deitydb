@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.66.1 — 2026-06-16
+
+### Surface the occult layer on the public site
+
+- New canned query **magical-papyri-hub** ("The Magical Papyri — gods fused across
+  traditions"): the members of the PGM "Invoked Powers" collective with their home
+  traditions — a compact demonstration of how late-antique magic drew Greek,
+  Egyptian, Jewish, Mesopotamian and Gnostic powers into one operative system.
+- New homepage card in the Comparative Core section linking to it.
+No data change. templates/index.html, metadata.yaml.
+
 ## v1.66.0 — 2026-06-16
 
 ### Late-antique & early-medieval occult build

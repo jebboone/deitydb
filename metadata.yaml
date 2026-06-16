@@ -340,6 +340,29 @@ databases:
           WHERE tradition = :tradition OR linked_tradition = :tradition
           ORDER BY relationship_type, entity
 
+      magical-papyri-hub:
+        title: "★ The Magical Papyri — gods fused across traditions"
+        description_html: |
+          A cross-tradition hub in miniature: the powers invoked in the
+          <em>Greek Magical Papyri</em> (PGM), the late-antique ritual handbooks of
+          Greco-Roman Egypt. The same operative magic addressed Greek, Egyptian,
+          Jewish, Mesopotamian and Gnostic powers side by side — Iao and Sabaoth
+          beside Helios, Hekate, Bes, Seth-Typhon, Ereshkigal and Abrasax. Each row
+          is a power named in the papyri with its home tradition; the genuinely
+          PGM-native figures (the Headless One, the Kosmokrator, the protective
+          name-powers) carry the <em>Greco-Egyptian Magical</em> tag.
+        sql: |
+          SELECT s.canonical_name AS power,
+                 s.tradition,
+                 s.entity_type,
+                 r.confidence,
+                 s.short_note
+          FROM entity_relationships r
+          JOIN entities s ON s.entity_id = r.subject_entity_id
+          WHERE r.object_entity_id = 'ENT_PGM_INVOKED_POWERS'
+            AND r.relationship_type = 'member_of'
+          ORDER BY s.tradition, s.canonical_name
+
       comparative-domains-index:
         title: "Comparative domains — index"
         description_html: |
