@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.62.5 — 2026-06-16
+
+### Timeline view
+
+A new `/timeline` page renders the period-linked data as a chronological lane
+chart: each tradition is a bar spanning when its figures are attested, from the
+Early Dynastic Nile (~3150 BCE) to the modern occult revival, coloured by family
+and sorted oldest-first. Hover for the span and figure count; click a bar (or
+label) to list that tradition's entities. Added to the nav and homepage. Built
+on entity_periods → periods (start_year/end_year). Frontend-only.
+
 ## v1.62.4 — 2026-06-16
 
 ### Onboarding aids for first-time visitors
