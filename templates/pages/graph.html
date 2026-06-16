@@ -3,6 +3,12 @@
 {% block body_class %}deitydb-graph{% endblock %}
 
 {% block content %}
+<style>
+.gp-starts{display:flex;flex-direction:column;gap:14px;margin:18px auto 0;max-width:660px}
+.gp-start-grp{text-align:left}
+.gp-start-lbl{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:#7c7569;margin:0 0 7px;font-weight:700}
+.gp-start-row{display:flex;flex-wrap:wrap;gap:8px}
+</style>
 <div class="gp-page">
 
   {# ── Header ──────────────────────────────────────────────────────── #}
@@ -27,15 +33,42 @@
     {# Empty state #}
     <div class="gp-empty" id="gp-empty">
       <div class="gp-empty-icon">◉</div>
-      <p class="gp-empty-title">Search for an entity to begin</p>
-      <p class="gp-empty-seeds">
-        Try:
-        <button class="gp-seed" data-id="ENT_ZEUS">Zeus</button>
-        <button class="gp-seed" data-id="ENT_HERMES">Hermes</button>
-        <button class="gp-seed" data-id="ENT_HECATE">Hecate</button>
-        <button class="gp-seed" data-id="ENT_ENOCH">Enoch</button>
-        <button class="gp-seed" data-id="ENT_APOLLO">Apollo</button>
-      </p>
+      <p class="gp-empty-title">Search above, or pick a starting point</p>
+      <div class="gp-starts">
+        <div class="gp-start-grp">
+          <span class="gp-start-lbl">Famous figures</span>
+          <div class="gp-start-row">
+            <button class="gp-seed" data-id="ENT_ZEUS">Zeus</button>
+            <button class="gp-seed" data-id="ENT_APOLLO">Apollo</button>
+            <button class="gp-seed" data-id="ENT_APHRODITE">Aphrodite</button>
+            <button class="gp-seed" data-id="ENT_EGY_RA">Ra</button>
+            <button class="gp-seed" data-id="ENT_EGY_ISIS">Isis</button>
+            <button class="gp-seed" data-id="ENT_NOR_ODIN">Odin</button>
+            <button class="gp-seed" data-id="ENT_DIONYSUS">Dionysus</button>
+          </div>
+        </div>
+        <div class="gp-start-grp">
+          <span class="gp-start-lbl">Cross-tradition bridges</span>
+          <div class="gp-start-row">
+            <button class="gp-seed" data-id="ENT_HERMES">Hermes</button>
+            <button class="gp-seed" data-id="ENT_HECATE">Hecate</button>
+            <button class="gp-seed" data-id="ENT_SYN_MITHRAS">Mithras</button>
+            <button class="gp-seed" data-id="ENT_ROM_SOL_INVICTUS">Sol Invictus</button>
+            <button class="gp-seed" data-id="ENT_GNO_SOPHIA">Sophia</button>
+            <button class="gp-seed" data-id="ENT_EGY_THOTH">Thoth</button>
+          </div>
+        </div>
+        <div class="gp-start-grp">
+          <span class="gp-start-lbl">Whole worlds</span>
+          <div class="gp-start-row">
+            <button class="gp-seed" data-id="ENT_NOR_AESIR">The Aesir</button>
+            <button class="gp-seed" data-id="ENT_GNO_ARCHONS">The Archons</button>
+            <button class="gp-seed" data-id="ENT_EGY_FORTYTWO_ASSESSORS">42 Assessors of Maat</button>
+            <button class="gp-seed" data-id="ENT_LAT_DECANS">The Decans</button>
+            <button class="gp-seed" data-id="ENT_ROM_INDIGITAMENTA">The Indigitamenta</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     {# Loading state #}
@@ -671,6 +704,13 @@ function esc(s) {
 /* ── Boot ────────────────────────────────────────────────────────── */
 ensureSVG();
 startSim();
+
+/* Deep link: /graph?start=ENT_ID  (used by the Connections heatmap) */
+try {
+  var _sp = new URLSearchParams(window.location.search);
+  var _start = _sp.get('start');
+  if (_start) startGraph(_start);
+} catch (e) {}
 
 })();
 }
