@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.62.6 — 2026-06-16
+
+### Rich entity pages + global search
+
+- **Entity profile pages** (`/entity?id=ENT_ID`): a readable, no-SQL profile for any
+  figure — name, tradition/type chips, description, domains, the periods it belongs to,
+  aliases, its relationships grouped by type (each linking to the related figure's own
+  page), and its sources. An "Open in relationship graph" button hands off to the graph.
+- **Global search**: a search box on the homepage hero (and on every entity page)
+  autocompletes across all figures and jumps straight to the profile.
+
+Frontend-only.
+
 ## v1.62.5 — 2026-06-16
 
 ### Timeline view
