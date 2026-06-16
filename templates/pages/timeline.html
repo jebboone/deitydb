@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block title %}Timeline — DeityDB{% endblock %}
+{% block body_class %}deitydb-timeline{% endblock %}
+
+{% block content %}
+<style>
+.tl-page{max-width:1180px;margin:0 auto;padding:8px 16px 60px}
+.tl-head h1{margin:0 0 4px}
+.tl-sub{color:#5a5246;max-width:780px;margin:0 0 6px}
+.tl-note{color:#7c7569;font-size:.86rem;margin:0 0 16px}
+.tl-chart{position:relative;border:1px solid #e7dccb;border-radius:8px;background:#fff;padding:0 16px 14px}
+.tl-axis{display:grid;grid-template-columns:170px 1fr;position:sticky;top:0;background:#fff;z-index:3;padding-top:10px}
+.tl-axis-track{position:relative;height:22px}
+.tl-tick{position:absolute;transform:translateX(-50%);font-size:.7rem;color:#8a8170;white-space:nowrap;top:3px}
+.tl-grid{position:absolute;top:42px;left:186px;right:16px;bottom:14px;pointer-events:none;z-index:0}
+.tl-gl{position:absolute;top:0;bottom:0;width:1px;background:#f0ebe2}
+.tl-gl.zero{background:#d8c7b0;width:2px}
+.tl-rows{position:relative;z-index:1}
+.tl-row{display:grid;grid-template-columns:170px 1fr;align-items:center;height:26px}
+.tl-label{font-size:.8rem;color:#3b2a55;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:10px;cursor:pointer}
+.tl-label:hover{text-decoration:underline}
+.tl-count{color:#9a8f7c;font-weight:400}
+.tl-track{position:relative;height:26px}
+.tl-bar{position:absolute;top:5px;height:16px;border-radius:3px;cursor:pointer;min-width:3px;opacity:.88;transition:opacity .1s}
+.tl-bar:hover{opacity:1;box-shadow:0 0 0 2px rgba(124,59,212,.35)}
+.tl-tip{position:fixed;z-index:50;background:#2b2440;color:#fff;font-size:.8rem;padding:5px 9px;border-radius:6px;pointer-events:none;display:none;max-width:260px}
+.tl-loading{color:#7c7569;padding:30px 4px}
+</style>
+
+<div class="tl-page">
+  <div class="tl-head">
+    <h1>Timeline</h1>
+    <p class="tl-sub">When each tradition's gods, spirits, and cosmologies are attested — from the Early Dynastic Nile to the modern occult revival. Each bar spans the periods its figures belong to.</p>
+    <p class="tl-note" id="tl-note">Loading the timeline…</p>
+  </div>
+  <div class="tl-chart" id="tl-chart">
+    <div class="tl-loading" id="tl-loading">Loading…</div>
+  </div>
+</div>
+
+<div class="tl-tip" id="tl-tip"></div>
+
+<script>
+(function(){
+'use strict';
+var TRAD_COLOR={greek:'#3b6fd4',egyptian:'#d4873b',mesopotamian:'#c43b8f',christian:'#2a8a4f',islamic:'#1a9e76',jewish:'#c4923b',gnostic:'#7c3bd4',northern:'#3b9dc4',roman:'#c43b3b',zoroastrian:'#c47c3b',hermetic:'#3ba8a0',other:'#94a3b8'};
+function tradKey(t){t=(t||'').toLowerCase();
+  if(t.indexOf('greek')===0)return'greek';
+  if(t.indexOf('egyptian')===0)return'egyptian';
+  if(t.indexOf('mesopotamian')===0)return'mesopotamian';
+  if(t.indexOf('christian')>=0||t.indexOf('biblical')>=0)return'christian';
+  if(t.indexOf('islamic')>=0||t.indexOf('sufi')>=0||t.indexOf("shi'a")>=0)return'islamic';
+  if(t.indexOf('jewish')>=0||t.indexOf('israelite')>=0||t.indexOf('second temple')>=0)return'jewish';
+  if(t.indexOf('gnostic')>=0||t.indexOf('mandaean')>=0||t.indexOf('manichaean')>=0||t.indexOf('valentinian')>=0)return'gnostic';
+  if(t.indexOf('celtic')>=0||t.indexOf('norse')>=0||t.indexOf('germanic')>=0||t.indexOf('baltic')>=0||t.indexOf('slavic')>=0||t.indexOf('finnish')>=0)return'northern';
+  if(t.indexOf('roman')>=0||t.indexOf('etruscan')>=0||t.indexOf('italic')>=0)return'roman';
+  if(t.indexOf('zoroastrian')>=0||t.indexOf('persian')>=0)return'zoroastrian';
+  if(t.indexOf('hermetic')>=0||t.indexOf('late antique')>=0||t.indexOf('thelemic')>=0)return'hermetic';
+  return'other';}
+
+var chartEl=document.getElementById('tl-chart');
+var noteEl=document.getElementById('tl-note');
+var tipEl=document.getElementById('tl-tip');
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function fmt(y){return y<0?Math.abs(y)+' BCE':(y===0?'1 CE':y+' CE');}
+function fmtTick(y){return y<0?Math.abs(y)+' BCE':(y===0?'0':y+' CE');}
+function showTip(ev,txt){tipEl.innerHTML=txt;tipEl.style.display='block';tipEl.style.left=(ev.clientX+12)+'px';tipEl.style.top=(ev.clientY-10)+'px';}
+function hideTip(){tipEl.style.display='none';}
+
+async function init(){
+  var sql="SELECT e.tradition tradition, MIN(p.start_year) sy, MAX(p.end_year) ey, COUNT(DISTINCT e.entity_id) n"+
+    " FROM entities e JOIN entity_periods ep ON ep.entity_id=e.entity_id JOIN periods p ON p.period_id=ep.period_id"+
+    " WHERE e.tradition NOT LIKE 'Cross-traditional%' AND p.start_year IS NOT NULL AND p.end_year IS NOT NULL"+
+    " GROUP BY e.tradition HAVING COUNT(DISTINCT e.entity_id)>=3 ORDER BY sy, ey";
+  var data;
+  try{ data=await(await fetch('/deitydb.json?sql='+encodeURIComponent(sql)+'&_shape=array&_size=300')).json(); }
+  catch(e){ noteEl.textContent='Could not load the timeline data.'; return; }
+  if(!Array.isArray(data)||!data.length){ noteEl.textContent='No timeline data found.'; return; }
+
+  var minY=Math.min.apply(null,data.map(function(d){return d.sy;}));
+  var maxY=Math.max.apply(null,data.map(function(d){return d.ey;}));
+  minY=Math.floor(minY/500)*500; maxY=Math.ceil(maxY/500)*500;
+  var span=maxY-minY||1;
+  function pct(y){return (y-minY)/span*100;}
+
+  noteEl.textContent=data.length+' traditions, '+fmt(minY)+' to '+fmt(maxY)+'. Hover a bar for details; click to list that tradition’s figures.';
+
+  /* ticks every 1000 years */
+  var ticks=[]; for(var t=Math.ceil(minY/1000)*1000;t<=maxY;t+=1000) ticks.push(t);
+
+  var axisTicks=ticks.map(function(t){return '<span class="tl-tick" style="left:'+pct(t)+'%">'+fmtTick(t)+'</span>';}).join('');
+  var grid=ticks.map(function(t){return '<div class="tl-gl'+(t===0?' zero':'')+'" style="left:'+pct(t)+'%"></div>';}).join('');
+
+  var rows=data.map(function(d){
+    var color=TRAD_COLOR[tradKey(d.tradition)]||TRAD_COLOR.other;
+    var left=pct(d.sy), w=Math.max(0.5, pct(d.ey)-pct(d.sy));
+    var url='/deitydb/browse-tradition?tradition='+encodeURIComponent(d.tradition);
+    return '<div class="tl-row">'+
+      '<a class="tl-label" href="'+url+'" title="'+esc(d.tradition)+'">'+esc(d.tradition)+' <span class="tl-count">('+d.n+')</span></a>'+
+      '<div class="tl-track">'+
+        '<a class="tl-bar" href="'+url+'" style="left:'+left+'%;width:'+w+'%;background:'+color+'"'+
+        ' data-tip="'+esc(d.tradition)+' &middot; '+esc(fmt(d.sy))+' – '+esc(fmt(d.ey))+' &middot; '+d.n+' figures"></a>'+
+      '</div></div>';
+  }).join('');
+
+  chartEl.innerHTML=
+    '<div class="tl-axis"><div></div><div class="tl-axis-track">'+axisTicks+'</div></div>'+
+    '<div class="tl-grid">'+grid+'</div>'+
+    '<div class="tl-rows">'+rows+'</div>';
+
+  chartEl.querySelectorAll('.tl-bar').forEach(function(b){
+    b.addEventListener('mouseenter',function(ev){showTip(ev,this.dataset.tip);});
+    b.addEventListener('mousemove',function(ev){showTip(ev,this.dataset.tip);});
+    b.addEventListener('mouseleave',hideTip);
+  });
+}
+init();
+})();
+</script>
+{% endblock %}
