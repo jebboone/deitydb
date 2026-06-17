@@ -1,0 +1,51 @@
+[
+{
+"s": "ENT_SCI_THETAN",
+"t": "member_of",
+"o": "ENT_SCI_COSMOLOGY",
+"c": "high",
+"ra": "The thetan is a core belief-entity of the Scientology cosmological framework."
+},
+{
+"s": "ENT_SCI_BODY_THETAN",
+"t": "member_of",
+"o": "ENT_SCI_COSMOLOGY",
+"c": "high",
+"ra": "Body thetans are part of the OT-level Scientology cosmology."
+},
+{
+"s": "ENT_SCI_XENU",
+"t": "member_of",
+"o": "ENT_SCI_COSMOLOGY",
+"c": "high",
+"ra": "Xenu belongs to the OT III cosmogony within Scientology cosmology."
+},
+{
+"s": "ENT_SCI_MARCAB",
+"t": "member_of",
+"o": "ENT_SCI_COSMOLOGY",
+"c": "high",
+"ra": "The Marcab Confederacy is part of the galactic-civilization cosmology of Scientology."
+},
+{
+"s": "ENT_SCI_BODY_THETAN",
+"t": "associated_with",
+"o": "ENT_SCI_THETAN",
+"c": "high",
+"ra": "Body thetans are, in OT III belief, disembodied thetans of the same essential nature as the personal thetan."
+},
+{
+"s": "ENT_SCI_BODY_THETAN",
+"t": "associated_with",
+"o": "ENT_SCI_XENU",
+"c": "high",
+"ra": "In the Incident II account, body thetans originate from the disembodied beings Xenu is said to have brought to Earth."
+},
+{
+"s": "ENT_SCI_COSMOLOGY",
+"t": "aligned_with",
+"o": "ENT_VF_STARSEEDS",
+"c": "medium",
+"ra": "Scientology's galactic past-life cosmology (interstellar civilizations, thetans from elsewhere in the galaxy) shares the modern UFO-religion/galactic-origin motif expressed in the contemporary Starseed belief; a functional modern alignment, not identity."
+}
+]

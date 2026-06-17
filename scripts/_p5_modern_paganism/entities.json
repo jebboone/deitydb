@@ -1,0 +1,122 @@
+[
+{
+"id": "ENT_NPG_HEATHENRY",
+"name": "Heathenry (Asatru)",
+"type": "movement",
+"trad": "Modern Paganism",
+"dom": "modern revival of Norse/Germanic religion",
+"conf": "B",
+"note": "Hub node for the modern Heathen / Asatru movement; an organized, legally-recognized revival religion (e.g. Iceland's Asatruarfelagid, 1972) actively practicing blot and sumbel devotion to the Norse gods.",
+"src": "SRC_STRMISKA_MODERN_PAGANISM",
+"per": "PER_MODERN_PAGANISM",
+"cat": "movement"
+},
+{
+"id": "ENT_NPG_NINE_NOBLE_VIRTUES",
+"name": "The Nine Noble Virtues",
+"type": "concept",
+"trad": "Modern Paganism",
+"dom": "Heathen ethical code",
+"conf": "C",
+"note": "An ethical egregore of modern Heathenry (formulated 1970s, Odinic Rite/Asatru Free Assembly) drawn from the Havamal and sagas; sincerely held as a moral framework, though its modern origin is acknowledged in the community.",
+"src": "SRC_STRMISKA_MODERN_PAGANISM",
+"per": "PER_MODERN_PAGANISM",
+"cat": "concept"
+},
+{
+"id": "ENT_NPG_FOLK_UNIVERSALIST",
+"name": "Folkish–Universalist Distinction",
+"type": "concept",
+"trad": "Modern Paganism",
+"dom": "Heathen identity debate",
+"conf": "C",
+"note": "The defining internal distinction within practiced Heathenry over whether the faith is heritage-bound (folkish) or open to all (universalist); modeled neutrally as a belief-structure of the movement.",
+"src": "SRC_STRMISKA_MODERN_PAGANISM",
+"per": "PER_MODERN_PAGANISM",
+"cat": "concept"
+},
+{
+"id": "ENT_NPG_DRUIDRY",
+"name": "Modern Druidry (OBOD/ADF)",
+"type": "movement",
+"trad": "Modern Paganism",
+"dom": "modern revival of Celtic religion",
+"conf": "B",
+"note": "Hub node for the practiced modern Druid movement (Order of Bards Ovates & Druids; Ar nDraiocht Fein), reconstructing Celtic devotion and seasonal ritual to the Celtic gods.",
+"src": "SRC_STRMISKA_MODERN_PAGANISM",
+"per": "PER_MODERN_PAGANISM",
+"cat": "movement"
+},
+{
+"id": "ENT_NPG_GREAT_GODDESS",
+"name": "The Great Goddess (Goddess Movement)",
+"type": "deity",
+"trad": "Modern Paganism",
+"dom": "the single immanent feminine divine",
+"conf": "B",
+"note": "The one Great Goddess venerated in the Goddess movement and Dianic Wicca, of whom all named goddesses are held to be aspects; an actively-worshipped devotional figure.",
+"src": "SRC_STRMISKA_MODERN_PAGANISM",
+"per": "PER_MODERN_PAGANISM",
+"cat": "deity"
+},
+{
+"id": "ENT_NPG_MARTINISM",
+"name": "Martinism",
+"type": "movement",
+"trad": "Modern Paganism",
+"dom": "Christian-theurgic esoteric current",
+"conf": "C",
+"note": "A practiced esoteric initiatory current descending from Martinez de Pasqually and Louis-Claude de Saint-Martin, surviving in modern Martinist orders.",
+"src": "SRC_ALBANESE_REPUBLIC_MIND",
+"per": "PER_MODERN_PAGANISM",
+"cat": "movement"
+},
+{
+"id": "ENT_NPG_ELUS_COHENS",
+"name": "Order of Elus Cohens",
+"type": "order",
+"trad": "Modern Paganism",
+"dom": "theurgic Masonic order",
+"conf": "C",
+"note": "Martinez de Pasqually's Ordre des Chevaliers Macons Elus Coens de l'Univers, the theurgic order whose operative magic aimed at the Reintegration; revived and practiced in modern Martinism.",
+"src": "SRC_ALBANESE_REPUBLIC_MIND",
+"per": "PER_MODERN_PAGANISM",
+"cat": "order"
+},
+{
+"id": "ENT_NPG_REINTEGRATION",
+"name": "The Reintegration",
+"type": "concept",
+"trad": "Modern Paganism",
+"dom": "Martinist soteriology",
+"conf": "C",
+"note": "The central Martinist doctrine of the soul's reintegration into divine unity after the Fall; a sincerely-held esoteric belief and the goal of Elus Cohen theurgy.",
+"src": "SRC_ALBANESE_REPUBLIC_MIND",
+"per": "PER_MODERN_PAGANISM",
+"cat": "concept"
+},
+{
+"id": "ENT_NPG_REPAIRER",
+"name": "The Repairer (Le Reparateur)",
+"type": "concept",
+"trad": "Modern Paganism",
+"dom": "Martinist redeemer-figure",
+"conf": "C",
+"note": "The redemptive agent (the Christ/Repairer) who in Martinist theology effects the Reintegration of fallen humanity; modeled neutrally as a belief held within the tradition.",
+"src": "SRC_ALBANESE_REPUBLIC_MIND",
+"per": "PER_MODERN_PAGANISM",
+"cat": "concept"
+},
+{
+"id": "ENT_NPG_DIVINE_MIND",
+"name": "Infinite Intelligence / Divine Mind",
+"type": "concept",
+"trad": "Modern Paganism",
+"dom": "New Thought immanent divine",
+"conf": "B",
+"note": "The impersonal immanent God-principle of practiced New Thought (Unity, Religious Science, etc.); ENT_VF_THE_UNIVERSE is its popular vernacular descendant.",
+"src": "SRC_ALBANESE_REPUBLIC_MIND",
+"per": "PER_MODERN_PAGANISM",
+"cat": "concept"
+}
+]

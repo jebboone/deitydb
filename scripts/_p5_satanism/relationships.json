@@ -1,0 +1,114 @@
+[
+{
+"s": "ENT_SAT_LAVEYAN_SATAN",
+"t": "member_of",
+"o": "ENT_SAT_MOVEMENT",
+"c": "high",
+"ra": "The LaVeyan symbolic Satan is the central figure of the Church of Satan, the founding body of organized modern Satanism."
+},
+{
+"s": "ENT_SAT_FOUR_CROWN_PRINCES",
+"t": "member_of",
+"o": "ENT_SAT_MOVEMENT",
+"c": "high",
+"ra": "The Four Crown Princes are a doctrinal/ritual grouping of the Church of Satan within the modern Satanism movement."
+},
+{
+"s": "ENT_SAT_THEISTIC_SATAN",
+"t": "member_of",
+"o": "ENT_SAT_MOVEMENT",
+"c": "high",
+"ra": "Theistic Satanism's worshipped Satan belongs to the broad modern Satanism movement as its devotional/literalist current."
+},
+{
+"s": "ENT_SAT_LUCIFERIAN_LUCIFER",
+"t": "member_of",
+"o": "ENT_SAT_MOVEMENT",
+"c": "high",
+"ra": "Luciferianism is a recognized current within the modern Satanism movement."
+},
+{
+"s": "ENT_SAT_SETIAN_SET",
+"t": "member_of",
+"o": "ENT_SAT_MOVEMENT",
+"c": "high",
+"ra": "The Temple of Set's Set is the focal deity of the Setian current, a schismatic offshoot within organized modern Satanism."
+},
+{
+"s": "ENT_ISR_SATAN",
+"t": "member_of",
+"o": "ENT_SAT_FOUR_CROWN_PRINCES",
+"c": "high",
+"ra": "Satan is the first of LaVey's Four Crown Princes of Hell (south, fire); wiring the existing Satan entity into the collective rather than recreating it."
+},
+{
+"s": "ENT_CHR_LUCIFER",
+"t": "member_of",
+"o": "ENT_SAT_FOUR_CROWN_PRINCES",
+"c": "high",
+"ra": "Lucifer is named by LaVey as a Crown Prince of Hell (east, air); existing Lucifer entity wired into the collective."
+},
+{
+"s": "ENT_ISR_BELIAL",
+"t": "member_of",
+"o": "ENT_SAT_FOUR_CROWN_PRINCES",
+"c": "high",
+"ra": "Belial is named by LaVey as a Crown Prince of Hell (north, earth); existing Belial entity wired into the collective."
+},
+{
+"s": "ENT_ISR_LEVIATHAN",
+"t": "member_of",
+"o": "ENT_SAT_FOUR_CROWN_PRINCES",
+"c": "high",
+"ra": "Leviathan is named by LaVey as a Crown Prince of Hell (west, water); existing Leviathan entity wired into the collective."
+},
+{
+"s": "ENT_SAT_LAVEYAN_SATAN",
+"t": "reception_of",
+"o": "ENT_ISR_SATAN",
+"c": "high",
+"ra": "The LaVeyan symbolic adversary is a modern reinterpretation of the biblical/Second-Temple Satan, stripped of literal existence and recast as the carnal self."
+},
+{
+"s": "ENT_SAT_THEISTIC_SATAN",
+"t": "reception_of",
+"o": "ENT_ISR_SATAN",
+"c": "high",
+"ra": "Theistic Satanism's worshipped Satan is a devotional reception of the biblical/Second-Temple adversary as a literal deity."
+},
+{
+"s": "ENT_SAT_LUCIFERIAN_LUCIFER",
+"t": "reception_of",
+"o": "ENT_CHR_LUCIFER",
+"c": "high",
+"ra": "The Luciferian light-bringer is a positive modern reception of the Christian-reception Lucifer, inverting the fallen-angel narrative into one of enlightenment."
+},
+{
+"s": "ENT_SAT_SETIAN_SET",
+"t": "reception_of",
+"o": "ENT_EGY_SETH",
+"c": "high",
+"ra": "The Temple of Set venerates the Egyptian god Set/Seth as a real divine intelligence; Aquino's Setian Set is a modern reception of the ancient Egyptian deity."
+},
+{
+"s": "ENT_SAT_MOVEMENT",
+"t": "symbolized_by",
+"o": "ENT_REC_BAPHOMET_LEVI",
+"c": "high",
+"ra": "The Sigil of Baphomet (goat's-head pentagram) derived from Lévi's Baphomet is the emblem of the Church of Satan and broader modern Satanism."
+},
+{
+"s": "ENT_SAT_LAVEYAN_SATAN",
+"t": "associated_with",
+"o": "ENT_REC_BAPHOMET_LEVI",
+"c": "high",
+"ra": "LaVey adopted Lévi's Baphomet as the iconographic Sigil of Baphomet representing Satan in Church of Satan ritual."
+},
+{
+"s": "ENT_SAT_SETIAN_SET",
+"t": "opposes",
+"o": "ENT_SAT_LAVEYAN_SATAN",
+"c": "medium",
+"ra": "The Temple of Set defined itself in schism from the Church of Satan (1975), rejecting LaVey's purely symbolic Satan in favor of a literal deity Set; doctrinal opposition between the two currents."
+}
+]

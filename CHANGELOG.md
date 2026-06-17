@@ -1,5 +1,39 @@
 # Changelog
 
+## v1.89.0 — 2026-06-17
+
+### Completeness build-out, Phase 5 — Western esoteric & modern new-religious movements
+
+Fifth phase of the completeness program (`docs/COMPLETENESS_ROADMAP.md`), orchestrated
+research→adversarial-verify workflow (JSON only; applied + QA'd here) under the
+"genuinely-practiced" test. **+64 entities, +141 relationships, +17 sources, 8 new
+traditions.** Scorecard now 3,700 entities / 6,827 relationships / 440 sources / 130 traditions.
+
+- **Wicca** — the Horned God (`reception_of` Cernunnos & Pan), the Triple Goddess
+  (aligned with Hecate/Diana/Selene), the Dryghtyn, the Watchtower guardians, the Wheel of
+  the Year.
+- **Alchemy personified** — the tria prima (Sulphur/Mercury/Salt), the alchemical King &
+  Queen, the Rebis, Azoth, the Green Lion (linked to the World Soul & Hermes Trismegistus).
+- **Modern Satanism / Luciferianism / Temple of Set** — LaVeyan Satan, a "Four Crown
+  Princes" collective over the *existing* demons, Set & Baphomet & Lucifer by reception.
+- **Freemasonry & Rosicrucianism** — the Great Architect, Hiram Abiff, Jachin & Boaz,
+  Christian Rosenkreutz, the Invisible College.
+- **UFO religions** — the Space Brothers, Ashtar, the Council of Nine, the Raëlian Elohim,
+  Sananda, Heaven's Gate's Next Level (linked to the existing Starseeds).
+- **Scientology** — thetans, body thetans, Xenu, the Marcab Confederacy (neutrally-modeled
+  belief-entities).
+- **The "I AM" / Church Universal & Triumphant layer** — the Mighty I AM Presence, the
+  Violet Flame, the Great White Brotherhood (mostly reception edges onto the existing
+  Ascended Masters; Theosophical tradition, no new profile).
+- **Discordianism** — the modern Eris (`reception_of` the Greek Eris), the Sacred Chao, the
+  Golden Apple, Greyface, the Law of Fives.
+- **Modern Paganism** — Heathenry/Ásatrú & Druidry as reconstructionist movements (linked
+  to the Norse/Celtic gods), the Goddess movement, Martinism, New Thought.
+
+Integrity-gated to 0 rejected / orphan / unsourced / unperiodized / rationale-less /
+orphan-source / unreviewed-duplicate.
+
+
 ## v1.88.0 — 2026-06-17
 
 ### Completeness build-out, Phase 4 — European depth

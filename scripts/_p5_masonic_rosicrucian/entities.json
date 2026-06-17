@@ -1,0 +1,110 @@
+[
+{
+"id": "ENT_MAS_LODGE",
+"name": "The Masonic Lodge (Craft Freemasonry)",
+"type": "tradition_hub",
+"trad": "Masonic/Rosicrucian",
+"dom": "fraternity; initiation; moral allegory",
+"conf": "B",
+"note": "Hub for organized speculative Freemasonry, a globally practiced fraternal-initiatic system (Grand Lodge of England 1717 onward) whose ritual symbolism is the attestation base for these entities.",
+"src": "SRC_MACKEY_FREEMASONRY",
+"per": "PER_MASONIC",
+"cat": "Institution"
+},
+{
+"id": "ENT_MAS_ROSICRUCIAN",
+"name": "The Brotherhood of the Rosy Cross (Rosicrucianism)",
+"type": "tradition_hub",
+"trad": "Masonic/Rosicrucian",
+"dom": "Hermetic-Christian esotericism; reform; healing",
+"conf": "B",
+"note": "Hub for Rosicrucianism, an esoteric current launched by the early-17th-c. manifestos and continued by practicing modern orders (AMORC, SRIA, Rosicrucian Fellowship).",
+"src": "SRC_YATES_ROSICRUCIAN",
+"per": "PER_MASONIC",
+"cat": "Institution"
+},
+{
+"id": "ENT_MAS_GAOTU",
+"name": "The Great Architect of the Universe (G.A.O.T.U.)",
+"type": "Cosmic builder",
+"trad": "Masonic/Rosicrucian",
+"dom": "creation; divine craftsmanship; cosmic order",
+"conf": "B",
+"note": "Non-sectarian name of God required of Masonic candidates and invoked in lodge ritual; a deity sincerely affirmed (in varied confessional terms) by practicing Freemasons worldwide.",
+"src": "SRC_MACKEY_FREEMASONRY",
+"per": "PER_MASONIC",
+"cat": "Deity"
+},
+{
+"id": "ENT_MAS_HIRAM_ABIFF",
+"name": "Hiram Abiff",
+"type": "Legendary figure",
+"trad": "Masonic/Rosicrucian",
+"dom": "master-craft; fidelity; death and raising",
+"conf": "B",
+"note": "The murdered master-builder of Solomon's Temple in the Masonic Hiramic legend, ritually personified by the candidate in the Third Degree of practiced Craft Masonry.",
+"src": "SRC_MACKEY_FREEMASONRY",
+"per": "PER_MASONIC",
+"cat": "Legendary figure"
+},
+{
+"id": "ENT_MAS_JACHIN",
+"name": "Jachin (the pillar)",
+"type": "Cult object",
+"trad": "Masonic/Rosicrucian",
+"dom": "establishment; threshold; temple symbolism",
+"conf": "B",
+"note": "Personified right-hand pillar of Solomon's porch in Masonic ritual symbolism (lecture of the Fellow Craft); a working ritual symbol, not the biblical priest. Homonym/parallel to scriptural pillar named in 1 Kings 7.",
+"src": "SRC_MACKEY_FREEMASONRY",
+"per": "PER_MASONIC",
+"cat": "Sacred object"
+},
+{
+"id": "ENT_MAS_BOAZ",
+"name": "Boaz (the pillar)",
+"type": "Cult object",
+"trad": "Masonic/Rosicrucian",
+"dom": "strength; threshold; temple symbolism",
+"conf": "B",
+"note": "Personified left-hand pillar of Solomon's porch in Masonic ritual symbolism. HOMONYM: distinct from the biblical Boaz (ancestor of David), entity ENT_ISR_BOAZ; this is the Temple pillar of 1 Kings 7 as used in lodge symbolism.",
+"src": "SRC_MACKEY_FREEMASONRY",
+"per": "PER_MASONIC",
+"cat": "Sacred object"
+},
+{
+"id": "ENT_MAS_JAHBULON",
+"name": "Jahbulon",
+"type": "Divine name/principle",
+"trad": "Masonic/Rosicrucian",
+"dom": "ineffable name; Royal Arch mystery",
+"conf": "C",
+"note": "Composite sacred word disclosed in older Royal Arch Masonic ritual, traditionally parsed as conjoined divine names; a ritually-used (and controversy-attended) name within practiced Royal Arch Masonry, modeled neutrally.",
+"src": "SRC_MACKEY_FREEMASONRY",
+"per": "PER_MASONIC",
+"cat": "Divine name/principle"
+},
+{
+"id": "ENT_MAS_CHRISTIAN_ROSENKREUTZ",
+"name": "Christian Rosenkreutz",
+"type": "Legendary figure",
+"trad": "Masonic/Rosicrucian",
+"dom": "founder-sage; Hermetic wisdom; hidden adeptship",
+"conf": "B",
+"note": "Legendary founder of the Rosicrucian brotherhood narrated in the Fama and Chymical Wedding; revered as an archetypal adept within practicing Rosicrucian orders.",
+"src": "SRC_YATES_ROSICRUCIAN",
+"per": "PER_MASONIC",
+"cat": "Legendary figure"
+},
+{
+"id": "ENT_MAS_INVISIBLE_COLLEGE",
+"name": "The Invisible College",
+"type": "Initiate order",
+"trad": "Masonic/Rosicrucian",
+"dom": "hidden fellowship of adepts; reform; healing",
+"conf": "B",
+"note": "The unseen confraternity of Rosicrucian adepts proclaimed in the manifestos; a believed-in body of hidden masters within Rosicrucian practice and a template for later occult orders. Distinct from the Rosicrucian tradition-hub (ENT_MAS_ROSICRUCIAN) — this is the body of adepts itself.",
+"src": "SRC_YATES_ROSICRUCIAN",
+"per": "PER_MASONIC",
+"cat": "Collective"
+}
+]

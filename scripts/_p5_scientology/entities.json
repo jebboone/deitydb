@@ -1,0 +1,62 @@
+[
+{
+"id": "ENT_SCI_COSMOLOGY",
+"name": "Scientology Cosmology",
+"type": "concept",
+"trad": "Scientology",
+"dom": "cosmology",
+"conf": "B",
+"note": "Hub collective for the cosmological belief-entities of Scientology, a practiced modern new religion; the framework of thetans, body thetans, and the OT-level space-opera narratives held within the tradition.",
+"src": "SRC_URBAN_SCIENTOLOGY",
+"per": "PER_SCIENTOLOGY",
+"cat": "belief-system"
+},
+{
+"id": "ENT_SCI_THETAN",
+"name": "Thetan",
+"type": "spirit",
+"trad": "Scientology",
+"dom": "soul / immortal spirit",
+"conf": "B",
+"note": "In Scientology belief, the thetan is the immortal spiritual being that each person fundamentally is, having lived through countless past lives; a core devotional/doctrinal concept central to auditing practice.",
+"src": "SRC_URBAN_SCIENTOLOGY",
+"per": "PER_SCIENTOLOGY",
+"cat": "soul"
+},
+{
+"id": "ENT_SCI_BODY_THETAN",
+"name": "Body Thetans",
+"type": "spirit",
+"trad": "Scientology",
+"dom": "disembodied spirits",
+"conf": "C",
+"note": "In the advanced (OT III) belief held by practicing Scientologists, body thetans are disembodied thetans (from the Xenu/Incident II account) clustered on the body, addressed in auditing; modeled neutrally as a sincerely-held esoteric belief.",
+"src": "SRC_URBAN_SCIENTOLOGY",
+"per": "PER_SCIENTOLOGY",
+"cat": "spirit"
+},
+{
+"id": "ENT_SCI_XENU",
+"name": "Xenu",
+"type": "figure",
+"trad": "Scientology",
+"dom": "galactic ruler",
+"conf": "C",
+"note": "In the OT III \"Incident II\" cosmogony taught within Scientology, Xenu is the galactic ruler said to have brought billions of thetans to Earth ~75 million years ago; modeled neutrally as a belief-entity of the tradition.",
+"src": "SRC_URBAN_SCIENTOLOGY",
+"per": "PER_SCIENTOLOGY",
+"cat": "mythic-ruler"
+},
+{
+"id": "ENT_SCI_MARCAB",
+"name": "Marcab Confederacy",
+"type": "place",
+"trad": "Scientology",
+"dom": "galactic civilization",
+"conf": "C",
+"note": "In Scientology's auditing cosmology, the Marcab Confederacy is an ancient interstellar civilization recalled in past-life accounts; modeled neutrally as a belief-entity held within the tradition.",
+"src": "SRC_LEWIS_SCIENTOLOGY",
+"per": "PER_SCIENTOLOGY",
+"cat": "otherworld"
+}
+]

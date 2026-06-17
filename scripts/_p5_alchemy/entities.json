@@ -1,0 +1,110 @@
+[
+{
+"id": "ENT_ALC_PRINCIPLES",
+"name": "The Alchemical Principles",
+"type": "Abstract power/category",
+"trad": "Alchemical",
+"dom": "alchemy; transmutation; Hermetic philosophy",
+"conf": "B",
+"note": "Collective hub for the personified principles of Western alchemy as engaged operatively and contemplatively within Hermetic-alchemical practice; basis for membership grouping, not a worshipped deity.",
+"src": "SRC_ABRAHAM_ALCH_IMAGERY",
+"per": "PER_ALCHEMY",
+"cat": "collective"
+},
+{
+"id": "ENT_ALC_SULPHUR",
+"name": "Sulphur (Philosophical)",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "active masculine principle; soul; combustibility",
+"conf": "B",
+"note": "Philosophical Sulphur, the hot/dry active 'masculine' soul-principle of the tria prima; treated in alchemical practice as the fixing, coloring agent, distinct from common brimstone.",
+"src": "SRC_ABRAHAM_ALCH_IMAGERY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+},
+{
+"id": "ENT_ALC_MERCURY_PHIL",
+"name": "Philosophical Mercury",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "mediating principle; spirit; volatility; transformation",
+"conf": "B",
+"note": "Mercurius philosophorum, the volatile mediating spirit-principle of the tria prima and chief agent of transmutation; revered in the corpus as the duplex/ambivalent Mercurius, not ordinary quicksilver. Homonym: distinct from the Roman god Mercury and from Hermes Trismegistus.",
+"src": "SRC_JUNG_PSYCH_ALCHEMY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+},
+{
+"id": "ENT_ALC_SALT",
+"name": "Salt (Philosophical)",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "passive principle; body; fixity",
+"conf": "B",
+"note": "Philosophical Salt, the fixed corporeal 'body' principle of the Paracelsian tria prima that binds Sulphur and Mercury; an operative category of the practiced art.",
+"src": "SRC_ABRAHAM_ALCH_IMAGERY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+},
+{
+"id": "ENT_ALC_KING",
+"name": "The Alchemical King (Sol/Rex)",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "solar principle; gold; the fixed masculine",
+"conf": "B",
+"note": "The Red King / Sol, solar 'masculine' partner of the royal pair whose union (the chymical wedding) is enacted symbolically in the alchemical opus.",
+"src": "SRC_JUNG_PSYCH_ALCHEMY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+},
+{
+"id": "ENT_ALC_QUEEN",
+"name": "The Alchemical Queen (Luna/Regina)",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "lunar principle; silver; the volatile feminine",
+"conf": "B",
+"note": "The White Queen / Luna, lunar 'feminine' partner of the royal pair in the chymical wedding; counterpart of the King in the practiced coniunctio.",
+"src": "SRC_JUNG_PSYCH_ALCHEMY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+},
+{
+"id": "ENT_ALC_REBIS",
+"name": "The Rebis",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "coniunctio; hermaphrodite; union of opposites",
+"conf": "B",
+"note": "The Rebis, the conjoined hermaphroditic offspring of the King and Queen embodying the union of opposites (coniunctio); a central goal-image of the alchemical work.",
+"src": "SRC_JUNG_PSYCH_ALCHEMY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+},
+{
+"id": "ENT_ALC_AZOTH",
+"name": "Azoth",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "universal solvent; first matter; transforming agent",
+"conf": "B",
+"note": "Azoth, the universal transforming agent/first-and-last principle of the work, often identified with Philosophical Mercury; a key operative term of the practiced art (Paracelsus, Basil Valentine).",
+"src": "SRC_ABRAHAM_ALCH_IMAGERY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+},
+{
+"id": "ENT_ALC_GREEN_LION",
+"name": "The Green Lion",
+"type": "Abstract/cosmological category",
+"trad": "Alchemical",
+"dom": "crude prime matter; vitriol; dissolution",
+"conf": "B",
+"note": "The Green Lion, personified raw/unripe matter or vitriol that 'devours the sun' (dissolves gold) early in the opus; a recurrent emblematic figure of the alchemical corpus.",
+"src": "SRC_ABRAHAM_ALCH_IMAGERY",
+"per": "PER_ALCHEMY",
+"cat": "principle"
+}
+]

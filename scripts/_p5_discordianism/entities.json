@@ -1,0 +1,74 @@
+[
+{
+"id": "ENT_DIS_DISCORDIANISM",
+"name": "Discordianism",
+"type": "tradition_hub",
+"trad": "Discordianism",
+"dom": "chaos; absurdism; parody religion; individualism",
+"conf": "B",
+"note": "Tradition-hub. Discordianism is an absurdist/parody religion founded 1958-63 by Greg Hill and Kerry Thornley and codified in the Principia Discordia; genuinely practiced worldwide (cabals, ordinations, the 'every man a Pope' ethos) and influential on chaos magic. Attested in the Principia Discordia and treated as a sincerely-held invented religion in Cusack 2010.",
+"src": "SRC_CUSACK_INVENTED_RELIGIONS",
+"per": "PER_DISCORDIAN",
+"cat": "Movement"
+},
+{
+"id": "ENT_DIS_ERIS",
+"name": "Eris (Discordian Goddess of Chaos)",
+"type": "Goddess",
+"trad": "Discordianism",
+"dom": "chaos; discord; creative disorder",
+"conf": "B",
+"note": "The Discordian Eris/Discordia, central deity venerated by practicing Discordians as the benevolent Goddess of Chaos. An explicit modern reception of the ancient Greek Eris (ENT_ERIS); modeled neutrally as the sincerely-held object of Discordian devotion per the Principia Discordia. Homonym of, and reception_of, ENT_ERIS (Greek).",
+"src": "SRC_PRINCIPIA_DISCORDIA",
+"per": "PER_DISCORDIAN",
+"cat": "Goddess"
+},
+{
+"id": "ENT_DIS_SACRED_CHAO",
+"name": "The Sacred Chao",
+"type": "Sacred object",
+"trad": "Discordianism",
+"dom": "cosmology; order and chaos; symbol",
+"conf": "B",
+"note": "Core Discordian symbol (a yin-yang-like figure bearing the Apple of Discord and the Pentagon), used devotionally/ritually as the emblem of the interplay of order and disorder. Attested in the Principia Discordia.",
+"src": "SRC_PRINCIPIA_DISCORDIA",
+"per": "PER_DISCORDIAN",
+"cat": "Symbol"
+},
+{
+"id": "ENT_DIS_GOLDEN_APPLE",
+"name": "The Golden Apple of Discord (Discordian)",
+"type": "Sacred object",
+"trad": "Discordianism",
+"dom": "discord; chaos; relic",
+"conf": "B",
+"note": "The golden apple inscribed 'kallisti' ('to the prettiest one'), revered in Discordian practice as Eris's defining relic and a sign of fruitful discord. A reception of the apple from the Greek Judgment of Paris myth, recontextualized in the Principia Discordia.",
+"src": "SRC_PRINCIPIA_DISCORDIA",
+"per": "PER_DISCORDIAN",
+"cat": "Relic"
+},
+{
+"id": "ENT_DIS_GREYFACE",
+"name": "Greyface",
+"type": "Antagonist figure",
+"trad": "Discordianism",
+"dom": "order; seriousness; the curse of 'the Curse of Greyface'",
+"conf": "C",
+"note": "The personified spirit of grim order and life-denying seriousness in Discordian myth; a man of c.1166 BC said to have taught that life is serious and play is wrong, originating 'the Curse of Greyface.' The doctrinal antagonist of Eris/chaos; attested in the Principia Discordia.",
+"src": "SRC_PRINCIPIA_DISCORDIA",
+"per": "PER_DISCORDIAN",
+"cat": "Figure"
+},
+{
+"id": "ENT_DIS_LAW_OF_FIVES",
+"name": "The Law of Fives",
+"type": "Doctrine",
+"trad": "Discordianism",
+"dom": "doctrine; numerology; hermeneutics",
+"conf": "C",
+"note": "Core Discordian doctrine that all things happen in fives, or are divisible by or related to five (the 'Law of Fives is never wrong' precisely because one can always find fives). Practiced as a half-serious interpretive/numerological lens; attested in the Principia Discordia.",
+"src": "SRC_PRINCIPIA_DISCORDIA",
+"per": "PER_DISCORDIAN",
+"cat": "Doctrine"
+}
+]

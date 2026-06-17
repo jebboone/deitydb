@@ -1,0 +1,100 @@
+[
+{
+"s": "ENT_MAS_GAOTU",
+"t": "member_of",
+"o": "ENT_MAS_LODGE",
+"c": "high",
+"ra": "G.A.O.T.U. is the deity invoked in Craft Masonic ritual; anchors to the lodge hub."
+},
+{
+"s": "ENT_MAS_HIRAM_ABIFF",
+"t": "member_of",
+"o": "ENT_MAS_LODGE",
+"c": "high",
+"ra": "Hiram Abiff is the central legendary figure of Craft Masonry's Third Degree."
+},
+{
+"s": "ENT_MAS_JACHIN",
+"t": "member_of",
+"o": "ENT_MAS_LODGE",
+"c": "high",
+"ra": "The pillar Jachin is a core symbolic object of the Masonic lodge."
+},
+{
+"s": "ENT_MAS_BOAZ",
+"t": "member_of",
+"o": "ENT_MAS_LODGE",
+"c": "high",
+"ra": "The pillar Boaz is a core symbolic object of the Masonic lodge."
+},
+{
+"s": "ENT_MAS_JAHBULON",
+"t": "member_of",
+"o": "ENT_MAS_LODGE",
+"c": "medium",
+"ra": "Jahbulon belongs to Royal Arch Masonry, a continuation of the Craft lodge system."
+},
+{
+"s": "ENT_MAS_CHRISTIAN_ROSENKREUTZ",
+"t": "member_of",
+"o": "ENT_MAS_ROSICRUCIAN",
+"c": "high",
+"ra": "Christian Rosenkreutz is the legendary founder of the Rosicrucian brotherhood hub."
+},
+{
+"s": "ENT_MAS_INVISIBLE_COLLEGE",
+"t": "member_of",
+"o": "ENT_MAS_ROSICRUCIAN",
+"c": "high",
+"ra": "The Invisible College is the brotherhood organ of the Rosicrucian current."
+},
+{
+"s": "ENT_MAS_INVISIBLE_COLLEGE",
+"t": "associated_with",
+"o": "ENT_MAS_CHRISTIAN_ROSENKREUTZ",
+"c": "high",
+"ra": "The manifestos present the Brotherhood of the Rosy Cross as founded by and centered on Christian Rosenkreutz."
+},
+{
+"s": "ENT_MAS_JACHIN",
+"t": "paired_with",
+"o": "ENT_MAS_BOAZ",
+"c": "high",
+"ra": "Jachin and Boaz are the inseparable twin pillars of Solomon's porch in Masonic symbolism."
+},
+{
+"s": "ENT_MAS_HIRAM_ABIFF",
+"t": "associated_with",
+"o": "ENT_ISR_SOLOMON",
+"c": "high",
+"ra": "The Hiramic legend casts Hiram Abiff as master-builder of King Solomon's Temple."
+},
+{
+"s": "ENT_MAS_JACHIN",
+"t": "associated_with",
+"o": "ENT_ISR_SOLOMON",
+"c": "medium",
+"ra": "The pillars Jachin and Boaz stood at the porch of Solomon's Temple in the legend the lodge draws on."
+},
+{
+"s": "ENT_MAS_GAOTU",
+"t": "reception_of",
+"o": "ENT_HER_DEMIURGE",
+"c": "medium",
+"ra": "The Masonic image of God as cosmic Architect/Craftsman receives the Hermetic-Platonic demiurgic-craftsman conception of the divine maker."
+},
+{
+"s": "ENT_MAS_ROSICRUCIAN",
+"t": "reception_of",
+"o": "ENT_HER_TRISMEGISTUS",
+"c": "high",
+"ra": "Rosicrucianism is heavily Hermetic, taking up the prisca theologia of Hermes Trismegistus as a wisdom source."
+},
+{
+"s": "ENT_MAS_INVISIBLE_COLLEGE",
+"t": "aligned_with",
+"o": "ENT_MOD_SECRET_CHIEFS",
+"c": "medium",
+"ra": "The Rosicrucian hidden brotherhood of adepts is the prototype later occult orders developed into the doctrine of unseen Secret Chiefs."
+}
+]

@@ -1,0 +1,128 @@
+[
+{
+"s": "ENT_ALC_SULPHUR",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "Philosophical Sulphur is one of the tria prima grouped under the Alchemical Principles hub."
+},
+{
+"s": "ENT_ALC_MERCURY_PHIL",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "Philosophical Mercury is one of the tria prima grouped under the hub."
+},
+{
+"s": "ENT_ALC_SALT",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "Philosophical Salt completes the Paracelsian tria prima under the hub."
+},
+{
+"s": "ENT_ALC_KING",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "The Alchemical King is a personified principle in the corpus, grouped under the hub."
+},
+{
+"s": "ENT_ALC_QUEEN",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "The Alchemical Queen is a personified principle grouped under the hub."
+},
+{
+"s": "ENT_ALC_REBIS",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "The Rebis is a personified principle/goal-image grouped under the hub."
+},
+{
+"s": "ENT_ALC_AZOTH",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "Azoth is a personified operative principle grouped under the hub."
+},
+{
+"s": "ENT_ALC_GREEN_LION",
+"t": "member_of",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "high",
+"ra": "The Green Lion is a personified emblem-principle grouped under the hub."
+},
+{
+"s": "ENT_ALC_KING",
+"t": "consort_of",
+"o": "ENT_ALC_QUEEN",
+"c": "high",
+"ra": "Sol/Rex and Luna/Regina are the royal pair whose marriage is the chymical wedding."
+},
+{
+"s": "ENT_ALC_REBIS",
+"t": "child_of",
+"o": "ENT_ALC_KING",
+"c": "high",
+"ra": "The Rebis is the hermaphroditic offspring born from the union of the King and Queen."
+},
+{
+"s": "ENT_ALC_REBIS",
+"t": "child_of",
+"o": "ENT_ALC_QUEEN",
+"c": "high",
+"ra": "The Rebis is the hermaphroditic offspring of the King and Queen's coniunctio."
+},
+{
+"s": "ENT_ALC_REBIS",
+"t": "embodies",
+"o": "ENT_ALC_PRINCIPLES",
+"c": "medium",
+"ra": "As the coniunctio of opposites, the Rebis embodies the reconciliation of the alchemical principles."
+},
+{
+"s": "ENT_ALC_AZOTH",
+"t": "identified_with",
+"o": "ENT_ALC_MERCURY_PHIL",
+"c": "high",
+"ra": "In the corpus Azoth is frequently identified with Philosophical Mercury as the universal transforming agent."
+},
+{
+"s": "ENT_ALC_KING",
+"t": "symbolizes",
+"o": "ENT_ALC_SULPHUR",
+"c": "medium",
+"ra": "Sol/the King as the fixed solar masculine is read as the manifest form of the active Sulphur principle."
+},
+{
+"s": "ENT_ALC_QUEEN",
+"t": "symbolizes",
+"o": "ENT_ALC_MERCURY_PHIL",
+"c": "medium",
+"ra": "Luna/the Queen as the volatile lunar feminine is aligned with the volatile Mercury principle."
+},
+{
+"s": "ENT_ALC_MERCURY_PHIL",
+"t": "reception_of",
+"o": "ENT_HER_TRISMEGISTUS",
+"c": "medium",
+"ra": "Philosophical Mercury (Mercurius) draws its name and authority from the Hermetic tradition of Hermes Trismegistus, the legendary father of the art; a reception, not identity (homonym noted)."
+},
+{
+"s": "ENT_ALC_PRINCIPLES",
+"t": "reception_of",
+"o": "ENT_HER_TRISMEGISTUS",
+"c": "medium",
+"ra": "Western alchemy frames itself as the Hermetic art received from Hermes Trismegistus, whose Emerald Tablet underwrites its principles."
+},
+{
+"s": "ENT_ALC_PRINCIPLES",
+"t": "aligned_with",
+"o": "ENT_HER_WORLD_SOUL",
+"c": "medium",
+"ra": "The animating spirit sought in the alchemical opus is aligned in the Hermetic-alchemical corpus with the World Soul / Anima Mundi as the universal life-principle."
+}
+]
