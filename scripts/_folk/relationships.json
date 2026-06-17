@@ -1,0 +1,16 @@
+[
+{"s":"ENT_ISL_SHAYTAN","t":"member_of","o":"ENT_ISL_JINN_CLASSES","c":"high","ra":"The shayatin are the rebellious/evil class of jinn in Islamic cosmology."},
+{"s":"ENT_ISL_GHUL","t":"member_of","o":"ENT_ISL_JINN_CLASSES","c":"high","ra":"Classical lore (al-Jahiz, al-Damiri) enumerates the ghul among the classes of jinn."},
+{"s":"ENT_ISL_SILAT","t":"member_of","o":"ENT_ISL_JINN_CLASSES","c":"high","ra":"The si'lat is listed among the classes of jinn in classical Arabian demonology."},
+{"s":"ENT_ISL_DIV","t":"member_of","o":"ENT_ISL_JINN_CLASSES","c":"medium","ra":"In Persianate Islamic tradition the div is assimilated to the jinn (a regional classification)."},
+{"s":"ENT_ISL_IFRIT","t":"member_of","o":"ENT_ISL_JINN_CLASSES","c":"high","ra":"The ifrit is a standard powerful subtype in the classical jinn taxonomy (wiring the existing entity)."},
+{"s":"ENT_ISL_MARID","t":"member_of","o":"ENT_ISL_JINN_CLASSES","c":"high","ra":"The marid is a standard rebellious/powerful subtype in the classical jinn taxonomy (wiring the existing entity)."},
+{"s":"ENT_ISL_IBLIS","t":"rules","o":"ENT_ISL_SHAYTAN","c":"high","ra":"Iblis (al-Shaytan al-rajim) is the chief of the devils; the shayatin are his host and instruments of temptation."},
+{"s":"ENT_ISL_SHAYTAN","t":"presides_over","o":"ENT_DECEPTION","c":"high","ra":"The defining function of the shayatin is whispering temptation and deception (waswasa)."},
+{"s":"ENT_JM_DYBBUK","t":"member_of","o":"ENT_JM_SHEDIM","c":"medium","ra":"The dybbuk is broadly reckoned among harmful spirits/demons (shedim) in Jewish folk demonology, though it originates from a dead human soul."},
+{"s":"ENT_JM_DYBBUK","t":"presides_over","o":"ENT_DISEASE","c":"medium","ra":"The dybbuk manifests as affliction/illness of the possessed host requiring exorcism."},
+{"s":"ENT_JM_IBBUR","t":"opposes","o":"ENT_JM_DYBBUK","c":"medium","ra":"Ibbur (benevolent righteous indwelling) is the structural and moral counterpart to the dybbuk (malevolent possession) in Lurianic Kabbalah."},
+{"s":"ENT_JM_GOLEM","t":"presides_over","o":"ENT_PROTECTION","c":"medium","ra":"In the dominant legend the golem is fashioned as a protector and servant of the Jewish community."},
+{"s":"ENT_JM_ESTRIE","t":"member_of","o":"ENT_JM_SHEDIM","c":"medium","ra":"The estrie is a female demon of medieval Jewish folklore, classed among the harmful demonic beings (shedim)."},
+{"s":"ENT_CHR_GOG_AND_MAGOG","t":"presides_over","o":"ENT_DESTRUCTION","c":"medium","ra":"Gog and Magog embody the final eschatological assault and devastation in Ezekiel 38-39 and Revelation 20."}
+]
