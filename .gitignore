@@ -5,6 +5,9 @@ CLAUDE.md
 .env
 *.local
 
+# Python virtual environment (tooling: datasette, db-to-sqlite, etc.)
+.venv/
+
 # Generated SQLite export (built from PostgreSQL; not checked in)
 deitydb.sqlite
 
