@@ -8,6 +8,19 @@
 .gp-start-grp{text-align:left}
 .gp-start-lbl{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:#7c7569;margin:0 0 7px;font-weight:700}
 .gp-start-row{display:flex;flex-wrap:wrap;gap:8px}
+.gp-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:10px auto 0;max-width:1180px;padding:0 4px;font-size:.85rem}
+.gp-controls[hidden]{display:none}
+.gp-ctrl{color:#5a5246}
+.gp-ctrl select{padding:5px 8px;border:1px solid #d8cdbb;border-radius:7px}
+.gp-pathlink{color:#5b2a9e;font-weight:600;text-decoration:none;margin-left:auto}
+.gp-pathlink:hover{text-decoration:underline}
+details.gp-ctrl{position:relative}
+details.gp-ctrl summary{cursor:pointer;border:1px solid #d8cdbb;border-radius:7px;padding:5px 10px;list-style:none}
+details.gp-ctrl summary::-webkit-details-marker{display:none}
+.gp-types{position:absolute;top:34px;left:0;background:#fff;border:1px solid #d8cdbb;border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.14);padding:8px 10px;z-index:40;max-height:280px;overflow:auto;width:230px}
+.gp-types label{display:block;padding:2px 0;white-space:nowrap;font-size:.83rem}
+.gp-types .gp-types-act{display:flex;gap:10px;margin:0 0 6px;font-size:.78rem}
+.gp-types .gp-types-act a{color:#5b2a9e;cursor:pointer}
 </style>
 <div class="gp-page">
 
@@ -25,6 +38,13 @@
         <div id="gp-suggestions" class="gp-suggestions" role="listbox" hidden></div>
       </div>
     </div>
+  </div>
+
+  {# ── Filters (shown once a graph is up) ───────────────────────────── #}
+  <div class="gp-controls" id="gp-controls" hidden>
+    <details class="gp-ctrl"><summary>▾ Relationship types</summary><div class="gp-types" id="gp-types"></div></details>
+    <label class="gp-ctrl">Tradition <select id="gp-tradfilter"><option value="">all</option></select></label>
+    <a class="gp-ctrl gp-pathlink" href="/path">⇄ Find a path between two figures →</a>
   </div>
 
   {# ── Canvas ───────────────────────────────────────────────────────── #}
@@ -196,6 +216,12 @@ var toolbarEl  = document.getElementById('gp-toolbar');
 var legendEl   = document.getElementById('gp-legend');
 var statsEl    = document.getElementById('gp-stats');
 var tipEl      = document.getElementById('gp-tooltip');
+var controlsEl = document.getElementById('gp-controls');
+var typesEl    = document.getElementById('gp-types');
+var tradFilterEl = document.getElementById('gp-tradfilter');
+var activeTypes = null;   /* Set of enabled relationship_types, or null = all */
+var activeTrad  = '';     /* exact tradition to spotlight, or '' = all       */
+var ctrlSig     = '';     /* signature of last-built control vocab           */
 
 /* ── Show/hide helpers ───────────────────────────────────────────── */
 function showOnly(state) {
@@ -205,6 +231,7 @@ function showOnly(state) {
   svgEl.style.display = (state === 'graph') ? 'block' : 'none';
   toolbarEl.hidden = (state !== 'graph');
   legendEl.hidden  = (state !== 'graph');
+  controlsEl.hidden = (state !== 'graph');
 }
 
 /* ── SVG init (lazy) ─────────────────────────────────────────────── */
@@ -379,6 +406,8 @@ function render() {
 
   statsEl.textContent = nodes.length + ' shown · ' + links.length + ' links';
   updateLegend();
+  populateControls();
+  applyTradDim();
 }
 
 /* ── Master-store helpers ────────────────────────────────────────── */
@@ -430,11 +459,47 @@ function computeVisible() {
 
   links = [];
   master.edgeList.forEach(function(e){
-    if (vis.has(e.sid) && vis.has(e.tid)) {
+    if (vis.has(e.sid) && vis.has(e.tid) && (activeTypes === null || activeTypes.has(e.type))) {
       links.push({ lid:e.lid, source:e.sid, target:e.tid, type:e.type, conf:e.conf });
     }
   });
 }
+
+/* ── Filter controls (relationship type + tradition) ─────────────── */
+function applyTradDim() {
+  var dim = function(d){ return (!activeTrad || d.trad === activeTrad) ? 1 : 0.12; };
+  nodeG.selectAll('circle').attr('opacity', dim);
+  labelG.selectAll('text').attr('opacity', dim);
+  indG.selectAll('text').attr('opacity', dim);
+}
+function populateControls() {
+  var types = {}, trads = {};
+  master.edgeList.forEach(function(e){ if (visibleIds.has(e.sid) && visibleIds.has(e.tid)) types[e.type] = 1; });
+  nodes.forEach(function(n){ if (n.trad) trads[n.trad] = 1; });
+  var typeKeys = Object.keys(types).sort(), tradKeys = Object.keys(trads).sort();
+  var sig = typeKeys.join('|') + '##' + tradKeys.join('|');
+  if (sig === ctrlSig) return;            /* nothing new — keep the open dropdown/selection */
+  ctrlSig = sig;
+  typesEl.innerHTML = '<div class="gp-types-act"><a id="gp-t-all">all</a><a id="gp-t-none">none</a></div>' +
+    typeKeys.map(function(t){
+      var on = (activeTypes === null || activeTypes.has(t));
+      return '<label><input type="checkbox" value="'+esc(t)+'"'+(on?' checked':'')+'> '+esc(relLabel(t))+'</label>';
+    }).join('');
+  typesEl.querySelectorAll('input').forEach(function(cb){ cb.addEventListener('change', onTypeChange); });
+  typesEl.querySelector('#gp-t-all').addEventListener('click', function(){ activeTypes=null; ctrlSig=''; populateControls(); computeVisible(); render(); });
+  typesEl.querySelector('#gp-t-none').addEventListener('click', function(){ activeTypes=new Set(); ctrlSig=''; populateControls(); computeVisible(); render(); });
+  var cur = tradFilterEl.value;
+  tradFilterEl.innerHTML = '<option value="">all</option>' + tradKeys.map(function(t){ return '<option value="'+esc(t)+'"'+(t===cur?' selected':'')+'>'+esc(t)+'</option>'; }).join('');
+}
+function onTypeChange() {
+  var on = new Set();
+  typesEl.querySelectorAll('input').forEach(function(cb){ if (cb.checked) on.add(cb.value); });
+  /* all checked == no filter */
+  var total = typesEl.querySelectorAll('input').length;
+  activeTypes = (on.size === total) ? null : on;
+  computeVisible(); render();
+}
+tradFilterEl.addEventListener('change', function(){ activeTrad = this.value; applyTradDim(); });
 
 /* ── Fetch neighbourhood into the master store ───────────────────── */
 async function fetchNeighbourhood(entityId) {
@@ -557,6 +622,8 @@ function gpReset(keepSVG) {
   fetched.clear(); expanded.clear(); visibleIds = new Set();
   rootId = null;
   nodes = []; links = [];
+  activeTypes = null; activeTrad = ''; ctrlSig = '';
+  if (tradFilterEl) tradFilterEl.value = '';
   if (simulation) { simulation.stop(); simulation = null; }
   if (gSel) {
     linkG.selectAll('*').remove();

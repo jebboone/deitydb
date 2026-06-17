@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block title %}Find a Path — DeityDB{% endblock %}
+{% block body_class %}deitydb-path{% endblock %}
+
+{% block content %}
+<style>
+.pf-page{max-width:1240px;margin:0 auto;padding:8px 16px 60px}
+.pf-head h1{margin:0 0 4px}
+.pf-sub{color:#5a5246;max-width:860px;margin:0 0 16px}
+.pf-form{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin:0 0 10px}
+.pf-field{position:relative;display:flex;flex-direction:column;gap:4px}
+.pf-field label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#7c7569;font-weight:700}
+.pf-field input{padding:9px 12px;border:1px solid #d8cdbb;border-radius:8px;font-size:.95rem;width:260px}
+.pf-sug{position:absolute;left:0;right:0;top:62px;background:#fff;border:1px solid #d8cdbb;border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.12);z-index:20;overflow:hidden}
+.pf-sug[hidden]{display:none}
+.pf-si{display:flex;justify-content:space-between;gap:10px;padding:8px 12px;cursor:pointer;font-size:.88rem}
+.pf-si:hover{background:#f3efe6}.pf-si .st{color:#9a8f7c;font-size:.8rem}
+.pf-go{background:#5b2a9e;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-weight:600;cursor:pointer;font-size:.95rem}
+.pf-go:hover{background:#4a2280}.pf-swap{background:#faf8f5;border:1px solid #d8cdbb;border-radius:8px;padding:9px 12px;cursor:pointer}
+.pf-feat{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0 12px;font-size:.85rem;align-items:center}
+.pf-feat button{border:1px solid #d8cdbb;background:#faf8f5;color:#3b2a55;border-radius:20px;padding:5px 12px;cursor:pointer;font-size:.82rem}
+.pf-feat button:hover{border-color:#5b2a9e}
+.pf-note{color:#7c7569;font-size:.9rem;margin:0 0 14px}
+.pf-flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;padding:6px 0}
+.pf-node{display:flex;flex-direction:column;justify-content:center;border-radius:12px;padding:12px 14px;min-width:150px;max-width:210px;color:#fff;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.12);transition:transform .1s}
+.pf-node:hover{transform:translateY(-2px)}
+.pf-node .nm{font-weight:700;font-size:1rem;line-height:1.2}
+.pf-node .tr{font-size:.76rem;opacity:.9;margin-top:3px}
+.pf-node .yr{font-size:.72rem;opacity:.8;margin-top:2px}
+.pf-arrow{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 6px;min-width:96px}
+.pf-arrow .rel{font-size:.72rem;color:#5b2a9e;font-weight:600;text-align:center;background:#f1ecf7;border-radius:10px;padding:2px 8px;margin-bottom:3px;cursor:help}
+.pf-arrow .ln{font-size:1.4rem;color:#b9a9d6;line-height:1}
+.pf-tip{position:fixed;z-index:50;background:#2b2440;color:#fff;font-size:.82rem;padding:8px 11px;border-radius:7px;max-width:320px;pointer-events:none;display:none;line-height:1.4}
+.pf-tip .src{color:#9a8f7c;font-size:.74rem;display:block;margin-top:4px}
+</style>
+
+<div class="pf-page">
+  <div class="pf-head">
+    <h1>Find a Path</h1>
+    <p class="pf-sub">The shortest source-traced chain of relationships between <em>any two</em> figures in the database — across traditions and millennia. Every hop is a real, cited link.</p>
+  </div>
+
+  <div class="pf-form">
+    <div class="pf-field"><label>From</label><input id="pf-from" type="search" placeholder="e.g. Zeus" autocomplete="off"><div id="pf-from-sug" class="pf-sug" role="listbox" hidden></div></div>
+    <button class="pf-swap" id="pf-swap" title="Swap">⇄</button>
+    <div class="pf-field"><label>To</label><input id="pf-to" type="search" placeholder="e.g. 999 (Juice WRLD)" autocomplete="off"><div id="pf-to-sug" class="pf-sug" role="listbox" hidden></div></div>
+    <button class="pf-go" id="pf-go">Find path →</button>
+  </div>
+  <div class="pf-feat">
+    <span style="color:#7c7569">Try:</span>
+    <button data-f="ENT_ZEUS" data-fn="Zeus" data-t="ENT_VF_999" data-tn="999 (Juice WRLD)">Zeus → 999</button>
+    <button data-f="ENT_MES_INANNA" data-fn="Inanna" data-t="ENT_APHRODITE" data-tn="Aphrodite">Inanna → Aphrodite</button>
+    <button data-f="ENT_EGY_ISIS" data-fn="Isis" data-t="ENT_VOD_ERZULIE_FREDA" data-tn="Erzulie Freda">Isis → Erzulie</button>
+    <button data-f="ENT_ZOR_AHURA_MAZDA" data-fn="Ahura Mazda" data-t="ENT_VF_ANGEL_NUMBERS" data-tn="Angel Numbers">Ahura Mazda → Angel Numbers</button>
+  </div>
+  <p class="pf-note" id="pf-note">Pick two figures (or a suggestion) and trace the connection.</p>
+  <div class="pf-flow" id="pf-flow"></div>
+</div>
+<div class="pf-tip" id="pf-tip"></div>
+
+<script>
+(function(){
+'use strict';
+var TC={greek:'#3b6fd4',egyptian:'#d4873b',mesopotamian:'#c43b8f',christian:'#2a8a4f',islamic:'#1a9e76',jewish:'#c4923b',gnostic:'#7c3bd4',northern:'#3b9dc4',roman:'#c43b3b',zoroastrian:'#c47c3b',hermetic:'#3ba8a0',vernacular:'#d4458f',afro:'#b5651d',other:'#94a3b8'};
+function tk(t){t=(t||'').toLowerCase();
+ if(t.indexOf('zoroastrian')>=0)return'zoroastrian';if(t.indexOf('greek')===0)return'greek';if(t.indexOf('egyptian')===0)return'egyptian';
+ if(t.indexOf('mesopotamian')>=0)return'mesopotamian';if(t.indexOf('islam')>=0||t.indexOf('sufi')>=0)return'islamic';
+ if(t.indexOf('jewish')>=0||t.indexOf('israelite')>=0)return'jewish';if(t.indexOf('gnostic')>=0||t.indexOf('mandaean')>=0||t.indexOf('manichaean')>=0)return'gnostic';
+ if(t.indexOf('christian')>=0||t.indexOf('coptic')>=0||t.indexOf('syriac')>=0||t.indexOf('armenian')>=0||t.indexOf('ethiopian')>=0)return'christian';
+ if(t.indexOf('norse')>=0||t.indexOf('germanic')>=0||t.indexOf('celtic')>=0||t.indexOf('anglo')>=0)return'northern';
+ if(t.indexOf('roman')>=0||t.indexOf('etruscan')>=0||t.indexOf('mithra')>=0)return'roman';
+ if(t.indexOf('vodou')>=0||t.indexOf('orisha')>=0||t.indexOf('rastafari')>=0)return'afro';
+ if(t.indexOf('vernacular')>=0||t.indexOf('folklore')>=0)return'vernacular';
+ if(t.indexOf('hermetic')>=0||t.indexOf('theosoph')>=0||t.indexOf('wicca')>=0||t.indexOf('esoteric')>=0||t.indexOf('thelemic')>=0||t.indexOf('alchem')>=0)return'hermetic';
+ return'other';}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function fy(y){if(y==null)return'';y=Math.round(y);return y<0?Math.abs(y)+' BCE':y+' CE';}
+var flow=document.getElementById('pf-flow'), note=document.getElementById('pf-note'), tip=document.getElementById('pf-tip');
+var fromI=document.getElementById('pf-from'), toI=document.getElementById('pf-to');
+var fromId=null, toId=null;
+
+function ac(input, sugEl, setId){
+  var tmr;
+  input.addEventListener('input',function(){ setId(null); clearTimeout(tmr); var v=this.value.trim(); if(v.length<2){sugEl.hidden=true;return;} tmr=setTimeout(function(){run(v);},180); });
+  async function run(v){
+    try{ var d=await(await fetch('/api/search?q='+encodeURIComponent(v)+'&limit=8')).json();
+      if(!d.results||!d.results.length){sugEl.hidden=true;return;}
+      sugEl.innerHTML=d.results.map(function(r){return '<div class="pf-si" data-id="'+esc(r.entity_id)+'" data-nm="'+esc(r.canonical_name)+'"><span>'+esc(r.canonical_name)+'</span><span class="st">'+esc(r.tradition||'')+'</span></div>';}).join('');
+      sugEl.hidden=false;
+      sugEl.querySelectorAll('.pf-si').forEach(function(it){it.addEventListener('click',function(){ input.value=this.dataset.nm; setId(this.dataset.id); sugEl.hidden=true; });});
+    }catch(e){sugEl.hidden=true;}
+  }
+}
+ac(fromI, document.getElementById('pf-from-sug'), function(id){fromId=id;});
+ac(toI, document.getElementById('pf-to-sug'), function(id){toId=id;});
+document.addEventListener('click',function(e){ if(!e.target.closest('.pf-field')){document.getElementById('pf-from-sug').hidden=true;document.getElementById('pf-to-sug').hidden=true;} });
+
+document.getElementById('pf-swap').addEventListener('click',function(){
+  var a=fromI.value,b=toI.value; fromI.value=b; toI.value=a; var t=fromId; fromId=toId; toId=t;
+});
+
+async function find(){
+  if(!fromId||!toId){ note.textContent='Pick both a "from" and a "to" figure from the suggestions.'; return; }
+  note.textContent='Searching for the shortest path…'; flow.innerHTML='';
+  var d;
+  try{ d=await(await fetch('/api/path?from='+encodeURIComponent(fromId)+'&to='+encodeURIComponent(toId))).json(); }
+  catch(e){ note.textContent='Could not search. Try again.'; return; }
+  if(d.error){ note.textContent=d.error; return; }
+  if(!d.found){ note.textContent=d.message||'No path found between these two within the search limit.'; return; }
+  note.innerHTML='<strong>'+d.length+' hop'+(d.length===1?'':'s')+'</strong> from '+esc(d.path[0].canonical_name)+' to '+esc(d.path[d.path.length-1].canonical_name)+' — every link is source-traced.';
+  var html='';
+  d.path.forEach(function(n,i){
+    if(i>0){ var e=d.edges[i-1]; var rel=(e&&e.rel?e.rel:'').replace(/_/g,' ');
+      html+='<div class="pf-arrow"><span class="rel" data-ra="'+esc((e&&e.rationale)||'')+'" data-src="'+esc((e&&e.source_id)||'')+'">'+esc(rel)+'</span><span class="ln">→</span></div>'; }
+    var c=TC[tk(n.tradition)]||TC.other;
+    html+='<a class="pf-node" href="/entity?id='+encodeURIComponent(n.entity_id)+'" style="background:'+c+'"><span class="nm">'+esc(n.canonical_name||n.entity_id)+'</span><span class="tr">'+esc(n.tradition||'')+'</span>'+(n.start_year!=null?'<span class="yr">'+esc(fy(n.start_year))+'</span>':'')+'</a>';
+  });
+  flow.innerHTML=html;
+  flow.querySelectorAll('.rel').forEach(function(el){
+    el.addEventListener('mouseenter',function(ev){ if(!this.dataset.ra)return; tip.innerHTML=esc(this.dataset.ra)+(this.dataset.src?'<span class="src">source: '+esc(this.dataset.src)+'</span>':''); tip.style.display='block'; });
+    el.addEventListener('mousemove',function(ev){ tip.style.left=(ev.clientX+13)+'px'; tip.style.top=(ev.clientY-10)+'px'; });
+    el.addEventListener('mouseleave',function(){ tip.style.display='none'; });
+  });
+}
+document.getElementById('pf-go').addEventListener('click', find);
+document.querySelectorAll('.pf-feat button').forEach(function(b){ b.addEventListener('click',function(){
+  fromI.value=this.dataset.fn; toI.value=this.dataset.tn; fromId=this.dataset.f; toId=this.dataset.t; find();
+});});
+
+/* deep link ?from=&to= */
+var sp=new URLSearchParams(location.search);
+if(sp.get('from')&&sp.get('to')){ fromId=sp.get('from'); toId=sp.get('to'); fromI.value=sp.get('from'); toI.value=sp.get('to'); find(); }
+})();
+</script>
+{% endblock %}
