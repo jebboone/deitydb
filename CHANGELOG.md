@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.67.6 — 2026-06-16
+
+### Whole-DB cross-tradition verb sweep
+
+Audited all 474 "strong-verb" cross-tradition comparative links (reception_of /
+received_as / equated_with / identified_with / syncretized_with / cult_form_of
+between two real traditions). The interpretatio blocks (Roman=Greek, Etruscan,
+Scythian/Norse from Herodotus/Tacitus) and the genuine reception chains (Abrahamic
+Islamic←Israelite, Welsh←Irish←Gaulish, Ishtar→Astarte→Aphrodite, Dumuzi→Adonis,
+Hurrian-Hittite succession Kumarbi→Kronos / Illuyanka→Python, the Testament-of-
+Solomon decans, Matar→Cybele) are correct and unchanged. Corrected the systematic
+error class:
+
+- **Functional Near-East↔Greek cosmic equations → aligned_with (13):** the reverse/
+  parallel edges of the v1.67.5 Mesopotamian fixes were still mislabeled
+  reception_of — Oceanus←Apsu, Ouranos←Anu, Zeus←Enlil, Zeus←Marduk,
+  Prometheus←Enki, Demeter←Ninhursag, Demeter←Telipinu, Persephone←Ereshkigal,
+  Hermes←Nabu, Selene←Sin, and the Chaoskampf set Typhon←Tiamat, Lotan←Tiamat,
+  Leviathan←Tiamat (the genuine serpent chain is Lotan→Leviathan, kept). Now
+  consistent in both directions.
+- **Deduplicated double-verb pairs (6):** removed the redundant weaker verb where a
+  link was modeled twice — Astarte=Ishtar (kept reception_of), Leviathan=Tiamat
+  (now aligned_with), Leviathan=Lotan (kept reception_of), Dushara=Dionysus / Al-Lat
+  =Athena / Al-Uzza=Aphrodite (kept the equated_with interpretatio).
+- **Propagated two earlier fixes to their reverse edges:** Lilith's reception
+  re-pointed from Lamashtu to Lilitu; the discredited Sin=Hubal link removed on the
+  Hubal side too.
+
+Net: 0 entity change (-7 relationships); cross-tradition verbs now consistent
+(aligned_with 162, reception_of 184). scripts/build_qa6_fixes.sql.
+
 ## v1.67.5 — 2026-06-16
 
 ### Fifth audit pass: the Mesopotamian deepening (v1.52 / v1.60)
