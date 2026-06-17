@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.79.0 — 2026-06-17
+
+### Connectivity remediation (graph-quality pass, no new roster)
+
+The holistic audit's other standing gap: clusters of near-isolated / degree-1 nodes
+that were attested members of well-known systems but had never been wired in. A
+relationships-mostly pass adding **+102 attested typed edges** and **5 pantheon
+collective hubs** (the only new entities), reusing existing sources/periods. No new
+tradition. Scorecard now 2,934 entities / 5,362 relationships / 311 sources.
+
+- **Anatolian (Luwian, Hittite, Hittite/Hurrian):** new `ENT_LUW_PANTHEON` and
+  `ENT_HTT_PANTHEON` hubs; the Kumarbi-cycle backbone finally modeled (Teshub
+  `child_of` Kumarbi, Kumarbi `parent_of` Ullikummi and `opposes` Teshub, Teshub
+  `consort_of` Hepat); Luwian↔Hittite/Hurrian sun/moon/storm cognates (Tiwaz↔Istanu/
+  Shimige, Arma↔Kushuh, Tarhunz↔Teshub); the Kubaba→Kybebe→**Cybele** continuity;
+  and the missing domain edges. **Luwian, Hittite, Hittite/Hurrian, Etruscan,
+  Mycenaean all dropped to 0 degree-≤1 nodes.**
+- **Mediterranean (Phoenician, Mycenaean, Etruscan):** new `ENT_PHO_PANTHEON`,
+  `ENT_MYC_PANTHEON`, `ENT_ETR_PANTHEON` hubs; the canonical interpretatio that was
+  still missing for the single-edge tails — Melqart=Heracles, Tanit=Juno Caelestis,
+  Adonis=Dumuzi/Tammuz, Turms=Hermes, Culsans=Janus — plus the genuinely
+  Mycenaean-only Linear B recipients (Potnia-forms, Diwia, Enyalios=Enyo) wired to
+  their pantheon rather than force-fit to Olympians.
+- **Christian/Biblical (NT):** conservative, human-respecting wiring only — the
+  apostle brother-pairs (Andrew–Peter, John–James the Greater), the **orphaned Four
+  Horsemen** given their war/death domains, Behemoth paired with Leviathan, and the
+  four Evangelists as transmitters of revelation. The ~39 remaining one-edge minor
+  figures were deliberately left at their single true membership (no invented edges,
+  no deifying of humans).
+
 ## v1.78.0 — 2026-06-17
 
 ### Arthurian legend / Matter of Britain (the Grail mythos)
