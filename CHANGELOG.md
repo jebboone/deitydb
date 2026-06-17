@@ -1,5 +1,49 @@
 # Changelog
 
+## v1.70.0 — 2026-06-16
+
+### Mainstream Abrahamic scriptural backbone (Hebrew Bible, New Testament, Qur'an)
+
+A deliberate rebalancing toward the mainstream Judeo-Christian-Islamic canon
+after several esoteric/occult releases. An audit found the scriptural backbone
+badly underbuilt — Abraham, David, Isaac, Jacob, Aaron, the entire Latter
+Prophets, most of the Twelve Apostles, and most of the 25 Qur'anic prophets were
+all missing while saints and esoterica were richly developed. **+105 entities,
++209 relationships**, 0 rejected, 0 unsourced/unperiodized/orphan, 0 unreviewed
+duplicates. Scorecard now 2,609 entities / 4,692 relationships / 292 sources.
+No new sources needed (SRC_HEBREW_BIBLE, SRC_NEW_TESTAMENT, SRC_QURAN all
+existed); one new period PER_APOSTOLIC.
+
+- **Hebrew Bible figures (`ENT_ISR_*`, Israelite/Second Temple):** the patriarchs
+  and matriarchs (Eve, Abraham, Sarah, Isaac, Rebecca, Jacob, Rachel, Leah,
+  Joseph, the tribal eponyms, Lot), Exodus/conquest leaders (Aaron, Miriam,
+  Joshua, Caleb), the judges (Deborah, Gideon, Samson), the united monarchy
+  (Samuel, Saul, David, Bathsheba), the Writings figures (Ruth, Esther, Mordecai,
+  Job, Ezra, Nehemiah), and the prophets — Isaiah, Jeremiah, Ezekiel, Daniel and
+  the Twelve Minor Prophets, plus Elisha and Nathan. Precise genealogy modeled
+  (parent_of/child_of/spouse_of/sibling_of) and collectives (Patriarchs,
+  Matriarchs, Twelve Tribes, Judges, Kings, Latter Prophets, the Twelve).
+- **New Testament figures (`ENT_NT_*`, Christian/Biblical):** the Twelve Apostles
+  (Andrew, John, Philip, Bartholomew, Thomas, Matthew, James son of Alphaeus,
+  Jude, Simon, Judas Iscariot, Matthias — Peter and James the Greater wired from
+  their existing saint entities), the Evangelists (Mark, Luke), and the Pauline
+  circle and Gospel figures (Barnabas, Timothy, Titus, Lazarus, Martha,
+  Nicodemus), under the Twelve Apostles / Four Evangelists / Pauline Circle
+  collectives.
+- **Qur'anic prophets (`ENT_ISL_*`, Islamic):** the 25 anbiya (Adam, Nuh, Hud,
+  Salih, Ibrahim, Lut, Ismail, Ishaq, Yaqub, Yusuf, Ayyub, Shu'ayb, Musa, Harun,
+  Dhul-Kifl, Dawud, Sulayman, Ilyas, Al-Yasa, Yunus, Zakariya, Yahya, Isa, plus
+  Luqman; Idris/Khidr/Isa/Musa/Ilyas already existed and were wired in), under
+  the Prophets of Islam and Ulu al-Azm collectives.
+- **Headline cross-tradition feature — 24 `reception_of` links** from the Qur'anic
+  prophets to their Hebrew/Christian counterparts (Ibrahim←Abraham, Musa←Moses,
+  Dawud←David, Isa←Jesus, Yahya←John the Baptist, …), making the shared Abrahamic
+  prophetic lineage explicit and queryable.
+- Disambiguated homonyms: Joseph-the-patriarch vs Joseph of Nazareth, Islamic
+  Adam vs Israelite Adam (by name), biblical Daniel vs the Shem-angel Daniel (by
+  id), and registered duplicate-review rows for Seth (biblical vs Egyptian vs
+  Sethian) and Thomas (apostle vs Thomasine).
+
 ## v1.69.0 — 2026-06-16
 
 ### Renaissance angelic & planetary magic: Shem ha-Mephorash 72 + Agrippa + Olympic Spirits
