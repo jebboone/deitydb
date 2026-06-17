@@ -1,5 +1,39 @@
 # Changelog
 
+## v1.67.5 — 2026-06-16
+
+### Fifth audit pass: the Mesopotamian deepening (v1.52 / v1.60)
+
+Adversarial three-agent audit of the 109-entity Mesopotamian cohort (city-gods,
+demons, theogony, the Seven Sages, cross-tradition links). NO fabrications — all
+109 are genuinely attested, every city-god assignment correct, the Enuma Elish
+theogony chain and the Uruk-List Seven-Sages king-pairings verified accurate (one
+audit agent's "fix" to the sage-pairings was itself mistaken and was rejected after
+cross-check against Lenzi 2008). Corrections were relationship/verb discipline:
+
+- **Cross-tradition verb discipline:** 14 links downgraded received_as → aligned_with
+  where they are functional/typological parallels, not attested receptions —
+  Anu→Ouranos, Apsu→Oceanus, Enlil→Zeus, Marduk→Zeus, Enki→Prometheus,
+  Ninhursag→Demeter, Ereshkigal→Persephone, Nabu→Hermes, Sin→Selene,
+  Dumuzi→Melqart, Dumuzi→Telipinu, and the Chaoskampf set Tiamat→Lotan/Leviathan/
+  Typhon (the real chains run Lotan→Leviathan and via Hurrian-Hittite intermediaries).
+  Kept as genuine receptions: Ishtar→Astarte→Aphrodite, Dumuzi→Adonis, Apkallu→
+  Watchers; kept identified_with: Ishtar=Shaushka.
+- **Removed:** Sin = Hubal (a discredited Winckler/Morey-era "moon-god" speculation
+  with no attestation).
+- **Re-rooted:** Lilith descends from the lilitu night-demon, not Lamashtu —
+  re-pointed received_as from Lamashtu to Lilitu.
+- **Inverted edges flipped:** Kulla and Saltu were modeled as "creator_of Ea" when
+  both were *created by* Ea — corrected to Ea creator_of Kulla / Saltu.
+- **Relationship fixes:** Humut-tabal "dwells_in Ereshkigal" (a deity) → dwells_in
+  Underworld; removed Pabilsag's wrong parentage of Ninazu and his redundant Gula
+  consort-link (Gula = Ninisina by syncretism); Damu re-parented from Gula to
+  Ninisina; the orphan Etana wired to his patron Shamash (Etana epic).
+- **Confidence/notes:** Gugalanna A→B (the Bull-of-Heaven identity is an inferential
+  modern synthesis); Gula/Humut-tabal/Damu notes reworded for accuracy.
+
+Net: 0 entity change (-6 / +4 relationships); scorecard clean. scripts/build_qa5_fixes.sql.
+
 ## v1.67.4 — 2026-06-16
 
 ### Fourth audit pass: Celtic inscriptional gods + Egyptian Duat cast
