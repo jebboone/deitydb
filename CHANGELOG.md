@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.67.3 — 2026-06-16
+
+### Third audit pass: the 42 Assessors (BD Spell 125) + Roman indigitamenta
+
+Adversarial audit of the two structured "list" cohorts most prone to fabrication —
+the 42 Assessors of Maat (each with a name, city, and the sin denied) and the Roman
+indigitamenta (Varro's function-gods, each with a classical citation). Both came
+back essentially clean — NO fabrications, NO removals; the Assessors are a faithful
+reproduction of Budge's Spell 125 (all names/order/sin-pairings verified) and the
+Roman set is well-sourced with the canonical twelve Fabius Pictor farming gods
+exactly right. Refinements only:
+
+- **Assessors:** restored canonical sin-wording where the notes had paraphrased
+  loosely — #6 Ruruti (purloining offerings, not "destroying"), #13 Basti ("eating
+  the heart" idiom, not "foul deeds"), #26 Nekhenu (dropped the extraneous
+  "hoodwinking"); hedged #22 Maa-antuf's uncertain "Xois" city gloss (the text gives
+  Per-Menu).
+- **Roman:** fixed the Cardea/Carna citation conflation (Ovid Fasti 6.101 is
+  Carna/Cranae, not Cardea — re-sourced Cardea to Augustine CD 4.8/6.7, flagged the
+  ancient conflation on both); corrected Mutunus Tutunus's citation (Festus 154L +
+  Augustine CD 6.9, not 4.11); softened Vacuna's overstated function; tightened the
+  citations for Semo Sancus (Dius Fidius = Varro LL 5.66), Pilumnus (Augustine CD
+  6.9 for the Silvanus-warding rite), Vagitanus (Vaticanus variant), and Segetia.
+
+No structural change (note/citation accuracy only); scorecard unchanged.
+scripts/build_qa3_fixes.sql.
+
 ## v1.67.2 — 2026-06-16
 
 ### Second scholarly-audit pass: deep-past (v1.65) + occult (v1.66) cohorts
