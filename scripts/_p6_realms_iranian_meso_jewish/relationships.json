@@ -1,0 +1,191 @@
+[
+{
+"s": "ENT_RLMX_CHINVAT",
+"t": "guarded_by",
+"o": "ENT_ZOR_RASHNU",
+"c": "high",
+"ra": "Rashnu the Just is the yazata who weighs souls' deeds at the Chinvat Bridge (Vendidad 19)."
+},
+{
+"s": "ENT_ZOR_RASHNU",
+"t": "presides_over",
+"o": "ENT_RLMX_CHINVAT",
+"c": "high",
+"ra": "Rashnu presides over the judgement of the soul at the Chinvat Bridge (was 'judges'; corrected to presides_over since judges takes a being/Dead object in house convention)."
+},
+{
+"s": "ENT_ZOR_MITHRA",
+"t": "presides_over",
+"o": "ENT_RLMX_CHINVAT",
+"c": "medium",
+"ra": "Mithra is one of the three judging yazatas at the Chinvat Bridge in Zoroastrian eschatology."
+},
+{
+"s": "ENT_ZOR_SRAOSHA",
+"t": "associated_with",
+"o": "ENT_RLMX_CHINVAT",
+"c": "medium",
+"ra": "Sraosha conducts and protects the soul on its passage across the bridge (was 'guides'; corrected since guides takes a being/Dead object)."
+},
+{
+"s": "ENT_ZOR_DAENA",
+"t": "associated_with",
+"o": "ENT_RLMX_CHINVAT",
+"c": "high",
+"ra": "The Daena, the personified conscience, meets the soul at the Chinvat Bridge and leads the righteous onward."
+},
+{
+"s": "ENT_RLMX_GAROTHMAN",
+"t": "dwelling_of",
+"o": "ENT_ZOR_AHURA_MAZDA",
+"c": "high",
+"ra": "Garothman, the House of Song, is the abode of Ahura Mazda and the blessed."
+},
+{
+"s": "ENT_RLMX_DRUJO_DEMANA",
+"t": "dwelling_of",
+"o": "ENT_ZOR_ANGRA_MAINYU",
+"c": "high",
+"ra": "Drujo Demana, the House of Lies, is the abode of Angra Mainyu and the damned."
+},
+{
+"s": "ENT_RLMX_DRUJO_DEMANA",
+"t": "opposes",
+"o": "ENT_RLMX_GAROTHMAN",
+"c": "high",
+"ra": "The House of Lies is the structural antithesis of the House of Song in Zoroastrian eschatology."
+},
+{
+"s": "ENT_RLMX_GAROTHMAN",
+"t": "associated_with",
+"o": "ENT_RLMX_CHINVAT",
+"c": "high",
+"ra": "The righteous soul reaches Garothman by crossing the Chinvat Bridge."
+},
+{
+"s": "ENT_RLMX_DRUJO_DEMANA",
+"t": "associated_with",
+"o": "ENT_RLMX_CHINVAT",
+"c": "high",
+"ra": "The wicked soul falls from the Chinvat Bridge into the House of Lies."
+},
+{
+"s": "ENT_RLMX_HAMISTAGAN",
+"t": "opposes",
+"o": "ENT_RLMX_GAROTHMAN",
+"c": "medium",
+"ra": "Hamistagan is the neutral middle state distinct from both paradise (Garothman) and hell."
+},
+{
+"s": "ENT_RLMX_HAMISTAGAN",
+"t": "associated_with",
+"o": "ENT_ZOR_SAOSHYANT",
+"c": "medium",
+"ra": "Souls in Hamistagan await release at the final renovation brought by the Saoshyant (Frashokereti)."
+},
+{
+"s": "ENT_RLMX_IRKALLA",
+"t": "ruled_by",
+"o": "ENT_MES_ERESHKIGAL",
+"c": "high",
+"ra": "Ereshkigal is queen of Irkalla/Kur, the Mesopotamian netherworld (Descent of Ishtar)."
+},
+{
+"s": "ENT_MES_ERESHKIGAL",
+"t": "rules",
+"o": "ENT_RLMX_IRKALLA",
+"c": "high",
+"ra": "Ereshkigal rules the land of no return."
+},
+{
+"s": "ENT_MES_NERGAL",
+"t": "rules",
+"o": "ENT_RLMX_IRKALLA",
+"c": "high",
+"ra": "Nergal becomes consort and co-ruler of the netherworld with Ereshkigal."
+},
+{
+"s": "ENT_RLMX_GANZIR",
+"t": "belongs_to_realm",
+"o": "ENT_RLMX_IRKALLA",
+"c": "high",
+"ra": "Ganzir is the gate/threshold belonging to the netherworld Irkalla (was 'part_of', which is not a valid relationship_type; belongs_to_realm is attested for place-within-realm)."
+},
+{
+"s": "ENT_MES_INANNA_ISHTAR",
+"t": "associated_with",
+"o": "ENT_RLMX_IRKALLA",
+"c": "high",
+"ra": "Ishtar descends into Irkalla and is detained there in the Descent of Ishtar."
+},
+{
+"s": "ENT_RLMX_DILMUN",
+"t": "associated_with",
+"o": "ENT_MES_ENKI_EA",
+"c": "high",
+"ra": "Enki provides fresh water to Dilmun in the myth Enki and Ninhursag, making it the pure land."
+},
+{
+"s": "ENT_RLMX_DILMUN",
+"t": "opposes",
+"o": "ENT_RLMX_IRKALLA",
+"c": "medium",
+"ra": "Dilmun, the deathless pure land, stands in mythic contrast to the netherworld of death."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEAVENS",
+"t": "associated_with",
+"o": "ENT_RLMX_SEVEN_HEKHALOT",
+"c": "high",
+"ra": "The seven hekhalot are situated within Araboth, the seventh of the seven heavens."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEKHALOT",
+"t": "belongs_to_realm",
+"o": "ENT_RLMX_SEVEN_HEAVENS",
+"c": "high",
+"ra": "The seven palaces are contained within the highest heaven of the sevenfold cosmos (was 'part_of', invalid; belongs_to_realm is the attested place-within-realm type)."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEKHALOT",
+"t": "guarded_by",
+"o": "ENT_JM_HEAVENLY_HOST",
+"c": "medium",
+"ra": "Angelic gatekeepers of the Heavenly Host guard the entrances to each of the seven palaces in Hekhalot Rabbati."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEKHALOT",
+"t": "associated_with",
+"o": "ENT_JM_METATRON",
+"c": "medium",
+"ra": "Metatron, the heavenly prince/scribe, presides over the upper palaces and the Throne in Merkavah literature."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEAVENS",
+"t": "associated_with",
+"o": "ENT_THRONE",
+"c": "high",
+"ra": "Araboth, the seventh heaven, houses the Throne of Glory."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEAVENS",
+"t": "associated_with",
+"o": "ENT_JM_SEVEN_FIRMAMENTS",
+"c": "medium",
+"ra": "The rabbinic/Merkavah seven heavens parallel but are distinct from the seven firmaments of Sefer ha-Razim."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEAVENS",
+"t": "aligned_with",
+"o": "ENT_JM_ATZILUTH",
+"c": "low",
+"ra": "Both are vertical hierarchies of the Jewish-mystical cosmos; the four Kabbalistic worlds are a later systematization overlapping the heavens schema."
+},
+{
+"s": "ENT_RLMX_SEVEN_HEAVENS",
+"t": "opposes",
+"o": "ENT_JM_GEHENNA",
+"c": "medium",
+"ra": "The ascending heavens stand opposite Gehenna, the lower realm of punishment, in Jewish cosmology."
+}
+]
