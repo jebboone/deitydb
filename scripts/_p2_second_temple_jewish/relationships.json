@@ -1,0 +1,289 @@
+[
+{
+"s": "ENT_STJ_SIMEON_THE_JUST",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Simeon the Just opens the chain of transmission in Pirkei Avot, counted among the Sages."
+},
+{
+"s": "ENT_STJ_HONI",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Honi the Circle-Drawer is a charismatic sage attested in the Mishnah and Josephus."
+},
+{
+"s": "ENT_STJ_HILLEL",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Hillel the Elder is a foundational Tannaitic sage."
+},
+{
+"s": "ENT_STJ_SHAMMAI",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Shammai is a foundational Tannaitic sage and counterpart of Hillel."
+},
+{
+"s": "ENT_STJ_YOHANAN_BEN_ZAKKAI",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Yohanan ben Zakkai is a leading post-Temple sage."
+},
+{
+"s": "ENT_STJ_AKIVA",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Akiva ben Joseph is a pre-eminent Tannaitic sage."
+},
+{
+"s": "ENT_STJ_JUDAH_HANASI",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Judah ha-Nasi redacted the Mishnah, closing the Tannaitic chain of sages."
+},
+{
+"s": "ENT_STJ_TEACHER_OF_RIGHTEOUSNESS",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "medium",
+"ra": "The Teacher of Righteousness is an inspired sectarian teacher of Second Temple Judaism, grouped with the era's learned leaders."
+},
+{
+"s": "ENT_STJ_SHAMMAI",
+"t": "opposes",
+"o": "ENT_STJ_HILLEL",
+"c": "high",
+"ra": "The House of Shammai (strict) and House of Hillel (lenient) are the paradigmatic Tannaitic halakhic dispute."
+},
+{
+"s": "ENT_STJ_HILLEL",
+"t": "opposed_by",
+"o": "ENT_STJ_SHAMMAI",
+"c": "high",
+"ra": "Reciprocal: Hillel's lenient school is opposed by Shammai's strict school in the Mishnah."
+},
+{
+"s": "ENT_STJ_AKIVA",
+"t": "taught_by",
+"o": "ENT_STJ_YOHANAN_BEN_ZAKKAI",
+"c": "low",
+"ra": "Akiva belongs to the generation of disciples following Yohanan ben Zakkai's Yavneh academy; lineage attested in rabbinic tradition but indirect."
+},
+{
+"s": "ENT_STJ_JUDAH_HANASI",
+"t": "taught_by",
+"o": "ENT_STJ_AKIVA",
+"c": "medium",
+"ra": "Judah ha-Nasi's Mishnah is built on the halakhic systematization of Akiva (via Akiva's disciples), the dominant Tannaitic lineage."
+},
+{
+"s": "ENT_NT_GAMALIEL",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "high",
+"ra": "Gamaliel the Elder (already in the DB as the Acts figure) is a leading Tannaitic sage, grandson of Hillel; cross-linking the existing entity into the Second Temple sages hub."
+},
+{
+"s": "ENT_NT_GAMALIEL",
+"t": "taught_by",
+"o": "ENT_STJ_HILLEL",
+"c": "medium",
+"ra": "Gamaliel the Elder is traditionally Hillel's grandson and heir of the House of Hillel."
+},
+{
+"s": "ENT_STJ_TEACHER_OF_RIGHTEOUSNESS",
+"t": "opposed_by",
+"o": "ENT_STJ_WICKED_PRIEST",
+"c": "high",
+"ra": "The Qumran pesharim depict the Wicked Priest persecuting the Teacher of Righteousness."
+},
+{
+"s": "ENT_STJ_WICKED_PRIEST",
+"t": "opposes",
+"o": "ENT_STJ_TEACHER_OF_RIGHTEOUSNESS",
+"c": "high",
+"ra": "Reciprocal: the Wicked Priest is the persecutor of the Teacher of Righteousness in the Dead Sea Scrolls."
+},
+{
+"s": "ENT_STJ_JOSEPHUS",
+"t": "member_of",
+"o": "ENT_STJ_SAGES",
+"c": "medium",
+"ra": "Josephus identifies as a Pharisee and learned interpreter of the Law; grouped with the era's learned figures (historian)."
+},
+{
+"s": "ENT_STJ_JUDITH",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Judith is the protagonist of the deuterocanonical Book of Judith."
+},
+{
+"s": "ENT_STJ_HOLOFERNES",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Holofernes is the antagonist of the Book of Judith."
+},
+{
+"s": "ENT_STJ_JUDITH",
+"t": "opposes",
+"o": "ENT_STJ_HOLOFERNES",
+"c": "high",
+"ra": "Judith beheads the Assyrian general Holofernes to save Bethulia."
+},
+{
+"s": "ENT_STJ_HOLOFERNES",
+"t": "opposed_by",
+"o": "ENT_STJ_JUDITH",
+"c": "high",
+"ra": "Reciprocal: Holofernes is slain by Judith."
+},
+{
+"s": "ENT_STJ_JUDAS_MACCABEUS",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Judas Maccabeus is the central figure of 1-2 Maccabees."
+},
+{
+"s": "ENT_STJ_JUDAS_MACCABEUS",
+"t": "member_of",
+"o": "ENT_STJ_MACCABEE_BROTHERS",
+"c": "high",
+"ra": "Judas is one of the five Maccabee brothers, sons of Mattathias."
+},
+{
+"s": "ENT_STJ_MACCABEE_BROTHERS",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "The Maccabee brothers are deuterocanonical narrative figures of 1 Maccabees."
+},
+{
+"s": "ENT_STJ_MACCABEE_BROTHERS",
+"t": "opposes",
+"o": "ENT_STJ_ANTIOCHUS_IV",
+"c": "high",
+"ra": "The Maccabee brothers lead the revolt against the persecuting Seleucid king Antiochus IV."
+},
+{
+"s": "ENT_STJ_ANTIOCHUS_IV",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Antiochus IV Epiphanes is the chief antagonist of 1-2 Maccabees."
+},
+{
+"s": "ENT_STJ_ANTIOCHUS_IV",
+"t": "opposed_by",
+"o": "ENT_STJ_JUDAS_MACCABEUS",
+"c": "high",
+"ra": "Antiochus IV is opposed by Judas Maccabeus, who rededicates the desecrated Temple."
+},
+{
+"s": "ENT_STJ_MACCABEAN_MOTHER",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "The Maccabean mother is a martyr figure of 2 Maccabees 7."
+},
+{
+"s": "ENT_STJ_MACCABEAN_MOTHER",
+"t": "opposed_by",
+"o": "ENT_STJ_ANTIOCHUS_IV",
+"c": "high",
+"ra": "The mother and her seven sons are martyred under Antiochus IV in 2 Maccabees 7."
+},
+{
+"s": "ENT_STJ_ELEAZAR_MARTYR",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Eleazar the scribe is the exemplary martyr of 2 Maccabees 6."
+},
+{
+"s": "ENT_STJ_ELEAZAR_MARTYR",
+"t": "opposed_by",
+"o": "ENT_STJ_ANTIOCHUS_IV",
+"c": "high",
+"ra": "Eleazar is martyred under the persecution of Antiochus IV."
+},
+{
+"s": "ENT_STJ_TOBIAS",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Tobias is the protagonist of the Book of Tobit."
+},
+{
+"s": "ENT_STJ_TOBIAS",
+"t": "child_of",
+"o": "ENT_TOBIT",
+"c": "high",
+"ra": "Tobias is the son of Tobit (existing entity ENT_TOBIT) in the Book of Tobit."
+},
+{
+"s": "ENT_TOBIT",
+"t": "parent_of",
+"o": "ENT_STJ_TOBIAS",
+"c": "high",
+"ra": "Reciprocal: Tobit is the father of Tobias; wiring the existing ENT_TOBIT into the cohort."
+},
+{
+"s": "ENT_STJ_SARAH_OF_TOBIT",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Sarah of Tobit is a narrative figure of the Book of Tobit."
+},
+{
+"s": "ENT_STJ_SARAH_OF_TOBIT",
+"t": "spouse_of",
+"o": "ENT_STJ_TOBIAS",
+"c": "high",
+"ra": "Sarah marries Tobias after being freed from the demon Asmodeus."
+},
+{
+"s": "ENT_STJ_TOBIAS",
+"t": "spouse_of",
+"o": "ENT_STJ_SARAH_OF_TOBIT",
+"c": "high",
+"ra": "Reciprocal: Tobias marries Sarah in the Book of Tobit."
+},
+{
+"s": "ENT_STJ_TOBIAS",
+"t": "guided_by",
+"o": "ENT_ISR_RAPHAEL",
+"c": "high",
+"ra": "Tobias is guided on his journey by the disguised archangel Raphael (existing ENT_ISR_RAPHAEL) in the Book of Tobit."
+},
+{
+"s": "ENT_STJ_SARAH_OF_TOBIT",
+"t": "rescued_by",
+"o": "ENT_ISR_RAPHAEL",
+"c": "high",
+"ra": "Raphael binds the demon Asmodeus and frees Sarah, enabling her marriage (Book of Tobit)."
+},
+{
+"s": "ENT_STJ_AHIKAR",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "medium",
+"ra": "Ahikar appears as Tobit's nephew within the Book of Tobit's deuterocanonical narrative."
+},
+{
+"s": "ENT_STJ_SUSANNA",
+"t": "member_of",
+"o": "ENT_STJ_DEUTEROCANON",
+"c": "high",
+"ra": "Susanna is the heroine of the deuterocanonical addition to Daniel."
+}
+]

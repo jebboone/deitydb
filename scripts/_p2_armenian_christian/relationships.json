@@ -1,0 +1,86 @@
+[
+{
+"s": "ENT_ARMC_GREGORY_ILLUMINATOR",
+"t": "member_of",
+"o": "ENT_ARMC_FATHERS",
+"c": "high",
+"ra": "Gregory the Illuminator is the founding father and first Catholicos of the Armenian Apostolic Church (Agathangelos)."
+},
+{
+"s": "ENT_ARMC_TIRIDATES",
+"t": "member_of",
+"o": "ENT_ARMC_FATHERS",
+"c": "high",
+"ra": "King Tiridates III is venerated as a saint of the Armenian Church for establishing it as the state religion."
+},
+{
+"s": "ENT_ARMC_MESROP",
+"t": "member_of",
+"o": "ENT_ARMC_FATHERS",
+"c": "high",
+"ra": "Mesrop Mashtots is among the formative saints (Holy Translators) of the Armenian Apostolic Church."
+},
+{
+"s": "ENT_ARMC_SAHAK",
+"t": "member_of",
+"o": "ENT_ARMC_FATHERS",
+"c": "high",
+"ra": "Sahak Partev, Catholicos, is among the founding saints (Holy Translators) of the Armenian Church."
+},
+{
+"s": "ENT_ARMC_NERSES",
+"t": "member_of",
+"o": "ENT_ARMC_FATHERS",
+"c": "high",
+"ra": "Nerses the Great, reforming Catholicos, is a venerated father of the Armenian Church."
+},
+{
+"s": "ENT_ARMC_NAREK",
+"t": "member_of",
+"o": "ENT_ARMC_FATHERS",
+"c": "high",
+"ra": "Gregory of Narek, mystic-poet and Doctor of the Church, is among the great saints of the Armenian Church."
+},
+{
+"s": "ENT_ARMC_TIRIDATES",
+"t": "taught_by",
+"o": "ENT_ARMC_GREGORY_ILLUMINATOR",
+"c": "high",
+"ra": "Agathangelos records that Gregory the Illuminator converted and catechized King Tiridates III into the Christian faith."
+},
+{
+"s": "ENT_ARMC_MESROP",
+"t": "taught_by",
+"o": "ENT_ARMC_SAHAK",
+"c": "high",
+"ra": "Movses Khorenatsi records Mesrop Mashtots working under and with Catholicos Sahak Partev, who sponsored the alphabet and Bible translation."
+},
+{
+"s": "ENT_ARMC_SAHAK",
+"t": "child_of",
+"o": "ENT_ARMC_NERSES",
+"c": "medium",
+"ra": "Sahak Partev was the son of Nerses the Great (Faustus/Khorenatsi genealogy of the line of Gregory the Illuminator)."
+},
+{
+"s": "ENT_ARMC_GREGORY_ILLUMINATOR",
+"t": "opposes",
+"o": "ENT_ARM_ARAMAZD",
+"c": "high",
+"ra": "Agathangelos records Gregory the Illuminator's destruction of the cult of Aramazd and the other pre-Christian Armenian deities during the conversion."
+},
+{
+"s": "ENT_ARMC_TIRIDATES",
+"t": "opposes",
+"o": "ENT_ARM_ANAHIT",
+"c": "medium",
+"ra": "After his conversion, Tiridates III ordered the destruction of the temples of Anahit and the other Armenian deities (Agathangelos)."
+},
+{
+"s": "ENT_ARMC_NAREK",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "medium",
+"ra": "Gregory of Narek composed major Marian panegyrics venerating the Theotokos; re-pointed to the existing Mary Theotokos entity (ENT_SAINT_MARY, Mary mother of Jesus) after QA found the proposed object ENT_NT_MARY_OF_JAMES was the wrong Mary and the homonym claim false."
+}
+]

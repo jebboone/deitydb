@@ -1,0 +1,86 @@
+[
+{
+"id": "ENT_ARMC_FATHERS",
+"name": "Fathers and Saints of the Armenian Apostolic Church",
+"type": "Saint collective",
+"trad": "Armenian Christian",
+"dom": "national church, sanctity, apostolic lineage",
+"conf": "B",
+"note": "Collective hub for the founding and formative saints of the Armenian Apostolic Church; a modeling hub, not an attested single figure.",
+"src": "SRC_AGATHANGELOS_HISTORY",
+"per": "PER_ARMENIAN_CHR",
+"cat": "Collective"
+},
+{
+"id": "ENT_ARMC_GREGORY_ILLUMINATOR",
+"name": "Gregory the Illuminator",
+"type": "Bishop/saint",
+"trad": "Armenian Christian",
+"dom": "evangelization, episcopate, apostolic foundation",
+"conf": "B",
+"note": "Saint Gregory the Illuminator (c.257-c.331), apostle and first Catholicos of Armenia; converted King Tiridates III and Christianized Armenia c.301. Attested in Agathangelos's History as the chief agent of the conversion. A venerated human, not deified.",
+"src": "SRC_AGATHANGELOS_HISTORY",
+"per": "PER_ARMENIAN_CHR",
+"cat": "Founder/saint"
+},
+{
+"id": "ENT_ARMC_TIRIDATES",
+"name": "Tiridates III of Armenia",
+"type": "Royal saint",
+"trad": "Armenian Christian",
+"dom": "kingship, royal conversion, patronage",
+"conf": "B",
+"note": "King Trdat (Tiridates) III (r. c.287-330), the Arsacid monarch converted by Gregory the Illuminator who made Christianity the state religion of Armenia c.301; venerated as a saint. Attested in Agathangelos. A venerated human ruler, not deified.",
+"src": "SRC_AGATHANGELOS_HISTORY",
+"per": "PER_ARMENIAN_CHR",
+"cat": "Royal saint"
+},
+{
+"id": "ENT_ARMC_MESROP",
+"name": "Mesrop Mashtots",
+"type": "Monk/saint",
+"trad": "Armenian Christian",
+"dom": "alphabet, scripture translation, monasticism",
+"conf": "B",
+"note": "Saint Mesrop Mashtots (c.362-440), inventor of the Armenian alphabet (c.405) and translator of scripture, working under Catholicos Sahak. Attested in Movses Khorenatsi (Book III). A venerated human, not deified.",
+"src": "SRC_KHORENATSI_HISTORY",
+"per": "PER_ARMENIAN_CHR",
+"cat": "Founder/saint"
+},
+{
+"id": "ENT_ARMC_SAHAK",
+"name": "Sahak Partev",
+"type": "Bishop/saint",
+"trad": "Armenian Christian",
+"dom": "catholicate, scripture translation, ecclesial reform",
+"conf": "B",
+"note": "Saint Sahak Partev (Isaac of Armenia, c.354-439), Catholicos of All Armenians and descendant of Gregory the Illuminator; co-sponsored the Mashtots alphabet and the Armenian Bible translation. Attested in Movses Khorenatsi. A venerated human, not deified. (Distinct homonym from Yarsan ENT_YRS_SULTAN_SAHAK.)",
+"src": "SRC_KHORENATSI_HISTORY",
+"per": "PER_ARMENIAN_CHR",
+"cat": "Bishop/saint"
+},
+{
+"id": "ENT_ARMC_NERSES",
+"name": "Nerses the Great",
+"type": "Bishop/saint",
+"trad": "Armenian Christian",
+"dom": "catholicate, ecclesial reform, charity",
+"conf": "B",
+"note": "Saint Nerses I the Great (Catholicos c.353-373), great-grandson of Gregory the Illuminator and reforming Catholicos who convened the Council of Ashtishat and founded hospitals and almshouses. Attested in Movses Khorenatsi and Faustus of Byzantium. A venerated human, not deified.",
+"src": "SRC_KHORENATSI_HISTORY",
+"per": "PER_ARMENIAN_CHR",
+"cat": "Bishop/saint"
+},
+{
+"id": "ENT_ARMC_NAREK",
+"name": "Gregory of Narek",
+"type": "Mystic/saint",
+"trad": "Armenian Christian",
+"dom": "mysticism, sacred poetry, penitential prayer",
+"conf": "B",
+"note": "Saint Gregory of Narek (c.945-1003), monk of Narekavank and Armenia's greatest mystical poet; author of the Book of Lamentations, declared a Doctor of the Universal Church by Pope Francis in 2015. Attested through his surviving works. A venerated human, not deified. (Distinct from existing ENT_ORTH_GREGORY_THEOLOGIAN and ENT_ORTH_PALAMAS.)",
+"src": "SRC_NAREK_LAMENTATIONS",
+"per": "PER_ARMENIAN_CHR",
+"cat": "Mystic/saint"
+}
+]

@@ -1,0 +1,142 @@
+[
+{
+"s": "ENT_CHR_LUCIFER",
+"t": "member_of",
+"o": "ENT_GOE_SEVEN_DEADLY_DEMONS",
+"c": "high",
+"ra": "Binsfeld assigns Lucifer the sin of pride among the seven princes; wired to the EXISTING Binsfeld collective (ENT_DEMX_SEVEN_PRINCES dropped as a duplicate of it)."
+},
+{
+"s": "ENT_CHR_LUCIFER",
+"t": "embodies",
+"o": "ENT_PRIDE",
+"c": "high",
+"ra": "In the Binsfeld deadly-sin schema Lucifer is the demon of pride (superbia); ENT_PRIDE is a moral abstraction, not a deity."
+},
+{
+"s": "ENT_CHR_MAMMON",
+"t": "member_of",
+"o": "ENT_GOE_SEVEN_DEADLY_DEMONS",
+"c": "high",
+"ra": "Binsfeld assigns Mammon the sin of greed/avarice among the seven princes."
+},
+{
+"s": "ENT_ISR_ASMODEUS",
+"t": "member_of",
+"o": "ENT_GOE_SEVEN_DEADLY_DEMONS",
+"c": "high",
+"ra": "Binsfeld assigns Asmodeus the sin of lust; existing Second-Temple Asmodeus is the figure received into this schema."
+},
+{
+"s": "ENT_ISR_SATAN",
+"t": "member_of",
+"o": "ENT_GOE_SEVEN_DEADLY_DEMONS",
+"c": "medium",
+"ra": "Binsfeld assigns Satan the sin of wrath; wired to the existing Satan entity rather than creating a duplicate."
+},
+{
+"s": "ENT_CHR_BEELZEBUL",
+"t": "member_of",
+"o": "ENT_GOE_SEVEN_DEADLY_DEMONS",
+"c": "high",
+"ra": "Binsfeld assigns Beelzebub the sin of gluttony; wired to the existing Beelzebul entity (homonym of ENT_LAT_BEELZEBOUL)."
+},
+{
+"s": "ENT_CHR_LEVIATHAN",
+"t": "member_of",
+"o": "ENT_GOE_SEVEN_DEADLY_DEMONS",
+"c": "high",
+"ra": "Binsfeld assigns Leviathan the sin of envy; wired to the existing Christian/Biblical Leviathan."
+},
+{
+"s": "ENT_GOE_BELPHEGOR",
+"t": "member_of",
+"o": "ENT_GOE_SEVEN_DEADLY_DEMONS",
+"c": "high",
+"ra": "Binsfeld assigns Belphegor the sin of sloth; wired to the existing Goetic Belphegor."
+},
+{
+"s": "ENT_DEMX_VERRINE",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Verrine is one of the named possessing demons enumerated in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_GRESIL",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Gresil is one of the named possessing demons enumerated in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_SONNEILLON",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Sonneillon is one of the named possessing demons enumerated in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_CARREAU",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Carreau is one of the named possessing demons enumerated in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_CARNIVEAN",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Carnivean is one of the named possessing demons enumerated in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_OEILLET",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Oeillet is one of the named possessing demons enumerated in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_ROSIER",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Rosier is one of the named possessing demons enumerated in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_BAALBERITH",
+"t": "member_of",
+"o": "ENT_DEMX_LOUDUN",
+"c": "high",
+"ra": "Baalberith (Balberith) is enumerated among the possessing/expelled demons in Michaelis' Admirable History."
+},
+{
+"s": "ENT_DEMX_BAALBERITH",
+"t": "aligned_with",
+"o": "ENT_GOE_BERITH",
+"c": "medium",
+"ra": "The Michaelis/de Plancy Baalberith overlaps in name and demonic identity with the Goetic spirit Berith (Baal-berith of Judges); marked as a modern/functional alignment, noting the homonym, not a strict equation."
+},
+{
+"s": "ENT_DEMX_TITIVILLUS",
+"t": "member_of",
+"o": "ENT_DEMX_WITCH_FAMILIAR",
+"c": "low",
+"ra": "Provisional placement of Titivillus among the lesser/menial demonic agents class; a minor functional demon (collector of scribal errors) rather than a prince, grouped with the low-demon class hub for connectivity."
+},
+{
+"s": "ENT_DEMX_TITIVILLUS",
+"t": "member_of",
+"o": "ENT_CHR_LUCIFER",
+"c": "low",
+"ra": "As a lesser fallen spirit in the Christian demonological scheme, Titivillus serves under the chief of the fallen angels; a soft subordination/membership edge to Lucifer for graph connectivity (recast from the original reception_of, which denotes tradition-reception not hierarchy)."
+},
+{
+"s": "ENT_DEMX_WITCH_FAMILIAR",
+"t": "member_of",
+"o": "ENT_ISR_SATAN",
+"c": "medium",
+"ra": "Witch-trial demonology holds familiar spirits are imps assigned by the Devil to the witch under the demonic pact; the class is subordinate to / derives under Satan (recast from reception_of to member_of for correct subordination semantics)."
+}
+]

@@ -1,0 +1,268 @@
+[
+{
+"s": "ENT_PAT_AUGUSTINE",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Augustine of Hippo is one of the four traditional Latin Doctors and a paradigmatic Church Father."
+},
+{
+"s": "ENT_PAT_JEROME",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Jerome is one of the four traditional Latin Doctors of the Church."
+},
+{
+"s": "ENT_PAT_AMBROSE",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Ambrose of Milan is one of the four traditional Latin Doctors of the Church."
+},
+{
+"s": "ENT_PAT_GREGORY_GREAT",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Gregory the Great is the last of the four traditional Latin Doctors of the Church."
+},
+{
+"s": "ENT_PAT_ORIGEN",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Origen is a foundational early patristic theologian, conventionally grouped among the Church Fathers."
+},
+{
+"s": "ENT_PAT_IRENAEUS",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Irenaeus of Lyons is a major 2nd-century Church Father."
+},
+{
+"s": "ENT_PAT_TERTULLIAN",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Tertullian is the first major Latin Father, conventionally grouped among the Church Fathers."
+},
+{
+"s": "ENT_PAT_CYPRIAN",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Cyprian of Carthage is a 3rd-century Latin Church Father."
+},
+{
+"s": "ENT_PAT_JUSTIN_MARTYR",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Justin Martyr is the foremost 2nd-century Greek apologist, counted among the Church Fathers."
+},
+{
+"s": "ENT_PAT_CLEMENT_ALEX",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Clement of Alexandria is an early Alexandrian Church Father."
+},
+{
+"s": "ENT_PAT_CLEMENT_ROME",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Clement of Rome is one of the Apostolic Fathers, the earliest stratum of the Church Fathers."
+},
+{
+"s": "ENT_PAT_IGNATIUS_ANTIOCH",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Ignatius of Antioch is one of the Apostolic Fathers."
+},
+{
+"s": "ENT_PAT_POLYCARP",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Polycarp of Smyrna is one of the Apostolic Fathers."
+},
+{
+"s": "ENT_PAT_HILARY_POITIERS",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Hilary of Poitiers is a Latin Doctor and Church Father."
+},
+{
+"s": "ENT_PAT_LEO_GREAT",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Leo the Great is a Doctor of the Church and a patristic Father."
+},
+{
+"s": "ENT_PAT_JOHN_DAMASCUS",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "John of Damascus is traditionally counted as the last of the Greek Church Fathers."
+},
+{
+"s": "ENT_PAT_BEDE",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "medium",
+"ra": "Bede is a Doctor of the Church often grouped with the late Latin Fathers."
+},
+{
+"s": "ENT_PAT_ISIDORE_SEVILLE",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Isidore of Seville is a Doctor of the Church, frequently called the last of the Latin Fathers."
+},
+{
+"s": "ENT_PAT_GREGORY_NYSSA",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Gregory of Nyssa is one of the three Cappadocian Fathers."
+},
+{
+"s": "ENT_PAT_CYRIL_ALEX",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Cyril of Alexandria is a Doctor of the Church and Greek Father."
+},
+{
+"s": "ENT_PAT_MAXIMUS_CONFESSOR",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Maximus the Confessor is a foundational late Greek/Byzantine Father."
+},
+{
+"s": "ENT_ORTH_ATHANASIUS",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Cross-link to existing entity: Athanasius of Alexandria is one of the four great Greek Doctors and Church Fathers."
+},
+{
+"s": "ENT_ORTH_BASIL",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Cross-link to existing entity: Basil the Great is a Cappadocian Father and one of the four great Greek Doctors."
+},
+{
+"s": "ENT_ORTH_GREGORY_THEOLOGIAN",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Cross-link to existing entity: Gregory the Theologian (Nazianzen) is a Cappadocian Father and one of the four great Greek Doctors."
+},
+{
+"s": "ENT_ORTH_CHRYSOSTOM",
+"t": "member_of",
+"o": "ENT_PAT_CHURCH_FATHERS",
+"c": "high",
+"ra": "Cross-link to existing entity: John Chrysostom is one of the four great Greek Doctors and Church Fathers."
+},
+{
+"s": "ENT_PAT_AUGUSTINE",
+"t": "taught_by",
+"o": "ENT_PAT_AMBROSE",
+"c": "high",
+"ra": "Augustine was catechized and baptized by Ambrose of Milan, whose preaching he credits in the Confessions with his conversion."
+},
+{
+"s": "ENT_PAT_ORIGEN",
+"t": "taught_by",
+"o": "ENT_PAT_CLEMENT_ALEX",
+"c": "medium",
+"ra": "Origen is traditionally held to have studied under Clement of Alexandria at the Alexandrian catechetical school (succession reported by Eusebius)."
+},
+{
+"s": "ENT_PAT_IRENAEUS",
+"t": "taught_by",
+"o": "ENT_PAT_POLYCARP",
+"c": "high",
+"ra": "Irenaeus reports in his letter to Florinus that he heard Polycarp of Smyrna in his youth, linking him to the apostolic generation."
+},
+{
+"s": "ENT_PAT_GREGORY_NYSSA",
+"t": "sibling_of",
+"o": "ENT_ORTH_BASIL",
+"c": "high",
+"ra": "Gregory of Nyssa was the younger brother of Basil the Great; both were Cappadocian Fathers."
+},
+{
+"s": "ENT_PAT_GREGORY_NYSSA",
+"t": "associated_with",
+"o": "ENT_ORTH_GREGORY_THEOLOGIAN",
+"c": "high",
+"ra": "Gregory of Nyssa, Basil, and Gregory the Theologian (Nazianzen) form the three Cappadocian Fathers who jointly developed pro-Nicene Trinitarian theology."
+},
+{
+"s": "ENT_PAT_HILARY_POITIERS",
+"t": "associated_with",
+"o": "ENT_ORTH_ATHANASIUS",
+"c": "medium",
+"ra": "Hilary of Poitiers was called 'the Athanasius of the West' for leading the Latin defense of Nicene orthodoxy against Arianism, paralleling Athanasius in the East."
+},
+{
+"s": "ENT_PAT_GREGORY_GREAT",
+"t": "reception_of",
+"o": "ENT_PAT_AUGUSTINE",
+"c": "medium",
+"ra": "Gregory the Great's pastoral and grace theology drew on, and transmitted to the medieval West, the doctrine of Augustine of Hippo."
+},
+{
+"s": "ENT_PAT_JOHN_DAMASCUS",
+"t": "reception_of",
+"o": "ENT_PAT_MAXIMUS_CONFESSOR",
+"c": "medium",
+"ra": "John of Damascus's dogmatic synthesis (the Fount of Knowledge) systematized earlier Greek patristic theology, notably the Christology of Maximus the Confessor."
+},
+{
+"s": "ENT_PAT_CYRIL_ALEX",
+"t": "reception_of",
+"o": "ENT_ORTH_ATHANASIUS",
+"c": "medium",
+"ra": "Cyril of Alexandria self-consciously continued the Alexandrian Christological and anti-heretical tradition of his predecessor in the see, Athanasius."
+},
+{
+"s": "ENT_PAT_BEDE",
+"t": "reception_of",
+"o": "ENT_PAT_GREGORY_GREAT",
+"c": "high",
+"ra": "Bede's Ecclesiastical History venerates and depends on Gregory the Great, who initiated the Gregorian mission that converted Bede's English church."
+},
+{
+"s": "ENT_PAT_ISIDORE_SEVILLE",
+"t": "reception_of",
+"o": "ENT_PAT_AUGUSTINE",
+"c": "medium",
+"ra": "Isidore of Seville's encyclopedic and theological works compile and transmit the Latin patristic heritage, especially Augustine."
+},
+{
+"s": "ENT_PAT_AUGUSTINE",
+"t": "opposes",
+"o": "ENT_MANICH_MANI",
+"c": "medium",
+"ra": "Augustine, a former Manichaean auditor, became a leading opponent of Manichaeism, attacking Mani's system in Contra Faustum and other works. Object verified as ENT_MANICH_MANI."
+},
+{
+"s": "ENT_PAT_AUGUSTINE",
+"t": "reception_of",
+"o": "ENT_PAT_AMBROSE",
+"c": "medium",
+"ra": "Beyond baptism, Augustine's exegetical method and Trinitarian thought were decisively shaped by Ambrose's allegorical preaching, as he records in the Confessions."
+}
+]

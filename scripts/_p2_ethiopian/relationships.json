@@ -1,0 +1,128 @@
+[
+{
+"s": "ENT_ETH_FRUMENTIUS",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "high",
+"ra": "Frumentius is the founding apostle-bishop in the Ethiopian saintly canon."
+},
+{
+"s": "ENT_ETH_NINE_SAINTS",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "high",
+"ra": "The Nine Saints are a core evangelizing group within the Ethiopian saintly tradition."
+},
+{
+"s": "ENT_ETH_AREGAWI",
+"t": "member_of",
+"o": "ENT_ETH_NINE_SAINTS",
+"c": "high",
+"ra": "Abba Aregawi is the best-known of the Nine Saints."
+},
+{
+"s": "ENT_ETH_AREGAWI",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "high",
+"ra": "Aregawi is a canonical Ethiopian monastic saint."
+},
+{
+"s": "ENT_ETH_YARED",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "high",
+"ra": "Yared, inventor of Ethiopian chant, is a major Tewahedo saint."
+},
+{
+"s": "ENT_ETH_TEKLE_HAYMANOT",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "high",
+"ra": "Tekle Haymanot is among the most venerated Ethiopian monastic saints."
+},
+{
+"s": "ENT_ETH_GEBRE_MENFES_KIDUS",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "high",
+"ra": "Gebre Menfes Kidus is a popular Ethiopian ascetic saint."
+},
+{
+"s": "ENT_ETH_LALIBELA",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "high",
+"ra": "King Lalibela is a canonized king-saint of the Ethiopian church."
+},
+{
+"s": "ENT_ETH_MAKEDA",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "medium",
+"ra": "Makeda is the foundational figure of the Kebra Nagast cycle revered in Ethiopian Christian tradition."
+},
+{
+"s": "ENT_ETH_MENELIK",
+"t": "member_of",
+"o": "ENT_ETH_SAINTS",
+"c": "medium",
+"ra": "Menelik I, founder of the Solomonic dynasty, is venerated in the Kebra Nagast cycle."
+},
+{
+"s": "ENT_ETH_FRUMENTIUS",
+"t": "taught_by",
+"o": "ENT_SAINT_ANTHONY_ABBOT",
+"c": "low",
+"ra": "Ethiopian monasticism traces its ideals to Egyptian Antonian/Pachomian asceticism mediated through Alexandria, the see that consecrated Frumentius; lineage-of-influence, not personal pupillage. ENT_SAINT_ANTHONY_ABBOT verified to exist."
+},
+{
+"s": "ENT_ETH_NINE_SAINTS",
+"t": "taught_by",
+"o": "ENT_SAINT_ANTHONY_ABBOT",
+"c": "low",
+"ra": "The Nine Saints introduced Egyptian-style monasticism deriving from the Antonian/Pachomian tradition into Ethiopia. ENT_SAINT_ANTHONY_ABBOT verified to exist."
+},
+{
+"s": "ENT_ETH_MENELIK",
+"t": "child_of",
+"o": "ENT_ETH_MAKEDA",
+"c": "high",
+"ra": "In the Kebra Nagast, Menelik I is the son of Queen Makeda."
+},
+{
+"s": "ENT_ETH_MENELIK",
+"t": "child_of",
+"o": "ENT_ISR_SOLOMON",
+"c": "high",
+"ra": "The Kebra Nagast makes Menelik I the son of Solomon by Makeda, founding the Solomonic dynasty. ENT_ISR_SOLOMON verified to exist."
+},
+{
+"s": "ENT_ETH_MAKEDA",
+"t": "associated_with",
+"o": "ENT_ISR_SOLOMON",
+"c": "high",
+"ra": "In the Kebra Nagast Makeda (the Ethiopian Queen of Sheba) visits Solomon and bears his son Menelik I; the figure is a reception/expansion of the biblical Queen of Sheba's visit (1 Kings 10). Retargeted from reception_of to associated_with because Makeda is a reception of the biblical Queen of Sheba (no such DB entity exists), not of Solomon. ENT_ISR_SOLOMON verified to exist."
+},
+{
+"s": "ENT_ETH_MENELIK",
+"t": "associated_with",
+"o": "ENT_ETH_TABOT",
+"c": "high",
+"ra": "Menelik I is said in the Kebra Nagast to have brought the Ark (Tabot) from Jerusalem to Aksum."
+},
+{
+"s": "ENT_ETH_TABOT",
+"t": "associated_with",
+"o": "ENT_ETH_SAINTS",
+"c": "medium",
+"ra": "The Tabot/Ark tradition is the central cultic object of the Ethiopian Tewahedo Church carried by its saintly lineage."
+},
+{
+"s": "ENT_ETH_YARED",
+"t": "patron_of",
+"o": "ENT_ETH_SAINTS",
+"c": "low",
+"ra": "Yared is patron of Ethiopian sacred music, the liturgical tradition the saintly church carries forward."
+}
+]

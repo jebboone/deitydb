@@ -1,0 +1,191 @@
+[
+{
+"s": "ENT_HERX_ARIUS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Arius is a foundational ancient heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_NESTORIUS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Nestorius is an ancient heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_PELAGIUS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Pelagius is an ancient heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_DONATUS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Donatus is an ancient schismatic/heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_MONTANUS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Montanus is an ancient heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_PRISCILLIAN",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Priscillian is an ancient heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_EUTYCHES",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Eutyches is an ancient heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_SABELLIUS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Sabellius is an ancient heresiarch in the heterodox collective."
+},
+{
+"s": "ENT_HERX_BOGOMILS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "The Bogomils are a medieval dualist movement in the heterodox collective."
+},
+{
+"s": "ENT_HERX_CATHAR_PERFECTI",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "The Cathar Perfecti are a medieval dualist movement in the heterodox collective."
+},
+{
+"s": "ENT_HERX_PAULICIANS",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "The Paulicians are a medieval dualist movement in the heterodox collective."
+},
+{
+"s": "ENT_HERX_WALDO",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "Peter Waldo is a medieval heresiarch/founder in the heterodox collective."
+},
+{
+"s": "ENT_HERX_WALDENSES",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "The Waldensians are a medieval dissenting movement in the heterodox collective."
+},
+{
+"s": "ENT_HERX_BOSNIAN_CHURCH",
+"t": "member_of",
+"o": "ENT_HERX_HERESIARCHS",
+"c": "high",
+"ra": "The Bosnian Church is a medieval dissenting body in the heterodox collective."
+},
+{
+"s": "ENT_HERX_ARIUS",
+"t": "opposed_by",
+"o": "ENT_ORTH_ATHANASIUS",
+"c": "high",
+"ra": "Athanasius of Alexandria was the chief patristic opponent of Arius and Arianism after Nicaea."
+},
+{
+"s": "ENT_ORTH_ATHANASIUS",
+"t": "opposes",
+"o": "ENT_HERX_ARIUS",
+"c": "high",
+"ra": "Athanasius led the orthodox defense against Arius's subordinationist Christology."
+},
+{
+"s": "ENT_HERX_WALDENSES",
+"t": "reception_of",
+"o": "ENT_HERX_WALDO",
+"c": "high",
+"ra": "The Waldensian movement received its origin and rule of apostolic poverty from Peter Waldo, its founder."
+},
+{
+"s": "ENT_HERX_BOGOMILS",
+"t": "reception_of",
+"o": "ENT_HERX_PAULICIANS",
+"c": "medium",
+"ra": "The Bogomils received and transmitted the dualist cosmology earlier carried by the Paulicians of the Byzantine East (Lambert)."
+},
+{
+"s": "ENT_HERX_CATHAR_PERFECTI",
+"t": "reception_of",
+"o": "ENT_HERX_BOGOMILS",
+"c": "high",
+"ra": "Western Catharism received its dualist doctrine and ritual (the consolamentum) from Balkan Bogomilism (Lambert)."
+},
+{
+"s": "ENT_HERX_BOSNIAN_CHURCH",
+"t": "reception_of",
+"o": "ENT_HERX_BOGOMILS",
+"c": "low",
+"ra": "The Bosnian Church was widely (if contestedly) linked to Bogomil dualist influence by medieval polemicists (Lambert)."
+},
+{
+"s": "ENT_HERX_PAULICIANS",
+"t": "aligned_with",
+"o": "ENT_MANICH_MANI",
+"c": "medium",
+"ra": "Paulician radical dualism was assimilated by Byzantine heresiologists to Manichaean dualism, of which Mani is the founder."
+},
+{
+"s": "ENT_HERX_CATHAR_PERFECTI",
+"t": "aligned_with",
+"o": "ENT_MANICH_MANI",
+"c": "medium",
+"ra": "Medieval polemicists labelled the dualist Cathars 'Manichaeans'; their cosmology parallels Manichaean dualism."
+},
+{
+"s": "ENT_HERX_CATHAR_PERFECTI",
+"t": "opposed_by",
+"o": "ENT_SAINT_BERNARD",
+"c": "high",
+"ra": "Bernard of Clairvaux preached against the Cathar heretics of the Languedoc in 1145 (Lambert)."
+},
+{
+"s": "ENT_SAINT_BERNARD",
+"t": "opposes",
+"o": "ENT_HERX_CATHAR_PERFECTI",
+"c": "high",
+"ra": "Bernard of Clairvaux led an early preaching campaign against Catharism."
+},
+{
+"s": "ENT_HERX_CATHAR_PERFECTI",
+"t": "opposed_by",
+"o": "ENT_SAINT_DOMINIC",
+"c": "high",
+"ra": "Dominic's preaching mission and the founding of the Order of Preachers were directed against the Albigensian Cathars (Lambert)."
+},
+{
+"s": "ENT_SAINT_DOMINIC",
+"t": "opposes",
+"o": "ENT_HERX_CATHAR_PERFECTI",
+"c": "high",
+"ra": "Dominic founded his order to combat the Albigensian heresy."
+},
+{
+"s": "ENT_HERX_NESTORIUS",
+"t": "opposes",
+"o": "ENT_SAINT_MARY",
+"c": "medium",
+"ra": "Nestorius opposed the title Theotokos for Mary, rejecting it in favor of Christotokos, the dispute condemned at Ephesus."
+}
+]

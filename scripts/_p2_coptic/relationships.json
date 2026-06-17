@@ -1,0 +1,114 @@
+[
+{
+"s": "ENT_COP_SHENOUTE",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Shenoute is a venerated Coptic abbot-saint, a member of the Coptic Fathers hub (Davis)."
+},
+{
+"s": "ENT_COP_BESA",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Besa, Shenoute's successor at the White Monastery, is a venerated Coptic father."
+},
+{
+"s": "ENT_COP_PACHOMIUS",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Pachomius, founder of cenobitic monasticism in Egypt, is a foundational Coptic father."
+},
+{
+"s": "ENT_COP_MACARIUS",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Macarius of Egypt, founder of Scetis, is a foundational Coptic desert father."
+},
+{
+"s": "ENT_COP_MOSES_BLACK",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Moses the Black, monk-martyr of Scetis, is a venerated Coptic father."
+},
+{
+"s": "ENT_COP_SAMUEL_CONFESSOR",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Samuel the Confessor, abbot of al-Qalamun, is a venerated Coptic father."
+},
+{
+"s": "ENT_COP_KYRILLOS_VI",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Pope Kyrillos VI, canonized Coptic patriarch, belongs to the Coptic Fathers and Saints hub."
+},
+{
+"s": "ENT_COP_MENA_MARTYR",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Mena/Abu Mina, the great Coptic healing-martyr, is a venerated Coptic saint."
+},
+{
+"s": "ENT_COP_BESA",
+"t": "taught_by",
+"o": "ENT_COP_SHENOUTE",
+"c": "high",
+"ra": "Besa was the disciple of Shenoute and succeeded him as archimandrite of the White Monastery (Davis; Besa's own Life of Shenoute)."
+},
+{
+"s": "ENT_COP_MOSES_BLACK",
+"t": "taught_by",
+"o": "ENT_COP_MACARIUS",
+"c": "medium",
+"ra": "Moses the Black became a monk of Scetis under the spiritual direction of Macarius of Egypt (Apophthegmata Patrum)."
+},
+{
+"s": "ENT_SAINT_ANTHONY_ABBOT",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Anthony the Great (existing ENT_SAINT_ANTHONY_ABBOT, verified in DB), the Egyptian father of monasticism, is venerated as the foremost Coptic father; wiring the existing entity into the Coptic hub."
+},
+{
+"s": "ENT_COP_PACHOMIUS",
+"t": "reception_of",
+"o": "ENT_SAINT_ANTHONY_ABBOT",
+"c": "medium",
+"ra": "Pachomian cenobitism develops the Egyptian eremitic ideal pioneered by Anthony the Great, the model anchorite (Davis); object verified to exist in DB."
+},
+{
+"s": "ENT_COP_MACARIUS",
+"t": "reception_of",
+"o": "ENT_SAINT_ANTHONY_ABBOT",
+"c": "medium",
+"ra": "Macarius of Egypt is portrayed in the Apophthegmata as carrying forward the desert ascetic tradition founded by Anthony the Great; object verified to exist in DB."
+},
+{
+"s": "ENT_ORTH_ATHANASIUS",
+"t": "member_of",
+"o": "ENT_COP_FATHERS",
+"c": "high",
+"ra": "Athanasius of Alexandria (existing ENT_ORTH_ATHANASIUS, verified in DB), the Coptic patriarch and biographer of Anthony, is a foundational Coptic father; wiring the existing entity into the Coptic hub."
+},
+{
+"s": "ENT_COP_KYRILLOS_VI",
+"t": "reception_of",
+"o": "ENT_ORTH_ATHANASIUS",
+"c": "medium",
+"ra": "As a successor Pope of Alexandria, Kyrillos VI stands in the continuous Alexandrian patriarchal line whose great early model is Athanasius (Davis, on the papal succession); object verified to exist in DB."
+},
+{
+"s": "ENT_COP_MENA_MARTYR",
+"t": "received_as",
+"o": "ENT_ORTH_MENAS",
+"c": "high",
+"ra": "The Coptic wonderworker Mena (Abu Mina) is the Egyptian/Coptic reception of the same soldier-martyr venerated pan-Orthodox as Menas (existing ENT_ORTH_MENAS, verified in DB); same figure, flagged as a homonym/overlap."
+}
+]
