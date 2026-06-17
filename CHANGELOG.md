@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.71.0 — 2026-06-17
+
+### Enochian system of John Dee
+
+Completes the Renaissance-magic arc with the Enochian angelic system of John Dee
+and Edward Kelley (1581-1587). Tradition Renaissance Esoteric (`ENT_REN_*`),
+reusing period PER_EARLY_MODERN_OCCULT; one new source SRC_DEE_ENOCHIAN (the
+Enochian diaries: Heptarchia Mystica, Liber Loagaeth, Liber Scientiae).
+**+19 entities, +22 relationships**, 0 rejected, all invariants green.
+Scorecard now 2,628 entities / 4,714 relationships / 293 sources.
+
+- **Heptarchia Mystica:** the seven Heptarchic kings (Carmara, Baligon, Bobogel,
+  Babalel, Bnaspol, Bynepor, Bnapsen) and seven princes (Hagonel + Bornogo,
+  Befafes, Butmono, Blisdon, Bralges, Bagenol), under the system collective
+  `ENT_REN_ENOCHIAN`.
+- **The Four Watchtowers (Great Table)** and **the Thirty Aethyrs** as collectives,
+  with LIL (1st/highest) and TEX (30th/lowest) as named example aethyrs.
+- Built conservatively: only firmly-documented structural entities; the hundreds
+  of Great-Table square-angels and the full 30 aethyr-governors were deliberately
+  NOT enumerated to avoid fabricating precise Enochian names, and manuscript-
+  variable day/planet and king-pairing attributions are flagged in-note and given
+  confidence C. No sigils (CLAUDE.md boundary).
+
 ## v1.70.0 — 2026-06-16
 
 ### Mainstream Abrahamic scriptural backbone (Hebrew Bible, New Testament, Qur'an)
