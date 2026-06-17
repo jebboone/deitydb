@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.84.1 — 2026-06-17
+
+### Sourcing / traceability QA pass (`scripts/qa_sourcing_v1_84.sql`)
+
+A full sourcing audit after the v1.77–v1.84 build-out. Core invariants all clean:
+**0 unsourced entities, 0 relationships without a source, 0 dangling source references,
+0 malformed source records, 0 bad confidence/evidence values.** Two issues found and
+fixed:
+- **Butler's *Lives of the Saints* (and Bibliotheca Sanctorum) were mis-typed as bare
+  'reference work'** — they are scholarly hagiography, so per the project rule (cf.
+  Farmer's) they are now **'secondary scholarship'**. Butler alone backed 58 of the
+  Catholic-cohort saints, so their primary/scholarly coverage jumped from ~11–21% to
+  **100%**. Global primary/scholarly coverage is now **97.2%**.
+- **Four newly-added sources had been left orphan** (added but never attached) —
+  Hildegard's *Scivias*, Raymond of Capua's *Life of Catherine*, Attar's *Tadhkirat
+  al-Awliya*, and Campbell's *Digital Religion* — now attached to the figures they
+  document.
+
+Known pre-existing debt (untouched, not from the new data): 77 older relationships
+(chiefly the decan/astrological layer) carry no rationale text, and 10 legacy catalog
+sources remain unattached. Flagged for a future dedicated backfill.
+
 ## v1.84.0 — 2026-06-17
 
 ### The angel-numbers lineage, deepened — and a "Lineages" reception-chain visualization
