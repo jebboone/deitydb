@@ -1,0 +1,74 @@
+[
+{
+"id": "ENT_WIC_PANTHEON",
+"name": "The Wiccan Pantheon (hub)",
+"type": "tradition_hub",
+"trad": "Wicca",
+"dom": "neopaganism, witchcraft, duotheism",
+"conf": "B",
+"note": "Collective hub for the deities and ritual powers venerated in modern Wicca/pagan witchcraft.",
+"src": "SRC_HUTTON_TRIUMPH",
+"per": "PER_WICCA",
+"cat": "hub"
+},
+{
+"id": "ENT_WIC_HORNED_GOD",
+"name": "The Horned God",
+"type": "Horned god",
+"trad": "Wicca",
+"dom": "masculine divinity, fertility, the hunt, death and rebirth",
+"conf": "B",
+"note": "The male deity of Wicca, ritually invoked at sabbats; consort of the Goddess and lord of life, death and rebirth. Genuinely worshipped across Wiccan covens; Gardner and Valiente drew his imagery from Cernunnos and Pan.",
+"src": "SRC_VALIENTE_WFT",
+"per": "PER_WICCA",
+"cat": "deity"
+},
+{
+"id": "ENT_WIC_TRIPLE_GODDESS",
+"name": "The Triple Goddess (Maiden, Mother, Crone)",
+"type": "Goddess",
+"trad": "Wicca",
+"dom": "feminine divinity, moon, fertility, fate",
+"conf": "B",
+"note": "The Great Goddess of Wicca in her threefold lunar aspect (Maiden / Mother / Crone), invoked devotionally in coven ritual; her aspects align with classical lunar goddesses Hecate, Diana and Selene.",
+"src": "SRC_VALIENTE_WFT",
+"per": "PER_WICCA",
+"cat": "deity"
+},
+{
+"id": "ENT_WIC_DRYGHTYN",
+"name": "The Dryghtyn (the One)",
+"type": "Supreme principle",
+"trad": "Wicca",
+"dom": "ultimate divine source, monistic ground of being",
+"conf": "C",
+"note": "The impersonal ultimate of much Wiccan theology — the 'One' or supreme power behind the God and Goddess, named in Valiente's 'Dryghtyn Prayer'. Held within the tradition as the source from which both deities emanate.",
+"src": "SRC_VALIENTE_WFT",
+"per": "PER_WICCA",
+"cat": "concept"
+},
+{
+"id": "ENT_WIC_WATCHTOWER_GUARDIANS",
+"name": "The Guardians of the Watchtowers",
+"type": "Guardian spirit",
+"trad": "Wicca",
+"dom": "elemental quarters, ritual circle protection",
+"conf": "B",
+"note": "The four elemental quarter-guardians (Earth/North, Air/East, Fire/South, Water/West) invoked when casting the Wiccan circle. DISTINCT from the Enochian Watchtowers though terminologically descended from them via the Golden Dawn.",
+"src": "SRC_VALIENTE_WFT",
+"per": "PER_WICCA",
+"cat": "collective"
+},
+{
+"id": "ENT_WIC_WHEEL_OF_YEAR",
+"name": "The Wheel of the Year (Eight Sabbats)",
+"type": "Ritual",
+"trad": "Wicca",
+"dom": "seasonal festival cycle, solar/agricultural calendar",
+"conf": "B",
+"note": "The eightfold ritual calendar of Wicca — the four 'greater' (Samhain, Imbolc, Beltane, Lughnasadh) and four 'lesser' (solstices/equinoxes) sabbats — enacting the cyclical relationship of the God and Goddess. A core practiced ritual cycle.",
+"src": "SRC_HUTTON_TRIUMPH",
+"per": "PER_WICCA",
+"cat": "ritual"
+}
+]

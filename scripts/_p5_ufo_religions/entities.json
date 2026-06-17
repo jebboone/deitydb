@@ -1,0 +1,98 @@
+[
+{
+"id": "ENT_UFO_PANTHEON",
+"name": "The Powers of the UFO Religions (collective)",
+"type": "collective",
+"trad": "UFO Religion",
+"dom": "extraterrestrial salvation; cosmic guidance; creation",
+"cat": "pantheon-hub",
+"conf": "C",
+"note": "Hub collective grouping the benevolent extraterrestrial powers venerated or believed-in across practiced UFO religions (Raelism, Heaven's Gate, the contactee/channeling milieu). Modeled neutrally as the beings sincerely held to exist within these traditions.",
+"src": "SRC_PARTRIDGE_UFO_RELIGIONS",
+"per": "PER_UFO_RELIGION"
+},
+{
+"id": "ENT_UFO_SPACE_BROTHERS",
+"name": "The Space Brothers",
+"type": "collective",
+"trad": "UFO Religion",
+"dom": "benevolent guidance; cosmic warning; uplift of humanity",
+"cat": "extraterrestrial-beings",
+"conf": "B",
+"note": "The benevolent, spiritually advanced extraterrestrials of the 1950s contactee movement (Adamski, Van Tassel, etc.); believed by contactees and channelers to deliver messages of peace and warning. Sincerely held within the contactee/channeling milieu.",
+"src": "SRC_LEWIS_GODS_LANDED",
+"per": "PER_UFO_RELIGION"
+},
+{
+"id": "ENT_UFO_ASHTAR",
+"name": "Ashtar (Ashtar Galactic Command)",
+"type": "being",
+"trad": "UFO Religion",
+"dom": "galactic command; cosmic guardianship; channeled guidance",
+"cat": "channeled-extraterrestrial",
+"conf": "B",
+"note": "The extraterrestrial commander first channeled by George Van Tassel (1952) and central to the ongoing Ashtar channeling current; head of the Ashtar Galactic Command. Held to exist and actively channeled within the milieu. NOTE homonym: unrelated to the Moabite Ashtar-Kemosh (ENT_MOA_ASHTAR_KEMOSH).",
+"src": "SRC_PARTRIDGE_UFO_RELIGIONS",
+"per": "PER_UFO_RELIGION"
+},
+{
+"id": "ENT_UFO_COUNCIL_NINE",
+"name": "The Council of Nine (\"the Nine\" / \"Tom\")",
+"type": "collective",
+"trad": "UFO Religion",
+"dom": "cosmic governance; channeled wisdom; creation oversight",
+"cat": "channeled-beings",
+"conf": "B",
+"note": "Nine cosmic beings (spokesman 'Tom') channeled through the Andrija Puharich circle from the 1950s onward; influential across the channeling milieu and sincerely received as higher intelligences. Modeled neutrally as beliefs held within the tradition.",
+"src": "SRC_PARTRIDGE_UFO_RELIGIONS",
+"per": "PER_UFO_RELIGION"
+},
+{
+"id": "ENT_UFO_ELOHIM",
+"name": "The Raelian Elohim",
+"type": "collective",
+"trad": "UFO Religion",
+"dom": "creation of humanity by genetic engineering; future return",
+"cat": "extraterrestrial-creators",
+"conf": "B",
+"note": "The extraterrestrial creators of the active Raelian movement, held to have engineered humanity in their laboratories; 'Elohim' read as 'those who came from the sky.' Core sincerely-held belief of practicing Raelians. NOTE homonym: distinct from Hebrew/Jewish/LDS Elohim (ENT_ISR_BENE_ELOHIM / ENT_JM_ELOHIM_RANK / ENT_LDS_ELOHIM).",
+"src": "SRC_PARTRIDGE_UFO_RELIGIONS",
+"per": "PER_UFO_RELIGION"
+},
+{
+"id": "ENT_UFO_SANANDA",
+"name": "Sananda",
+"type": "being",
+"trad": "UFO Religion",
+"dom": "cosmic salvation; channeled teaching; ascension",
+"cat": "channeled-extraterrestrial",
+"conf": "B",
+"note": "The channeled 'cosmic Jesus' of the Ashtar/I AM-adjacent channeling current, presented as the higher self/galactic identity of Jesus; sincerely received and channeled within the milieu.",
+"src": "SRC_PARTRIDGE_UFO_RELIGIONS",
+"per": "PER_UFO_RELIGION"
+},
+{
+"id": "ENT_UFO_NEXT_LEVEL",
+"name": "The Next Level (Heaven's Gate)",
+"type": "concept",
+"trad": "UFO Religion",
+"dom": "evolutionary level above human; extraterrestrial kingdom",
+"cat": "cosmology",
+"conf": "B",
+"note": "Heaven's Gate's term for 'The Evolutionary Level Above Human,' the extraterrestrial kingdom to which members believed they would graduate; sincerely lived belief of the Heaven's Gate community.",
+"src": "SRC_LEWIS_GODS_LANDED",
+"per": "PER_UFO_RELIGION"
+},
+{
+"id": "ENT_UFO_TI_DO",
+"name": "Ti and Do (Bonnie Nettles & Marshall Applewhite)",
+"type": "figure",
+"trad": "UFO Religion",
+"dom": "leadership; Next-Level representatives",
+"cat": "founder-figures",
+"conf": "B",
+"note": "Co-founders of Heaven's Gate, believed by members to be incarnated representatives of the Next Level (Do also identified with the returned Jesus-soul). Sincerely venerated as guides by the community. Modeled neutrally.",
+"src": "SRC_LEWIS_GODS_LANDED",
+"per": "PER_UFO_RELIGION"
+}
+]

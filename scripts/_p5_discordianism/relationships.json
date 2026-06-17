@@ -1,0 +1,72 @@
+[
+{
+"s": "ENT_DIS_ERIS",
+"t": "member_of",
+"o": "ENT_DIS_DISCORDIANISM",
+"c": "high",
+"ra": "The Discordian Eris is the central deity of the Discordianism tradition-hub."
+},
+{
+"s": "ENT_DIS_SACRED_CHAO",
+"t": "member_of",
+"o": "ENT_DIS_DISCORDIANISM",
+"c": "high",
+"ra": "The Sacred Chao is a core Discordian symbol belonging to the tradition."
+},
+{
+"s": "ENT_DIS_GOLDEN_APPLE",
+"t": "member_of",
+"o": "ENT_DIS_DISCORDIANISM",
+"c": "high",
+"ra": "The Golden Apple is a foundational Discordian relic belonging to the tradition."
+},
+{
+"s": "ENT_DIS_GREYFACE",
+"t": "member_of",
+"o": "ENT_DIS_DISCORDIANISM",
+"c": "high",
+"ra": "Greyface is a Discordian mythic figure belonging to the tradition."
+},
+{
+"s": "ENT_DIS_LAW_OF_FIVES",
+"t": "member_of",
+"o": "ENT_DIS_DISCORDIANISM",
+"c": "high",
+"ra": "The Law of Fives is a core doctrine belonging to the Discordian tradition."
+},
+{
+"s": "ENT_DIS_ERIS",
+"t": "reception_of",
+"o": "ENT_ERIS",
+"c": "high",
+"ra": "The Discordian Goddess of Chaos is an explicit modern reception/re-imagining of the ancient Greek Eris (ENT_ERIS), the founding act of Discordian invention per the Principia Discordia and Cusack 2010."
+},
+{
+"s": "ENT_DIS_ERIS",
+"t": "presides_over",
+"o": "ENT_DIS_SACRED_CHAO",
+"c": "medium",
+"ra": "In Discordian cosmology Eris reveals/governs the Sacred Chao as the emblem of her ordered-and-chaotic cosmos."
+},
+{
+"s": "ENT_DIS_SACRED_CHAO",
+"t": "symbolizes",
+"o": "ENT_DIS_ERIS",
+"c": "high",
+"ra": "The Sacred Chao is the central emblem of the Discordian Eris and her doctrine of the chaos/order interplay."
+},
+{
+"s": "ENT_DIS_GOLDEN_APPLE",
+"t": "symbolizes",
+"o": "ENT_DIS_ERIS",
+"c": "high",
+"ra": "The kallisti-inscribed Golden Apple is Eris's defining emblem in both the Greek myth and Discordian practice."
+},
+{
+"s": "ENT_DIS_GREYFACE",
+"t": "opposes",
+"o": "ENT_DIS_ERIS",
+"c": "high",
+"ra": "Greyface, the spirit of grim order, is the doctrinal antagonist of the chaos-goddess Eris in Discordian myth."
+}
+]

@@ -1,0 +1,62 @@
+[
+{
+"id": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"name": "The Great White Brotherhood",
+"type": "collective",
+"trad": "Theosophical",
+"dom": "spiritual hierarchy; ascended masters; planetary governance",
+"conf": "B",
+"note": "Named collective of the Ascended Masters as taught and devotionally invoked in the I AM Activity (Ballard) and Church Universal and Triumphant (the Prophets); 'White' denotes the aura/light, not race. Hub entity for the I AM/CUT layer.",
+"src": "SRC_MELTON_AMERICAN_RELIGIONS",
+"per": "PER_IAM",
+"cat": "collective"
+},
+{
+"id": "ENT_IAM_MIGHTY_I_AM_PRESENCE",
+"name": "The Mighty I AM Presence",
+"type": "divine principle",
+"trad": "Theosophical",
+"dom": "individualized God-presence; divine self; source of the lifestream",
+"conf": "B",
+"note": "The individualized God-presence above each person, central object of decree and devotion in the I AM Activity and CUT (the upper figure of the 'Chart of Your Divine Self').",
+"src": "SRC_PROPHET_SAINT_GERMAIN_ALCHEMY",
+"per": "PER_IAM",
+"cat": "divine principle"
+},
+{
+"id": "ENT_IAM_VIOLET_FLAME",
+"name": "The Violet Flame",
+"type": "divine principle",
+"trad": "Theosophical",
+"dom": "transmutation; mercy ray; spiritual alchemy; karmic purification",
+"conf": "B",
+"note": "The seventh-ray transmuting flame invoked through decrees in the I AM Activity and CUT; associated with Saint Germain and used ritually for transmutation of karma.",
+"src": "SRC_PROPHET_SAINT_GERMAIN_ALCHEMY",
+"per": "PER_IAM",
+"cat": "divine principle"
+},
+{
+"id": "ENT_IAM_NADA",
+"name": "Lady Master Nada",
+"type": "ascended master",
+"trad": "Theosophical",
+"dom": "sixth ray; ministration and service; divine love",
+"conf": "C",
+"note": "Ascended Lady Master and Chohan of the sixth ray invoked in CUT devotion; one of the Ascended Lady Masters of the I AM/CUT hierarchy. Distinct from the Israelite figure Nadab (ENT_ISR_NADAB).",
+"src": "SRC_PROPHET_SAINT_GERMAIN_ALCHEMY",
+"per": "PER_IAM",
+"cat": "ascended master"
+},
+{
+"id": "ENT_IAM_SAINT_GERMAIN_HIERARCH",
+"name": "Saint Germain, Hierarch of the Aquarian Age",
+"type": "ascended master",
+"trad": "Theosophical",
+"dom": "seventh ray; violet flame; freedom; Aquarian-age dispensation",
+"conf": "B",
+"note": "Reception within the I AM Activity and CUT of the existing Master Saint Germain as the Chohan of the seventh ray and sponsoring hierarch of the Aquarian age; devotionally invoked, distinct cult-form of the Theosophical Saint Germain (ENT_THE_SAINT_GERMAIN).",
+"src": "SRC_MELTON_AMERICAN_RELIGIONS",
+"per": "PER_IAM",
+"cat": "ascended master"
+}
+]

@@ -1,0 +1,74 @@
+[
+{
+"id": "ENT_SAT_MOVEMENT",
+"name": "Modern Satanism",
+"type": "Religious movement / collective",
+"trad": "Modern Satanism",
+"dom": "adversary, self-deification, individualism",
+"conf": "B",
+"note": "Hub collective for organized, practiced modern Satanism from the founding of the Church of Satan (1966) onward; encompasses LaVeyan symbolic Satanism, theistic Satanism, Luciferianism, and the Setian current.",
+"src": "SRC_PETERSEN_RELIGIOUS_SATANISM",
+"per": "PER_MODERN_SATANISM",
+"cat": "Religious movement / collective"
+},
+{
+"id": "ENT_SAT_LAVEYAN_SATAN",
+"name": "Satan (LaVeyan / symbolic adversary)",
+"type": "Symbolic figure / archetype",
+"trad": "Modern Satanism",
+"dom": "adversary, carnality, autonomy, the self",
+"conf": "B",
+"note": "In Church of Satan doctrine (LaVey 1969) Satan is not a literal being but a symbol of the carnal self, pride, rational self-interest and the adversarial principle; venerated rhetorically as the embodiment of human nature and self-deification. Modeled neutrally as the movement's symbolic reception of the adversary.",
+"src": "SRC_LAVEY_SATANIC_BIBLE",
+"per": "PER_MODERN_SATANISM",
+"cat": "Symbolic figure / archetype"
+},
+{
+"id": "ENT_SAT_FOUR_CROWN_PRINCES",
+"name": "Four Crown Princes of Hell",
+"type": "Collective / grouping",
+"trad": "Modern Satanism",
+"dom": "the four directions, infernal hierarchy",
+"conf": "B",
+"note": "LaVey's fourfold grouping invoked in Church of Satan ritual (The Satanic Bible, 1969): Satan (south/fire), Lucifer (east/air), Belial (north/earth), Leviathan (west/water). Collective wiring the existing demon-entities; not a re-creation of any of the four.",
+"src": "SRC_LAVEY_SATANIC_BIBLE",
+"per": "PER_MODERN_SATANISM",
+"cat": "Collective / grouping"
+},
+{
+"id": "ENT_SAT_THEISTIC_SATAN",
+"name": "Satan (theistic Satanism)",
+"type": "Deity (as believed)",
+"trad": "Modern Satanism",
+"dom": "adversary, liberation, dark divinity",
+"conf": "C",
+"note": "Within theistic (traditional/devotional) Satanism, held by adherents to be a literal divine being and object of worship and devotion, distinct from the Church of Satan's purely symbolic reading. Modeled neutrally as a belief held within the movement.",
+"src": "SRC_PETERSEN_RELIGIOUS_SATANISM",
+"per": "PER_MODERN_SATANISM",
+"cat": "Deity (as believed)"
+},
+{
+"id": "ENT_SAT_LUCIFERIAN_LUCIFER",
+"name": "Lucifer (Luciferian light-bringer)",
+"type": "Symbolic figure / venerated being",
+"trad": "Modern Satanism",
+"dom": "light, knowledge, liberation, the morning star",
+"conf": "C",
+"note": "In modern Luciferianism, Lucifer is venerated as the bringer of light and forbidden knowledge and a figure of self-liberation and enlightenment, framed positively rather than as the Christian devil; held devotionally or symbolically depending on the practitioner. Reception of the existing Lucifer.",
+"src": "SRC_PETERSEN_RELIGIOUS_SATANISM",
+"per": "PER_MODERN_SATANISM",
+"cat": "Symbolic figure / venerated being"
+},
+{
+"id": "ENT_SAT_SETIAN_SET",
+"name": "Set (Temple of Set)",
+"type": "Deity (as believed)",
+"trad": "Modern Satanism",
+"dom": "isolate self-consciousness, individuation, xeper (becoming)",
+"conf": "B",
+"note": "Following Michael Aquino's founding of the Temple of Set (1975) as a schism from the Church of Satan, the Egyptian god Set is held to be a real, enduring divine intelligence and patron of the isolate, self-aware psyche; Setians pursue 'Xeper' (self-deification). Reception of the existing Egyptian Set/Seth.",
+"src": "SRC_PETERSEN_RELIGIOUS_SATANISM",
+"per": "PER_MODERN_SATANISM",
+"cat": "Deity (as believed)"
+}
+]

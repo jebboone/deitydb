@@ -69,6 +69,15 @@ P = {
  "Germanic Legend":("legendary-literary","literary","The Germanic heroic-legendary cycle (the Völsung/Nibelung matter — Sigurð, Brynhild, Wayland) — a mythos in saga and epic, like the Arthurian material."),
  "Nart (Ossetian/Sarmatian)":("civic-polytheism","regional","The Nart sagas of the Caucasus — the surviving Scythian/Sarmatian-Alanic mythology (Batraz, Satana, Uastyrdzhi), a living oral epic among the Ossetians and neighbours."),
  "Venetic":("civic-polytheism","regional","The Venetic pantheon of pre-Roman NE Italy, centered on the goddess Reitia."),
+ # esoteric & modern-NRM additions (completeness Phase 5)
+ "Wicca":("modern-esoteric","modern-worldwide","Wicca / modern pagan witchcraft — the largest contemporary neopagan religion (Gardner, 1940s+), duotheist (the Horned God & the Triple Goddess)."),
+ "Alchemical":("esoteric-magic","learned-subculture","Western alchemy as a spiritual-symbolic system — the personified principles (tria prima, the King & Queen, the Rebis, Azoth)."),
+ "Modern Satanism":("modern-esoteric","modern-worldwide","Organized modern Satanism, Luciferianism and the Temple of Set (Church of Satan 1966, The Satanic Temple, Temple of Set) — symbolic and theistic currents."),
+ "Masonic/Rosicrucian":("esoteric-magic","learned-subculture","Freemasonry and Rosicrucianism — fraternal esoteric traditions (the Great Architect, Hiram Abiff, Christian Rosenkreutz)."),
+ "UFO Religion":("modern-esoteric","modern-worldwide","UFO/contactee religions (Raëlism, Heaven's Gate, the channeling milieu) — the Space Brothers, Ashtar, the Nine, the Elohim."),
+ "Scientology":("modern-esoteric","modern-worldwide","The Church of Scientology — a modern new religion; its cosmology of thetans and the Xenu account modeled here as held belief."),
+ "Discordianism":("modern-esoteric","modern-worldwide","Discordianism — a genuinely-engaged absurdist religion venerating Eris/Discordia (Principia Discordia, 1958+)."),
+ "Modern Paganism":("modern-esoteric","modern-worldwide","Reconstructionist & revival paganism beyond Wicca — modern Heathenry/Ásatrú, Druidry, the Goddess movement, plus Martinist/New-Thought currents."),
  # esoteric-magic (learned ritual-magic / grimoire)
  "Goetic/Solomonic":("esoteric-magic","learned-subculture"),"Renaissance Esoteric":("esoteric-magic","learned-subculture"),
  "Solomonic Magic":("esoteric-magic","learned-subculture"),"Astral Magic":("esoteric-magic","learned-subculture"),

@@ -1,0 +1,121 @@
+[
+{
+"s": "ENT_WIC_HORNED_GOD",
+"t": "member_of",
+"o": "ENT_WIC_PANTHEON",
+"c": "high",
+"ra": "The Horned God is a core deity of the Wiccan pantheon hub."
+},
+{
+"s": "ENT_WIC_TRIPLE_GODDESS",
+"t": "member_of",
+"o": "ENT_WIC_PANTHEON",
+"c": "high",
+"ra": "The Triple Goddess is the principal female deity of the Wiccan pantheon hub."
+},
+{
+"s": "ENT_WIC_DRYGHTYN",
+"t": "member_of",
+"o": "ENT_WIC_PANTHEON",
+"c": "medium",
+"ra": "The Dryghtyn / 'the One' belongs to the Wiccan theological collective as its ultimate principle."
+},
+{
+"s": "ENT_WIC_WATCHTOWER_GUARDIANS",
+"t": "member_of",
+"o": "ENT_WIC_PANTHEON",
+"c": "medium",
+"ra": "The quarter-guardians are part of the Wiccan ritual-cosmological roster collected under the hub."
+},
+{
+"s": "ENT_WIC_WHEEL_OF_YEAR",
+"t": "member_of",
+"o": "ENT_WIC_PANTHEON",
+"c": "medium",
+"ra": "The Wheel of the Year is the central ritual cycle of the tradition grouped under the hub."
+},
+{
+"s": "ENT_WIC_HORNED_GOD",
+"t": "emanates_from",
+"o": "ENT_WIC_DRYGHTYN",
+"c": "medium",
+"ra": "In Wiccan theology the God and Goddess emanate from the impersonal Dryghtyn / the One."
+},
+{
+"s": "ENT_WIC_TRIPLE_GODDESS",
+"t": "emanates_from",
+"o": "ENT_WIC_DRYGHTYN",
+"c": "medium",
+"ra": "The Goddess is understood within the tradition as a manifestation emanating from the supreme Dryghtyn."
+},
+{
+"s": "ENT_WIC_HORNED_GOD",
+"t": "consort_of",
+"o": "ENT_WIC_TRIPLE_GODDESS",
+"c": "high",
+"ra": "Wiccan duotheism pairs the Horned God and the Goddess as divine consorts whose union drives the seasonal cycle."
+},
+{
+"s": "ENT_WIC_WHEEL_OF_YEAR",
+"t": "associated_with",
+"o": "ENT_WIC_HORNED_GOD",
+"c": "high",
+"ra": "The sabbats of the Wheel of the Year dramatize the birth, life, death and rebirth of the Horned God."
+},
+{
+"s": "ENT_WIC_WHEEL_OF_YEAR",
+"t": "associated_with",
+"o": "ENT_WIC_TRIPLE_GODDESS",
+"c": "high",
+"ra": "The Wheel of the Year tracks the Goddess through her Maiden/Mother/Crone aspects across the seasons."
+},
+{
+"s": "ENT_WIC_WATCHTOWER_GUARDIANS",
+"t": "protects",
+"o": "ENT_WIC_PANTHEON",
+"c": "medium",
+"ra": "The Guardians of the Watchtowers are invoked to ward and protect the cast ritual circle in which the deities are worshipped."
+},
+{
+"s": "ENT_WIC_HORNED_GOD",
+"t": "reception_of",
+"o": "ENT_CEL_CERNUNNOS",
+"c": "high",
+"ra": "Gardner and Valiente explicitly drew the Wiccan Horned God's imagery and name from the antlered Gaulish god Cernunnos (Hutton, Triumph of the Moon)."
+},
+{
+"s": "ENT_WIC_HORNED_GOD",
+"t": "reception_of",
+"o": "ENT_PAN",
+"c": "high",
+"ra": "The Horned God's goat-horned, ithyphallic nature-deity persona derives from the 19th-century Romantic revival of the Greek Pan that fed directly into Wicca (Hutton)."
+},
+{
+"s": "ENT_WIC_TRIPLE_GODDESS",
+"t": "aligned_with",
+"o": "ENT_HECATE",
+"c": "high",
+"ra": "The Crone aspect of the Wiccan Triple Goddess is identified with the classical lunar/chthonic Hecate."
+},
+{
+"s": "ENT_WIC_TRIPLE_GODDESS",
+"t": "aligned_with",
+"o": "ENT_ROM_DIANA",
+"c": "high",
+"ra": "The Maiden/huntress aspect of the Triple Goddess aligns with Diana, central to the Romantic 'Dianic' witch-cult lineage absorbed by Wicca."
+},
+{
+"s": "ENT_WIC_TRIPLE_GODDESS",
+"t": "aligned_with",
+"o": "ENT_SELENE",
+"c": "medium",
+"ra": "The lunar Mother aspect of the Triple Goddess aligns with the Greek moon goddess Selene, the full-moon face of the triad."
+},
+{
+"s": "ENT_WIC_WATCHTOWER_GUARDIANS",
+"t": "reception_of",
+"o": "ENT_REN_WATCHTOWERS",
+"c": "medium",
+"ra": "The Wiccan quarter-guardians inherit the 'Watchtower' terminology from the Enochian Great Table via the Golden Dawn, while functioning as distinct elemental guardians."
+}
+]

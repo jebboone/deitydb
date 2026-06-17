@@ -1,0 +1,100 @@
+[
+{
+"s": "ENT_IAM_SAINT_GERMAIN_HIERARCH",
+"t": "reception_of",
+"o": "ENT_THE_SAINT_GERMAIN",
+"c": "high",
+"ra": "The I AM/CUT Aquarian-age hierarch is a devotional cult-form/reception of the existing Theosophical Master Saint Germain (Rakoczi)."
+},
+{
+"s": "ENT_IAM_SAINT_GERMAIN_HIERARCH",
+"t": "member_of",
+"o": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"c": "high",
+"ra": "Saint Germain is a chief master of the Great White Brotherhood in I AM/CUT teaching."
+},
+{
+"s": "ENT_IAM_NADA",
+"t": "member_of",
+"o": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"c": "high",
+"ra": "Lady Master Nada is enumerated among the Ascended Masters of the Great White Brotherhood."
+},
+{
+"s": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"t": "reception_of",
+"o": "ENT_REC_MAHATMAS",
+"c": "high",
+"ra": "The I AM/CUT Great White Brotherhood is the reception of the earlier Theosophical Masters of Wisdom (Mahatmas) as a named devotional collective."
+},
+{
+"s": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"t": "aligned_with",
+"o": "ENT_THE_HIERARCHY",
+"c": "high",
+"ra": "The Great White Brotherhood corresponds to the Theosophical Spiritual Hierarchy reframed for the I AM/CUT movements."
+},
+{
+"s": "ENT_THE_MORYA",
+"t": "member_of",
+"o": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"c": "high",
+"ra": "El Morya is a primary master of the Great White Brotherhood and was the founding sponsor of CUT (the Summit Lighthouse)."
+},
+{
+"s": "ENT_THE_KOOT_HOOMI",
+"t": "member_of",
+"o": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"c": "high",
+"ra": "Koot Hoomi (Master K.H.) is invoked as a master of the Great White Brotherhood in I AM/CUT teaching."
+},
+{
+"s": "ENT_THE_SANAT_KUMARA",
+"t": "member_of",
+"o": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"c": "medium",
+"ra": "Sanat Kumara is venerated in CUT as a great being associated with the hierarchy of the Great White Brotherhood."
+},
+{
+"s": "ENT_THE_MAITREYA",
+"t": "member_of",
+"o": "ENT_IAM_GREAT_WHITE_BROTHERHOOD",
+"c": "medium",
+"ra": "Maitreya, the World Teacher, is counted among the masters of the Great White Brotherhood in I AM/CUT cosmology."
+},
+{
+"s": "ENT_IAM_SAINT_GERMAIN_HIERARCH",
+"t": "presides_over",
+"o": "ENT_IAM_VIOLET_FLAME",
+"c": "high",
+"ra": "Saint Germain is the master of the seventh ray and sponsor of the Violet Flame in I AM/CUT devotion."
+},
+{
+"s": "ENT_IAM_VIOLET_FLAME",
+"t": "aligned_with",
+"o": "ENT_THE_SEVEN_RAYS",
+"c": "high",
+"ra": "The Violet Flame is the seventh of the Theosophical Seven Rays as developed in the I AM/CUT teaching."
+},
+{
+"s": "ENT_IAM_NADA",
+"t": "aligned_with",
+"o": "ENT_THE_SEVEN_RAYS",
+"c": "medium",
+"ra": "Lady Master Nada is identified as Chohan of the sixth of the Seven Rays."
+},
+{
+"s": "ENT_IAM_MIGHTY_I_AM_PRESENCE",
+"t": "aligned_with",
+"o": "ENT_THE_SOLAR_LOGOS",
+"c": "low",
+"ra": "The Mighty I AM Presence as the individualized God-self is loosely correlated with the higher divine source in the broader Theosophical cosmology."
+},
+{
+"s": "ENT_IAM_MIGHTY_I_AM_PRESENCE",
+"t": "presides_over",
+"o": "ENT_IAM_VIOLET_FLAME",
+"c": "medium",
+"ra": "In I AM/CUT decree practice the Violet Flame is invoked in the name of and through the Mighty I AM Presence."
+}
+]

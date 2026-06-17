@@ -1,0 +1,93 @@
+[
+{
+"s": "ENT_UFO_SPACE_BROTHERS",
+"t": "member_of",
+"o": "ENT_UFO_PANTHEON",
+"c": "high",
+"ra": "Space Brothers are core extraterrestrial powers of the contactee milieu grouped under the UFO-religions hub"
+},
+{
+"s": "ENT_UFO_ASHTAR",
+"t": "member_of",
+"o": "ENT_UFO_PANTHEON",
+"c": "high",
+"ra": "Ashtar is a central channeled extraterrestrial power of the milieu"
+},
+{
+"s": "ENT_UFO_COUNCIL_NINE",
+"t": "member_of",
+"o": "ENT_UFO_PANTHEON",
+"c": "high",
+"ra": "The Nine are grouped among the venerated cosmic powers of the channeling milieu"
+},
+{
+"s": "ENT_UFO_ELOHIM",
+"t": "member_of",
+"o": "ENT_UFO_PANTHEON",
+"c": "high",
+"ra": "The Raelian Elohim are the creator-powers within the UFO-religions roster"
+},
+{
+"s": "ENT_UFO_SANANDA",
+"t": "member_of",
+"o": "ENT_UFO_PANTHEON",
+"c": "high",
+"ra": "Sananda is a channeled salvific extraterrestrial of the milieu"
+},
+{
+"s": "ENT_UFO_NEXT_LEVEL",
+"t": "member_of",
+"o": "ENT_UFO_PANTHEON",
+"c": "medium",
+"ra": "The Next Level is the extraterrestrial kingdom/realm grouped within the UFO-religions cosmology hub"
+},
+{
+"s": "ENT_UFO_TI_DO",
+"t": "member_of",
+"o": "ENT_UFO_PANTHEON",
+"c": "medium",
+"ra": "Ti and Do are the Heaven's Gate founder-figures within the UFO-religions roster"
+},
+{
+"s": "ENT_UFO_ASHTAR",
+"t": "rules",
+"o": "ENT_UFO_SPACE_BROTHERS",
+"c": "medium",
+"ra": "Ashtar is presented as commander of the Galactic Command, the organized body of benevolent Space Brothers"
+},
+{
+"s": "ENT_UFO_SANANDA",
+"t": "associated_with",
+"o": "ENT_UFO_ASHTAR",
+"c": "high",
+"ra": "Sananda is channeled as a chief associate within the Ashtar Command current"
+},
+{
+"s": "ENT_UFO_TI_DO",
+"t": "guided_by",
+"o": "ENT_UFO_NEXT_LEVEL",
+"c": "high",
+"ra": "Ti and Do held themselves to be representatives sent by and reporting to the Next Level"
+},
+{
+"s": "ENT_UFO_SANANDA",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "medium",
+"ra": "Sananda is the channeling-milieu reception of Jesus Christ as a cosmic/galactic identity"
+},
+{
+"s": "ENT_VF_STARSEEDS",
+"t": "aligned_with",
+"o": "ENT_UFO_SPACE_BROTHERS",
+"c": "medium",
+"ra": "The Starseed belief (souls of extraterrestrial origin incarnated to assist humanity) shares the contactee milieu's benevolent-extraterrestrial framework"
+},
+{
+"s": "ENT_VF_STARSEEDS",
+"t": "aligned_with",
+"o": "ENT_UFO_PANTHEON",
+"c": "medium",
+"ra": "Starseed vernacular belief overlaps the broader UFO-religion cosmology of benevolent guiding extraterrestrials"
+}
+]

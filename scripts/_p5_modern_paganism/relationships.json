@@ -1,0 +1,226 @@
+[
+{
+"s": "ENT_NPG_NINE_NOBLE_VIRTUES",
+"t": "associated_with",
+"o": "ENT_NPG_HEATHENRY",
+"c": "high",
+"ra": "The Nine Noble Virtues function as the ethical code of the modern Heathen movement."
+},
+{
+"s": "ENT_NPG_FOLK_UNIVERSALIST",
+"t": "associated_with",
+"o": "ENT_NPG_HEATHENRY",
+"c": "high",
+"ra": "The folkish-universalist distinction is the defining internal debate within Heathenry."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_ODIN",
+"c": "high",
+"ra": "Modern Heathens venerate Odin as a chief god of the reconstructed Norse pantheon."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_THOR",
+"c": "high",
+"ra": "Thor (Mjolnir cult) is among the most actively worshipped gods in modern Heathenry."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_FREYJA",
+"c": "high",
+"ra": "Freyja is widely venerated in modern Heathenry, especially in seidr practice."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_FREYR",
+"c": "high",
+"ra": "Freyr is honoured as a Vanir fertility god in modern Heathen blot."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_FRIGG",
+"c": "medium",
+"ra": "Frigg is received as a goddess of the household and hearth in modern Heathenry."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_TYR",
+"c": "medium",
+"ra": "Tyr is venerated as a god of justice and oaths in modern Heathenry."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_BALDR",
+"c": "medium",
+"ra": "Baldr is honoured within the reconstructed pantheon of modern Heathenry."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_HEIMDALL",
+"c": "medium",
+"ra": "Heimdall is received as a guardian god in modern Heathen devotion."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_NJORD",
+"c": "medium",
+"ra": "Njord is venerated as a Vanir sea god in modern Heathenry."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_SKADI",
+"c": "medium",
+"ra": "Skadi is honoured in modern Heathen practice as a goddess of winter and the hunt."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_HEL",
+"c": "medium",
+"ra": "Hel is received as a goddess of the dead by some modern Heathens."
+},
+{
+"s": "ENT_NPG_HEATHENRY",
+"t": "reception_of",
+"o": "ENT_NOR_LOKI",
+"c": "medium",
+"ra": "Loki is venerated by a portion of modern Heathens, though contested within the community."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_CERNUNNOS",
+"c": "high",
+"ra": "Cernunnos is a central horned god honoured in modern Druidry and Celtic revival Paganism."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_BRIGID",
+"c": "high",
+"ra": "Brigid is among the most widely venerated deities in modern Druidry."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_LUGH",
+"c": "high",
+"ra": "Lugh is honoured in modern Druidry, especially at Lughnasadh."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_DAGDA",
+"c": "medium",
+"ra": "The Dagda is received as a father-god in modern Druidic devotion."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_DANU",
+"c": "medium",
+"ra": "Danu is venerated as a mother goddess in modern Druidry."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_MANANNAN",
+"c": "medium",
+"ra": "Manannan mac Lir is honoured as a sea god in modern Druidry."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_EPONA",
+"c": "medium",
+"ra": "Epona is received as a horse goddess in modern Druidic and Celtic-revival practice."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_TARANIS",
+"c": "low",
+"ra": "Taranis is venerated as a thunder god by some modern Druids reconstructing Gaulish religion."
+},
+{
+"s": "ENT_NPG_DRUIDRY",
+"t": "reception_of",
+"o": "ENT_CEL_BELENUS",
+"c": "low",
+"ra": "Belenus is honoured as a sun/fire god in some modern Druidic reconstructions."
+},
+{
+"s": "ENT_NPG_GREAT_GODDESS",
+"t": "embodied_by",
+"o": "ENT_CEL_BRIGID",
+"c": "medium",
+"ra": "In the Goddess movement, named goddesses such as Brigid are received as aspects/embodiments of the one Great Goddess."
+},
+{
+"s": "ENT_NPG_GREAT_GODDESS",
+"t": "embodied_by",
+"o": "ENT_NOR_FREYJA",
+"c": "low",
+"ra": "The Goddess movement absorbs goddesses such as Freyja as faces of the single Great Goddess."
+},
+{
+"s": "ENT_NPG_ELUS_COHENS",
+"t": "member_of",
+"o": "ENT_NPG_MARTINISM",
+"c": "high",
+"ra": "The Elus Cohens are the foundational theurgic order of the Martinist current."
+},
+{
+"s": "ENT_NPG_REINTEGRATION",
+"t": "associated_with",
+"o": "ENT_NPG_MARTINISM",
+"c": "high",
+"ra": "The Reintegration is the central soteriological doctrine of Martinism and the Elus Cohens."
+},
+{
+"s": "ENT_NPG_REPAIRER",
+"t": "associated_with",
+"o": "ENT_NPG_REINTEGRATION",
+"c": "high",
+"ra": "The Repairer is the redeemer-agent who effects the Reintegration in Martinist theology."
+},
+{
+"s": "ENT_NPG_ELUS_COHENS",
+"t": "associated_with",
+"o": "ENT_NPG_REINTEGRATION",
+"c": "medium",
+"ra": "The theurgic operations of the Elus Cohens were directed toward attaining the Reintegration."
+},
+{
+"s": "ENT_VF_THE_UNIVERSE",
+"t": "reception_of",
+"o": "ENT_NPG_DIVINE_MIND",
+"c": "medium",
+"ra": "The popular 'the Universe' of contemporary vernacular spirituality is the direct descendant of New Thought's Infinite Intelligence / Divine Mind."
+},
+{
+"s": "ENT_NPG_DIVINE_MIND",
+"t": "aligned_with",
+"o": "ENT_HER_WORLD_SOUL",
+"c": "low",
+"ra": "New Thought's immanent Divine Mind functionally parallels the Hermetic/Platonic World Soul as an all-pervading divine principle."
+},
+{
+"s": "ENT_NPG_REPAIRER",
+"t": "aligned_with",
+"o": "ENT_THE_SAINT_GERMAIN",
+"c": "low",
+"ra": "Within the esoteric milieu the Martinist Repairer and Theosophical ascended masters share the role of redemptive spiritual mediators; noted as a loose functional alignment, not identity."
+}
+]
