@@ -1,0 +1,275 @@
+[
+{
+"s": "ENT_IRH_CU_CHULAINN",
+"t": "member_of",
+"o": "ENT_IRH_ULSTER_CYCLE",
+"c": "high",
+"ra": "Cú Chulainn is the central hero of the Ulster Cycle (Kinsella, The Táin)."
+},
+{
+"s": "ENT_IRH_CONCHOBAR",
+"t": "member_of",
+"o": "ENT_IRH_ULSTER_CYCLE",
+"c": "high",
+"ra": "Conchobar mac Nessa is king of the Ulaid in the Ulster Cycle."
+},
+{
+"s": "ENT_IRH_MEDB",
+"t": "member_of",
+"o": "ENT_IRH_ULSTER_CYCLE",
+"c": "high",
+"ra": "Medb of Connacht is the antagonist-queen of the Táin within the Ulster Cycle."
+},
+{
+"s": "ENT_IRH_FERGUS",
+"t": "member_of",
+"o": "ENT_IRH_ULSTER_CYCLE",
+"c": "high",
+"ra": "Fergus mac Róich is a principal figure of the Ulster Cycle and the Táin."
+},
+{
+"s": "ENT_IRH_DEIRDRE",
+"t": "member_of",
+"o": "ENT_IRH_ULSTER_CYCLE",
+"c": "high",
+"ra": "Deirdre is heroine of a remscél of the Táin within the Ulster Cycle."
+},
+{
+"s": "ENT_IRH_SCATHACH",
+"t": "member_of",
+"o": "ENT_IRH_ULSTER_CYCLE",
+"c": "medium",
+"ra": "Scáthach appears in Tochmarc Emire as Cú Chulainn's instructor in the Ulster Cycle."
+},
+{
+"s": "ENT_IRH_EMER",
+"t": "member_of",
+"o": "ENT_IRH_ULSTER_CYCLE",
+"c": "high",
+"ra": "Emer is Cú Chulainn's wife within the Ulster Cycle."
+},
+{
+"s": "ENT_IRH_FIONN",
+"t": "member_of",
+"o": "ENT_IRH_FENIAN_CYCLE",
+"c": "high",
+"ra": "Fionn mac Cumhaill is the central hero of the Fenian Cycle (Ó hÓgáin)."
+},
+{
+"s": "ENT_IRH_OISIN",
+"t": "member_of",
+"o": "ENT_IRH_FENIAN_CYCLE",
+"c": "high",
+"ra": "Oisín, son of Fionn, is namesake of the Ossianic/Fenian Cycle."
+},
+{
+"s": "ENT_IRH_DIARMUID",
+"t": "member_of",
+"o": "ENT_IRH_FENIAN_CYCLE",
+"c": "high",
+"ra": "Diarmuid Ua Duibhne is a leading fian warrior in the Fenian Cycle."
+},
+{
+"s": "ENT_IRH_GRAINNE",
+"t": "member_of",
+"o": "ENT_IRH_FENIAN_CYCLE",
+"c": "high",
+"ra": "Gráinne is heroine of the Fenian pursuit-tale Tóraigheacht Dhiarmada agus Ghráinne."
+},
+{
+"s": "ENT_IRH_BANSHEE",
+"t": "member_of",
+"o": "ENT_IRH_FOLKLORE",
+"c": "high",
+"ra": "The banshee is a core Irish folklore being (Ó hÓgáin, Lore of Ireland)."
+},
+{
+"s": "ENT_IRH_LEPRECHAUN",
+"t": "member_of",
+"o": "ENT_IRH_FOLKLORE",
+"c": "high",
+"ra": "The leprechaun is a core Irish folklore being."
+},
+{
+"s": "ENT_IRH_PUCA",
+"t": "member_of",
+"o": "ENT_IRH_FOLKLORE",
+"c": "high",
+"ra": "The púca is a core Irish folklore being."
+},
+{
+"s": "ENT_IRH_DULLAHAN",
+"t": "member_of",
+"o": "ENT_IRH_FOLKLORE",
+"c": "high",
+"ra": "The dullahan is a core Irish folklore death-being."
+},
+{
+"s": "ENT_IRH_CHANGELING",
+"t": "member_of",
+"o": "ENT_IRH_FOLKLORE",
+"c": "high",
+"ra": "The changeling is a recurrent Irish fairy-belief motif."
+},
+{
+"s": "ENT_IRH_AOS_SI",
+"t": "member_of",
+"o": "ENT_IRH_FOLKLORE",
+"c": "medium",
+"ra": "The aos sí form the encompassing class of the Irish folklore otherworld beings."
+},
+{
+"s": "ENT_IRH_CU_CHULAINN",
+"t": "child_of",
+"o": "ENT_CEL_LUGH",
+"c": "high",
+"ra": "Cú Chulainn is the son (and earthly aspect) of the god Lugh in the Ulster Cycle (Kinsella; Ó hÓgáin)."
+},
+{
+"s": "ENT_IRH_CU_CHULAINN",
+"t": "reception_of",
+"o": "ENT_CEL_LUGH",
+"c": "medium",
+"ra": "Cú Chulainn functions as a heroic, euhemerised reflex of the divine Lugh."
+},
+{
+"s": "ENT_IRH_CU_CHULAINN",
+"t": "taught_by",
+"o": "ENT_IRH_SCATHACH",
+"c": "high",
+"ra": "Scáthach trains Cú Chulainn in arms and gives him the gáe bolga (Tochmarc Emire)."
+},
+{
+"s": "ENT_IRH_EMER",
+"t": "consort_of",
+"o": "ENT_IRH_CU_CHULAINN",
+"c": "high",
+"ra": "Emer is the wife of Cú Chulainn (Tochmarc Emire)."
+},
+{
+"s": "ENT_IRH_FERGUS",
+"t": "consort_of",
+"o": "ENT_IRH_MEDB",
+"c": "medium",
+"ra": "Fergus is the lover of Medb during his Connacht exile in the Táin."
+},
+{
+"s": "ENT_IRH_OISIN",
+"t": "child_of",
+"o": "ENT_IRH_FIONN",
+"c": "high",
+"ra": "Oisín is the son of Fionn mac Cumhaill."
+},
+{
+"s": "ENT_IRH_DIARMUID",
+"t": "child_of",
+"o": "ENT_CEL_AENGUS",
+"c": "medium",
+"ra": "Diarmuid is the foster-son of the god Aengus, who protects him in the pursuit-tale (Ó hÓgáin)."
+},
+{
+"s": "ENT_IRH_GRAINNE",
+"t": "consort_of",
+"o": "ENT_IRH_DIARMUID",
+"c": "high",
+"ra": "Gráinne elopes with and becomes the partner of Diarmuid."
+},
+{
+"s": "ENT_IRH_FIONN",
+"t": "opposes",
+"o": "ENT_IRH_DIARMUID",
+"c": "medium",
+"ra": "Fionn pursues Diarmuid and Gráinne after their elopement in the Fenian pursuit-tale."
+},
+{
+"s": "ENT_IRH_PARTHOLON",
+"t": "opposes",
+"o": "ENT_CEL_FOMORIANS",
+"c": "medium",
+"ra": "Partholón's people battle the Fomorians in the Lebor Gabála invasion sequence."
+},
+{
+"s": "ENT_IRH_NEMED",
+"t": "opposes",
+"o": "ENT_CEL_FOMORIANS",
+"c": "high",
+"ra": "Nemed and his descendants war against the Fomorians in the Lebor Gabála Érenn."
+},
+{
+"s": "ENT_IRH_MILESIANS",
+"t": "opposes",
+"o": "ENT_CEL_TUATHA",
+"c": "high",
+"ra": "The Sons of Míl defeat the Tuatha Dé Danann and take Ireland in the Lebor Gabála Érenn."
+},
+{
+"s": "ENT_IRH_TUAN",
+"t": "member_of",
+"o": "ENT_IRH_FOLKLORE",
+"c": "low",
+"ra": "Tuan mac Cairill, the shapeshifting survivor, belongs to the broader Irish legendary/lore stratum; tying him into a hub for connectivity."
+},
+{
+"s": "ENT_IRH_FINTAN",
+"t": "consort_of",
+"o": "ENT_IRH_CESAIR",
+"c": "medium",
+"ra": "Fintan mac Bóchra is the husband of Cesair in the Lebor Gabála Érenn."
+},
+{
+"s": "ENT_IRH_CESAIR",
+"t": "member_of",
+"o": "ENT_IRH_MILESIANS",
+"c": "low",
+"ra": "Cesair belongs to the invasion-sequence lore; wiring her to the invasion hub for connectivity (note: distinct from the Gaelic Milesians proper, linked only as invasion stratum)."
+},
+{
+"s": "ENT_IRH_PARTHOLON",
+"t": "opposes",
+"o": "ENT_IRH_NEMED",
+"c": "low",
+"ra": "Partholón and Nemed are successive invasion leaders in the same Lebor Gabála sequence; linking the invasion figures for graph connectivity."
+},
+{
+"s": "ENT_IRH_TAILTIU",
+"t": "parent_of",
+"o": "ENT_CEL_LUGH",
+"c": "high",
+"ra": "Tailtiu is the foster-mother of the god Lugh, whose funeral games became Lughnasa (Ó hÓgáin)."
+},
+{
+"s": "ENT_IRH_CARMAN",
+"t": "opposes",
+"o": "ENT_CEL_TUATHA",
+"c": "medium",
+"ra": "The Fomorian-allied sorceress Carman and her sons are driven off by the Tuatha Dé in the dindshenchas."
+},
+{
+"s": "ENT_IRH_CAILLEACH",
+"t": "aligned_with",
+"o": "ENT_IRH_TAILTIU",
+"c": "low",
+"ra": "The Cailleach and Tailtiu are both sovereignty/landscape goddesses of the Irish countryside; grouped functionally."
+},
+{
+"s": "ENT_IRH_TLACHTGA",
+"t": "aligned_with",
+"o": "ENT_IRH_CARMAN",
+"c": "low",
+"ra": "Tlachtga and Carman are both eponymous landscape goddesses of Irish assembly-sites in the dindshenchas."
+},
+{
+"s": "ENT_IRH_AOS_SI",
+"t": "reception_of",
+"o": "ENT_CEL_TUATHA",
+"c": "high",
+"ra": "The aos sí are understood in later tradition as the diminished Tuatha Dé Danann withdrawn into the síde (Ó hÓgáin)."
+},
+{
+"s": "ENT_IRH_BANSHEE",
+"t": "member_of",
+"o": "ENT_IRH_AOS_SI",
+"c": "medium",
+"ra": "The bean sí ('woman of the síde') is a member of the fairy folk."
+}
+]

@@ -1,0 +1,86 @@
+[
+{
+"id": "ENT_SSL_DABOG",
+"name": "Dabog",
+"type": "God",
+"trad": "Slavic",
+"dom": "sun; earth; underworld wealth",
+"conf": "B",
+"note": "South-Slavic (chiefly Serbian) reflex of the sun-god, attested in Serbian folklore as 'Dabog'/'Daba', a chthonic lord of the earth and of silver/gold often demonized in folk-Christian tradition; cognate of the East-Slavic Dažbog.",
+"src": "SRC_DIXON_KENNEDY_SLAVIC",
+"per": "PER_SLAV_PAGAN",
+"cat": "God"
+},
+{
+"id": "ENT_SSL_VILA",
+"name": "Vila",
+"type": "Collective",
+"trad": "Slavic",
+"dom": "mountains; waters; woodland; fate",
+"conf": "B",
+"note": "South-Slavic nymph-class (vila, pl. vile; Bulgarian samodiva/samovila) — beautiful winged female nature-spirits of mountains, springs and clouds in Serbian/Croatian/Bulgarian folklore; distinct from the East-Slavic water-spirit Rusalka.",
+"src": "SRC_DIXON_KENNEDY_SLAVIC",
+"per": "PER_SLAV_PAGAN",
+"cat": "Collective"
+},
+{
+"id": "ENT_SSL_GERMAN",
+"name": "German (Herman)",
+"type": "Spirit",
+"trad": "Slavic",
+"dom": "rain; fertility; agrarian rite",
+"conf": "C",
+"note": "South-Slavic (Bulgarian/Serbian) rain-ritual figure: a small clay or dough effigy made, mourned and 'buried' or cast into water by women in a rain-making rite to end drought; attested ethnographically rather than as a cult god.",
+"src": "SRC_RALSTON_RUSSIAN_FOLK",
+"per": "PER_SLAV_PAGAN",
+"cat": "Spirit"
+},
+{
+"id": "ENT_SSL_VID",
+"name": "Vid",
+"type": "God",
+"trad": "Slavic",
+"dom": "sky; light; oath",
+"conf": "C",
+"note": "Reconstructed South-Slavic theonym 'Vid' surviving in Croatian toponymy and folk usage (e.g. Vidova Gora) and folk-Christianized onto St Vitus (Sveti Vid); related to the West-Slavic -vit theophoric element (Svetovit). Attestation is indirect/onomastic.",
+"src": "SRC_DIXON_KENNEDY_SLAVIC",
+"per": "PER_SLAV_PAGAN",
+"cat": "God"
+},
+{
+"id": "ENT_SSL_PROVE",
+"name": "Prove",
+"type": "God",
+"trad": "Slavic",
+"dom": "oak groves; law; justice",
+"conf": "B",
+"note": "West-Slavic (Wagrian/Polabian) god of the land of Oldenburg, worshipped in a sacred oak grove without an idol; named by Helmold of Bosau, Chronica Slavorum (c. 1170); often read as a god of law/justice (cf. Prove ~ pravo).",
+"src": "SRC_DIXON_KENNEDY_SLAVIC",
+"per": "PER_SLAV_PAGAN",
+"cat": "God"
+},
+{
+"id": "ENT_SSL_PRIPEGALA",
+"name": "Pripegala",
+"type": "God",
+"trad": "Slavic",
+"dom": "orgiastic fertility; bloody sacrifice",
+"conf": "C",
+"note": "West-Slavic (Polabian) deity known only from the Magdeburg letter (c. 1108), which decries his cult of orgiastic rites and decapitated-victim sacrifice; etymology and exact function disputed (sometimes likened to Priapus/Belial by the Latin source).",
+"src": "SRC_DIXON_KENNEDY_SLAVIC",
+"per": "PER_SLAV_PAGAN",
+"cat": "God"
+},
+{
+"id": "ENT_SSL_TJARNAGLOFI",
+"name": "Tjarnaglofi",
+"type": "God",
+"trad": "Slavic",
+"dom": "war; victory; augury",
+"conf": "C",
+"note": "West-Slavic (Pomeranian) war-god whose silver-mustachioed idol was a Rani battle-talisman; named in the Knytlinga saga as captured by the Danes (1168). Norse-transmitted theonym for a Rügen-area Slavic god.",
+"src": "SRC_DIXON_KENNEDY_SLAVIC",
+"per": "PER_SLAV_PAGAN",
+"cat": "God"
+}
+]

@@ -1,0 +1,86 @@
+[
+{
+"id": "ENT_NART_SAGAS",
+"name": "The Narts",
+"type": "collective",
+"trad": "Nart (Ossetian/Sarmatian)",
+"dom": "heroic-epic cycle",
+"cat": "saga-cycle hub",
+"conf": "B",
+"note": "The heroic race at the center of the Caucasian Nart epic; surviving Scytho-Sarmatian-Alanic mythology attested in Ossetian, Circassian, Abkhaz and other oral versions (Colarusso 2002; Dumézil).",
+"src": "SRC_COLARUSSO_NART",
+"per": "PER_NART"
+},
+{
+"id": "ENT_NART_BATRAZ",
+"name": "Batraz",
+"type": "hero",
+"trad": "Nart (Ossetian/Sarmatian)",
+"dom": "war, steel, storm",
+"cat": "warrior-hero",
+"conf": "B",
+"note": "Steel-tempered chief warrior-hero of the Narts; Dumézil reads him as a Scytho-Sarmatian war-god whose steel sword cast into the sea continues the Scythian sword-cult of Herodotus's Ares (Colarusso 2002; Dumézil).",
+"src": "SRC_DUMEZIL_NART",
+"per": "PER_NART"
+},
+{
+"id": "ENT_NART_SATANA",
+"name": "Satana",
+"type": "hero",
+"trad": "Nart (Ossetian/Sarmatian)",
+"dom": "wisdom, household, counsel",
+"cat": "matriarch",
+"conf": "B",
+"note": "Wise matriarch and counselor of the Narts, sister-consort within the central Nart family; Dumézil links her name to a Sarmatian/Alanic prototype (Colarusso 2002).",
+"src": "SRC_COLARUSSO_NART",
+"per": "PER_NART"
+},
+{
+"id": "ENT_NART_UASTYRDZHI",
+"name": "Uastyrdzhi",
+"type": "deity",
+"trad": "Nart (Ossetian/Sarmatian)",
+"dom": "riders, warriors, travelers, men",
+"cat": "rider-god",
+"conf": "B",
+"note": "Ossetian rider-god and patron of warriors and travelers, syncretized with Saint George; venerated at the festival Jeoryguba (Dumézil; Colarusso 2002).",
+"src": "SRC_DUMEZIL_NART",
+"per": "PER_NART"
+},
+{
+"id": "ENT_NART_SOSRUKO",
+"name": "Sosruko",
+"type": "hero",
+"trad": "Nart (Ossetian/Sarmatian)",
+"dom": "fire-theft, trickery, solar",
+"cat": "trickster-hero",
+"conf": "B",
+"note": "Trickster culture-hero (Ossetian Soslan/Sozyryko; Circassian Sosruko) born from stone, tempered like steel, famed for the theft of fire (Colarusso 2002; Dumézil).",
+"src": "SRC_COLARUSSO_NART",
+"per": "PER_NART"
+},
+{
+"id": "ENT_NART_SYRDON",
+"name": "Syrdon",
+"type": "hero",
+"trad": "Nart (Ossetian/Sarmatian)",
+"dom": "trickery, discord, music",
+"cat": "trickster",
+"conf": "B",
+"note": "Malicious trickster of the Narts, sower of discord and inventor of the twelve-string harp from the bones of his slain sons; the standard scholarly Loki-analogue (Colarusso 2002; Dumézil).",
+"src": "SRC_COLARUSSO_NART",
+"per": "PER_NART"
+},
+{
+"id": "ENT_NART_KURDALAGON",
+"name": "Kurdalagon",
+"type": "deity",
+"trad": "Nart (Ossetian/Sarmatian)",
+"dom": "smithing, fire, metallurgy",
+"cat": "divine smith",
+"conf": "B",
+"note": "Heavenly smith of the Nart cosmos who tempers heroes (Batraz, Soslan) in his forge as one tempers steel (Colarusso 2002; Dumézil).",
+"src": "SRC_DUMEZIL_NART",
+"per": "PER_NART"
+}
+]

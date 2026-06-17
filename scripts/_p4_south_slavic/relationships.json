@@ -1,0 +1,93 @@
+[
+{
+"s": "ENT_SSL_DABOG",
+"t": "member_of",
+"o": "ENT_SLAV_PANTHEON",
+"c": "high",
+"ra": "Dabog is a South-Slavic high deity belonging to the broader Slavic pantheon hub."
+},
+{
+"s": "ENT_SSL_DABOG",
+"t": "aligned_with",
+"o": "ENT_SLAV_DAZBOG",
+"c": "high",
+"ra": "Dabog is the South-Slavic (Serbian) cognate/reflex of the East-Slavic sun-god Dažbog; same theonym (modern cognate => aligned_with since cognate_of is unavailable)."
+},
+{
+"s": "ENT_SSL_DABOG",
+"t": "aligned_with",
+"o": "ENT_SLAV_VELES",
+"c": "medium",
+"ra": "In Serbian folk tradition Dabog is a chthonic lord of underground wealth, a role overlapping the chthonic Veles."
+},
+{
+"s": "ENT_SSL_VILA",
+"t": "member_of",
+"o": "ENT_SLAV_FOLK_SPIRITS",
+"c": "high",
+"ra": "The vile are a South-Slavic class of nature-spirits within the Slavic domestic-and-nature-spirit grouping."
+},
+{
+"s": "ENT_SSL_VILA",
+"t": "aligned_with",
+"o": "ENT_SLAV_RUSALKA",
+"c": "medium",
+"ra": "Vile are the South-Slavic functional counterpart of the East-Slavic Rusalka water/nature nymphs, but a distinct class (homonym caution noted)."
+},
+{
+"s": "ENT_SSL_GERMAN",
+"t": "member_of",
+"o": "ENT_SLAV_FOLK_SPIRITS",
+"c": "medium",
+"ra": "German is a folk ritual fertility/rain figure within the Slavic folk-spirit complex."
+},
+{
+"s": "ENT_SSL_GERMAN",
+"t": "aligned_with",
+"o": "ENT_SLAV_KUPALA",
+"c": "medium",
+"ra": "The German rain-effigy rite parallels other Slavic seasonal effigy/agrarian rites such as the Kupala observances."
+},
+{
+"s": "ENT_SSL_VID",
+"t": "member_of",
+"o": "ENT_SLAV_PANTHEON",
+"c": "medium",
+"ra": "Vid is a reconstructed South-Slavic theonym placed within the Slavic pantheon."
+},
+{
+"s": "ENT_SSL_VID",
+"t": "aligned_with",
+"o": "ENT_SLAV_SVETOVIT",
+"c": "medium",
+"ra": "Vid shares the -vit theophoric element and light/sky associations with the West-Slavic Svetovit (Sventovit)."
+},
+{
+"s": "ENT_SSL_PROVE",
+"t": "member_of",
+"o": "ENT_SLAV_PANTHEON",
+"c": "high",
+"ra": "Prove is a Polabian Slavic god belonging to the Slavic pantheon hub."
+},
+{
+"s": "ENT_SSL_PRIPEGALA",
+"t": "member_of",
+"o": "ENT_SLAV_PANTHEON",
+"c": "medium",
+"ra": "Pripegala is a Polabian Slavic deity assigned to the Slavic pantheon hub."
+},
+{
+"s": "ENT_SSL_TJARNAGLOFI",
+"t": "member_of",
+"o": "ENT_SLAV_PANTHEON",
+"c": "high",
+"ra": "Tjarnaglofi is a Pomeranian Slavic war-god belonging to the Slavic pantheon hub."
+},
+{
+"s": "ENT_SSL_TJARNAGLOFI",
+"t": "aligned_with",
+"o": "ENT_SLAV_RUGIEVIT",
+"c": "medium",
+"ra": "Tjarnaglofi was a Rani (Rügen-area) war-idol alongside the other West-Slavic war-gods such as Rugievit."
+}
+]
