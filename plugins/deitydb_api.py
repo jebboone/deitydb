@@ -158,7 +158,7 @@ async def api_path(datasette, request):
     ids = [c[0] for c in chain]
     ph = ",".join("?" * len(ids))
     meta = {r["entity_id"]: r for r in await _rows(datasette,
-        f"select e.entity_id, e.canonical_name, e.tradition, e.entity_type,"
+        f"select e.entity_id, e.canonical_name, e.tradition, e.entity_class, e.entity_type,"
         f" (select min(p.start_year) from entity_periods ep join periods p on p.period_id=ep.period_id where ep.entity_id=e.entity_id) start_year"
         f" from entities e where e.entity_id in ({ph})", ids)}
     nodes = [meta.get(i, {"entity_id": i}) for i in ids]
@@ -186,7 +186,7 @@ async def api_search(datasette, request):
     except ValueError:
         limit = 20
     rows = await _rows(datasette,
-        "select entity_id, canonical_name, tradition, entity_type from entities"
+        "select entity_id, canonical_name, tradition, entity_class, entity_type from entities"
         " where canonical_name like ? order by length(canonical_name) limit ?",
         ["%" + q + "%", limit])
     return Response.json({"query": q, "count": len(rows), "results": rows})
@@ -195,7 +195,7 @@ async def api_search(datasette, request):
 async def api_tradition(datasette, request):
     name = request.url_vars["name"].replace("+", " ")
     rows = await _rows(datasette,
-        "select entity_id, canonical_name, entity_type from entities where tradition=? order by canonical_name", [name])
+        "select entity_id, canonical_name, entity_class, entity_type from entities where tradition=? order by canonical_name", [name])
     if not rows:
         return _err(f"tradition '{name}' not found or empty", 404)
     prof = await _rows(datasette,

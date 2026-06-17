@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.0.0 — 2026-06-17
+
+### Schema epoch: controlled `entity_class` (BREAKING)
+
+The foundational dataset (Phases 1–7) is complete and audited; this release closes the
+remaining schema/modeling debt and marks the 2.0 milestone. **Breaking** because it adds a
+new column + two tables and changes the schema contract — no row-count change to the dataset
+itself (3,837 entities / 7,098 relationships / 458 sources / 135 traditions, unchanged).
+
+- **New controlled `entity_class`** — a fixed 19-value top-level vocabulary
+  (deity, angel, demon, aeon, sefirah, spirit, monster, hero, ruler, prophet, sage, saint,
+  scriptural-figure, abstraction, collective, realm, ritual, title, object) layered *over* the
+  free-text `entity_type` (kept as the granular descriptor). Ends the category-inflation issue:
+  every entity is now queryable by a stable kind. Modeled on the existing `tradition_class`
+  precedent. New `entity_class` lookup table + `entities.entity_class` (FK, indexed).
+- **`entity_type_class_map`** — maps all 894 distinct `entity_type` values → one class. The
+  integrity gate now asserts **0 unmapped types**, so future cohorts can't reintroduce drift.
+- **57 blank `entity_type`s filled** — the Testament-of-Solomon ritual cohort (disease/wind
+  demons, angelic beings, etc.), derived from their existing `category`. Now **0 blank types**.
+- **Migration** `upgrade_v2_0_entity_class.sql` — idempotent, transaction-wrapped, fail-closed
+  (0 blank types / 0 NULL class / 0 unmapped types). Schema files (`schema/tables.sql`,
+  `constraints.sql`, `views.sql`) updated to match; legacy `schema_postgres.sql` (v0.1 seed)
+  left as-is.
+- **Surfacing** — new `v_public_class_overview`; `entity_class` exposed on the entity detail
+  page, the explore browser (facet + search + card), the browse canned queries, and the JSON
+  API (`/api/search`, `/api/path`, `/api/tradition`). All additive/backward-compatible.
+
 ## v1.92.0 — 2026-06-17
 
 ### Deeper graph & API features (no data change)

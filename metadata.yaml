@@ -64,6 +64,9 @@ databases:
           column contains a scholarly description with source citations.
         label_column: canonical_name
         searchable: true
+        facets:
+          - entity_class
+          - tradition
         columns:
           entity_id:
             description: Stable identifier (e.g. ENT_GRK_ZEUS, ENT_EGY_OSIRIS, ENT_ISL_MUSA)
@@ -73,8 +76,10 @@ databases:
             description: Greek-script name, where applicable
           tradition:
             description: Religious or cultural tradition of origin
+          entity_class:
+            description: "Controlled top-level kind (19 values: deity, angel, demon, aeon, sefirah, spirit, monster, hero, ruler, prophet, sage, saint, scriptural-figure, abstraction, collective, realm, ritual, title, object) — recommended for filtering by kind"
           entity_type:
-            description: Granular type classification (476 distinct values)
+            description: Granular free-text type descriptor (894 distinct values; see entity_class for the controlled grouping)
           category:
             description: Broader functional category (146 values — recommended for filtering)
           primary_domains:
@@ -402,7 +407,7 @@ databases:
           e.g. <em>Greek</em>, <em>Egyptian</em>, <em>Islamic</em>, <em>Gnostic</em>,
           <em>Celtic/Welsh</em>, <em>Etruscan</em>, <em>Scythian</em>, <em>Phrygian</em>.
         sql: |
-          SELECT entity_id, canonical_name, entity_type, category, primary_domains, short_note
+          SELECT entity_id, canonical_name, entity_class, entity_type, category, primary_domains, short_note
           FROM entities
           WHERE tradition = :tradition
           ORDER BY canonical_name
@@ -416,7 +421,7 @@ databases:
           <em>Psychopomp</em>, <em>Trickster Figure</em>, <em>Primordial Deity</em>,
           <em>Aeon</em>, <em>Titan</em>, <em>Daimon</em>, <em>Olympian</em>. Case-sensitive.
         sql: |
-          SELECT entity_id, canonical_name, tradition, entity_type, primary_domains, short_note
+          SELECT entity_id, canonical_name, tradition, entity_class, entity_type, primary_domains, short_note
           FROM entities
           WHERE category = :category
           ORDER BY tradition, canonical_name

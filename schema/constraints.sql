@@ -54,6 +54,22 @@ ALTER TABLE ONLY public.entities
 
 
 --
+-- Name: entity_class entity_class_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.entity_class
+    ADD CONSTRAINT entity_class_pkey PRIMARY KEY (class_id);
+
+
+--
+-- Name: entity_type_class_map entity_type_class_map_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.entity_type_class_map
+    ADD CONSTRAINT entity_type_class_map_pkey PRIMARY KEY (entity_type);
+
+
+--
 -- Name: entity_aliases entity_aliases_entity_id_alias_name_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -320,6 +336,13 @@ CREATE INDEX idx_entities_type ON public.entities USING btree (entity_type);
 
 
 --
+-- Name: idx_entities_class; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_entities_class ON public.entities USING btree (entity_class);
+
+
+--
 -- Name: idx_entity_animals_animal; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -413,6 +436,22 @@ ALTER TABLE ONLY public.entity_aliases
 
 ALTER TABLE ONLY public.entity_animals
     ADD CONSTRAINT entity_animals_animal_fkey FOREIGN KEY (animal) REFERENCES public.animals(animal);
+
+
+--
+-- Name: entities entities_entity_class_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.entities
+    ADD CONSTRAINT entities_entity_class_fkey FOREIGN KEY (entity_class) REFERENCES public.entity_class(class_id);
+
+
+--
+-- Name: entity_type_class_map entity_type_class_map_entity_class_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.entity_type_class_map
+    ADD CONSTRAINT entity_type_class_map_entity_class_fkey FOREIGN KEY (entity_class) REFERENCES public.entity_class(class_id);
 
 
 --

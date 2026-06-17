@@ -107,7 +107,7 @@ var all = [], counts = {}, filtered = [];
 
 /* ── Fetch helpers ─────────────────────────────────────────────── */
 async function loadEntities() {
-  var cols = ['entity_id','canonical_name','tradition','entity_type','category',
+  var cols = ['entity_id','canonical_name','tradition','entity_class','entity_type','category',
               'primary_domains','short_note'];
   var url = '/deitydb/entities.json?_shape=array&_size=2000&_col=' + cols.join('&_col=');
   var r = await fetch(url);
@@ -157,7 +157,7 @@ function makeCard(e) {
   var n = counts[e.entity_id] || 0;
   var key = tradKey(e.tradition);
 
-  var typeStr = [e.entity_type, e.category]
+  var typeStr = [e.entity_class, e.entity_type, e.category]
     .filter(Boolean)
     .map(function(s) { return s.length > 36 ? s.slice(0, 34) + '…' : s; })
     .join(' · ');
@@ -209,7 +209,7 @@ function applyFilters() {
   filtered = all.filter(function(e) {
     if (trad && e.tradition !== trad) return false;
     if (query) {
-      var hay = [e.canonical_name, e.entity_type, e.category,
+      var hay = [e.canonical_name, e.entity_class, e.entity_type, e.category,
                  e.primary_domains, e.tradition, e.short_note]
         .filter(Boolean).join(' ').toLowerCase();
       if (hay.indexOf(query) === -1) return false;
@@ -255,6 +255,7 @@ function openPanel(entity) {
 
   var n = counts[entity.entity_id] || 0;
   var metaRows = [
+    entity.entity_class ? ['Class',    esc(entity.entity_class)]  : null,
     entity.entity_type ? ['Type',     esc(entity.entity_type)]   : null,
     entity.category    ? ['Category', esc(entity.category)]      : null,
     entity.primary_domains ? ['Domains', esc(entity.primary_domains)] : null,
