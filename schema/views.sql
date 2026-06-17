@@ -82,6 +82,15 @@ FROM entities
 GROUP BY tradition
 ORDER BY count(*) DESC;
 
+CREATE OR REPLACE VIEW v_public_class_overview AS
+SELECT e.entity_class,
+       ec.label,
+       count(*) AS entity_count
+FROM entities e
+JOIN entity_class ec ON e.entity_class = ec.class_id
+GROUP BY e.entity_class, ec.label, ec.sort_order
+ORDER BY ec.sort_order;
+
 CREATE OR REPLACE VIEW v_public_relationship_overview AS
 SELECT relationship_type,
        count(*) AS relationship_count

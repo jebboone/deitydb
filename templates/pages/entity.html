@@ -19,6 +19,7 @@
 .en-chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px}
 .en-chip{font-size:.78rem;border-radius:20px;padding:3px 11px;background:#f1ecf7;color:#5b2a9e;font-weight:600}
 .en-chip.trad{color:#fff}
+.en-chip.cls{background:#e7e0f5;color:#3d1d6b;text-transform:capitalize}
 .en-note{font-size:1.08rem;color:#3a342c;margin:0 0 14px;line-height:1.55}
 .en-domains{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
 .en-dom{font-size:.8rem;background:#f6efe3;border:1px solid #e7dccb;border-radius:6px;padding:2px 9px;color:#6a5d44}
@@ -110,6 +111,7 @@ function render(e,rels,pers,aka,srcs){
   document.getElementById('en-name').innerHTML=esc(e.canonical_name)+(e.greek_name?' <span class="en-greek">'+esc(e.greek_name)+'</span>':'');
   var tc=TRAD_COLOR[tradKey(e.tradition)]||TRAD_COLOR.other;
   var chips='<span class="en-chip trad" style="background:'+tc+'">'+esc(e.tradition||'')+'</span>';
+  if(e.entity_class)chips+='<span class="en-chip cls">'+esc(e.entity_class)+'</span>';
   if(e.entity_type)chips+='<span class="en-chip">'+esc(e.entity_type)+'</span>';
   if(e.category&&e.category!==e.entity_type)chips+='<span class="en-chip">'+esc(e.category)+'</span>';
   if(e.evidence_confidence)chips+='<span class="en-chip">Evidence '+esc(e.evidence_confidence)+'</span>';

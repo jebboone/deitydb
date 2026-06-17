@@ -102,6 +102,7 @@ CREATE TABLE public.entities (
     greek_name text,
     tradition text,
     entity_type text,
+    entity_class text,
     category text,
     primary_domains text,
     tags text,
@@ -116,6 +117,33 @@ CREATE TABLE public.entities (
     short_note text,
     CONSTRAINT entities_earth_association_score_check CHECK (((earth_association_score >= 0) AND (earth_association_score <= 5))),
     CONSTRAINT entities_evidence_confidence_check CHECK ((evidence_confidence = ANY (ARRAY['A'::text, 'B'::text, 'C'::text, 'D'::text])))
+);
+
+
+--
+-- Name: entity_class; Type: TABLE; Schema: public; Owner: -
+-- Controlled vocabulary of top-level entity kinds (v2.0.0). entities.entity_class
+-- references this; entity_type remains the free-text granular descriptor.
+--
+
+CREATE TABLE public.entity_class (
+    class_id text NOT NULL,
+    label text NOT NULL,
+    description text,
+    sort_order integer DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: entity_type_class_map; Type: TABLE; Schema: public; Owner: -
+-- Maps each free-text entity_type to exactly one controlled entity_class.
+-- entities.entity_class is backfilled from this; the integrity gate asserts
+-- every distinct entity_type appears here (0 unmapped types).
+--
+
+CREATE TABLE public.entity_type_class_map (
+    entity_type text NOT NULL,
+    entity_class text NOT NULL
 );
 
 

@@ -1,15 +1,16 @@
 # DeityDB — Resume / Cross-Machine Handoff
 
-Snapshot for picking the project up on another machine. Last updated **2026-06-17, v1.92.0**.
+Snapshot for picking the project up on another machine. Last updated **2026-06-17, v2.0.0**.
 
 ## Current state
-- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Fully published & live at **deitydb-explorer.fly.dev** (v1.92.0).
+- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Fully published & live at **deitydb-explorer.fly.dev** (v2.0.0).
 - **Completeness program (Phases 1–7): COMPLETE and audited clean** — every integrity invariant 0, 97.3% primary/scholarly source coverage. Per-phase record in `CHANGELOG.md` (v1.85.0–v1.91.1); the gap register is `docs/COMPLETENESS_ROADMAP.md`.
 - **Deeper graph/API features: DONE** (v1.92.0) — JSON API + `/path` finder + `/constellation` map + `/graph` filters.
+- **Schema epoch — controlled `entity_class`: DONE** (v2.0.0) — 19-value controlled vocabulary over free-text `entity_type`; 57 blank types filled; 0 unmapped types. Migration `upgrade_v2_0_entity_class.sql`; map source in `scripts/_classmap/`.
 - **Git:** all pushed to `github.com/jebboone/deitydb` (main).
 
 ## What travels, and what doesn't
-- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and a portable Postgres dump at `backups/deitydb_pg_v1.92.0.sql.gz`.
+- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and a portable Postgres dump at `backups/deitydb_pg_v2.0.0.sql.gz`.
 - **NOT in git:** `deitydb.sqlite` (gitignored — rebuilt from Postgres), `CLAUDE.md` (gitignored project instructions), the Python **venv**, and **flyctl**. The **Postgres source-of-truth runs only in the local Docker container** — it travels via the committed dump, not git.
 
 ## Bring up a new machine
@@ -20,7 +21,7 @@ git clone https://github.com/jebboone/deitydb && cd deitydb
 # 2. Postgres source-of-truth (restore from the committed dump)
 docker run -d --name deitydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=deitydb -p 5432:5432 postgres:16
 sleep 5
-gunzip -c backups/deitydb_pg_v1.92.0.sql.gz | docker exec -i deitydb psql -U postgres -d deitydb
+gunzip -c backups/deitydb_pg_v2.0.0.sql.gz | docker exec -i deitydb psql -U postgres -d deitydb
 docker exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"   # expect 3837
 
 # 3. tooling venv (export + serve)
@@ -44,6 +45,7 @@ Frontend/plugin-only changes skip the export step. Bump `VERSION` + add a `CHANG
 Per cohort: JSON in `scripts/_<cohort>/{entities,relationships,sources,periods}.json` → `python scripts/gen_roster.py <cohort>` → emits `scripts/build_<cohort>.sql` (idempotent, self-validating, prints REJECTED edges) → `docker exec -i deitydb psql -U postgres -d deitydb -v ON_ERROR_STOP=1 < scripts/build_<cohort>.sql`. New traditions get a row in `scripts/gen_tradition_profile.py` (then regenerate+apply `build_tradition_profile.sql`). Integrity gate every batch: 0 rejected/orphan/unsourced/unperiodized/rationale-less/orphan-source/dup-name.
 
 ## Conventions / gotchas
+- `entities.entity_class` = controlled 19-value kind (FK → `entity_class` table); `entity_type` = free-text descriptor. New `entity_type`s MUST get a row in `entity_type_class_map` (regenerate via `scripts/_classmap/`), else the v2.0 gate fails (0 unmapped types). Backfill entity_class from the map after a build.
 - `entities.evidence_confidence` = **A/B/C/D**; `entity_relationships.confidence` = **high/medium/low** (don't cross them).
 - relationship JSON keys: `{s=subject, t=relationship_type, o=object, c, ra}` — never transpose t/o.
 - `reception_of` and `received_as` are stored as **inverse pairs** — path/chain traversal must follow ONE relation in ONE direction or it cycles.
