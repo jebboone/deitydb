@@ -1,0 +1,114 @@
+[
+  {
+    "s": "ENT_ISR_GABRIEL",
+    "t": "reception_of",
+    "o": "ENT_ZOR_AMESHA_SPENTAS",
+    "c": "medium",
+    "ra": "The Second-Temple Jewish archangel heptad, of which Gabriel is a member, was shaped on the model of the Zoroastrian Amesha Spentas during and after Persian-period contact (Boyce)."
+  },
+  {
+    "s": "ENT_ISR_RAPHAEL",
+    "t": "reception_of",
+    "o": "ENT_ZOR_AMESHA_SPENTAS",
+    "c": "medium",
+    "ra": "Raphael, named among the seven archangels (Tobit, 1 Enoch), belongs to the post-exilic archangelic heptad patterned after the Amesha Spentas following Achaemenid contact (Boyce)."
+  },
+  {
+    "s": "ENT_ISR_URIEL",
+    "t": "reception_of",
+    "o": "ENT_ZOR_AMESHA_SPENTAS",
+    "c": "medium",
+    "ra": "Uriel, one of the seven archangels of 1 Enoch, is part of the Second-Temple heptad of holy ones modeled on the Zoroastrian Amesha Spentas after Persian-period influence (Boyce)."
+  },
+  {
+    "s": "ENT_CHR_GUARDIAN_ANGELS",
+    "t": "reception_of",
+    "o": "ENT_ZOR_FRAVASHIS",
+    "c": "medium",
+    "ra": "The Christian notion of a personal guardian angel assigned to each soul descends, via Second-Temple Judaism, from the Zoroastrian fravashi - the personal protective spirit-prototype (Boyce)."
+  },
+  {
+    "s": "ENT_JM_GEMATRIA",
+    "t": "aligned_with",
+    "o": "ENT_GRK_PYTHAGOREAN_NUMBERS",
+    "c": "medium",
+    "ra": "Gematria and Pythagorean number mysticism are parallel ancient doctrines treating number as a carrier of hidden divine meaning; their later confluence underlies Renaissance number magic (Scholem; Burkert)."
+  },
+  {
+    "s": "ENT_JM_GEMATRIA",
+    "t": "aligned_with",
+    "o": "ENT_JM_SEFIROT",
+    "c": "high",
+    "ra": "The sefirot ARE the ten numerical emanations of Kabbalah (sefirah = 'number/counting'); gematria operates on the same premise that number is divine, so the two are intrinsically aligned (Scholem)."
+  },
+  {
+    "s": "ENT_REN_NUMBER_SCALE",
+    "t": "reception_of",
+    "o": "ENT_GRK_PYTHAGOREAN_NUMBERS",
+    "c": "high",
+    "ra": "Agrippa's Scale of Numbers (De occulta philosophia II) explicitly revives Pythagorean number doctrine, assigning metaphysical meaning to the numbers 1-12."
+  },
+  {
+    "s": "ENT_REN_NUMBER_SCALE",
+    "t": "reception_of",
+    "o": "ENT_JM_GEMATRIA",
+    "c": "high",
+    "ra": "Agrippa draws his number-to-divine-name correspondences from Kabbalistic gematria, integrating Hebrew letter-number values and the sefirot into the Scale of Numbers."
+  },
+  {
+    "s": "ENT_MOD_NUMEROLOGY",
+    "t": "reception_of",
+    "o": "ENT_GRK_PYTHAGOREAN_NUMBERS",
+    "c": "high",
+    "ra": "Modern numerology is explicitly framed as a revival of Pythagorean number meaning - the very title of the standard critical study calls it 'what Pythagoras wrought' (Dudley)."
+  },
+  {
+    "s": "ENT_MOD_NUMEROLOGY",
+    "t": "reception_of",
+    "o": "ENT_REN_NUMBER_SCALE",
+    "c": "medium",
+    "ra": "Modern numerology inherits its number-symbol correspondences through the Renaissance esoteric tradition (Agrippa's Scales) as transmitted into 19th-century occult and Theosophical circles."
+  },
+  {
+    "s": "ENT_VF_ANGEL_NUMBERS",
+    "t": "reception_of",
+    "o": "ENT_MOD_NUMEROLOGY",
+    "c": "high",
+    "ra": "Angel numbers are the number-side inheritance: the New Age practice of reading repeating digits applies modern numerology's symbolic number meanings to everyday synchronicities."
+  },
+  {
+    "s": "ENT_VF_ANGEL_NUMBERS",
+    "t": "reception_of",
+    "o": "ENT_VF_NEWAGE_ANGELS",
+    "c": "high",
+    "ra": "Angel numbers are the angel-side inheritance: the repeating digits are read as messages from one's New Age guardian angels, fusing angelology with numerology (existing aligned_with/member_of edges record the same link from a different angle)."
+  },
+  {
+    "s": "ENT_VF_999",
+    "t": "reception_of",
+    "o": "ENT_VF_ANGEL_NUMBERS",
+    "c": "medium",
+    "ra": "Juice WRLD's devotional '999' sits within the angel-number culture of reading repeated digits as spiritually significant; fans treat 999 as a meaningful number-sign in exactly that idiom."
+  },
+  {
+    "s": "ENT_VF_ELEVEN_ELEVEN",
+    "t": "reception_of",
+    "o": "ENT_VF_ANGEL_NUMBERS",
+    "c": "high",
+    "ra": "11:11 is a flagship case of angel-number practice - a repeating-digit time read as an angelic or 'Universe' sign to make a wish or note synchronicity."
+  },
+  {
+    "s": "ENT_VF_999",
+    "t": "aligned_with",
+    "o": "ENT_VF_ELEVEN_ELEVEN",
+    "c": "medium",
+    "ra": "Both are contemporary vernacular number-devotions in which a specific repeating digit is invested with protective, synchronistic or wish-granting power."
+  },
+  {
+    "s": "ENT_REN_NUMBER_SCALE",
+    "t": "aligned_with",
+    "o": "ENT_ANGELS",
+    "c": "medium",
+    "ra": "Agrippa's Scale of Numbers tabulates each number against orders of angels, making it the explicit number-to-angel bridge linking the number-mysticism thread to the angelic hierarchy."
+  }
+]

@@ -1,5 +1,40 @@
 # Changelog
 
+## v1.84.0 — 2026-06-17
+
+### The angel-numbers lineage, deepened — and a "Lineages" reception-chain visualization
+
+A flagship demonstration of the dataset's reach: a single source-traced thread from
+the ancient Zoroastrian angelic hierarchy to Gen-Z "angel numbers" (and a Juice WRLD
+tattoo). Two things shipped: the missing links of the chain, and a visualization built
+to show it off.
+
+**Data — the number-mysticism thread + the pop endpoint (+6 entities, +16 edges, +3 sources):**
+The angelic half of the chain already existed (Amesha Spentas / Fravashis → Second-Temple
+archangels → Guardian Angels → New Age angels). This adds the parallel *number-mysticism*
+half and wires the full spine:
+- New nodes: **Pythagorean Number Mysticism** (Greek, ~530 BCE), **Gematria** (Jewish
+  Mystical), **the Scale of Numbers** (Agrippa's *De Occulta Philosophia* — the explicit
+  number↔angel table that joins the two threads), **Modern Numerology** (Theosophical),
+  **999 (Juice WRLD)** and **11:11** (the contemporary number-devotions).
+- The spine, link by link with sourced rationales: Pythagoras + Gematria → Agrippa →
+  Modern Numerology → **Angel Numbers** ← New Age Guardian Angels ← (Christian Guardian
+  Angels ← Fravashis; archangels ← Amesha Spentas) → **999 / 11:11**. The second-temple
+  archangels (Gabriel, Raphael, Uriel) are now also wired `reception_of` the Amesha Spentas
+  (Michael already was), and the Christian Guardian Angels `reception_of` the Fravashis.
+- Sourced to scholarship (Boyce on Zoroastrian influence, Burkert on Pythagoreanism,
+  Scholem on gematria, Dudley on numerology) and primaries (Agrippa; a Juice WRLD profile).
+
+**Visualization — the new `/chain` "Lineages" page:** renders a reception chain as a
+left-to-right time-flow (ancient → today): nodes placed by date on a BCE/CE axis, colored
+by tradition, arrows pointing from each earlier source to its later reception. Hover an
+arrow for its sourced rationale; click any node for its full entry; zoom/pan; search any
+figure to trace its lineage. Loads the angel-numbers lineage by default, with featured
+chains (Cybele, Aphrodite, Mithras, the Grail). Added to the nav and the homepage's
+"Browse & Visualize" cards.
+
+Scorecard now 3,173 entities / 5,761 relationships / 365 sources / 96 traditions.
+
 ## v1.83.0 — 2026-06-17
 
 ### Contemporary folklore & vernacular religion — the supernatural beings of online and modern lived culture
