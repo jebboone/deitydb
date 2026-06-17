@@ -1,0 +1,128 @@
+[
+{
+"s": "ENT_COMM_ZEUS_OROMASDES",
+"t": "member_of",
+"o": "ENT_COMM_PANTHEON",
+"c": "high",
+"ra": "Zeus-Oromasdes is the supreme deity of the Commagenian dynastic pantheon at Nemrud Dag."
+},
+{
+"s": "ENT_COMM_APOLLO_MITHRAS_HELIOS_HERMES",
+"t": "member_of",
+"o": "ENT_COMM_PANTHEON",
+"c": "high",
+"ra": "Apollo-Mithras-Helios-Hermes is one of the seated colossal deities of the Commagenian pantheon."
+},
+{
+"s": "ENT_COMM_ARTAGNES_HERACLES_ARES",
+"t": "member_of",
+"o": "ENT_COMM_PANTHEON",
+"c": "high",
+"ra": "Artagnes-Heracles-Ares is one of the seated colossal deities of the Commagenian pantheon."
+},
+{
+"s": "ENT_COMM_TYCHE",
+"t": "member_of",
+"o": "ENT_COMM_PANTHEON",
+"c": "high",
+"ra": "The Tyche of Commagene is seated among the divine colossi of the pantheon at Nemrud Dag."
+},
+{
+"s": "ENT_COMM_ANTIOCHUS_I_THEOS",
+"t": "member_of",
+"o": "ENT_COMM_PANTHEON",
+"c": "high",
+"ra": "Antiochus I Theos enthroned himself as a deified king among the gods of his own dynastic pantheon."
+},
+{
+"s": "ENT_COMM_ZEUS_OROMASDES",
+"t": "equated_with",
+"o": "ENT_ZEUS",
+"c": "high",
+"ra": "Ancient interpretatio: the theonym Zeus-Oromasdes explicitly equates the Commagenian supreme god with Greek Zeus."
+},
+{
+"s": "ENT_COMM_ZEUS_OROMASDES",
+"t": "equated_with",
+"o": "ENT_ZOR_AHURA_MAZDA",
+"c": "high",
+"ra": "Ancient interpretatio: Oromasdes is the Hellenized form of Iranian Ahura Mazda, fused with Zeus in the Commagenian theonym."
+},
+{
+"s": "ENT_COMM_APOLLO_MITHRAS_HELIOS_HERMES",
+"t": "equated_with",
+"o": "ENT_APOLLO",
+"c": "high",
+"ra": "Ancient interpretatio: the composite theonym explicitly identifies the Commagenian solar god with Greek Apollo."
+},
+{
+"s": "ENT_COMM_APOLLO_MITHRAS_HELIOS_HERMES",
+"t": "equated_with",
+"o": "ENT_ZOR_MITHRA",
+"c": "high",
+"ra": "Ancient interpretatio: the Mithras element of the composite theonym derives from Iranian Mithra of the Zoroastrian tradition."
+},
+{
+"s": "ENT_COMM_APOLLO_MITHRAS_HELIOS_HERMES",
+"t": "syncretized_with",
+"o": "ENT_SYN_MITHRAS",
+"c": "medium",
+"ra": "The Commagenian Apollo-Mithras-Helios-Hermes is a key early attestation of the Mithras whose cult later developed in the Roman world."
+},
+{
+"s": "ENT_COMM_APOLLO_MITHRAS_HELIOS_HERMES",
+"t": "equated_with",
+"o": "ENT_HELIOS",
+"c": "high",
+"ra": "Ancient interpretatio: the Helios element of the composite theonym identifies the god with the Greek sun god."
+},
+{
+"s": "ENT_COMM_APOLLO_MITHRAS_HELIOS_HERMES",
+"t": "equated_with",
+"o": "ENT_HERMES",
+"c": "high",
+"ra": "Ancient interpretatio: the Hermes element of the composite theonym identifies the god with the Greek messenger god."
+},
+{
+"s": "ENT_COMM_ARTAGNES_HERACLES_ARES",
+"t": "equated_with",
+"o": "ENT_ZOR_VERETHRAGNA",
+"c": "high",
+"ra": "Ancient interpretatio: Artagnes is the Hellenized form of Iranian Verethragna, the Zoroastrian yazata of victory."
+},
+{
+"s": "ENT_COMM_ARTAGNES_HERACLES_ARES",
+"t": "equated_with",
+"o": "ENT_HERACLES",
+"c": "high",
+"ra": "Ancient interpretatio: the composite theonym explicitly identifies the Commagenian warrior god with Greek Heracles."
+},
+{
+"s": "ENT_COMM_ARTAGNES_HERACLES_ARES",
+"t": "equated_with",
+"o": "ENT_ARES",
+"c": "high",
+"ra": "Ancient interpretatio: the Ares element of the composite theonym identifies the god with the Greek war god."
+},
+{
+"s": "ENT_COMM_TYCHE",
+"t": "cult_form_of",
+"o": "ENT_TYCHE",
+"c": "high",
+"ra": "The Tyche of Commagene is a regional civic/territorial cult form of the Greek goddess Tyche (Fortune)."
+},
+{
+"s": "ENT_COMM_ANTIOCHUS_I_THEOS",
+"t": "associated_with",
+"o": "ENT_COMM_ZEUS_OROMASDES",
+"c": "medium",
+"ra": "The Nemrud Dag dexiosis reliefs depict Antiochus I clasping the hand of Zeus-Oromasdes, asserting his divine legitimacy."
+},
+{
+"s": "ENT_COMM_ANTIOCHUS_I_THEOS",
+"t": "associated_with",
+"o": "ENT_COMM_ARTAGNES_HERACLES_ARES",
+"c": "medium",
+"ra": "A Nemrud Dag dexiosis relief shows Antiochus I clasping the hand of Artagnes-Heracles-Ares."
+}
+]

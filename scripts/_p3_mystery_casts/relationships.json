@@ -1,0 +1,184 @@
+[
+{
+"s": "ENT_MYST_BAUBO",
+"t": "member_of",
+"o": "ENT_MYST_ELEUSINIAN",
+"c": "high",
+"ra": "Baubo is part of the Eleusinian cult cast (the iambe/jesting episode of the Homeric Hymn to Demeter)."
+},
+{
+"s": "ENT_MYST_EUMOLPUS",
+"t": "member_of",
+"o": "ENT_MYST_ELEUSINIAN",
+"c": "high",
+"ra": "Eumolpus is the legendary founding hierophant of the Eleusinian Mysteries and eponym of the Eumolpidai."
+},
+{
+"s": "ENT_MYST_DEMOPHOON",
+"t": "member_of",
+"o": "ENT_MYST_ELEUSINIAN",
+"c": "high",
+"ra": "Demophoon's immortalization episode is a foundational Eleusinian narrative."
+},
+{
+"s": "ENT_MYST_DAEIRA",
+"t": "member_of",
+"o": "ENT_MYST_ELEUSINIAN",
+"c": "medium",
+"ra": "Daeira received her own priestess and sacrifices within the Eleusinian cult complex."
+},
+{
+"s": "ENT_DEMETER",
+"t": "presides_over",
+"o": "ENT_MYST_ELEUSINIAN",
+"c": "high",
+"ra": "Demeter is the principal goddess of the Eleusinian Mysteries."
+},
+{
+"s": "ENT_PERSEPHONE",
+"t": "presides_over",
+"o": "ENT_MYST_ELEUSINIAN",
+"c": "high",
+"ra": "Persephone (Kore) is the central abducted-and-returned goddess of the Eleusinian cult."
+},
+{
+"s": "ENT_MYST_DEMOPHOON",
+"t": "associated_with",
+"o": "ENT_DEMETER",
+"c": "high",
+"ra": "Demeter nurses the infant Demophoon and attempts to immortalize him in the Homeric Hymn to Demeter."
+},
+{
+"s": "ENT_MYST_BAUBO",
+"t": "associated_with",
+"o": "ENT_DEMETER",
+"c": "high",
+"ra": "Baubo's obscene jesting consoles the grieving Demeter at Eleusis."
+},
+{
+"s": "ENT_MYST_DAEIRA",
+"t": "identified_with",
+"o": "ENT_PERSEPHONE",
+"c": "medium",
+"ra": "Ancient sources variously identify the Eleusinian Daeira with Persephone."
+},
+{
+"s": "ENT_MYST_EUMOLPUS",
+"t": "associated_with",
+"o": "ENT_TRIPTOLEMUS",
+"c": "medium",
+"ra": "Eumolpus and Triptolemus are paired Eleusinian founder-heroes in Athenian tradition."
+},
+{
+"s": "ENT_MYST_AXIEROS",
+"t": "member_of",
+"o": "ENT_MYST_SAMOTHRACIAN",
+"c": "high",
+"ra": "Axieros is a named member of the Samothracian Great Gods tetrad."
+},
+{
+"s": "ENT_MYST_AXIOKERSA",
+"t": "member_of",
+"o": "ENT_MYST_SAMOTHRACIAN",
+"c": "high",
+"ra": "Axiokersa is a named member of the Samothracian Great Gods tetrad."
+},
+{
+"s": "ENT_MYST_AXIOKERSOS",
+"t": "member_of",
+"o": "ENT_MYST_SAMOTHRACIAN",
+"c": "high",
+"ra": "Axiokersos is a named member of the Samothracian Great Gods tetrad."
+},
+{
+"s": "ENT_MYST_KADMILOS",
+"t": "member_of",
+"o": "ENT_MYST_SAMOTHRACIAN",
+"c": "high",
+"ra": "Kadmilos/Kasmilos is the fourth named member of the Samothracian Great Gods tetrad."
+},
+{
+"s": "ENT_MYST_AXIEROS",
+"t": "member_of",
+"o": "ENT_GREAT_GODS_SAMOTHRACE",
+"c": "high",
+"ra": "The tetrad collectively constitutes the existing Great Gods of Samothrace."
+},
+{
+"s": "ENT_MYST_AXIOKERSA",
+"t": "member_of",
+"o": "ENT_GREAT_GODS_SAMOTHRACE",
+"c": "high",
+"ra": "Axiokersa is one of the existing Great Gods of Samothrace."
+},
+{
+"s": "ENT_MYST_AXIOKERSOS",
+"t": "member_of",
+"o": "ENT_GREAT_GODS_SAMOTHRACE",
+"c": "high",
+"ra": "Axiokersos is one of the existing Great Gods of Samothrace."
+},
+{
+"s": "ENT_MYST_KADMILOS",
+"t": "member_of",
+"o": "ENT_GREAT_GODS_SAMOTHRACE",
+"c": "high",
+"ra": "Kadmilos is one of the existing Great Gods of Samothrace."
+},
+{
+"s": "ENT_MYST_KADMILOS",
+"t": "associated_with",
+"o": "ENT_CABEIRI",
+"c": "high",
+"ra": "Kadmilos is closely linked to the Cabeiri as their attendant/father-figure in the Samothracian-Cabiric tradition."
+},
+{
+"s": "ENT_MYST_AXIEROS",
+"t": "equated_with",
+"o": "ENT_DEMETER",
+"c": "medium",
+"ra": "Ancient interpretatio (scholia to Apollonius) identifies the Samothracian Axieros with Demeter."
+},
+{
+"s": "ENT_MYST_AXIEROS",
+"t": "equated_with",
+"o": "ENT_CYBELE",
+"c": "medium",
+"ra": "Axieros as the Samothracian Great Mother was also identified with the Cybele-type Mother of the Gods."
+},
+{
+"s": "ENT_MYST_AXIOKERSA",
+"t": "equated_with",
+"o": "ENT_PERSEPHONE",
+"c": "medium",
+"ra": "Ancient scholia identify the Samothracian Axiokersa with Persephone."
+},
+{
+"s": "ENT_MYST_AXIOKERSOS",
+"t": "equated_with",
+"o": "ENT_HADES",
+"c": "medium",
+"ra": "Ancient scholia identify the Samothracian Axiokersos with Hades."
+},
+{
+"s": "ENT_MYST_KADMILOS",
+"t": "equated_with",
+"o": "ENT_HERMES",
+"c": "medium",
+"ra": "Ancient scholia identify the Samothracian Kadmilos/Kasmilos with Hermes."
+},
+{
+"s": "ENT_MYST_THEOS_HYPSISTOS",
+"t": "syncretized_with",
+"o": "ENT_ZEUS",
+"c": "medium",
+"ra": "The 'Most High God' cult-title often attached to Zeus (Zeus Hypsistos) in pagan dedications across the Roman East."
+},
+{
+"s": "ENT_MYST_THEOS_HYPSISTOS",
+"t": "aligned_with",
+"o": "ENT_ISR_YAHWEH",
+"c": "medium",
+"ra": "The Theos Hypsistos / Hypsistarian cult partly converged with the worship of the Jewish God among God-fearers, blurring pagan and Jewish monotheizing devotion."
+}
+]

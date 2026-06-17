@@ -1,0 +1,98 @@
+[
+{
+"id": "ENT_LYD_PANTHEON",
+"name": "Lydian Pantheon",
+"type": "collective",
+"trad": "Lydian",
+"dom": "civic polytheism",
+"conf": "B",
+"note": "Collective hub for the deities of the Iron Age Lydian kingdom (Sardis, c. 1200-540 BCE), attested in Lydian-language inscriptions, theophoric names, and Greek sources (Herodotus, Hipponax). Munn (2006).",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "collective"
+},
+{
+"id": "ENT_LYD_KUVAVA",
+"name": "Kuvava (Kybebe)",
+"type": "deity",
+"trad": "Lydian",
+"dom": "mother goddess, sovereignty, mountains",
+"conf": "B",
+"note": "The Lydian mother-goddess, attested in Lydian inscriptions as Kuvava and in Greek as Kybebe (Herodotus 5.102; Hipponax names her at Sardis). Descended from the Luwian/Neo-Hittite Kubaba of Carchemish and ancestral to the Phrygian/Greek Cybele; central to Munn's account of Anatolian divine sovereignty. Distinct local form, not the Phrygian Matar.",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYD_SANTAS",
+"name": "Santas (Sandon)",
+"type": "deity",
+"trad": "Lydian",
+"dom": "war, plague, kingship, club-bearing hero-god",
+"conf": "B",
+"note": "Lydian war- and plague-god, the Anatolian Sandon/Sandas figure interpreted by Greeks as a Heracles. Munn connects him to Lydian dynastic ancestry (the Tylonid/Heraclid line at Sardis); continuous with the Luwian Santa and Cilician Sandas. Attested via theophoric onomastics and the Greek Herakles-equation.",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYD_ARTIMUS",
+"name": "Artimus",
+"type": "deity",
+"trad": "Lydian",
+"dom": "wild nature, protection, the dead",
+"conf": "B",
+"note": "Lydian goddess attested in Lydian inscriptions (frequently paired with Pldans), regularly equated with Greek Artemis; her cult is prominent at Sardis and Ephesus' Anatolian background. Munn (2006); Lydian epigraphic corpus.",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYD_PLDANS",
+"name": "Pldans",
+"type": "deity",
+"trad": "Lydian",
+"dom": "divine guardianship, oracular/solar associations",
+"conf": "C",
+"note": "Lydian god named in inscriptions (paired with Artimus in protective formulae), conventionally identified with Greek Apollo on phonetic and functional grounds. Attestation is epigraphic and partly conjectural. Munn (2006).",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYD_LAMETRUS",
+"name": "Lametrus",
+"type": "deity",
+"trad": "Lydian",
+"dom": "grain, fertility, earth",
+"conf": "C",
+"note": "Lydian goddess attested in inscriptions, identified with Greek Demeter through both name and agrarian function. Reflects the shared Anatolian-Greek grain-mother substrate. Munn (2006); Lydian epigraphy.",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYD_BAKIVALIS",
+"name": "Bakivalis",
+"type": "deity",
+"trad": "Lydian",
+"dom": "wine, ecstatic cult, vegetation",
+"conf": "C",
+"note": "Lydian theonym/theophoric element (Baki-) reflecting a Dionysus-type wine and ecstatic-cult deity; the Lydian-Phrygian Bakkhos sphere from which the Greek epithet Bakchos is partly drawn. Attestation chiefly onomastic. Munn (2006).",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYD_KANDAULES",
+"name": "Kandaules",
+"type": "deity",
+"trad": "Lydian",
+"dom": "dog-throttling, gateways, chthonic protection",
+"conf": "C",
+"note": "Lydian divine epithet 'Kandaules' (the 'dog-throttler'), reported by Hipponax as a Lydian title of Hermes; also the throne-name of the last Heraclid king of Sardis (Herodotus 1.7ff). A Hermes-type guardian/psychopomp figure. Munn (2006).",
+"src": "SRC_MUNN_MOTHER_GODS",
+"per": "PER_LYDIAN",
+"cat": "deity"
+}
+]

@@ -1,0 +1,72 @@
+[
+{
+"s": "ENT_CAR_ZEUS_LABRAUNDOS",
+"t": "member_of",
+"o": "ENT_CAR_PANTHEON",
+"c": "high",
+"ra": "Zeus Labraundos of Labranda is a core deity of the Carian civic pantheon (Laumonier 1958)."
+},
+{
+"s": "ENT_CAR_ZEUS_OSOGO",
+"t": "member_of",
+"o": "ENT_CAR_PANTHEON",
+"c": "high",
+"ra": "Zeus Osogo/Zenoposeidon of Mylasa belongs to the Carian pantheon (Laumonier 1958)."
+},
+{
+"s": "ENT_CAR_ZEUS_PANAMAROS",
+"t": "member_of",
+"o": "ENT_CAR_PANTHEON",
+"c": "high",
+"ra": "Zeus Panamaros/Stratios of the Panamara sanctuary belongs to the Carian pantheon (Laumonier 1958)."
+},
+{
+"s": "ENT_CAR_HECATE_LAGINA",
+"t": "member_of",
+"o": "ENT_CAR_PANTHEON",
+"c": "high",
+"ra": "Hecate of Lagina is the leading goddess of the Carian civic pantheon (Laumonier 1958)."
+},
+{
+"s": "ENT_CAR_SINURI",
+"t": "member_of",
+"o": "ENT_CAR_PANTHEON",
+"c": "high",
+"ra": "The god of the Sinuri sanctuary is an indigenous member of the Carian pantheon (Laumonier 1958)."
+},
+{
+"s": "ENT_CAR_ZEUS_LABRAUNDOS",
+"t": "cult_form_of",
+"o": "ENT_ZEUS",
+"c": "high",
+"ra": "Zeus Labraundos is the Carian cult-form/local epithet of Zeus, the indigenous double-axe god interpreted as Zeus at Labranda."
+},
+{
+"s": "ENT_CAR_ZEUS_OSOGO",
+"t": "cult_form_of",
+"o": "ENT_ZEUS",
+"c": "high",
+"ra": "Zeus Osogo of Mylasa is a Carian cult-form of Zeus (the indigenous god worshipped under the name Zeus Osogo)."
+},
+{
+"s": "ENT_CAR_ZEUS_PANAMAROS",
+"t": "cult_form_of",
+"o": "ENT_ZEUS",
+"c": "high",
+"ra": "Zeus Panamaros/Stratios is the Carian cult-form of Zeus at the Panamara sanctuary."
+},
+{
+"s": "ENT_CAR_HECATE_LAGINA",
+"t": "cult_form_of",
+"o": "ENT_HECATE",
+"c": "high",
+"ra": "Hecate of Lagina is the great Carian cult-form of the Greek Hecate, the indigenous goddess venerated as Hecate at Lagina."
+},
+{
+"s": "ENT_CAR_ZEUS_OSOGO",
+"t": "equated_with",
+"o": "ENT_POSEIDON",
+"c": "high",
+"ra": "Zeus Osogo bore the title Zenoposeidon and combined attributes (trident with eagle, saltwater spring) of Poseidon, an ancient interpretatio fusing Zeus and Poseidon."
+}
+]

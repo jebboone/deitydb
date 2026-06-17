@@ -1,0 +1,156 @@
+[
+{
+"s": "ENT_ROM_JUPITER_DOLICHENUS",
+"t": "member_of",
+"o": "ENT_ROM_EASTERN_CULTS",
+"c": "high",
+"ra": "Jupiter Dolichenus is one of the Near-Eastern cults in Roman dress grouped under the Eastern-cults hub."
+},
+{
+"s": "ENT_ROM_JUPITER_HELIOPOLITANUS",
+"t": "member_of",
+"o": "ENT_ROM_EASTERN_CULTS",
+"c": "high",
+"ra": "Jupiter Heliopolitanus (Baalbek triad) belongs to the Roman Eastern-cults grouping."
+},
+{
+"s": "ENT_ROM_VENUS_HELIOPOLITANA",
+"t": "member_of",
+"o": "ENT_ROM_EASTERN_CULTS",
+"c": "high",
+"ra": "Venus Heliopolitana, member of the Baalbek triad, belongs to the Roman Eastern-cults grouping."
+},
+{
+"s": "ENT_ROM_MERCURY_HELIOPOLITANUS",
+"t": "member_of",
+"o": "ENT_ROM_EASTERN_CULTS",
+"c": "high",
+"ra": "Mercury Heliopolitanus, member of the Baalbek triad, belongs to the Roman Eastern-cults grouping."
+},
+{
+"s": "ENT_ROM_DEA_SYRIA",
+"t": "member_of",
+"o": "ENT_ROM_EASTERN_CULTS",
+"c": "high",
+"ra": "Dea Syria is among the oriental cults of Roman religion in the Eastern-cults grouping."
+},
+{
+"s": "ENT_ROM_DEA_CAELESTIS",
+"t": "member_of",
+"o": "ENT_ROM_EASTERN_CULTS",
+"c": "high",
+"ra": "Dea Caelestis is one of the Eastern (African/Punic) cults grouped under the Roman Eastern-cults hub."
+},
+{
+"s": "ENT_ROM_SOL_INVICTUS_ELAGABAL",
+"t": "member_of",
+"o": "ENT_ROM_EASTERN_CULTS",
+"c": "high",
+"ra": "Sol Invictus Elagabal, the Emesene solar cult in Roman dress, belongs to the Eastern-cults grouping."
+},
+{
+"s": "ENT_ROM_VENUS_HELIOPOLITANA",
+"t": "consort_of",
+"o": "ENT_ROM_JUPITER_HELIOPOLITANUS",
+"c": "medium",
+"ra": "Within the Heliopolitan triad of Baalbek, Venus Heliopolitana is the female consort of the chief god Jupiter Heliopolitanus."
+},
+{
+"s": "ENT_ROM_MERCURY_HELIOPOLITANUS",
+"t": "child_of",
+"o": "ENT_ROM_JUPITER_HELIOPOLITANUS",
+"c": "medium",
+"ra": "Mercury Heliopolitanus is generally read as the youthful divine son of the Heliopolitan triad, with Jupiter Heliopolitanus as the father-figure."
+},
+{
+"s": "ENT_ROM_MERCURY_HELIOPOLITANUS",
+"t": "child_of",
+"o": "ENT_ROM_VENUS_HELIOPOLITANA",
+"c": "medium",
+"ra": "Mercury Heliopolitanus is read as the divine son of the triad, completing the father-mother-son structure with Venus Heliopolitana as mother."
+},
+{
+"s": "ENT_ROM_JUPITER_DOLICHENUS",
+"t": "cult_form_of",
+"o": "ENT_ROM_JUPITER",
+"c": "high",
+"ra": "Jupiter Dolichenus is a Roman cult-epithet/form of Jupiter Optimus Maximus assimilating the Baal of Doliche."
+},
+{
+"s": "ENT_ROM_JUPITER_HELIOPOLITANUS",
+"t": "cult_form_of",
+"o": "ENT_ROM_JUPITER",
+"c": "high",
+"ra": "Jupiter Heliopolitanus is the local Baalbek cult-form of Jupiter Optimus Maximus."
+},
+{
+"s": "ENT_ROM_VENUS_HELIOPOLITANA",
+"t": "cult_form_of",
+"o": "ENT_ROM_VENUS",
+"c": "high",
+"ra": "Venus Heliopolitana is the Heliopolitan local cult-form of Venus, assimilating the Syrian goddess of Baalbek."
+},
+{
+"s": "ENT_ROM_MERCURY_HELIOPOLITANUS",
+"t": "cult_form_of",
+"o": "ENT_ROM_MERCURY",
+"c": "high",
+"ra": "Mercury Heliopolitanus is the Heliopolitan local cult-form of Mercury, assimilating the youthful Syrian son-god."
+},
+{
+"s": "ENT_ROM_DEA_SYRIA",
+"t": "received_as",
+"o": "ENT_ARA_ATARGATIS",
+"c": "high",
+"ra": "Dea Syria is the Roman cult reception of the Aramean goddess Atargatis of Hierapolis; Lucian's De Dea Syria names her so."
+},
+{
+"s": "ENT_ROM_DEA_CAELESTIS",
+"t": "equated_with",
+"o": "ENT_PHO_TANIT",
+"c": "high",
+"ra": "Dea/Juno Caelestis is the Romanized interpretatio identification of Carthaginian Tanit, the standard equation."
+},
+{
+"s": "ENT_ROM_DEA_CAELESTIS",
+"t": "received_as",
+"o": "ENT_PHO_TANIT",
+"c": "high",
+"ra": "Dea Caelestis is the Roman reception/cult-form of the Punic goddess Tanit after the Romanization of Carthage."
+},
+{
+"s": "ENT_ROM_SOL_INVICTUS_ELAGABAL",
+"t": "received_as",
+"o": "ENT_ARA_ELAGABAL",
+"c": "high",
+"ra": "Sol Invictus Elagabal is the Roman imperial cult reception of the Emesene sun-god Elagabal, whose baetyl emperor Elagabalus brought to Rome."
+},
+{
+"s": "ENT_ROM_SOL_INVICTUS_ELAGABAL",
+"t": "aligned_with",
+"o": "ENT_ROM_SOL_INVICTUS",
+"c": "medium",
+"ra": "Elagabalus's short-lived Sol Invictus Elagabal (218-222 CE) is the solar precursor to and shares the Sol Invictus title with Aurelian's official Sol Invictus (274 CE), though they are distinct cults."
+},
+{
+"s": "ENT_ROM_JUPITER_DOLICHENUS",
+"t": "syncretized_with",
+"o": "ENT_CAN_BAAL",
+"c": "medium",
+"ra": "The underlying figure of Jupiter Dolichenus is the Commagenian storm-god of Doliche, a Baal-Hadad type; he is syncretized with the Canaanite/Syrian storm-god Baal Hadad."
+},
+{
+"s": "ENT_ROM_JUPITER_HELIOPOLITANUS",
+"t": "syncretized_with",
+"o": "ENT_CAN_BAAL",
+"c": "medium",
+"ra": "Jupiter Heliopolitanus is the Romanized Baal/Hadad of Heliopolis (Baalbek), syncretizing the local Syrian storm-god with Jupiter."
+},
+{
+"s": "ENT_ROM_VENUS_HELIOPOLITANA",
+"t": "syncretized_with",
+"o": "ENT_ARA_ATARGATIS",
+"c": "medium",
+"ra": "The female member of the Baalbek triad underlies a local Syrian Atargatis/Astarte-type goddess, syncretized into Venus Heliopolitana."
+}
+]

@@ -1,0 +1,80 @@
+[
+{
+"id": "ENT_CAR_PANTHEON",
+"name": "Carian Pantheon",
+"type": "collective",
+"trad": "Carian",
+"dom": "regional polytheism;Anatolian civic cult",
+"conf": "B",
+"note": "Hub collective for the indigenous civic deities of Caria attested at the major rural sanctuaries (Labranda, Lagina, Mylasa, Panamara, Sinuri); Laumonier 1958.",
+"src": "SRC_LAUMONIER_CARIE",
+"per": "PER_CARIAN",
+"cat": "pantheon",
+"cult_scope": "regional"
+},
+{
+"id": "ENT_CAR_ZEUS_LABRAUNDOS",
+"name": "Zeus Labraundos",
+"type": "deity",
+"trad": "Carian",
+"dom": "sky;sovereignty;war;double-axe (labrys)",
+"conf": "B",
+"note": "The double-axe-wielding Zeus of the great sanctuary at Labranda near Mylasa, indigenous Carian storm/war god interpreted as Zeus; epigraphically Zeus Labraundos/Labrayndos, his priest the Hekatomnids' dynastic cult (Mausolus, Idrieus). Laumonier 1958, pp. 37-101.",
+"src": "SRC_LAUMONIER_CARIE",
+"per": "PER_CARIAN",
+"cat": "sky god",
+"cult_scope": "regional"
+},
+{
+"id": "ENT_CAR_ZEUS_OSOGO",
+"name": "Zeus Osogo (Zenoposeidon)",
+"type": "deity",
+"trad": "Carian",
+"dom": "sky;sea;fresh water",
+"conf": "B",
+"note": "Carian god of Mylasa worshipped as Zeus Osogo / Osogoa, also called Zenoposeidon (Zeus-Poseidon); his temple held a saltwater spring and the trident appeared with the eagle, fusing Zeus and Poseidon. Laumonier 1958, pp. 102-145.",
+"src": "SRC_LAUMONIER_CARIE",
+"per": "PER_CARIAN",
+"cat": "sky god",
+"cult_scope": "local"
+},
+{
+"id": "ENT_CAR_ZEUS_PANAMAROS",
+"name": "Zeus Panamaros (Zeus Stratios)",
+"type": "deity",
+"trad": "Carian",
+"dom": "sky;war;civic protection",
+"conf": "B",
+"note": "Zeus of the federal sanctuary at Panamara near Stratonikeia, also titled Zeus Stratios ('of the army'); patron of the Panamareia festival and famed epiphany that repelled a siege. Laumonier 1958, pp. 221-343.",
+"src": "SRC_LAUMONIER_CARIE",
+"per": "PER_CARIAN",
+"cat": "sky god",
+"cult_scope": "regional"
+},
+{
+"id": "ENT_CAR_HECATE_LAGINA",
+"name": "Hecate of Lagina",
+"type": "deity",
+"trad": "Carian",
+"dom": "liminality;mysteries;civic protection;sovereignty",
+"conf": "B",
+"note": "The great Carian Hecate venerated at the sanctuary of Lagina near Stratonikeia, with her annual Kleidos Pompe (procession of the key) and mysteries; a major civic cult equating the indigenous goddess with Greek Hecate. Laumonier 1958, pp. 344-425.",
+"src": "SRC_LAUMONIER_CARIE",
+"per": "PER_CARIAN",
+"cat": "goddess;chthonic",
+"cult_scope": "regional"
+},
+{
+"id": "ENT_CAR_SINURI",
+"name": "God of Sinuri",
+"type": "deity",
+"trad": "Carian",
+"dom": "local tutelary;oath;sanctuary protection",
+"conf": "C",
+"note": "Indigenous Carian deity (Theos Sinuri) of the rural sanctuary of Sinuri near Mylasa, known from the Hekatomnid-era archive and Carian inscriptions; an autochthonous god retaining his native name rather than a Greek interpretatio. Laumonier 1958, pp. 198-220; Sinuri sanctuary archive.",
+"src": "SRC_LAUMONIER_CARIE",
+"per": "PER_CARIAN",
+"cat": "local god",
+"cult_scope": "local"
+}
+]

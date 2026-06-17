@@ -1,0 +1,191 @@
+[
+{
+"s": "ENT_PHO_ELIOUN",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Elioun/Hypsistos is the primordial high god of the Phoenician theogony in Philo of Byblos."
+},
+{
+"s": "ENT_PHO_OURANOS",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Phoenician sky-god of the theogony."
+},
+{
+"s": "ENT_PHO_GE",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Phoenician earth-goddess of the theogony."
+},
+{
+"s": "ENT_PHO_ELOS_KRONOS",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Elos, the Phoenician El, is the chief god of Philo's theogony."
+},
+{
+"s": "ENT_PHO_SYDYK",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Sydyk (Righteousness) is a primordial deity in Philo's theogony."
+},
+{
+"s": "ENT_PHO_MISOR",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Misor (Uprightness) is a primordial deity in Philo's theogony."
+},
+{
+"s": "ENT_PHO_CHOUSOR",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Chousor the craftsman-god belongs to the Phoenician pantheon per Philo."
+},
+{
+"s": "ENT_PHO_TAAUTOS",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "high",
+"ra": "Taautos the scribe-god is a deity of Philo's Phoenician theogony."
+},
+{
+"s": "ENT_PHO_KABEIROI",
+"t": "member_of",
+"o": "ENT_PHO_PANTHEON",
+"c": "medium",
+"ra": "The Kabeiroi/Dioskouroi, sons of Sydyk, are the Great Gods of the Phoenician seafaring cult in Philo."
+},
+{
+"s": "ENT_PHO_OURANOS",
+"t": "child_of",
+"o": "ENT_PHO_ELIOUN",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.10.15-16): Ouranos and Ge are children of Elioun/Hypsistos."
+},
+{
+"s": "ENT_PHO_GE",
+"t": "child_of",
+"o": "ENT_PHO_ELIOUN",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.10.15-16): Ge is daughter of Elioun/Hypsistos."
+},
+{
+"s": "ENT_PHO_OURANOS",
+"t": "consort_of",
+"o": "ENT_PHO_GE",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.10.16): the sibling pair Ouranos and Ge marry and beget Elos/Kronos and his brothers."
+},
+{
+"s": "ENT_PHO_OURANOS",
+"t": "sibling_of",
+"o": "ENT_PHO_GE",
+"c": "high",
+"ra": "Ouranos and Ge are both children of Elioun, brother and sister as well as consorts in Philo."
+},
+{
+"s": "ENT_PHO_ELOS_KRONOS",
+"t": "child_of",
+"o": "ENT_PHO_OURANOS",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.10.16-21): Elos/Kronos is son of Ouranos and Ge and overthrows his father."
+},
+{
+"s": "ENT_PHO_ELOS_KRONOS",
+"t": "child_of",
+"o": "ENT_PHO_GE",
+"c": "high",
+"ra": "Philo: Elos/Kronos is son of Ge by Ouranos."
+},
+{
+"s": "ENT_PHO_ELOS_KRONOS",
+"t": "opposes",
+"o": "ENT_PHO_OURANOS",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.10.21): Elos/Kronos makes war on, castrates and dethrones his father Ouranos."
+},
+{
+"s": "ENT_PHO_KABEIROI",
+"t": "child_of",
+"o": "ENT_PHO_SYDYK",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.10.25): the Kabeiroi/Dioskouroi are the sons of Sydyk."
+},
+{
+"s": "ENT_PHO_TAAUTOS",
+"t": "child_of",
+"o": "ENT_PHO_MISOR",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.10.14): Taautos is the son of Misor."
+},
+{
+"s": "ENT_PHO_SYDYK",
+"t": "sibling_of",
+"o": "ENT_PHO_MISOR",
+"c": "medium",
+"ra": "Philo pairs Sydyk and Misor as a kindred dyad of the same generation (Righteousness and Uprightness)."
+},
+{
+"s": "ENT_PHO_ELOS_KRONOS",
+"t": "equated_with",
+"o": "ENT_CRONUS",
+"c": "high",
+"ra": "Philo of Byblos explicitly identifies the Phoenician chief god Elos with the Greek Kronos (interpretatio graeca)."
+},
+{
+"s": "ENT_PHO_ELOS_KRONOS",
+"t": "equated_with",
+"o": "ENT_CAN_EL",
+"c": "high",
+"ra": "Elos is the Hellenized form of Northwest Semitic El; Philo's Elos corresponds to the Ugaritic/Canaanite high god El."
+},
+{
+"s": "ENT_PHO_OURANOS",
+"t": "equated_with",
+"o": "ENT_OURANOS",
+"c": "high",
+"ra": "Philo renders the Phoenician sky-god with the Greek name Ouranos, equating the two (interpretatio graeca)."
+},
+{
+"s": "ENT_PHO_GE",
+"t": "equated_with",
+"o": "ENT_GAIA",
+"c": "high",
+"ra": "Philo renders the Phoenician earth-goddess with the Greek name Ge (Gaia), equating the two (interpretatio graeca)."
+},
+{
+"s": "ENT_PHO_CHOUSOR",
+"t": "equated_with",
+"o": "ENT_CAN_KOTHAR",
+"c": "high",
+"ra": "Chousor is the Hellenized form of Ugaritic/Canaanite Kothar-wa-Khasis, the craftsman-god; same divine figure across the corpora."
+},
+{
+"s": "ENT_PHO_TAAUTOS",
+"t": "equated_with",
+"o": "ENT_EGY_THOTH",
+"c": "high",
+"ra": "Philo (Praep. Ev. 1.9.24): Taautos is the one whom the Egyptians call Thouth (Thoth), the inventor of writing."
+},
+{
+"s": "ENT_PHO_KABEIROI",
+"t": "equated_with",
+"o": "ENT_CABEIRI",
+"c": "high",
+"ra": "Philo names the sons of Sydyk Kabeiroi, the Phoenician interpretatio of the Greek Cabeiri (Great Gods of Samothrace)."
+},
+{
+"s": "ENT_PHO_KABEIROI",
+"t": "equated_with",
+"o": "ENT_DIOSCURI",
+"c": "medium",
+"ra": "Philo (Praep. Ev. 1.10.25) names the sons of Sydyk Dioskouroi as well as Kabeiroi/Corybantes."
+}
+]

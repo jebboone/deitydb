@@ -1,0 +1,98 @@
+[
+{
+"id": "ENT_ROM_EASTERN_CULTS",
+"name": "Eastern Cults of Roman Religion",
+"type": "collective / cult grouping",
+"trad": "Roman",
+"dom": "Eastern mystery and solar cults",
+"conf": "B",
+"note": "NEW HUB (collective). Grouping for the Near-Eastern mystery and solar deities that entered the Roman empire in Roman civic/military dress during the imperial period (1st-4th c. CE): Jupiter Dolichenus, the Heliopolitan triad, Dea Syria, Dea Caelestis, and Sol Invictus Elagabal. Not a single attested deity but an analytic cult-cluster following Beard/North/Price's treatment of the 'oriental cults'; created to wire these interpretatio-heavy figures together.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "cult grouping"
+},
+{
+"id": "ENT_ROM_JUPITER_DOLICHENUS",
+"name": "Jupiter Optimus Maximus Dolichenus",
+"type": "Military/storm god",
+"trad": "Roman",
+"dom": "Sky, war, military protection, iron/metal",
+"conf": "B",
+"note": "Roman imperial cult of the Baal of Doliche (a city in Commagene, eastern Anatolia), assimilated to Jupiter Optimus Maximus. Depicted standing on a bull, wearing a Phrygian cap, holding a double-axe and thunderbolt. A markedly military god whose cult spread along the limes via the army from the late 1st to mid-3rd c. CE (declining after the sack of Doliche c.253). Underlying figure is the Anatolian/Commagenian storm-god (a Baal-Hadad type) in interpretatio Romana. Attested by dolichena (sanctuaries) and dedications across the Danube, Rhine, and Britain; Beard/North/Price treat it among the oriental cults.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "deity"
+},
+{
+"id": "ENT_ROM_JUPITER_HELIOPOLITANUS",
+"name": "Jupiter Heliopolitanus",
+"type": "Solar/storm god",
+"trad": "Roman",
+"dom": "Sky, sun, fertility, oracular power",
+"conf": "B",
+"note": "Chief god of the Heliopolitan triad at Baalbek (Heliopolis, Lebanon): the Romanized Baal/Hadad of Heliopolis assimilated to Jupiter Optimus Maximus. Depicted as a stiff, frontal, cuirassed figure flanked by bulls, holding a whip and ears of grain, with a calathos and busts of the planetary gods. Centre of one of the largest temple complexes of the Roman world. The triad's two other members are Venus Heliopolitana and Mercury Heliopolitanus. Attested epigraphically at Baalbek and in dedications across the empire; Beard/North/Price discuss the Heliopolitan cult.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "deity"
+},
+{
+"id": "ENT_ROM_VENUS_HELIOPOLITANA",
+"name": "Venus Heliopolitana",
+"type": "Fertility/sky goddess",
+"trad": "Roman",
+"dom": "Fertility, love, sovereignty",
+"conf": "C",
+"note": "Female member of the Heliopolitan triad of Baalbek, the Romanized form of the local Syrian goddess (an Atargatis/Astarte type) assimilated to Venus. Consort of Jupiter Heliopolitanus and paired with Mercury Heliopolitanus in the triad. Attested in dedications and iconography (enthroned goddess) from Baalbek and the wider empire; less independently documented than the chief god. Treated within the Heliopolitan cult by Beard/North/Price.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "deity"
+},
+{
+"id": "ENT_ROM_MERCURY_HELIOPOLITANUS",
+"name": "Mercury Heliopolitanus",
+"type": "Youthful/messenger god",
+"trad": "Roman",
+"dom": "Trade, mediation, youthful divine son",
+"conf": "C",
+"note": "Third member of the Heliopolitan triad of Baalbek, a youthful god (often read as the divine son of the triad) assimilated to Mercury. Underlying figure is a local Syrian youth-god. Attested epigraphically alongside Jupiter and Venus Heliopolitanus at Baalbek and in scattered dedications; the least independently documented of the triad. Treated within the Heliopolitan cult by Beard/North/Price.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "deity"
+},
+{
+"id": "ENT_ROM_DEA_SYRIA",
+"name": "Dea Syria",
+"type": "Great goddess (mystery cult)",
+"trad": "Roman",
+"dom": "Fertility, love, sovereignty, prophecy",
+"conf": "B",
+"note": "The 'Syrian Goddess' as a cult within Roman religion: the Roman reception of Atargatis of Hierapolis-Bambyce. Her itinerant galli-style priests, ecstatic rites, sacred fish and lions, and processions are described by Lucian (De Dea Syria) and satirized by Apuleius (Metamorphoses 8). Spread through Syrian merchant and slave communities; a temple stood on the Janiculum at Rome. This entity is the Roman cult-form; the underlying deity is the existing ENT_ARA_ATARGATIS, to which it is wired. Beard/North/Price treat Dea Syria among the oriental cults.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "deity"
+},
+{
+"id": "ENT_ROM_DEA_CAELESTIS",
+"name": "Dea Caelestis",
+"type": "Celestial sovereign goddess",
+"trad": "Roman",
+"dom": "Sky/heaven, fertility, sovereignty, fortune",
+"conf": "B",
+"note": "The 'Celestial Goddess', Roman reception and official form of Carthaginian Tanit ('Tanit face of Baal'), often styled Juno Caelestis. After 146 BCE her cult was Romanized; she became the leading deity of Roman Africa (great temple at Carthage) and was promoted at Rome (notably under Septimius Severus, of African origin, and his dynasty). Associated with the moon, sovereignty, and fertility, sometimes shown riding a lion. This is the Roman cult-form; the underlying deity is the existing ENT_PHO_TANIT, to which it is wired. Discussed by Beard/North/Price.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "deity"
+},
+{
+"id": "ENT_ROM_SOL_INVICTUS_ELAGABAL",
+"name": "Sol Invictus Elagabal",
+"type": "Solar god (imperial cult)",
+"trad": "Roman",
+"dom": "Sun, sovereignty, imperial divine patronage",
+"conf": "B",
+"note": "The Emesene sun-god Elagabal in imperial Roman dress as 'Deus Sol Invictus Elagabal'. The emperor Elagabalus (Varius Avitus, r.218-222 CE), hereditary priest of the conical black baetyl of Emesa, brought the stone to Rome, built the Elagaballium on the Palatine, and tried to make Elagabal supreme over the traditional gods; the cult was abolished and the stone returned to Emesa after his murder. This is the short-lived Roman state cult-form; the underlying Syrian deity is the existing ENT_ARA_ELAGABAL (Elagabal of Emesa), and it is distinct from but a precursor to Aurelian's later ENT_ROM_SOL_INVICTUS. Attested on coinage and by Herodian and the Historia Augusta; Beard/North/Price discuss the episode.",
+"src": "SRC_BEARD_ROMAN_RELIGIONS",
+"per": "PER_ROM_IMPERIAL",
+"cat": "deity"
+}
+]

@@ -1,5 +1,37 @@
 # Changelog
 
+## v1.87.0 — 2026-06-17
+
+### Completeness build-out, Phase 3 — ancient Mediterranean & Near-East depth
+
+Third phase of the completeness program (`docs/COMPLETENESS_ROADMAP.md`), orchestrated
+research→adversarial-verify workflow (JSON only; applied + QA'd here). **+79 entities,
++174 relationships, +8 sources, 5 new traditions.** Scorecard now 3,524 entities /
+6,490 relationships / 411 sources / 116 traditions.
+
+- **Roman Mithraism** (new tradition) — the mystery cult fully built out: the seven grades
+  (Corax → Pater), the torchbearers Cautes & Cautopates, the Leontocephaline time-god
+  (equated with Aion), Petra Genetrix, and the tauroctony — around the existing Mithras
+  (the redundant Mithras↔Sol Invictus / Mithras↔Zoroastrian-Mithra edges were dropped by
+  the verifier as already present).
+- **The absent Anatolian pantheons** (4 new traditions) — **Lydian** (Kuvava/Kybebe→Cybele,
+  Santas), **Lycian** (Trqqas, the Twelve Gods, Eni Mahanahi), **Carian** (Zeus Labraundos,
+  Hecate of Lagina), **Commagene** (the Antiochus-I syncretism: Zeus-Oromasdes,
+  Apollo-Mithras-Helios-Hermes, Artagnes-Heracles-Ares) — wired by interpretatio to the
+  existing Greek/Iranian gods.
+- **Phoenician cosmogony** (Philo of Byblos/Sanchuniathon) — Elioun, Ouranos & Ge, Sydyk &
+  Misor, Chousor (=Kothar), Taautos (=Thoth), the first men Ousoos & Samemroumos.
+- **Roman Eastern cults** — Jupiter Dolichenus, the Heliopolitan triad, Dea Syria, Dea
+  Caelestis (=Tanit), Elagabalus.
+- **Mystery-cult inner casts** — the Samothracian tetrad (Axieros/Axiokersa/Axiokersos/
+  Kasmilos), the Eleusinian inner cast (Baubo, Eumolpus, Demophoon), Theos Hypsistos.
+- **Levantine biblical-attested minor deities** — Baal-Zebub of Ekron (the deity behind the
+  demon Beelzebub), Ashima, Adrammelech & Anammelech, Nibhaz & Tartak.
+
+Integrity-gated to 0 rejected / orphan / unsourced / unperiodized / rationale-less /
+orphan-source / unreviewed-duplicate.
+
+
 ## v1.86.0 — 2026-06-17
 
 ### Completeness build-out, Phase 2 — the Christian foundational layer + Second Temple Judaism

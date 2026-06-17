@@ -1,0 +1,98 @@
+[
+{
+"id": "ENT_LYC_PANTHEON",
+"name": "Lycian Pantheon",
+"type": "collective",
+"trad": "Lycian",
+"dom": "pantheon",
+"conf": "B",
+"note": "Hub collective for the gods of the Lycians (SW Anatolia), attested in Lycian-language inscriptions and Greek/Latin sources; many figures are Luwian-derived and known largely through interpretatio Graeca.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "pantheon"
+},
+{
+"id": "ENT_LYC_TRQQAS",
+"name": "Trqqas",
+"type": "deity",
+"trad": "Lycian",
+"dom": "storm, sky, weather",
+"conf": "B",
+"note": "Lycian storm/weather-god, the local continuation of Luwian/Anatolian Tarhunt (Tarhunz/Tarhunna); name attested in Lycian inscriptions, sometimes rendered Trqqñt.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYC_NATRI",
+"name": "Natri",
+"type": "deity",
+"trad": "Lycian",
+"dom": "light, prophecy, healing",
+"conf": "B",
+"note": "Lycian god equated with Apollo in the Greek/Lycian bilinguals; principal solar/oracular deity of Lycia, attested in coin legends and inscriptions.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYC_MALIYA",
+"name": "Maliya (Lycian)",
+"type": "deity",
+"trad": "Lycian",
+"dom": "protection, oaths, civic order",
+"conf": "B",
+"note": "Lycian goddess attested in inscriptions, often associated with Athena in interpretatio. HOMONYM: distinct local reflex of the existing Luwian Maliya (ENT_LUW_MALIYA), the broader Anatolian Maliya tradition.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYC_TWELVE_GODS",
+"name": "Lycian Twelve Gods (Dodeka Theoi)",
+"type": "collective",
+"trad": "Lycian",
+"dom": "collective cult, civic protection",
+"conf": "B",
+"note": "The 'Twelve Gods' worshipped as a collective in Lycia and Pisidia, frequently depicted as twelve figures and invoked together in dedications and reliefs; a distinctively Anatolian grouping.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "collective"
+},
+{
+"id": "ENT_LYC_ENI_MAHANAHI",
+"name": "Eni Mahanahi",
+"type": "deity",
+"trad": "Lycian",
+"dom": "mother goddess, divine motherhood",
+"conf": "B",
+"note": "'Mother of the Gods' (eni mahanahi), the chief Lycian mother-goddess named in inscriptions; identified with the Anatolian Mother (Cybele) and locally with Leto, patron goddess of the Letoon sanctuary.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYC_KAKASBOS",
+"name": "Kakasbos",
+"type": "deity",
+"trad": "Lycian",
+"dom": "protection, horsemanship, rural cult",
+"conf": "C",
+"note": "Club-bearing rider-god of Lycia and Pisidia, attested on numerous Roman-era votive reliefs as a mounted figure wielding a club; assimilated to Heracles.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "deity"
+},
+{
+"id": "ENT_LYC_SOZON",
+"name": "Sozon",
+"type": "deity",
+"trad": "Lycian",
+"dom": "protection, salvation, horsemanship",
+"conf": "C",
+"note": "Anatolian rider/savior god ('the Saviour') venerated in Lycia, Pisidia and Phrygia on votive reliefs; closely related to the Kakasbos rider-god type and assimilated to Apollo/Helios in some dedications.",
+"src": "SRC_BRYCE_LYCIANS",
+"per": "PER_LYCIAN",
+"cat": "deity"
+}
+]
