@@ -1,5 +1,44 @@
 # Changelog
 
+## v1.69.0 — 2026-06-16
+
+### Renaissance angelic & planetary magic: Shem ha-Mephorash 72 + Agrippa + Olympic Spirits
+
+The angelic-and-planetary half of the Renaissance-magic roadmap, and the
+benevolent counterpart to the v1.68.0 Goetia. New tradition **Renaissance
+Esoteric** (prefix `ENT_REN_`), reusing period `PER_EARLY_MODERN_OCCULT`; 3 new
+sources (Kircher's *Oedipus Aegyptiacus*; the *Arbatel de magia veterum* 1575;
+Thomas Rudd's *Treatise on Angel Magic* / "Goetia of Dr Rudd", ed.
+Skinner & Rankine). **+96 entities, +266 relationships**, 0 rejected,
+0 unsourced/unperiodized/orphan, 0 unreviewed duplicates. Scorecard now
+2,504 entities / 4,483 relationships / 292 sources / 88 traditions.
+
+- **The Shem ha-Mephorash 72 angels (`ENT_REN_*`):** all 72, Vehuiah (#1) →
+  Mumiah (#72), derived from the three verses Exodus 14:19-21 (each a three-letter
+  fragment of the divine Name + suffix -el/-iah), each tied to its 5° zodiacal
+  quinance and Chaldean ruling planet, with its traditional office. All
+  `member_of` the new collective `ENT_REN_SHEM_72` and `presides_over` 1-2 office
+  abstractions (healing, protection, love, justice, wisdom, knowledge, etc.).
+- **The 72 angels vs the 72 demons:** `ENT_REN_SHEM_72 opposes ENT_GOE_ARS_GOETIA`
+  — Rudd's tradition pairs the benevolent Shem angels against the Ars Goetia
+  demons. The opposition is modeled at the **set level**, since the specific
+  one-to-one assignments differ between tabulations (the two research passes
+  themselves disagreed on the ordinal mapping).
+- **Agrippa's planetary Intelligences & Spirits (`ENT_REN_*`):** the 7
+  Intelligence/Spirit pairs from the magic squares of *De occulta philosophia*
+  II.22 (Agiel/Zazel, Iophiel/Hismael, Graphiel/Bartzabel, Nakhiel/Sorath,
+  Hagiel/Kedemel, Tiriel/Taphthartharath, Malkah-be-Tarshishim/Chashmodai),
+  under the collective `ENT_REN_AGRIPPA_PLANETARY`.
+- **The Olympic Spirits of the Arbatel:** Aratron, Bethor, Phaleg, Och, Hagith,
+  Ophiel, Phul (with province counts), under `ENT_REN_OLYMPIC_SPIRITS`.
+- **Cross-links:** every planetary entity is `aligned_with` both its Greek
+  planetary cognate (Kronos/Zeus/Ares/Helios/Aphrodite/Hermes/Selene) and the
+  existing v1.66 Picatrix planetary spirit (`ENT_AST_*_SPIRIT`), building a
+  Picatrix↔Agrippa↔Arbatel planetary-magic hub; Intelligence `paired_with` Spirit,
+  and Olympic spirit `paired_with` Agrippa Intelligence, per planet.
+- Modeled as catalogued entities (name/rank/office/correspondence/cross-links);
+  no sigils or seals (CLAUDE.md boundary). Enochian/Dee is the queued follow-up.
+
 ## v1.68.0 — 2026-06-16
 
 ### Grimoire demonology: the Ars Goetia + the infernal hierarchy
