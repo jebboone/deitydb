@@ -116,6 +116,17 @@ header.hd nav { padding: 0 !important; background: var(--navy) !important; }
 
 .nav-link-ext:hover { border-color: rgba(255,255,255,0.35); }
 
+/* divider between the visual tools and the meta links */
+.nav-sep {
+  width: 1px;
+  align-self: stretch;
+  margin: 8px 8px;
+  background: rgba(255,255,255,0.16);
+}
+
+/* meta links sit slightly quieter than the primary tools */
+.nav-link-meta { color: #9fb1c9 !important; }
+
 /* hamburger (mobile) */
 .nav-toggle {
   display: none;
@@ -1181,6 +1192,8 @@ p.zero-results {
   .nav-link { padding: 10px 14px; font-size: 0.92rem; }
   .nav-link-ext { border: none; }
   .nav-toggle { display: flex; }
+  /* in the stacked mobile menu, show the divider as a faint horizontal rule */
+  .nav-sep { width: auto; align-self: stretch; height: 1px; margin: 6px 8px; }
 
   /* ── Hero ── */
   .db-hero { padding: 56px 16px 64px; }
