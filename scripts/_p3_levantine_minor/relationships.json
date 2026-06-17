@@ -1,0 +1,107 @@
+[
+{
+"s": "ENT_LEV_BAAL_ZEBUB",
+"t": "member_of",
+"o": "ENT_LEV_BIBLICAL_DEITIES",
+"c": "high",
+"ra": "Baal-Zebub of Ekron is one of the biblically-attested minor Levantine gods grouped under the DDD hub collective."
+},
+{
+"s": "ENT_LEV_ASHIMA",
+"t": "member_of",
+"o": "ENT_LEV_BIBLICAL_DEITIES",
+"c": "high",
+"ra": "Ashima of Hamath is named among the foreign gods of the resettled Samaria peoples (2 Kings 17:30)."
+},
+{
+"s": "ENT_LEV_ADRAMMELECH",
+"t": "member_of",
+"o": "ENT_LEV_BIBLICAL_DEITIES",
+"c": "high",
+"ra": "Adrammelech of Sepharvaim belongs to the DDD set of biblically-named minor Levantine deities (2 Kings 17:31)."
+},
+{
+"s": "ENT_LEV_ANAMMELECH",
+"t": "member_of",
+"o": "ENT_LEV_BIBLICAL_DEITIES",
+"c": "high",
+"ra": "Anammelech of Sepharvaim belongs to the DDD set of biblically-named minor Levantine deities (2 Kings 17:31)."
+},
+{
+"s": "ENT_LEV_NIBHAZ",
+"t": "member_of",
+"o": "ENT_LEV_BIBLICAL_DEITIES",
+"c": "high",
+"ra": "Nibhaz, god of the Avvites, is among the foreign gods of resettled Samaria (2 Kings 17:31)."
+},
+{
+"s": "ENT_LEV_TARTAK",
+"t": "member_of",
+"o": "ENT_LEV_BIBLICAL_DEITIES",
+"c": "high",
+"ra": "Tartak, god of the Avvites, is among the foreign gods of resettled Samaria (2 Kings 17:31)."
+},
+{
+"s": "ENT_LEV_ASTRONOE",
+"t": "member_of",
+"o": "ENT_LEV_BIBLICAL_DEITIES",
+"c": "medium",
+"ra": "Astronoe is a minor Sidonian/Levantine goddess in the broader DDD-adjacent set; grouped with the cohort hub."
+},
+{
+"s": "ENT_CHR_BEELZEBUL",
+"t": "reception_of",
+"o": "ENT_LEV_BAAL_ZEBUB",
+"c": "high",
+"ra": "The NT/Christian demon Beelzebub/Beelzebul is the polemical reception of the Philistine city-god Baal-Zebub of Ekron (2 Kings 1); the 'prince of demons' derives from this local Baal cult/epithet. Homonym pair flagged. Object ENT_CHR_BEELZEBUL confirmed in DB (Christian)."
+},
+{
+"s": "ENT_LEV_BAAL_ZEBUB",
+"t": "received_as",
+"o": "ENT_CHR_BEELZEBUL",
+"c": "high",
+"ra": "The original Ekronite deity Baal-Zebub was later received as the Christian demon Beelzebub, completing the deity-to-demon transmission. Bidirectional pair kept per DB house style (cf. Eshmun<->Asclepius)."
+},
+{
+"s": "ENT_LEV_BAAL_ZEBUB",
+"t": "cult_form_of",
+"o": "ENT_CAN_BAAL",
+"c": "medium",
+"ra": "Baal-Zebub of Ekron is a local Philistine cult form of the wider Canaanite storm-god Baal Hadad (ENT_CAN_BAAL); 'Zebub' likely garbles the Ugaritic Baal epithet 'zbl/Zebul' ('Prince')."
+},
+{
+"s": "ENT_LEV_ASTRONOE",
+"t": "equated_with",
+"o": "ENT_CAN_ASTARTE",
+"c": "medium",
+"ra": "Damascius' Sidonian Astronoe is widely identified as a hellenized aspect of Astarte in her healing-cult role; ancient interpretatio equation. Object ENT_CAN_ASTARTE confirmed."
+},
+{
+"s": "ENT_LEV_ASTRONOE",
+"t": "consort_of",
+"o": "ENT_PHO_ESHMUN",
+"c": "medium",
+"ra": "In Damascius' account Astronoe is the mother/lover who revives and deifies the Sidonian healer-god Eshmun, making her his consort in the local myth. Object ENT_PHO_ESHMUN confirmed."
+},
+{
+"s": "ENT_LEV_ADRAMMELECH",
+"t": "sibling_of",
+"o": "ENT_LEV_ANAMMELECH",
+"c": "low",
+"ra": "Adrammelech and Anammelech are the paired gods of Sepharvaim named together in the same child-sacrifice notice (2 Kings 17:31); paired/twinned figures."
+},
+{
+"s": "ENT_LEV_NIBHAZ",
+"t": "sibling_of",
+"o": "ENT_LEV_TARTAK",
+"c": "low",
+"ra": "Nibhaz and Tartak are the paired gods of the Avvites named together in 2 Kings 17:31; paired/twinned figures."
+},
+{
+"s": "ENT_LEV_ANAMMELECH",
+"t": "equated_with",
+"o": "ENT_CAN_ANAT",
+"c": "low",
+"ra": "One scholarly etymology parses Anammelech as 'Anath-melek' ('Anath is king/queen'), tentatively linking the theonym to the Canaanite goddess Anat (ENT_CAN_ANAT); speculative interpretatio."
+}
+]

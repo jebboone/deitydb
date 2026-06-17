@@ -1,0 +1,128 @@
+[
+{
+"s": "ENT_LYC_TRQQAS",
+"t": "member_of",
+"o": "ENT_LYC_PANTHEON",
+"c": "high",
+"ra": "Trqqas is the storm-god of the Lycian pantheon."
+},
+{
+"s": "ENT_LYC_NATRI",
+"t": "member_of",
+"o": "ENT_LYC_PANTHEON",
+"c": "high",
+"ra": "Natri is a principal Lycian deity."
+},
+{
+"s": "ENT_LYC_MALIYA",
+"t": "member_of",
+"o": "ENT_LYC_PANTHEON",
+"c": "high",
+"ra": "Lycian Maliya is a goddess of the Lycian pantheon."
+},
+{
+"s": "ENT_LYC_TWELVE_GODS",
+"t": "member_of",
+"o": "ENT_LYC_PANTHEON",
+"c": "high",
+"ra": "The Twelve Gods are a collective cult within Lycian religion."
+},
+{
+"s": "ENT_LYC_ENI_MAHANAHI",
+"t": "member_of",
+"o": "ENT_LYC_PANTHEON",
+"c": "high",
+"ra": "Eni Mahanahi, 'Mother of the Gods', is the chief mother-goddess of the Lycian pantheon."
+},
+{
+"s": "ENT_LYC_KAKASBOS",
+"t": "member_of",
+"o": "ENT_LYC_PANTHEON",
+"c": "high",
+"ra": "Kakasbos is a Lycian rider-god."
+},
+{
+"s": "ENT_LYC_SOZON",
+"t": "member_of",
+"o": "ENT_LYC_PANTHEON",
+"c": "high",
+"ra": "Sozon is an Anatolian rider/savior god venerated in Lycia."
+},
+{
+"s": "ENT_LYC_TRQQAS",
+"t": "equated_with",
+"o": "ENT_LUW_TARHUNZ",
+"c": "high",
+"ra": "Trqqas is the Lycian reflex of the Luwian storm-god Tarhunz (interpretatio across the Luwic continuum)."
+},
+{
+"s": "ENT_LYC_TRQQAS",
+"t": "equated_with",
+"o": "ENT_HTT_TARHUNNA",
+"c": "medium",
+"ra": "Trqqas continues the wider Anatolian storm-god Tarhunt, of which Hittite Tarhunna is the cognate."
+},
+{
+"s": "ENT_LYC_TRQQAS",
+"t": "equated_with",
+"o": "ENT_ZEUS",
+"c": "medium",
+"ra": "As the chief Anatolian storm/sky-god, Trqqas was identified with Zeus in Greek interpretatio of Lycian cult."
+},
+{
+"s": "ENT_LYC_NATRI",
+"t": "equated_with",
+"o": "ENT_APOLLO",
+"c": "high",
+"ra": "Natri is identified with Apollo in the Lycian-Greek bilingual inscriptions and coinage."
+},
+{
+"s": "ENT_LYC_MALIYA",
+"t": "aligned_with",
+"o": "ENT_LUW_MALIYA",
+"c": "medium",
+"ra": "Lycian Maliya is a local reflex of the broader Anatolian/Luwian goddess Maliya; flagged as a homonymous but distinct cult."
+},
+{
+"s": "ENT_LYC_ENI_MAHANAHI",
+"t": "equated_with",
+"o": "ENT_CYBELE",
+"c": "high",
+"ra": "Eni Mahanahi, 'Mother of the Gods', corresponds to the Anatolian Mother Goddess Cybele."
+},
+{
+"s": "ENT_LYC_ENI_MAHANAHI",
+"t": "syncretized_with",
+"o": "ENT_LETO",
+"c": "medium",
+"ra": "In Hellenized Lycia the mother-goddess of the Letoon was assimilated to Leto, mother of Apollo and Artemis."
+},
+{
+"s": "ENT_LYC_KAKASBOS",
+"t": "equated_with",
+"o": "ENT_HERACLES",
+"c": "high",
+"ra": "The club-bearing rider-god Kakasbos was assimilated to Heracles in Roman-era Lycia and Pisidia."
+},
+{
+"s": "ENT_LYC_SOZON",
+"t": "equated_with",
+"o": "ENT_APOLLO",
+"c": "medium",
+"ra": "The savior rider-god Sozon was identified with Apollo (Helios) in Anatolian votive dedications."
+},
+{
+"s": "ENT_LYC_SOZON",
+"t": "aligned_with",
+"o": "ENT_LYC_KAKASBOS",
+"c": "medium",
+"ra": "Sozon and Kakasbos share the same Anatolian club-bearing rider-god iconographic type."
+},
+{
+"s": "ENT_LYC_KAKASBOS",
+"t": "aligned_with",
+"o": "ENT_ARES",
+"c": "low",
+"ra": "As an armed warrior rider-god, Kakasbos is occasionally associated with martial deities such as Ares in regional cult, though Heracles is the primary equation."
+}
+]

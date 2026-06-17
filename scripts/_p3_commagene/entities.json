@@ -1,0 +1,74 @@
+[
+{
+"id": "ENT_COMM_PANTHEON",
+"name": "Pantheon of Commagene",
+"type": "collective",
+"trad": "Commagene",
+"dom": "dynastic cult, syncretism, royal ancestor cult",
+"conf": "B",
+"note": "Hub for the syncretic Greco-Iranian dynastic pantheon established by Antiochus I Theos; attested in the Nomos inscriptions and the colossal seated divine statues of the Nemrud Dag hierothesion.",
+"src": "SRC_VERSLUYS_COMMAGENE",
+"per": "PER_COMMAGENE",
+"cat": "Deity collective"
+},
+{
+"id": "ENT_COMM_ZEUS_OROMASDES",
+"name": "Zeus-Oromasdes",
+"type": "deity",
+"trad": "Commagene",
+"dom": "sky sovereignty, supreme god",
+"conf": "B",
+"note": "Supreme deity of the Commagenian pantheon, an explicit fusion of Greek Zeus with Iranian Ahura Mazda (Oromasdes); attested in the Nemrud Dag cult inscriptions and colossal statuary of Antiochus I.",
+"src": "SRC_VERSLUYS_COMMAGENE",
+"per": "PER_COMMAGENE",
+"cat": "Syncretic deity"
+},
+{
+"id": "ENT_COMM_APOLLO_MITHRAS_HELIOS_HERMES",
+"name": "Apollo-Mithras-Helios-Hermes",
+"type": "deity",
+"trad": "Commagene",
+"dom": "sun, light, mediation, messenger",
+"conf": "B",
+"note": "Composite solar/mediating deity of Commagene fusing Apollo, Iranian Mithra(s), Helios and Hermes; named in the Nomos inscriptions and depicted among the Nemrud Dag seated colossi.",
+"src": "SRC_VERSLUYS_COMMAGENE",
+"per": "PER_COMMAGENE",
+"cat": "Syncretic deity"
+},
+{
+"id": "ENT_COMM_ARTAGNES_HERACLES_ARES",
+"name": "Artagnes-Heracles-Ares",
+"type": "deity",
+"trad": "Commagene",
+"dom": "war, victory, heroic strength",
+"conf": "B",
+"note": "Composite warrior deity of Commagene fusing Iranian Verethragna (Artagnes) with Greek Heracles and Ares; attested at Nemrud Dag and in the dexiosis reliefs where Antiochus I clasps his hand.",
+"src": "SRC_VERSLUYS_COMMAGENE",
+"per": "PER_COMMAGENE",
+"cat": "Syncretic deity"
+},
+{
+"id": "ENT_COMM_TYCHE",
+"name": "Tyche of Commagene",
+"type": "deity",
+"trad": "Commagene",
+"dom": "fortune, territorial personification",
+"conf": "B",
+"note": "Personified fortune of the kingdom of Commagene, seated among the divine colossi at Nemrud Dag as the patroness of the land; a regional cult form of Greek Tyche.",
+"src": "SRC_VERSLUYS_COMMAGENE",
+"per": "PER_COMMAGENE",
+"cat": "Goddess/personification"
+},
+{
+"id": "ENT_COMM_ANTIOCHUS_I_THEOS",
+"name": "Antiochus I Theos of Commagene",
+"type": "deity",
+"trad": "Commagene",
+"dom": "deified king, dynastic ancestor cult",
+"conf": "B",
+"note": "King of Commagene (r. c.70-31 BCE) who established and was deified within the royal pantheon; enthroned among the gods at Nemrud Dag and shown in dexiosis with each deity. A deified historical mortal.",
+"src": "SRC_VERSLUYS_COMMAGENE",
+"per": "PER_COMMAGENE",
+"cat": "Deified human"
+}
+]

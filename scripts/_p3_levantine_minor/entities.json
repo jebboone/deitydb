@@ -1,0 +1,98 @@
+[
+{
+"id": "ENT_LEV_BIBLICAL_DEITIES",
+"name": "Biblically-Attested Minor Levantine Deities",
+"type": "collective",
+"trad": "Canaanite/Ugaritic",
+"dom": "pantheon/collective",
+"conf": "B",
+"note": "Hub collective for the DDD set of minor Northwest-Semitic gods named (mostly polemically) in the Hebrew Bible — the foreign gods of Samaria's resettled peoples (2 Kings 17) and Philistine/Sidonian local cults; grouping entity, not a worshipped deity.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_ISR_IRON_AGE",
+"cat": "collective"
+},
+{
+"id": "ENT_LEV_BAAL_ZEBUB",
+"name": "Baal-Zebub of Ekron",
+"type": "deity",
+"trad": "Canaanite/Ugaritic",
+"dom": "healing/oracle/storm-god local cult",
+"conf": "B",
+"note": "Philistine city-god of Ekron consulted as a healing oracle by King Ahaziah (2 Kings 1). Name = 'Lord of the Flies', almost certainly a Hebrew polemical distortion of an original Baal epithet ('zbl/Zebul' = 'Prince', as at Ugarit). The ORIGINAL deity behind the later Christian demon Beelzebub. Homonym note: distinct from the demon Beelzebul (ENT_CHR_BEELZEBUL), which is his reception.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_ISR_IRON_AGE",
+"cat": "deity"
+},
+{
+"id": "ENT_LEV_ASHIMA",
+"name": "Ashima of Hamath",
+"type": "deity",
+"trad": "Canaanite/Ugaritic",
+"dom": "city/tutelary deity",
+"conf": "B",
+"note": "Deity of the people of Hamath, named among the gods made by Samaria's resettled peoples (2 Kings 17:30). Plausibly connected to a NW-Semitic goddess Asham/Ashima attested at Elephantine (Anat-Ashima) and possibly to the Aramaean cult of Hamath; later rabbinic tradition imagined her as a goat/bald-figure idol.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_ISR_IRON_AGE",
+"cat": "deity"
+},
+{
+"id": "ENT_LEV_ADRAMMELECH",
+"name": "Adrammelech",
+"type": "deity",
+"trad": "Canaanite/Ugaritic",
+"dom": "underworld/sacrificial deity",
+"conf": "C",
+"note": "God of Sepharvaim to whom child sacrifice ('passing through fire') was made (2 Kings 17:31). Name = 'Adad/Adar is king' or 'the king is exalted'; identity debated — linked variously to Adad, a solar/Molek-type cult, or an Aramaean/Assyrian deity. Paired with Anammelech.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_ISR_IRON_AGE",
+"cat": "deity"
+},
+{
+"id": "ENT_LEV_ANAMMELECH",
+"name": "Anammelech",
+"type": "deity",
+"trad": "Canaanite/Ugaritic",
+"dom": "astral/sacrificial deity",
+"conf": "C",
+"note": "God of Sepharvaim receiving child sacrifice alongside Adrammelech (2 Kings 17:31). Name = 'Anu/Anath is king'; proposed links to the Mesopotamian sky-god Anu, a lunar deity, or (via 'Anath-melek') the Canaanite goddess Anat. Identity uncertain.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_ISR_IRON_AGE",
+"cat": "deity"
+},
+{
+"id": "ENT_LEV_NIBHAZ",
+"name": "Nibhaz",
+"type": "deity",
+"trad": "Canaanite/Ugaritic",
+"dom": "tutelary deity (obscure)",
+"conf": "C",
+"note": "God of the Avvites, named with Tartak among Samaria's resettled gods (2 Kings 17:31). Etymology obscure and possibly a scribal corruption; later Jewish tradition fancifully described a dog-shaped idol. No independent epigraphic attestation.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_ISR_IRON_AGE",
+"cat": "deity"
+},
+{
+"id": "ENT_LEV_TARTAK",
+"name": "Tartak",
+"type": "deity",
+"trad": "Canaanite/Ugaritic",
+"dom": "tutelary deity (obscure)",
+"conf": "C",
+"note": "God of the Avvites, paired with Nibhaz (2 Kings 17:31). Etymology uncertain (possibly an Elamite/Iranian theonym or scribal corruption); rabbinic tradition imagined an ass-shaped idol. No independent attestation outside the biblical notice.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_ISR_IRON_AGE",
+"cat": "deity"
+},
+{
+"id": "ENT_LEV_ASTRONOE",
+"name": "Astronoe",
+"type": "deity",
+"trad": "Canaanite/Ugaritic",
+"dom": "love/healing goddess (Sidonian)",
+"conf": "C",
+"note": "Sidonian goddess known from Damascius (Life of Isidore): a mountain-mother/huntress who, on the youth Eshmun's self-mutilation, revives and deifies him. Generally read as a hellenized aspect of Astarte tied to the Eshmun healing cult at Sidon.",
+"src": "SRC_DDD_BIBLE",
+"per": "PER_PHO_IRON_AGE",
+"cat": "deity"
+}
+]

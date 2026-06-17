@@ -1,0 +1,142 @@
+[
+{
+"s": "ENT_SYN_MITHRAS",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Mithras is the tutelary god of the Roman Mithraic mystery cult; wires the pre-existing Mithras into the new hub. Clauss ch.1."
+},
+{
+"s": "ENT_MITH_CORAX",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Corax is the first of the seven grades of the Mithraic mysteries. Ostia grade-mosaic; Jerome Ep.107."
+},
+{
+"s": "ENT_MITH_NYMPHUS",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Nymphus is the second of the seven Mithraic grades. Clauss ch.10."
+},
+{
+"s": "ENT_MITH_MILES",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Miles is the third of the seven Mithraic grades. Tertullian De corona 15."
+},
+{
+"s": "ENT_MITH_LEO",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Leo is the fourth of the seven Mithraic grades. Porphyry De antro 15."
+},
+{
+"s": "ENT_MITH_PERSES",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Perses is the fifth of the seven Mithraic grades. Clauss ch.10."
+},
+{
+"s": "ENT_MITH_HELIODROMUS",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Heliodromus is the sixth of the seven Mithraic grades. Clauss ch.10."
+},
+{
+"s": "ENT_MITH_PATER",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Pater is the seventh and highest of the seven Mithraic grades. Clauss ch.10."
+},
+{
+"s": "ENT_MITH_CAUTES",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Cautes, the upward torchbearer, is a standing figure of the Mithraic cult. Clauss ch.9."
+},
+{
+"s": "ENT_MITH_CAUTOPATES",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "Cautopates, the downward torchbearer, is a standing figure of the Mithraic cult. Clauss ch.9."
+},
+{
+"s": "ENT_MITH_LEONTOCEPHALINE",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "medium",
+"ra": "The lion-headed time-god is part of Mithraic statuary, though its precise role is debated. Clauss ch.13."
+},
+{
+"s": "ENT_MITH_PETRA_GENETRIX",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "The birth-giving rock is a core element of Mithraic cosmogonic imagery. Clauss ch.6."
+},
+{
+"s": "ENT_MITH_TAUROCTONY",
+"t": "member_of",
+"o": "ENT_MITH_MYSTERIES",
+"c": "high",
+"ra": "The tauroctony is the central cult-scene of the Mithraic mysteries. Beck; Clauss ch.7."
+},
+{
+"s": "ENT_MITH_CAUTES",
+"t": "sibling_of",
+"o": "ENT_MITH_CAUTOPATES",
+"c": "high",
+"ra": "Cautes and Cautopates are the paired dadophoroi (twin torchbearers) of Mithras, regularly flanking the tauroctony as a complementary pair. Clauss ch.9."
+},
+{
+"s": "ENT_MITH_CAUTES",
+"t": "associated_with",
+"o": "ENT_SYN_MITHRAS",
+"c": "high",
+"ra": "Cautes is an attendant torchbearer of Mithras within the cult scene. Clauss ch.9."
+},
+{
+"s": "ENT_MITH_CAUTOPATES",
+"t": "associated_with",
+"o": "ENT_SYN_MITHRAS",
+"c": "high",
+"ra": "Cautopates is an attendant torchbearer of Mithras within the cult scene. Clauss ch.9."
+},
+{
+"s": "ENT_MITH_PETRA_GENETRIX",
+"t": "associated_with",
+"o": "ENT_SYN_MITHRAS",
+"c": "high",
+"ra": "Mithras is the petrogenes, born from the petra genetrix; the rock is the source of his cosmogonic birth. Clauss ch.6."
+},
+{
+"s": "ENT_MITH_TAUROCTONY",
+"t": "associated_with",
+"o": "ENT_SYN_MITHRAS",
+"c": "high",
+"ra": "The tauroctony depicts Mithras himself slaying the bull; the scene is inseparable from the god. Beck."
+},
+{
+"s": "ENT_MITH_LEONTOCEPHALINE",
+"t": "equated_with",
+"o": "ENT_SYN_AION",
+"c": "medium",
+"ra": "The lion-headed Mithraic time-god is widely identified with Aion (and Zurvan), a god of eternity/unbounded time. Interpretatio is scholarly-attested but debated. Clauss ch.13."
+},
+{
+"s": "ENT_MITH_HELIODROMUS",
+"t": "associated_with",
+"o": "ENT_ROM_SOL_INVICTUS",
+"c": "medium",
+"ra": "The sixth grade, the Sun-Runner, is placed under Sol and embodies the cult's solar courier symbolism, linking the grade system to Sol Invictus. Clauss ch.10, ch.12."
+}
+]

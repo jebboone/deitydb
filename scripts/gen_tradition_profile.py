@@ -56,6 +56,12 @@ P = {
  "Coptic Christian":("mainstream-scriptural","regional","Coptic (Egyptian) Christianity — the church of Athanasius and Shenoute, cradle of monasticism."),
  "Christian/Heterodox":("heterodox-sect","marginal","Intra-Christian heresies and dualist movements (Arian, Nestorian, Pelagian, Bogomil, Cathar) — condemned/suppressed by the mainstream church."),
  "Christian demonology":("esoteric-magic","learned-subculture","The learned Christian demonological tradition beyond the Goetia — the demonologists' chief-demon hierarchies (the Seven Princes, the Loudun possession demons)."),
+ # ancient-depth additions (completeness Phase 3)
+ "Mithraic Mysteries":("mystical-current","Roman-imperial initiatory","The Roman cult of Mithras — an initiatory all-male mystery religion of the imperial army (2nd-4th c. CE), structured around the tauroctony and seven grades."),
+ "Lydian":("civic-polytheism","regional","The Lydian pantheon of Iron-Age western Anatolia (Kuvava/Kybebe, Santas), ancestral to several Greek-Anatolian cults."),
+ "Lycian":("civic-polytheism","regional","The Lycian civic polytheism of SW Anatolia (Trqqas, the Twelve Gods, Eni Mahanahi)."),
+ "Carian":("civic-polytheism","regional","The Carian civic polytheism of SW Anatolia, centered on Zeus Labraundos and the great Hecate of Lagina."),
+ "Commagene":("civic-polytheism","regional","The syncretic Hellenistic-Iranian royal cult of Commagene (Antiochus I, Nemrud Dağ): Zeus-Oromasdes, Apollo-Mithras, Artagnes-Heracles."),
  # esoteric-magic (learned ritual-magic / grimoire)
  "Goetic/Solomonic":("esoteric-magic","learned-subculture"),"Renaissance Esoteric":("esoteric-magic","learned-subculture"),
  "Solomonic Magic":("esoteric-magic","learned-subculture"),"Astral Magic":("esoteric-magic","learned-subculture"),

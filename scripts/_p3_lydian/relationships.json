@@ -1,0 +1,121 @@
+[
+{
+"s": "ENT_LYD_KUVAVA",
+"t": "member_of",
+"o": "ENT_LYD_PANTHEON",
+"c": "high",
+"ra": "Kuvava/Kybebe is the chief mother-goddess of the Lydian pantheon at Sardis (Munn 2006)."
+},
+{
+"s": "ENT_LYD_SANTAS",
+"t": "member_of",
+"o": "ENT_LYD_PANTHEON",
+"c": "high",
+"ra": "Santas/Sandon is a principal Lydian war/kingship god (Munn 2006)."
+},
+{
+"s": "ENT_LYD_ARTIMUS",
+"t": "member_of",
+"o": "ENT_LYD_PANTHEON",
+"c": "high",
+"ra": "Artimus is attested across the Lydian inscriptional pantheon (Munn 2006)."
+},
+{
+"s": "ENT_LYD_PLDANS",
+"t": "member_of",
+"o": "ENT_LYD_PANTHEON",
+"c": "medium",
+"ra": "Pldans appears in Lydian inscriptions, often paired with Artimus."
+},
+{
+"s": "ENT_LYD_LAMETRUS",
+"t": "member_of",
+"o": "ENT_LYD_PANTHEON",
+"c": "medium",
+"ra": "Lametrus is an attested Lydian grain-goddess theonym."
+},
+{
+"s": "ENT_LYD_BAKIVALIS",
+"t": "member_of",
+"o": "ENT_LYD_PANTHEON",
+"c": "medium",
+"ra": "Bakivalis reflects the Lydian Dionysiac/wine-cult sphere."
+},
+{
+"s": "ENT_LYD_KANDAULES",
+"t": "member_of",
+"o": "ENT_LYD_PANTHEON",
+"c": "medium",
+"ra": "Kandaules is a Lydian divine epithet (Hermes-type guardian) within Sardian cult."
+},
+{
+"s": "ENT_LYD_ARTIMUS",
+"t": "paired_with",
+"o": "ENT_LYD_PLDANS",
+"c": "medium",
+"ra": "Artimus and Pldans recur together in Lydian protective inscription formulae, mirroring the Greek Artemis-Apollo pairing."
+},
+{
+"s": "ENT_LYD_KUVAVA",
+"t": "received_as",
+"o": "ENT_CYBELE",
+"c": "high",
+"ra": "The Lydian Kuvava/Kybebe is a key link in the reception chain (Kubaba > Kuvava/Kybebe > Cybele) producing the Greek Cybele/Magna Mater (Munn 2006)."
+},
+{
+"s": "ENT_LYD_KUVAVA",
+"t": "equated_with",
+"o": "ENT_LUW_KUBABA",
+"c": "high",
+"ra": "Lydian Kuvava continues the name and figure of the Luwian/Neo-Hittite Kubaba of Carchemish."
+},
+{
+"s": "ENT_LYD_SANTAS",
+"t": "equated_with",
+"o": "ENT_LUW_SANTA",
+"c": "high",
+"ra": "Lydian Santas is the western-Anatolian continuation of the Luwian war/plague god Santa (ancestor of Cilician Sandas)."
+},
+{
+"s": "ENT_LYD_SANTAS",
+"t": "equated_with",
+"o": "ENT_HERACLES",
+"c": "high",
+"ra": "Greeks interpreted the club-bearing Lydian Santas/Sandon as Heracles, grounding the Heraclid dynasty of Sardis (interpretatio Graeca; Munn 2006)."
+},
+{
+"s": "ENT_LYD_ARTIMUS",
+"t": "equated_with",
+"o": "ENT_ARTEMIS",
+"c": "high",
+"ra": "Lydian Artimus is the local form regularly equated with Greek Artemis on phonetic and functional grounds."
+},
+{
+"s": "ENT_LYD_PLDANS",
+"t": "equated_with",
+"o": "ENT_APOLLO",
+"c": "medium",
+"ra": "Pldans is conventionally identified with Greek Apollo by name and protective/oracular function."
+},
+{
+"s": "ENT_LYD_LAMETRUS",
+"t": "equated_with",
+"o": "ENT_DEMETER",
+"c": "medium",
+"ra": "Lydian Lametrus is identified with Greek Demeter by name and agrarian grain function."
+},
+{
+"s": "ENT_LYD_BAKIVALIS",
+"t": "syncretized_with",
+"o": "ENT_DIONYSUS",
+"c": "medium",
+"ra": "The Lydian Baki- wine/ecstatic cult is syncretized with Dionysus, who carries the Lydian-derived epithet Bakchos."
+},
+{
+"s": "ENT_LYD_KANDAULES",
+"t": "equated_with",
+"o": "ENT_HERMES",
+"c": "medium",
+"ra": "Hipponax reports Kandaules ('dog-throttler') as a Lydian title of Hermes, a guardian/psychopomp figure."
+}
+]
