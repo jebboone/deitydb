@@ -54,6 +54,7 @@ INSERT INTO tradition_profile (tradition,tradition_class,prevalence,status_note)
  ('Ethiopian Christian','mainstream-scriptural','regional','Ethiopian Tewahedo Christianity — a major non-Chalcedonian church with the Kebra Nagast cycle and its own saints and angelology.'),
  ('Etruscan','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Finnish','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
+ ('Folk Catholic','vernacular-folklore','living-regional','The folk-canonized (unofficial) saints of Latin America — genuinely venerated but unrecognized by Rome (Santa Muerte, Maximón, Jesús Malverde).'),
  ('Germanic Legend','legendary-literary','literary','The Germanic heroic-legendary cycle (the Völsung/Nibelung matter — Sigurð, Brynhild, Wayland) — a mythos in saga and epic, like the Arthurian material.'),
  ('Germanic/Norse','civic-polytheism','dominant','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Gnostic','heterodox-sect','marginal','A heterodox or minority sect — a real religious community but marginal to, and often suppressed by, the dominant faith.'),
@@ -95,6 +96,7 @@ INSERT INTO tradition_profile (tradition,tradition_class,prevalence,status_note)
  ('Marcionite','heterodox-sect','marginal','A heterodox or minority sect — a real religious community but marginal to, and often suppressed by, the dominant faith.'),
  ('Masonic/Rosicrucian','esoteric-magic','learned-subculture','Freemasonry and Rosicrucianism — fraternal esoteric traditions (the Great Architect, Hiram Abiff, Christian Rosenkreutz).'),
  ('Meroitic','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
+ ('Mesoamerican','civic-polytheism','pre-Columbian source','Pre-Columbian Mesoamerican religion, included here ONLY at its documented Catholic-syncretism seams (e.g. Tonantzin → Our Lady of Guadalupe) — not the full pantheon.'),
  ('Mesopotamian','civic-polytheism','dominant','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Mithraic Mysteries','mystical-current','Roman-imperial initiatory','The Roman cult of Mithras — an initiatory all-male mystery religion of the imperial army (2nd-4th c. CE), structured around the tauroctony and seven grades.'),
  ('Moabite','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
@@ -109,6 +111,7 @@ INSERT INTO tradition_profile (tradition,tradition_class,prevalence,status_note)
  ('Phoenician','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Phrygian','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Pre-Islamic Arabian','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
+ ('Rastafari','afro-diasporic','living-worldwide','Rastafari — a living Abrahamic-derived Caribbean religion venerating Jah and Haile Selassie I, with an Ethiopianist/Zion theology.'),
  ('Renaissance Esoteric','esoteric-magic','learned-subculture','A learned ritual-magic / grimoire tradition — historically present and genuinely influential, but a textual subculture of a few literate specialists, framed within and drawing on the dominant religion rather than a mainstream faith in its own right.'),
  ('Roman','civic-polytheism','dominant','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Roman/Persian reception','civic-polytheism','dominant','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
@@ -134,9 +137,11 @@ INSERT INTO tradition_profile (tradition,tradition_class,prevalence,status_note)
  ('Urartian','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Valentinian','heterodox-sect','marginal','A heterodox or minority sect — a real religious community but marginal to, and often suppressed by, the dominant faith.'),
  ('Venetic','civic-polytheism','regional','The Venetic pantheon of pre-Roman NE Italy, centered on the goddess Reitia.'),
+ ('Vodou','afro-diasporic','living-worldwide','Haitian Vodou — a living Afro-Catholic religion; the lwa (Fon/Yoruba/Kongo spirits) served in syncretism with Catholic saints under the remote creator Bondye.'),
  ('Wicca','modern-esoteric','modern-worldwide','Wicca / modern pagan witchcraft — the largest contemporary neopagan religion (Gardner, 1940s+), duotheist (the Horned God & the Triple Goddess).'),
  ('Yarsan','heterodox-sect','living-minority','Yarsan / Ahl-e Haqq — a living western-Iranian religion centered on Sultan Sahak and the chain of divine manifestations.'),
  ('Yazidi','heterodox-sect','living-minority','The Yazidi — a distinct living Kurdish religion centered on Tawûsî Melek (the Peacock Angel) and the Heptad; an endogamous minority, NOT a sect of Islam.'),
+ ('Yoruba-Orisha','afro-diasporic','living-worldwide','The Orisha tradition — the Yoruba pantheon and its New-World diaspora (Santería/Lucumí, Candomblé), the orishas syncretized with Catholic saints and Marian titles.'),
  ('Zoroastrian','civic-polytheism','dominant','An established civic/state polytheism — the mainstream public religion of its society in its era.')
 ON CONFLICT (tradition) DO UPDATE SET tradition_class=EXCLUDED.tradition_class, prevalence=EXCLUDED.prevalence, status_note=EXCLUDED.status_note;
 

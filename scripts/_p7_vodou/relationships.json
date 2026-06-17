@@ -1,0 +1,219 @@
+[
+{
+"s": "ENT_VOD_LWA",
+"t": "emanates_from",
+"o": "ENT_VOD_BONDYE",
+"c": "high",
+"ra": "The lwa serve and mediate the remote creator Bondye, who is their ultimate source (Métraux; Murphy)."
+},
+{
+"s": "ENT_VOD_RADA",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "Rada is one of the principal nanchon (divisions) of the lwa."
+},
+{
+"s": "ENT_VOD_PETWO",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "Petwo is one of the principal nanchon (divisions) of the lwa."
+},
+{
+"s": "ENT_VOD_LEGBA",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "Papa Legba is a lwa."
+},
+{
+"s": "ENT_VOD_LEGBA",
+"t": "member_of",
+"o": "ENT_VOD_RADA",
+"c": "high",
+"ra": "Legba is served as a Rada lwa, saluted first in ceremony (Métraux)."
+},
+{
+"s": "ENT_VOD_ERZULIE_FREDA",
+"t": "member_of",
+"o": "ENT_VOD_RADA",
+"c": "high",
+"ra": "Erzulie Freda Dahomey is a Rada lwa of love and beauty (Murphy)."
+},
+{
+"s": "ENT_VOD_ERZULIE_DANTOR",
+"t": "member_of",
+"o": "ENT_VOD_PETWO",
+"c": "high",
+"ra": "Erzulie Dantor is the fierce Petwo counterpart of Erzulie (Murphy)."
+},
+{
+"s": "ENT_VOD_ERZULIE_DANTOR",
+"t": "opposes",
+"o": "ENT_VOD_ERZULIE_FREDA",
+"c": "medium",
+"ra": "The Petwo Dantor and Rada Freda form the documented hot/cool polarity of the Erzulie complex (Murphy)."
+},
+{
+"s": "ENT_VOD_DAMBALLA",
+"t": "member_of",
+"o": "ENT_VOD_RADA",
+"c": "high",
+"ra": "Damballa Wedo is the senior Rada serpent lwa (Métraux)."
+},
+{
+"s": "ENT_VOD_AYIDA_WEDO",
+"t": "member_of",
+"o": "ENT_VOD_RADA",
+"c": "high",
+"ra": "Ayida-Wedo is a Rada serpent lwa (Métraux)."
+},
+{
+"s": "ENT_VOD_AYIDA_WEDO",
+"t": "consort_of",
+"o": "ENT_VOD_DAMBALLA",
+"c": "high",
+"ra": "Ayida-Wedo and Damballa are the paired rainbow/serpent consorts (Métraux)."
+},
+{
+"s": "ENT_VOD_BARON_SAMEDI",
+"t": "member_of",
+"o": "ENT_VOD_GEDE",
+"c": "high",
+"ra": "Baron Samedi heads the Gede family of death lwa (Murphy)."
+},
+{
+"s": "ENT_VOD_GEDE",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "The Gede are a family/nanchon within the lwa."
+},
+{
+"s": "ENT_VOD_MAMAN_BRIGITTE",
+"t": "member_of",
+"o": "ENT_VOD_GEDE",
+"c": "high",
+"ra": "Maman Brigitte is a Gede lwa of the cemetery (Murphy)."
+},
+{
+"s": "ENT_VOD_MAMAN_BRIGITTE",
+"t": "consort_of",
+"o": "ENT_VOD_BARON_SAMEDI",
+"c": "high",
+"ra": "Maman Brigitte is the documented consort of Baron Samedi (Murphy)."
+},
+{
+"s": "ENT_VOD_OGOU",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "Ogou (Yoruba-derived Ogun) is a lwa of iron and war served across nanchon (Murphy)."
+},
+{
+"s": "ENT_VOD_AGWE",
+"t": "member_of",
+"o": "ENT_VOD_RADA",
+"c": "high",
+"ra": "Agwe, sovereign of the sea, is a Rada lwa (Métraux)."
+},
+{
+"s": "ENT_VOD_LASIRENE",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "La Sirène, the mermaid sea spirit, is a lwa (Métraux)."
+},
+{
+"s": "ENT_VOD_LASIRENE",
+"t": "consort_of",
+"o": "ENT_VOD_AGWE",
+"c": "medium",
+"ra": "La Sirène is paired with Agwe in the marine complex of lwa (Métraux)."
+},
+{
+"s": "ENT_VOD_MARASSA",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "The Marassa (divine twins) are among the lwa served (Murphy)."
+},
+{
+"s": "ENT_VOD_LOKO",
+"t": "member_of",
+"o": "ENT_VOD_RADA",
+"c": "high",
+"ra": "Loko is a Rada lwa, patron of the priesthood (Métraux)."
+},
+{
+"s": "ENT_VOD_SIMBI",
+"t": "member_of",
+"o": "ENT_VOD_LWA",
+"c": "high",
+"ra": "Simbi, the Kongo-derived water lwa, is a lwa often served in Petwo (Métraux)."
+},
+{
+"s": "ENT_VOD_SIMBI",
+"t": "member_of",
+"o": "ENT_VOD_PETWO",
+"c": "medium",
+"ra": "Simbi is frequently served within the Petwo nanchon (Métraux)."
+},
+{
+"s": "ENT_VOD_LEGBA",
+"t": "syncretized_with",
+"o": "ENT_SAINT_PETER",
+"c": "high",
+"ra": "Papa Legba, keeper of the gates, is popularly identified with St Peter (the keys) in Vodou chromolithography (Métraux; Murphy)."
+},
+{
+"s": "ENT_VOD_LEGBA",
+"t": "syncretized_with",
+"o": "ENT_NT_LAZARUS_BETHANY",
+"c": "medium",
+"ra": "In some lineages the aged, crutch-bearing Legba is imaged as St Lazarus (Métraux)."
+},
+{
+"s": "ENT_VOD_LEGBA",
+"t": "aligned_with",
+"o": "ENT_SAINT_ANTHONY_PADUA",
+"c": "medium",
+"ra": "St Anthony of Padua is also documented as a chromolithographic image for Legba in parts of Haiti (Métraux)."
+},
+{
+"s": "ENT_VOD_ERZULIE_FREDA",
+"t": "syncretized_with",
+"o": "ENT_MARY_SORROWS",
+"c": "high",
+"ra": "Erzulie Freda is popularly identified with the Mater Dolorosa / Our Lady of Sorrows (Murphy; Métraux)."
+},
+{
+"s": "ENT_VOD_ERZULIE_DANTOR",
+"t": "syncretized_with",
+"o": "ENT_MARY_CZESTOCHOWA",
+"c": "high",
+"ra": "Erzulie Dantor is popularly imaged as the Black Madonna of Częstochowa (Murphy)."
+},
+{
+"s": "ENT_VOD_ERZULIE_DANTOR",
+"t": "aligned_with",
+"o": "ENT_CHR_BARBARA",
+"c": "medium",
+"ra": "St Barbara also appears among the Catholic images associated with the fierce Erzulie Dantor in Vodou practice (Murphy)."
+},
+{
+"s": "ENT_VOD_OGOU",
+"t": "syncretized_with",
+"o": "ENT_SAINT_JAMES_GREATER",
+"c": "high",
+"ra": "Ogou is popularly identified with St James the Greater (Santiago, the mounted warrior) (Murphy; Métraux)."
+},
+{
+"s": "ENT_VOD_MARASSA",
+"t": "syncretized_with",
+"o": "ENT_SAINT_COSMAS_DAMIAN",
+"c": "high",
+"ra": "The divine twins Marassa are popularly imaged as Sts Cosmas and Damian, the holy twin physicians (Murphy; Métraux)."
+}
+]

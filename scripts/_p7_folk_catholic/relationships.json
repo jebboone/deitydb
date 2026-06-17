@@ -1,0 +1,128 @@
+[
+{
+"s": "ENT_FCS_SANTA_MUERTE",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "Santa Muerte is the most widely venerated of the Latin American folk saints (Chesnut)."
+},
+{
+"s": "ENT_FCS_SAN_LA_MUERTE",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "San La Muerte is a folk-canonized intercessory figure of the Litoral region (Graziano)."
+},
+{
+"s": "ENT_FCS_MAXIMON",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "Maximón/San Simón is a publicly venerated Guatemalan folk saint."
+},
+{
+"s": "ENT_FCS_JESUS_MALVERDE",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "Jesús Malverde is a Sinaloan folk saint (Graziano)."
+},
+{
+"s": "ENT_FCS_NINO_FIDENCIO",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "Niño Fidencio heads a living folk-saint devotion (fidencismo)."
+},
+{
+"s": "ENT_FCS_SARITA_COLONIA",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "Sarita Colonia is a Peruvian folk saint of the marginalized (Graziano)."
+},
+{
+"s": "ENT_FCS_DIFUNTA_CORREA",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "Difunta Correa is a major Argentine folk saint (Graziano)."
+},
+{
+"s": "ENT_FCS_SAN_PASCUALITO",
+"t": "member_of",
+"o": "ENT_FCS_FOLK_SAINTS",
+"c": "high",
+"ra": "San Pascualito is a Guatemalan/Chiapas folk saint of Death."
+},
+{
+"s": "ENT_FCS_SANTA_MUERTE",
+"t": "reception_of",
+"o": "ENT_DEATH",
+"c": "high",
+"ra": "Santa Muerte's skeletal scythe-bearing iconography is a devotional reception of personified Death / the Grim Reaper (Chesnut, Devoted to Death)."
+},
+{
+"s": "ENT_FCS_SAN_LA_MUERTE",
+"t": "reception_of",
+"o": "ENT_DEATH",
+"c": "high",
+"ra": "San La Muerte is likewise a personification of Death received as a folk saint (Graziano)."
+},
+{
+"s": "ENT_FCS_SAN_PASCUALITO",
+"t": "reception_of",
+"o": "ENT_DEATH",
+"c": "medium",
+"ra": "San Pascualito is venerated as a skeletal personification of Death in Maya-Catholic devotion."
+},
+{
+"s": "ENT_FCS_SAN_LA_MUERTE",
+"t": "aligned_with",
+"o": "ENT_FCS_SANTA_MUERTE",
+"c": "medium",
+"ra": "San La Muerte (Southern Cone) and Santa Muerte (Mexico) are cognate folk personifications of Death venerated as saints (Chesnut)."
+},
+{
+"s": "ENT_FCS_MAXIMON",
+"t": "syncretized_with",
+"o": "ENT_NT_SIMON_ZEALOT",
+"c": "medium",
+"ra": "Maximón is publicly identified as 'San Simón,' overlaying the apostle Simon onto a Maya ancestral figure (Graziano); only the public identification is modeled."
+},
+{
+"s": "ENT_FCS_JESUS_MALVERDE",
+"t": "aligned_with",
+"o": "ENT_JESUS_CHRIST",
+"c": "low",
+"ra": "Devotees liken Malverde's protective benefaction to a Christ-like 'generous bandit' figure; the popular name evokes Jesus, though no formal identification exists (Graziano)."
+},
+{
+"s": "ENT_FCS_NINO_FIDENCIO",
+"t": "aligned_with",
+"o": "ENT_JESUS_CHRIST",
+"c": "low",
+"ra": "Fidencista devotion publicly frames Niño Fidencio's healing ministry in imitatio Christi terms (Graziano)."
+},
+{
+"s": "ENT_FCS_SARITA_COLONIA",
+"t": "aligned_with",
+"o": "ENT_SAINT_MARY",
+"c": "low",
+"ra": "Sarita Colonia's public cult casts her as a compassionate maternal intercessor for the marginalized, modeled on Marian devotion (Graziano)."
+},
+{
+"s": "ENT_FCS_DIFUNTA_CORREA",
+"t": "aligned_with",
+"o": "ENT_SAINT_MARY",
+"c": "low",
+"ra": "The Difunta Correa devotion centers on the miraculously nursing mother, drawing on Marian maternal-intercessor imagery (Graziano)."
+},
+{
+"s": "ENT_FCS_FOLK_SAINTS",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "medium",
+"ra": "Latin American folk sanctity adapts the Catholic cult of the saints and Marian intercession into vernacular, locally canonized figures (Graziano)."
+}
+]

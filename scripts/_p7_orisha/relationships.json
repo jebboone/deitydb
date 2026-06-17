@@ -1,0 +1,233 @@
+[
+{
+"s": "ENT_ORI_OLODUMARE",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Olodumare is the supreme being at the head of the Yoruba orisha cosmos (Bascom)."
+},
+{
+"s": "ENT_ORI_ESHU",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Eshu/Eleggua is a principal orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_OBATALA",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Obatala is a senior orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_OGUN",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Ogun is a principal orisha (Bascom)."
+},
+{
+"s": "ENT_ORI_SHANGO",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Shango is a principal orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_OSHUN",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Oshun is a principal orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_YEMOJA",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Yemoja is a principal orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_OYA",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Oya is a principal orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_BABALU_AYE",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Babalu-Aye is a principal orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_ORUNMILA",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Orunmila is the orisha of Ifa wisdom (Bascom)."
+},
+{
+"s": "ENT_ORI_OLOKUN",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "Olokun is an orisha of the deep sea (Brandon)."
+},
+{
+"s": "ENT_ORI_IBEJI",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "high",
+"ra": "The Ibeji twins are venerated among the orisha (Bascom)."
+},
+{
+"s": "ENT_ORI_AGANJU",
+"t": "member_of",
+"o": "ENT_ORI_PANTHEON",
+"c": "medium",
+"ra": "Aganju is counted among the orisha (Brandon)."
+},
+{
+"s": "ENT_ORI_ESHU",
+"t": "member_of",
+"o": "ENT_ORI_SEVEN_POWERS",
+"c": "medium",
+"ra": "Eleggua is one of the Siete Potencias Africanas in Cuban devotion (Brandon)."
+},
+{
+"s": "ENT_ORI_OGUN",
+"t": "member_of",
+"o": "ENT_ORI_SEVEN_POWERS",
+"c": "medium",
+"ra": "Ogun is one of the Seven African Powers (Brandon)."
+},
+{
+"s": "ENT_ORI_SHANGO",
+"t": "member_of",
+"o": "ENT_ORI_SEVEN_POWERS",
+"c": "medium",
+"ra": "Shango is one of the Seven African Powers (Brandon)."
+},
+{
+"s": "ENT_ORI_OBATALA",
+"t": "member_of",
+"o": "ENT_ORI_SEVEN_POWERS",
+"c": "medium",
+"ra": "Obatala is one of the Seven African Powers (Brandon)."
+},
+{
+"s": "ENT_ORI_OSHUN",
+"t": "member_of",
+"o": "ENT_ORI_SEVEN_POWERS",
+"c": "medium",
+"ra": "Oshun is one of the Seven African Powers (Brandon)."
+},
+{
+"s": "ENT_ORI_YEMOJA",
+"t": "member_of",
+"o": "ENT_ORI_SEVEN_POWERS",
+"c": "medium",
+"ra": "Yemaya is one of the Seven African Powers (Brandon)."
+},
+{
+"s": "ENT_ORI_ORUNMILA",
+"t": "member_of",
+"o": "ENT_ORI_SEVEN_POWERS",
+"c": "medium",
+"ra": "Orula is commonly counted among the Seven African Powers in Cuban devotion (Brandon)."
+},
+{
+"s": "ENT_ORI_ESHU",
+"t": "mediates",
+"o": "ENT_ORI_PANTHEON",
+"c": "medium",
+"ra": "Eshu carries the offerings and messages between humans and all the orishas, opening the way; he is the mediator, not the ruler, of the pantheon (Bascom)."
+},
+{
+"s": "ENT_ORI_OSHUN",
+"t": "consort_of",
+"o": "ENT_ORI_SHANGO",
+"c": "medium",
+"ra": "In Yoruba oral tradition Oshun is a wife of Shango (Brandon)."
+},
+{
+"s": "ENT_ORI_OYA",
+"t": "consort_of",
+"o": "ENT_ORI_SHANGO",
+"c": "medium",
+"ra": "In Yoruba oral tradition Oya is a wife of Shango (Brandon)."
+},
+{
+"s": "ENT_ORI_AGANJU",
+"t": "sibling_of",
+"o": "ENT_ORI_SHANGO",
+"c": "low",
+"ra": "Aganju is linked to Shango as kin in some oral traditions (Brandon)."
+},
+{
+"s": "ENT_ORI_OLOKUN",
+"t": "paired_with",
+"o": "ENT_ORI_YEMOJA",
+"c": "medium",
+"ra": "Olokun (deep sea) is paired with Yemoja (sea/motherhood) in oral tradition (Brandon)."
+},
+{
+"s": "ENT_ORI_SHANGO",
+"t": "syncretized_with",
+"o": "ENT_CHR_BARBARA",
+"c": "high",
+"ra": "In Cuban Lucumi/Santeria Shango is identified with Saint Barbara, sharing thunder/lightning imagery (Brandon)."
+},
+{
+"s": "ENT_ORI_ESHU",
+"t": "syncretized_with",
+"o": "ENT_SAINT_ANTHONY_PADUA",
+"c": "high",
+"ra": "In Santeria Eleggua is commonly identified with Saint Anthony of Padua (and the Holy Child of Atocha, not in DB) (Brandon)."
+},
+{
+"s": "ENT_ORI_BABALU_AYE",
+"t": "syncretized_with",
+"o": "ENT_NT_LAZARUS_BETHANY",
+"c": "high",
+"ra": "In Santeria Babalu-Aye is identified with Saint Lazarus (San Lazaro), patron against disease; ENT_NT_LAZARUS_BETHANY is the in-DB Lazarus target (Brandon)."
+},
+{
+"s": "ENT_ORI_OBATALA",
+"t": "syncretized_with",
+"o": "ENT_MARY_MERCY",
+"c": "high",
+"ra": "In Santeria Obatala is identified with Our Lady of Mercy (la Merced), sharing the color white (Brandon)."
+},
+{
+"s": "ENT_ORI_OGUN",
+"t": "syncretized_with",
+"o": "ENT_SAINT_PETER",
+"c": "high",
+"ra": "In Santeria Ogun is identified with Saint Peter, linked by iron keys/tools (Brandon)."
+},
+{
+"s": "ENT_ORI_ORUNMILA",
+"t": "syncretized_with",
+"o": "ENT_SAINT_FRANCIS",
+"c": "high",
+"ra": "In Santeria Orunmila/Orula is identified with Saint Francis of Assisi (Brandon)."
+},
+{
+"s": "ENT_ORI_YEMOJA",
+"t": "syncretized_with",
+"o": "ENT_SAINT_MARY",
+"c": "medium",
+"ra": "In Cuban Santeria Yemaya is identified with the Marian title Our Lady of Regla (a title not in DB); wired to Mary Theotokos as the underlying Marian devotion (Brandon)."
+},
+{
+"s": "ENT_ORI_OSHUN",
+"t": "syncretized_with",
+"o": "ENT_SAINT_MARY",
+"c": "medium",
+"ra": "In Cuban Santeria Oshun is identified with Our Lady of Charity of El Cobre, Cuba's patroness (a title not in DB, verified absent); wired to Mary Theotokos as the underlying Marian devotion (Brandon)."
+}
+]

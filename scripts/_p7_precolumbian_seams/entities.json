@@ -1,0 +1,38 @@
+[
+{
+"id": "ENT_PCB_MESOAMERICAN_RELIGION",
+"name": "Pre-Columbian Mesoamerican Religion",
+"type": "Collective",
+"trad": "Mesoamerican",
+"dom": "pantheon/tradition hub",
+"conf": "B",
+"note": "Hub collective for the pre-Columbian (Nahua and Maya) deities included only at documented Catholic syncretism seams. Pre-Columbian source; not a full pantheon roster. Practice: the indigenous religions of central Mexico and the Maya highlands, suppressed and partly continued in syncretic Catholic devotion after 1521.",
+"src": "SRC_BRADING_MEXICAN_PHOENIX",
+"per": "PER_PCB_POSTCLASSIC_MESOAMERICA",
+"cat": "Pantheon"
+},
+{
+"id": "ENT_PCB_TONANTZIN",
+"name": "Tonantzin",
+"type": "Goddess",
+"trad": "Mesoamerican",
+"dom": "mother, earth, fertility",
+"conf": "B",
+"note": "Nahuatl 'Our Revered Mother', a Nahua mother-earth title/goddess with a shrine at Tepeyac near Mexico City. Attestation: Bernardino de Sahagun (16th c.) records that indigenous pilgrims called the Guadalupan shrine at Tepeyac 'Tonantzin'. Pre-Columbian source. The Tonantzin-Guadalupe association is the canonical documented Mesoamerican-Catholic syncretism seam (Brading).",
+"src": "SRC_BRADING_MEXICAN_PHOENIX",
+"per": "PER_PCB_POSTCLASSIC_MESOAMERICA",
+"cat": "God"
+},
+{
+"id": "ENT_PCB_MAM",
+"name": "Mam",
+"type": "God",
+"trad": "Mesoamerican",
+"dom": "earth, ancestors, mountains",
+"conf": "C",
+"note": "Maya 'Grandfather'/ancestral earth figure of the Guatemalan highlands publicly regarded as the indigenous antecedent of the living folk saint Maximon (San Simon). Pre-Columbian source; only publicly attested function modeled, no ritual interiors. In highland Maya Catholic practice the derived folk saint Maximon is publicly identified with San Simon and with Judas Iscariot (Pieper); that identification attaches to the received folk-saint figure rather than to Mam directly.",
+"src": "SRC_PIEPER_FOLK_SAINTS_GUATEMALA",
+"per": "PER_PCB_POSTCLASSIC_MESOAMERICA",
+"cat": "God"
+}
+]

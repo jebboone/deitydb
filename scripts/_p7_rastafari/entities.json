@@ -1,0 +1,74 @@
+[
+{
+"id": "ENT_RAS_RASTAFARI",
+"name": "Rastafari",
+"type": "collective",
+"trad": "Rastafari",
+"dom": "religious movement",
+"conf": "B",
+"note": "Hub collective for the Rastafari movement, a living Abrahamic-derived Jamaican (Caribbean / worldwide) religion founded in the 1930s; publicly attested in scholarship (Barrett; Edmonds).",
+"src": "SRC_EDMONDS_RASTAFARI_VSI",
+"per": "PER_RASTAFARI",
+"cat": "tradition"
+},
+{
+"id": "ENT_RAS_JAH",
+"name": "Jah",
+"type": "deity",
+"trad": "Rastafari",
+"dom": "supreme God",
+"conf": "B",
+"note": "The supreme God of Rastafari; the name derives from Jehovah/YHWH and is publicly central to Rastafari practice and reasoning ('I-and-I'). Attested throughout Barrett and Edmonds.",
+"src": "SRC_EDMONDS_RASTAFARI_VSI",
+"per": "PER_RASTAFARI",
+"cat": "deity"
+},
+{
+"id": "ENT_RAS_HAILE_SELASSIE",
+"name": "Haile Selassie I (Ras Tafari Makonnen)",
+"type": "person",
+"trad": "Rastafari",
+"dom": "venerated emperor / messianic figure",
+"conf": "B",
+"note": "Emperor of Ethiopia (1930-1974); venerated by many Rastafari adherents as the returned Christ or as divine. Modeled neutrally as a belief held within the tradition. Publicly attested (Barrett; Edmonds).",
+"src": "SRC_BARRETT_RASTAFARIANS",
+"per": "PER_RASTAFARI",
+"cat": "venerated figure"
+},
+{
+"id": "ENT_RAS_MARCUS_GARVEY",
+"name": "Marcus Garvey",
+"type": "person",
+"trad": "Rastafari",
+"dom": "prophet-forerunner",
+"conf": "B",
+"note": "Jamaican Pan-Africanist leader (1887-1940) received within Rastafari as a prophet-forerunner who foretold the crowning of an African king. Publicly attested historical figure (Barrett; Edmonds).",
+"src": "SRC_BARRETT_RASTAFARIANS",
+"per": "PER_RASTAFARI",
+"cat": "prophet"
+},
+{
+"id": "ENT_RAS_BABYLON",
+"name": "Babylon",
+"type": "concept",
+"trad": "Rastafari",
+"dom": "oppressive worldly system",
+"conf": "B",
+"note": "Rastafari theological concept for the corrupt, oppressive system of Western/colonial society and its institutions, drawn from the biblical Babylon. Publicly attested (Barrett; Edmonds).",
+"src": "SRC_EDMONDS_RASTAFARI_VSI",
+"per": "PER_RASTAFARI",
+"cat": "concept"
+},
+{
+"id": "ENT_RAS_ZION",
+"name": "Zion",
+"type": "concept",
+"trad": "Rastafari",
+"dom": "promised land",
+"conf": "B",
+"note": "Rastafari theological concept of the promised land of redemption and return, identified with Ethiopia/Africa, opposed to Babylon. Publicly attested (Barrett; Edmonds).",
+"src": "SRC_EDMONDS_RASTAFARI_VSI",
+"per": "PER_RASTAFARI",
+"cat": "concept"
+}
+]

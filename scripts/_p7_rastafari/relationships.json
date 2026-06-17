@@ -1,0 +1,79 @@
+[
+{
+"s": "ENT_RAS_JAH",
+"t": "member_of",
+"o": "ENT_RAS_RASTAFARI",
+"c": "high",
+"ra": "Jah is the supreme God of the Rastafari movement."
+},
+{
+"s": "ENT_RAS_HAILE_SELASSIE",
+"t": "member_of",
+"o": "ENT_RAS_RASTAFARI",
+"c": "high",
+"ra": "Haile Selassie I is the central venerated figure of the Rastafari movement."
+},
+{
+"s": "ENT_RAS_MARCUS_GARVEY",
+"t": "member_of",
+"o": "ENT_RAS_RASTAFARI",
+"c": "high",
+"ra": "Marcus Garvey is received within Rastafari as a prophet-forerunner of the movement."
+},
+{
+"s": "ENT_RAS_BABYLON",
+"t": "member_of",
+"o": "ENT_RAS_RASTAFARI",
+"c": "high",
+"ra": "Babylon is a core theological concept of the Rastafari movement."
+},
+{
+"s": "ENT_RAS_ZION",
+"t": "member_of",
+"o": "ENT_RAS_RASTAFARI",
+"c": "high",
+"ra": "Zion is a core theological concept of the Rastafari movement."
+},
+{
+"s": "ENT_RAS_JAH",
+"t": "reception_of",
+"o": "ENT_ISR_YAHWEH",
+"c": "high",
+"ra": "Jah derives from Jehovah, a vocalization of the Tetragrammaton YHWH (Yahweh), received via the King James Bible (Psalm 68:4)."
+},
+{
+"s": "ENT_RAS_BABYLON",
+"t": "reception_of",
+"o": "ENT_CHR_WHORE_BABYLON",
+"c": "high",
+"ra": "The Rastafari concept of Babylon draws on the biblical Babylon / Whore of Babylon of Revelation as the symbol of corrupt worldly power."
+},
+{
+"s": "ENT_RAS_BABYLON",
+"t": "opposes",
+"o": "ENT_RAS_ZION",
+"c": "high",
+"ra": "In Rastafari theology Babylon (the oppressive system) stands in opposition to Zion (the promised land)."
+},
+{
+"s": "ENT_RAS_HAILE_SELASSIE",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "high",
+"ra": "Many Rastafari adherents venerate Haile Selassie I as the returned Christ; this models that belief held within the tradition as a reception of the figure of Jesus Christ."
+},
+{
+"s": "ENT_RAS_HAILE_SELASSIE",
+"t": "reception_of",
+"o": "ENT_ETH_MENELIK",
+"c": "medium",
+"ra": "Haile Selassie's imperial legitimacy is grounded in the Ethiopian Solomonic dynasty traced to Menelik I, central to Rastafari's Ethiopianist theology."
+},
+{
+"s": "ENT_ETH_MENELIK",
+"t": "child_of",
+"o": "ENT_ETH_MAKEDA",
+"c": "high",
+"ra": "In the Kebra Nagast tradition Menelik I is the son of Makeda, Queen of Sheba; cited within Rastafari to ground the Solomonic line venerated in the movement."
+}
+]
