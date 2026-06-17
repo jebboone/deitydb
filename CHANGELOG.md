@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.78.0 — 2026-06-17
+
+### Arthurian legend / Matter of Britain (the Grail mythos)
+
+Built the wholly-absent Arthurian cycle — the audit's runner-up gap, and a high/
+late-medieval literary tradition that also helps the 1000-1450 era trough. New
+tradition **Arthurian** (`ENT_ART_`), new period PER_ARTHURIAN (1100-1500), 6 new
+primary-text sources (Geoffrey of Monmouth, Chrétien de Troyes, Robert de Boron,
+the Vulgate Cycle, Wolfram's Parzival, Malory). **+35 entities, +75 relationships**,
+0 rejected/orphan/unsourced/unperiodized, 0 unreviewed duplicates. Scorecard now
+2,929 entities / 5,260 relationships / 311 sources / 96 traditions.
+
+- **Court & kin:** Arthur, Guinevere, Uther Pendragon, Igraine, Mordred, Morgan le
+  Fay, Morgause, King Lot, Merlin, the Lady of the Lake — with the Tintagel
+  begetting, the incestuous Mordred, and the Orkney lineage modeled in full.
+- **The Round Table:** Lancelot, Galahad, Perceval, Gawain, Bors, Tristan, Kay,
+  Bedivere, Gareth, Gaheris, Agravain, Lamorak, Pellinore, and the Green Knight,
+  under a Knights-of-the-Round-Table collective.
+- **The Grail mythos:** the Holy Grail (`reception_of` Jesus Christ — the cup of the
+  Last Supper — and `mediated_by` the existing Joseph of Arimathea, who brought it
+  to Britain), the Fisher King, Elaine of Corbenic, Galahad/Perceval/Bors as Grail
+  achievers, and the Siege Perilous.
+- **Objects & realms:** Excalibur (given by the Lady of the Lake), the Round Table,
+  Camelot, Avalon, with Merlin's demonic begetting cross-linked to the Devil.
+- Classified in the tradition-profile layer under a new **legendary-literary** class
+  (a mythos in story, never a practiced cult).
+
 ## v1.77.0 — 2026-06-17
 
 ### European regional polytheisms (audit-driven: the largest in-scope gap)

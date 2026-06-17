@@ -14,6 +14,7 @@ INSERT INTO tradition_profile (tradition,tradition_class,prevalence,status_note)
  ('Anthroposophy','modern-esoteric','modern-revival','A modern (19th-20th c.) esoteric movement — an organized but comparatively small new-religious / occult current, not a mainstream faith.'),
  ('Aramean','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Armenian','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
+ ('Arthurian','legendary-literary','literary','A legendary/literary mythos rather than a practiced religion — its figures live in story (and, for the Grail, in Christian devotion), but it was never the cult of a community.'),
  ('Astral Magic','esoteric-magic','learned-subculture','A learned ritual-magic / grimoire tradition — historically present and genuinely influential, but a textual subculture of a few literate specialists, framed within and drawing on the dominant religion rather than a mainstream faith in its own right.'),
  ('Baltic','civic-polytheism','regional','An established civic/state polytheism — the mainstream public religion of its society in its era.'),
  ('Basilidean','heterodox-sect','marginal','A heterodox or minority sect — a real religious community but marginal to, and often suppressed by, the dominant faith.'),

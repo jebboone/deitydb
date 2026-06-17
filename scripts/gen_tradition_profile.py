@@ -15,6 +15,7 @@ CLASS_NOTE = {
  "heterodox-sect":"A heterodox or minority sect — a real religious community but marginal to, and often suppressed by, the dominant faith.",
  "esoteric-magic":"A learned ritual-magic / grimoire tradition — historically present and genuinely influential, but a textual subculture of a few literate specialists, framed within and drawing on the dominant religion rather than a mainstream faith in its own right.",
  "modern-esoteric":"A modern (19th-20th c.) esoteric movement — an organized but comparatively small new-religious / occult current, not a mainstream faith.",
+ "legendary-literary":"A legendary/literary mythos rather than a practiced religion — its figures live in story (and, for the Grail, in Christian devotion), but it was never the cult of a community.",
  "comparative":"Not a religion: a cross-traditional layer of shared abstractions used for comparison.",
 }
 # tradition -> (class, prevalence[, note_override])
@@ -67,6 +68,8 @@ P = {
  "Iberian/Lusitanian":("civic-polytheism","regional"),"Moabite":("civic-polytheism","regional"),"Ammonite":("civic-polytheism","regional"),
  "Edomite":("civic-polytheism","regional"),"Basque":("civic-polytheism","regional"),"Sámi":("civic-polytheism","regional"),
  "Hungarian":("civic-polytheism","regional"),
+ # legendary-literary
+ "Arthurian":("legendary-literary","literary"),
  # comparative
  "Cross-traditional":("comparative","abstraction"),
 }
