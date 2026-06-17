@@ -1,5 +1,33 @@
 # Changelog
 
+## v1.73.0 — 2026-06-17
+
+### Mainstream backbone depth: monarchy, Acts, Islamic law & devotion
+
+Completed several mainstream rosters left partial in v1.72. **+64 entities,
++116 relationships**, 0 rejected, 0 unsourced/unperiodized/orphan, 0 unreviewed
+duplicates. Scorecard now 2,766 entities / 4,934 relationships / 296 sources.
+One new source (SRC_ISLAMIC_TRADITION).
+
+- **Remaining divided-monarchy kings (`ENT_ISR_*`):** the rest of the kings of
+  Judah (Abijah, Athaliah, Jehoram, Ahaziah, Joash, Amaziah, Jotham, Amon,
+  Jehoahaz, Jehoiakim, Jehoiachin) and Israel (Nadab, Baasha, Elah, Zimri, Tibni,
+  Ahaziah, Jehoram, Jehoahaz, Jehoash, Zechariah, Shallum, Menahem, Pekahiah,
+  Pekah, Hoshea) — completing both royal lines. Modeled as a single dynastic
+  descent chain (child_of) and the northern assassination chain (slays), with
+  cross-kingdom and demon homonyms disambiguated by name/id.
+- **More Acts/Pauline figures (`ENT_NT_*`):** the remaining Seven Deacons
+  (Prochorus, Nicanor, Timon, Parmenas, Nicolaus) and the apostolic-age figures
+  Cornelius, Ananias of Damascus, Gamaliel, Agabus, Tabitha, the Ethiopian eunuch,
+  Phoebe, Junia, Onesimus, Philemon, Epaphras, Onesiphorus.
+- **Islamic law & devotion (`ENT_ISL_*`):** the Four Imams of the Sunni schools
+  of law (Abu Hanifa, Malik, al-Shafi'i, Ahmad ibn Hanbal) under a new collective;
+  the remaining Ten Promised Paradise (Talha, al-Zubayr, Abd al-Rahman ibn Awf,
+  Sa'd ibn Abi Waqqas, Sa'id ibn Zayd, Abu Ubayda); the remaining Mothers of the
+  Believers (Sawda, Hafsa, Zaynab bint Jahsh, Umm Salama, Juwayriya, Safiyya,
+  Umm Habiba, Maymuna, Zaynab bint Khuzayma); and the Ninety-Nine Names of God
+  (al-Asma al-Husna) as a single devotional-set entity (not 99 reified epithets).
+
 ## v1.72.0 — 2026-06-17
 
 ### Mainstream Abrahamic deepening: canonical figures + folk beings
