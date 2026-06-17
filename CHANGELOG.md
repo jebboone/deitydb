@@ -1,5 +1,33 @@
 # Changelog
 
+## v1.67.4 — 2026-06-16
+
+### Fourth audit pass: Celtic inscriptional gods + Egyptian Duat cast
+
+Adversarial audit of the Gaulish/Romano-British inscriptional gods (40) and the
+Egyptian netherworld-book cast (Amduat / Book of Gates / Litany of Re, 38).
+Integrity clean. One likely fabrication caught; the rest are real with corrections.
+
+- **Removed (1):** ENT_EGY_AKHEKHI — "guardian of gate 12 paired with Pai" is not
+  attested in Hornung/Budge (the 12th gate is Tjeser-baiu, guarded by Isis/Nephthys
+  serpents); the name appears conflated with the Set-creature Akhekh.
+- **Egyptian fixes:** Ankh-neteru renamed to the correct Ka-en-Ankh-Neteru (the
+  12th-hour tow-serpent); Ammit's broken relationships fixed (belongs_to_realm
+  Osiris → Duat; removed "judges Maat" — she devours the unjustified, she does not
+  judge); Mehet-Weret's "embodies Ra" removed (she is an Eye of Ra who *bears* the
+  sun, not Ra himself); Ka-Maat's spurious link to the 75 Forms of Re removed
+  (genre conflation); Set-em-maat-f's BD-125 "Hall of Maat" gloss dropped + downgraded.
+- **Celtic interpretatio cleanup:** the disputed Lucan-triad equations softened —
+  Esus and Teutates retyped equated_with → aligned_with with notes that the Bern
+  scholia transmit contradictory Mars/Mercury traditions; Taranis "aligned_with
+  Jupiter" upgraded to equated_with (it IS an ancient interpretatio); Belenus's
+  "embodies Sun" removed (the solar etymology is now doubted — he is a healing/Apollo
+  god); Nodens given a Silvanus association so the epigraphic "Mars" framing does not
+  bury his healing/hunting/sea character. Note caveats added for the single-source/
+  hapax/inferred cases (Cathubodua, Lugus, Maponos).
+
+Net: -1 entity; scorecard clean. scripts/build_qa4_fixes.sql.
+
 ## v1.67.3 — 2026-06-16
 
 ### Third audit pass: the 42 Assessors (BD Spell 125) + Roman indigitamenta
