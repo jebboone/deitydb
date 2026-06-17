@@ -1,5 +1,37 @@
 # Changelog
 
+## v1.68.0 — 2026-06-16
+
+### Grimoire demonology: the Ars Goetia + the infernal hierarchy
+
+Opened the post-medieval Western esoteric continuum with the first early-modern
+grimoire cohort. New tradition tag **Goetic/Solomonic**, new period
+**PER_EARLY_MODERN_OCCULT** (1450–1900), 3 new sources (Lemegeton/Ars Goetia ed.
+Mathers & Crowley; Weyer's *Pseudomonarchia Daemonum* 1577; Collin de Plancy's
+*Dictionnaire Infernal* 1818). **+77 entities, +217 relationships**, 0 rejected,
+0 unsourced/unperiodized/orphan, 0 unreviewed duplicates. Scorecard now
+2,408 entities / 4,217 relationships / 289 sources.
+
+- **The 72 spirits of the Ars Goetia (ENT_GOE_*):** every spirit Bael (#1) →
+  Andromalius (#72) with its canonical rank (King/Duke/Prince/Marquis/President/
+  Earl/Knight, double ranks preserved), legion count, and office, cross-checked
+  between the Lemegeton and Weyer. Each is `member_of` the new umbrella collective
+  **ENT_GOE_ARS_GOETIA** and `presides_over` 1–3 office abstractions (hidden
+  knowledge, prophecy, love, war, wealth, disease, death, craft, deception,
+  revelation, protection, magic, destruction, forbidden knowledge).
+- **Demonological receptions (reception_of):** Bael←Baal (Canaanite),
+  Astaroth←Astarte, Asmoday←Asmodeus (←Aeshma Daeva), Belial(Goetia)←Belial —
+  the four securely-attested derivations of grimoire demons from older deities.
+  Belial(Goetia) is kept distinct from the existing ENT_ISR_BELIAL by name.
+- **The infernal hierarchy / princes of Hell:** new collectives
+  **ENT_GOE_INFERNAL_HIERARCHY** and **ENT_GOE_SEVEN_DEADLY_DEMONS** (Binsfeld
+  1589), the new princes Belphegor (sloth) and Adramelech (chancellor of Hell),
+  and the seven-deadly-sin mapping wired to the *existing* canonical entities —
+  Lucifer (pride), Mammon (greed), Asmodeus (lust), Leviathan (envy), Beelzebub
+  (gluttony), Satan (wrath) — rather than duplicating them.
+- Demons modeled strictly as catalogued entities (name/rank/legions/office/
+  cross-links); no ritual seals or sigils (CLAUDE.md boundary).
+
 ## v1.67.6 — 2026-06-16
 
 ### Whole-DB cross-tradition verb sweep
