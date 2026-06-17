@@ -34,6 +34,7 @@ echo ""
 echo "==> Materialising public views..."
 VIEWS=(
   v_public_tradition_overview
+  v_public_tradition_profile
   v_public_relationship_overview
   v_public_relationship_triples
   v_public_underworld_entities

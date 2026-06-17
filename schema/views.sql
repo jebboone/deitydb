@@ -552,3 +552,10 @@ CREATE OR REPLACE VIEW public.v_staging_relationships_resolved AS
      JOIN public.entities o ON ((lower(sr.object_name) = lower(o.canonical_name))))
      JOIN public.relationship_types rt ON ((sr.relationship_type = rt.relationship_type)));
 
+
+-- Public tradition profile: each tradition's kind, prevalence, status note, and entity count. v1.76.0
+CREATE OR REPLACE VIEW public.v_public_tradition_profile AS
+SELECT tp.tradition, tp.tradition_class, tp.prevalence, tp.status_note,
+       (SELECT count(*) FROM entities e WHERE e.tradition = tp.tradition) AS entity_count
+FROM tradition_profile tp
+ORDER BY tp.tradition_class, entity_count DESC;
