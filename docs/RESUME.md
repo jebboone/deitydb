@@ -2,8 +2,13 @@
 
 Snapshot for picking the project up on another machine. Last updated **2026-06-17, v2.0.0**.
 
+## ⟶ Pick up here (next action)
+**v2.0.0 is committed & pushed but NOT yet deployed.** The live site is still v1.92.0.
+To ship it: bring up the machine (below), then `flyctl auth login` + `flyctl deploy -a deitydb-explorer`.
+Everything else (Postgres migration, SQLite export, schema files, docs) is already done and on `main`.
+
 ## Current state
-- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Fully published & live at **deitydb-explorer.fly.dev** (v2.0.0).
+- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Code & DB at **v2.0.0** on `main`; **deitydb-explorer.fly.dev is still serving v1.92.0 until the v2.0.0 deploy runs.**
 - **Completeness program (Phases 1–7): COMPLETE and audited clean** — every integrity invariant 0, 97.3% primary/scholarly source coverage. Per-phase record in `CHANGELOG.md` (v1.85.0–v1.91.1); the gap register is `docs/COMPLETENESS_ROADMAP.md`.
 - **Deeper graph/API features: DONE** (v1.92.0) — JSON API + `/path` finder + `/constellation` map + `/graph` filters.
 - **Schema epoch — controlled `entity_class`: DONE** (v2.0.0) — 19-value controlled vocabulary over free-text `entity_type`; 57 blank types filled; 0 unmapped types. Migration `upgrade_v2_0_entity_class.sql`; map source in `scripts/_classmap/`.
