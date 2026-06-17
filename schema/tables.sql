@@ -841,3 +841,11 @@ ALTER TABLE ONLY public.semantic_relationships ALTER COLUMN semantic_id SET DEFA
 --
 
 
+
+-- Tradition-level metadata: kind + prevalence + status note (mainstream vs. esoteric/marginal). v1.76.0
+CREATE TABLE IF NOT EXISTS tradition_profile (
+  tradition text PRIMARY KEY,
+  tradition_class text NOT NULL,
+  prevalence text NOT NULL,
+  status_note text
+);

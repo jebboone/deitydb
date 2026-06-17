@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.76.0 — 2026-06-17
+
+### Tradition-profile layer: mainstream vs. esoteric/marginal, made explicit
+
+Added a tradition-level metadata layer so the database can state — queryably, for
+all 91 tradition tags — what KIND of religion each is and how prevalent it was,
+rather than leaving raw entity counts to imply that entity-dense esoteric
+traditions were mainstream. No entity/relationship changes. New table
+`tradition_profile` (tradition, tradition_class, prevalence, status_note) and
+public view `v_public_tradition_profile` (added to schema/tables.sql,
+schema/views.sql, and the export VIEWS array).
+
+Classes and totals: civic-polytheism (49 traditions / 1,483 entities),
+mainstream-scriptural (9 / 468), esoteric-magic (7 / 282), heterodox-sect
+(13 / 220), mystical-current (6 / 189), modern-esoteric (6 / 44),
+comparative (1 / 118).
+
+The point this captures: the grimoire/occult traditions (Goetic/Solomonic,
+Renaissance Esoteric, the magical papyri, etc.) carry many entities because they
+catalogue large fixed rosters of named spirits, but they are flagged
+`esoteric-magic / learned-subculture` — historically present and influential, yet
+textual subcultures of a few specialists framed within and drawing on a host
+religion, NOT mainstream faiths. Their influence on the surrounding religions is
+already modeled by the existing reception_of links (Bael←Baal, Astaroth←Astarte,
+etc.) and by cult_scope='literary'. Note also that the bulk of that occult content
+sits in the early-modern period (PER_EARLY_MODERN_OCCULT, 1450-1900), not the
+medieval period — the medieval window itself is dominated by mainstream
+Christianity, Islam, and Judaism plus the still-living Norse/Celtic polytheisms.
+
 ## v1.75.0 — 2026-06-17
 
 ### Modern-strand deepening: Alice Bailey, Anthroposophy, Spiritualism
