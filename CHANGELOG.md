@@ -1,5 +1,43 @@
 # Changelog
 
+## v1.83.0 — 2026-06-17
+
+### Contemporary folklore & vernacular religion — the supernatural beings of online and modern lived culture
+
+A new tradition for the emergent supernatural beings people genuinely engage today —
+**ritually** (summoning), **devotionally** (petition/veneration), or **apotropaically**
+(warding/protection) — the test that separates *lived folklore* (ostension) from mere
+fiction. Purely fictional creepypasta and franchises (the Backrooms, SCP, Jeff the
+Killer, Momo, etc.) are deliberately EXCLUDED; authentic living Indigenous beliefs
+(Skinwalker, Wendigo) and plain cryptozoology (Bigfoot) are out of scope here. New
+tradition **"Contemporary Folklore & Vernacular Religion"**, new tradition_profile class
+**`vernacular-folklore`**, two new periods (`PER_MODERN_FOLKLORE` 1800–2000,
+`PER_DIGITAL_FOLKLORE` 2000–present). **+29 entities, +43 relationships, +20 sources.**
+Scorecard now 3,167 entities / 5,745 relationships / 362 sources / 96 traditions.
+
+- **Encountered & apotropaic beings:** the Hat Man, Shadow People & the Old Hag
+  (sleep-paralysis entities people ward against — the Old Hag `reception_of` Lilith);
+  DMT "machine elves" and the Mantis (entheogenic encounter); Mothman (omen,
+  `embodies` the Apocalypse), Chupacabra, the Jersey Devil, La Llorona, El Cucuy, the
+  Black-Eyed Children, Krampus; Bloody Mary and Zozo (performed summoning/Ouija
+  rites); Slender Man (flagged — born fiction but crossed into ostensive legend with
+  real summoning practice); tulpas; Roko's Basilisk (digital eschatology). Several are
+  `opposed_by` the existing Guardian Angels / St Nicholas — the apotropaic dimension.
+- **Contemporary devotional currents:** **angel numbers** + New Age Guardian Angels —
+  the project's own question answered in the data: modeled as a contemporary
+  `reception_of` the Christian Guardian Angels AND the Zoroastrian Fravashis & Amesha
+  Spentas (the historical taproot of the guardian-angel idea); "the Universe" /
+  Manifestation (Law of Attraction); the **Kek** meme-magic egregore (`reception_of`
+  the ancient Egyptian frog-god Kek — a real conscious syncretism); the Higher Self,
+  Starseeds, the egregore concept; and **WitchTok / online neopagan devotion**, wired
+  `reception_of` ten ancient deities it actually revives (Lilith, Loki, Hecate, Hades,
+  Persephone, Aphrodite, Hermes, Dionysus, Freyja, Brigid) — edges onto the existing
+  entities, not duplicates.
+- Sourced to the folkloristics / digital-religion literature (Peck on Slender Man,
+  Hufford & Adler on sleep paralysis, Dundes on Bloody Mary, Keel on Mothman, Strassman
+  on DMT entities, Burton's *Strange Rites*, Hanegraaff on New Age, Campbell on digital
+  religion) plus the primary works (Virtue, Byrne).
+
 ## v1.82.0 — 2026-06-17
 
 ### Modern mainstream depth (1800–present) — de-occulting the modern era

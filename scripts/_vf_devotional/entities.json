@@ -1,0 +1,154 @@
+[
+{
+"id": "ENT_VF_NEWAGE_ANGELS",
+"name": "New Age Guardian Angels",
+"type": "Angelic being",
+"cat": "New Age angelic devotion",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"personal guidance",
+"protection",
+"healing",
+"reassurance"
+],
+"conf": "B",
+"note": "Devotional engagement is documented and sincere: practitioners petition personal guardian angels by name, ask for signs, thank them, and seek their guidance through angel cards, automatic writing, and prayer. Codified in Doreen Virtue's best-selling angel literature and angel oracle decks, and earlier in Hanegraaff's account of New Age angelology. Distinct from the Christian doctrine: here every person has assignable, nameable angels reachable on demand, blended with reincarnation and the 'ascended masters.' A real historical taproot is the Zoroastrian guardian-spirit complex (fravashis / amesha spentas), widely cited as ancestral to the Judeo-Christian guardian-angel idea, hence the reception_of edges to both the Christian and Zoroastrian anchors.",
+"src": "SRC_HANEGRAAFF_NEWAGE",
+"per": "PER_MODERN_FOLKLORE"
+},
+{
+"id": "ENT_VF_ANGEL_NUMBERS",
+"name": "Angel Numbers",
+"type": "Divinatory practice",
+"cat": "New Age numerology / sign-reading",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"divination",
+"guidance",
+"synchronicity",
+"reassurance"
+],
+"conf": "B",
+"note": "Sincere devotional/divinatory engagement: seeing repeating digits (111, 222, 444, 1111) is read as a direct message from one's guardian angels; people pause, interpret the number's meaning from published correspondences, and adjust action or take comfort accordingly. Codified by Doreen Virtue (Angel Numbers, 2005) within New Age numerology and exploded on Gen Z TikTok as a mass vernacular practice. A reading practice oriented toward the New Age angels, hence aligned_with them.",
+"src": "SRC_VIRTUE_ANGELNUMBERS",
+"per": "PER_DIGITAL_FOLKLORE"
+},
+{
+"id": "ENT_VF_THE_UNIVERSE",
+"name": "The Universe",
+"type": "Personified abstraction",
+"cat": "New Thought / Law of Attraction providence",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"providence",
+"abundance",
+"fate",
+"answered desire"
+],
+"conf": "B",
+"note": "Genuinely petitioned, thanked, and trusted as a providential agent ('the Universe has my back,' 'thank you, Universe,' 'asking the Universe for X'). Functions as a quasi-deistic provider in Law-of-Attraction practice; Rhonda Byrne's The Secret (2006) instructs the practitioner to ask the Universe, believe, and receive, treating it as a responsive personal force. Rooted in 19th-c. New Thought, hence Modern-Folklore period; the vernacular gratitude/petition idiom is ubiquitous online.",
+"src": "SRC_BYRNE_SECRET",
+"per": "PER_MODERN_FOLKLORE"
+},
+{
+"id": "ENT_VF_MANIFESTATION",
+"name": "Manifestation",
+"type": "Ritual category",
+"cat": "Law of Attraction practice",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"intention",
+"attraction",
+"desire",
+"ritual technique"
+],
+"conf": "B",
+"note": "A ritual/practice category with structured techniques (scripting, vision boards, affirmations, the 3-6-9 method, gratitude lists) directed at 'the Universe' to obtain desired outcomes. Documented as a mass contemporary practice by Burton (Strange Rites) and rooted in New Thought via The Secret; the petitionary action is directed at and embodies trust in the Universe.",
+"src": "SRC_BYRNE_SECRET",
+"per": "PER_DIGITAL_FOLKLORE"
+},
+{
+"id": "ENT_VF_KEK",
+"name": "Kek (meme-magic egregore)",
+"type": "Egregore",
+"cat": "internet meme-magic / chaos-magic egregore",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"chaos",
+"chance",
+"manifestation through memes",
+"trolling"
+],
+"conf": "C",
+"note": "Documented sincere ritual engagement within a self-aware, half-ironic frame: 2016-era online communities consciously invoked 'Kek' as an egregore, posted 'GET'/dubs as his confirmations, and read coincidences as his signs (chaos-magic 'meme magic'). The syncretism is explicit and conscious — adherents deliberately identified the meme-god with the ancient Egyptian frog-/darkness-god Kek, hence the reception_of edge to ENT_EGY_KEK. Contested/emergent and partly ironic, so conf C.",
+"src": "SRC_HINE_MEME_MAGIC",
+"per": "PER_DIGITAL_FOLKLORE"
+},
+{
+"id": "ENT_VF_WITCHTOK",
+"name": "WitchTok / Online Neopagan Devotion",
+"type": "Movement",
+"cat": "digital-age neopagan devotion",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"deity worship",
+"witchcraft",
+"devotional practice",
+"divination"
+],
+"conf": "B",
+"note": "A digital devotional movement node: Gen Z devotees on TikTok/Instagram genuinely venerate ancient deities — building altars, leaving offerings, doing 'deity work,' interpreting signs, and reporting being 'called' by a god. Documented by Burton (Strange Rites) and digital-religion scholarship (Campbell). Wired reception_of to the specific ancient deities documented as WitchTok-popular; this models contemporary reception, not duplication, of those still-attested entities.",
+"src": "SRC_BURTON_STRANGE_RITES",
+"per": "PER_DIGITAL_FOLKLORE"
+},
+{
+"id": "ENT_VF_HIGHER_SELF",
+"name": "The Higher Self",
+"type": "Personified abstraction",
+"cat": "New Age inner divinity",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"inner divinity",
+"intuition",
+"guidance",
+"wholeness"
+],
+"conf": "B",
+"note": "Engaged devotionally as an inner divine source one petitions and takes guidance from ('connect with / align with your higher self,' 'ask your higher self'). A central New Age construct (Hanegraaff) treated as the practitioner's own divine guiding aspect, channeled and consulted; embodies the New Age self-as-divine premise. Widely practiced in meditation and manifestation circles.",
+"src": "SRC_HANEGRAAFF_NEWAGE",
+"per": "PER_DIGITAL_FOLKLORE"
+},
+{
+"id": "ENT_VF_STARSEEDS",
+"name": "Starseeds",
+"type": "Collective",
+"cat": "UFO-religion identity",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"cosmic origin",
+"spiritual mission",
+"awakening",
+"identity"
+],
+"conf": "C",
+"note": "A UFO-religion devotional identity: adherents believe their souls originated on other worlds (Pleiades, Sirius, Arcturus) and organize practice around 'activating' their starseed mission, connecting with their star families, and reading galactic-origin signs. Documented within New Age/UFO-religion scholarship (Partridge, occulture); sincere identity-and-practice engagement, but emergent and contested, so conf C.",
+"src": "SRC_PARTRIDGE_OCCULTURE",
+"per": "PER_DIGITAL_FOLKLORE"
+},
+{
+"id": "ENT_VF_EGREGORE",
+"name": "Egregore",
+"type": "Personified abstraction",
+"cat": "occult thoughtform concept",
+"trad": "Contemporary Folklore & Vernacular Religion",
+"dom": [
+"thoughtform",
+"collective belief",
+"autonomous spirit"
+],
+"conf": "C",
+"note": "The general occult/chaos-magic concept of a collectively generated autonomous thoughtform that can be deliberately fed, invoked, and worked with. Practitioners genuinely create and engage egregores ritually (a sincere magical practice), making the concept the framework under which Kek is understood. Included as the conceptual hub for Kek; contested/theoretical, so conf C.",
+"src": "SRC_PARTRIDGE_OCCULTURE",
+"per": "PER_DIGITAL_FOLKLORE"
+}
+]
