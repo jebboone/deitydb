@@ -19,7 +19,7 @@ Cleared the last pre-existing traceability debt surfaced by the v1.84.1 audit:
 
 Every traceability invariant is now **0**: 0 unsourced entities, 0 relationships
 without a source, **0 relationships without a rationale**, 0 dangling references,
-**0 orphan sources**. (3,173 entities / 5,761 relationships / 363 sources.)
+**0 orphan sources**. (3,173 entities / 5,761 relationships / 362 sources.)
 
 ## v1.84.1 — 2026-06-17
 
