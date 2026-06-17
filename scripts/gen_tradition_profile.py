@@ -65,7 +65,8 @@ P = {
  "Baltic":("civic-polytheism","regional"),"Slavic":("civic-polytheism","regional"),"Finnish":("civic-polytheism","regional"),
  "Thracian":("civic-polytheism","regional"),"Dacian":("civic-polytheism","regional"),"Scythian":("civic-polytheism","regional"),
  "Iberian/Lusitanian":("civic-polytheism","regional"),"Moabite":("civic-polytheism","regional"),"Ammonite":("civic-polytheism","regional"),
- "Edomite":("civic-polytheism","regional"),
+ "Edomite":("civic-polytheism","regional"),"Basque":("civic-polytheism","regional"),"Sámi":("civic-polytheism","regional"),
+ "Hungarian":("civic-polytheism","regional"),
  # comparative
  "Cross-traditional":("comparative","abstraction"),
 }
