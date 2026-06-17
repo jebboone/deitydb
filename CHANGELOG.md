@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.82.0 — 2026-06-17
+
+### Modern mainstream depth (1800–present) — de-occulting the modern era
+
+A scan showed the entire post-1800 era was occult/esoteric (Theosophy, Thelema,
+Anthroposophy, Spiritualism) with **zero mainstream modern Christianity or Islam** —
+the sharpest expression of the imbalance the standing steer warns against. This adds
+the modern mainstream tri-faith devotional layer. **+75 entities, +108 relationships,
++8 sources, 3 new periods**, via `gen_roster.py` from agent JSON (no DB writes by
+agents). The **1800+ era went 45 → 120**. Scorecard now 3,138 entities /
+5,702 relationships / 342 sources / 95 traditions.
+
+- **Modern Catholic saints & Marian apparitions (`ENT_MOC_`, 34):** the apparitions
+  (Lourdes, Fátima, the Miraculous Medal, La Salette, Knock, Beauraing, Banneux —
+  each `reception_of` the Virgin Mary) with their seers (Bernadette, the three Fátima
+  children), and the modern saints (Thérèse of Lisieux, John Vianney, John Bosco,
+  Padre Pio, Faustina, Maximilian Kolbe, Damien of Molokai, Frances Cabrini, Edith
+  Stein, Teresa of Calcutta — kept distinct from the 16th-c Teresa of Ávila, John
+  Paul II, Óscar Romero, et al.). New period `PER_MODERN_CATHOLIC`; 3 primary sources.
+- **Modern Eastern Orthodox saints (`ENT_ORTH_`, 22):** the Russian startsy and
+  Athonite elders (John of Kronstadt, Silouan, Paisios, Porphyrios, Sophrony), the
+  New Martyrs (the Romanov passion-bearers, Elizabeth Feodorovna, Maria Skobtsova),
+  the hesychast theologians (Theophan the Recluse, Nikodemos the Hagiorite, Justin
+  Popović) — wired to the existing Seraphim of Sarov and Uncreated-Light/monasticism
+  abstractions. New period `PER_MODERN_ORTHODOX`.
+- **Modern Sufi reformers & global spread (`ENT_SUF_`, 19):** the neo-Sufi revival
+  and worldwide spread — Ahmad ibn Idris, al-Sanusi (Sanusiyya), Ahmad al-Alawi,
+  Said Nursi (Risale-i Nur), Ahmadou Bamba (Mouridiyya), Ibrahim Niasse, Inayat Khan
+  (Sufism to the West), Bawa Muhaiyaddeen, Nazim al-Haqqani — with their order hubs.
+  New period `PER_ISL_MODERN`; 5 primary sources.
+
 ## v1.81.0 — 2026-06-17
 
 ### Early-modern Abrahamic depth (1500–1800) — filling the era cliff

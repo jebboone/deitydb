@@ -1,0 +1,57 @@
+[
+  {"s": "ENT_MOC_OL_LOURDES", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "high", "ra": "Our Lady of Lourdes is a modern apparition/title of the Virgin Mary (Mary Theotokos)."},
+  {"s": "ENT_MOC_OL_FATIMA", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "high", "ra": "Our Lady of Fátima is a modern apparition/title of the Virgin Mary."},
+  {"s": "ENT_MOC_MIRACULOUS_MEDAL", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "high", "ra": "The Miraculous Medal apparition (Rue du Bac, 1830) is a modern title of the Virgin Mary."},
+  {"s": "ENT_MOC_OL_LA_SALETTE", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "high", "ra": "Our Lady of La Salette is a modern apparition/title of the Virgin Mary."},
+  {"s": "ENT_MOC_OL_KNOCK", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "high", "ra": "Our Lady of Knock is a modern apparition/title of the Virgin Mary."},
+  {"s": "ENT_MOC_OL_BEAURAING", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "high", "ra": "Our Lady of Beauraing is a modern apparition/title of the Virgin Mary."},
+  {"s": "ENT_MOC_OL_BANNEUX", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "high", "ra": "Our Lady of Banneux is a modern apparition/title of the Virgin Mary."},
+
+  {"s": "ENT_MOC_OL_LOURDES", "t": "member_of", "o": "ENT_MOC_MARIAN_APPARITIONS", "c": "high", "ra": "Groups the Lourdes apparition under the modern Marian-apparitions hub."},
+  {"s": "ENT_MOC_OL_FATIMA", "t": "member_of", "o": "ENT_MOC_MARIAN_APPARITIONS", "c": "high", "ra": "Groups the Fátima apparition under the modern Marian-apparitions hub."},
+  {"s": "ENT_MOC_MIRACULOUS_MEDAL", "t": "member_of", "o": "ENT_MOC_MARIAN_APPARITIONS", "c": "high", "ra": "Groups the Miraculous Medal apparition under the modern Marian-apparitions hub."},
+  {"s": "ENT_MOC_OL_LA_SALETTE", "t": "member_of", "o": "ENT_MOC_MARIAN_APPARITIONS", "c": "high", "ra": "Groups La Salette under the modern Marian-apparitions hub."},
+  {"s": "ENT_MOC_OL_KNOCK", "t": "member_of", "o": "ENT_MOC_MARIAN_APPARITIONS", "c": "high", "ra": "Groups Knock under the modern Marian-apparitions hub."},
+  {"s": "ENT_MOC_OL_BEAURAING", "t": "member_of", "o": "ENT_MOC_MARIAN_APPARITIONS", "c": "high", "ra": "Groups Beauraing under the modern Marian-apparitions hub."},
+  {"s": "ENT_MOC_OL_BANNEUX", "t": "member_of", "o": "ENT_MOC_MARIAN_APPARITIONS", "c": "high", "ra": "Groups Banneux under the modern Marian-apparitions hub."},
+
+  {"s": "ENT_MOC_BERNADETTE", "t": "aligned_with", "o": "ENT_MOC_OL_LOURDES", "c": "high", "ra": "Bernadette Soubirous is the visionary of the Lourdes apparitions."},
+  {"s": "ENT_MOC_OL_LOURDES", "t": "patron_of", "o": "ENT_HEALING", "c": "high", "ra": "Lourdes is the preeminent modern healing-pilgrimage shrine."},
+  {"s": "ENT_MOC_OL_BANNEUX", "t": "patron_of", "o": "ENT_HEALING", "c": "medium", "ra": "The Banneux spring ('Virgin of the Poor') is associated with healing of the sick."},
+
+  {"s": "ENT_MOC_FATIMA_SEERS", "t": "aligned_with", "o": "ENT_MOC_OL_FATIMA", "c": "high", "ra": "The three shepherd children are the seers of the Fátima apparitions."},
+  {"s": "ENT_MOC_LUCIA_SANTOS", "t": "member_of", "o": "ENT_MOC_FATIMA_SEERS", "c": "high", "ra": "Lúcia dos Santos is one of the three Fátima seers."},
+  {"s": "ENT_MOC_FRANCISCO_MARTO", "t": "member_of", "o": "ENT_MOC_FATIMA_SEERS", "c": "high", "ra": "Francisco Marto is one of the three Fátima seers."},
+  {"s": "ENT_MOC_JACINTA_MARTO", "t": "member_of", "o": "ENT_MOC_FATIMA_SEERS", "c": "high", "ra": "Jacinta Marto is one of the three Fátima seers."},
+  {"s": "ENT_MOC_FRANCISCO_MARTO", "t": "sibling_of", "o": "ENT_MOC_JACINTA_MARTO", "c": "high", "ra": "Francisco and Jacinta Marto were brother and sister."},
+
+  {"s": "ENT_MOC_THERESE_LISIEUX", "t": "patron_of", "o": "ENT_MISSION", "c": "high", "ra": "Thérèse of Lisieux is co-patron of the missions despite never leaving her cloister."},
+  {"s": "ENT_MOC_THERESE_LISIEUX", "t": "child_of", "o": "ENT_MOC_LOUIS_MARTIN", "c": "high", "ra": "Thérèse is the daughter of Louis Martin."},
+  {"s": "ENT_MOC_THERESE_LISIEUX", "t": "child_of", "o": "ENT_MOC_ZELIE_MARTIN", "c": "high", "ra": "Thérèse is the daughter of Zélie Martin."},
+  {"s": "ENT_MOC_LOUIS_MARTIN", "t": "spouse_of", "o": "ENT_MOC_ZELIE_MARTIN", "c": "high", "ra": "Louis and Zélie Martin were husband and wife, canonized together in 2015."},
+
+  {"s": "ENT_MOC_DAMIEN", "t": "patron_of", "o": "ENT_MISSION", "c": "medium", "ra": "Damien of Molokai is venerated as a missionary martyr of charity to the lepers."},
+  {"s": "ENT_MOC_CABRINI", "t": "patron_of", "o": "ENT_MISSION", "c": "medium", "ra": "Cabrini founded a missionary congregation serving immigrants; patron of missionary work."},
+  {"s": "ENT_MOC_DREXEL", "t": "patron_of", "o": "ENT_MISSION", "c": "medium", "ra": "Drexel devoted her life and fortune to missions among Black and Native Americans."},
+  {"s": "ENT_MOC_SERRA", "t": "patron_of", "o": "ENT_MISSION", "c": "high", "ra": "Junípero Serra founded the California missions; emblematic missionary saint."},
+  {"s": "ENT_MOC_TERESA_CALCUTTA", "t": "patron_of", "o": "ENT_MISSION", "c": "medium", "ra": "Mother Teresa founded the Missionaries of Charity serving the destitute worldwide."},
+
+  {"s": "ENT_MOC_FAUSTINA", "t": "reception_of", "o": "ENT_SAINT_MARY", "c": "low", "ra": "Faustina's Divine Mercy revelations include Marian apparitions, though her devotion centers on Christ."},
+  {"s": "ENT_MOC_JOHN_PAUL_II", "t": "aligned_with", "o": "ENT_MOC_FAUSTINA", "c": "high", "ra": "John Paul II canonized Faustina and instituted the Divine Mercy feast, promoting her devotion."},
+
+  {"s": "ENT_MOC_EDITH_STEIN", "t": "patron_of", "o": "ENT_MARTYRDOM", "c": "medium", "ra": "Edith Stein died at Auschwitz and is venerated as a martyr."},
+  {"s": "ENT_MOC_ROMERO", "t": "patron_of", "o": "ENT_MARTYRDOM", "c": "high", "ra": "Óscar Romero was assassinated at the altar and canonized as a martyr."},
+
+  {"s": "ENT_MOC_JOHN_XXIII", "t": "aligned_with", "o": "ENT_MOC_JOHN_PAUL_II", "c": "medium", "ra": "John XXIII and John Paul II were canonized together in 2014 as the conciliar/post-conciliar popes."},
+
+  {"s": "ENT_MOC_JOHN_VIANNEY", "t": "patron_of", "o": "ENT_MISSION", "c": "low", "ra": "The Curé d'Ars is patron of parish priests; loosely tied to the ecclesial-ministry domain."},
+
+  {"s": "ENT_MOC_PADRE_PIO", "t": "aligned_with", "o": "ENT_MOC_JOHN_VIANNEY", "c": "low", "ra": "Both are venerated as exemplary confessors of the modern era."},
+
+  {"s": "ENT_MOC_JOHN_BOSCO", "t": "patron_of", "o": "ENT_MISSION", "c": "medium", "ra": "Don Bosco founded the Salesians, a major teaching/missionary congregation for youth."},
+  {"s": "ENT_MOC_SETON", "t": "aligned_with", "o": "ENT_MOC_DREXEL", "c": "low", "ra": "Both are early American foundresses of Catholic-education religious congregations (Sisters of Charity / Sisters of the Blessed Sacrament)."},
+  {"s": "ENT_MOC_GEMMA_GALGANI", "t": "aligned_with", "o": "ENT_MOC_PADRE_PIO", "c": "low", "ra": "Both are early-20th-c. Italian mystics reported to have borne the stigmata."},
+  {"s": "ENT_MOC_GIANNA_MOLLA", "t": "aligned_with", "o": "ENT_MOC_LOUIS_MARTIN", "c": "low", "ra": "Both are modern exemplars of lay/married sanctity in family life."},
+  {"s": "ENT_MOC_FRASSATI", "t": "aligned_with", "o": "ENT_MOC_GIANNA_MOLLA", "c": "low", "ra": "Both are venerated modern Italian lay saints of ordinary life."},
+  {"s": "ENT_MOC_SOLANUS_CASEY", "t": "aligned_with", "o": "ENT_MOC_PADRE_PIO", "c": "low", "ra": "Both are 20th-c. Capuchin friars renowned for intercessory healing ministry."}
+]
