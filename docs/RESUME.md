@@ -24,7 +24,8 @@ gunzip -c backups/deitydb_pg_v1.92.0.sql.gz | docker exec -i deitydb psql -U pos
 docker exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"   # expect 3837
 
 # 3. tooling venv (export + serve)
-python3 -m venv .venv && .venv/bin/pip install "datasette==0.65.2" db-to-sqlite sqlite-utils
+python3 -m venv .venv && .venv/bin/pip install "datasette==0.65.2" db-to-sqlite sqlite-utils psycopg2-binary
+#    psycopg2-binary is REQUIRED — db-to-sqlite's PG export dies with ModuleNotFoundError: psycopg2 without it.
 
 # 4. deploy auth (jebboone2@gmail.com)
 #    install flyctl, then: flyctl auth login     # app = deitydb-explorer
