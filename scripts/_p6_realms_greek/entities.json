@@ -1,0 +1,86 @@
+[
+{
+"id": "ENT_GRR_UNDERWORLD",
+"name": "The Greek Underworld (House of Hades)",
+"type": "Cosmological realm",
+"trad": "Greek",
+"dom": "underworld; realm of the dead",
+"conf": "B",
+"note": "Hub entity for the structured Greek realm of the dead, the domain of Hades and Persephone, divided into regions for the dead by their merit. Composite of Homer Odyssey 11, Hesiod, and Virgil Aeneid 6; the systematized topography (rivers, fields, judges) is fullest in Virgil.",
+"src": "SRC_VIRGIL_AENEID",
+"per": "PER_GRK_CLASSICAL",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_GRR_ELYSIUM",
+"name": "Elysium (Elysian Fields)",
+"type": "Cosmological realm",
+"trad": "Greek",
+"dom": "blessed afterlife for heroes and the virtuous",
+"conf": "B",
+"note": "The Elysian Fields, paradisal abode of heroes and the righteous dead. First named at Homer Odyssey 4.563-569 (Elysian plain, where Menelaus is destined to go); elaborated as a region of the underworld in Virgil Aeneid 6.637-678.",
+"src": "SRC_VIRGIL_AENEID",
+"per": "PER_GRK_CLASSICAL",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_GRR_ASPHODEL",
+"name": "The Asphodel Meadows",
+"type": "Cosmological realm",
+"trad": "Greek",
+"dom": "afterlife abode of ordinary shades",
+"conf": "B",
+"note": "The Asphodel Meadow (leimon asphodelos), where the shades of the unremarkable dead wander, named at Homer Odyssey 11.539 and 24.13. The intermediate region for those neither heroic nor wicked.",
+"src": "SRC_HOMER_ILIAD_ODYSSEY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_GRR_ISLES_BLEST",
+"name": "The Isles of the Blest (Fortunate Isles)",
+"type": "Cosmological realm",
+"trad": "Greek",
+"dom": "blessed afterlife at the edge of the world",
+"conf": "B",
+"note": "The Islands of the Blessed (makaron nesoi), at the ends of the earth by deep-swirling Ocean, where Hesiod's fourth (heroic) race dwells in untroubled bliss; Hesiod, Works and Days 167-173. Often conflated with or adjacent to Elysium.",
+"src": "SRC_HESIOD_WORKS_DAYS",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_GRR_MOURNING_FIELDS",
+"name": "The Mourning Fields (Lugentes Campi)",
+"type": "Cosmological realm",
+"trad": "Greek",
+"dom": "afterlife region for those who died of love",
+"conf": "C",
+"note": "The Fields of Mourning (Lugentes Campi), region of the underworld for those consumed and killed by unhappy love (e.g. Dido, Phaedra), attested at Virgil, Aeneid 6.440-444. A Roman-poetic systematization of the Greek underworld.",
+"src": "SRC_VIRGIL_AENEID",
+"per": "PER_GRK_ROMAN",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_GRR_PLAIN_LETHE",
+"name": "The Plain of Lethe",
+"type": "Cosmological realm",
+"trad": "Greek",
+"dom": "place of forgetting before rebirth",
+"conf": "C",
+"note": "The plain through which the river Lethe flows, where shades destined for reincarnation drink the water of forgetfulness; Virgil, Aeneid 6.703-715 (Anchises shows Aeneas the souls by Lethe). Plato Republic 10.621 places the Plain of Lethe (pediton tes Lethes) in the eschatology of Er.",
+"src": "SRC_VIRGIL_AENEID",
+"per": "PER_GRK_ROMAN",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_GRR_FIELDS_PUNISHMENT",
+"name": "The Fields of Punishment",
+"type": "Cosmological realm",
+"trad": "Greek",
+"dom": "place of torment for the wicked dead",
+"conf": "B",
+"note": "The region where the wicked are punished, bounded by the flaming river Phlegethon and overseen by Rhadamanthus; the great prison-pit of Tartarus lies below it. Virgil, Aeneid 6.548-627 (Tartarus and the punishments). Distinct from but continuous with primordial Tartarus.",
+"src": "SRC_VIRGIL_AENEID",
+"per": "PER_GRK_ROMAN",
+"cat": "Cosmological realm"
+}
+]

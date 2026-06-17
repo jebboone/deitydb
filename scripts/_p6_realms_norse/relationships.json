@@ -1,0 +1,219 @@
+[
+{
+"s": "ENT_NORR_ASGARD",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "high",
+"ra": "Asgard is one of the nine worlds in the standard reconstruction (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_MIDGARD",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "high",
+"ra": "Midgard, the human world, is one of the nine worlds."
+},
+{
+"s": "ENT_NORR_VANAHEIM",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "medium",
+"ra": "Vanaheim is counted among the nine worlds in the standard scholarly list."
+},
+{
+"s": "ENT_NORR_JOTUNHEIM",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "high",
+"ra": "Jotunheim, land of the giants, is one of the nine worlds."
+},
+{
+"s": "ENT_NORR_NIFLHEIM",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "high",
+"ra": "Niflheim is one of the nine worlds (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_MUSPELHEIM",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "high",
+"ra": "Muspelheim is one of the nine worlds (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_ALFHEIM",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "medium",
+"ra": "Alfheim, home of the light-elves, is one of the nine worlds."
+},
+{
+"s": "ENT_NORR_SVARTALFHEIM",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "medium",
+"ra": "Svartalfheim/Nidavellir, realm of dwarves/dark-elves, is one of the nine worlds in the standard list."
+},
+{
+"s": "ENT_NOR_HEL",
+"t": "member_of",
+"o": "ENT_NORR_NINE_WORLDS",
+"c": "medium",
+"ra": "Hel (the underworld) completes the standard nine-world enumeration; existing entity ENT_NOR_HEL conflates the ruler and her realm."
+},
+{
+"s": "ENT_NORR_ASGARD",
+"t": "dwelling_of",
+"o": "ENT_NOR_AESIR",
+"c": "high",
+"ra": "Asgard is the stronghold of the Æsir (Gylfaginning)."
+},
+{
+"s": "ENT_NOR_ODIN",
+"t": "dwells_in",
+"o": "ENT_NORR_ASGARD",
+"c": "high",
+"ra": "Odin resides in Asgard, in his hall Valhalla."
+},
+{
+"s": "ENT_NORR_VANAHEIM",
+"t": "dwelling_of",
+"o": "ENT_NOR_VANIR",
+"c": "high",
+"ra": "Vanaheim is the home of the Vanir (Vafþrúðnismál 39)."
+},
+{
+"s": "ENT_NORR_JOTUNHEIM",
+"t": "dwelling_of",
+"o": "ENT_NOR_JOTNAR",
+"c": "high",
+"ra": "Jotunheim/Utgard is the land of the jötnar (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_SVARTALFHEIM",
+"t": "dwelling_of",
+"o": "ENT_NOR_DWARVES",
+"c": "medium",
+"ra": "Svartalfheim/Nidavellir is the subterranean realm of the dwarves and their smithies."
+},
+{
+"s": "ENT_NORR_VALHALLA",
+"t": "member_of",
+"o": "ENT_NORR_ASGARD",
+"c": "high",
+"ra": "Valhalla is a hall situated within Asgard (Grímnismál; Gylfaginning)."
+},
+{
+"s": "ENT_NORR_VALHALLA",
+"t": "dwelling_of",
+"o": "ENT_NOR_EINHERJAR",
+"c": "high",
+"ra": "The Einherjar, the chosen slain, feast in Valhalla awaiting Ragnarök."
+},
+{
+"s": "ENT_NOR_ODIN",
+"t": "rules",
+"o": "ENT_NORR_VALHALLA",
+"c": "high",
+"ra": "Valhalla is Odin's hall of the slain."
+},
+{
+"s": "ENT_NOR_VALKYRIES",
+"t": "dwells_in",
+"o": "ENT_NORR_VALHALLA",
+"c": "medium",
+"ra": "The Valkyries serve the Einherjar in Valhalla (Grímnismál; Gylfaginning)."
+},
+{
+"s": "ENT_NORR_FOLKVANGR",
+"t": "ruled_by",
+"o": "ENT_NOR_FREYJA",
+"c": "high",
+"ra": "Folkvangr is Freyja's field where she receives half the battle-slain (Grímnismál 14)."
+},
+{
+"s": "ENT_NORR_BIFROST",
+"t": "guarded_by",
+"o": "ENT_NOR_HEIMDALL",
+"c": "high",
+"ra": "Heimdall guards Bifröst at the edge of heaven (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_GINNUNGAGAP",
+"t": "associated_with",
+"o": "ENT_NORR_NIFLHEIM",
+"c": "high",
+"ra": "Ginnungagap lies between Niflheim and Muspelheim; Niflheim's rime meets it from the north (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_GINNUNGAGAP",
+"t": "associated_with",
+"o": "ENT_NORR_MUSPELHEIM",
+"c": "high",
+"ra": "Muspelheim's heat meets Ginnungagap from the south, generating Ymir (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_MUSPELHEIM",
+"t": "guarded_by",
+"o": "ENT_NOR_SURTR",
+"c": "high",
+"ra": "Surtr stands at the frontier of Muspelheim guarding it with a flaming sword (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_URDARBRUNNR",
+"t": "associated_with",
+"o": "ENT_NOR_YGGDRASIL",
+"c": "high",
+"ra": "The Well of Urd lies beneath a root of Yggdrasil where the gods hold court (Völuspá; Gylfaginning)."
+},
+{
+"s": "ENT_NORR_URDARBRUNNR",
+"t": "associated_with",
+"o": "ENT_NOR_NORNS",
+"c": "high",
+"ra": "The Norns dwell by the Well of Urd and water Yggdrasil from it (Völuspá 20)."
+},
+{
+"s": "ENT_NORR_MIMISBRUNNR",
+"t": "associated_with",
+"o": "ENT_NOR_YGGDRASIL",
+"c": "high",
+"ra": "The Well of Mimir lies beneath a root of Yggdrasil (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_MIMISBRUNNR",
+"t": "associated_with",
+"o": "ENT_NOR_MIMIR",
+"c": "high",
+"ra": "Mímir keeps the Well of Wisdom; Odin pledged his eye there (Völuspá 28; Gylfaginning)."
+},
+{
+"s": "ENT_NORR_NIFLHEIM",
+"t": "associated_with",
+"o": "ENT_NOR_NIDHOGG",
+"c": "medium",
+"ra": "Níðhöggr gnaws the root of Yggdrasil in Niflheim beside Hvergelmir (Gylfaginning; Grímnismál)."
+},
+{
+"s": "ENT_NOR_JORMUNGANDR",
+"t": "dwells_in",
+"o": "ENT_NORR_MIDGARD",
+"c": "high",
+"ra": "Jörmungandr the World Serpent encircles Midgard in the surrounding sea (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_BIFROST",
+"t": "associated_with",
+"o": "ENT_NORR_ASGARD",
+"c": "high",
+"ra": "Bifröst connects Midgard to Asgard, the gods' road into heaven (Gylfaginning)."
+},
+{
+"s": "ENT_NORR_NINE_WORLDS",
+"t": "associated_with",
+"o": "ENT_NOR_YGGDRASIL",
+"c": "high",
+"ra": "The nine worlds are bound together by the world-tree Yggdrasil, whose roots and branches reach into them."
+}
+]

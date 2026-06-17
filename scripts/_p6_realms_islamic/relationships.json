@@ -1,0 +1,198 @@
+[
+{
+"s": "ENT_ISLR_JANNAH",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_COSMOS",
+"c": "high",
+"ra": "Jannah (Paradise) is a principal division of the Islamic otherworldly geography"
+},
+{
+"s": "ENT_ISLR_JAHANNAM",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_COSMOS",
+"c": "high",
+"ra": "Jahannam (Hell) is a principal division of the Islamic otherworldly geography"
+},
+{
+"s": "ENT_ISLR_BARZAKH",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_COSMOS",
+"c": "high",
+"ra": "Barzakh is the intermediate realm of the akhira between death and resurrection"
+},
+{
+"s": "ENT_ISLR_SIRAT",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_COSMOS",
+"c": "high",
+"ra": "As-Sirat, the bridge over Hell, is a threshold structure of the otherworld"
+},
+{
+"s": "ENT_ISLR_ARAF",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_COSMOS",
+"c": "high",
+"ra": "al-Aʿraf is the liminal partition within the cosmic geography between Paradise and Hell"
+},
+{
+"s": "ENT_ISLR_SIDRAT",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_COSMOS",
+"c": "medium",
+"ra": "Sidrat al-Muntaha marks the cosmic boundary of the seventh heaven within the akhira"
+},
+{
+"s": "ENT_ISLR_FIRDAUS",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JANNAH",
+"c": "high",
+"ra": "Firdaus is the highest level within Jannah"
+},
+{
+"s": "ENT_ISLR_JANNAT_ADN",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JANNAH",
+"c": "high",
+"ra": "Jannat ʿAdn is a named garden/level of Paradise"
+},
+{
+"s": "ENT_ISLR_DAR_AL_SALAM",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JANNAH",
+"c": "medium",
+"ra": "Dar al-Salam is an appellation/level of Paradise in classical exegesis"
+},
+{
+"s": "ENT_ISLR_DAR_AL_QARAR",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JANNAH",
+"c": "medium",
+"ra": "Dar al-Qarar is read as a name/level of the abode of Paradise"
+},
+{
+"s": "ENT_ISLR_ABWAB_JANNAH",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JANNAH",
+"c": "high",
+"ra": "The eight gates are the entrances of Jannah"
+},
+{
+"s": "ENT_ISLR_ABWAB_JAHANNAM",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "high",
+"ra": "The seven gates structure the levels of Jahannam (Q 15:44)"
+},
+{
+"s": "ENT_ISLR_LAZAA",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "medium",
+"ra": "Lazaa is one of the seven levels/gates of Hell in classical schemes"
+},
+{
+"s": "ENT_ISLR_HUTAMAH",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "medium",
+"ra": "al-Hutamah is one of the seven levels/gates of Hell"
+},
+{
+"s": "ENT_ISLR_SAIR",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "medium",
+"ra": "Saʿir is one of the seven levels/gates of Hell"
+},
+{
+"s": "ENT_ISLR_SAQAR",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "medium",
+"ra": "Saqar is one of the seven levels/gates of Hell"
+},
+{
+"s": "ENT_ISLR_JAHIM",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "medium",
+"ra": "al-Jahim is one of the seven levels/gates of Hell"
+},
+{
+"s": "ENT_ISLR_HAWIYAH",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "medium",
+"ra": "al-Hawiyah, the abyss, is the deepest of the seven levels/gates of Hell"
+},
+{
+"s": "ENT_ISLR_SIDRAT",
+"t": "belongs_to_realm",
+"o": "ENT_ISLR_JANNAH",
+"c": "medium",
+"ra": "The lote-tree stands beside the Garden of Refuge at the seventh heaven, at the edge of Paradise"
+},
+{
+"s": "ENT_ISLR_SIRAT",
+"t": "associated_with",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "high",
+"ra": "As-Sirat is the bridge stretched over Jahannam that the resurrected must cross"
+},
+{
+"s": "ENT_ISLR_ARAF",
+"t": "associated_with",
+"o": "ENT_ISLR_JANNAH",
+"c": "high",
+"ra": "al-Aʿraf is the height bordering Paradise, whose occupants long to enter it"
+},
+{
+"s": "ENT_ISLR_ARAF",
+"t": "associated_with",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "high",
+"ra": "al-Aʿraf borders Hell, whose occupants see and shrink from its inhabitants (Q 7:47)"
+},
+{
+"s": "ENT_ISL_RIDWAN",
+"t": "guardian_of",
+"o": "ENT_ISLR_JANNAH",
+"c": "high",
+"ra": "Ridwan is the angel who keeps the gates of Paradise in Islamic tradition"
+},
+{
+"s": "ENT_ISL_MALIK",
+"t": "guardian_of",
+"o": "ENT_ISLR_JAHANNAM",
+"c": "high",
+"ra": "Malik is the angel set over Hellfire (Q 43:77)"
+},
+{
+"s": "ENT_ISL_HUR",
+"t": "dwells_in",
+"o": "ENT_ISLR_JANNAH",
+"c": "high",
+"ra": "The Hur are the companions promised to dwell in Paradise"
+},
+{
+"s": "ENT_ISL_HAMALAT_ARSH",
+"t": "associated_with",
+"o": "ENT_ISLR_SIDRAT",
+"c": "medium",
+"ra": "The bearers of the Throne are situated above the seventh heaven, near the boundary marked by Sidrat al-Muntaha"
+},
+{
+"s": "ENT_ISL_MUNKAR",
+"t": "associated_with",
+"o": "ENT_ISLR_BARZAKH",
+"c": "high",
+"ra": "Munkar questions the dead in the grave, the realm of the Barzakh"
+},
+{
+"s": "ENT_ISL_NAKIR",
+"t": "associated_with",
+"o": "ENT_ISLR_BARZAKH",
+"c": "high",
+"ra": "Nakir questions the dead in the grave, the realm of the Barzakh"
+}
+]

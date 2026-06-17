@@ -1,0 +1,135 @@
+[
+{
+"s": "ENT_CHRR_HEAVEN",
+"t": "member_of",
+"o": "ENT_CHRR_COSMOS",
+"c": "high",
+"ra": "Heaven is a principal realm of the structured Christian cosmos."
+},
+{
+"s": "ENT_CHRR_HELL",
+"t": "member_of",
+"o": "ENT_CHRR_COSMOS",
+"c": "high",
+"ra": "Hell is a principal realm of the structured Christian cosmos."
+},
+{
+"s": "ENT_CHRR_PURGATORY",
+"t": "member_of",
+"o": "ENT_CHRR_COSMOS",
+"c": "high",
+"ra": "Purgatory is the intermediate purifying realm of the Christian cosmos."
+},
+{
+"s": "ENT_CHRR_LIMBUS_PATRUM",
+"t": "member_of",
+"o": "ENT_CHRR_COSMOS",
+"c": "high",
+"ra": "The Limbo of the Fathers is a region of the Christian otherworld cosmos."
+},
+{
+"s": "ENT_CHRR_LIMBUS_INFANTUM",
+"t": "member_of",
+"o": "ENT_CHRR_COSMOS",
+"c": "medium",
+"ra": "The Limbo of the Infants is a theorized region of the Christian cosmos."
+},
+{
+"s": "ENT_CHRR_EMPYREAN",
+"t": "member_of",
+"o": "ENT_CHRR_HEAVEN",
+"c": "high",
+"ra": "The Empyrean is the highest heaven, the innermost dwelling of God within Heaven."
+},
+{
+"s": "ENT_CHRR_NEW_JERUSALEM",
+"t": "member_of",
+"o": "ENT_CHRR_HEAVEN",
+"c": "high",
+"ra": "The New Jerusalem is the consummated heavenly city, the perfected form of Heaven."
+},
+{
+"s": "ENT_CHRR_BOSOM_ABRAHAM",
+"t": "equated_with",
+"o": "ENT_CHRR_LIMBUS_PATRUM",
+"c": "high",
+"ra": "Christian tradition identifies the Bosom of Abraham with the Limbo of the Fathers, the rest of the righteous dead before Christ."
+},
+{
+"s": "ENT_CHRR_BEATIFIC_VISION",
+"t": "dwells_in",
+"o": "ENT_CHRR_EMPYREAN",
+"c": "medium",
+"ra": "The Beatific Vision is enjoyed by the blessed in the Empyrean, the highest heaven."
+},
+{
+"s": "ENT_CHRR_NINE_CIRCLES",
+"t": "member_of",
+"o": "ENT_CHRR_HELL",
+"c": "high",
+"ra": "Dante's nine descending circles are the structural articulation of Hell."
+},
+{
+"s": "ENT_CHRR_SEVEN_TERRACES",
+"t": "member_of",
+"o": "ENT_CHRR_PURGATORY",
+"c": "high",
+"ra": "Dante's seven terraces are the structural articulation of Mount Purgatory."
+},
+{
+"s": "ENT_CHRR_CELESTIAL_SPHERES",
+"t": "member_of",
+"o": "ENT_CHRR_HEAVEN",
+"c": "high",
+"ra": "Dante's nine revolving celestial spheres are the ascending structure of Heaven below the Empyrean."
+},
+{
+"s": "ENT_CHRR_LIMBUS_PATRUM",
+"t": "member_of",
+"o": "ENT_CHRR_NINE_CIRCLES",
+"c": "medium",
+"ra": "Dante places Limbo as the first of the nine circles of Hell."
+},
+{
+"s": "ENT_CHR_DEVIL",
+"t": "dwells_in",
+"o": "ENT_CHRR_HELL",
+"c": "high",
+"ra": "Hell is the abode of the Devil; Dante fixes Satan at the center of the Inferno."
+},
+{
+"s": "ENT_CHR_DEMONS",
+"t": "dwells_in",
+"o": "ENT_CHRR_HELL",
+"c": "high",
+"ra": "The demons inhabit Hell with their prince the Devil."
+},
+{
+"s": "ENT_JESUS_CHRIST",
+"t": "rescues",
+"o": "ENT_CHRR_LIMBUS_PATRUM",
+"c": "high",
+"ra": "In the Harrowing of Hell, Christ descends and liberates the righteous held in the Limbo of the Fathers."
+},
+{
+"s": "ENT_CHRR_HELL",
+"t": "reception_of",
+"o": "ENT_JM_GEHENNA",
+"c": "medium",
+"ra": "The Christian conception of Hell as the place of eternal punishment develops from the Jewish Gehenna."
+},
+{
+"s": "ENT_CHRR_BOSOM_ABRAHAM",
+"t": "reception_of",
+"o": "ENT_ISR_SHEOL",
+"c": "low",
+"ra": "The Bosom of Abraham as the rest of the righteous dead draws on the older Israelite Sheol as abode of the dead."
+},
+{
+"s": "ENT_PAT_AUGUSTINE",
+"t": "transmits",
+"o": "ENT_CHRR_NEW_JERUSALEM",
+"c": "medium",
+"ra": "Augustine systematizes and transmits the heavenly Jerusalem as the City of God in De Civitate Dei."
+}
+]

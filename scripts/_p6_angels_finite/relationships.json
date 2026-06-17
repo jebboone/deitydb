@@ -1,0 +1,163 @@
+[
+{
+"s": "ENT_ANGF_MALCHIDAEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Malchidael is the Aries governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_ASMODEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Asmodel is the Taurus governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_AMBRIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Ambriel is the Gemini governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_MURIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Muriel is the Cancer governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_VERCHIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Verchiel is the Leo governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_HAMALIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Hamaliel is the Virgo governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_ZURIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Zuriel is the Libra governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_BARBIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Barbiel is the Scorpio governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_ADVACHIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Advachiel/Adnachiel is the Sagittarius governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_HANAEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Hanael is the Capricorn governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_CAMBIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Cambiel is the Aquarius governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_BARCHIEL",
+"t": "member_of",
+"o": "ENT_ANGF_ZODIAC_12",
+"c": "high",
+"ra": "Barchiel is the Pisces governor in Agrippa's Scale of Twelve."
+},
+{
+"s": "ENT_ANGF_ZODIAC_12",
+"t": "aligned_with",
+"o": "ENT_AST_DECANS",
+"c": "medium",
+"ra": "The twelve zodiacal angels (one per sign) parallel and subdivide into the thirty-six decans (three per sign); functional alignment of the two zodiacal angelic schemes."
+},
+{
+"s": "ENT_SAINT_MICHAEL_CHR",
+"t": "member_of",
+"o": "ENT_SOL_PLANETARY_ANGELS",
+"c": "high",
+"ra": "Michael is the Sun angel in the seven-planet grimoire scheme; wires the existing archangel into the existing (previously member-less) Seven Planetary Angels collective."
+},
+{
+"s": "ENT_SAINT_GABRIEL_CHR",
+"t": "member_of",
+"o": "ENT_SOL_PLANETARY_ANGELS",
+"c": "high",
+"ra": "Gabriel is the Moon angel in the seven-planet grimoire scheme; wires the existing archangel into the collective."
+},
+{
+"s": "ENT_SAINT_RAPHAEL_CHR",
+"t": "member_of",
+"o": "ENT_SOL_PLANETARY_ANGELS",
+"c": "high",
+"ra": "Raphael is the Mercury angel in the seven-planet grimoire scheme; wires the existing archangel into the collective."
+},
+{
+"s": "ENT_SOL_ANAEL",
+"t": "member_of",
+"o": "ENT_SOL_PLANETARY_ANGELS",
+"c": "high",
+"ra": "Anael is the Venus angel; completes membership of the previously empty Seven Planetary Angels collective."
+},
+{
+"s": "ENT_SOL_SAMAEL_MARS",
+"t": "member_of",
+"o": "ENT_SOL_PLANETARY_ANGELS",
+"c": "high",
+"ra": "Samael is the Mars angel; completes membership of the collective."
+},
+{
+"s": "ENT_SOL_SACHIEL",
+"t": "member_of",
+"o": "ENT_SOL_PLANETARY_ANGELS",
+"c": "high",
+"ra": "Sachiel is the Jupiter angel; completes membership of the collective."
+},
+{
+"s": "ENT_SOL_CASSIEL",
+"t": "member_of",
+"o": "ENT_SOL_PLANETARY_ANGELS",
+"c": "high",
+"ra": "Cassiel is the Saturn angel; completes membership of the collective."
+},
+{
+"s": "ENT_SAINT_MICHAEL_CHR",
+"t": "presides_over",
+"o": "ENT_SUN",
+"c": "high",
+"ra": "Adds the missing solar rulership: Michael governs the Sun in the planetary-angel scheme (Agrippa, Scale of Seven)."
+},
+{
+"s": "ENT_SAINT_GABRIEL_CHR",
+"t": "presides_over",
+"o": "ENT_MOON",
+"c": "high",
+"ra": "Adds the missing lunar rulership: Gabriel governs the Moon in the planetary-angel scheme (Agrippa, Scale of Seven)."
+},
+{
+"s": "ENT_SOL_ANAEL",
+"t": "presides_over",
+"o": "ENT_VENUS",
+"c": "high",
+"ra": "Anael governs Venus in the planetary-angel scheme; wires the existing Venus angel to the existing Venus planet-category entity."
+}
+]

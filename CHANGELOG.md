@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.90.0 — 2026-06-17
+
+### Completeness build-out, Phase 6 — cross-cutting structure (realms, monsters, angel-sets)
+
+Sixth phase of the completeness program (`docs/COMPLETENESS_ROADMAP.md`), orchestrated
+research→adversarial-verify workflow. Almost entirely WITHIN existing traditions (no new
+traditions), heavily dedup-wired onto existing figures. **+85 entities, +156 relationships,
++8 sources.** Scorecard now 3,785 entities / 6,983 relationships / 448 sources / 130 traditions.
+
+- **Cosmological realms** (the biggest structural gap) — **Islamic** (Jannah & its gardens,
+  Jahannam & its seven gates, Barzakh, As-Sirat, al-Aʿraf, Sidrat al-Muntaha); **Norse** (the
+  Nine Worlds + Valhalla, Folkvangr, Bifröst, Ginnungagap); **Greek** (Elysium, the Asphodel
+  Meadows, the Isles of the Blest, onto the existing underworld rivers); **Christian/Dante**
+  (Purgatory, Limbo, the Empyrean, the Bosom of Abraham, the Nine Circles); **Iranian /
+  Mesopotamian / Jewish** (the Chinvat Bridge & the House of Song/Lies; Irkalla & Dilmun; the
+  Seven Heavens & the Hekhalot palaces).
+- **The Echidna/Typhon monster brood** — Echidna (the genealogical hub, `parent_of` her
+  already-present children Cerberus/Hydra/Chimera/…), Orthrus, the Sphinx, the Harpies, the
+  Sirens, the Graeae.
+- **Finite angel-sets** — the Seven Planetary Angels completed and the Twelve Zodiacal Angels
+  (Agrippa) added, cross-linked to the existing planetary angels and decans.
+
+Process: the verifier rewrote 18 `part_of` edges to the existing verb `belongs_to_realm`; a
+duplicate Níðhöggr was merged into the canonical `ENT_NOR_NIDHOGG`. Integrity-gated to 0
+rejected / orphan / unsourced / unperiodized / rationale-less / orphan-source.
+
+
 ## v1.89.0 — 2026-06-17
 
 ### Completeness build-out, Phase 5 — Western esoteric & modern new-religious movements

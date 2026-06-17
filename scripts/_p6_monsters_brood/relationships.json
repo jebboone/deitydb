@@ -1,0 +1,128 @@
+[
+{
+"s": "ENT_MON_ECHIDNA",
+"t": "paired_with",
+"o": "ENT_TYPHON",
+"c": "high",
+"ra": "Hesiod, Theog. 306-308: Echidna couples with Typhon (Typhaon) to bear the monster brood. paired_with (not consort_of, which is not a valid type)."
+},
+{
+"s": "ENT_MON_ECHIDNA",
+"t": "parent_of",
+"o": "ENT_MON_ORTHRUS",
+"c": "high",
+"ra": "Hesiod, Theog. 309-310: Echidna bore Orthrus the hound of Geryon."
+},
+{
+"s": "ENT_MON_ECHIDNA",
+"t": "parent_of",
+"o": "ENT_CERBERUS",
+"c": "high",
+"ra": "Hesiod, Theog. 310-312: Echidna bore Cerberus, the brazen-voiced hound of Hades (existing entity)."
+},
+{
+"s": "ENT_MON_ECHIDNA",
+"t": "parent_of",
+"o": "ENT_HYDRA",
+"c": "high",
+"ra": "Hesiod, Theog. 313-315: Echidna bore the Lernaean Hydra (existing entity)."
+},
+{
+"s": "ENT_MON_ECHIDNA",
+"t": "parent_of",
+"o": "ENT_CHIMERA",
+"c": "medium",
+"ra": "Hesiod, Theog. 319-325: the Chimera in the prevailing reading belongs to the Echidna/Typhon line (variant: of Echidna and Orthrus). Existing entity."
+},
+{
+"s": "ENT_TYPHON",
+"t": "parent_of",
+"o": "ENT_MON_ORTHRUS",
+"c": "high",
+"ra": "Hesiod, Theog. 306-310: Typhon father of Echidna's brood, including Orthrus."
+},
+{
+"s": "ENT_TYPHON",
+"t": "parent_of",
+"o": "ENT_CERBERUS",
+"c": "high",
+"ra": "Hesiod, Theog. 306-312: Typhon father of Cerberus by Echidna (existing entity)."
+},
+{
+"s": "ENT_TYPHON",
+"t": "parent_of",
+"o": "ENT_HYDRA",
+"c": "high",
+"ra": "Hesiod, Theog. 306-315: Typhon father of the Hydra by Echidna (existing entity)."
+},
+{
+"s": "ENT_MON_ORTHRUS",
+"t": "sibling_of",
+"o": "ENT_CERBERUS",
+"c": "high",
+"ra": "Hesiod, Theog. 309-312: Orthrus and Cerberus both born of Typhon and Echidna (existing entity)."
+},
+{
+"s": "ENT_MON_ORTHRUS",
+"t": "guardian_of",
+"o": "ENT_GERYON",
+"c": "high",
+"ra": "Hesiod, Theog. 309-311; Apollodorus 2.5.10: Orthrus guarded the cattle of Geryon and was slain by Heracles (existing entity)."
+},
+{
+"s": "ENT_MON_SPHINX",
+"t": "child_of",
+"o": "ENT_MON_ORTHRUS",
+"c": "medium",
+"ra": "Hesiod, Theog. 326-327: the Sphinx (Phix) born of Orthrus (contested maternal line)."
+},
+{
+"s": "ENT_MON_SPHINX",
+"t": "child_of",
+"o": "ENT_CHIMERA",
+"c": "medium",
+"ra": "Hesiod, Theog. 326-329: the Sphinx and Nemean Lion born of the Chimera (by Orthrus) per one construal. Existing entity."
+},
+{
+"s": "ENT_NEMEAN_LION",
+"t": "child_of",
+"o": "ENT_CHIMERA",
+"c": "medium",
+"ra": "Hesiod, Theog. 327-329: the Nemean Lion in the same brood-line, connected to the Chimera/Orthrus. Both existing entities."
+},
+{
+"s": "ENT_NOR_NIDHOGG",
+"t": "dwells_in",
+"o": "ENT_NOR_YGGDRASIL",
+"c": "high",
+"ra": "Poetic Edda, Grímnismál 32, 35 and Völuspá 66: Níðhöggr gnaws the root of Yggdrasil from below (existing entity)."
+},
+{
+"s": "ENT_NOR_NIDHOGG",
+"t": "aligned_with",
+"o": "ENT_MON_ECHIDNA",
+"c": "low",
+"ra": "Modern comparative cross-tradition pairing: Níðhöggr as the Norse functional cognate of the Greek chthonic monster-serpent of the Echidna brood (aligned_with = modern functional analogue, not ancient identification)."
+},
+{
+"s": "ENT_MON_GRAEAE",
+"t": "aligned_with",
+"o": "ENT_MON_SIRENS",
+"c": "low",
+"ra": "Structural grouping within the wider chthonic Phorcys/Ceto and sea-monster cohort of early Greek myth (Gantz, Early Greek Myth); cohort linkage, NOT attested kinship (changed from sibling_of, which would falsely assert shared parentage)."
+},
+{
+"s": "ENT_MON_HECATONCHEIRES",
+"t": "opposes",
+"o": "ENT_MON_GIGANTES",
+"c": "low",
+"ra": "Structural contrast among Gaia's primordial earth-born hosts: the Hundred-Handers fight for Zeus, while the Gigantes war against the Olympians (Hesiod, Theog.; Apollodorus 1.6)."
+},
+{
+"s": "ENT_MON_STYMPHALIAN_BIRDS",
+"t": "aligned_with",
+"o": "ENT_MON_HARPIES",
+"c": "low",
+"ra": "Comparative grouping of monstrous bird-collectives of Greek myth (Stymphalian Birds, Harpies, Sirens); cohort linkage for graph connectivity, not genealogical kinship."
+}
+]

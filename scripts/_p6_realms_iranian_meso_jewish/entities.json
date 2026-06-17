@@ -1,0 +1,110 @@
+[
+{
+"id": "ENT_RLMX_CHINVAT",
+"name": "Chinvat Bridge",
+"type": "Cosmological realm",
+"trad": "Zoroastrian",
+"dom": "Eschatology / judgement of the soul",
+"conf": "B",
+"note": "The Cinvat (Chinvat) Bridge, the 'bridge of the separator/accountant' which every soul must cross after death; attested in the Gathas (Y. 46.10, 51.13) and the Vendidad (19), where Rashnu, Mithra and Sraosha judge and the Daena meets the soul. Widens for the righteous, narrows to a blade for the wicked.",
+"src": "SRC_VENDIDAD",
+"per": "PER_ZOR_ACHAEMENID",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_RLMX_GAROTHMAN",
+"name": "Garothman (House of Song)",
+"type": "Cosmological realm",
+"trad": "Zoroastrian",
+"dom": "Paradise / best existence",
+"conf": "B",
+"note": "Garothman / Garodman, the 'House of Song' (Avestan Garo-demana), the highest paradise and abode of Ahura Mazda and the blessed (the 'Best Existence', vahishta ahu). Attested in the Avesta and elaborated in the Bundahishn and Menog-i Khrad.",
+"src": "SRC_BUNDAHISHN",
+"per": "PER_ZOR_SASANIAN",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_RLMX_DRUJO_DEMANA",
+"name": "Drujo Demana (House of Lies)",
+"type": "Cosmological realm",
+"trad": "Zoroastrian",
+"dom": "Hell / worst existence",
+"conf": "B",
+"note": "Drujo Demana, the 'House of the Lie' (Avestan druj-demana), the Zoroastrian hell and abode of Angra Mainyu and the damned (the 'Worst Existence'). Antithesis of the House of Song; attested in the Gathas (Y. 46.11, 49.11) and Pahlavi eschatology.",
+"src": "SRC_MENOG_I_KHRAD",
+"per": "PER_ZOR_SASANIAN",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_RLMX_HAMISTAGAN",
+"name": "Hamistagan",
+"type": "Cosmological realm",
+"trad": "Zoroastrian",
+"dom": "Limbo / neutral intermediate state",
+"conf": "B",
+"note": "Hamistagan (Pahlavi hammistagan), the neutral 'place of the mixed', an intermediate state for souls whose good and evil deeds are exactly balanced; they remain there, untormented but joyless, until the final renovation (Frashokereti). Attested in the Bundahishn and Menog-i Khrad.",
+"src": "SRC_MENOG_I_KHRAD",
+"per": "PER_ZOR_SASANIAN",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_RLMX_IRKALLA",
+"name": "Irkalla (Kur)",
+"type": "Cosmological realm",
+"trad": "Mesopotamian",
+"dom": "Netherworld / land of the dead",
+"conf": "B",
+"note": "Irkalla (Sumerian Kur, the 'land of no return'), the Mesopotamian underworld ruled by Ereshkigal (and Nergal), a dark dust-filled realm where the dead eat clay. Attested in the Descent of Ishtar and the Descent of Inanna. NOTE: distinct from the being Apsu (ENT_MES_APSU); this is the place.",
+"src": "SRC_DESCENT_ISHTAR",
+"per": "PER_MES_OLD_BAB",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_RLMX_GANZIR",
+"name": "Ganzir",
+"type": "Cosmological realm",
+"trad": "Mesopotamian",
+"dom": "Gate of the netherworld",
+"conf": "C",
+"note": "Ganzir, the gate / threshold (the 'face') of the netherworld Irkalla/Kur, sometimes used as a name for the underworld's entrance through which the dead pass the seven gates. Attested in the Descent of Inanna/Ishtar tradition.",
+"src": "SRC_DESCENT_ISHTAR",
+"per": "PER_MES_OLD_BAB",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_RLMX_DILMUN",
+"name": "Dilmun",
+"type": "Cosmological realm",
+"trad": "Mesopotamian",
+"dom": "Pure land / paradise",
+"conf": "B",
+"note": "Dilmun, the 'pure, clean, bright' land where there is no death or sickness, watered with fresh water by Enki; the Sumerian paradise (and a real geographical region, Bahrain). Attested in the myth Enki and Ninhursag.",
+"src": "SRC_DESCENT_ISHTAR",
+"per": "PER_MES_EARLY",
+"cat": "Cosmological realm"
+},
+{
+"id": "ENT_RLMX_SEVEN_HEAVENS",
+"name": "The Seven Heavens (Vilon, Raqia, Shehaqim, Zebul, Maon, Makhon, Araboth)",
+"type": "Cosmological structure",
+"trad": "Jewish Mystical",
+"dom": "Vertical celestial cosmography",
+"conf": "B",
+"note": "The seven heavens of rabbinic/Merkavah cosmology, named in b. Hagigah 12b: Vilon, Raqia, Shehaqim, Zebul, Maon, Makhon, and Araboth (the highest, housing the Throne of Glory). Distinct from the seven firmaments of Sefer ha-Razim.",
+"src": "SRC_3_ENOCH",
+"per": "PER_JM_HEKHALOT",
+"cat": "Cosmological structure"
+},
+{
+"id": "ENT_RLMX_SEVEN_HEKHALOT",
+"name": "The Seven Hekhalot (Heavenly Palaces)",
+"type": "Cosmological structure",
+"trad": "Jewish Mystical",
+"dom": "Merkavah ascent / celestial palaces",
+"conf": "B",
+"note": "The seven hekhalot ('palaces'/'halls') nested within the highest heaven (Araboth), each guarded by angelic gatekeepers, through which the yored merkavah ('descender to the chariot') ascends to the Throne. Attested in Hekhalot Rabbati.",
+"src": "SRC_HEKHALOT_RABBATI",
+"per": "PER_JM_HEKHALOT",
+"cat": "Cosmological structure"
+}
+]

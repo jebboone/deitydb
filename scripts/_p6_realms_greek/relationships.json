@@ -1,0 +1,107 @@
+[
+{
+"s": "ENT_HADES",
+"t": "rules",
+"o": "ENT_GRR_UNDERWORLD",
+"c": "high",
+"ra": "Hades is the ruler of the underworld, the House of Hades that bears his name (Homer, passim)."
+},
+{
+"s": "ENT_PERSEPHONE",
+"t": "rules",
+"o": "ENT_GRR_UNDERWORLD",
+"c": "high",
+"ra": "Persephone reigns as queen of the underworld alongside Hades (Homer Odyssey 10-11; Homeric Hymn to Demeter)."
+},
+{
+"s": "ENT_GRR_UNDERWORLD",
+"t": "ruled_by",
+"o": "ENT_HADES",
+"c": "high",
+"ra": "The underworld is ruled by Hades, its eponymous lord."
+},
+{
+"s": "ENT_GRR_ELYSIUM",
+"t": "dwells_in",
+"o": "ENT_GRR_UNDERWORLD",
+"c": "medium",
+"ra": "In the developed topography (Virgil Aeneid 6) Elysium is a region within the underworld."
+},
+{
+"s": "ENT_GRR_ASPHODEL",
+"t": "dwells_in",
+"o": "ENT_GRR_UNDERWORLD",
+"c": "high",
+"ra": "The Asphodel Meadow is part of the House of Hades, where ordinary shades wander (Odyssey 11.539)."
+},
+{
+"s": "ENT_GRR_MOURNING_FIELDS",
+"t": "dwells_in",
+"o": "ENT_GRR_UNDERWORLD",
+"c": "medium",
+"ra": "The Lugentes Campi are a named region of the underworld (Aeneid 6.441)."
+},
+{
+"s": "ENT_GRR_PLAIN_LETHE",
+"t": "dwells_in",
+"o": "ENT_GRR_UNDERWORLD",
+"c": "medium",
+"ra": "The Plain of Lethe lies within the underworld, where souls prepare for rebirth (Aeneid 6.703ff)."
+},
+{
+"s": "ENT_GRR_FIELDS_PUNISHMENT",
+"t": "dwells_in",
+"o": "ENT_GRR_UNDERWORLD",
+"c": "high",
+"ra": "The Fields of Punishment are the penal region of the underworld (Aeneid 6.548ff)."
+},
+{
+"s": "ENT_GRR_FIELDS_PUNISHMENT",
+"t": "dwells_in",
+"o": "ENT_TARTARUS",
+"c": "medium",
+"ra": "The Fields of Punishment lie above and continuous with the abyss of Tartarus, where the deepest torments occur (Aeneid 6; Hesiod Theogony 717ff)."
+},
+{
+"s": "ENT_GRR_FIELDS_PUNISHMENT",
+"t": "associated_with",
+"o": "ENT_PHLEGETHON",
+"c": "high",
+"ra": "The Fields of Punishment are encircled by the flaming river Phlegethon (Aeneid 6.550-551)."
+},
+{
+"s": "ENT_GRR_PLAIN_LETHE",
+"t": "associated_with",
+"o": "ENT_LETHE",
+"c": "high",
+"ra": "The Plain of Lethe takes its name from and is watered by the river Lethe of forgetfulness (Aeneid 6.705, 714)."
+},
+{
+"s": "ENT_GRR_UNDERWORLD",
+"t": "associated_with",
+"o": "ENT_EREBUS",
+"c": "medium",
+"ra": "Erebus, primordial darkness, is the gloom of the underworld through which the dead pass (Hesiod Theogony 123; Homer)."
+},
+{
+"s": "ENT_GRR_ISLES_BLEST",
+"t": "presided_over_by",
+"o": "ENT_CRONUS",
+"c": "medium",
+"ra": "In Hesiod's account (and Pindar Ol. 2), Cronus rules over the Isles of the Blest where the heroic dead dwell apart from Hades' realm."
+},
+{
+"s": "ENT_GRR_FIELDS_PUNISHMENT",
+"t": "presided_over_by",
+"o": "ENT_RHADAMANTHUS",
+"c": "medium",
+"ra": "Rhadamanthus presides over the punishment of the wicked in the penal region (Aeneid 6.566-569)."
+},
+{
+"s": "ENT_GRR_ISLES_BLEST",
+"t": "associated_with",
+"o": "ENT_GRR_ELYSIUM",
+"c": "medium",
+"ra": "The Isles of the Blest and Elysium are the two principal Greek paradise-abodes, frequently conflated in later sources as the destination of the blessed."
+}
+]

@@ -1,0 +1,110 @@
+[
+{
+"id": "ENT_MON_ECHIDNA",
+"name": "Echidna",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; chthonic generation",
+"conf": "B",
+"note": "The half-woman, half-serpent 'mother of monsters'; mate of Typhon and dam of the Greek monster brood. Attested Hesiod, Theogony 295-332 (esp. 304-305 description); Apollodorus 2.1.2. Genealogical hub previously missing from the DB.",
+"src": "SRC_HESIOD_THEOGONY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Chthonic monster"
+},
+{
+"id": "ENT_MON_ORTHRUS",
+"name": "Orthrus",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; guardian beasts",
+"conf": "B",
+"note": "Two-headed hound of Geryon, son of Typhon and Echidna, slain by Heracles; sire (with the Chimera) of the Sphinx and Nemean Lion in Hesiod's construal. Attested Hesiod, Theogony 309-327; Apollodorus 2.5.10.",
+"src": "SRC_HESIOD_THEOGONY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Guardian beast"
+},
+{
+"id": "ENT_MON_SPHINX",
+"name": "Sphinx",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; riddle/death",
+"conf": "B",
+"note": "The Theban Sphinx (Phix), winged lion-bodied woman who posed the riddle; child of Orthrus and the Chimera (Hesiod) or of Typhon/Echidna. Attested Hesiod, Theogony 326-329; Apollodorus 3.5.8. Distinct from the Egyptian sphinx.",
+"src": "SRC_HESIOD_THEOGONY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Chthonic monster"
+},
+{
+"id": "ENT_MON_HARPIES",
+"name": "Harpies",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; storm-winds; snatching",
+"conf": "B",
+"note": "Collective of winged storm-spirits (Aello, Ocypete, Celaeno), daughters of Thaumas and Electra, 'snatchers' who tormented Phineus. Attested Hesiod, Theogony 265-269; Apollodorus 1.9.21. Collective entity.",
+"src": "SRC_HESIOD_THEOGONY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Monster collective"
+},
+{
+"id": "ENT_MON_SIRENS",
+"name": "Sirens",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; deadly song",
+"conf": "B",
+"note": "Collective of bird-bodied singing maidens whose song lured sailors to death; encountered by Odysseus. Attested Homer, Odyssey 12.39-54, 165-200; Apollodorus E7.18-19. Collective entity.",
+"src": "SRC_GANTZ_EARLY_GREEK_MYTH",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Monster collective"
+},
+{
+"id": "ENT_MON_STYMPHALIAN_BIRDS",
+"name": "Stymphalian Birds",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; man-eating birds",
+"conf": "B",
+"note": "Man-eating bronze-beaked birds of Lake Stymphalia driven off by Heracles in his sixth labour. Attested Apollodorus 2.5.6; Pausanias 8.22.4. Collective entity.",
+"src": "SRC_GANTZ_EARLY_GREEK_MYTH",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Monster collective"
+},
+{
+"id": "ENT_MON_GRAEAE",
+"name": "Graeae",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; old age; prophecy",
+"conf": "B",
+"note": "Grey-haired sisters (Deino, Enyo, Pemphredo) sharing one eye and one tooth, daughters of Phorcys and Ceto; coerced by Perseus. Attested Hesiod, Theogony 270-273; Apollodorus 2.4.2. Collective entity.",
+"src": "SRC_HESIOD_THEOGONY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Monster collective"
+},
+{
+"id": "ENT_MON_HECATONCHEIRES",
+"name": "Hecatoncheires",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; primordial force",
+"conf": "B",
+"note": "The hundred-handed, fifty-headed giants Cottus, Briareus and Gyges, sons of Ouranos and Gaia; allies of Zeus against the Titans and jailers of the imprisoned Titans. Attested Hesiod, Theogony 147-153, 617-735. Collective entity.",
+"src": "SRC_HESIOD_THEOGONY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Primordial monster collective"
+},
+{
+"id": "ENT_MON_GIGANTES",
+"name": "Gigantes",
+"type": "Monster",
+"trad": "Greek",
+"dom": "Monsters; Gigantomachy",
+"conf": "B",
+"note": "Earth-born giants sprung from Gaia (from the blood of Ouranos) who warred on the Olympians in the Gigantomachy. Attested Hesiod, Theogony 183-186; Apollodorus 1.6.1-2. Collective entity.",
+"src": "SRC_HESIOD_THEOGONY",
+"per": "PER_GRK_ARCHAIC",
+"cat": "Primordial monster collective"
+}
+]
