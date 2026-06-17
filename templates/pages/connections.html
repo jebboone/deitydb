@@ -272,12 +272,12 @@ async function openPair(a,b){
   try{ data=await(await fetch('/deitydb.json?sql='+encodeURIComponent(sql)+'&_shape=array&_size=500')).json(); }
   catch(e){ pmeta.textContent='Could not load these connections.'; return; }
   if(!Array.isArray(data)||!data.length){ pmeta.textContent='No comparative links found between these traditions.'; return; }
-  pmeta.textContent=data.length+' comparative link'+(data.length===1?'':'s')+' — click any name to open it in the graph.';
+  pmeta.textContent=data.length+' comparative link'+(data.length===1?'':'s')+' — click any name to open its page.';
   pbody.innerHTML=data.map(function(r){
     return '<div class="cx-link">'+
-      '<a href="/graph?start='+encodeURIComponent(r.sid)+'">'+esc(r.sname)+'</a> <span class="cx-trad">('+esc(r.strad)+')</span>'+
+      '<a href="/entity?id='+encodeURIComponent(r.sid)+'">'+esc(r.sname)+'</a> <span class="cx-trad">('+esc(r.strad)+')</span>'+
       '<span class="cx-verb">'+esc(String(r.rel).replace(/_/g,' '))+'</span>'+
-      '<a href="/graph?start='+encodeURIComponent(r.oid)+'">'+esc(r.oname)+'</a> <span class="cx-trad">('+esc(r.otrad)+')</span>'+
+      '<a href="/entity?id='+encodeURIComponent(r.oid)+'">'+esc(r.oname)+'</a> <span class="cx-trad">('+esc(r.otrad)+')</span>'+
       (r.rat?'<span class="cx-rat">'+esc(r.rat)+(r.src?'  · '+esc(r.src):'')+'</span>':'')+
       '</div>';
   }).join('');
