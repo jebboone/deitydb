@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.91.1 — 2026-06-17
+
+### Post-roadmap audit cleanup
+
+Full audit of the completed roadmap deployment (`scripts/qa_orphans_selfloops_v1_91.sql`).
+All integrity invariants verified clean; two pieces of pre-existing debt (predating the
+build-out) were surfaced and fixed:
+- **4 degenerate `identified_with`-self self-loops** removed (the real cross-links, e.g.
+  Mandaean↔Christian John the Baptist, already existed separately).
+- **17 orphan entities** (0 edges) wired into real edges: the 13 orphan saints into a new
+  **Communion of Saints** hub (+ the martyrs `embodies` Martyrdom); Renpet↔Anna Perenna
+  (year-goddess cognates), Nemty↔Charon (divine ferrymen), Vacuna `equated_with` Victoria;
+  and the "Heroes" class `aligned_with` the Daimones.
+
+Final state: 0 unsourced / orphan / rationale-less / dangling / orphan-source / self-loop /
+profile-gap; 97.3% primary-or-scholarly source coverage.
+
+
 ## v1.91.0 — 2026-06-17
 
 ### Completeness build-out, Phase 7 (FINAL) — the boundary domains of the Atlantic world
