@@ -1,0 +1,65 @@
+[
+{
+"s": "ENT_VEN_REITIA",
+"t": "member_of",
+"o": "ENT_VEN_PANTHEON",
+"c": "high",
+"ra": "Reitia is the principal deity of the Venetic pantheon, head of the Este sanctuary cult."
+},
+{
+"s": "ENT_VEN_SAINAS",
+"t": "member_of",
+"o": "ENT_VEN_PANTHEON",
+"c": "medium",
+"ra": "Sainas is a Venetic divine name attested within the Venetic votive-cult sphere."
+},
+{
+"s": "ENT_VEN_TRUMUSIJATIS",
+"t": "member_of",
+"o": "ENT_VEN_PANTHEON",
+"c": "medium",
+"ra": "Trumusijatis is a Venetic deity of the Lagole sanctuary, part of the Venetic pantheon."
+},
+{
+"s": "ENT_VEN_ATEGNATIS",
+"t": "member_of",
+"o": "ENT_VEN_PANTHEON",
+"c": "medium",
+"ra": "Ategnatis is a Venetic divine name belonging to the Venetic votive pantheon."
+},
+{
+"s": "ENT_VEN_PORA",
+"t": "member_of",
+"o": "ENT_VEN_PANTHEON",
+"c": "medium",
+"ra": "Pora is a Venetic divine name belonging to the Venetic votive pantheon."
+},
+{
+"s": "ENT_VEN_REITIA",
+"t": "aligned_with",
+"o": "ENT_ARTEMIS",
+"c": "medium",
+"ra": "Reitia's healing and protective-of-women functions led to her functional identification with Greek Artemis in interpretatio."
+},
+{
+"s": "ENT_VEN_REITIA",
+"t": "aligned_with",
+"o": "ENT_ROM_DIANA",
+"c": "medium",
+"ra": "Under Romanization the Este sanctuary cult of Reitia was assimilated toward Diana (Artemis' Roman counterpart)."
+},
+{
+"s": "ENT_VEN_REITIA",
+"t": "aligned_with",
+"o": "ENT_ROM_MINERVA",
+"c": "low",
+"ra": "Reitia's role as patron of writing/literacy (votive alphabet tablets) aligns her functionally with Minerva's craft-and-learning sphere."
+},
+{
+"s": "ENT_VEN_TRUMUSIJATIS",
+"t": "aligned_with",
+"o": "ENT_VEN_REITIA",
+"c": "low",
+"ra": "Trumusijatis shares the curative-cult sphere of the Venetic sanctuaries headed by Reitia, linking the thermal-spring healing deity to the great healing goddess."
+}
+]

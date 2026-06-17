@@ -1,0 +1,122 @@
+[
+{
+"id": "ENT_NORF_FOLK_BEINGS",
+"name": "Norse Folkloric Supernatural Beings",
+"type": "Collective",
+"trad": "Germanic/Norse",
+"dom": "folklore; vernacular religion; supernatural classes",
+"conf": "B",
+"note": "Editorial hub collective for the lesser supernatural classes of Norse/Scandinavian folklore (draugr, landvaettir, fylgja, disir, huldra, nisse/tomte, mara, nokk, troll), as distinct from the eddic gods and the jotnar/dvergar/valkyrjur of the high mythology. Attested across saga literature and later Scandinavian folk tradition.",
+"src": "SRC_SIMEK_NORTHERN",
+"per": "PER_NOR_VIKING",
+"cat": "Collective"
+},
+{
+"id": "ENT_NORF_DRAUGR",
+"name": "Draugr",
+"type": "Folkloric being",
+"trad": "Germanic/Norse",
+"dom": "undead; grave-dweller; barrow-revenant",
+"conf": "B",
+"note": "The animated, malevolent walking dead (aptrgangr, haugbui) of the Icelandic family sagas (e.g. Glamr in Grettis saga, Kar the Old, Thorolf in Eyrbyggja saga); a corporeal revenant guarding its barrow. Attested in saga literature; treated extensively by Simek and Lindow.",
+"src": "SRC_SIMEK_NORTHERN",
+"per": "PER_NOR_VIKING",
+"cat": "Folkloric being"
+},
+{
+"id": "ENT_NORF_LANDVAETTIR",
+"name": "Landvaettir",
+"type": "Collective",
+"trad": "Germanic/Norse",
+"dom": "land-spirits; guardians of place; luck of the land",
+"conf": "B",
+"note": "The protective spirits of the land, attested in Landnamabok and the Ulfljotr law (ships must remove dragon-heads on approach lest they frighten the landvaettir) and in Egils saga (the nidstong/scorn-pole). Tutelary guardians of districts and farms.",
+"src": "SRC_SIMEK_NORTHERN",
+"per": "PER_NOR_VIKING",
+"cat": "Collective"
+},
+{
+"id": "ENT_NORF_FYLGJA",
+"name": "Fylgja",
+"type": "Folkloric being",
+"trad": "Germanic/Norse",
+"dom": "fetch; follower-spirit; personal guardian; soul-double",
+"conf": "B",
+"note": "The 'fetch' or following-spirit attached to a person or family, appearing in dreams as an animal (representing temperament) or as a tutelary woman (kynfylgja/dis); its appearance often portends death. Attested across the sagas (Njals saga, Gisla saga). Discussed by Simek and Lindow.",
+"src": "SRC_LINDOW_NORSE",
+"per": "PER_NOR_VIKING",
+"cat": "Folkloric being"
+},
+{
+"id": "ENT_NORF_DISIR",
+"name": "Disir",
+"type": "Collective",
+"trad": "Germanic/Norse",
+"dom": "female protective/ancestral spirits; fate; cult (disablot)",
+"conf": "B",
+"note": "Collective of female numinous beings (ancestral/tutelary goddesses of fate and protection) honoured at the disablot and the disting; overlapping with the norns, valkyrjur and the kynfylgja. Attested in eddic and skaldic verse and saga (e.g. the spadisir of Thidrandi). Added as collective; no disir entity previously existed.",
+"src": "SRC_LINDOW_NORSE",
+"per": "PER_NOR_VIKING",
+"cat": "Collective"
+},
+{
+"id": "ENT_NORF_HULDRA",
+"name": "Huldra",
+"type": "Folkloric being",
+"trad": "Germanic/Norse",
+"dom": "forest seductress; hidden-folk woman; alluring danger",
+"conf": "C",
+"note": "The beautiful forest-dwelling female being of later Norwegian/Swedish folklore (huldra/skogsra), recognizable by a cow's tail or hollow back, who lures herdsmen and woodsmen; one of the huldufolk ('hidden people'). Post-medieval folk tradition rather than eddic; documented by Simek.",
+"src": "SRC_SIMEK_NORTHERN",
+"per": "PER_NOR_VIKING",
+"cat": "Folkloric being"
+},
+{
+"id": "ENT_NORF_NISSE",
+"name": "Nisse / Tomte",
+"type": "Folkloric being",
+"trad": "Germanic/Norse",
+"dom": "farm-spirit; household guardian; luck of the homestead",
+"conf": "C",
+"note": "The small farm/household guardian spirit (Norwegian/Danish nisse, Swedish tomte/tomtenisse, gardvord), who protects and brings luck to the farmstead in exchange for offerings (porridge with butter) but turns spiteful if neglected; linked to the founding ancestor. Post-medieval Scandinavian folk belief; documented by Simek and Lindow.",
+"src": "SRC_SIMEK_NORTHERN",
+"per": "PER_NOR_VIKING",
+"cat": "Folkloric being"
+},
+{
+"id": "ENT_NORF_MARA",
+"name": "Mara",
+"type": "Folkloric being",
+"trad": "Germanic/Norse",
+"dom": "nightmare-spirit; sleep oppression; riding the sleeper",
+"conf": "B",
+"note": "The night-spirit that sits upon and 'rides' the sleeper, causing the oppressive nightmare (the word's root, ON mara > Eng. nightmare); blamed in Ynglinga saga for the death of King Vanlandi. Cross-links to the contemporary sleep-paralysis Old Hag tradition. Attested in saga and pan-Germanic folklore; treated by Simek.",
+"src": "SRC_SIMEK_NORTHERN",
+"per": "PER_NOR_VIKING",
+"cat": "Folkloric being"
+},
+{
+"id": "ENT_NORF_NOKK",
+"name": "Nokk / Nacken",
+"type": "Folkloric being",
+"trad": "Germanic/Norse",
+"dom": "water-spirit; rivers and lakes; drowning; musician",
+"conf": "C",
+"note": "The shape-shifting freshwater spirit (Norwegian nokk/nokken, Swedish nacken, Danish nokke) of rivers, lakes and waterfalls, often a fiddle-playing male who lures victims to drown; cognate with the Germanic nixe/Nix. Post-medieval Scandinavian folk tradition; documented by Simek.",
+"src": "SRC_SIMEK_NORTHERN",
+"per": "PER_NOR_VIKING",
+"cat": "Folkloric being"
+},
+{
+"id": "ENT_NORF_TROLL",
+"name": "Troll (folklore class)",
+"type": "Folkloric being",
+"trad": "Germanic/Norse",
+"dom": "wilderness monster; mountain/forest dweller; the menacing other",
+"conf": "C",
+"note": "The troll as a folklore CLASS of malevolent, often man-eating wilderness beings of later Scandinavian tradition (mountain- and forest-trolls, turned to stone by sunlight), distinct from but historically continuous with the eddic jotnar/thurses (the saga 'troll' sense). Listed as folklore class to avoid conflation with ENT_NOR_JOTNAR; documented by Simek and Lindow.",
+"src": "SRC_LINDOW_NORSE",
+"per": "PER_NOR_VIKING",
+"cat": "Folkloric being"
+}
+]

@@ -62,6 +62,13 @@ P = {
  "Lycian":("civic-polytheism","regional","The Lycian civic polytheism of SW Anatolia (Trqqas, the Twelve Gods, Eni Mahanahi)."),
  "Carian":("civic-polytheism","regional","The Carian civic polytheism of SW Anatolia, centered on Zeus Labraundos and the great Hecate of Lagina."),
  "Commagene":("civic-polytheism","regional","The syncretic Hellenistic-Iranian royal cult of Commagene (Antiochus I, Nemrud Dağ): Zeus-Oromasdes, Apollo-Mithras, Artagnes-Heracles."),
+ # European-depth additions (completeness Phase 4)
+ "Anglo-Saxon":("civic-polytheism","regional","The pre-Christian Old English pantheon (Woden, Thunor, Tiw, Frige, Ēostre), reconstructed from royal genealogies, place-names, Bede and charms."),
+ "Continental Germanic":("civic-polytheism","regional","The Romano-Germanic continental deities and the Matronae (triple mother-goddesses) of the Rhineland, attested mostly in Roman-era votive inscriptions."),
+ "Illyrian":("civic-polytheism","regional","The Illyrian pantheon of the western Balkans (Medaurus, Redon, En), attested in inscriptions and Roman interpretatio."),
+ "Germanic Legend":("legendary-literary","literary","The Germanic heroic-legendary cycle (the Völsung/Nibelung matter — Sigurð, Brynhild, Wayland) — a mythos in saga and epic, like the Arthurian material."),
+ "Nart (Ossetian/Sarmatian)":("civic-polytheism","regional","The Nart sagas of the Caucasus — the surviving Scythian/Sarmatian-Alanic mythology (Batraz, Satana, Uastyrdzhi), a living oral epic among the Ossetians and neighbours."),
+ "Venetic":("civic-polytheism","regional","The Venetic pantheon of pre-Roman NE Italy, centered on the goddess Reitia."),
  # esoteric-magic (learned ritual-magic / grimoire)
  "Goetic/Solomonic":("esoteric-magic","learned-subculture"),"Renaissance Esoteric":("esoteric-magic","learned-subculture"),
  "Solomonic Magic":("esoteric-magic","learned-subculture"),"Astral Magic":("esoteric-magic","learned-subculture"),

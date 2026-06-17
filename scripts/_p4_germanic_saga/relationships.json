@@ -1,0 +1,338 @@
+[
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Sigurd is the central hero of the Volsung cycle (Byock, Saga of the Volsungs)."
+},
+{
+"s": "ENT_GSAGA_BRYNHILD",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Brynhild is a principal figure of the cycle."
+},
+{
+"s": "ENT_GSAGA_FAFNIR",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Fafnir the dragon is integral to the Sigurd legend."
+},
+{
+"s": "ENT_GSAGA_REGINN",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Reginn the smith fosters Sigurd within the cycle."
+},
+{
+"s": "ENT_GSAGA_SIGMUND",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Sigmund is a Volsung hero and Sigurd's father."
+},
+{
+"s": "ENT_GSAGA_SIGNY",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Signy is a Volsung in the early saga."
+},
+{
+"s": "ENT_GSAGA_VOLSUNG",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Volsung is the eponymous dynastic ancestor of the cycle."
+},
+{
+"s": "ENT_GSAGA_GUNNAR",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Gunnar is a Gjukung within the cycle."
+},
+{
+"s": "ENT_GSAGA_GUDRUN",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Gudrun is Sigurd's wife and a Gjukung within the cycle."
+},
+{
+"s": "ENT_GSAGA_HOGNI",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "high",
+"ra": "Hogni is a Gjukung within the cycle."
+},
+{
+"s": "ENT_GSAGA_VOLUNDR",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "medium",
+"ra": "Wayland the Smith belongs to the broader Germanic heroic-legendary corpus."
+},
+{
+"s": "ENT_GSAGA_STARKADR",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "medium",
+"ra": "Starkadr is part of the wider Germanic legendary tradition (Saxo/Gautreks saga)."
+},
+{
+"s": "ENT_GSAGA_HERVOR",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "medium",
+"ra": "Hervor belongs to the wider Germanic heroic-legendary corpus (Hervarar saga)."
+},
+{
+"s": "ENT_GSAGA_RAGNARR",
+"t": "member_of",
+"o": "ENT_GSAGA_VOLSUNG_CYCLE",
+"c": "medium",
+"ra": "Ragnarr's saga is tied to the Volsung line via his wife Aslaug, daughter of Sigurd and Brynhild."
+},
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "slays",
+"o": "ENT_GSAGA_FAFNIR",
+"c": "high",
+"ra": "Sigurd slays Fafnir with the sword Gram, the cycle's defining deed."
+},
+{
+"s": "ENT_GSAGA_FAFNIR",
+"t": "slain_by",
+"o": "ENT_GSAGA_SIGURD",
+"c": "high",
+"ra": "Fafnir is killed by Sigurd."
+},
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "slays",
+"o": "ENT_GSAGA_REGINN",
+"c": "high",
+"ra": "Sigurd kills the treacherous Reginn after roasting Fafnir's heart."
+},
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "consort_of",
+"o": "ENT_GSAGA_BRYNHILD",
+"c": "high",
+"ra": "Sigurd is betrothed to Brynhild before being deceived into marrying Gudrun."
+},
+{
+"s": "ENT_GSAGA_BRYNHILD",
+"t": "consort_of",
+"o": "ENT_GSAGA_SIGURD",
+"c": "high",
+"ra": "Brynhild is Sigurd's beloved/betrothed."
+},
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "consort_of",
+"o": "ENT_GSAGA_GUDRUN",
+"c": "high",
+"ra": "Sigurd marries Gudrun under the spell of forgetfulness."
+},
+{
+"s": "ENT_GSAGA_GUDRUN",
+"t": "consort_of",
+"o": "ENT_GSAGA_SIGURD",
+"c": "high",
+"ra": "Gudrun is Sigurd's wife."
+},
+{
+"s": "ENT_GSAGA_BRYNHILD",
+"t": "consort_of",
+"o": "ENT_GSAGA_GUNNAR",
+"c": "high",
+"ra": "Brynhild is married to Gunnar after he wins her by Sigurd's disguised aid."
+},
+{
+"s": "ENT_GSAGA_GUNNAR",
+"t": "consort_of",
+"o": "ENT_GSAGA_BRYNHILD",
+"c": "high",
+"ra": "Gunnar weds Brynhild."
+},
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "child_of",
+"o": "ENT_GSAGA_SIGMUND",
+"c": "high",
+"ra": "Sigurd is the posthumous son of Sigmund."
+},
+{
+"s": "ENT_GSAGA_SIGMUND",
+"t": "parent_of",
+"o": "ENT_GSAGA_SIGURD",
+"c": "high",
+"ra": "Sigmund fathers Sigurd."
+},
+{
+"s": "ENT_GSAGA_SIGMUND",
+"t": "child_of",
+"o": "ENT_GSAGA_VOLSUNG",
+"c": "high",
+"ra": "Sigmund is the son of King Volsung."
+},
+{
+"s": "ENT_GSAGA_VOLSUNG",
+"t": "parent_of",
+"o": "ENT_GSAGA_SIGMUND",
+"c": "high",
+"ra": "Volsung fathers Sigmund."
+},
+{
+"s": "ENT_GSAGA_SIGNY",
+"t": "child_of",
+"o": "ENT_GSAGA_VOLSUNG",
+"c": "high",
+"ra": "Signy is the daughter of King Volsung."
+},
+{
+"s": "ENT_GSAGA_VOLSUNG",
+"t": "parent_of",
+"o": "ENT_GSAGA_SIGNY",
+"c": "high",
+"ra": "Volsung fathers Signy."
+},
+{
+"s": "ENT_GSAGA_SIGMUND",
+"t": "sibling_of",
+"o": "ENT_GSAGA_SIGNY",
+"c": "high",
+"ra": "Sigmund and Signy are twins."
+},
+{
+"s": "ENT_GSAGA_SIGNY",
+"t": "sibling_of",
+"o": "ENT_GSAGA_SIGMUND",
+"c": "high",
+"ra": "Signy and Sigmund are twins."
+},
+{
+"s": "ENT_GSAGA_FAFNIR",
+"t": "sibling_of",
+"o": "ENT_GSAGA_REGINN",
+"c": "high",
+"ra": "Fafnir and Reginn are brothers, sons of Hreidmar."
+},
+{
+"s": "ENT_GSAGA_REGINN",
+"t": "sibling_of",
+"o": "ENT_GSAGA_FAFNIR",
+"c": "high",
+"ra": "Reginn and Fafnir are brothers."
+},
+{
+"s": "ENT_GSAGA_GUNNAR",
+"t": "sibling_of",
+"o": "ENT_GSAGA_GUDRUN",
+"c": "high",
+"ra": "Gunnar and Gudrun are siblings among the Gjukungs."
+},
+{
+"s": "ENT_GSAGA_GUDRUN",
+"t": "sibling_of",
+"o": "ENT_GSAGA_GUNNAR",
+"c": "high",
+"ra": "Gudrun and Gunnar are siblings."
+},
+{
+"s": "ENT_GSAGA_GUNNAR",
+"t": "sibling_of",
+"o": "ENT_GSAGA_HOGNI",
+"c": "high",
+"ra": "Gunnar and Hogni are Gjukung brothers."
+},
+{
+"s": "ENT_GSAGA_HOGNI",
+"t": "sibling_of",
+"o": "ENT_GSAGA_GUNNAR",
+"c": "high",
+"ra": "Hogni and Gunnar are brothers."
+},
+{
+"s": "ENT_GSAGA_GUNNAR",
+"t": "opposes",
+"o": "ENT_GSAGA_SIGURD",
+"c": "high",
+"ra": "Gunnar and the Gjukungs conspire in Sigurd's murder."
+},
+{
+"s": "ENT_GSAGA_REGINN",
+"t": "opposes",
+"o": "ENT_GSAGA_FAFNIR",
+"c": "high",
+"ra": "Reginn incites the killing of his brother Fafnir to seize the hoard."
+},
+{
+"s": "ENT_GSAGA_REGINN",
+"t": "associated_with",
+"o": "ENT_NOR_ANDVARI",
+"c": "high",
+"ra": "Reginn and Fafnir's family seizes Andvari's cursed gold and ring, the hoard Sigurd later wins (Byock, Saga of the Volsungs)."
+},
+{
+"s": "ENT_GSAGA_FAFNIR",
+"t": "guardian_of",
+"o": "ENT_NOR_ANDVARI",
+"c": "medium",
+"ra": "Fafnir broods on Glittering Heath over the cursed hoard originally extorted from the dwarf Andvari."
+},
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "associated_with",
+"o": "ENT_NOR_ANDVARI",
+"c": "high",
+"ra": "By slaying Fafnir, Sigurd wins Andvari's cursed gold and ring Andvaranaut, transmitting the curse through the cycle."
+},
+{
+"s": "ENT_GSAGA_VOLSUNG_CYCLE",
+"t": "reception_of",
+"o": "ENT_NOR_ODIN",
+"c": "high",
+"ra": "Odin appears throughout the Volsung legend (planting the sword in Barnstokkr, advising Sigurd, claiming the slain), linking the literary cycle to the Norse divine cosmos."
+},
+{
+"s": "ENT_GSAGA_VOLSUNG",
+"t": "child_of",
+"o": "ENT_NOR_ODIN",
+"c": "medium",
+"ra": "The Volsung line is descended from Odin via Sigi in the saga's genealogy (Byock)."
+},
+{
+"s": "ENT_NOR_ODIN",
+"t": "parent_of",
+"o": "ENT_GSAGA_VOLSUNG",
+"c": "medium",
+"ra": "Odin is the divine ancestor of the Volsung dynasty."
+},
+{
+"s": "ENT_GSAGA_STARKADR",
+"t": "patronized_by",
+"o": "ENT_NOR_ODIN",
+"c": "medium",
+"ra": "Starkadr is granted long life and martial prowess by Odin (and cursed by Thor), per Gautreks saga."
+},
+{
+"s": "ENT_GSAGA_BRYNHILD",
+"t": "associated_with",
+"o": "ENT_NOR_ODIN",
+"c": "medium",
+"ra": "As a valkyrie Brynhild is one of Odin's shieldmaidens, put to sleep by him for disobedience."
+},
+{
+"s": "ENT_GSAGA_SIGURD",
+"t": "aligned_with",
+"o": "ENT_NOR_TYR",
+"c": "low",
+"ra": "Sigurd's dragon-slaying heroism is sometimes compared to the war-god Tyr's combat against Fenrir as parallel Germanic monster-fights; loose thematic alignment, not identity."
+}
+]

@@ -1,0 +1,74 @@
+[
+{
+"id": "ENT_VEN_PANTHEON",
+"name": "Venetic Pantheon",
+"type": "tradition_hub",
+"trad": "Venetic",
+"dom": "pantheon-collective",
+"conf": "B",
+"note": "Collective hub for the deities of the pre-Roman Veneti, attested through votive inscriptions at the sanctuaries of Este (Baratella) and Lagole di Calalzo.",
+"src": "SRC_PROSDOCIMI_VENETIC",
+"per": "PER_VENETIC",
+"cat": "tradition_hub"
+},
+{
+"id": "ENT_VEN_REITIA",
+"name": "Reitia",
+"type": "Healing goddess",
+"trad": "Venetic",
+"dom": "healing; writing; underworld",
+"conf": "B",
+"note": "Great Venetic goddess, principal deity of the Este (Baratella) sanctuary; goddess of healing, writing/literacy (votive alphabet tablets) and chthonic/underworld power. Best-attested Venetic theonym (dedications to 'Reitiai').",
+"src": "SRC_PROSDOCIMI_VENETIC",
+"per": "PER_VENETIC",
+"cat": "Healing goddess"
+},
+{
+"id": "ENT_VEN_SAINAS",
+"name": "Sainas",
+"type": "Local deity",
+"trad": "Venetic",
+"dom": "local cult; tutelary",
+"conf": "C",
+"note": "Minor Venetic divine name known from votive epigraphy; cult function uncertain, plausibly a tutelary/healing-sphere deity associated with the Este/Lagole cult environment.",
+"src": "SRC_PROSDOCIMI_VENETIC",
+"per": "PER_VENETIC",
+"cat": "Local deity"
+},
+{
+"id": "ENT_VEN_TRUMUSIJATIS",
+"name": "Trumusijatis",
+"type": "Healing god",
+"trad": "Venetic",
+"dom": "healing; thermal-spring cult",
+"conf": "C",
+"note": "Venetic deity attested in dedications at the Lagole di Calalzo thermal-spring sanctuary (epithet/name 'Trumusijate-'); associated with the curative-waters cult.",
+"src": "SRC_PROSDOCIMI_VENETIC",
+"per": "PER_VENETIC",
+"cat": "Healing god"
+},
+{
+"id": "ENT_VEN_ATEGNATIS",
+"name": "Ategnatis",
+"type": "Local deity",
+"trad": "Venetic",
+"dom": "local cult",
+"conf": "C",
+"note": "Minor Venetic divine name ('Ate-' / Ategnatis) recorded in votive inscriptions; function uncertain. HOMONYM CAUTION: unrelated to the Greek goddess Ate (ENT_ATE).",
+"src": "SRC_PROSDOCIMI_VENETIC",
+"per": "PER_VENETIC",
+"cat": "Local deity"
+},
+{
+"id": "ENT_VEN_PORA",
+"name": "Pora",
+"type": "Local goddess",
+"trad": "Venetic",
+"dom": "local cult; fertility/votive",
+"conf": "C",
+"note": "Minor Venetic divine name appearing in votive epigraphy; goddess of uncertain function within the Venetic sanctuary cults.",
+"src": "SRC_PROSDOCIMI_VENETIC",
+"per": "PER_VENETIC",
+"cat": "Local goddess"
+}
+]

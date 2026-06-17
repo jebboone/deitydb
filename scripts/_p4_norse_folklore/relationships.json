@@ -1,0 +1,128 @@
+[
+{
+"s": "ENT_NORF_DRAUGR",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Draugr is one of the lesser folkloric supernatural classes collected under the hub."
+},
+{
+"s": "ENT_NORF_LANDVAETTIR",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Landvaettir are a folkloric supernatural class under the hub."
+},
+{
+"s": "ENT_NORF_FYLGJA",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Fylgja is a folkloric supernatural class under the hub."
+},
+{
+"s": "ENT_NORF_DISIR",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Disir are a folkloric supernatural class under the hub."
+},
+{
+"s": "ENT_NORF_HULDRA",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Huldra is a folkloric supernatural class under the hub."
+},
+{
+"s": "ENT_NORF_NISSE",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Nisse/tomte is a folkloric supernatural class under the hub."
+},
+{
+"s": "ENT_NORF_MARA",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Mara is a folkloric supernatural class under the hub."
+},
+{
+"s": "ENT_NORF_NOKK",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Nokk/nacken is a folkloric supernatural class under the hub."
+},
+{
+"s": "ENT_NORF_TROLL",
+"t": "member_of",
+"o": "ENT_NORF_FOLK_BEINGS",
+"c": "high",
+"ra": "Troll (as folklore class) is collected under the hub."
+},
+{
+"s": "ENT_NORF_TROLL",
+"t": "aligned_with",
+"o": "ENT_NOR_JOTNAR",
+"c": "high",
+"ra": "The folklore troll-class is historically continuous with the eddic jotnar/thurses; saga usage often calls jotnar 'troll'. Aligned (functional/continuity) rather than equated, since the folklore class is distinct from the mythological jotnar collective."
+},
+{
+"s": "ENT_NORF_MARA",
+"t": "aligned_with",
+"o": "ENT_VF_OLD_HAG",
+"c": "high",
+"ra": "The Norse mara (the spirit that 'rides' the sleeper) is the etymological and phenomenological root of the contemporary sleep-paralysis Old Hag tradition; modern functional cognate, so aligned_with."
+},
+{
+"s": "ENT_NORF_FYLGJA",
+"t": "aligned_with",
+"o": "ENT_NORF_DISIR",
+"c": "medium",
+"ra": "The female form of the fylgja (kynfylgja) overlaps conceptually with the protective dis; both are personal/familial tutelary female spirits, per Simek and Lindow."
+},
+{
+"s": "ENT_NORF_DISIR",
+"t": "aligned_with",
+"o": "ENT_NOR_NORNS",
+"c": "medium",
+"ra": "The disir as fate-bound female collective overlap with the norns in their fate-determining function; aligned (functional) per Lindow."
+},
+{
+"s": "ENT_NORF_DISIR",
+"t": "aligned_with",
+"o": "ENT_NOR_VALKYRIES",
+"c": "medium",
+"ra": "Disir overlap functionally with the valkyrjur as numinous female beings associated with death and protection; aligned per Simek/Lindow."
+},
+{
+"s": "ENT_NORF_DISIR",
+"t": "aligned_with",
+"o": "ENT_NOR_VANIR",
+"c": "low",
+"ra": "The disablot fertility/ancestral cult and the figure of Freyja as Vanadis link the disir to the Vanir sphere; tentative functional alignment."
+},
+{
+"s": "ENT_NORF_LANDVAETTIR",
+"t": "aligned_with",
+"o": "ENT_NOR_DWARVES",
+"c": "low",
+"ra": "Both landvaettir and dvergar are chthonic place-bound numina of the Norse landscape; tentative functional alignment of land/earth spirits."
+},
+{
+"s": "ENT_NORF_LANDVAETTIR",
+"t": "aligned_with",
+"o": "ENT_NOR_NERTHUS",
+"c": "low",
+"ra": "The landvaettir, as tutelary spirits of land and fertility of place, sit in the same earth-numen sphere as the Germanic earth-goddess Nerthus; tentative thematic alignment."
+},
+{
+"s": "ENT_NORF_DRAUGR",
+"t": "opposes",
+"o": "ENT_NOR_EINHERJAR",
+"c": "low",
+"ra": "The draugr (the unquiet, barrow-bound dead) stands as the negative counterpart to the honored battle-dead Einherjar received into Valhalla; thematic contrast in Norse conceptions of the dead."
+}
+]

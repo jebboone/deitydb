@@ -1,0 +1,121 @@
+[
+{
+"s": "ENT_ASX_WODEN",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "high",
+"ra": "Woden is the chief deity of the reconstructed Anglo-Saxon pantheon (Pollington)."
+},
+{
+"s": "ENT_ASX_THUNOR",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "high",
+"ra": "Thunor is a core Anglo-Saxon god attested in place-names and the weekday."
+},
+{
+"s": "ENT_ASX_TIW",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "high",
+"ra": "Tiw is a core Anglo-Saxon god attested in place-names and the weekday."
+},
+{
+"s": "ENT_ASX_FRIGE",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "high",
+"ra": "Frige is the principal Anglo-Saxon goddess, attested in the weekday Friday."
+},
+{
+"s": "ENT_ASX_EOSTRE",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "medium",
+"ra": "Eostre is attested by Bede as an Anglo-Saxon goddess (month Eosturmonath)."
+},
+{
+"s": "ENT_ASX_HREDA",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "medium",
+"ra": "Hreda is attested by Bede as an Anglo-Saxon goddess (month Hredmonath)."
+},
+{
+"s": "ENT_ASX_SEAXNEAT",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "medium",
+"ra": "Seaxneat heads the East Saxon royal genealogy as a divine ancestor."
+},
+{
+"s": "ENT_ASX_ING",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "medium",
+"ra": "Ing is named in the Old English Rune Poem as an Anglo-Saxon deity."
+},
+{
+"s": "ENT_ASX_WULDOR",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "low",
+"ra": "Wuldor is a glory-god inferred for the Anglo-Saxon pantheon from lexis and place-names."
+},
+{
+"s": "ENT_ASX_ERCE",
+"t": "member_of",
+"o": "ENT_ASX_PANTHEON",
+"c": "medium",
+"ra": "Erce is the earth-mother invoked in the Anglo-Saxon Aecerbot charm."
+},
+{
+"s": "ENT_ASX_WODEN",
+"t": "aligned_with",
+"o": "ENT_NOR_ODIN",
+"c": "high",
+"ra": "Woden is the Old English reflex of the same Germanic deity as Norse Odin (Wodanaz)."
+},
+{
+"s": "ENT_ASX_THUNOR",
+"t": "aligned_with",
+"o": "ENT_NOR_THOR",
+"c": "high",
+"ra": "Thunor is the Old English cognate of Norse Thor (Thunraz)."
+},
+{
+"s": "ENT_ASX_TIW",
+"t": "aligned_with",
+"o": "ENT_NOR_TYR",
+"c": "high",
+"ra": "Tiw is the Old English cognate of Norse Tyr (Tiwaz)."
+},
+{
+"s": "ENT_ASX_FRIGE",
+"t": "aligned_with",
+"o": "ENT_NOR_FRIGG",
+"c": "high",
+"ra": "Frige is the Old English cognate of Norse Frigg (Frijjo)."
+},
+{
+"s": "ENT_ASX_ING",
+"t": "aligned_with",
+"o": "ENT_NOR_FREYR",
+"c": "medium",
+"ra": "Ing/Ingui corresponds to Norse Yngvi-Freyr, the Ingaevonic ancestor-deity."
+},
+{
+"s": "ENT_ASX_WULDOR",
+"t": "aligned_with",
+"o": "ENT_NOR_ULLR",
+"c": "medium",
+"ra": "Wuldor is the Old English lexical and divine cognate of Norse Ullr."
+},
+{
+"s": "ENT_ASX_ERCE",
+"t": "aligned_with",
+"o": "ENT_NOR_NERTHUS",
+"c": "low",
+"ra": "Erce the Old English earth-mother is functionally aligned with the Germanic earth-goddess Nerthus described by Tacitus."
+}
+]

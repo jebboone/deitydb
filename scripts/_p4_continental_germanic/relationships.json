@@ -1,0 +1,149 @@
+[
+{
+"s": "ENT_CGE_MATRONAE",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "The Matronae collective belongs to the Continental Germanic religious sphere."
+},
+{
+"s": "ENT_CGE_NEHALENNIA",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Nehalennia is a Continental Germanic deity attested in the Low Countries."
+},
+{
+"s": "ENT_CGE_HERCULES_MAGUSANUS",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Hercules Magusanus is a Romano-Germanic Batavian deity."
+},
+{
+"s": "ENT_CGE_BADUHENNA",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Baduhenna is a Frisian (Continental Germanic) goddess."
+},
+{
+"s": "ENT_CGE_TANFANA",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Tanfana is a Continental Germanic goddess of the Marsi."
+},
+{
+"s": "ENT_CGE_HLUDANA",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Hludana is a Lower Rhine/Frisian Germanic goddess."
+},
+{
+"s": "ENT_CGE_SANDRAUDIGA",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Sandraudiga is a Continental Germanic goddess from Brabant."
+},
+{
+"s": "ENT_CGE_VAGDAVERCUSTIS",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Vagdavercustis is a Lower Rhine Germanic goddess."
+},
+{
+"s": "ENT_CGE_REQUALIVAHANUS",
+"t": "member_of",
+"o": "ENT_CGE_PANTHEON",
+"c": "high",
+"ra": "Requalivahanus is a Continental Germanic god attested at Pesch."
+},
+{
+"s": "ENT_CGE_MATRONAE_AUFANIAE",
+"t": "member_of",
+"o": "ENT_CGE_MATRONAE",
+"c": "high",
+"ra": "The Aufaniae are a named cult-group of the Matronae."
+},
+{
+"s": "ENT_CGE_MATRONAE_VACALLINEHAE",
+"t": "member_of",
+"o": "ENT_CGE_MATRONAE",
+"c": "high",
+"ra": "The Vacallinehae are a named cult-group of the Matronae centered at Pesch."
+},
+{
+"s": "ENT_CGE_MATRONAE_GABIAE",
+"t": "member_of",
+"o": "ENT_CGE_MATRONAE",
+"c": "high",
+"ra": "The Gabiae are a named cult-group of the Matronae."
+},
+{
+"s": "ENT_CGE_MATRONAE_SULEVIAE",
+"t": "member_of",
+"o": "ENT_CGE_MATRONAE",
+"c": "medium",
+"ra": "The Suleviae are mother-goddesses frequently grouped with the Matronae in the Rhineland."
+},
+{
+"s": "ENT_CGE_REQUALIVAHANUS",
+"t": "associated_with",
+"o": "ENT_CGE_MATRONAE_VACALLINEHAE",
+"c": "medium",
+"ra": "Requalivahanus and the Matronae Vacallinehae share the sanctuary cult-site of Pesch in the Eifel."
+},
+{
+"s": "ENT_CGE_MATRONAE",
+"t": "aligned_with",
+"o": "ENT_CEL_MATRES",
+"c": "high",
+"ra": "The Germanic Matronae and the Celtic/Gaulish Matres/Matrones are the same triple-mother-goddess cult phenomenon across the Romano-provincial frontier (functional cognate)."
+},
+{
+"s": "ENT_CGE_HERCULES_MAGUSANUS",
+"t": "equated_with",
+"o": "ENT_HERACLES",
+"c": "high",
+"ra": "Hercules Magusanus is an interpretatio Romana that explicitly equates a native Germanic hero-god with the Greco-Roman Heracles/Hercules."
+},
+{
+"s": "ENT_CGE_HERCULES_MAGUSANUS",
+"t": "aligned_with",
+"o": "ENT_NOR_THOR",
+"c": "medium",
+"ra": "Scholars connect the native god behind Hercules Magusanus with the thunder/strength god Donar, cognate of Norse Thor (Tacitus equated Germanic 'Hercules' with the thunderer)."
+},
+{
+"s": "ENT_CGE_HLUDANA",
+"t": "aligned_with",
+"o": "ENT_NOR_NERTHUS",
+"c": "low",
+"ra": "Hludana is an earth/fertility goddess of the Germanic North Sea coast, broadly comparable to the earth-mother Nerthus; her name is also linked to the Norse earth-goddess epithet Hlodyn."
+},
+{
+"s": "ENT_CGE_MATRONAE_GABIAE",
+"t": "aligned_with",
+"o": "ENT_NOR_FRIGG",
+"c": "low",
+"ra": "The Gabiae ('giving ones') belong to the Germanic giving/fertility mother-goddess complex broadly aligned with Frigg and the Norse Gefjon (ENT_NOR_GEFJON)."
+},
+{
+"s": "ENT_CGE_BADUHENNA",
+"t": "aligned_with",
+"o": "ENT_NOR_TYR",
+"c": "low",
+"ra": "Baduhenna is a war/battle deity of the Frisii, sharing the Germanic martial-divinity sphere associated with Tiw/Tyr."
+},
+{
+"s": "ENT_CGE_NEHALENNIA",
+"t": "aligned_with",
+"o": "ENT_NOR_NERTHUS",
+"c": "low",
+"ra": "Nehalennia is a coastal fertility/protective goddess of the Low Countries, broadly within the Germanic fertility-goddess sphere alongside Nerthus."
+}
+]

@@ -1,5 +1,37 @@
 # Changelog
 
+## v1.88.0 — 2026-06-17
+
+### Completeness build-out, Phase 4 — European depth
+
+Fourth phase of the completeness program (`docs/COMPLETENESS_ROADMAP.md`), orchestrated
+research→adversarial-verify workflow (JSON only; applied + QA'd here). **+112 entities,
++196 relationships, +12 sources, 6 new traditions.** Scorecard now 3,636 entities /
+6,686 relationships / 423 sources / 122 traditions.
+
+- **Anglo-Saxon pantheon** (new tradition) — Woden, Thunor, Tiw, Frige, Ēostre, Hreða,
+  Seaxnēat, Ing, Erce — each `aligned_with` its existing Norse cognate (Woden~Odin, …).
+- **Continental Germanic & the Matronae** (new tradition) — the named Rhineland
+  mother-goddess groups (Aufaniae, Vacallinehae, Gabiae, Suleviae) + Nehalennia, Donar/
+  Hercules Magusanus, Baduhenna, Tanfana.
+- **The Irish heroic & folklore layer (30)** — the Ulster Cycle (Cú Chulainn, Medb,
+  Deirdre, Scáthach), the Fenian Cycle (Fionn, Oisín, Diarmuid), the invasion myths, the
+  sovereignty goddesses (the Cailleach, Tailtiu), and the folklore beings (banshee,
+  leprechaun, púca, the aos sí) — wired onto the existing Túatha Dé Danann.
+- **Illyrian** (new tradition) — the absent western-Balkan pantheon (Medaurus, Redon, En,
+  Vidasus & Thana).
+- **The Germanic legendary-saga cycle** (new legendary-literary tradition) — Sigurð,
+  Brynhild, Fáfnir, the Völsungs, Wayland the Smith, Ragnarr Loðbrók.
+- **Norse folklore beings** — the draugr, landvættir, fylgja, huldra, nisse, the mara
+  (cross-linked to the sleep-paralysis Old Hag), the nøkk.
+- **The Nart sagas** (new tradition) — Batraz, Satana, Uastyrdzhi (≈ St George) — the
+  surviving Scythian/Sarmatian-Alanic mythology of the Caucasus.
+- **Venetic** (new tradition, Reitia) and **South Slavic** (Dabog, the vila class).
+
+Integrity-gated to 0 rejected / orphan / unsourced / unperiodized / rationale-less /
+orphan-source / unreviewed-duplicate.
+
+
 ## v1.87.0 — 2026-06-17
 
 ### Completeness build-out, Phase 3 — ancient Mediterranean & Near-East depth

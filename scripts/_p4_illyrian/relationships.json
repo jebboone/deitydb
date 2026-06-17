@@ -1,0 +1,121 @@
+[
+{
+"s": "ENT_ILL_MEDAURUS",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "high",
+"ra": "Medaurus, rider-god of Risinium, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_REDON",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "high",
+"ra": "Redon, sea/travel god of Lissus, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_BINDUS",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "high",
+"ra": "Bindus, water-god of the Iapodes, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_TADENUS",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "medium",
+"ra": "Tadenus, local Dalmatian spring deity, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_VIDASUS",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "high",
+"ra": "Vidasus, woodland god of Topusko, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_THANA",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "high",
+"ra": "Thana, hunt/woodland goddess of Topusko, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_EIA",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "medium",
+"ra": "Eia, north-Adriatic tutelary goddess, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_EN",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "medium",
+"ra": "En/Enji, reconstructed Illyrian fire-god, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_DEIPATUROS",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "medium",
+"ra": "Dei-Paturos, Illyrian-Thracian sky/father god, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_SENTONA",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "medium",
+"ra": "Sentona, Liburnian goddess of travel/wellbeing, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_ANZOTICA",
+"t": "member_of",
+"o": "ENT_ILL_PANTHEON",
+"c": "medium",
+"ra": "Anzotica, Liburnian love-goddess of Aenona, belongs to the Illyrian pantheon hub."
+},
+{
+"s": "ENT_ILL_VIDASUS",
+"t": "consort_of",
+"o": "ENT_ILL_THANA",
+"c": "high",
+"ra": "Vidasus and Thana are regularly paired as a divine couple in the Topusko votive inscriptions."
+},
+{
+"s": "ENT_ILL_THANA",
+"t": "consort_of",
+"o": "ENT_ILL_VIDASUS",
+"c": "high",
+"ra": "Thana is the consort of Vidasus, paired together in the Topusko cult of woodland deities."
+},
+{
+"s": "ENT_ILL_EIA",
+"t": "paired_with",
+"o": "ENT_ILL_SENTONA",
+"c": "medium",
+"ra": "Eia and Sentona are linked in the north-eastern Adriatic (Histrian/Liburnian) votive record as associated goddesses."
+},
+{
+"s": "ENT_ILL_BINDUS",
+"t": "equated_with",
+"o": "ENT_ROM_NEPTUNE",
+"c": "high",
+"ra": "Bindus is invoked in Iapodian inscriptions as Bindus Neptunus, an ancient interpretatio Romana identifying him with Neptune."
+},
+{
+"s": "ENT_ILL_VIDASUS",
+"t": "equated_with",
+"o": "ENT_ITA_SILVANUS",
+"c": "high",
+"ra": "Vidasus is identified with the Roman/Italic Silvanus in the Topusko inscriptions, an attested interpretatio Romana of the woodland god."
+},
+{
+"s": "ENT_ILL_THANA",
+"t": "equated_with",
+"o": "ENT_ROM_DIANA",
+"c": "high",
+"ra": "Thana, the woodland and hunt goddess paired with Vidasus, is identified with the Roman Diana via interpretatio Romana."
+}
+]

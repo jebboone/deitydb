@@ -1,0 +1,79 @@
+[
+{
+"s": "ENT_NART_BATRAZ",
+"t": "member_of",
+"o": "ENT_NART_SAGAS",
+"c": "high",
+"ra": "Batraz is the chief warrior-hero of the Narts (Colarusso 2002)."
+},
+{
+"s": "ENT_NART_SATANA",
+"t": "member_of",
+"o": "ENT_NART_SAGAS",
+"c": "high",
+"ra": "Satana is the matriarch of the central Nart family (Colarusso 2002)."
+},
+{
+"s": "ENT_NART_SOSRUKO",
+"t": "member_of",
+"o": "ENT_NART_SAGAS",
+"c": "high",
+"ra": "Sosruko/Soslan is a leading Nart culture-hero (Colarusso 2002)."
+},
+{
+"s": "ENT_NART_SYRDON",
+"t": "member_of",
+"o": "ENT_NART_SAGAS",
+"c": "high",
+"ra": "Syrdon is the resident trickster among the Narts (Colarusso 2002)."
+},
+{
+"s": "ENT_NART_SATANA",
+"t": "parent_of",
+"o": "ENT_NART_BATRAZ",
+"c": "medium",
+"ra": "In Ossetian tradition Satana fosters and is closely associated as mother-figure to the Nart heroes including Batraz (Dumézil; Colarusso 2002)."
+},
+{
+"s": "ENT_NART_KURDALAGON",
+"t": "associated_with",
+"o": "ENT_NART_BATRAZ",
+"c": "high",
+"ra": "The smith Kurdalagon tempers Batraz like steel in his celestial forge (Dumézil; Colarusso 2002)."
+},
+{
+"s": "ENT_NART_KURDALAGON",
+"t": "associated_with",
+"o": "ENT_NART_SOSRUKO",
+"c": "medium",
+"ra": "Kurdalagon tempers the stone-born Soslan/Sosruko in his forge, making him invulnerable (Colarusso 2002)."
+},
+{
+"s": "ENT_NART_UASTYRDZHI",
+"t": "presides_over",
+"o": "ENT_NART_SAGAS",
+"c": "medium",
+"ra": "Uastyrdzhi is the rider-god patronizing the warrior Narts and intervening in the saga cycle (Dumézil)."
+},
+{
+"s": "ENT_NART_UASTYRDZHI",
+"t": "syncretized_with",
+"o": "ENT_SAINT_GEORGE",
+"c": "high",
+"ra": "The Ossetian rider-god Uastyrdzhi is syncretized with Saint George, his name and feast (Jeoryguba) deriving from the Christian saint (Dumézil; Colarusso 2002)."
+},
+{
+"s": "ENT_NART_BATRAZ",
+"t": "aligned_with",
+"o": "ENT_SCYTH_SWORD_ARES",
+"c": "medium",
+"ra": "Dumézil derives Batraz's steel sword (cast into the sea at his death) from the Scytho-Sarmatian sword-cult that Herodotus (4.62) reports as the akinakes/Sword-Ares; Batraz continues this war-god complex in the Ossetian (Alanic) descendant tradition."
+},
+{
+"s": "ENT_NART_SYRDON",
+"t": "aligned_with",
+"o": "ENT_NOR_LOKI",
+"c": "medium",
+"ra": "Comparative mythology (Dumézil school) treats the discord-sowing, malicious trickster Syrdon as the Nart functional cognate of the Norse trickster Loki (Colarusso 2002; Dumézil)."
+}
+]
