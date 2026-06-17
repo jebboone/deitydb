@@ -1,0 +1,30 @@
+[
+{
+"s": "ENT_ZOR_AHURA_MAZDA",
+"t": "sibling_of",
+"o": "ENT_ZOR_ANGRA_MAINYU",
+"c": "high",
+"ra": "In Zurvanism Ohrmazd and Ahriman are twin brothers, both born of Zurvan — distinct from orthodox Mazdaism where the antagonist of the destructive spirit is Spenta Mainyu, not Ahura Mazda himself (Zaehner, Zurvan, 1955)."
+},
+{
+"s": "ENT_ZOR_ZURVAN_AKARANA",
+"t": "epithet_of",
+"o": "ENT_ZOR_ZURVAN",
+"c": "high",
+"ra": "Zurvan akarana ('Boundless Time') is the eternal/infinite aspect-name of the time-god Zurvan in the Pahlavi sources (Zaehner, Zurvan, 1955, pp. 89-105 on the doctrine of the two zurvans)."
+},
+{
+"s": "ENT_ZOR_ZURVAN_DAREGHO",
+"t": "epithet_of",
+"o": "ENT_ZOR_ZURVAN",
+"c": "high",
+"ra": "Zurvan daregho-chvadhata ('Time of Long Dominion') is the finite, measured aspect-name of Zurvan — the bounded world-cycle issuing from Boundless Time (Zaehner, Zurvan, 1955, pp. 89-105)."
+},
+{
+"s": "ENT_ZOR_ZURVAN_DAREGHO",
+"t": "emanates_from",
+"o": "ENT_ZOR_ZURVAN_AKARANA",
+"c": "medium",
+"ra": "In the Zurvanite cosmology Finite Time (daregho-chvadhata), the 9,000/12,000-year cycle within which the cosmic battle unfolds, is carved out of / issues from Boundless Time (akarana) so that the conflict may reach resolution (Zaehner, Zurvan, 1955, pp. 219ff.)."
+}
+]

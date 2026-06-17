@@ -39,6 +39,16 @@ P = {
  "Sethian/Ophite/Jewish":("heterodox-sect","marginal"),"Thomasine/Christian-Gnostic":("heterodox-sect","marginal"),
  "Mandaean":("heterodox-sect","marginal","The Mandaeans — a small gnostic baptismal religion, marginal and surviving as a minority to the present."),
  "Manichaean":("heterodox-sect","marginal","Manichaeism — once a widespread world religion from Rome to China, later suppressed everywhere and extinct; a major but ultimately marginalized sect."),
+ # whole missing religions added in the completeness build-out (Phase 1)
+ "Yazidi":("heterodox-sect","living-minority","The Yazidi — a distinct living Kurdish religion centered on Tawûsî Melek (the Peacock Angel) and the Heptad; an endogamous minority, NOT a sect of Islam."),
+ "Druze":("heterodox-sect","living-minority","The Druze (Muwahhidun) — a closed living religion of the Levant, an offshoot of Ismaili Islam with its own cosmology of the five luminaries (al-hudud)."),
+ "Yarsan":("heterodox-sect","living-minority","Yarsan / Ahl-e Haqq — a living western-Iranian religion centered on Sultan Sahak and the chain of divine manifestations."),
+ "Alawite":("heterodox-sect","living-minority","Alawite / Nusayri — a living Syrian religion with the ʿAyn-Mim-Sin trinity; an esoteric offshoot of Twelver Shi'a Islam."),
+ "Bahá'í":("mainstream-scriptural","modern-worldwide","The Bahá'í Faith — an independent modern world religion of Abrahamic lineage built on progressive revelation through the Manifestations of God."),
+ "Samaritan":("heterodox-sect","living-minority","Samaritanism — a distinct surviving Israelite religion centered on Mount Gerizim; a very small ancient community."),
+ "Latter-day Saint":("mainstream-scriptural","modern-worldwide","The Latter-day Saint (Mormon) movement — a large modern Restorationist branch of Christianity with a distinctive cosmology (premortal existence, exaltation, Kolob)."),
+ "Sabian/Harranian":("civic-polytheism","regional-extinct","The Sabians of Harran — the late-antique planetary star-religion and Harranian Hermetism; long extinct."),
+ "Alevi":("mystical-current","living-minority","Alevi-Bektashi — a living Anatolian tradition blending Shi'a, Sufi and folk elements around the Allah-Muhammad-Ali trinity and the Assembly of the Forty."),
  # esoteric-magic (learned ritual-magic / grimoire)
  "Goetic/Solomonic":("esoteric-magic","learned-subculture"),"Renaissance Esoteric":("esoteric-magic","learned-subculture"),
  "Solomonic Magic":("esoteric-magic","learned-subculture"),"Astral Magic":("esoteric-magic","learned-subculture"),

@@ -1,0 +1,198 @@
+[
+{
+"s": "ENT_BAH_MAZHAR",
+"t": "member_of",
+"o": "ENT_BAH_MANIFESTATIONS",
+"c": "high",
+"ra": "The concept of the Manifestation of God defines the membership category that the collective hub gathers."
+},
+{
+"s": "ENT_BAH_BAB",
+"t": "member_of",
+"o": "ENT_BAH_MANIFESTATIONS",
+"c": "high",
+"ra": "The Báb is regarded in Bahá'í doctrine as an independent Manifestation of God."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "member_of",
+"o": "ENT_BAH_MANIFESTATIONS",
+"c": "high",
+"ra": "Bahá'u'lláh is the central Manifestation of God of the present dispensation."
+},
+{
+"s": "ENT_BAH_BAB",
+"t": "embodies",
+"o": "ENT_BAH_MAZHAR",
+"c": "high",
+"ra": "The Báb is an instance of the Mazhar (Manifestation of God) category in Bahá'í prophetology."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "embodies",
+"o": "ENT_BAH_MAZHAR",
+"c": "high",
+"ra": "Bahá'u'lláh is the supreme exemplar of the Mazhar category for this age."
+},
+{
+"s": "ENT_BAH_BAB",
+"t": "reveals",
+"o": "ENT_BAH_BAYAN",
+"c": "high",
+"ra": "The Báb is the author/revealer of the Bayán."
+},
+{
+"s": "ENT_BAH_BAYAN",
+"t": "revealed_by",
+"o": "ENT_BAH_BAB",
+"c": "high",
+"ra": "The Bayán is the scriptural corpus revealed through the Báb (inverse of the reveals edge; replaces an incorrect reception_of)."
+},
+{
+"s": "ENT_BAH_QUDDUS",
+"t": "member_of",
+"o": "ENT_BAH_LETTERS_LIVING",
+"c": "high",
+"ra": "Quddús was the eighteenth and foremost of the Letters of the Living."
+},
+{
+"s": "ENT_BAH_TAHIRIH",
+"t": "member_of",
+"o": "ENT_BAH_LETTERS_LIVING",
+"c": "high",
+"ra": "Táhirih was the only woman among the Letters of the Living."
+},
+{
+"s": "ENT_BAH_QUDDUS",
+"t": "associated_with",
+"o": "ENT_BAH_BAB",
+"c": "high",
+"ra": "Quddús was a leading disciple of the Báb."
+},
+{
+"s": "ENT_BAH_TAHIRIH",
+"t": "associated_with",
+"o": "ENT_BAH_BAB",
+"c": "high",
+"ra": "Táhirih was an early recognizer and disciple of the Báb."
+},
+{
+"s": "ENT_BAH_ABDULBAHA",
+"t": "child_of",
+"o": "ENT_BAH_BAHAULLAH",
+"c": "high",
+"ra": "Abdu'l-Bahá was the eldest son of Bahá'u'lláh."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "parent_of",
+"o": "ENT_BAH_ABDULBAHA",
+"c": "high",
+"ra": "Bahá'u'lláh was the father of Abdu'l-Bahá."
+},
+{
+"s": "ENT_BAH_ABDULBAHA",
+"t": "associated_with",
+"o": "ENT_BAH_COVENANT",
+"c": "high",
+"ra": "Abdu'l-Bahá was appointed Centre of the Covenant by Bahá'u'lláh."
+},
+{
+"s": "ENT_BAH_SHOGHI",
+"t": "associated_with",
+"o": "ENT_BAH_COVENANT",
+"c": "high",
+"ra": "Shoghi Effendi was appointed Guardian and authorized interpreter within the line of the Covenant."
+},
+{
+"s": "ENT_BAH_SHOGHI",
+"t": "associated_with",
+"o": "ENT_BAH_ABDULBAHA",
+"c": "high",
+"ra": "Shoghi Effendi was appointed Guardian by Abdu'l-Bahá's Will and Testament."
+},
+{
+"s": "ENT_BAH_COVENANT",
+"t": "emanates_from",
+"o": "ENT_BAH_BAHAULLAH",
+"c": "high",
+"ra": "The Bahá'í Covenant derives its authority from Bahá'u'lláh's appointment of successors (replaces an incorrect reception_of)."
+},
+{
+"s": "ENT_BAH_UHJ",
+"t": "associated_with",
+"o": "ENT_BAH_BAHAULLAH",
+"c": "high",
+"ra": "The Universal House of Justice was ordained by Bahá'u'lláh in the Kitáb-i-Aqdas (replaces an incorrect reception_of)."
+},
+{
+"s": "ENT_BAH_UHJ",
+"t": "associated_with",
+"o": "ENT_BAH_COVENANT",
+"c": "high",
+"ra": "The Universal House of Justice is the institution charged with the Covenant after the Guardianship."
+},
+{
+"s": "ENT_BAH_HANDS_CAUSE",
+"t": "associated_with",
+"o": "ENT_BAH_SHOGHI",
+"c": "medium",
+"ra": "The Hands of the Cause functioned prominently under Shoghi Effendi's guidance."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "reception_of",
+"o": "ENT_BAH_BAB",
+"c": "high",
+"ra": "Bahá'u'lláh is identified by Bahá'ís as the fulfillment of the Báb's prophecy of 'Him Whom God shall make manifest.'"
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "reception_of",
+"o": "ENT_ISR_ABRAHAM",
+"c": "high",
+"ra": "Bahá'í progressive revelation regards Bahá'u'lláh's dispensation as renewing the religion of prior Manifestations including Abraham."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "reception_of",
+"o": "ENT_ISR_MOSES",
+"c": "high",
+"ra": "Bahá'í doctrine treats Moses as a prior Manifestation whose revelation is fulfilled in Bahá'u'lláh's."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "high",
+"ra": "Bahá'ís regard Jesus as a Manifestation of God whose return is realized spiritually in Bahá'u'lláh's revelation."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "reception_of",
+"o": "ENT_ISL_MUHAMMAD",
+"c": "high",
+"ra": "Bahá'í teaching honors Muhammad as a Manifestation of God preceding Bahá'u'lláh in the prophetic chain."
+},
+{
+"s": "ENT_BAH_BAHAULLAH",
+"t": "reception_of",
+"o": "ENT_ZOR_ZARATHUSTRA",
+"c": "high",
+"ra": "Bahá'í progressive revelation counts Zoroaster among the prior Manifestations of God."
+},
+{
+"s": "ENT_BAH_BAB",
+"t": "aligned_with",
+"o": "ENT_ISL_MAHDI",
+"c": "medium",
+"ra": "Bahá'ís hold the Báb fulfilled Shi'i expectation of the return of the Hidden Imam (Mahdi); functional/eschatological alignment, not identity."
+},
+{
+"s": "ENT_BAH_MANIFESTATIONS",
+"t": "associated_with",
+"o": "ENT_BAH_MAZHAR",
+"c": "high",
+"ra": "The collective of Manifestations is constituted by the Mazhar prophetological concept."
+}
+]

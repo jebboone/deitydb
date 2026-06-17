@@ -1,0 +1,142 @@
+[
+{
+"s": "ENT_YAZ_TAWUSI_MELEK",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "high",
+"ra": "Tawusi Melek is the chief of the Seven Mysteries/Heptad (Spat, Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_SHEIKH_ADI",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "medium",
+"ra": "Sheikh Adi is counted among the manifestations of the Heptad in the qewls (Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_SHEIKH_HASAN",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "high",
+"ra": "Sheikh Hasan (Sheikh Sin) is one of the Seven Mysteries (Kreyenbroek, Omarkhali)."
+},
+{
+"s": "ENT_YAZ_SHEIKH_SHAMS",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "high",
+"ra": "Sheikh Shams is one of the Seven, associated with the sun (Spat, Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_FAKHR_AL_DIN",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "high",
+"ra": "Sheikh Fakhr al-Din is one of the Seven Mysteries (Kreyenbroek, Omarkhali)."
+},
+{
+"s": "ENT_YAZ_SAJADIN",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "medium",
+"ra": "Sheikh Sajadin is enumerated among the Seven Mysteries in the qewls (Kreyenbroek, Omarkhali)."
+},
+{
+"s": "ENT_YAZ_NASIRDIN",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "medium",
+"ra": "Sheikh Nasirdin is enumerated among the Seven Mysteries in the qewls (Kreyenbroek, Omarkhali)."
+},
+{
+"s": "ENT_YAZ_SHEIKH_OBEKR",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "medium",
+"ra": "Sheikh Obekr appears among the Seven in several enumerations of the Heptad (Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_HEPTAD",
+"t": "emanates_from",
+"o": "ENT_YAZ_XWEDE",
+"c": "high",
+"ra": "Xwede, the remote creator, brings forth and delegates the world to the Heptad (Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_TAWUSI_MELEK",
+"t": "emanates_from",
+"o": "ENT_YAZ_XWEDE",
+"c": "high",
+"ra": "Tawusi Melek is the foremost emanation/vicegerent of Xwede (Spat, Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_HEPTAD",
+"t": "rules",
+"o": "ENT_YAZ_LALISH",
+"c": "medium",
+"ra": "The Heptad and especially Sheikh Adi govern the sanctified realm of Lalish in Yazidi cosmology (Spat)."
+},
+{
+"s": "ENT_YAZ_SHEIKH_ADI",
+"t": "dwells_in",
+"o": "ENT_YAZ_LALISH",
+"c": "high",
+"ra": "Sheikh Adi's tomb is at Lalish, the supreme pilgrimage center (Spat, Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_PIR_LIBNAN",
+"t": "associated_with",
+"o": "ENT_YAZ_LALISH",
+"c": "medium",
+"ra": "Pir Libnan is associated in the qewls with the sacred building of Lalish (Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_SULTAN_EZID",
+"t": "member_of",
+"o": "ENT_YAZ_HEPTAD",
+"c": "medium",
+"ra": "Sultan Ezid is a divine manifestation closely woven into the Heptad theology of the qewls (Spat, Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_MEHMA_RESHAN",
+"t": "associated_with",
+"o": "ENT_YAZ_HEPTAD",
+"c": "low",
+"ra": "Pir Mehma Reshan figures among the holy pir lineages tied to the Heptad's earthly manifestations (Omarkhali, Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_KHATUNA_FAKHRA",
+"t": "associated_with",
+"o": "ENT_YAZ_SHEIKH_ADI",
+"c": "low",
+"ra": "Khatuna Fakhra is a revered woman of the Adani holy circle in Yazidi devotion (Spat)."
+},
+{
+"s": "ENT_YAZ_SHEIKH_ADI",
+"t": "reception_of",
+"o": "ENT_SUF_JILANI",
+"c": "medium",
+"ra": "Sheikh Adi ibn Musafir was a historical Sufi ascetic of the Qadiri-adjacent Baghdad milieu of Abd al-Qadir al-Jilani; Yazidism received him as a supreme manifestation (Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_TAWUSI_MELEK",
+"t": "aligned_with",
+"o": "ENT_SUF_HALLAJ",
+"c": "low",
+"ra": "The Yazidi exaltation of the foremost angel echoes the Sufi (Hallajian) defense of Iblis's refusal to bow as supreme love/obedience to God alone; a theological parallel, not an identification (Spat)."
+},
+{
+"s": "ENT_YAZ_TAWUSI_MELEK",
+"t": "opposes",
+"o": "ENT_ISL_SHAYTAN",
+"c": "medium",
+"ra": "Yazidis explicitly reject the external conflation of Tawusi Melek with Shaytan/the devil; modeled here to record that the misidentification is repudiated, not affirmed (Spat, Kreyenbroek)."
+},
+{
+"s": "ENT_YAZ_SHEIKH_SHAMS",
+"t": "aligned_with",
+"o": "ENT_AST_SUN_SPIRIT",
+"c": "low",
+"ra": "Sheikh Shams embodies solar veneration in Yazidism, functionally parallel to the sun-spirit of astral/planetary traditions (Kreyenbroek); cognate alignment, not identity."
+}
+]

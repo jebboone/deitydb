@@ -1,0 +1,184 @@
+[
+{
+"s": "ENT_DRZ_AL_AQL",
+"t": "member_of",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "Al-Aql is the first of the five cosmic luminaries (al-hudud)."
+},
+{
+"s": "ENT_DRZ_AL_NAFS",
+"t": "member_of",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "Al-Nafs is the second of the five luminaries."
+},
+{
+"s": "ENT_DRZ_AL_KALIMA",
+"t": "member_of",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "Al-Kalima is the third of the five luminaries."
+},
+{
+"s": "ENT_DRZ_AL_SABIQ",
+"t": "member_of",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "Al-Sabiq is the fourth of the five luminaries."
+},
+{
+"s": "ENT_DRZ_AL_TALI",
+"t": "member_of",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "Al-Tali is the fifth of the five luminaries."
+},
+{
+"s": "ENT_DRZ_AL_NAFS",
+"t": "emanates_from",
+"o": "ENT_DRZ_AL_AQL",
+"c": "high",
+"ra": "In Druze cosmology the Universal Soul emanates from the Universal Intellect."
+},
+{
+"s": "ENT_DRZ_AL_KALIMA",
+"t": "emanates_from",
+"o": "ENT_DRZ_AL_NAFS",
+"c": "high",
+"ra": "The Word emanates from the Universal Soul in the descending hierarchy of luminaries."
+},
+{
+"s": "ENT_DRZ_AL_SABIQ",
+"t": "emanates_from",
+"o": "ENT_DRZ_AL_KALIMA",
+"c": "high",
+"ra": "The Preceder emanates from the Word."
+},
+{
+"s": "ENT_DRZ_AL_TALI",
+"t": "emanates_from",
+"o": "ENT_DRZ_AL_SABIQ",
+"c": "high",
+"ra": "The Follower emanates from the Preceder, completing the five ranks."
+},
+{
+"s": "ENT_DRZ_HAMZA",
+"t": "embodies",
+"o": "ENT_DRZ_AL_AQL",
+"c": "high",
+"ra": "Hamza ibn Ali is held to be the human manifestation of al-Aql, the Universal Intellect."
+},
+{
+"s": "ENT_DRZ_ABU_IBRAHIM",
+"t": "embodies",
+"o": "ENT_DRZ_AL_NAFS",
+"c": "medium",
+"ra": "Abu Ibrahim al-Tamimi is associated with the rank of al-Nafs."
+},
+{
+"s": "ENT_DRZ_AL_TAMIMI",
+"t": "embodies",
+"o": "ENT_DRZ_AL_KALIMA",
+"c": "medium",
+"ra": "Muhammad ibn Wahb al-Tamimi is associated with the rank of al-Kalima."
+},
+{
+"s": "ENT_DRZ_SALAMA",
+"t": "embodies",
+"o": "ENT_DRZ_AL_SABIQ",
+"c": "medium",
+"ra": "Salama ibn Abd al-Wahhab is associated with the rank of al-Sabiq."
+},
+{
+"s": "ENT_DRZ_MUQTANA",
+"t": "embodies",
+"o": "ENT_DRZ_AL_TALI",
+"c": "high",
+"ra": "Baha al-Din al-Muqtana is held to be the manifestation of al-Tali, the Follower."
+},
+{
+"s": "ENT_DRZ_HAMZA",
+"t": "member_of",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "As manifestation of al-Aql, Hamza is the human head of the five luminaries."
+},
+{
+"s": "ENT_DRZ_MUQTANA",
+"t": "member_of",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "As manifestation of al-Tali, al-Muqtana belongs to the five luminaries."
+},
+{
+"s": "ENT_DRZ_AL_HAKIM",
+"t": "presides_over",
+"o": "ENT_DRZ_HUDUD",
+"c": "high",
+"ra": "In Druze belief al-Hakim, as divine manifestation, stands above and is served by the five cosmic luminaries."
+},
+{
+"s": "ENT_DRZ_HAMZA",
+"t": "transmits",
+"o": "ENT_DRZ_RASAIL",
+"c": "medium",
+"ra": "Hamza authored/transmitted a major portion of the epistles collected in the Rasaʾil al-Hikma."
+},
+{
+"s": "ENT_DRZ_MUQTANA",
+"t": "transmits",
+"o": "ENT_DRZ_RASAIL",
+"c": "medium",
+"ra": "Al-Muqtana compiled and transmitted many of the epistles of the Rasaʾil al-Hikma."
+},
+{
+"s": "ENT_DRZ_HAMZA",
+"t": "reveals",
+"o": "ENT_DRZ_TAWHID",
+"c": "high",
+"ra": "Hamza systematized and proclaimed the Druze doctrine of tawhid."
+},
+{
+"s": "ENT_DRZ_TAQAMMUS",
+"t": "member_of",
+"o": "ENT_DRZ_TAWHID",
+"c": "medium",
+"ra": "Taqammus is an integral doctrine within the Druze tawhid worldview."
+},
+{
+"s": "ENT_DRZ_AL_DARAZI",
+"t": "opposes",
+"o": "ENT_DRZ_HAMZA",
+"c": "high",
+"ra": "Al-Darazi's extremist claims were repudiated by Hamza, who declared him a heretic; the two were rivals in the early daʿwa."
+},
+{
+"s": "ENT_DRZ_TAWHID",
+"t": "reception_of",
+"o": "ENT_ISL_ALLAH",
+"c": "high",
+"ra": "Druze tawhid develops the Islamic affirmation of God's absolute unity (Allah) in a distinctive transcendent direction."
+},
+{
+"s": "ENT_DRZ_AL_HAKIM",
+"t": "reception_of",
+"o": "ENT_ISL_IMAMAH",
+"c": "high",
+"ra": "Druze veneration of al-Hakim derives from the Fatimid Ismaili doctrine of the imamate (imamah), radicalized into a claim of divine manifestation."
+},
+{
+"s": "ENT_DRZ_HAMZA",
+"t": "reception_of",
+"o": "ENT_OCCULTATION",
+"c": "medium",
+"ra": "Druze expectation of the return of al-Hakim and Hamza adapts the Shia doctrine of occultation (ghayba) and awaited return."
+},
+{
+"s": "ENT_DRZ_AL_AQL",
+"t": "aligned_with",
+"o": "ENT_GNO_NOUS",
+"c": "medium",
+"ra": "The Druze Universal Intellect (al-Aql al-Kulli) is functionally cognate to the Neoplatonic/Gnostic Nous as first emanation, a comparison drawn in scholarship on Ismaili-Druze cosmology."
+}
+]

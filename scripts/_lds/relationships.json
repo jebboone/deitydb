@@ -1,0 +1,212 @@
+[
+{
+"s": "ENT_LDS_ELOHIM",
+"t": "member_of",
+"o": "ENT_LDS_GODHEAD",
+"c": "high",
+"ra": "Heavenly Father (Elohim) is the first member of the LDS Godhead (Articles of Faith 1)."
+},
+{
+"s": "ENT_LDS_JEHOVAH_CHRIST",
+"t": "member_of",
+"o": "ENT_LDS_GODHEAD",
+"c": "high",
+"ra": "Jehovah/Jesus Christ is the second member of the LDS Godhead (D&C 130:22)."
+},
+{
+"s": "ENT_LDS_HOLY_GHOST",
+"t": "member_of",
+"o": "ENT_LDS_GODHEAD",
+"c": "high",
+"ra": "The Holy Ghost is the third member of the LDS Godhead (D&C 130:22)."
+},
+{
+"s": "ENT_LDS_HEAVENLY_MOTHER",
+"t": "consort_of",
+"o": "ENT_LDS_ELOHIM",
+"c": "high",
+"ra": "Heavenly Mother is the divine consort of Heavenly Father and co-parent of premortal spirits (Givens; Gospel Topics 'Mother in Heaven')."
+},
+{
+"s": "ENT_LDS_JEHOVAH_CHRIST",
+"t": "child_of",
+"o": "ENT_LDS_ELOHIM",
+"c": "high",
+"ra": "Jesus Christ is the Firstborn spirit child and literal Son of Heavenly Father in LDS theology (Givens)."
+},
+{
+"s": "ENT_LDS_JEHOVAH_CHRIST",
+"t": "child_of",
+"o": "ENT_LDS_HEAVENLY_MOTHER",
+"c": "medium",
+"ra": "As all premortal spirits are children of Heavenly Parents, Jesus is the firstborn spirit child of the Heavenly Mother as well (Givens)."
+},
+{
+"s": "ENT_LDS_LUCIFER",
+"t": "child_of",
+"o": "ENT_LDS_ELOHIM",
+"c": "high",
+"ra": "Lucifer is a premortal spirit son of God who rebelled in the Council in Heaven (Book of Moses 4:1–4)."
+},
+{
+"s": "ENT_LDS_LUCIFER",
+"t": "opposes",
+"o": "ENT_LDS_JEHOVAH_CHRIST",
+"c": "high",
+"ra": "Lucifer offered a rival plan opposing Christ's at the Council in Heaven and was cast out (Book of Moses 4; D&C 76:25–28)."
+},
+{
+"s": "ENT_LDS_JEHOVAH_CHRIST",
+"t": "participates_in_creation",
+"o": "ENT_LDS_KOLOB",
+"c": "medium",
+"ra": "Under the Father, the premortal Jehovah/Christ is the creator of the worlds; Kolob governs in the LDS cosmological order created in this framework (Book of Abraham 3–4)."
+},
+{
+"s": "ENT_LDS_COUNCIL_HEAVEN",
+"t": "presided_over_by",
+"o": "ENT_LDS_ELOHIM",
+"c": "high",
+"ra": "Heavenly Father presided over the premortal Council in Heaven where the plan of salvation was presented (Book of Abraham 3; Givens)."
+},
+{
+"s": "ENT_LDS_PREMORTAL_SPIRITS",
+"t": "child_of",
+"o": "ENT_LDS_ELOHIM",
+"c": "high",
+"ra": "All premortal spirits are the spirit children of Heavenly Father (Book of Abraham 3; D&C 93:29; Givens)."
+},
+{
+"s": "ENT_LDS_PREMORTAL_SPIRITS",
+"t": "child_of",
+"o": "ENT_LDS_HEAVENLY_MOTHER",
+"c": "high",
+"ra": "Premortal spirits are co-parented by the Heavenly Mother (Givens; hymn 'O My Father')."
+},
+{
+"s": "ENT_LDS_PREMORTAL_SPIRITS",
+"t": "participates_in_creation",
+"o": "ENT_LDS_COUNCIL_HEAVEN",
+"c": "medium",
+"ra": "The premortal spirits, including the 'noble and great ones,' participated in the Council in Heaven (Book of Abraham 3:22–28)."
+},
+{
+"s": "ENT_LDS_COUNCIL_HEAVEN",
+"t": "member_of",
+"o": "ENT_LDS_PLAN_SALVATION",
+"c": "medium",
+"ra": "The Council in Heaven is the premortal episode within the overarching Plan of Salvation where that plan was presented (Givens)."
+},
+{
+"s": "ENT_LDS_PREMORTAL_SPIRITS",
+"t": "member_of",
+"o": "ENT_LDS_PLAN_SALVATION",
+"c": "medium",
+"ra": "Premortal spirit existence is the first stage of the LDS Plan of Salvation (Givens)."
+},
+{
+"s": "ENT_LDS_DEGREES_GLORY",
+"t": "member_of",
+"o": "ENT_LDS_PLAN_SALVATION",
+"c": "medium",
+"ra": "The three degrees of glory are the postmortal reward stage of the Plan of Salvation (D&C 76; Givens)."
+},
+{
+"s": "ENT_LDS_CELESTIAL_KINGDOM",
+"t": "member_of",
+"o": "ENT_LDS_DEGREES_GLORY",
+"c": "high",
+"ra": "The Celestial Kingdom is the highest of the three degrees of glory (D&C 76)."
+},
+{
+"s": "ENT_LDS_TERRESTRIAL_KINGDOM",
+"t": "member_of",
+"o": "ENT_LDS_DEGREES_GLORY",
+"c": "high",
+"ra": "The Terrestrial Kingdom is the middle of the three degrees of glory (D&C 76)."
+},
+{
+"s": "ENT_LDS_TELESTIAL_KINGDOM",
+"t": "member_of",
+"o": "ENT_LDS_DEGREES_GLORY",
+"c": "high",
+"ra": "The Telestial Kingdom is the lowest of the three degrees of glory (D&C 76)."
+},
+{
+"s": "ENT_LDS_ELOHIM",
+"t": "dwells_in",
+"o": "ENT_LDS_CELESTIAL_KINGDOM",
+"c": "high",
+"ra": "God dwells in the Celestial Kingdom, the highest degree of glory (D&C 76:62, 92)."
+},
+{
+"s": "ENT_LDS_KOLOB",
+"t": "dwelling_of",
+"o": "ENT_LDS_ELOHIM",
+"c": "medium",
+"ra": "Kolob is the great governing star 'nearest unto the throne of God,' i.e. the celestial body nearest God's dwelling (Book of Abraham 3:2–3, 9; Facsimile 2). [QA FIX: replaced invalid 'member_of Godhead' edge — Kolob is a realm, not a personage of the Godhead.]"
+},
+{
+"s": "ENT_LDS_EXALTATION",
+"t": "member_of",
+"o": "ENT_LDS_PLAN_SALVATION",
+"c": "medium",
+"ra": "Exaltation (godhood) is the culminating goal of the Plan of Salvation within the Celestial Kingdom (D&C 132; Givens)."
+},
+{
+"s": "ENT_LDS_EXALTATION",
+"t": "belongs_to_realm",
+"o": "ENT_LDS_CELESTIAL_KINGDOM",
+"c": "high",
+"ra": "Exaltation is attained only in the highest degree of the Celestial Kingdom (D&C 131:1–4)."
+},
+{
+"s": "ENT_LDS_MICHAEL_ADAM",
+"t": "member_of",
+"o": "ENT_LDS_PREMORTAL_SPIRITS",
+"c": "medium",
+"ra": "Michael/Adam was among the noble and great premortal spirits before becoming the first man (D&C 107:54; Book of Abraham 3)."
+},
+{
+"s": "ENT_LDS_MORONI",
+"t": "member_of",
+"o": "ENT_LDS_PREMORTAL_SPIRITS",
+"c": "medium",
+"ra": "Moroni, as a resurrected human prophet, was (like all humans) a premortal spirit child of Heavenly Parents before mortal birth (Givens; Book of Abraham 3). [QA FIX: replaced stretched 'reveals Godhead' edge — Moroni revealed the golden plates, not 'the Godhead' as an object.]"
+},
+{
+"s": "ENT_LDS_ELOHIM",
+"t": "reception_of",
+"o": "ENT_CHR_GOD_FATHER",
+"c": "high",
+"ra": "The LDS Heavenly Father (Elohim) is the Restorationist reception/reconception of the Christian God the Father — embodied and exalted rather than the classical Trinity (Givens)."
+},
+{
+"s": "ENT_LDS_JEHOVAH_CHRIST",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "high",
+"ra": "The LDS Jehovah/Jesus Christ is the Restorationist reception of the Christian Jesus, identifying him with the premortal Old Testament Jehovah (Bible Dictionary; Givens)."
+},
+{
+"s": "ENT_LDS_HOLY_GHOST",
+"t": "reception_of",
+"o": "ENT_CHR_HOLY_SPIRIT",
+"c": "high",
+"ra": "The LDS Holy Ghost is the Restorationist reception of the Christian Holy Spirit, reconceived as a distinct personage of spirit (D&C 130:22)."
+},
+{
+"s": "ENT_LDS_MICHAEL_ADAM",
+"t": "reception_of",
+"o": "ENT_ISR_ADAM",
+"c": "high",
+"ra": "LDS doctrine receives the biblical Adam and identifies him with the archangel Michael (D&C 27:11; 107:54)."
+},
+{
+"s": "ENT_LDS_MICHAEL_ADAM",
+"t": "equated_with",
+"o": "ENT_SAINT_MICHAEL_CHR",
+"c": "high",
+"ra": "LDS scripture explicitly equates the archangel Michael with Adam (D&C 116; 107:54); links to the Christian archangel Michael as the equated figure."
+}
+]

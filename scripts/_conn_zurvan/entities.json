@@ -1,0 +1,26 @@
+[
+{
+"id": "ENT_ZOR_ZURVAN_AKARANA",
+"name": "Zurvan akarana",
+"type": "Aspect of deity",
+"trad": "Zoroastrian",
+"dom": "boundless time; infinity; eternity",
+"conf": "B",
+"note": "Zurvan akarana, 'Boundless/Infinite Time' — the unconditioned, eternal aspect of Zurvan from which the cosmos and the finite world-cycle proceed in Zurvanite speculation (Zaehner, Zurvan, esp. pp. 89-105 on the two zurvans).",
+"src": "SRC_ZAEHNER_ZURVAN",
+"per": "PER_ZOR_SASANIAN",
+"cat": "Time Deity"
+},
+{
+"id": "ENT_ZOR_ZURVAN_DAREGHO",
+"name": "Zurvan daregho-chvadhata",
+"type": "Aspect of deity",
+"trad": "Zoroastrian",
+"dom": "finite time; time of long dominion; the world-age",
+"conf": "B",
+"note": "Zurvan daregho-chvadhata, 'Time of Long Dominion' — the finite, measured time (the 9,000/12,000-year world-cycle) into which Boundless Time issues so that the conflict of Ohrmazd and Ahriman can be played out and resolved (Zaehner, Zurvan, pp. 89-105, 219ff.).",
+"src": "SRC_ZAEHNER_ZURVAN",
+"per": "PER_ZOR_SASANIAN",
+"cat": "Time Deity"
+}
+]

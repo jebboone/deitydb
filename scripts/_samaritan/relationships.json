@@ -1,0 +1,254 @@
+[
+{
+"s": "ENT_SAM_SHEMA",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The one God of the Samaritans is the central object of the tradition's worship; placed in the cohort hub."
+},
+{
+"s": "ENT_SAM_MOSES",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "Moses, the supreme Samaritan prophet, is a core member of the cohort."
+},
+{
+"s": "ENT_SAM_TAHEB",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The Taheb is the Samaritan eschatological figure within the cohort."
+},
+{
+"s": "ENT_SAM_MARQAH",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "Marqah is the foundational Samaritan theologian in the cohort."
+},
+{
+"s": "ENT_SAM_BABA_RABBA",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "Baba Rabba, the reformer, belongs to the Samaritan cohort."
+},
+{
+"s": "ENT_SAM_HIGH_PRIEST",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The high-priestly office is a core institution of the cohort."
+},
+{
+"s": "ENT_SAM_PHINEHAS",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "Phinehas, ancestor of the priestly line, belongs to the cohort."
+},
+{
+"s": "ENT_SAM_GERIZIM",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "Mount Gerizim, the sacred realm, anchors the cohort."
+},
+{
+"s": "ENT_SAM_GLORY",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The divine Glory is a theological concept within the cohort."
+},
+{
+"s": "ENT_SAM_ANGEL",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The Angel/Malak belongs to the Samaritan cohort."
+},
+{
+"s": "ENT_SAM_TORAH",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The Samaritan Torah is the canon of the cohort."
+},
+{
+"s": "ENT_SAM_PASSOVER",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The Gerizim Passover sacrifice is a core ritual of the cohort."
+},
+{
+"s": "ENT_SAM_JOSEPH",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "Joseph, ancestor of the Samaritans, belongs to the cohort."
+},
+{
+"s": "ENT_SAM_JOSHUA",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "Joshua, who founded Gerizim worship, belongs to the cohort."
+},
+{
+"s": "ENT_SAM_RAHUTA_FANUTA",
+"t": "member_of",
+"o": "ENT_SAM_PANTHEON",
+"c": "high",
+"ra": "The Rahuta/Fanuta periodization is a cosmological concept of the cohort."
+},
+{
+"s": "ENT_SAM_MOSES",
+"t": "reveals",
+"o": "ENT_SAM_TORAH",
+"c": "high",
+"ra": "In Samaritan theology Moses is the sole revealer of the complete Torah."
+},
+{
+"s": "ENT_SAM_MARQAH",
+"t": "transmits",
+"o": "ENT_SAM_TORAH",
+"c": "medium",
+"ra": "Marqah's Memar Marqah is the foundational theological exposition transmitting Samaritan Torah doctrine."
+},
+{
+"s": "ENT_SAM_MARQAH",
+"t": "reveals",
+"o": "ENT_SAM_GLORY",
+"c": "medium",
+"ra": "Marqah's Memar Marqah develops the doctrine of the divine Glory/Light upon Moses."
+},
+{
+"s": "ENT_SAM_GLORY",
+"t": "emanates_from",
+"o": "ENT_SAM_SHEMA",
+"c": "medium",
+"ra": "The Glory is God's own manifest presence/Light proceeding from the one God."
+},
+{
+"s": "ENT_SAM_ANGEL",
+"t": "mediates",
+"o": "ENT_SAM_SHEMA",
+"c": "medium",
+"ra": "The created Angel/Malak mediates God's word and presence in Samaritan theology."
+},
+{
+"s": "ENT_SAM_GLORY",
+"t": "revealed_by",
+"o": "ENT_SAM_MOSES",
+"c": "medium",
+"ra": "The Glory shone upon and was made manifest through Moses at Sinai per Memar Marqah."
+},
+{
+"s": "ENT_SAM_HIGH_PRIEST",
+"t": "presides_over",
+"o": "ENT_SAM_PASSOVER",
+"c": "high",
+"ra": "The Samaritan high priest presides over the annual Passover sacrifice on Gerizim."
+},
+{
+"s": "ENT_SAM_PASSOVER",
+"t": "dwells_in",
+"o": "ENT_SAM_GERIZIM",
+"c": "high",
+"ra": "The Samaritan Passover sacrifice is performed on Mount Gerizim, the chosen place."
+},
+{
+"s": "ENT_SAM_HIGH_PRIEST",
+"t": "child_of",
+"o": "ENT_SAM_PHINEHAS",
+"c": "medium",
+"ra": "The Samaritan high-priestly line is traced from Phinehas (the Pinhasite priesthood)."
+},
+{
+"s": "ENT_SAM_JOSHUA",
+"t": "presides_over",
+"o": "ENT_SAM_GERIZIM",
+"c": "medium",
+"ra": "In Samaritan tradition Joshua established the sanctuary on Gerizim, inaugurating the Rahuta."
+},
+{
+"s": "ENT_SAM_JOSHUA",
+"t": "participates_in_creation",
+"o": "ENT_SAM_RAHUTA_FANUTA",
+"c": "low",
+"ra": "Joshua's establishment of Gerizim worship inaugurates the era of divine Favor (Rahuta)."
+},
+{
+"s": "ENT_SAM_BABA_RABBA",
+"t": "member_of",
+"o": "ENT_SAM_HIGH_PRIEST",
+"c": "low",
+"ra": "Baba Rabba operated in close concert with the priesthood in reorganizing the community."
+},
+{
+"s": "ENT_SAM_TAHEB",
+"t": "eschatological_role",
+"o": "ENT_SAM_GERIZIM",
+"c": "medium",
+"ra": "The Taheb is expected to restore true worship and recover the hidden vessels on Mount Gerizim."
+},
+{
+"s": "ENT_SAM_TAHEB",
+"t": "reception_of",
+"o": "ENT_SAM_MOSES",
+"c": "medium",
+"ra": "The Taheb is understood as the prophet like Moses (Deut 18:18) who restores Mosaic worship."
+},
+{
+"s": "ENT_SAM_MOSES",
+"t": "reception_of",
+"o": "ENT_ISR_MOSES",
+"c": "high",
+"ra": "The Samaritan supreme prophet Moses is a tradition-specific reception of the Israelite Moses; same scriptural figure, distinct theological elevation. Homonym across traditions."
+},
+{
+"s": "ENT_SAM_JOSHUA",
+"t": "reception_of",
+"o": "ENT_ISR_JOSHUA",
+"c": "high",
+"ra": "Samaritan Joshua (builder of the Gerizim altar) receives the Israelite Joshua. Homonym."
+},
+{
+"s": "ENT_SAM_JOSEPH",
+"t": "reception_of",
+"o": "ENT_ISR_JOSEPH",
+"c": "high",
+"ra": "Samaritans claim descent through Joseph (Ephraim/Manasseh); their Joseph is a reception of the Pentateuchal Joseph. Homonym."
+},
+{
+"s": "ENT_SAM_PHINEHAS",
+"t": "child_of",
+"o": "ENT_ISR_AARON",
+"c": "medium",
+"ra": "Phinehas son of Eleazar son of Aaron; the Samaritan priestly line descends from Aaron via Phinehas. Linked to the existing Israelite Aaron."
+},
+{
+"s": "ENT_SAM_SHEMA",
+"t": "equated_with",
+"o": "ENT_ISR_YAHWEH",
+"c": "high",
+"ra": "The one God of the Samaritans is the same God of Israel (Yahweh/the tetragrammaton); a shared Israelite deity worshipped under a distinct Gerizim cult."
+},
+{
+"s": "ENT_SAM_TAHEB",
+"t": "aligned_with",
+"o": "ENT_ISL_MUSA",
+"c": "low",
+"ra": "The Taheb expectation as a returning prophet-like-Moses functionally aligns with the prophet-of-restoration role; modern cross-tradition functional alignment, not identity."
+},
+{
+"s": "ENT_SAM_GLORY",
+"t": "aligned_with",
+"o": "ENT_JM_SHEKHINAH",
+"c": "medium",
+"ra": "The Samaritan divine Glory/Kavod is a functional cognate of the Jewish Shekhinah/Kavod as God's manifest presence; parallel mediating concepts in sister Israelite traditions (modern comparative alignment, not identity)."
+}
+]

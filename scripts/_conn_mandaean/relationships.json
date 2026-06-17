@@ -1,0 +1,198 @@
+[
+{
+"s": "ENT_MAN_MANDA_D_HAYYI",
+"t": "emanates_from",
+"o": "ENT_MAN_HAYYI_RABBI",
+"c": "high",
+"ra": "In Mandaean theology Manda d-Hayyi ('Knowledge of Life'), the chief revealer-savior, proceeds from Hayyi Rabbi (the Great Life); the Ginza Rba and Drower's account present him as the messenger emanated by the supreme Life. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_UTHRAS",
+"t": "emanates_from",
+"o": "ENT_MAN_HAYYI_RABBI",
+"c": "high",
+"ra": "The uthras (lightworld beings) collectively emanate from the Great Life Hayyi Rabbi, source of the World of Light's luminous beings. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_MANA_RABBA",
+"t": "emanates_from",
+"o": "ENT_MAN_HAYYI_RABBI",
+"c": "medium",
+"ra": "Mana Rabba ('Great Mind/Treasure'), the supreme principle/first being, is treated in Mandaean cosmogony as proceeding from or co-extensive with the Great Life Hayyi Rabbi at the head of the World of Light. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_MANDA_D_HAYYI",
+"t": "member_of",
+"o": "ENT_MAN_UTHRAS",
+"c": "high",
+"ra": "Manda d-Hayyi is the foremost of the uthras, the lightworld emissaries; he leads the rescuing uthras sent to the lower world. Source: SRC_MANDAEAN_BOOK_JOHN; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_HIBIL_ZIWA",
+"t": "member_of",
+"o": "ENT_MAN_UTHRAS",
+"c": "high",
+"ra": "Hibil Ziwa (Abel of Radiance), the lightworld savior who descends to the underworld, is one of the great uthras. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_SITIL",
+"t": "member_of",
+"o": "ENT_MAN_UTHRAS",
+"c": "high",
+"ra": "Sitil (Seth), brother in the Hibil-Sitil-Anosh triad of lightworld beings, is counted among the uthras. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_ANOSH",
+"t": "member_of",
+"o": "ENT_MAN_UTHRAS",
+"c": "high",
+"ra": "Anosh (Enosh), brother in the Hibil-Sitil-Anosh triad, is one of the lightworld uthras. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_HIBIL_ZIWA",
+"t": "sibling_of",
+"o": "ENT_MAN_SITIL",
+"c": "high",
+"ra": "Hibil, Sitil and Anosh form the classic Mandaean fraternal triad of saving lightworld figures (corresponding to Abel, Seth and Enosh). Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_SITIL",
+"t": "sibling_of",
+"o": "ENT_MAN_ANOSH",
+"c": "high",
+"ra": "Sitil and Anosh are paired as brothers with Hibil in the lightworld triad. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_HIBIL_ZIWA",
+"t": "sibling_of",
+"o": "ENT_MAN_ANOSH",
+"c": "high",
+"ra": "Hibil and Anosh belong to the same fraternal triad of saving uthras. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_ABATHUR",
+"t": "parent_of",
+"o": "ENT_MAN_PTAHIL",
+"c": "high",
+"ra": "Abathur the weigher of souls fathers Ptahil the world-maker, whom he sends down to create the material cosmos. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_PTAHIL",
+"t": "creator_of",
+"o": "ENT_MAN_TIBIL",
+"c": "high",
+"ra": "Ptahil is the demiurge who shapes Tibil, the material earth/world, in the defective lower creation. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_ABATHUR",
+"t": "judges",
+"o": "ENT_MAN_MATARTAS",
+"c": "medium",
+"ra": "Abathur Muzania ('the weigher') presides over the scales judging souls as they ascend through the matartas (purgatorial watch-stations). Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_ABATHUR",
+"t": "member_of",
+"o": "ENT_MAN_UTHRAS",
+"c": "medium",
+"ra": "Abathur is a lightworld/uthra figure positioned at the boundary of the worlds of light and darkness, weighing souls. Source: SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_RUHA",
+"t": "parent_of",
+"o": "ENT_MAN_UR",
+"c": "high",
+"ra": "Ruha bears Ur, the dragon-like ruler of the underworld, in Mandaean cosmogony. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_RUHA",
+"t": "parent_of",
+"o": "ENT_MAN_PLANETS",
+"c": "high",
+"ra": "Ruha is mother of the Seven (planets); together with Ur she generates the seven planetary rulers who govern the material world. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_RUHA",
+"t": "parent_of",
+"o": "ENT_MAN_TWELVE",
+"c": "medium",
+"ra": "Ruha is also reckoned mother/mistress of the Twelve (zodiacal/astral rulers) alongside the Seven planets in the lower world's astral hierarchy. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_RUHA",
+"t": "rules",
+"o": "ENT_MAN_WORLD_DARKNESS",
+"c": "high",
+"ra": "Ruha is the dominant spirit governing the World of Darkness / lower world together with her offspring. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_PLANETS",
+"t": "member_of",
+"o": "ENT_MAN_WORLD_DARKNESS",
+"c": "medium",
+"ra": "The Seven planets belong to the dark, material lower order ruled by Ruha and Ur, opposed to the World of Light. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_TWELVE",
+"t": "member_of",
+"o": "ENT_MAN_WORLD_DARKNESS",
+"c": "medium",
+"ra": "The Twelve (zodiac/astral powers) form part of the lower astral order associated with the World of Darkness. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_UR",
+"t": "dwells_in",
+"o": "ENT_MAN_WORLD_DARKNESS",
+"c": "high",
+"ra": "Ur the underworld monster dwells in and embodies the World of Darkness. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_WORLD_LIGHT",
+"t": "opposes",
+"o": "ENT_MAN_WORLD_DARKNESS",
+"c": "high",
+"ra": "Mandaean cosmology is dualistic: the World of Light (Hayyi Rabbi and the uthras) stands opposed to the World of Darkness (Ruha, Ur, the planets and Twelve). Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_HAYYI_RABBI",
+"t": "rules",
+"o": "ENT_MAN_WORLD_LIGHT",
+"c": "high",
+"ra": "Hayyi Rabbi, the Great Life, is the supreme being presiding over the World of Light. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_UTHRAS",
+"t": "dwells_in",
+"o": "ENT_MAN_WORLD_LIGHT",
+"c": "high",
+"ra": "The uthras inhabit the World of Light as its luminous denizens. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_PTAHIL",
+"t": "member_of",
+"o": "ENT_MAN_UTHRAS",
+"c": "low",
+"ra": "Ptahil originates as a lightworld uthra (son of Abathur) before his flawed demiurgic creation of the material world; he is an ambivalent uthra-demiurge. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_HIBIL_ZIWA",
+"t": "opposes",
+"o": "ENT_MAN_UR",
+"c": "medium",
+"ra": "Hibil Ziwa descends into the World of Darkness to subdue Ur and the powers of darkness, the central combat of Mandaean salvation history. Source: SRC_GINZA_RBA; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_JOHN_BAPTIST",
+"t": "reception_of",
+"o": "ENT_SAINT_JOHN_BAPTIST",
+"c": "medium",
+"ra": "The Mandaean Yahia Yuhana (John the Baptist), supreme prophet-teacher of the Mandaeans and central figure of the Mandaean Book of John, is a distinct religious reception of the historical John the Baptist (ENT_SAINT_JOHN_BAPTIST), cast as the true prophet of Jordan baptism and polemically against Jesus, contrasting the Christian reception. Intentional homonym (both flagged intentional_distinct in entity_duplicate_review); parallels ENT_ISL_YAHYA reception_of ENT_SAINT_JOHN_BAPTIST. Source: SRC_MANDAEAN_BOOK_JOHN; SRC_DROWER_MANDAEANS."
+},
+{
+"s": "ENT_MAN_JOHN_BAPTIST",
+"t": "member_of",
+"o": "ENT_MAN_UTHRAS",
+"c": "low",
+"ra": "In Mandaean tradition John the Baptist is revered as a teacher guided by uthras and associated with the lightworld emissaries; modeled as affiliated with the uthra hierarchy. Source: SRC_MANDAEAN_BOOK_JOHN; SRC_DROWER_MANDAEANS."
+}
+]

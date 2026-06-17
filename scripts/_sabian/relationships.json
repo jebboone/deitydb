@@ -1,0 +1,275 @@
+[
+{
+"s": "ENT_HRN_SHAMASH_SUN",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "Shamash/Sun is one of the seven planetary deities of the Harranian heptad (Green; Fihrist)."
+},
+{
+"s": "ENT_HRN_SIN_MOON",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "Sin/Moon is the supreme member of the Harranian planetary heptad (Green)."
+},
+{
+"s": "ENT_HRN_KRONOS_SATURN",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "Kronos/Saturn is one of the seven planetary deities of Harran (Green; Fihrist)."
+},
+{
+"s": "ENT_HRN_ZEUS_JUPITER",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "Zeus/Jupiter is one of the seven planetary deities of Harran (Green; Fihrist)."
+},
+{
+"s": "ENT_HRN_ARES_MARS",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "Ares/Mars is one of the seven planetary deities of Harran (Green; Fihrist)."
+},
+{
+"s": "ENT_HRN_APHRODITE_VENUS",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "Aphrodite/Venus is one of the seven planetary deities of Harran (Green; Fihrist)."
+},
+{
+"s": "ENT_HRN_HERMES_MERCURY",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "Hermes-Nabu/Mercury is one of the seven planetary deities of Harran (Green; Fihrist)."
+},
+{
+"s": "ENT_HRN_SHAMASH_SUN",
+"t": "equated_with",
+"o": "ENT_MES_UTU_SHAMASH",
+"c": "high",
+"ra": "The Harranian Sun-deity is the late continuation of Mesopotamian Utu/Shamash (ancient identification / cult continuity; Green)."
+},
+{
+"s": "ENT_HRN_SHAMASH_SUN",
+"t": "equated_with",
+"o": "ENT_HELIOS",
+"c": "high",
+"ra": "Greco-Roman sources and the Sabians themselves identified the Harranian Sun with Helios (interpretatio; Green)."
+},
+{
+"s": "ENT_HRN_SHAMASH_SUN",
+"t": "aligned_with",
+"o": "ENT_AST_SUN_SPIRIT",
+"c": "medium",
+"ra": "Functional alignment between the Harranian solar deity and the Picatrix Spirit of the Sun (al-Shams) in the shared Arabic planetary-magic milieu."
+},
+{
+"s": "ENT_HRN_SIN_MOON",
+"t": "reception_of",
+"o": "ENT_ARA_SIN_HARRAN",
+"c": "high",
+"ra": "The Sabian Moon-cult of Harran is the direct continuation of the Aramean Sin of Harran into late antiquity (Green)."
+},
+{
+"s": "ENT_HRN_SIN_MOON",
+"t": "equated_with",
+"o": "ENT_MES_NANNA_SIN",
+"c": "high",
+"ra": "The Harranian Moon-god derives from and is identified with Mesopotamian Nanna/Sin (cult continuity; Green)."
+},
+{
+"s": "ENT_HRN_SIN_MOON",
+"t": "equated_with",
+"o": "ENT_SELENE",
+"c": "high",
+"ra": "Greco-Roman interpretatio identified the Harranian Moon with Selene (Green)."
+},
+{
+"s": "ENT_HRN_SIN_MOON",
+"t": "aligned_with",
+"o": "ENT_AST_MOON_SPIRIT",
+"c": "medium",
+"ra": "Functional alignment with the Picatrix Spirit of the Moon (al-Qamar) in the shared planetary-magic milieu."
+},
+{
+"s": "ENT_HRN_KRONOS_SATURN",
+"t": "equated_with",
+"o": "ENT_KRONOS",
+"c": "high",
+"ra": "The Harranian Saturn-deity is explicitly identified with Greek Kronos (interpretatio; Fihrist, Green)."
+},
+{
+"s": "ENT_HRN_KRONOS_SATURN",
+"t": "equated_with",
+"o": "ENT_MES_NINURTA",
+"c": "medium",
+"ra": "Saturn in the Mesopotamian-Harranian astral scheme corresponds to Ninurta/Ninib (planetary identification; Green)."
+},
+{
+"s": "ENT_HRN_KRONOS_SATURN",
+"t": "aligned_with",
+"o": "ENT_AST_SATURN_SPIRIT",
+"c": "medium",
+"ra": "Functional alignment with the Picatrix Spirit of Saturn (Zuhal)."
+},
+{
+"s": "ENT_HRN_ZEUS_JUPITER",
+"t": "equated_with",
+"o": "ENT_ZEUS",
+"c": "high",
+"ra": "The Harranian Jupiter-deity is identified with Greek Zeus (interpretatio; Green)."
+},
+{
+"s": "ENT_HRN_ZEUS_JUPITER",
+"t": "equated_with",
+"o": "ENT_MES_MARDUK",
+"c": "medium",
+"ra": "Jupiter in the Mesopotamian-Harranian astral scheme corresponds to Marduk/Bel (planetary identification; Green)."
+},
+{
+"s": "ENT_HRN_ZEUS_JUPITER",
+"t": "aligned_with",
+"o": "ENT_AST_JUPITER_SPIRIT",
+"c": "medium",
+"ra": "Functional alignment with the Picatrix Spirit of Jupiter (al-Mushtari)."
+},
+{
+"s": "ENT_HRN_ARES_MARS",
+"t": "equated_with",
+"o": "ENT_ARES",
+"c": "high",
+"ra": "The Harranian Mars-deity is identified with Greek Ares (interpretatio; Green)."
+},
+{
+"s": "ENT_HRN_ARES_MARS",
+"t": "equated_with",
+"o": "ENT_MES_NERGAL",
+"c": "high",
+"ra": "Mars in the Mesopotamian-Harranian astral scheme is Nergal, god of war and the underworld (planetary identification; Green)."
+},
+{
+"s": "ENT_HRN_ARES_MARS",
+"t": "aligned_with",
+"o": "ENT_AST_MARS_SPIRIT",
+"c": "medium",
+"ra": "Functional alignment with the Picatrix Spirit of Mars (al-Mirrikh)."
+},
+{
+"s": "ENT_HRN_APHRODITE_VENUS",
+"t": "equated_with",
+"o": "ENT_APHRODITE",
+"c": "high",
+"ra": "The Harranian Venus-deity is identified with Greek Aphrodite (interpretatio; Green)."
+},
+{
+"s": "ENT_HRN_APHRODITE_VENUS",
+"t": "equated_with",
+"o": "ENT_MES_INANNA_ISHTAR",
+"c": "high",
+"ra": "Venus in the Mesopotamian-Harranian astral scheme is Inanna/Ishtar, the planet's ancient owner (planetary identification; Green)."
+},
+{
+"s": "ENT_HRN_APHRODITE_VENUS",
+"t": "aligned_with",
+"o": "ENT_AST_VENUS_SPIRIT",
+"c": "medium",
+"ra": "Functional alignment with the Picatrix Spirit of Venus (al-Zuhra)."
+},
+{
+"s": "ENT_HRN_HERMES_MERCURY",
+"t": "equated_with",
+"o": "ENT_HERMES",
+"c": "high",
+"ra": "The Harranian Mercury-deity is identified with Greek Hermes (interpretatio; Green)."
+},
+{
+"s": "ENT_HRN_HERMES_MERCURY",
+"t": "equated_with",
+"o": "ENT_MES_NABU",
+"c": "high",
+"ra": "Mercury in the Mesopotamian-Harranian astral scheme is Nabu, scribal god of wisdom (planetary identification; Green)."
+},
+{
+"s": "ENT_HRN_HERMES_MERCURY",
+"t": "aligned_with",
+"o": "ENT_AST_MERCURY_SPIRIT",
+"c": "medium",
+"ra": "Functional alignment with the Picatrix Spirit of Mercury (Utarid)."
+},
+{
+"s": "ENT_HRN_HERMES_TRISMEGISTUS",
+"t": "reception_of",
+"o": "ENT_HER_TRISMEGISTUS",
+"c": "high",
+"ra": "The Harranian Sabians received Hermes Trismegistus of the Greco-Egyptian Hermetica as their founding prophet-sage (Green; Fihrist)."
+},
+{
+"s": "ENT_HRN_HERMES_TRISMEGISTUS",
+"t": "equated_with",
+"o": "ENT_ISL_IDRIS",
+"c": "high",
+"ra": "Harranian and Islamic sources identified the prophet Hermes with Qur'anic Idris (=Enoch), which secured the Sabians' protected status under Islam (Green)."
+},
+{
+"s": "ENT_HRN_AGATHODAIMON",
+"t": "reception_of",
+"o": "ENT_LAT_AGATHOS_DAIMON_HERMETIC",
+"c": "medium",
+"ra": "The Harranian prophet-sage Agathodaimon is the Harranian reception of the pan-Hermetic Agathos Daimon (homonym; same figure received into the Sabian prophetic tradition; Green)."
+},
+{
+"s": "ENT_HRN_AGATHODAIMON",
+"t": "member_of",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "low",
+"ra": "Agathodaimon is grouped with the Harranian prophetic/teaching tradition surrounding the planetary cult; weak roster linkage to the cult-hub (Fihrist tradition; Green)."
+},
+{
+"s": "ENT_HRN_AGATHODAIMON",
+"t": "paired_with",
+"o": "ENT_HRN_HERMES_TRISMEGISTUS",
+"c": "medium",
+"ra": "Agathodaimon is consistently paired with Hermes as a teacher-sage in the Hermetic and Harranian Sabian tradition (Green)."
+},
+{
+"s": "ENT_HRN_AGATHODAIMON",
+"t": "reception_of",
+"o": "ENT_HER_POIMANDRES",
+"c": "low",
+"ra": "Agathodaimon as Harranian revelatory 'Good Spirit' parallels the Hermetic revealer-figure tradition exemplified by Poimandres (conceptual reception; Corpus Hermeticum)."
+},
+{
+"s": "ENT_HRN_PLANETARY_ASCENT",
+"t": "associated_with",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "The soul's ascent passes through the spheres of the seven planetary deities, binding the doctrine to the cult-heptad (Green)."
+},
+{
+"s": "ENT_HRN_PLANETARY_ASCENT",
+"t": "reception_of",
+"o": "ENT_HER_POIMANDRES",
+"c": "medium",
+"ra": "The planetary-ascent schema follows the Poimandres account (CH I) of the soul shedding planetary qualities on its return to the divine; this is the Hermetic source of the Harranian doctrine (Green)."
+},
+{
+"s": "ENT_HRN_TEMPLES",
+"t": "associated_with",
+"o": "ENT_HRN_PLANETARY_SEVEN",
+"c": "high",
+"ra": "The planetary temples of Harran were each dedicated to one of the seven planetary deities, in distinctive geometric forms keyed to each planet (Fihrist; Green)."
+},
+{
+"s": "ENT_HRN_TEMPLES",
+"t": "aligned_with",
+"o": "ENT_AST_PLANETARY_SPIRITS",
+"c": "low",
+"ra": "The Harranian planetary-temple/talismanic scheme is part of the same Arabic astral-magic complex that the Picatrix's seven planetary spirits draw on (shared milieu; Green)."
+}
+]

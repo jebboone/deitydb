@@ -1,0 +1,14 @@
+[
+{
+"id": "ENT_MANICH_PANTHEON",
+"name": "Manichaean Pantheon (Lightworld Hierarchy)",
+"type": "Collective",
+"cat": "Pantheon",
+"trad": "Manichaean",
+"dom": "Cosmological hierarchy of the Realm of Light: the Father of Greatness and the successive Evocations deployed in the cosmic drama of the mixing and rescue of Light.",
+"conf": "A",
+"note": "Connectivity hub for the Manichaean cohort; a structural collective node grouping the Lightworld emanations described in the Kephalaia and Psalm-Book, not an attested cult-figure. Prefix ENT_MANICH_ matches the existing tradition roster (distinct from Mandaean ENT_MAN_).",
+"src": "SRC_MANICHAEAN_KEPHALAIA",
+"per": ""
+}
+]

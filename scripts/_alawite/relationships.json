@@ -1,0 +1,142 @@
+[
+{
+"s": "ENT_ALW_ALI",
+"t": "member_of",
+"o": "ENT_ALW_TRINITY",
+"c": "high",
+"ra": "Ali as the Ma'na (Ayn) is the first member of the Ayn-Mim-Sin triad (Friedman 2010; Bar-Asher & Kofsky 2002)."
+},
+{
+"s": "ENT_ALW_MUHAMMAD",
+"t": "member_of",
+"o": "ENT_ALW_TRINITY",
+"c": "high",
+"ra": "Muhammad as the Ism (Mim) is the second member of the Ayn-Mim-Sin triad."
+},
+{
+"s": "ENT_ALW_SALMAN",
+"t": "member_of",
+"o": "ENT_ALW_TRINITY",
+"c": "high",
+"ra": "Salman as the Bab (Sin) is the third member of the Ayn-Mim-Sin triad."
+},
+{
+"s": "ENT_ALW_ALI",
+"t": "embodies",
+"o": "ENT_ALW_MANA",
+"c": "high",
+"ra": "In Nusayri doctrine Ali is the manifestation/embodiment of the divine Ma'na (Meaning), the supreme essence (Halm 1982)."
+},
+{
+"s": "ENT_ALW_MUHAMMAD",
+"t": "embodies",
+"o": "ENT_ALW_ISM",
+"c": "high",
+"ra": "Muhammad embodies al-Ism, the Name/veil, in the Muhammadan cycle (Halm 1982)."
+},
+{
+"s": "ENT_ALW_SALMAN",
+"t": "embodies",
+"o": "ENT_ALW_BAB",
+"c": "high",
+"ra": "Salman embodies al-Bab, the Gate, in the Muhammadan cycle (Halm 1982)."
+},
+{
+"s": "ENT_ALW_ISM",
+"t": "emanates_from",
+"o": "ENT_ALW_MANA",
+"c": "high",
+"ra": "Nusayri emanationist cosmology: the Name (Ism) is emanated from the Meaning (Ma'na) (Bar-Asher & Kofsky 2002)."
+},
+{
+"s": "ENT_ALW_BAB",
+"t": "emanates_from",
+"o": "ENT_ALW_ISM",
+"c": "high",
+"ra": "The Gate (Bab) is emanated from the Name (Ism), completing the descending triad (Bar-Asher & Kofsky 2002)."
+},
+{
+"s": "ENT_ALW_MUQADDASIYYA",
+"t": "emanates_from",
+"o": "ENT_ALW_BAB",
+"c": "medium",
+"ra": "The five Aytam are attested as emanated below the Bab in the Nusayri cosmic hierarchy (Bar-Asher & Kofsky 2002)."
+},
+{
+"s": "ENT_ALW_AYN_MIM_SIN_DOCTRINE",
+"t": "symbolizes",
+"o": "ENT_ALW_TRINITY",
+"c": "high",
+"ra": "The Ayn-Mim-Sin formula is the creedal expression that names and symbolizes the divine triad (Bar-Asher & Kofsky 2002)."
+},
+{
+"s": "ENT_ALW_TRINITY",
+"t": "member_of",
+"o": "ENT_ALW_SEVEN_CYCLES",
+"c": "medium",
+"ra": "The Ali-Muhammad-Salman triad constitutes the final (Muhammadan) cycle within the doctrine of seven cycles of manifestation (Halm 1982)."
+},
+{
+"s": "ENT_ALW_IBN_NUSAYR",
+"t": "reveals",
+"o": "ENT_ALW_AYN_MIM_SIN_DOCTRINE",
+"c": "medium",
+"ra": "Ibn Nusayr al-Namiri is the founder-prophet credited with proclaiming the deification of Ali and the trinitarian doctrine (Friedman 2010)."
+},
+{
+"s": "ENT_ALW_IBN_NUSAYR",
+"t": "embodies",
+"o": "ENT_ALW_BAB",
+"c": "medium",
+"ra": "Ibn Nusayr claimed to be the Bab (Gate) of the Imams Ali al-Hadi and Hasan al-Askari, occupying/embodying the Bab office in his own age (Friedman 2010). [QA: verb changed from member_of to embodies — an entity cannot be member_of a divine principle.]"
+},
+{
+"s": "ENT_ALW_KHASIBI",
+"t": "taught_by",
+"o": "ENT_ALW_IBN_NUSAYR",
+"c": "medium",
+"ra": "Al-Khasibi stands in the doctrinal lineage descending from Ibn Nusayr, whose teaching he systematized and organized (Friedman 2010)."
+},
+{
+"s": "ENT_ALW_KHASIBI",
+"t": "transmits",
+"o": "ENT_ALW_SEVEN_CYCLES",
+"c": "medium",
+"ra": "Al-Khasibi systematized and transmitted Nusayri cosmology including the cyclical-manifestation doctrine in his Kitab al-Hidaya al-Kubra (Bar-Asher & Kofsky 2002)."
+},
+{
+"s": "ENT_ALW_ALI",
+"t": "reception_of",
+"o": "ENT_ISL_ALI",
+"c": "high",
+"ra": "The Alawite deified Ali (Ma'na) is a sectarian reception of the same historical Ali ibn Abi Talib venerated in mainstream/Twelver Shi'ism as first Imam (homonym, same person, divergent theology; Friedman 2010)."
+},
+{
+"s": "ENT_ALW_MUHAMMAD",
+"t": "reception_of",
+"o": "ENT_ISL_MUHAMMAD",
+"c": "high",
+"ra": "The Alawite Muhammad (Ism/veil) is a sectarian reception of the Prophet Muhammad, here theologically subordinated to Ali (homonym, same person; Friedman 2010)."
+},
+{
+"s": "ENT_ALW_SALMAN",
+"t": "reception_of",
+"o": "ENT_ISL_SALMAN",
+"c": "high",
+"ra": "The Alawite Salman (Bab/Gate) is a sectarian reception of the Companion Salman al-Farisi, elevated to the third hypostasis of the triad (homonym, same person; Friedman 2010)."
+},
+{
+"s": "ENT_ALW_IBN_NUSAYR",
+"t": "aligned_with",
+"o": "ENT_ISL_ASKARI",
+"c": "medium",
+"ra": "Ibn Nusayr is historically associated as a disciple/claimed Bab of the eleventh Imam Hasan al-Askari, linking the sect's origin to the Twelver Imami line (Friedman 2010)."
+},
+{
+"s": "ENT_ALW_SEVEN_CYCLES",
+"t": "reception_of",
+"o": "ENT_ISL_IMAMAH",
+"c": "low",
+"ra": "The Alawite cyclical-manifestation doctrine develops out of and radicalizes the Shi'i doctrine of Imamah / divinely-guided guidance (Halm 1982)."
+}
+]

@@ -1,0 +1,147 @@
+[
+{
+"id": "ENT_BAH_MANIFESTATIONS",
+"name": "Manifestations of God (collective)",
+"type": "Collective/divine category",
+"trad": "Bahá'í",
+"dom": "progressive revelation; prophethood; divine mediation",
+"conf": "B",
+"note": "Bahá'í doctrinal category (Mazhar-i-Iláhí) for the succession of supreme Messengers; serves as the cohort hub. Attested across Bahá'u'lláh's Kitáb-i-Íqán and Smith (2008).",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI",
+"cat": "Collective"
+},
+{
+"id": "ENT_BAH_MAZHAR",
+"name": "Manifestation of God (Mazhar)",
+"type": "Theological concept",
+"trad": "Bahá'í",
+"dom": "prophetology; divine mediation; revelation",
+"conf": "B",
+"note": "Core Bahá'í concept: a perfect mirror reflecting divine attributes who founds a religious dispensation. Attested in Kitáb-i-Íqán; Smith (2008) ch. on theology.",
+"src": "SRC_BAHAI_KITAB_IQAN",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_BAB",
+"name": "The Báb (Siyyid Alí-Muhammad Shírází)",
+"type": "Manifestation/Prophet-founder",
+"trad": "Bahá'í",
+"dom": "revelation; herald; martyrdom",
+"conf": "B",
+"note": "1819-1850; herald-Manifestation who declared his mission in 1844 (start of the Bahá'í era) and prophesied 'Him Whom God shall make manifest.' Historically attested; Smith (2008); Shoghi Effendi, God Passes By.",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_BAHAULLAH",
+"name": "Bahá'u'lláh (Mírzá Husayn-Alí Núrí)",
+"type": "Manifestation/Prophet-founder",
+"trad": "Bahá'í",
+"dom": "revelation; covenant; central authority",
+"conf": "B",
+"note": "1817-1892; central figure and founder of the Bahá'í Faith, 'Him Whom God shall make manifest,' author of the Kitáb-i-Aqdas and Kitáb-i-Íqán. Historically attested; Smith (2008).",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_ABDULBAHA",
+"name": "Abdu'l-Bahá (Abbás Effendi)",
+"type": "Authoritative interpreter/exemplar",
+"trad": "Bahá'í",
+"dom": "interpretation; exemplar; covenant",
+"conf": "B",
+"note": "1844-1921; eldest son of Bahá'u'lláh, appointed Centre of the Covenant and authorized interpreter; not regarded as a Manifestation. Historically attested; Smith (2008).",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_SHOGHI",
+"name": "Shoghi Effendi (Shoghi Rabbání)",
+"type": "Guardian/authoritative interpreter",
+"trad": "Bahá'í",
+"dom": "guardianship; interpretation; administration",
+"conf": "B",
+"note": "1897-1957; great-grandson of Bahá'u'lláh, Guardian of the Cause and authorized interpreter who built the administrative order. Historically attested; author of God Passes By.",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_UHJ",
+"name": "Universal House of Justice",
+"type": "Institution",
+"trad": "Bahá'í",
+"dom": "governance; legislation; covenant",
+"conf": "B",
+"note": "Supreme elected governing body of the Bahá'í Faith, ordained in the Kitáb-i-Aqdas and first elected 1963; seated in Haifa. Attested in primary scripture and Smith (2008).",
+"src": "SRC_BAHAI_KITAB_AQDAS",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_COVENANT",
+"name": "Covenant (Bahá'í)",
+"type": "Theological concept",
+"trad": "Bahá'í",
+"dom": "succession; authority; unity",
+"conf": "B",
+"note": "Bahá'í concept of the binding chain of authority from Bahá'u'lláh through Abdu'l-Bahá, the Guardianship and the Universal House of Justice. Attested in Kitáb-i-Aqdas and Smith (2008).",
+"src": "SRC_BAHAI_KITAB_AQDAS",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_QUDDUS",
+"name": "Quddús (Mullá Muhammad-Alí Bárfurúshí)",
+"type": "Disciple/saint",
+"trad": "Bahá'í",
+"dom": "discipleship; martyrdom",
+"conf": "C",
+"note": "d. 1849; foremost of the Báb's Letters of the Living and leading figure at the Shaykh Tabarsí upheaval. Historically attested; Shoghi Effendi, God Passes By.",
+"src": "SRC_SHOGHI_GPB",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_TAHIRIH",
+"name": "Táhirih (Fátimih Baraghání, Qurratu'l-Ayn)",
+"type": "Disciple/saint",
+"trad": "Bahá'í",
+"dom": "discipleship; poetry; martyrdom; women's emancipation",
+"conf": "C",
+"note": "1817-1852; only woman among the Báb's Letters of the Living, poet and reformer martyred for the Bábí cause. Historically attested; Smith (2008).",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_LETTERS_LIVING",
+"name": "Letters of the Living (Hurúf-i-Hayy)",
+"type": "Collective/disciple body",
+"trad": "Bahá'í",
+"dom": "discipleship; early Bábí community",
+"conf": "C",
+"note": "The eighteen first disciples who independently recognized the Báb, forming with him the first 'Unity.' Attested in Shoghi Effendi, God Passes By.",
+"src": "SRC_SHOGHI_GPB",
+"per": "PER_BAHAI",
+"cat": "Collective"
+},
+{
+"id": "ENT_BAH_HANDS_CAUSE",
+"name": "Hands of the Cause of God",
+"type": "Institution/office",
+"trad": "Bahá'í",
+"dom": "propagation; protection of the Faith",
+"conf": "C",
+"note": "Distinguished believers appointed to propagate and protect the Faith; functioned especially under Shoghi Effendi and after his passing. Attested in Smith (2008).",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI"
+},
+{
+"id": "ENT_BAH_BAYAN",
+"name": "Bayán (Báb's revelation)",
+"type": "Scripture/concept",
+"trad": "Bahá'í",
+"dom": "scripture; messianic prophecy",
+"conf": "C",
+"note": "Principal scriptural work of the Báb (Persian and Arabic Bayán) which abrogated Islamic law and foretold the coming Manifestation. Attested in Smith (2008).",
+"src": "SRC_SMITH_BAHAI",
+"per": "PER_BAHAI"
+}
+]

@@ -1,0 +1,317 @@
+[
+{
+"s": "ENT_MANICH_FATHER_GREATNESS",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Father of Greatness heads the Realm of Light from which all Evocations proceed; apex of the Lightworld hierarchy hub. Kephalaia."
+},
+{
+"s": "ENT_MANICH_MOTHER_LIFE",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Mother of Life, First Evocation of the Father; member of the Lightworld hierarchy. Lieu, Manichaeism in the Later Roman Empire."
+},
+{
+"s": "ENT_MANICH_PRIMAL_MAN",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "Primal Man (Ohrmazd), the Father's champion evoked through the Mother of Life; core Lightworld figure of the First Creation."
+},
+{
+"s": "ENT_MANICH_LIVING_SPIRIT",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Living Spirit (Mihryazd), Evocation of the Second Creation who rescues Primal Man; member of the Lightworld hierarchy."
+},
+{
+"s": "ENT_MANICH_THIRD_MESSENGER",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Third Messenger, Evocation of the Third Creation who orchestrates liberation of the swallowed Light; member of the Lightworld hierarchy."
+},
+{
+"s": "ENT_MANICH_MAIDEN_LIGHT",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Maiden of Light (Virgin of Light) accompanies the Third Messenger in the seduction of the archons; Lightworld member. Kephalaia."
+},
+{
+"s": "ENT_MANICH_JESUS_SPLENDOUR",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "Jesus the Splendour, the revealer who awakens Adam, is one of the saving Evocations of the Lightworld hierarchy."
+},
+{
+"s": "ENT_MANICH_COLUMN_GLORY",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Column of Glory (Perfect Man / Milky Way), cosmic channel of ascending Light; a Lightworld structure within the hierarchy."
+},
+{
+"s": "ENT_MANICH_GREAT_BUILDER",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Great Builder (Ban Rabba) constructs the New Paradise for the rescued Light; Lightworld Evocation."
+},
+{
+"s": "ENT_MANICH_LIGHT_MIND",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Light Mind (Nous) governs the Church and the soul of the believer; Lightworld member. Kephalaia ch. 38."
+},
+{
+"s": "ENT_MANICH_KING_GLORY",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "King of Glory, one of the Five Sons of the Living Spirit governing the cosmic apparatus; Lightworld hierarchy member."
+},
+{
+"s": "ENT_MANICH_KING_HONOUR",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "King of Honour, one of the Five Sons of the Living Spirit, watcher over the heavens; Lightworld member."
+},
+{
+"s": "ENT_MANICH_ADAMAS",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "Adamas of Light, a Son of the Living Spirit who combats the dark powers; Lightworld member."
+},
+{
+"s": "ENT_MANICH_FIVE_SONS",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "high",
+"ra": "The Five Sons of Primal Man (the Light elements / soul-armour) deployed and swallowed in the cosmic battle; Lightworld collective member."
+},
+{
+"s": "ENT_MANICH_CALL_ANSWER",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "Call and Answer, paired Lightworld hypostases mediating the rescue of Primal Man; members of the hierarchy."
+},
+{
+"s": "ENT_MANICH_PORTER",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "The Porter (Splenditenens / Omophoros), one of the Five Sons of the Living Spirit who supports the cosmos; Lightworld member."
+},
+{
+"s": "ENT_MANICH_KEEPER_SPLENDOUR",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "Keeper of Splendour, one of the Five Sons of the Living Spirit; Lightworld member of the second-creation hierarchy."
+},
+{
+"s": "ENT_MANICH_LAST_STATUE",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "The Last Statue (Andrias), the eschatological assembling of redeemed Light at the consummation; Lightworld figure of the hierarchy. Kephalaia."
+},
+{
+"s": "ENT_MANICH_LIGHT_PARTICLES",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "low",
+"ra": "The dispersed Light particles (the suffering Living Self) are of the substance of the Realm of Light; grouped structurally under the Lightworld hub."
+},
+{
+"s": "ENT_MANICH_TWIN",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "The Twin (Syzygos), Mani's heavenly counterpart mediating revelation; Lightworld member. Cologne Mani Codex."
+},
+{
+"s": "ENT_MANICH_FRIEND_LIGHTS",
+"t": "member_of",
+"o": "ENT_MANICH_PANTHEON",
+"c": "medium",
+"ra": "The Friend of the Lights, an early Evocation of the second-creation series; Lightworld member. Theodore bar Konai."
+},
+{
+"s": "ENT_MANICH_MOTHER_LIFE",
+"t": "emanates_from",
+"o": "ENT_MANICH_FATHER_GREATNESS",
+"c": "high",
+"ra": "First Evocation: the Father of Greatness evokes the Mother of Life. Standard three-evocation cosmogony in the Kephalaia and Theodore bar Konai's summary."
+},
+{
+"s": "ENT_MANICH_PRIMAL_MAN",
+"t": "emanates_from",
+"o": "ENT_MANICH_MOTHER_LIFE",
+"c": "high",
+"ra": "The Mother of Life evokes Primal Man (Ohrmazd) as the Father's warrior against Darkness; second link of the First Creation chain."
+},
+{
+"s": "ENT_MANICH_PRIMAL_MAN",
+"t": "child_of",
+"o": "ENT_MANICH_MOTHER_LIFE",
+"c": "high",
+"ra": "Primal Man is called the son of the Mother of Life in the Psalm-Book and Kephalaia; filial language of the first Evocation series."
+},
+{
+"s": "ENT_MANICH_LIVING_SPIRIT",
+"t": "emanates_from",
+"o": "ENT_MANICH_MOTHER_LIFE",
+"c": "high",
+"ra": "Second Creation: in response to Primal Man's prayer the Father (with the Mother of Life) evokes the Living Spirit to descend and rescue him. Lieu."
+},
+{
+"s": "ENT_MANICH_FIVE_SONS",
+"t": "child_of",
+"o": "ENT_MANICH_PRIMAL_MAN",
+"c": "high",
+"ra": "The Five Sons (the five Light elements / soul-armour: Air, Wind, Light, Water, Fire) are the sons Primal Man arms himself with and offers to the Darkness. Theodore bar Konai."
+},
+{
+"s": "ENT_MANICH_MAIDEN_LIGHT",
+"t": "emanates_from",
+"o": "ENT_MANICH_THIRD_MESSENGER",
+"c": "high",
+"ra": "The Maiden of Light is evoked with the Third Messenger and displayed to the archons to release the Light through the seduction of the rulers. Theodore bar Konai."
+},
+{
+"s": "ENT_MANICH_COLUMN_GLORY",
+"t": "emanates_from",
+"o": "ENT_MANICH_THIRD_MESSENGER",
+"c": "medium",
+"ra": "The Column of Glory, ascending channel of liberated Light, is established within the third-creation apparatus deployed by the Third Messenger. Kephalaia."
+},
+{
+"s": "ENT_MANICH_JESUS_SPLENDOUR",
+"t": "emanates_from",
+"o": "ENT_MANICH_THIRD_MESSENGER",
+"c": "medium",
+"ra": "Jesus the Splendour is sent in the wake of the Third Messenger to awaken Adam and reveal gnosis; among the later Evocations of the saving sequence. Lieu; Kephalaia."
+},
+{
+"s": "ENT_MANICH_LIGHT_MIND",
+"t": "emanates_from",
+"o": "ENT_MANICH_JESUS_SPLENDOUR",
+"c": "medium",
+"ra": "The Light Mind (the Great Nous) proceeds from Jesus the Splendour to organize the Church and indwell the elect. Kephalaia ch. 38 ('On the Light Mind')."
+},
+{
+"s": "ENT_MANICH_GREAT_BUILDER",
+"t": "participates_in_creation",
+"o": "ENT_MANICH_WORLD_LIGHT",
+"c": "medium",
+"ra": "The Great Builder constructs the New Earth / New Paradise as a repository for the rescued Light, an extension of the World of Light. Lieu."
+},
+{
+"s": "ENT_MANICH_PORTER",
+"t": "participates_in_creation",
+"o": "ENT_MANICH_WORLD_LIGHT",
+"c": "low",
+"ra": "The Porter upholds the cosmos fashioned by the Living Spirit from the bodies of the defeated archons, the apparatus that filters Light back toward the World of Light."
+},
+{
+"s": "ENT_MANICH_FATHER_GREATNESS",
+"t": "dwells_in",
+"o": "ENT_MANICH_WORLD_LIGHT",
+"c": "high",
+"ra": "The Father of Greatness dwells in the Realm/World of Light with the aeons; standard Manichaean topography. Kephalaia; Psalm-Book."
+},
+{
+"s": "ENT_MANICH_LAST_STATUE",
+"t": "eschatological_role",
+"o": "ENT_MANICH_WORLD_LIGHT",
+"c": "medium",
+"ra": "At the end the Last Statue gathers the last salvageable Light and ascends to the World of Light, sealing the separation of the two natures. Lieu."
+},
+{
+"s": "ENT_MANICH_LIGHT_PARTICLES",
+"t": "rescued_by",
+"o": "ENT_MANICH_THIRD_MESSENGER",
+"c": "medium",
+"ra": "The Light Particles (the soul / Living Self mixed into matter) are the object of rescue accomplished through the Third Messenger's evocations. Kephalaia."
+},
+{
+"s": "ENT_MANICH_MANI",
+"t": "reception_of",
+"o": "ENT_MANICH_JESUS_SPLENDOUR",
+"c": "medium",
+"ra": "Mani received his revelation through his heavenly Twin, identified with the syzygos sent by Jesus the Splendour / the Paraclete; Mani's apostolate continues the saving revelation. Cologne Mani Codex."
+},
+{
+"s": "ENT_MANICH_TWIN",
+"t": "revealed_by",
+"o": "ENT_MANICH_JESUS_SPLENDOUR",
+"c": "medium",
+"ra": "The Twin (Syzygos / al-Tawm), Mani's divine counterpart who delivers the revelation, is associated with the saving emanation of Jesus the Splendour / the Light Mind. Cologne Mani Codex."
+},
+{
+"s": "ENT_MANICH_FIVE_DARK_WORLDS",
+"t": "opposes",
+"o": "ENT_MANICH_WORLD_LIGHT",
+"c": "high",
+"ra": "The Five Worlds of Darkness stand in eternal opposition to the World of Light; the two-principle dualism foundational to Manichaeism. Kephalaia."
+},
+{
+"s": "ENT_MANICH_ARCHONS",
+"t": "ruled_by",
+"o": "ENT_MANICH_KING_DARKNESS",
+"c": "high",
+"ra": "The Archons (rulers/abortions of darkness) are subordinate powers of the realm ruled by the King of Darkness. Lieu."
+},
+{
+"s": "ENT_MANICH_DEMONS",
+"t": "member_of",
+"o": "ENT_MANICH_FIVE_DARK_WORLDS",
+"c": "medium",
+"ra": "The Demons are denizens of the Five Worlds of Darkness, offspring of the dark elements. Kephalaia."
+},
+{
+"s": "ENT_MANICH_AZ",
+"t": "member_of",
+"o": "ENT_MANICH_ARCHONS",
+"c": "medium",
+"ra": "Az, the demoness of concupiscence/greed who drives the propagation of bodies to keep Light imprisoned, belongs to the powers of darkness. Middle Persian Manichaean texts; Lieu."
+},
+{
+"s": "ENT_MANICH_MATTER",
+"t": "opposes",
+"o": "ENT_MANICH_LIGHT_PARTICLES",
+"c": "high",
+"ra": "Matter is the dark principle that imprisons and opposes the Light particles; the central soteriological conflict of mixing. Kephalaia; Psalm-Book."
+},
+{
+"s": "ENT_MANICH_JESUS_PATIBILIS",
+"t": "aligned_with",
+"o": "ENT_MANICH_JESUS_SPLENDOUR",
+"c": "medium",
+"ra": "Jesus patibilis (suffering, immanent Light) and Jesus the Splendour (transcendent revealer) are two aspects of the multiple Manichaean Jesus-figure; aligned as facets of the same name. Lieu."
+},
+{
+"s": "ENT_MANICH_WORLD_LIGHT",
+"t": "aligned_with",
+"o": "ENT_MAN_WORLD_LIGHT",
+"c": "low",
+"ra": "Cross-tradition typological parallel: the Manichaean World/Realm of Light and the Mandaean World of Light (alma d-nhura) are cognate Mesopotamian gnostic light-realm concepts; aligned (not identical). Note homonym/parallel for reviewer. Lieu; Buckley, The Mandaeans."
+},
+{
+"s": "ENT_MANICH_KING_DARKNESS",
+"t": "aligned_with",
+"o": "ENT_MAN_WORLD_DARKNESS",
+"c": "low",
+"ra": "Cross-tradition typological parallel: the Manichaean realm/King of Darkness corresponds to the Mandaean World of Darkness as cognate dualist counter-realms in the shared Mesopotamian gnostic milieu. Buckley; Lieu."
+}
+]
