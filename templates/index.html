@@ -66,30 +66,55 @@
   </div>
 </div>
 
-{# ── BROWSE / GRAPH CTA ────────────────────────────────────────────── #}
-<div class="db-section browse-cta-section">
-  <div class="browse-cta">
-    <div class="browse-cta-text">
-      <h2>Browse &amp; Visualize</h2>
-      <p>Explore all {{ db_entities }} entities without writing SQL — search and filter every figure, trace how one connects in an interactive relationship graph, or see how whole traditions link on the Connections map.</p>
-    </div>
-    <div class="browse-cta-btns">
-      <a href="/explore" class="browse-cta-btn">Browse Entities →</a>
-      <a href="/graph"   class="browse-cta-btn browse-cta-btn-alt">Relationship Graph →</a>
-      <a href="/connections" class="browse-cta-btn browse-cta-btn-alt">Connections →</a>
-      <a href="/timeline" class="browse-cta-btn browse-cta-btn-alt">Timeline →</a>
-    </div>
+{# ── EXPLORE VISUALLY — the four no-SQL tools, lead of the page ─────── #}
+<div class="db-section">
+  <h2>Browse &amp; Visualize</h2>
+  <p class="db-section-desc">Explore every figure and connection — no SQL required.</p>
+  <div class="viz-grid">
+
+    <a href="/explore" class="viz-card">
+      <span class="viz-card-icon">🔎</span>
+      <span class="viz-card-title">Browse</span>
+      <span class="viz-card-desc">Search and filter every divine figure, spirit, and cosmic being. Click any card to see its relationships.</span>
+    </a>
+
+    <a href="/graph" class="viz-card">
+      <span class="viz-card-icon">◉</span>
+      <span class="viz-card-title">Graph</span>
+      <span class="viz-card-desc">See how one figure connects — click to expand, click again to collapse.</span>
+    </a>
+
+    <a href="/connections" class="viz-card">
+      <span class="viz-card-icon">✦</span>
+      <span class="viz-card-title">Connections</span>
+      <span class="viz-card-desc">How whole traditions link — as a heatmap or a constellation.</span>
+    </a>
+
+    <a href="/timeline" class="viz-card">
+      <span class="viz-card-icon">🕰</span>
+      <span class="viz-card-title">Timeline</span>
+      <span class="viz-card-desc">When each tradition's gods, spirits, and cosmologies are attested — from the Early Dynastic Nile to the modern occult revival.</span>
+    </a>
+
   </div>
+  <style>
+  .viz-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .viz-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px 20px 20px;text-decoration:none !important;display:block;box-shadow:var(--card-shadow);transition:border-color .15s,box-shadow .15s,transform .12s}
+  .viz-card:hover{border-color:var(--gold);box-shadow:0 6px 22px rgba(26,47,78,.15);transform:translateY(-3px)}
+  .viz-card-icon{font-size:2rem;display:block;margin-bottom:14px;line-height:1}
+  .viz-card-title{display:block;font-weight:700;font-size:1.15rem;color:var(--navy);margin-bottom:8px;font-family:'Segoe UI',system-ui,sans-serif}
+  .viz-card-desc{display:block;font-size:.84rem;color:var(--muted);line-height:1.5}
+  @media (max-width:880px){.viz-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:540px){.viz-grid{grid-template-columns:1fr}}
+  </style>
 </div>
 
-{# ── FEATURED: CROSS-TRADITION CONNECTIONS ─────────────────────────── #}
-<div class="db-section featured-section">
-  <h2>★ The Comparative Core — Cross-Tradition Connections</h2>
-  <p class="db-section-desc">
-    DeityDB's reason for being: not a list of gods, but the <strong>577 source-traced links</strong>
-    that connect them across religions — how a figure was received, syncretised, equated, or
-    recognised as a cognate from one tradition to the next. Start here.
-  </p>
+<hr class="db-divider">
+
+{# ── PRE-BUILT QUERIES — one trimmed, de-duplicated grid ───────────── #}
+<div class="db-section">
+  <h2>Pre-built Queries</h2>
+  <p class="db-section-desc">Jump straight to a curated view — no SQL required.</p>
   <div class="query-grid">
 
     <a href="{{ urls.query('deitydb', 'cross-tradition-links') }}" class="query-card">
@@ -104,55 +129,10 @@
       <span class="query-card-desc">Which traditions connect, and how strongly — the tradition-to-tradition matrix. Greek and Egyptian are the great hubs.</span>
     </a>
 
-    <a href="{{ urls.query('deitydb', 'cross-tradition-for') }}" class="query-card">
-      <span class="query-card-icon">🔎</span>
-      <span class="query-card-title">Links for One Tradition</span>
-      <span class="query-card-desc">Every comparative bridge into and out of a single tradition — enter Roman, Egyptian, Germanic/Norse, Zoroastrian…</span>
-    </a>
-
     <a href="{{ urls.query('deitydb', 'reception-chain') }}" class="query-card">
       <span class="query-card-icon">🔄</span>
       <span class="query-card-title">Reception Chains</span>
       <span class="query-card-desc">Follow a figure hop-by-hop across traditions — Matar → Cybele → Magna Mater; Lugus → Lugh → Lleu.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'magical-papyri-hub') }}" class="query-card">
-      <span class="query-card-icon">🪄</span>
-      <span class="query-card-title">The Magical Papyri Hub</span>
-      <span class="query-card-desc">How late-antique magic fused the gods: the powers invoked in the Greek Magical Papyri, drawn from 9 traditions — Greek, Egyptian, Jewish, Mesopotamian, Gnostic — into one operative system.</span>
-    </a>
-
-  </div>
-</div>
-
-{# ── START EXPLORING ───────────────────────────────────────────────── #}
-<div class="db-section">
-  <h2>Pre-built Queries</h2>
-  <p class="db-section-desc">Jump straight to a curated view — no SQL required.</p>
-  <div class="query-grid">
-
-    <a href="{{ urls.query('deitydb', 'tradition-overview') }}" class="query-card">
-      <span class="query-card-icon">🌍</span>
-      <span class="query-card-title">Tradition Overview</span>
-      <span class="query-card-desc">All {{ db_traditions }} traditions ranked by entity count — a one-page map of the database.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'browse-tradition') }}" class="query-card">
-      <span class="query-card-icon">📜</span>
-      <span class="query-card-title">Browse a Tradition</span>
-      <span class="query-card-desc">Enter a tradition name to list all its entities — Greek, Egyptian, Islamic, Gnostic, Norse, and more.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'entity-relationships') }}" class="query-card">
-      <span class="query-card-icon">🔗</span>
-      <span class="query-card-title">Entity Relationships</span>
-      <span class="query-card-desc">Explore every relationship for a named entity — who it rules, opposes, emanates from, or is received as.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'reception-chain') }}" class="query-card">
-      <span class="query-card-icon">🔄</span>
-      <span class="query-card-title">Reception Chain</span>
-      <span class="query-card-desc">Trace how a figure was received and renamed across traditions — follow Moses to Musa to Idris.</span>
     </a>
 
     <a href="{{ urls.query('deitydb', 'cross-traditional-parallels') }}" class="query-card">
@@ -167,65 +147,19 @@
       <span class="query-card-desc">The fifty entities with the most relationships — the theological hubs of the network.</span>
     </a>
 
-  </div>
-</div>
-
-<hr class="db-divider">
-
-{# ── BROWSE BY TYPE ────────────────────────────────────────────────── #}
-<div class="db-section">
-  <h2>Browse by Entity Type</h2>
-  <p class="db-section-desc">Pre-filtered views for major categories across all traditions.</p>
-  <div class="query-grid">
-
-    <a href="{{ urls.query('deitydb', 'angelic-beings') }}" class="query-card">
-      <span class="query-card-icon">✦</span>
-      <span class="query-card-title">Angelic Beings</span>
-      <span class="query-card-desc">Angels, divine messengers, and celestial servants across Jewish, Christian, Islamic, and Zoroastrian traditions.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'adversarial-beings') }}" class="query-card">
-      <span class="query-card-icon">⚔️</span>
-      <span class="query-card-title">Adversarial Beings</span>
-      <span class="query-card-desc">Demons, adversaries, tempters, and powers of chaos from Mesopotamia to medieval Europe.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'underworld-entities') }}" class="query-card">
-      <span class="query-card-icon">🌑</span>
-      <span class="query-card-title">Underworld Entities</span>
-      <span class="query-card-desc">Psychopomps, death deities, and rulers of the realm below — Anubis to Azrael.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'revealer-figures') }}" class="query-card">
-      <span class="query-card-icon">💡</span>
-      <span class="query-card-title">Revealer Figures</span>
-      <span class="query-card-desc">Prophets, teachers, and transmitters of divine knowledge — from Enoch to Muhammad.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'wisdom-knowledge') }}" class="query-card">
-      <span class="query-card-icon">📚</span>
-      <span class="query-card-title">Wisdom &amp; Knowledge</span>
-      <span class="query-card-desc">Scribal deities, Sophia figures, and personified wisdom from Thoth to Hokhmah.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'serpent-dragon') }}" class="query-card">
-      <span class="query-card-icon">🐍</span>
-      <span class="query-card-title">Serpent &amp; Dragon Beings</span>
-      <span class="query-card-desc">Primordial serpents, chaos dragons, and serpent-deities — Leviathan to Apep.</span>
+    <a href="{{ urls.query('deitydb', 'tradition-overview') }}" class="query-card">
+      <span class="query-card-icon">🌍</span>
+      <span class="query-card-title">Tradition Overview</span>
+      <span class="query-card-desc">All {{ db_traditions }} traditions ranked by entity count — a one-page map of the database.</span>
     </a>
 
   </div>
-</div>
-
-<hr class="db-divider">
-
-{# ── TRADITION GRID (JS-loaded) ────────────────────────────────────── #}
-<div class="db-section">
-  <h2>Browse by Tradition</h2>
-  <p class="db-section-desc">Select a tradition to see all its entities.</p>
-  <div class="tradition-grid" id="tradition-grid">
-    <span class="loading-text">Loading traditions…</span>
-  </div>
+  <p class="more-link"><a href="/deitydb">Browse all queries &amp; tables →</a></p>
+  <style>
+  .more-link{margin:18px 0 0;text-align:right}
+  .more-link a{color:var(--navy);font-weight:600;text-decoration:none;font-size:.92rem}
+  .more-link a:hover{color:var(--gold)}
+  </style>
 </div>
 
 <hr class="db-divider">
@@ -273,75 +207,5 @@
     </div>
   </div>
 </div>
-
-<script>
-(async () => {
-  const grid = document.getElementById('tradition-grid');
-  try {
-    const r = await fetch('/deitydb/v_public_tradition_overview.json?_shape=array&_size=200');
-    if (!r.ok) throw new Error(r.status);
-    const rows = await r.json();
-    grid.innerHTML = rows.map(row => {
-      const name  = row.tradition   || '';
-      const count = row.entity_count || '';
-      const url   = '/deitydb/browse-tradition?tradition=' + encodeURIComponent(name);
-      return '<a href="' + url + '" class="tradition-chip">'
-           + '<span class="trad-name">' + escHtml(name) + '</span>'
-           + '<span class="trad-count">' + count + '</span>'
-           + '</a>';
-    }).join('');
-  } catch(e) {
-    grid.innerHTML = '<span class="loading-text">Could not load tradition list.</span>';
-  }
-  function escHtml(s) {
-    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  }
-})();
-</script>
-
-{# ── First-visit welcome (onboarding aid) ──────────────────────────── #}
-<style>
-.dw-overlay{position:fixed;inset:0;background:rgba(20,16,30,.55);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
-.dw-overlay[hidden]{display:none}
-.dw-modal{background:#fdfcfb;border-radius:14px;max-width:540px;width:100%;padding:28px 26px 24px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.3)}
-.dw-modal h2{margin:0 0 8px;font-size:1.5rem}
-.dw-lead{color:#5a5246;margin:0 0 18px;line-height:1.5}
-.dw-x{position:absolute;top:10px;right:14px;border:0;background:none;font-size:1.6rem;color:#9a8f7c;cursor:pointer;line-height:1}
-.dw-paths{display:flex;flex-direction:column;gap:10px;margin:0 0 18px}
-.dw-path{display:flex;gap:13px;align-items:center;padding:12px 14px;border:1px solid #e7dccb;border-radius:9px;text-decoration:none;color:#2b2440;background:#fff;transition:border-color .15s,transform .05s}
-.dw-path:hover{border-color:#7c3bd4;transform:translateY(-1px)}
-.dw-ic{font-size:1.35rem;width:30px;text-align:center;flex:0 0 30px}
-.dw-path .dw-txt{font-size:.9rem;line-height:1.35}
-.dw-go{display:block;width:100%;border:0;background:#5b2a9e;color:#fff;font-weight:600;padding:11px;border-radius:8px;cursor:pointer;font-size:.95rem}
-.dw-go:hover{background:#4a2280}
-</style>
-<div class="dw-overlay" id="dw-overlay" hidden>
-  <div class="dw-modal" role="dialog" aria-modal="true" aria-labelledby="dw-title">
-    <button class="dw-x" id="dw-x" aria-label="Close">×</button>
-    <h2 id="dw-title">Welcome to DeityDB 👋</h2>
-    <p class="dw-lead">A map of gods, spirits, and the threads that connect them across {{ db_traditions }} traditions. Three ways to explore — <strong>no SQL needed</strong>:</p>
-    <div class="dw-paths">
-      <a href="/explore" class="dw-path"><span class="dw-ic">🔎</span><span class="dw-txt"><strong>Browse</strong> — search &amp; filter every figure</span></a>
-      <a href="/graph" class="dw-path"><span class="dw-ic">◉</span><span class="dw-txt"><strong>Graph</strong> — see how one figure connects; click to expand, click again to collapse</span></a>
-      <a href="/connections" class="dw-path"><span class="dw-ic">✦</span><span class="dw-txt"><strong>Connections</strong> — how whole traditions link, as a heatmap or constellation</span></a>
-    </div>
-    <button class="dw-go" id="dw-go">Explore on my own</button>
-  </div>
-</div>
-<script>
-(function(){
-  var KEY='deitydb_welcomed_v1', ov=document.getElementById('dw-overlay');
-  if(!ov) return;
-  try{ if(localStorage.getItem(KEY)){ return; } }catch(e){}
-  ov.hidden=false;
-  function seen(){ try{ localStorage.setItem(KEY,'1'); }catch(e){} }
-  function close(){ ov.hidden=true; seen(); }
-  document.getElementById('dw-x').addEventListener('click', close);
-  document.getElementById('dw-go').addEventListener('click', close);
-  ov.addEventListener('click', function(e){ if(e.target===ov) close(); });
-  ov.querySelectorAll('.dw-path').forEach(function(a){ a.addEventListener('click', seen); });
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !ov.hidden) close(); });
-})();
-</script>
 
 {% endblock %}
