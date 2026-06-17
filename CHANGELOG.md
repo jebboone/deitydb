@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.74.0 — 2026-06-17
+
+### Modern occult revival (Thelema, Theosophy, Golden Dawn)
+
+Returned to the esoteric thread with the genuinely-new beings of the c. 1850-1950
+revival, **aligned to the database's existing traditions rather than duplicating
+them**. New period PER_MODERN_OCCULT; one new source (SRC_GOLDEN_DAWN; the Crowley
+and Blavatsky sources already existed). **+19 entities, +38 relationships**,
+0 rejected, 0 unsourced/unperiodized/orphan, 0 unreviewed duplicates. Scorecard
+now 2,785 entities / 4,972 relationships / 297 sources.
+
+- **Thelema (`ENT_THL_`, extending the existing four deities):** Hoor-paar-kraat,
+  Babalon, Therion (the Beast 666), Choronzon, the Holy Guardian Angel, and the
+  Aeon of Horus, all gathered with the existing Nuit/Hadit/Ra-Hoor-Khuit/Aiwass
+  under a new Thelemic Pantheon collective. Cross-links: Babalon←Whore of Babylon,
+  Therion←the Beast, Hoor-paar-kraat←Harpocrates, Choronzon←the Enochian system
+  (reception_of); Babalon consort_of Therion; Ra-Hoor-Khuit rules the Aeon of Horus.
+- **Theosophy (`ENT_THE_`, reusing the existing Mahatmas collective):** the Masters
+  Morya, Koot Hoomi, Djwal Khul, the Maha Chohan (wired into ENT_REC_MAHATMAS),
+  and the cosmic hierarchy — Sanat Kumara (Lord of the World), the Solar and
+  Planetary Logoi, the Lipika (Lords of Karma), and the Root Races — under a new
+  Theosophical Spiritual Hierarchy collective.
+- **Golden Dawn (`ENT_MOD_`, 'Modern Occult'):** the Order itself and its Secret
+  Chiefs (reception_of the Enochian system; the Secret Chiefs aligned_with the
+  Theosophical Masters).
+- NOTE: an initial pass mistakenly created a flat 'Modern Occult' tradition that
+  duplicated the existing ENT_THL_ Thelemic deities; it was rolled back and rebuilt
+  against the existing Thelemic/Theosophical tags.
+
 ## v1.73.0 — 2026-06-17
 
 ### Mainstream backbone depth: monarchy, Acts, Islamic law & devotion
