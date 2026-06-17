@@ -1,0 +1,12 @@
+[
+  ["SRC_SIRHINDI_MAKTUBAT", "primary text", "Ahmad Sirhindi, Maktubat (Collected Letters, early 17th c.)", "Islamic/Sufi"],
+  ["SRC_SHAH_WALIULLAH_HUJJAT", "primary text", "Shah Waliullah, Hujjat Allah al-Baligha (18th c.)", "Islamic/Sufi"],
+  ["SRC_NABULSI_DIWAN_HAQAIQ", "primary text", "Abd al-Ghani al-Nabulsi, devotional and Akbari commentarial corpus (e.g. al-Wujud al-Haqq; Diwan al-Haqa'iq, late 17th–early 18th c.)", "Islamic/Sufi"],
+  ["SRC_SHARANI_TABAQAT", "primary text", "Abd al-Wahhab al-Sha'rani, al-Tabaqat al-Kubra (Lawaqih al-Anwar; hagiographic lives of the saints, 16th c.)", "Islamic/Sufi"],
+  ["SRC_TIJANI_JAWAHIR", "primary text", "Ali Harazim, Jawahir al-Ma'ani (the foundational compendium of Ahmad al-Tijani's teaching, early 19th c.)", "Islamic/Sufi"],
+  ["SRC_DARQAWI_RASAIL", "primary text", "Mawlay al-Arabi al-Darqawi, al-Rasa'il (Letters of guidance, early 19th c.)", "Islamic/Sufi"],
+  ["SRC_DAN_FODIO_IHYA", "primary text", "Uthman dan Fodio, Ihya al-Sunna wa-Ikhmad al-Bid'a and reform corpus (early 19th c.)", "Islamic/Sufi"],
+  ["SRC_BULLEH_SHAH_KAFIS", "primary text", "Bulleh Shah, Kafis (Punjabi Sufi poetry, 18th c.)", "Islamic/Sufi"],
+  ["SRC_BHITTAI_SHAH_JO_RISALO", "primary text", "Shah Abdul Latif Bhittai, Shah Jo Risalo (Sindhi Sufi poetry, 18th c.)", "Islamic/Sufi"],
+  ["SRC_BURSEVI_RUH_AL_BAYAN", "primary text", "Ismail Haqqi Bursevi, Ruh al-Bayan (Sufi Qur'an commentary, early 18th c.)", "Islamic/Sufi"]
+]

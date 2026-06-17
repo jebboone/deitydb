@@ -1,0 +1,50 @@
+[
+  {"s": "ENT_SUF_NAQSHBANDI_MUJADDIDI", "t": "reception_of", "o": "ENT_SUF_NAQSHBANDI", "c": "high", "ra": "The Mujaddidi is the early-modern revivalist sub-branch of the Naqshbandiyya, receiving and renewing its silsila and silent-dhikr method."},
+  {"s": "ENT_SUF_NAQSHBANDI_MUJADDIDI", "t": "aligned_with", "o": "ENT_SUF_NAQSHBANDI", "c": "high", "ra": "Doctrinally and organizationally continuous with the parent Naqshbandi order."},
+
+  {"s": "ENT_SUF_SIRHINDI", "t": "member_of", "o": "ENT_SUF_NAQSHBANDI_MUJADDIDI", "c": "high", "ra": "Sirhindi is the eponymous founder-figure (Mujaddid) of the Naqshbandi-Mujaddidi branch."},
+  {"s": "ENT_SUF_SIRHINDI", "t": "member_of", "o": "ENT_SUF_NAQSHBANDI", "c": "high", "ra": "Initiated into the Naqshbandi order (via Baqi Billah) before reforming it into the Mujaddidi line."},
+  {"s": "ENT_SUF_SIRHINDI", "t": "reception_of", "o": "ENT_SUF_IBN_ARABI", "c": "high", "ra": "Sirhindi's wahdat al-shuhud was developed in critical reception of Ibn Arabi's wahdat al-wujud, engaging the Akbari metaphysics directly."},
+
+  {"s": "ENT_SUF_NABULSI", "t": "reception_of", "o": "ENT_SUF_IBN_ARABI", "c": "high", "ra": "Al-Nabulsi was the foremost early-modern Akbari commentator, defending and expounding Ibn Arabi's wahdat al-wujud."},
+  {"s": "ENT_SUF_NABULSI", "t": "member_of", "o": "ENT_SUF_NAQSHBANDI", "c": "medium", "ra": "Al-Nabulsi held Naqshbandi (and Qadiri) affiliation alongside his Akbari commitments."},
+
+  {"s": "ENT_SUF_SHAH_WALIULLAH", "t": "member_of", "o": "ENT_SUF_NAQSHBANDI_MUJADDIDI", "c": "medium", "ra": "Shah Waliullah was initiated in the Naqshbandi-Mujaddidi line and worked to harmonize its shuhudi reform with Akbari wujudi metaphysics."},
+  {"s": "ENT_SUF_SHAH_WALIULLAH", "t": "reception_of", "o": "ENT_SUF_IBN_ARABI", "c": "high", "ra": "His Hujjat Allah al-Baligha and related works engaged Ibn Arabi's metaphysics, seeking to reconcile wahdat al-wujud with Sirhindi's wahdat al-shuhud."},
+
+  {"s": "ENT_SUF_TIJANIYYA", "t": "aligned_with", "o": "ENT_SUF_TARIQA", "c": "high", "ra": "The Tijaniyya is a tariqa (Sufi path), instantiating the general category of the Sufi order."},
+  {"s": "ENT_SUF_TIJANI", "t": "member_of", "o": "ENT_SUF_TIJANIYYA", "c": "high", "ra": "Ahmad al-Tijani is the eponymous founder and supreme master of the Tijaniyya."},
+  {"s": "ENT_SUF_GAZARGAHI_HARAZIM", "t": "member_of", "o": "ENT_SUF_TIJANIYYA", "c": "high", "ra": "Ali Harazim was Tijani's foremost disciple and compiler of the order's foundational text."},
+  {"s": "ENT_SUF_GAZARGAHI_HARAZIM", "t": "taught_by", "o": "ENT_SUF_TIJANI", "c": "high", "ra": "Harazim received the teaching directly from Ahmad al-Tijani, recording it in the Jawahir al-Ma'ani."},
+
+  {"s": "ENT_SUF_DARQAWIYYA", "t": "aligned_with", "o": "ENT_SUF_TARIQA", "c": "high", "ra": "The Darqawiyya is a Shadhili-derived tariqa, instantiating the Sufi-order category."},
+  {"s": "ENT_SUF_DARQAWI", "t": "member_of", "o": "ENT_SUF_DARQAWIYYA", "c": "high", "ra": "Mawlay al-Arabi al-Darqawi is the eponymous founder of the Darqawiyya."},
+
+  {"s": "ENT_SUF_KHALWATIYYA", "t": "aligned_with", "o": "ENT_SUF_TARIQA", "c": "high", "ra": "The Khalwatiyya is a major tariqa, instantiating the Sufi-order category."},
+  {"s": "ENT_SUF_NIYAZI_MISRI", "t": "member_of", "o": "ENT_SUF_KHALWATIYYA", "c": "high", "ra": "Niyazi Misri founded the Misriyya branch of the Khalwatiyya."},
+  {"s": "ENT_SUF_KARIM_KHALWATI", "t": "member_of", "o": "ENT_SUF_KHALWATIYYA", "c": "high", "ra": "Mustafa al-Bakri was the great early-modern reviver and master of the Khalwatiyya."},
+
+  {"s": "ENT_SUF_BURSEVI", "t": "reception_of", "o": "ENT_SUF_IBN_ARABI", "c": "high", "ra": "Bursevi's tafsir Ruh al-Bayan draws heavily on Akbari metaphysics, transmitting Ibn Arabi's teaching."},
+  {"s": "ENT_SUF_BURSEVI", "t": "reception_of", "o": "ENT_SUF_RUMI", "c": "medium", "ra": "Bursevi's exegesis incorporates Rumi's mystical poetry and themes."},
+
+  {"s": "ENT_SUF_SHARANI", "t": "reception_of", "o": "ENT_SUF_IBN_ARABI", "c": "medium", "ra": "Al-Sha'rani transmitted and defended Ibn Arabi (notably an abridged Futuhat), while harmonizing law and Sufism."},
+  {"s": "ENT_SUF_SHARANI", "t": "member_of", "o": "ENT_SUF_TARIQA", "c": "medium", "ra": "Al-Sha'rani was a Shadhili master who founded an Egyptian Shadhili sub-line (Sha'rawiyya)."},
+
+  {"s": "ENT_SUF_DAN_FODIO", "t": "reception_of", "o": "ENT_SUF_JILANI", "c": "high", "ra": "Uthman dan Fodio was a Qadiri shaykh who venerated Abd al-Qadir al-Jilani and propagated the Qadiri order in West Africa."},
+
+  {"s": "ENT_SUF_BULLEH_SHAH", "t": "reception_of", "o": "ENT_SUF_JILANI", "c": "medium", "ra": "Bulleh Shah belonged to the Qadiri-Shattari stream (via Inayat Shah Qadiri), in the Qadiri lineage descending from al-Jilani."},
+  {"s": "ENT_SUF_SULTAN_BAHU", "t": "reception_of", "o": "ENT_SUF_JILANI", "c": "high", "ra": "Sultan Bahu founded the Sarwari Qadiri sub-line, a branch of the Qadiri order of al-Jilani."},
+  {"s": "ENT_SUF_BHITTAI", "t": "reception_of", "o": "ENT_SUF_RUMI", "c": "medium", "ra": "Shah Abdul Latif Bhittai's Risalo is steeped in the love-mysticism tradition of Rumi (whose Mathnawi he is said to have carried and recited), reworking it into Sindhi idiom."},
+  {"s": "ENT_SUF_BHITTAI", "t": "reception_of", "o": "ENT_SUF_JILANI", "c": "medium", "ra": "Bhittai stood in the Sindhi Qadiri devotional milieu descending from al-Jilani."},
+
+  {"s": "ENT_SUF_JAZAIRI", "t": "reception_of", "o": "ENT_SUF_IBN_ARABI", "c": "high", "ra": "Abd al-Qadir al-Jaza'iri edited and championed Ibn Arabi's al-Futuhat al-Makkiyya and built his Mawaqif on Akbari metaphysics."},
+  {"s": "ENT_SUF_JAZAIRI", "t": "reception_of", "o": "ENT_SUF_JILANI", "c": "high", "ra": "He was a Qadiri amir-saint in the lineage of Abd al-Qadir al-Jilani (his namesake)."},
+
+  {"s": "ENT_SUF_NAQSHBANDI_KHALID", "t": "member_of", "o": "ENT_SUF_NAQSHBANDI_MUJADDIDI", "c": "high", "ra": "Khalid al-Baghdadi was a Mujaddidi master who founded the Khalidi sub-branch within that line."},
+  {"s": "ENT_SUF_NAQSHBANDI_KHALID", "t": "member_of", "o": "ENT_SUF_NAQSHBANDI", "c": "high", "ra": "The Khalidi line is a renewal current within the broader Naqshbandi order."},
+
+  {"s": "ENT_SUF_MIR_DARD", "t": "member_of", "o": "ENT_SUF_NAQSHBANDI_MUJADDIDI", "c": "high", "ra": "Khwaja Mir Dard was a Naqshbandi-Mujaddidi shaykh who developed the Tariqa Muhammadiyya Khalisa within that branch."},
+
+  {"s": "ENT_SUF_NASAFI_DARA", "t": "reception_of", "o": "ENT_SUF_IBN_ARABI", "c": "medium", "ra": "Dara Shikoh's comparative mysticism (Majma al-Bahrayn) was steeped in Akbari wahdat al-wujud."},
+  {"s": "ENT_SUF_NASAFI_DARA", "t": "reception_of", "o": "ENT_SUF_JILANI", "c": "medium", "ra": "Dara Shikoh was initiated in the Qadiri order (via Mulla Shah Badakhshi and Mian Mir), in al-Jilani's lineage."}
+]
