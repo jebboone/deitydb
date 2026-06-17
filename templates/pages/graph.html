@@ -101,7 +101,7 @@
 
   {# ── Legend ───────────────────────────────────────────────────────── #}
   <div class="gp-legend" id="gp-legend" hidden>
-    <span class="gp-legend-hint"><strong>+</strong> expand  ·  <strong>−</strong> collapse  ·  drag to move  ·  scroll to zoom</span>
+    <span class="gp-legend-hint"><strong>+</strong> expand  ·  <strong>−</strong> collapse  ·  <strong>double-click</strong> opens its page  ·  drag to move  ·  scroll to zoom</span>
     <div class="gp-legend-trads" id="gp-legend-trads"></div>
   </div>
 
@@ -334,7 +334,8 @@ function render() {
     .attr('cursor', 'pointer')
     .on('mouseenter', onNodeOver)
     .on('mouseleave', hideTip)
-    .on('click', onNodeClick);
+    .on('click', onNodeClick)
+    .on('dblclick', onNodeOpen);
 
   nodeG.selectAll('circle')
     .call(d3.drag()
@@ -517,6 +518,13 @@ async function onNodeClick(ev, d) {
   }
 }
 
+/* ── Node double-click: open the entity's full page ──────────────── */
+function onNodeOpen(ev, d) {
+  ev.stopPropagation();
+  hideTip();
+  window.location = '/entity?id=' + encodeURIComponent(d.id);
+}
+
 /* ── Collapse all back to the focal node ─────────────────────────── */
 function collapseAll() {
   if (!rootId) return;
@@ -591,7 +599,8 @@ function onNodeOver(ev, d) {
     '<strong>' + esc(d.name) + '</strong>' +
     (d.trad ? '<span class="gt-trad">' + esc(d.trad) + '</span>' : '') +
     (d.type ? '<span class="gt-type">' + esc(d.type) + '</span>' : '') +
-    hint;
+    hint +
+    '<span class="gt-hint gt-open">Double-click to open its page</span>';
   placeTip(ev);
   tipEl.hidden = false;
 }
