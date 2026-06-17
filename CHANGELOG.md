@@ -1,5 +1,37 @@
 # Changelog
 
+## v1.91.0 — 2026-06-17
+
+### Completeness build-out, Phase 7 (FINAL) — the boundary domains of the Atlantic world
+
+Final phase of the completeness program (`docs/COMPLETENESS_ROADMAP.md`), orchestrated
+research→adversarial-verify workflow under a mandatory cultural-sensitivity rule. **+51
+entities, +95 relationships, +10 sources, 5 new traditions** + a new `afro-diasporic`
+tradition_profile class. Scorecard now 3,836 entities / 7,078 relationships / 458 sources /
+135 traditions.
+
+- **Vodou** — the Lwa (Bondye, Papa Legba, Erzulie Freda & Dantor, Damballa & Ayida-Wedo,
+  Baron Samedi & the Gede, Maman Brigitte), organized in the Rada and Petwo nanchon, with the
+  saint-syncretisms (Legba≈St Peter/St Lazarus, Damballa≈St Patrick, Erzulie≈Our Lady of
+  Sorrows/Częstochowa) wired onto the existing Catholic saints.
+- **Yoruba-Orisha** (Santería/Candomblé + the Yoruba root) — Olodumare, Eshu/Elegguá, Obatalá,
+  Ogun, Shango, Oshun, Yemoja, Oya, Babalú-Ayé, Orunmila, the Seven African Powers — with the
+  classic saint-mappings (Shango≈St Barbara, Babalú-Ayé≈St Lazarus, Oshun≈Our Lady of Charity).
+- **Rastafari** — Jah (← YHWH), Haile Selassie I (modeled neutrally as held belief), Marcus
+  Garvey, Babylon (← the Whore of Babylon), Zion — wired to the Ethiopian Solomonic line.
+- **Folk-Catholic saints** — Santa Muerte, San La Muerte, Maximón, Jesús Malverde, Niño
+  Fidencio, Difunta Correa (labeled unofficial, modeled neutrally).
+- **Pre-Columbian syncretism seam** — Tonantzin → the existing Our Lady of Guadalupe (only the
+  documented seam, not the full pantheon).
+
+The deity↔saint syncretism reception network is the payoff — these living Atlantic-world
+traditions are wired into the Catholic saints already in the DB. Integrity-gated to 0 rejected /
+orphan / unsourced / unperiodized / rationale-less / orphan-source / unreviewed-duplicate.
+
+**This completes the systematic completeness build-out (Phases 1–7).** Across the program the
+dataset grew from 3,173 → 3,836 entities and 96 → 135 traditions, all source-traced.
+
+
 ## v1.90.0 — 2026-06-17
 
 ### Completeness build-out, Phase 6 — cross-cutting structure (realms, monsters, angel-sets)

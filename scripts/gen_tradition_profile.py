@@ -16,6 +16,7 @@ CLASS_NOTE = {
  "esoteric-magic":"A learned ritual-magic / grimoire tradition — historically present and genuinely influential, but a textual subculture of a few literate specialists, framed within and drawing on the dominant religion rather than a mainstream faith in its own right.",
  "modern-esoteric":"A modern (19th-20th c.) esoteric movement — an organized but comparatively small new-religious / occult current, not a mainstream faith.",
  "legendary-literary":"A legendary/literary mythos rather than a practiced religion — its figures live in story (and, for the Grail, in Christian devotion), but it was never the cult of a community.",
+ "afro-diasporic":"A living Afro-diasporic or African-derived religion of the Atlantic/colonial world — West/Central African spirits served in a syncretic frame with Roman Catholic saints (or, for Rastafari, an Abrahamic frame); a practiced faith of the Americas and the wider diaspora.",
  "vernacular-folklore":"Contemporary vernacular & digital folklore — emergent supernatural beings people genuinely engage ritually (summoning), devotionally (petition/veneration), or apotropaically (warding/protection), outside any organized religion: urban legends, cryptids, sleep-paralysis and entheogenic encounter-entities, meme-magic egregores, and New Age / Gen-Z devotional currents. Lived belief and practice (ostension), NOT fiction — purely fictional creepypasta and franchises are excluded.",
  "comparative":"Not a religion: a cross-traditional layer of shared abstractions used for comparison.",
 }
@@ -78,6 +79,12 @@ P = {
  "Scientology":("modern-esoteric","modern-worldwide","The Church of Scientology — a modern new religion; its cosmology of thetans and the Xenu account modeled here as held belief."),
  "Discordianism":("modern-esoteric","modern-worldwide","Discordianism — a genuinely-engaged absurdist religion venerating Eris/Discordia (Principia Discordia, 1958+)."),
  "Modern Paganism":("modern-esoteric","modern-worldwide","Reconstructionist & revival paganism beyond Wicca — modern Heathenry/Ásatrú, Druidry, the Goddess movement, plus Martinist/New-Thought currents."),
+ # boundary domains — the Atlantic/colonial religious world (completeness Phase 7)
+ "Vodou":("afro-diasporic","living-worldwide","Haitian Vodou — a living Afro-Catholic religion; the lwa (Fon/Yoruba/Kongo spirits) served in syncretism with Catholic saints under the remote creator Bondye."),
+ "Yoruba-Orisha":("afro-diasporic","living-worldwide","The Orisha tradition — the Yoruba pantheon and its New-World diaspora (Santería/Lucumí, Candomblé), the orishas syncretized with Catholic saints and Marian titles."),
+ "Rastafari":("afro-diasporic","living-worldwide","Rastafari — a living Abrahamic-derived Caribbean religion venerating Jah and Haile Selassie I, with an Ethiopianist/Zion theology."),
+ "Folk Catholic":("vernacular-folklore","living-regional","The folk-canonized (unofficial) saints of Latin America — genuinely venerated but unrecognized by Rome (Santa Muerte, Maximón, Jesús Malverde)."),
+ "Mesoamerican":("civic-polytheism","pre-Columbian source","Pre-Columbian Mesoamerican religion, included here ONLY at its documented Catholic-syncretism seams (e.g. Tonantzin → Our Lady of Guadalupe) — not the full pantheon."),
  # esoteric-magic (learned ritual-magic / grimoire)
  "Goetic/Solomonic":("esoteric-magic","learned-subculture"),"Renaissance Esoteric":("esoteric-magic","learned-subculture"),
  "Solomonic Magic":("esoteric-magic","learned-subculture"),"Astral Magic":("esoteric-magic","learned-subculture"),

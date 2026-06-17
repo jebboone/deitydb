@@ -1,0 +1,110 @@
+[
+{
+"id": "ENT_FCS_FOLK_SAINTS",
+"name": "Latin American Folk Saints",
+"type": "Saint collective",
+"trad": "Folk Catholic",
+"dom": "Vernacular sanctity, popular canonization, miraculous intercession",
+"conf": "B",
+"note": "Hub for the folk-canonized (popular, Rome-unrecognized) intercessory figures of modern Latin American vernacular Catholicism; well attested ethnographically.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "collective"
+},
+{
+"id": "ENT_FCS_SANTA_MUERTE",
+"name": "Santa Muerte",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Death personified, protection, healing, justice, love, devotion of the marginalized",
+"conf": "B",
+"note": "Mexican folk 'saint' (Holy Death), a skeletal female personification of death venerated since at least the mid-20th c. with mass public shrines (Tepito); not recognized by Rome; imagery descends from the personified Grim Reaper / Death.",
+"src": "SRC_CHESNUT_DEVOTED_DEATH",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+},
+{
+"id": "ENT_FCS_SAN_LA_MUERTE",
+"name": "San La Muerte",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Death personified, protection, oaths, sudden help",
+"conf": "B",
+"note": "Argentine/Paraguayan/Guaraní-zone male folk saint of personified Death (skeletal figure); publicly venerated in the Litoral region; Rome-unrecognized; cognate of the broader Death-saint devotion.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+},
+{
+"id": "ENT_FCS_MAXIMON",
+"name": "Maximón (San Simón)",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Fortune, fertility, protection, intercession, bargains and vows, Maya-Catholic intercession",
+"conf": "B",
+"note": "Guatemalan Maya-Catholic syncretic figure of the highlands (esp. Santiago Atitlán, San Andrés Itzapa), publicly identified with St. Simon and an Indigenous Maya ancestral/Mam figure; an effigy receives offerings of tobacco and liquor. Only the public devotion is modeled.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+},
+{
+"id": "ENT_FCS_JESUS_MALVERDE",
+"name": "Jesús Malverde",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Protection of the poor and travelers, intercession, popular justice",
+"conf": "C",
+"note": "Sinaloan (Mexico) folk saint, said to be an early-20th-c. bandit-benefactor executed c.1909; venerated at a Culiacán chapel; not recognized by Rome. Modeled neutrally as a publicly attested devotion.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+},
+{
+"id": "ENT_FCS_NINO_FIDENCIO",
+"name": "Niño Fidencio",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Healing, spirit mediumship, popular intercession",
+"conf": "B",
+"note": "José Fidencio Constantino Síntora (1898–1938), a celebrated curandero of Espinazo, Nuevo León (Mexico); posthumously venerated as a folk healer-saint with a living devotional movement (fidencistas); Rome-unrecognized.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+},
+{
+"id": "ENT_FCS_SARITA_COLONIA",
+"name": "Sarita Colonia",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Protection of migrants, the poor and the marginalized, intercession",
+"conf": "B",
+"note": "Sara Colonia Zambrano (1914–1940), a poor migrant woman in Callao, Peru; posthumously venerated as a folk saint of the urban marginalized; Rome-unrecognized.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+},
+{
+"id": "ENT_FCS_DIFUNTA_CORREA",
+"name": "Difunta Correa",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Protection of travelers and the desperate, miraculous nourishment, intercession",
+"conf": "B",
+"note": "Argentine folk saint (Deolinda Correa), a 19th-c. woman said to have died of thirst in the San Juan desert while her nursing infant survived; major roadside shrine at Vallecito; Rome-unrecognized.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+},
+{
+"id": "ENT_FCS_SAN_PASCUALITO",
+"name": "San Pascualito",
+"type": "Folk saint",
+"trad": "Folk Catholic",
+"dom": "Death personified, healing, protection from epidemic, intercession",
+"conf": "C",
+"note": "Guatemalan/Chiapas Maya-Catholic skeletal folk saint of Death, publicly associated by name with the canonical St. Paschal Baylón but venerated as a personified-Death figure; centered at Olintepeque and Chiapas; Rome-unrecognized in this form.",
+"src": "SRC_GRAZIANO_CULTURES_DEVOTION",
+"per": "PER_FOLK_CATHOLIC",
+"cat": "folk_saint"
+}
+]

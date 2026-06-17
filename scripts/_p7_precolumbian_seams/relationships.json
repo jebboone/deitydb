@@ -1,0 +1,23 @@
+[
+{
+"s": "ENT_PCB_TONANTZIN",
+"t": "member_of",
+"o": "ENT_PCB_MESOAMERICAN_RELIGION",
+"c": "high",
+"ra": "Tonantzin is a Nahua deity within the pre-Columbian Mesoamerican religious complex represented by the hub collective."
+},
+{
+"s": "ENT_PCB_MAM",
+"t": "member_of",
+"o": "ENT_PCB_MESOAMERICAN_RELIGION",
+"c": "high",
+"ra": "Mam is a Maya ancestral/earth figure within the pre-Columbian Mesoamerican religious complex represented by the hub collective."
+},
+{
+"s": "ENT_EMC_OUR_LADY_GUADALUPE",
+"t": "syncretized_with",
+"o": "ENT_PCB_TONANTZIN",
+"c": "high",
+"ra": "Our Lady of Guadalupe is the textbook case of Catholic-Mesoamerican syncretism, her Tepeyac shrine identified by indigenous devotees with the Nahua mother-earth goddess Tonantzin; Sahagun records pilgrims calling the site Tonantzin (Brading, Mexican Phoenix)."
+}
+]
