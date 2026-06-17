@@ -1,5 +1,45 @@
 # Changelog
 
+## v1.72.0 — 2026-06-17
+
+### Mainstream Abrahamic deepening: canonical figures + folk beings
+
+Continued the mainstream rebalancing — the human canonical figures the backbone
+still lacked, plus the popular folk supernatural beings of the three faiths.
+**+74 entities, +104 relationships**, 0 rejected, 0 unsourced/unperiodized/orphan,
+0 unreviewed duplicates. Scorecard now 2,702 entities / 4,818 relationships /
+295 sources. No new periods; 2 new sources for the folklore cohort.
+
+Human canonical figures (+64, all existing scripture/sira sources):
+- **Divided-monarchy kings & later Tanakh figures (`ENT_ISR_*`):** the kings of
+  Judah (Rehoboam → Zedekiah) and Israel (Jeroboam I, Omri, Ahab, Jehu,
+  Jeroboam II) under two new collectives, plus Jezebel, Goliath, Jonathan,
+  Absalom, Boaz, Naomi, Naaman, Balaam, Delilah, and the foreign kings
+  Nebuchadnezzar II and Cyrus the Great. Wired by dynastic descent and by
+  narrative conflict (Elijah opposes Ahab/Jezebel; Goliath slain_by David;
+  Naaman healed via Elisha; Nebuchadnezzar vs Zedekiah; Cyrus patron of the
+  return).
+- **NT apostolic-age figures (`ENT_NT_*`, Christian/Biblical):** the brothers of
+  the Lord (James the Just, Jude), the Seven Deacons (Philip the Evangelist +
+  existing Stephen), Pauline coworkers (Silas, Apollos, Priscilla, Aquila, Lydia),
+  Gospel figures (Joseph of Arimathea, Mary of Bethany, Salome, Zacchaeus, Mary
+  of James), and the antagonists Pilate, Herod the Great, Herod Antipas, Caiaphas;
+  collectives for the Seven Deacons and the Myrrh-Bearing Women.
+- **Early-Islamic foundational figures (`ENT_ISL_*`, sira/hadith-sourced):** the
+  Rashidun caliphs (Abu Bakr, Umar, Uthman; Ali wired), major companions (Hamza,
+  Bilal, Salman al-Farsi, Khalid ibn al-Walid, Abu Hurayra, Zayd, Ja'far) and the
+  Prophet's kin (Abu Talib, Abd al-Muttalib), the Mothers of the Believers
+  (Khadijah, Aisha), under the Rashidun / Sahaba / Ummahat al-Mu'minin / Ten
+  Promised Paradise collectives.
+
+Folk supernatural beings (+10, 2 new sources):
+- **Jewish (`ENT_JM_*`):** Golem, Dybbuk, Ibbur, Estrie.
+- **Islamic jinn taxonomy (`ENT_ISL_*`):** Shaytan/Shayatin, Ghul, Si'lat, Div,
+  under a new Classes-of-the-Jinn collective (with the existing Ifrit/Marid wired
+  in; Iblis rules the shayatin).
+- **Christian (`ENT_CHR_*`):** Gog and Magog. (Most major beings — Antichrist,
+  Behemoth, Leviathan, the Revelation cast — already existed and were skipped.)
+
 ## v1.71.0 — 2026-06-17
 
 ### Enochian system of John Dee
