@@ -1,0 +1,121 @@
+[
+{
+"s": "ENT_SYR_EPHREM",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Ephrem is the paradigmatic Syriac Father, the central figure of Brock's study of the tradition."
+},
+{
+"s": "ENT_SYR_APHRAHAT",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Aphrahat, the Persian Sage, is the earliest of the Syriac Fathers grouped in the collective."
+},
+{
+"s": "ENT_SYR_ISAAC_NINEVEH",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Isaac of Nineveh is a principal East Syriac monastic Father."
+},
+{
+"s": "ENT_SYR_JACOB_SERUGH",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Jacob of Serugh is a leading West Syriac poet-Father."
+},
+{
+"s": "ENT_SYR_NARSAI",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Narsai is the chief poet-theologian of the East Syriac Fathers."
+},
+{
+"s": "ENT_SYR_BABAI",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Babai the Great is a foundational East Syriac systematic theologian."
+},
+{
+"s": "ENT_SYR_BAR_HEBRAEUS",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Bar Hebraeus is the last great classical Syriac Father and polymath."
+},
+{
+"s": "ENT_SYR_JOHN_EPHESUS",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "John of Ephesus, West Syriac historian-bishop, belongs to the Syriac Fathers."
+},
+{
+"s": "ENT_SYR_PHILOXENUS",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "high",
+"ra": "Philoxenus of Mabbug is a major Miaphysite Syriac Father."
+},
+{
+"s": "ENT_SYR_BARDAISAN",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "medium",
+"ra": "Bardaisan is an early Edessene Syriac thinker counted among the tradition's foundational (if later contested) figures."
+},
+{
+"s": "ENT_SYR_ADDAI",
+"t": "member_of",
+"o": "ENT_SYR_FATHERS",
+"c": "medium",
+"ra": "Addai is the traditional apostolic founder placed at the head of the Syriac line."
+},
+{
+"s": "ENT_SYR_BABAI",
+"t": "taught_by",
+"o": "ENT_SYR_NARSAI",
+"c": "medium",
+"ra": "Babai the Great's dyophysite theology continues the Antiochene-Nisibene school transmitted through Narsai's School of Nisibis (Baum-Winkler)."
+},
+{
+"s": "ENT_SYR_EPHREM",
+"t": "opposes",
+"o": "ENT_MANICH_MANI",
+"c": "high",
+"ra": "Ephrem's Prose Refutations and hymns explicitly polemicize against Mani and the Manichaeans (Brock)."
+},
+{
+"s": "ENT_SYR_EPHREM",
+"t": "opposes",
+"o": "ENT_SYR_BARDAISAN",
+"c": "high",
+"ra": "Ephrem composed hymns against the teaching of Bardaisan and his son Harmonius (Brock)."
+},
+{
+"s": "ENT_SYR_FATHERS",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "high",
+"ra": "The Syriac Fathers articulate Christian theology and devotion centered on Jesus Christ, preserved in his own Aramaic tongue."
+},
+{
+"s": "ENT_SYR_ISAAC_NINEVEH",
+"t": "aligned_with",
+"o": "ENT_SAINT_ANTHONY_ABBOT",
+"c": "medium",
+"ra": "Isaac of Nineveh's ascetical mysticism stands in the desert-monastic tradition typified by Anthony the Great."
+},
+{
+"s": "ENT_SYR_EPHREM",
+"t": "aligned_with",
+"o": "ENT_ORTH_BASIL",
+"c": "low",
+"ra": "Later tradition links Ephrem with Basil the Great (a legendary meeting); both received as ecumenical doctors."
+}
+]

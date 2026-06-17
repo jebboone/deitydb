@@ -1,0 +1,110 @@
+[
+{
+"id": "ENT_COP_FATHERS",
+"name": "Coptic Fathers and Saints",
+"type": "Collective",
+"trad": "Coptic Christian",
+"dom": "monasticism, martyrdom, ecclesiastical leadership",
+"conf": "B",
+"cat": "Collective hub",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Hub collective for the venerated abbots, patriarchs, and martyrs of the Egyptian (Coptic) Church; a grouping node, not a cultic figure."
+},
+{
+"id": "ENT_COP_SHENOUTE",
+"name": "Shenoute the Great",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "monasticism, Coptic literature, abbacy",
+"conf": "B",
+"cat": "Abbot / Church Father",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Archimandrite of the White Monastery near Sohag (d. c.465); the towering author of classical Sahidic Coptic literature, attested by his vast surviving corpus of sermons and letters and by Besa's Life of Shenoute. Venerated human, not deified."
+},
+{
+"id": "ENT_COP_BESA",
+"name": "Besa of Atripe",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "monasticism, hagiography",
+"conf": "C",
+"cat": "Abbot / disciple",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Disciple and successor of Shenoute as head of the White Monastery; author of the Life of Shenoute and of monastic letters, attested by that surviving corpus."
+},
+{
+"id": "ENT_COP_PACHOMIUS",
+"name": "Pachomius the Great",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "cenobitic monasticism",
+"conf": "B",
+"cat": "Abbot / founder",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Founder of cenobitic (communal) monasticism at Tabennesi (d. 348); attested by the Coptic and Greek Lives of Pachomius and his surviving Rule. Verified absent from DB. Venerated human."
+},
+{
+"id": "ENT_COP_MACARIUS",
+"name": "Macarius of Egypt",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "desert monasticism",
+"conf": "B",
+"cat": "Abbot / desert father",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Founder of the monastic settlement of Scetis (Wadi al-Natrun) in the Nitrian desert (d. c.391); attested in the Apophthegmata Patrum and the Lausiac History. Distinct from Macaria (ENT_MACARIA, a Greek goddess - homonym verified in DB) and Macarius of Alexandria. Verified absent from DB. Venerated human."
+},
+{
+"id": "ENT_COP_MOSES_BLACK",
+"name": "Moses the Black",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "desert monasticism, conversion, martyrdom",
+"conf": "C",
+"cat": "Monk / martyr",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Former brigand turned ascetic of Scetis under Macarius (d. c.405), martyred by raiding Berbers; attested in the Apophthegmata Patrum. Venerated human."
+},
+{
+"id": "ENT_COP_SAMUEL_CONFESSOR",
+"name": "Samuel the Confessor",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "monasticism, confession of faith under persecution",
+"conf": "C",
+"cat": "Abbot / confessor",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Seventh-century Coptic abbot of the Monastery of al-Qalamun (the Monastery of St Samuel) in the Fayyum, confessor under Chalcedonian and early Muslim-era pressure; attested by his Coptic Life. Distinct from the prophet Samuel (ENT_ISR_SAMUEL, verified in DB) - homonym noted. Venerated human."
+},
+{
+"id": "ENT_COP_KYRILLOS_VI",
+"name": "Pope Kyrillos VI",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "Coptic papacy, monastic revival",
+"conf": "C",
+"cat": "Patriarch / pope",
+"per": "PER_MODERN_ORTHODOX",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "116th Pope of Alexandria (reigned 1959-1971), monastic-revival reformer, canonized by the Coptic Orthodox Church in 2013; placed in the modern period (re-pointed from the proposed late-antique Coptic period, which ends c.1000, to PER_MODERN_ORTHODOX). A 20th-century figure standing in the continuous Alexandrian papal tradition. Venerated human, not deified."
+},
+{
+"id": "ENT_COP_MENA_MARTYR",
+"name": "Mena the Wonderworker (Abu Mina)",
+"type": "Saint",
+"trad": "Coptic Christian",
+"dom": "martyrdom, healing cult, pilgrimage",
+"conf": "C",
+"cat": "Martyr / wonderworker",
+"per": "PER_EGY_COPTIC",
+"src": "SRC_DAVIS_EARLY_COPTIC_PAPACY",
+"note": "Egyptian (Coptic) reception of the soldier-martyr Menas, centre of the great healing-pilgrimage shrine of Abu Mina west of Alexandria. Cross-links to the existing pan-Orthodox Menas (ENT_ORTH_MENAS, verified in DB) as the same figure venerated in the Coptic tradition; flagged as a homonym/overlap in review."
+}
+]

@@ -49,6 +49,13 @@ P = {
  "Latter-day Saint":("mainstream-scriptural","modern-worldwide","The Latter-day Saint (Mormon) movement — a large modern Restorationist branch of Christianity with a distinctive cosmology (premortal existence, exaltation, Kolob)."),
  "Sabian/Harranian":("civic-polytheism","regional-extinct","The Sabians of Harran — the late-antique planetary star-religion and Harranian Hermetism; long extinct."),
  "Alevi":("mystical-current","living-minority","Alevi-Bektashi — a living Anatolian tradition blending Shi'a, Sufi and folk elements around the Allah-Muhammad-Ali trinity and the Assembly of the Forty."),
+ # the Oriental & Eastern Christian churches + the heterodox/demonology layer (completeness Phase 2)
+ "Syriac Christian":("mainstream-scriptural","regional","Syriac Christianity (West & East Syriac / Church of the East) — a major early-Christian branch with its own Fathers (Ephrem, Isaac of Nineveh)."),
+ "Armenian Christian":("mainstream-scriptural","regional","The Armenian Apostolic Church — the world's first state church; distinct from the pre-Christian Armenian pantheon."),
+ "Ethiopian Christian":("mainstream-scriptural","regional","Ethiopian Tewahedo Christianity — a major non-Chalcedonian church with the Kebra Nagast cycle and its own saints and angelology."),
+ "Coptic Christian":("mainstream-scriptural","regional","Coptic (Egyptian) Christianity — the church of Athanasius and Shenoute, cradle of monasticism."),
+ "Christian/Heterodox":("heterodox-sect","marginal","Intra-Christian heresies and dualist movements (Arian, Nestorian, Pelagian, Bogomil, Cathar) — condemned/suppressed by the mainstream church."),
+ "Christian demonology":("esoteric-magic","learned-subculture","The learned Christian demonological tradition beyond the Goetia — the demonologists' chief-demon hierarchies (the Seven Princes, the Loudun possession demons)."),
  # esoteric-magic (learned ritual-magic / grimoire)
  "Goetic/Solomonic":("esoteric-magic","learned-subculture"),"Renaissance Esoteric":("esoteric-magic","learned-subculture"),
  "Solomonic Magic":("esoteric-magic","learned-subculture"),"Astral Magic":("esoteric-magic","learned-subculture"),

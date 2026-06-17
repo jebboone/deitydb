@@ -1,0 +1,198 @@
+[
+{
+"s": "ENT_MARY_TITLES",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "The Marian-titles hub collects the devotional receptions of the Blessed Virgin Mary (Mary Theotokos)."
+},
+{
+"s": "ENT_MARY_ROSARY",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of the Rosary is a devotional title/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_MOUNT_CARMEL",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Mount Carmel is a title/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_BROWN_SCAPULAR",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "medium",
+"ra": "The Brown Scapular is a Marian devotion received under the title of Our Lady of Mount Carmel."
+},
+{
+"s": "ENT_MARY_SORROWS",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Sorrows (Mater Dolorosa) is a devotional title/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_PERPETUAL_HELP",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Perpetual Help is an icon-title/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_CZESTOCHOWA",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "The Black Madonna of Częstochowa is a venerated image/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_WALSINGHAM",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Walsingham is a shrine-title/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_LORETO",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Loreto is a Holy-House title/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_MERCY",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Mercy (la Merced) is a devotional title/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_AKITA",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Akita is an apparition/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_ZEITOUN",
+"t": "reception_of",
+"o": "ENT_SAINT_MARY",
+"c": "high",
+"ra": "Our Lady of Zeitoun is an apparition/reception of the Virgin Mary."
+},
+{
+"s": "ENT_MARY_ROSARY",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_MOUNT_CARMEL",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_BROWN_SCAPULAR",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire Carmelite scapular devotion into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_SORROWS",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_PERPETUAL_HELP",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_CZESTOCHOWA",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_WALSINGHAM",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_LORETO",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_MERCY",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire title into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_AKITA",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire apparition into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_ZEITOUN",
+"t": "member_of",
+"o": "ENT_MARY_TITLES",
+"c": "high",
+"ra": "Wire apparition into the Marian-titles hub collective."
+},
+{
+"s": "ENT_MARY_AKITA",
+"t": "member_of",
+"o": "ENT_MOC_MARIAN_APPARITIONS",
+"c": "high",
+"ra": "Akita (1973) is a modern approved Marian apparition; wire into the existing Modern Marian Apparitions collective (verified id, same pattern as Fatima/Lourdes)."
+},
+{
+"s": "ENT_MARY_ZEITOUN",
+"t": "member_of",
+"o": "ENT_MOC_MARIAN_APPARITIONS",
+"c": "high",
+"ra": "Zeitoun (1968-71) is a modern mass-witnessed Marian apparition; wire into the existing Modern Marian Apparitions collective (verified id, same pattern as Fatima/Lourdes)."
+},
+{
+"s": "ENT_MARY_BROWN_SCAPULAR",
+"t": "associated_ritual",
+"o": "ENT_MARY_MOUNT_CARMEL",
+"c": "high",
+"ra": "The Brown Scapular is the devotional sacramental associated with the title Our Lady of Mount Carmel."
+},
+{
+"s": "ENT_MARY_MOUNT_CARMEL",
+"t": "patron_of",
+"o": "ENT_EMC_DISCALCED_CARMELITES",
+"c": "medium",
+"ra": "Our Lady of Mount Carmel is the patronal title of the Carmelite Order, including the Discalced Carmelite reform (verified id)."
+},
+{
+"s": "ENT_MARY_ROSARY",
+"t": "associated_with",
+"o": "ENT_SAINT_DOMINIC",
+"c": "medium",
+"ra": "Devotional tradition (Dominican) ascribes the spread of the Rosary to St Dominic; Our Lady of the Rosary is the Dominican Marian title (verified id)."
+}
+]

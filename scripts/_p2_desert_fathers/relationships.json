@@ -1,0 +1,163 @@
+[
+{
+"s": "ENT_DESERT_PACHOMIUS",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Pachomius is a founding figure of Egyptian desert monasticism, counted among the desert fathers."
+},
+{
+"s": "ENT_DESERT_MACARIUS",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Macarius the Great is a leading abba of Scetis in the Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_EVAGRIUS",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Evagrius Ponticus was a monk of Nitria/Kellia and systematizer of desert ascetic teaching."
+},
+{
+"s": "ENT_DESERT_CASSIAN",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "John Cassian lived among and transmitted the teaching of the Egyptian desert fathers."
+},
+{
+"s": "ENT_DESERT_MOSES_BLACK",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Moses the Black was an abba of Scetis represented in the Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_POEMEN",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Poemen is the most quoted abba in the alphabetical Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_ARSENIUS",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Arsenius the Great was an abba of Scetis in the Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_PAUL_THEBES",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Paul of Thebes is traditionally the first Christian desert hermit."
+},
+{
+"s": "ENT_DESERT_SYNCLETICA",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Amma Syncletica is one of the desert mothers in the Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_SARAH",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Amma Sarah is one of the three women in the alphabetical Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_THEODORA",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Amma Theodora is one of the desert mothers in the Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_PAMBO",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Pambo was an abba of Nitria in the Apophthegmata Patrum."
+},
+{
+"s": "ENT_DESERT_SISOES",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Sisoes was a desert abba who dwelt on Anthony's mountain, attested in the Apophthegmata Patrum."
+},
+{
+"s": "ENT_SAINT_ANTHONY_ABBOT",
+"t": "member_of",
+"o": "ENT_DESERT_FATHERS",
+"c": "high",
+"ra": "Anthony the Great (existing ENT_SAINT_ANTHONY_ABBOT), the father of monasticism, is the foremost of the desert fathers; cross-link, not duplicated."
+},
+{
+"s": "ENT_DESERT_FATHERS",
+"t": "embodies",
+"o": "ENT_MONASTICISM",
+"c": "high",
+"ra": "The desert fathers and mothers collectively embody and originate Christian monasticism (existing ENT_MONASTICISM, a Ritual/social category — not a deity)."
+},
+{
+"s": "ENT_DESERT_FATHERS",
+"t": "dwells_in",
+"o": "ENT_DESERT",
+"c": "medium",
+"ra": "The desert fathers withdrew to and dwelt in the Egyptian/Palestinian desert (existing ENT_DESERT, a Place/environment category)."
+},
+{
+"s": "ENT_DESERT_PACHOMIUS",
+"t": "embodies",
+"o": "ENT_MONASTICISM",
+"c": "high",
+"ra": "Pachomius founded cenobitic (communal) monasticism, a core form of Christian monasticism (existing ENT_MONASTICISM, a Ritual/social category — not a deity)."
+},
+{
+"s": "ENT_DESERT_MACARIUS",
+"t": "taught_by",
+"o": "ENT_SAINT_ANTHONY_ABBOT",
+"c": "medium",
+"ra": "Tradition and the Apophthegmata present Macarius the Great as a disciple of Anthony the Great (existing ENT_SAINT_ANTHONY_ABBOT)."
+},
+{
+"s": "ENT_DESERT_EVAGRIUS",
+"t": "taught_by",
+"o": "ENT_DESERT_MACARIUS",
+"c": "medium",
+"ra": "Evagrius Ponticus was a disciple of Macarius the Great (and Macarius of Alexandria) at the Kellia/Nitria."
+},
+{
+"s": "ENT_DESERT_CASSIAN",
+"t": "transmits",
+"o": "ENT_DESERT_EVAGRIUS",
+"c": "high",
+"ra": "John Cassian transmitted Evagrian ascetic teaching, notably the eight thoughts, to Latin monasticism through his Institutes and Conferences."
+},
+{
+"s": "ENT_DESERT_SISOES",
+"t": "taught_by",
+"o": "ENT_SAINT_ANTHONY_ABBOT",
+"c": "low",
+"ra": "Sisoes settled on Anthony the Great's inner mountain after Anthony's death, presenting himself as heir to Anthony's ascetic place and tradition."
+},
+{
+"s": "ENT_DESERT_PAMBO",
+"t": "taught_by",
+"o": "ENT_DESERT_MACARIUS",
+"c": "low",
+"ra": "Pambo of Nitria is associated with the Macarian circle of Nitria/Kellia in the Apophthegmata tradition."
+},
+{
+"s": "ENT_DESERT_EVAGRIUS",
+"t": "opposed_by",
+"o": "ENT_DESERT_CASSIAN",
+"c": "low",
+"ra": "Cassian transmitted Evagrian doctrine but tacitly distanced it from the Evagrian-Origenist speculation later condemned; a guarded reception rather than full endorsement."
+}
+]

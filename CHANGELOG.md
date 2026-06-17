@@ -1,5 +1,40 @@
 # Changelog
 
+## v1.86.0 — 2026-06-17
+
+### Completeness build-out, Phase 2 — the Christian foundational layer + Second Temple Judaism
+
+Second phase of the completeness program (`docs/COMPLETENESS_ROADMAP.md`), orchestrated as a
+background research→adversarial-verify workflow (JSON only; applied + QA'd here). **+137
+entities, +234 relationships, +13 sources, 6 new traditions.** Scorecard now 3,445 entities /
+6,316 relationships / 403 sources / 111 traditions.
+
+- **Patristics (22)** — the four Latin Doctors (Augustine, Jerome, Ambrose, Gregory the Great)
+  plus Origen, Irenaeus, Tertullian, Cyprian, Justin Martyr, the Apostolic Fathers (Clement of
+  Rome, Ignatius, Polycarp), Gregory of Nyssa, Cyril of Alexandria, Maximus the Confessor, John
+  of Damascus, Bede, Isidore — wired to the already-present Athanasius/Basil/Chrysostom.
+- **Desert Fathers & Mothers (14)** — Pachomius, Evagrius, John Cassian, Moses the Black, the
+  Ammas, around the existing Anthony the Great.
+- **The Oriental & Eastern churches** (4 new traditions) — **Syriac** (Ephrem, Isaac of Nineveh,
+  Aphrahat), **Armenian** (Gregory the Illuminator, Mesrop, Gregory of Narek), **Ethiopian**
+  (Frumentius, Yared + the **Kebra Nagast** cycle: Makeda/Queen of Sheba, Menelik I), **Coptic**
+  (Shenoute) — whole branches of Christianity that were entirely absent.
+- **Christian heresies & dualists** (new tradition Christian/Heterodox) — Arius, Nestorius,
+  Pelagius, the Bogomils, the Cathars/Albigensians, the Paulicians, wired `opposed_by` the
+  Fathers who refuted them.
+- **Second Temple Judaism (24)** — the sages (Hillel, Akiva, Yohanan ben Zakkai…), Philo and
+  Josephus, the Qumran Teacher of Righteousness, and the deuterocanonical figures (Judith, the
+  Maccabees, Tobias, Susanna, Ahikar).
+- **Christian demonology beyond the Goetia** (new tradition) — the Seven Princes / deadly-sins
+  schema (mostly edges onto the existing demons) + the genuinely-missing Loudun possession
+  demons (Verrine, Gresil, …) + Titivillus.
+- **Marian titles (12)** — older devotional titles (Rosary, Mount Carmel, Sorrows, Perpetual
+  Help, Częstochowa, Walsingham, Loreto, Akita, Zeitoun), each `reception_of` the Virgin Mary.
+
+Integrity-gated to 0 rejected / orphan / unsourced / unperiodized / rationale-less /
+orphan-source / unreviewed-duplicate.
+
+
 ## v1.85.0 — 2026-06-17
 
 ### Completeness build-out, Phase 1 — whole missing religions + connectivity (orchestrated)
