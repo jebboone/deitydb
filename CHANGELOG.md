@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.75.0 — 2026-06-17
+
+### Modern-strand deepening: Alice Bailey, Anthroposophy, Spiritualism
+
+Deepened the modern esoteric strand. **+19 entities, +38 relationships** (34 new
+edges), 0 rejected, 0 unsourced/unperiodized/orphan, 0 unreviewed duplicates;
+3 new sources. Scorecard now 2,804 entities / 5,006 relationships / 300 sources /
+92 traditions. Reuses period PER_MODERN_OCCULT.
+
+- **Alice Bailey's esoteric Theosophy (`ENT_THE_`, extending the Theosophy bloc):**
+  Maitreya (the Christ / World Teacher), the Seven Rays, the Solar Angel, Shamballa
+  (where Sanat Kumara dwells), the Manu, the Buddhas of Activity, and the ray-Masters
+  Jesus, Saint Germain (Rakoczi), Hilarion, and Serapis Bey — wired into the existing
+  Spiritual Hierarchy and Mahatmas collectives. Maitreya/Master Jesus aligned_with
+  the canonical Jesus Christ (held distinct).
+- **Anthroposophy / Rudolf Steiner (`ENT_ANT_`, new tradition):** his polar
+  adversaries Ahriman (reception_of Zoroastrian Angra Mainyu) and Lucifer
+  (aligned_with the Christian Lucifer; named "Lucifer (Anthroposophical)" to stay
+  distinct), the Asuras, Sorat the Sun-Demon (aligned_with the Agrippan Sorath and
+  the Antichrist), and the Representative of Humanity (the Christ-balance, opposing
+  both Lucifer and Ahriman), under a Threefold Adversaries collective.
+- **Spiritualism (`ENT_SPI_`, new tradition):** the Summerland (afterlife realm),
+  Spirit Guides, and the Doorkeeper.
+
 ## v1.74.0 — 2026-06-17
 
 ### Modern occult revival (Thelema, Theosophy, Golden Dawn)
