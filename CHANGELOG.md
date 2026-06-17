@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.77.0 — 2026-06-17
+
+### European regional polytheisms (audit-driven: the largest in-scope gap)
+
+A holistic audit identified the under-built European regional polytheisms — the
+mainstream faiths of major European peoples sitting at single digits, far below
+attested depth — as the next-largest content gap. **+90 entities, +179
+relationships**, 0 rejected/orphan/unsourced/unperiodized, 0 unreviewed
+duplicates; 5 new sources, 3 new periods. Scorecard now 2,894 entities /
+5,185 relationships / 305 sources / 95 traditions.
+
+- **Slavic 9 → 39:** the entire West-Slavic temple pantheon (Svetovit of Arkona,
+  Triglav, Rugievit, Porevit, Porenut, Yarovit, Radegast, Zhiva, Chernobog, and
+  the reconstructed Belobog) from Saxo Grammaticus and Helmold; the seasonal/fate
+  figures (Svarozhich, the Rozhanitsy, Dola, Marzanna, Jarilo, Kupala, the disputed
+  Lada and Devana); and the folk-spirit layer (Domovoi, Rusalka, Leshy, Vodyanoy,
+  Kikimora, Bannik, Polevik, Baba Yaga, Koschei, Zmey Gorynych) — under a Slavic
+  Pantheon and a Folk-Spirits collective; Perun⟷Veles and Chernobog⟷Belobog wired.
+- **Finnish 7 → 25:** the Kalevala roster (Ilmarinen, Lemminkäinen, Vellamo, Tuoni
+  & Tuonetar, Kullervo, Pellervo, Nyyrikki, Tellervo, Kalma, Hiisi, Surma, Pekko,
+  Rauni) and the realms Tuonela and Pohjola.
+- **Baltic 10 → 21:** Aušrinė/Auseklis, Ūsiņš, Bangpūtys, the Prussian Potrimpo and
+  Patulas, the Latvian Mātes (with Jūras māte), and the household spirits Aitvaras
+  and Kaukas.
+- **Three new traditions:** **Basque** (Mari, Sugaar, Basajaun, the Lamiak,
+  Tartalo…), **Sámi** (Horagalles, Beaivi, the Máttaráhkká household goddesses,
+  Leib-olmai, Stallo…), and **Hungarian/Magyar** (Isten, Ördög, Boldogasszony, the
+  Turul, the Világfa world-tree, the táltos) — with cross-links such as
+  Boldogasszony→the Virgin Mary and Horagalles→the Norse Thor. All three added to
+  the tradition_profile layer (civic-polytheism / regional).
+- Disputed/reconstructed figures flagged at confidence C (Belobog, Lada, Devana,
+  Urtzi, Hadúr, the Magyar reconstructions).
+
 ## v1.76.0 — 2026-06-17
 
 ### Tradition-profile layer: mainstream vs. esoteric/marginal, made explicit
