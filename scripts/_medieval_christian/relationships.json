@@ -1,0 +1,366 @@
+[
+{
+"s": "ENT_LMW_ALBERTUS_MAGNUS",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Dominican friar and Doctor of the Church."
+},
+{
+"s": "ENT_LMW_AQUINAS",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Dominican friar and Doctor of the Church."
+},
+{
+"s": "ENT_LMW_BONAVENTURE",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Franciscan minister general and Doctor of the Church."
+},
+{
+"s": "ENT_LMW_VINCENT_FERRER",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Dominican itinerant preacher."
+},
+{
+"s": "ENT_LMW_BERNARDINO_SIENA",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Franciscan Observant preacher."
+},
+{
+"s": "ENT_LMW_SIMON_STOCK",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "medium",
+"ra": "Carmelite mendicant friar."
+},
+{
+"s": "ENT_SAINT_DOMINIC",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Founder of the Dominican Order; head of the mendicant-saints group."
+},
+{
+"s": "ENT_SAINT_FRANCIS",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Founder of the Franciscan Order; head of the mendicant-saints group."
+},
+{
+"s": "ENT_SAINT_ANTHONY_PADUA",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Franciscan friar and Doctor of the Church."
+},
+{
+"s": "ENT_SAINT_CLARE",
+"t": "member_of",
+"o": "ENT_LMW_MENDICANT_SAINTS",
+"c": "high",
+"ra": "Foundress of the Poor Clares, Franciscan second order."
+},
+{
+"s": "ENT_LMW_JULIAN_NORWICH",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "English anchoress and visionary."
+},
+{
+"s": "ENT_LMW_MECHTHILD_MAGDEBURG",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Beguine mystic and visionary."
+},
+{
+"s": "ENT_LMW_ANGELA_FOLIGNO",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Franciscan tertiary mystic."
+},
+{
+"s": "ENT_LMW_FRANCES_ROME",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Roman mystic and visionary."
+},
+{
+"s": "ENT_LMW_CATHERINE_SWEDEN",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "medium",
+"ra": "Brigittine abbess and visionary."
+},
+{
+"s": "ENT_SAINT_HILDEGARD",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Visionary abbess; archetype of the medieval woman mystic."
+},
+{
+"s": "ENT_SAINT_CATHERINE_SIENA",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Dominican tertiary mystic and Doctor of the Church."
+},
+{
+"s": "ENT_SAINT_BRIDGET_SWEDEN",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Visionary foundress of the Brigittines."
+},
+{
+"s": "ENT_SAINT_GERTRUDE",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Helfta mystic and visionary."
+},
+{
+"s": "ENT_SAINT_MECHTILD",
+"t": "member_of",
+"o": "ENT_LMW_WOMEN_MYSTICS",
+"c": "high",
+"ra": "Helfta mystic and visionary."
+},
+{
+"s": "ENT_LMW_VITUS",
+"t": "member_of",
+"o": "ENT_SAINT_FOURTEEN_HELPERS",
+"c": "high",
+"ra": "Canonical member of the Fourteen Holy Helpers."
+},
+{
+"s": "ENT_LMW_ERASMUS",
+"t": "member_of",
+"o": "ENT_SAINT_FOURTEEN_HELPERS",
+"c": "high",
+"ra": "Canonical member of the Fourteen Holy Helpers."
+},
+{
+"s": "ENT_LMW_PANTALEON",
+"t": "member_of",
+"o": "ENT_SAINT_FOURTEEN_HELPERS",
+"c": "high",
+"ra": "Canonical member of the Fourteen Holy Helpers."
+},
+{
+"s": "ENT_LMW_EUSTACE",
+"t": "member_of",
+"o": "ENT_SAINT_FOURTEEN_HELPERS",
+"c": "high",
+"ra": "Canonical member of the Fourteen Holy Helpers."
+},
+{
+"s": "ENT_LMW_CYRIACUS",
+"t": "member_of",
+"o": "ENT_SAINT_FOURTEEN_HELPERS",
+"c": "high",
+"ra": "Canonical member of the Fourteen Holy Helpers."
+},
+{
+"s": "ENT_LMW_ACACIUS",
+"t": "member_of",
+"o": "ENT_SAINT_FOURTEEN_HELPERS",
+"c": "medium",
+"ra": "Canonical member of the Fourteen Holy Helpers (Achatius)."
+},
+{
+"s": "ENT_LMW_AQUINAS",
+"t": "taught_by",
+"o": "ENT_LMW_ALBERTUS_MAGNUS",
+"c": "high",
+"ra": "Aquinas studied under Albertus Magnus at Cologne and Paris."
+},
+{
+"s": "ENT_LMW_BONAVENTURE",
+"t": "aligned_with",
+"o": "ENT_SAINT_FRANCIS",
+"c": "high",
+"ra": "Bonaventure was the official biographer (Legenda Maior) and Franciscan successor of St Francis."
+},
+{
+"s": "ENT_LMW_ANGELA_FOLIGNO",
+"t": "aligned_with",
+"o": "ENT_SAINT_FRANCIS",
+"c": "high",
+"ra": "Franciscan tertiary following the spirituality of St Francis."
+},
+{
+"s": "ENT_LMW_BERNARDINO_SIENA",
+"t": "aligned_with",
+"o": "ENT_SAINT_FRANCIS",
+"c": "high",
+"ra": "Franciscan Observant reformer of the order of St Francis."
+},
+{
+"s": "ENT_LMW_VINCENT_FERRER",
+"t": "aligned_with",
+"o": "ENT_SAINT_DOMINIC",
+"c": "high",
+"ra": "Dominican preacher in the tradition of St Dominic."
+},
+{
+"s": "ENT_LMW_ALBERTUS_MAGNUS",
+"t": "aligned_with",
+"o": "ENT_SAINT_DOMINIC",
+"c": "high",
+"ra": "Dominican friar of the order founded by St Dominic."
+},
+{
+"s": "ENT_LMW_AQUINAS",
+"t": "aligned_with",
+"o": "ENT_SAINT_DOMINIC",
+"c": "high",
+"ra": "Dominican friar of the order founded by St Dominic."
+},
+{
+"s": "ENT_LMW_CATHERINE_SWEDEN",
+"t": "child_of",
+"o": "ENT_SAINT_BRIDGET_SWEDEN",
+"c": "high",
+"ra": "Catherine of Sweden was the daughter of Bridget of Sweden."
+},
+{
+"s": "ENT_LMW_SIMON_STOCK",
+"t": "patronized_by",
+"o": "ENT_SAINT_MARY",
+"c": "medium",
+"ra": "Traditional recipient of the Brown Scapular vision from the Virgin Mary."
+},
+{
+"s": "ENT_LMW_AQUINAS",
+"t": "patron_of",
+"o": "ENT_WISDOM",
+"c": "high",
+"ra": "Patron of theologians, students and Catholic schools; the Angelic Doctor."
+},
+{
+"s": "ENT_LMW_ALBERTUS_MAGNUS",
+"t": "patron_of",
+"o": "ENT_WISDOM",
+"c": "high",
+"ra": "Patron of natural scientists and philosophers; doctor universalis."
+},
+{
+"s": "ENT_LMW_ANSELM",
+"t": "patron_of",
+"o": "ENT_WISDOM",
+"c": "medium",
+"ra": "Father of scholastic theology; venerated as Doctor of the Church."
+},
+{
+"s": "ENT_LMW_BONAVENTURE",
+"t": "patron_of",
+"o": "ENT_WISDOM",
+"c": "medium",
+"ra": "Seraphic Doctor; patron of theological learning."
+},
+{
+"s": "ENT_LMW_VINCENT_FERRER",
+"t": "patron_of",
+"o": "ENT_DEATH",
+"c": "medium",
+"ra": "Apocalyptic preacher invoked at the hour of death and against epidemics."
+},
+{
+"s": "ENT_LMW_FRANCES_ROME",
+"t": "patronized_by",
+"o": "ENT_CHR_GUARDIAN_ANGELS",
+"c": "high",
+"ra": "Granted a visibly present guardian angel throughout her life."
+},
+{
+"s": "ENT_LMW_PANTALEON",
+"t": "patron_of",
+"o": "ENT_HEALING",
+"c": "high",
+"ra": "Physician-martyr, patron of doctors and the sick."
+},
+{
+"s": "ENT_LMW_ERASMUS",
+"t": "patron_of",
+"o": "ENT_PROTECTION",
+"c": "medium",
+"ra": "St Elmo, patron of sailors invoked against storms and abdominal pain."
+},
+{
+"s": "ENT_LMW_VITUS",
+"t": "patron_of",
+"o": "ENT_HEALING",
+"c": "medium",
+"ra": "Invoked against epilepsy, chorea and nervous diseases."
+},
+{
+"s": "ENT_LMW_EUSTACE",
+"t": "patron_of",
+"o": "ENT_PROTECTION",
+"c": "medium",
+"ra": "Patron of hunters and of those in difficult situations."
+},
+{
+"s": "ENT_LMW_CYRIACUS",
+"t": "opposes",
+"o": "ENT_CHR_DEMONS",
+"c": "medium",
+"ra": "Invoked against demonic temptation and possession."
+},
+{
+"s": "ENT_LMW_ACACIUS",
+"t": "patron_of",
+"o": "ENT_HEALING",
+"c": "low",
+"ra": "Invoked against headache and in the agony of death."
+},
+{
+"s": "ENT_LMW_PETER_DAMIAN",
+"t": "embodies",
+"o": "ENT_MONASTICISM",
+"c": "high",
+"ra": "Camaldolese hermit-reformer and exemplar of monastic austerity."
+},
+{
+"s": "ENT_LMW_JULIAN_NORWICH",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "high",
+"ra": "Her Revelations centre on visions ('shewings') of the Passion and love of Christ."
+},
+{
+"s": "ENT_LMW_MECHTHILD_MAGDEBURG",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "medium",
+"ra": "Bridal-mystical visions of union with Christ in The Flowing Light of the Godhead."
+},
+{
+"s": "ENT_LMW_BERNARDINO_SIENA",
+"t": "reception_of",
+"o": "ENT_JESUS_CHRIST",
+"c": "high",
+"ra": "Promoter of devotion to the Holy Name of Jesus (the IHS monogram)."
+},
+{
+"s": "ENT_LMW_CATHERINE_SWEDEN",
+"t": "patron_of",
+"o": "ENT_HUMANS",
+"c": "low",
+"ra": "Invoked against miscarriage and for protection of pregnant women."
+}
+]

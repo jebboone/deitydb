@@ -1,5 +1,44 @@
 # Changelog
 
+## v1.80.0 — 2026-06-17
+
+### High & late-medieval depth (1000–1450) — the mainstream Abrahamic devotional layer
+
+The holistic audit's last open gap: the 1000–1450 window was thin in exactly the
+mainstream faiths that actually dominated it. Two cohorts, both venerated-saint
+layers (not theologians-as-such), built via the new reusable `gen_roster.py` from
+agent-proposed JSON (agents wrote only input files, never the DB). **+52 entities,
++90 edges, +7 sources.** No occult weighting — this is the tri-faith mainstream the
+standing steer calls for. Scorecard now 2,986 entities / 5,452 relationships /
+318 sources.
+
+- **Latin-West high/late-medieval saints & mystics (`ENT_LMW_`, 21):** the scholastic
+  doctors (Anselm, Peter Damian, Albertus Magnus, Thomas Aquinas, Bonaventure), the
+  preaching friars (Vincent Ferrer, Bernardino of Siena, Simon Stock), the women
+  visionaries (Julian of Norwich, Mechthild of Magdeburg, Angela of Foligno,
+  Catherine of Sweden, Frances of Rome), and the remaining Fourteen Holy Helpers
+  (Vitus, Erasmus/Elmo, Pantaleon, Eustace, Cyriacus, Acacius). New period
+  `PER_HIGH_MEDIEVAL_WEST` (1000–1450); 5 new primary hagiographic sources (Legenda
+  Aurea, Hildegard's Scivias, Julian's Revelations, Bonaventure's Legenda Maior,
+  Raymond of Capua's Life of Catherine). Wired into the **existing** `ENT_SAINT_`
+  layer (Aquinas `taught_by` Albertus; Bonaventure/Bernardino `aligned_with` Francis;
+  the new Helpers `member_of` the existing `ENT_SAINT_FOURTEEN_HELPERS`) plus two new
+  hubs (Mendicant-Order Saints, Medieval Women Visionaries) and real patronages
+  (patron_of healing/protection/wisdom).
+- **Post-classical Sufi saints & tariqa founders (`ENT_SUF_`, 31):** filling
+  `PER_ISL_MEDIEVAL` (was just 2 entities → now 28). The order eponyms and their
+  hubs — Kubrawiyya, Chishtiyya (the full Delhi silsila: Mu'in al-Din Chishti →
+  Bakhtiar Kaki → Baba Farid → Nizam al-Din Awliya → Amir Khusrow), Naqshbandiyya
+  (Naqshband → Ahrar → Jami), Bektashiyya, Ni'matullahiyya, Badawiyya — plus the
+  Ibn-Arabi metaphysical school (Qunawi, Iraqi, Shabistari, al-Jili), saint-poets
+  (Yunus Emre, Hafiz), and regional saints (Hamadani, Maneri, Lal Ded, Nund Rishi).
+  2 new primary sources (Attar's Tadhkirat al-Awliya, Jami's Nafahat al-Uns).
+
+Process note: the Christian agent emitted its relationships with the type/object
+fields transposed (all 52 edges initially REJECTED by the self-validating build);
+caught from the REJECTED report and corrected before any bad data landed. New
+`gen_roster.py` is a general roster tool (per-entity tradition/period/source).
+
 ## v1.79.0 — 2026-06-17
 
 ### Connectivity remediation (graph-quality pass, no new roster)

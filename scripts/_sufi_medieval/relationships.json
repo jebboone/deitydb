@@ -1,0 +1,54 @@
+[
+{"s":"ENT_SUF_KUBRA","t":"member_of","o":"ENT_SUF_KUBRAWI","c":"high","ra":"Eponymous founder of the Kubrawiyya."},
+{"s":"ENT_SUF_HAMADANI","t":"member_of","o":"ENT_SUF_KUBRAWI","c":"high","ra":"Kubrawi master in the line of Najm al-Din Kubra."},
+
+{"s":"ENT_SUF_CHISHTI_MUIN","t":"member_of","o":"ENT_SUF_CHISHTI","c":"high","ra":"Established the Chishtiyya in India as its founding master."},
+{"s":"ENT_SUF_BAKHTIAR_KAKI","t":"member_of","o":"ENT_SUF_CHISHTI","c":"high","ra":"Chishti saint of Delhi."},
+{"s":"ENT_SUF_BABA_FARID","t":"member_of","o":"ENT_SUF_CHISHTI","c":"high","ra":"Punjabi Chishti saint."},
+{"s":"ENT_SUF_NIZAM_AWLIYA","t":"member_of","o":"ENT_SUF_CHISHTI","c":"high","ra":"Pre-eminent Chishti saint of Delhi."},
+{"s":"ENT_SUF_AMIR_KHUSROW","t":"member_of","o":"ENT_SUF_CHISHTI","c":"medium","ra":"Lay disciple within the Chishti circle of Nizam al-Din."},
+
+{"s":"ENT_SUF_NAQSHBAND","t":"member_of","o":"ENT_SUF_NAQSHBANDI","c":"high","ra":"Eponymous founder of the Naqshbandiyya."},
+{"s":"ENT_SUF_KHWAJA_AHRAR","t":"member_of","o":"ENT_SUF_NAQSHBANDI","c":"high","ra":"Leading Naqshbandi master of the Timurid era."},
+{"s":"ENT_SUF_JAMI","t":"member_of","o":"ENT_SUF_NAQSHBANDI","c":"high","ra":"Naqshbandi poet and hagiographer."},
+
+{"s":"ENT_SUF_BEKTASH","t":"member_of","o":"ENT_SUF_BEKTASHI","c":"high","ra":"Founder-patron of the Bektashiyya."},
+
+{"s":"ENT_SUF_NIMATULLAH","t":"member_of","o":"ENT_SUF_NIMATULLAHI","c":"high","ra":"Founder of the Ni'matullahi order."},
+
+{"s":"ENT_SUF_BADAWI","t":"member_of","o":"ENT_SUF_BADAWIYYA","c":"high","ra":"Eponymous founder of the Badawiyya."},
+
+{"s":"ENT_SUF_QUNAWI","t":"taught_by","o":"ENT_SUF_IBN_ARABI","c":"high","ra":"Stepson and chief disciple of Ibn al-Arabi."},
+{"s":"ENT_SUF_QUNAWI","t":"reception_of","o":"ENT_SUF_IBN_ARABI","c":"high","ra":"Systematized Ibn al-Arabi's doctrine of wahdat al-wujud."},
+{"s":"ENT_SUF_IRAQI","t":"taught_by","o":"ENT_SUF_QUNAWI","c":"medium","ra":"Drew his Lama'at from Qunawi's expositions of Ibn al-Arabi."},
+{"s":"ENT_SUF_IRAQI","t":"reception_of","o":"ENT_SUF_IBN_ARABI","c":"high","ra":"His Lama'at versifies Ibn al-Arabi's metaphysics of love."},
+{"s":"ENT_SUF_SHABISTARI","t":"reception_of","o":"ENT_SUF_IBN_ARABI","c":"high","ra":"Gulshan-i Raz is a verse summary of Ibn al-Arabi's wahdat al-wujud."},
+{"s":"ENT_SUF_JILI","t":"reception_of","o":"ENT_SUF_IBN_ARABI","c":"high","ra":"Al-Insan al-Kamil develops Ibn al-Arabi's Perfect Man."},
+{"s":"ENT_SUF_NIMATULLAH","t":"reception_of","o":"ENT_SUF_IBN_ARABI","c":"medium","ra":"Composed commentary on and verse in the wahdat al-wujud tradition."},
+
+{"s":"ENT_SUF_KIRMANI","t":"aligned_with","o":"ENT_SUF_IBN_ARABI","c":"medium","ra":"Contemporary of Ibn al-Arabi's circle sharing the contemplation of divine beauty in form."},
+
+{"s":"ENT_SUF_BAKHTIAR_KAKI","t":"taught_by","o":"ENT_SUF_CHISHTI_MUIN","c":"high","ra":"Foremost disciple and successor of Mu'in al-Din Chishti."},
+{"s":"ENT_SUF_BABA_FARID","t":"taught_by","o":"ENT_SUF_BAKHTIAR_KAKI","c":"high","ra":"Successor of Bakhtiar Kaki in the Delhi Chishti line."},
+{"s":"ENT_SUF_NIZAM_AWLIYA","t":"taught_by","o":"ENT_SUF_BABA_FARID","c":"high","ra":"Khalifa and chief successor of Baba Farid."},
+{"s":"ENT_SUF_AMIR_KHUSROW","t":"taught_by","o":"ENT_SUF_NIZAM_AWLIYA","c":"high","ra":"Devoted disciple of Nizam al-Din Awliya."},
+
+{"s":"ENT_SUF_KHWAJA_AHRAR","t":"reception_of","o":"ENT_SUF_NAQSHBAND","c":"high","ra":"Carried forward the Naqshbandi path of Baha al-Din."},
+{"s":"ENT_SUF_JAMI","t":"taught_by","o":"ENT_SUF_KHWAJA_AHRAR","c":"medium","ra":"Affiliated to the Naqshbandiyya through Khwaja Ahrar."},
+
+{"s":"ENT_SUF_MANERI","t":"reception_of","o":"ENT_SUF_SUHRAWARDI","c":"medium","ra":"Of the Firdausiyya, a Suhrawardi branch in India."},
+{"s":"ENT_SUF_SAFI_ARDABILI","t":"reception_of","o":"ENT_SUF_SUHRAWARDI","c":"low","ra":"His Safaviyya silsila descends through the broader Suhrawardi-Zahidi line."},
+{"s":"ENT_SUF_HAMADANI","t":"reception_of","o":"ENT_SUF_KUBRA","c":"medium","ra":"Transmitted the Kubrawi visionary path founded by Najm al-Din Kubra."},
+
+{"s":"ENT_SUF_YUNUS_EMRE","t":"aligned_with","o":"ENT_SUF_RUMI","c":"medium","ra":"Turkish saint-poet writing in the wake of Rumi's Anatolian devotional milieu."},
+{"s":"ENT_SUF_HAFIZ","t":"aligned_with","o":"ENT_SUF_RUMI","c":"low","ra":"Persian mystical poetry sharing Rumi's idiom of divine love and longing."},
+
+{"s":"ENT_SUF_NURI","t":"taught_by","o":"ENT_SUF_LAL_DED","c":"low","ra":"Kashmiri tradition links Nund Rishi's path to the example of Lal Ded."},
+{"s":"ENT_SUF_LAL_DED","t":"aligned_with","o":"ENT_SUF_HAMADANI","c":"low","ra":"Kashmiri contemporary devotion overlapping with the Hamadani Sufi presence."},
+
+{"s":"ENT_SUF_BADAWI","t":"aligned_with","o":"ENT_SUF_JILANI","c":"low","ra":"Counted among the great popular saints venerated alongside Abd al-Qadir al-Jilani."},
+{"s":"ENT_SUF_DASUQI","t":"aligned_with","o":"ENT_SUF_BADAWI","c":"medium","ra":"Counted among the four great qutbs of Egyptian Sufism with al-Badawi."},
+
+{"s":"ENT_SUF_KIRMANI","t":"reception_of","o":"ENT_SUF_GHAZALI","c":"low","ra":"Heir to the sober contemplative tradition consolidated by al-Ghazali."},
+{"s":"ENT_SUF_CHISHTI_MUIN","t":"member_of","o":"ENT_SUF_KUBRAWI","c":"low","ra":"Some silsilas link Mu'in al-Din's early training to the Central Asian milieu of Kubra's contemporaries."}
+]
