@@ -1,0 +1,56 @@
+[
+  {"s":"ENT_ORTH_SILOUAN_ATHONITE","t":"member_of","o":"ENT_ORTH_ATHONITE_ELDERS","c":"high","ra":"Silouan was an Athonite monk of St Panteleimon's; charter member of the modern Athonite eldership."},
+  {"s":"ENT_ORTH_JOSEPH_HESYCHAST","t":"member_of","o":"ENT_ORTH_ATHONITE_ELDERS","c":"high","ra":"Joseph the Hesychast was a foundational 20th-c. Athonite elder whose disciples renewed Athos."},
+  {"s":"ENT_ORTH_PAISIOS_ATHONITE","t":"member_of","o":"ENT_ORTH_ATHONITE_ELDERS","c":"high","ra":"Paisios was among the most prominent modern Athonite elders."},
+  {"s":"ENT_ORTH_PORPHYRIOS_KAVSOKALYVIA","t":"member_of","o":"ENT_ORTH_ATHONITE_ELDERS","c":"high","ra":"Porphyrios was an Athonite elder of Kavsokalyvia."},
+  {"s":"ENT_ORTH_SOPHRONY_ESSEX","t":"member_of","o":"ENT_ORTH_ATHONITE_ELDERS","c":"high","ra":"Sophrony lived on Athos as a hesychast disciple of Silouan before founding his Essex monastery."},
+
+  {"s":"ENT_ORTH_NICHOLAS_II","t":"member_of","o":"ENT_ORTH_ROYAL_MARTYRS","c":"high","ra":"Nicholas II is the principal of the Romanov passion-bearers glorified in 2000."},
+  {"s":"ENT_ORTH_ALEXANDRA_FEODOROVNA","t":"member_of","o":"ENT_ORTH_ROYAL_MARTYRS","c":"high","ra":"Empress Alexandra was glorified among the Royal Martyrs in 2000."},
+  {"s":"ENT_ORTH_ALEXEI_TSAREVICH","t":"member_of","o":"ENT_ORTH_ROYAL_MARTYRS","c":"high","ra":"Tsarevich Alexei was glorified among the Royal Martyrs in 2000."},
+  {"s":"ENT_ORTH_ROYAL_MARTYRS","t":"reception_of","o":"ENT_JESUS_CHRIST","c":"high","ra":"As passion-bearers (strastoterptsy) the Romanovs are venerated for accepting death in imitation of Christ's passion; passion-bearing is explicitly a reception of Christ's Passion, not deification."},
+
+  {"s":"ENT_ORTH_SOPHRONY_ESSEX","t":"taught_by","o":"ENT_ORTH_SILOUAN_ATHONITE","c":"high","ra":"Sophrony was the personal disciple and biographer of Silouan the Athonite, whose teaching he transmitted."},
+
+  {"s":"ENT_ORTH_NIKODEMOS_HAGIORITE","t":"embodies","o":"ENT_MONASTICISM","c":"high","ra":"Nikodemos was an Athonite monk whose life embodied hesychast monasticism."},
+  {"s":"ENT_ORTH_NIKODEMOS_HAGIORITE","t":"transmits","o":"ENT_ORTH_UNCREATED_LIGHT","c":"high","ra":"As co-compiler of the Philokalia he transmitted the hesychast doctrine of the uncreated light/noetic prayer."},
+
+  {"s":"ENT_ORTH_THEOPHAN_RECLUSE","t":"transmits","o":"ENT_ORTH_UNCREATED_LIGHT","c":"high","ra":"Theophan translated the Philokalia into Russian, transmitting the hesychast tradition of inner light and the prayer of the heart."},
+  {"s":"ENT_ORTH_THEOPHAN_RECLUSE","t":"teaches","o":"ENT_PRAYER","c":"high","ra":"Theophan's principal teaching concerned unceasing prayer and the prayer of the heart."},
+
+  {"s":"ENT_ORTH_IGNATIUS_BRIANCHANINOV","t":"teaches","o":"ENT_PRAYER","c":"high","ra":"Ignatius's central work, On the Prayer of Jesus, teaches the practice of the Jesus Prayer."},
+  {"s":"ENT_ORTH_IGNATIUS_BRIANCHANINOV","t":"embodies","o":"ENT_MONASTICISM","c":"high","ra":"Ignatius was a monastic reformer whose Arena systematizes patristic ascetic life."},
+
+  {"s":"ENT_ORTH_SILOUAN_ATHONITE","t":"aligned_with","o":"ENT_ORTH_UNCREATED_LIGHT","c":"high","ra":"Silouan's teaching is firmly within the hesychast experience of grace and the uncreated light."},
+  {"s":"ENT_ORTH_SILOUAN_ATHONITE","t":"teaches","o":"ENT_PRAYER","c":"high","ra":"Silouan taught the practice of the Jesus Prayer and prayer for the whole world."},
+
+  {"s":"ENT_ORTH_JOSEPH_HESYCHAST","t":"aligned_with","o":"ENT_ORTH_UNCREATED_LIGHT","c":"high","ra":"Joseph the Hesychast taught noetic prayer and the experience of divine grace in the hesychast tradition."},
+
+  {"s":"ENT_ORTH_PAISIOS_ATHONITE","t":"teaches","o":"ENT_PRAYER","c":"high","ra":"Paisios taught the Jesus Prayer and was a renowned counselor on the spiritual life."},
+  {"s":"ENT_ORTH_PORPHYRIOS_KAVSOKALYVIA","t":"patron_of","o":"ENT_HEALING","c":"medium","ra":"Porphyrios was widely venerated for charismatic gifts of healing and spiritual insight."},
+  {"s":"ENT_ORTH_SOPHRONY_ESSEX","t":"aligned_with","o":"ENT_ORTH_UNCREATED_LIGHT","c":"high","ra":"Sophrony's theology of personhood and the vision of the uncreated light continues the Palamite hesychast tradition."},
+
+  {"s":"ENT_ORTH_JOHN_KRONSTADT","t":"patron_of","o":"ENT_HEALING","c":"high","ra":"John of Kronstadt was venerated in his lifetime for numerous miracles of healing."},
+  {"s":"ENT_ORTH_JOHN_KRONSTADT","t":"aligned_with","o":"ENT_ORTH_SERAPHIM","c":"medium","ra":"John of Kronstadt belongs to the same Russian wonderworker tradition as Seraphim of Sarov."},
+
+  {"s":"ENT_ORTH_NECTARIOS_AEGINA","t":"patron_of","o":"ENT_HEALING","c":"high","ra":"Nektarios of Aegina is one of the most popular modern Greek healing wonderworkers."},
+
+  {"s":"ENT_ORTH_LUKE_SIMFEROPOL","t":"patron_of","o":"ENT_HEALING","c":"high","ra":"Luke (Voino-Yasenetsky) was both a surgeon and venerated healer; patron of physicians and the sick."},
+  {"s":"ENT_ORTH_LUKE_SIMFEROPOL","t":"aligned_with","o":"ENT_ORTH_PANTELEIMON","c":"medium","ra":"As a physician-saint Luke continues the tradition of the unmercenary healers such as Panteleimon."},
+
+  {"s":"ENT_ORTH_MATRONA_MOSCOW","t":"patron_of","o":"ENT_HEALING","c":"high","ra":"Matrona of Moscow is venerated principally for healing and consolation."},
+  {"s":"ENT_ORTH_MATRONA_MOSCOW","t":"aligned_with","o":"ENT_ORTH_SERAPHIM","c":"medium","ra":"Matrona stands in the Russian wonderworker lineage exemplified by Seraphim of Sarov."},
+
+  {"s":"ENT_ORTH_JOHN_MAXIMOVITCH","t":"patron_of","o":"ENT_HEALING","c":"medium","ra":"John of Shanghai and San Francisco was venerated as an ascetic wonderworker and healer in the diaspora."},
+  {"s":"ENT_ORTH_JOHN_MAXIMOVITCH","t":"embodies","o":"ENT_MONASTICISM","c":"high","ra":"John lived a strict ascetic-monastic episcopate."},
+
+  {"s":"ENT_ORTH_ELIZABETH_FEODOROVNA","t":"embodies","o":"ENT_MONASTICISM","c":"high","ra":"Elizabeth founded and led the Martha and Mary Convent, embodying the monastic-diaconal life."},
+  {"s":"ENT_ORTH_ELIZABETH_FEODOROVNA","t":"reception_of","o":"ENT_JESUS_CHRIST","c":"high","ra":"As a new-martyr she is venerated for accepting death in imitation of Christ; martyrdom as reception of Christ's Passion, not deification."},
+
+  {"s":"ENT_ORTH_MARIA_SKOBTSOVA","t":"reception_of","o":"ENT_JESUS_CHRIST","c":"high","ra":"Maria of Paris is venerated as a new-martyr who died at Ravensbruck serving Christ in the persecuted; martyrdom as reception of Christ's Passion."},
+  {"s":"ENT_ORTH_MARIA_SKOBTSOVA","t":"embodies","o":"ENT_MONASTICISM","c":"medium","ra":"Maria was a professed nun who reconceived monasticism as active social charity."},
+
+  {"s":"ENT_ORTH_NIKOLAI_VELIMIROVIC","t":"teaches","o":"ENT_WISDOM","c":"high","ra":"Nikolai Velimirovic, 'the Serbian Chrysostom', was a major preacher and theological writer."},
+  {"s":"ENT_ORTH_JUSTIN_POPOVIC","t":"teaches","o":"ENT_WISDOM","c":"high","ra":"Justin Popovic was a leading 20th-c. dogmatic theologian of the Orthodox Church."},
+  {"s":"ENT_ORTH_JUSTIN_POPOVIC","t":"taught_by","o":"ENT_ORTH_NIKOLAI_VELIMIROVIC","c":"medium","ra":"Justin Popovic was a younger associate and spiritual heir of Nikolai Velimirovic within the Serbian Orthodox revival."}
+]

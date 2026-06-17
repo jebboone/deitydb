@@ -1,0 +1,40 @@
+[
+  {"s":"ENT_SUF_SANUSI","t":"member_of","o":"ENT_SUF_SANUSIYYA","c":"high","ra":"Al-Sanusi is the eponymous founder of the Sanusiyya order."},
+  {"s":"ENT_SUF_SANUSI","t":"taught_by","o":"ENT_SUF_IBN_IDRIS","c":"high","ra":"Al-Sanusi was a leading disciple of Ahmad ibn Idris before founding the Sanusiyya."},
+
+  {"s":"ENT_SUF_ALAWI","t":"member_of","o":"ENT_SUF_ALAWIYYA","c":"high","ra":"Ahmad al-Alawi is the eponymous founder of the Alawiyya order."},
+  {"s":"ENT_SUF_ALAWIYYA","t":"member_of","o":"ENT_SUF_DARQAWIYYA","c":"high","ra":"The Alawiyya is a branch of the Darqawi-Shadhili line, descending through the Darqawiyya."},
+  {"s":"ENT_SUF_ALAWI","t":"reception_of","o":"ENT_SUF_DARQAWI","c":"high","ra":"Al-Alawi's lineage runs through the Darqawiyya founded by al-Darqawi (via al-Buzidi)."},
+  {"s":"ENT_SUF_ALAWI","t":"reception_of","o":"ENT_SUF_IBN_ARABI","c":"medium","ra":"Al-Alawi taught Akbari metaphysics (wahdat al-wujud) drawn from Ibn Arabi."},
+
+  {"s":"ENT_SUF_NURSI","t":"member_of","o":"ENT_SUF_NURCU","c":"high","ra":"Said Nursi is the founding inspiration and author whose Risale-i Nur defines the Nurcu movement."},
+  {"s":"ENT_SUF_NURSI","t":"reception_of","o":"ENT_SUF_NAQSHBANDI_KHALID","c":"medium","ra":"Nursi's early formation was within the Naqshbandi-Khalidi milieu of eastern Anatolia, which shaped the Risale-i Nur."},
+
+  {"s":"ENT_SUF_BAMBA","t":"member_of","o":"ENT_SUF_MOURIDIYYA","c":"high","ra":"Ahmadou Bamba is the eponymous founder of the Mouridiyya."},
+  {"s":"ENT_SUF_BAMBA","t":"reception_of","o":"ENT_SUF_JILANI","c":"high","ra":"Bamba was first initiated in the Qadiriyya founded by Abd al-Qadir al-Jilani before establishing the Mouridiyya."},
+
+  {"s":"ENT_SUF_NIASSE","t":"member_of","o":"ENT_SUF_TIJANIYYA","c":"high","ra":"Ibrahim Niasse led the Fayda revival within the Tijaniyya."},
+  {"s":"ENT_SUF_NIASSE","t":"reception_of","o":"ENT_SUF_TIJANI","c":"high","ra":"Niasse's Fayda movement claims and develops the spiritual transmission of Ahmad al-Tijani."},
+
+  {"s":"ENT_SUF_HAMALLAH","t":"member_of","o":"ENT_SUF_TIJANIYYA","c":"high","ra":"The Hamalliyya is a reformist branch within the Tijaniyya."},
+  {"s":"ENT_SUF_HAMALLAH","t":"reception_of","o":"ENT_SUF_TIJANI","c":"high","ra":"Shaykh Hamallah claimed transmission of the Tijani way founded by Ahmad al-Tijani (the eleven-bead controversy concerns Tijani litany practice)."},
+
+  {"s":"ENT_SUF_HAFIZ_TIJANI","t":"member_of","o":"ENT_SUF_TIJANIYYA","c":"high","ra":"Muhammad al-Hafiz revitalised the Tijaniyya in Egypt."},
+  {"s":"ENT_SUF_HAFIZ_TIJANI","t":"reception_of","o":"ENT_SUF_TIJANI","c":"high","ra":"His revival explicitly transmits the way of Ahmad al-Tijani."},
+
+  {"s":"ENT_SUF_IBN_AL_HABIB","t":"member_of","o":"ENT_SUF_DARQAWIYYA","c":"high","ra":"Muhammad ibn al-Habib's Habibiyya is a branch of the Darqawi-Shadhili line."},
+  {"s":"ENT_SUF_IBN_AL_HABIB","t":"reception_of","o":"ENT_SUF_DARQAWI","c":"high","ra":"His silsila descends from the Darqawiyya founded by al-Darqawi."},
+
+  {"s":"ENT_SUF_INAYAT_KHAN","t":"reception_of","o":"ENT_SUF_CHISHTI","c":"high","ra":"Inayat Khan was initiated in the Chishti order and transmitted a Chishti-rooted Sufism to the West."},
+  {"s":"ENT_SUF_INAYAT_KHAN","t":"reception_of","o":"ENT_SUF_CHISHTI_MUIN","c":"medium","ra":"His Chishti lineage traces to Mu'in al-Din Chishti, the order's founder in India."},
+
+  {"s":"ENT_SUF_PIR_VILAYAT","t":"taught_by","o":"ENT_SUF_INAYAT_KHAN","c":"high","ra":"Pir Vilayat was the son and designated successor of Hazrat Inayat Khan."},
+
+  {"s":"ENT_SUF_OZAK","t":"reception_of","o":"ENT_SUF_KHALWATIYYA","c":"high","ra":"Muzaffer Ozak headed the Halveti-Jerrahi order, a branch of the Khalwatiyya."},
+
+  {"s":"ENT_SUF_BAWA","t":"aligned_with","o":"ENT_SUF_INAYAT_KHAN","c":"low","ra":"Functional alignment: both are 20th-c. founders of universalist Sufi communities in the West; Bawa has no documented formal tariqa silsila, so this is a comparative (not lineal) link."},
+
+  {"s":"ENT_SUF_NAZIM_HAQQANI","t":"member_of","o":"ENT_SUF_HAQQANI","c":"high","ra":"Nazim al-Haqqani is the eponymous head of the Naqshbandi-Haqqani order."},
+  {"s":"ENT_SUF_HAQQANI","t":"member_of","o":"ENT_SUF_NAQSHBANDI","c":"high","ra":"The Naqshbandi-Haqqani is a modern transnational branch of the Naqshbandiyya."},
+  {"s":"ENT_SUF_NAZIM_HAQQANI","t":"reception_of","o":"ENT_SUF_NAQSHBANDI_KHALID","c":"high","ra":"The Haqqani silsila descends through the Naqshbandi-Khalidi line of Khalid al-Baghdadi."}
+]
