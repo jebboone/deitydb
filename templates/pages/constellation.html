@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}Constellation — DeityDB{% endblock %}
+{% block body_class %}deitydb-constellation-map{% endblock %}
+
+{% block content %}
+<style>
+.cm-page{max-width:1280px;margin:0 auto;padding:8px 16px 40px}
+.cm-head h1{margin:0 0 4px}
+.cm-sub{color:#5a5246;max-width:880px;margin:0 0 12px}
+.cm-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:0 0 10px}
+.cm-bar select{padding:7px 10px;border:1px solid #d8cdbb;border-radius:8px;font-size:.9rem;background:#fff}
+.cm-note{color:#7c7569;font-size:.86rem}
+.cm-wrap{position:relative;border:1px solid #e7dccb;border-radius:10px;background:#0f0d17;overflow:hidden}
+.cm-wrap canvas{display:block;width:100%;height:640px}
+.cm-tip{position:fixed;z-index:50;background:#2b2440;color:#fff;font-size:.82rem;padding:6px 10px;border-radius:7px;pointer-events:none;display:none;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.cm-tip .tr{color:#c9b8ef;font-size:.74rem;display:block}
+.cm-legend{display:flex;flex-wrap:wrap;gap:11px;margin:10px 0 0;font-size:.77rem;color:#5a5246}
+.cm-leg{display:flex;align-items:center;gap:6px}.cm-leg .dot{width:11px;height:11px;border-radius:50%}
+.cm-hint{position:absolute;left:12px;bottom:10px;font-size:.76rem;color:rgba(255,255,255,.55);pointer-events:none}
+</style>
+
+<div class="cm-page">
+  <div class="cm-head">
+    <h1>Constellation</h1>
+    <p class="cm-sub">The whole dataset as one map — every figure a star, every relationship a thread, clustered and coloured by tradition. Scroll to zoom, drag to pan, hover a star, click to open it.</p>
+  </div>
+  <div class="cm-bar">
+    <label>Tradition: <select id="cm-trad"><option value="">— all (the whole graph) —</option></select></label>
+    <span class="cm-note" id="cm-note">Loading the map…</span>
+  </div>
+  <div class="cm-wrap"><canvas id="cm-canvas"></canvas><span class="cm-hint">scroll = zoom · drag = pan · click a star = open</span></div>
+  <div class="cm-legend" id="cm-legend"></div>
+</div>
+<div class="cm-tip" id="cm-tip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(function(){
+'use strict';
+if(typeof d3==='undefined'){document.getElementById('cm-note').textContent='Could not load the visualization library.';return;}
+var TC={greek:'#5b8def',egyptian:'#e0a050',mesopotamian:'#e05ba8',christian:'#3fae6a',islamic:'#27c08f',jewish:'#e0b24f',gnostic:'#9b5be0',northern:'#4fb8e0',roman:'#e05b5b',zoroastrian:'#e0934f',hermetic:'#4fcabf',vernacular:'#ef5ba8',afro:'#cc7a33',other:'#8a93a8'};
+var TL={greek:'Greek',egyptian:'Egyptian',mesopotamian:'Mesopotamian',christian:'Christian',islamic:'Islamic',jewish:'Jewish/Israelite',gnostic:'Gnostic/dualist',northern:'Celtic/Norse',roman:'Roman/Italic',zoroastrian:'Iranian',hermetic:'Esoteric',vernacular:'Vernacular/folklore',afro:'Afro-diasporic',other:'Other'};
+function tk(t){t=(t||'').toLowerCase();
+ if(t.indexOf('zoroastrian')>=0||t.indexOf('mithra')>=0)return'zoroastrian';if(t.indexOf('greek')===0)return'greek';if(t.indexOf('egyptian')===0)return'egyptian';
+ if(t.indexOf('mesopotamian')>=0||t.indexOf('canaanite')>=0||t.indexOf('phoenician')>=0||t.indexOf('hittite')>=0||t.indexOf('sumer')>=0)return'mesopotamian';
+ if(t.indexOf('islam')>=0||t.indexOf('sufi')>=0||t.indexOf('yazidi')>=0||t.indexOf('druze')>=0||t.indexOf('yarsan')>=0||t.indexOf('alawite')>=0||t.indexOf('alevi')>=0||t.indexOf('baha')>=0)return'islamic';
+ if(t.indexOf('jewish')>=0||t.indexOf('israelite')>=0||t.indexOf('samaritan')>=0)return'jewish';
+ if(t.indexOf('gnostic')>=0||t.indexOf('mandaean')>=0||t.indexOf('manichaean')>=0||t.indexOf('valentinian')>=0||t.indexOf('sethian')>=0||t.indexOf('ophite')>=0)return'gnostic';
+ if(t.indexOf('christian')>=0||t.indexOf('coptic')>=0||t.indexOf('syriac')>=0||t.indexOf('armenian')>=0||t.indexOf('ethiopian')>=0||t.indexOf('arthurian')>=0)return'christian';
+ if(t.indexOf('norse')>=0||t.indexOf('germanic')>=0||t.indexOf('celtic')>=0||t.indexOf('anglo')>=0||t.indexOf('baltic')>=0||t.indexOf('slavic')>=0||t.indexOf('finnish')>=0||t.indexOf('illyrian')>=0||t.indexOf('nart')>=0)return'northern';
+ if(t.indexOf('roman')>=0||t.indexOf('etruscan')>=0||t.indexOf('italic')>=0||t.indexOf('lydian')>=0||t.indexOf('lycian')>=0||t.indexOf('carian')>=0||t.indexOf('venetic')>=0)return'roman';
+ if(t.indexOf('vodou')>=0||t.indexOf('orisha')>=0||t.indexOf('rastafari')>=0)return'afro';
+ if(t.indexOf('vernacular')>=0||t.indexOf('folklore')>=0||t.indexOf('folk catholic')>=0)return'vernacular';
+ if(t.indexOf('hermetic')>=0||t.indexOf('theosoph')>=0||t.indexOf('wicca')>=0||t.indexOf('esoteric')>=0||t.indexOf('thelemic')>=0||t.indexOf('alchem')>=0||t.indexOf('masonic')>=0||t.indexOf('satanism')>=0||t.indexOf('ufo')>=0||t.indexOf('scientology')>=0||t.indexOf('discordian')>=0||t.indexOf('paganism')>=0||t.indexOf('goetic')>=0||t.indexOf('renaissance')>=0||t.indexOf('spiritualist')>=0||t.indexOf('anthroposophy')>=0)return'hermetic';
+ return'other';}
+var cv=document.getElementById('cm-canvas'), ctx=cv.getContext('2d'), note=document.getElementById('cm-note'), tip=document.getElementById('cm-tip');
+var W,H,DPR=Math.min(window.devicePixelRatio||1,2), nodes=[], links=[], sim=null, xf=d3.zoomIdentity, byId={};
+function resize(){ var r=cv.getBoundingClientRect(); W=r.width; H=r.height; cv.width=W*DPR; cv.height=H*DPR; draw(); }
+function draw(){
+  ctx.save(); ctx.setTransform(DPR,0,0,DPR,0,0); ctx.clearRect(0,0,W,H);
+  ctx.translate(xf.x,xf.y); ctx.scale(xf.k,xf.k);
+  ctx.globalAlpha=Math.min(0.5,0.18+0.05/xf.k); ctx.strokeStyle='#4a4366'; ctx.lineWidth=0.4/xf.k;
+  ctx.beginPath();
+  for(var i=0;i<links.length;i++){var l=links[i]; if(l.source.x==null)continue; ctx.moveTo(l.source.x,l.source.y); ctx.lineTo(l.target.x,l.target.y);}
+  ctx.stroke();
+  ctx.globalAlpha=1;
+  var r=Math.max(1.3, 2.4/Math.sqrt(xf.k));
+  for(var j=0;j<nodes.length;j++){var n=nodes[j]; if(n.x==null)continue; ctx.fillStyle=n.c; ctx.beginPath(); ctx.arc(n.x,n.y,r,0,6.2832); ctx.fill();}
+  ctx.restore();
+}
+async function load(trad){
+  note.textContent='Loading the map…'; if(sim)sim.stop();
+  var d; try{ d=await(await fetch('/api/graph.json'+(trad?'?tradition='+encodeURIComponent(trad):''))).json(); }
+  catch(e){ note.textContent='Could not load the graph.'; return; }
+  byId={}; nodes=d.nodes.map(function(a){var n={id:a[0],name:a[1],trad:a[2],c:TC[tk(a[2])]||TC.other}; byId[a[0]]=n; return n;});
+  links=d.links.filter(function(l){return byId[l[0]]&&byId[l[1]];}).map(function(l){return {source:byId[l[0]],target:byId[l[1]]};});
+  note.textContent=d.node_count+' figures · '+d.link_count+' links'+(trad?' in '+trad:' across the whole dataset');
+  var seen={}; nodes.forEach(function(n){seen[tk(n.trad)]=1;});
+  document.getElementById('cm-legend').innerHTML=Object.keys(seen).map(function(k){return '<span class="cm-leg"><span class="dot" style="background:'+TC[k]+'"></span>'+TL[k]+'</span>';}).join('');
+  resize();
+  sim=d3.forceSimulation(nodes)
+    .force('charge',d3.forceManyBody().strength(-26).distanceMax(260).theta(0.9))
+    .force('link',d3.forceLink(links).id(function(d){return d.id;}).distance(28).strength(0.35))
+    .force('center',d3.forceCenter(W/2,H/2))
+    .force('x',d3.forceX(W/2).strength(0.015)).force('y',d3.forceY(H/2).strength(0.015))
+    .alphaDecay(0.025).on('tick',draw);
+  // fit once after some settling
+  setTimeout(fit, nodes.length>1500?2600:1200);
+}
+function fit(){
+  if(!nodes.length)return;
+  var xs=nodes.map(function(n){return n.x;}), ys=nodes.map(function(n){return n.y;});
+  var minx=Math.min.apply(null,xs),maxx=Math.max.apply(null,xs),miny=Math.min.apply(null,ys),maxy=Math.max.apply(null,ys);
+  var w=maxx-minx||1,h=maxy-miny||1, k=Math.min(W/w,H/h)*0.86; k=Math.max(0.05,Math.min(k,3));
+  var tx=W/2-k*(minx+maxx)/2, ty=H/2-k*(miny+maxy)/2;
+  d3.select(cv).transition().duration(700).call(zoom.transform, d3.zoomIdentity.translate(tx,ty).scale(k));
+}
+var zoom=d3.zoom().scaleExtent([0.03,8]).on('zoom',function(ev){ xf=ev.transform; draw(); });
+d3.select(cv).call(zoom);
+function nearest(ev){
+  var r=cv.getBoundingClientRect(); var mx=(ev.clientX-r.left-xf.x)/xf.k, my=(ev.clientY-r.top-xf.y)/xf.k;
+  var best=null,bd=1e9; for(var i=0;i<nodes.length;i++){var n=nodes[i]; if(n.x==null)continue; var dx=n.x-mx,dy=n.y-my,dd=dx*dx+dy*dy; if(dd<bd){bd=dd;best=n;}}
+  return (bd < (12/xf.k)*(12/xf.k)) ? best : null;
+}
+cv.addEventListener('mousemove',function(ev){ var n=nearest(ev); if(n){ tip.innerHTML='<strong>'+n.name+'</strong><span class="tr">'+(n.trad||'')+'</span>'; tip.style.display='block'; tip.style.left=(ev.clientX+13)+'px'; tip.style.top=(ev.clientY-10)+'px'; cv.style.cursor='pointer'; } else { tip.style.display='none'; cv.style.cursor='grab'; } });
+cv.addEventListener('mouseleave',function(){tip.style.display='none';});
+cv.addEventListener('click',function(ev){ var n=nearest(ev); if(n) window.location='/entity?id='+encodeURIComponent(n.id); });
+window.addEventListener('resize',resize);
+
+(async function(){
+  try{ var m=await(await fetch('/api/meta')).json(); var sel=document.getElementById('cm-trad');
+    m.traditions.forEach(function(t){var o=document.createElement('option');o.value=t;o.textContent=t;sel.appendChild(o);});
+    sel.addEventListener('change',function(){load(this.value);});
+  }catch(e){}
+  load('');
+})();
+})();
+</script>
+{% endblock %}

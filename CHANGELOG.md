@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.92.0 — 2026-06-17
+
+### Deeper graph & API features (no data change)
+
+Four new graph/API capabilities on top of the completed dataset (3,836 entities), all
+served from the same source-traced graph.
+
+- **Public JSON API** (`plugins/deitydb_api.py`) — clean, stable, CORS-enabled, documented
+  at **/api** with a machine-readable **/api/openapi.json**:
+  `/api/entity/{id}`, `/api/neighbors/{id}` (filterable by type/tradition/direction),
+  `/api/path?from=&to=`, `/api/search?q=`, `/api/tradition/{name}`, `/api/graph.json`,
+  `/api/meta`. Makes DeityDB programmatically reusable.
+- **/path — Find a Path** — the shortest source-traced relationship chain between *any two*
+  figures (bidirectional BFS over the graph), rendered as a tradition-coloured flow with the
+  cited rationale on every hop. (e.g. Zeus → … → 999; Isis → … → Erzulie Freda.)
+- **/constellation** — the whole dataset as one zoomable, canvas-rendered force map: every
+  figure a star, every relationship a thread, clustered and coloured by tradition, with a
+  per-tradition filter and click-through to entities.
+- **/graph filters** — the relationship graph now has relationship-type checkboxes and a
+  tradition spotlight, plus a link into the path-finder.
+
+Added to the nav (Path, Map, API) and the homepage's Browse & Visualize cards. Template/plugin
+only — the data (3,836 entities / 7,098 relationships / 458 sources / 135 traditions) is
+unchanged.
+
+
 ## v1.91.1 — 2026-06-17
 
 ### Post-roadmap audit cleanup

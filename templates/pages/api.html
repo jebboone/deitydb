@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}API — DeityDB{% endblock %}
+{% block body_class %}deitydb-api{% endblock %}
+
+{% block content %}
+<style>
+.ap-page{max-width:980px;margin:0 auto;padding:8px 16px 60px}
+.ap-page h1{margin:0 0 6px}
+.ap-lead{color:#5a5246;max-width:780px;margin:0 0 22px;line-height:1.55}
+.ap-ep{border:1px solid #e7dccb;border-radius:10px;background:#fff;padding:16px 18px;margin:0 0 14px}
+.ap-ep h3{margin:0 0 6px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1rem;color:#2b2440}
+.ap-ep .m{display:inline-block;background:#2a8a4f;color:#fff;font-size:.72rem;font-weight:700;border-radius:5px;padding:1px 7px;margin-right:8px;vertical-align:middle}
+.ap-ep p{margin:0 0 8px;color:#5a5246;font-size:.92rem}
+.ap-ep .params{font-size:.84rem;color:#6a6258;margin:0 0 8px}
+.ap-ep .params code{background:#f3efe6;border-radius:4px;padding:1px 5px}
+.ap-try{font-size:.86rem}.ap-try a{color:#5b2a9e;font-weight:600;text-decoration:none;font-family:ui-monospace,Menlo,Consolas,monospace}
+.ap-try a:hover{text-decoration:underline}
+.ap-meta{background:#faf8f5;border:1px solid #e7dccb;border-radius:10px;padding:14px 18px;margin:0 0 22px;font-size:.9rem;color:#5a5246}
+.ap-meta code{background:#fff;border:1px solid #e7dccb;border-radius:4px;padding:1px 6px}
+</style>
+
+<div class="ap-page">
+  <h1>DeityDB API</h1>
+  <p class="ap-lead">A read-only JSON API over the DeityDB comparative-religion graph
+  ({{ db_entities }} entities, {{ db_relationships }} relationships, {{ db_traditions }} traditions).
+  CORS is open, responses are JSON, and there is no authentication. Machine-readable spec:
+  <a href="/api/openapi.json">/api/openapi.json</a>. For arbitrary SQL, the underlying
+  Datasette query API is also available at <a href="/deitydb">/deitydb</a>.</p>
+
+  <div class="ap-meta">
+    <strong>Base:</strong> <code>https://deitydb-explorer.fly.dev</code> &nbsp;·&nbsp;
+    <strong>Example:</strong> <code>curl https://deitydb-explorer.fly.dev/api/path?from=ENT_ZEUS&to=ENT_VF_999</code>
+  </div>
+
+  <div class="ap-ep">
+    <h3><span class="m">GET</span>/api/entity/{id}</h3>
+    <p>A single entity with its relationships, sources, and periods.</p>
+    <div class="params">Path: <code>id</code> — an entity_id (e.g. <code>ENT_ZEUS</code>).</div>
+    <div class="ap-try">Try: <a href="/api/entity/ENT_ZEUS">/api/entity/ENT_ZEUS</a></div>
+  </div>
+
+  <div class="ap-ep">
+    <h3><span class="m">GET</span>/api/neighbors/{id}</h3>
+    <p>The entities directly adjacent to one entity.</p>
+    <div class="params">Query: <code>type</code> (relationship_type), <code>tradition</code>, <code>direction</code> (<code>out</code>|<code>in</code>|both).</div>
+    <div class="ap-try">Try: <a href="/api/neighbors/ENT_ZEUS?type=reception_of">/api/neighbors/ENT_ZEUS?type=reception_of</a></div>
+  </div>
+
+  <div class="ap-ep">
+    <h3><span class="m">GET</span>/api/path</h3>
+    <p>The shortest relationship path between two entities (undirected, source-traced).</p>
+    <div class="params">Query: <code>from</code>, <code>to</code> (entity_ids, required); <code>maxdepth</code> (≤8).</div>
+    <div class="ap-try">Try: <a href="/api/path?from=ENT_ZEUS&to=ENT_VF_999">/api/path?from=ENT_ZEUS&to=ENT_VF_999</a> &nbsp;·&nbsp; or the visual <a href="/path">/path</a> page</div>
+  </div>
+
+  <div class="ap-ep">
+    <h3><span class="m">GET</span>/api/search</h3>
+    <p>Search entities by canonical name.</p>
+    <div class="params">Query: <code>q</code> (≥2 chars, required), <code>limit</code> (≤100).</div>
+    <div class="ap-try">Try: <a href="/api/search?q=sophia">/api/search?q=sophia</a></div>
+  </div>
+
+  <div class="ap-ep">
+    <h3><span class="m">GET</span>/api/tradition/{name}</h3>
+    <p>All entities of a tradition, plus its profile (class, prevalence, status note).</p>
+    <div class="params">Path: <code>name</code> — a tradition (use <code>+</code> or <code>%20</code> for spaces).</div>
+    <div class="ap-try">Try: <a href="/api/tradition/Yazidi">/api/tradition/Yazidi</a></div>
+  </div>
+
+  <div class="ap-ep">
+    <h3><span class="m">GET</span>/api/graph.json</h3>
+    <p>Nodes and links for graph rendering (powers the Constellation map).</p>
+    <div class="params">Query: <code>tradition</code> (restrict to one), <code>limit</code> (≤8000).</div>
+    <div class="ap-try">Try: <a href="/api/graph.json?tradition=Norse">/api/graph.json?tradition=Norse</a></div>
+  </div>
+
+  <div class="ap-ep">
+    <h3><span class="m">GET</span>/api/meta</h3>
+    <p>Database counts and the controlled vocabularies (every relationship_type and tradition).</p>
+    <div class="ap-try">Try: <a href="/api/meta">/api/meta</a></div>
+  </div>
+</div>
+{% endblock %}
