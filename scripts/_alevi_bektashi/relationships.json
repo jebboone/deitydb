@@ -1,0 +1,219 @@
+[
+{
+"s": "ENT_ALV_TRINITY",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "medium",
+"ra": "The Hak-Muhammad-Ali triad is the divine center invoked at the Kirklar assembly / cem; grouped under the cohort hub as core Alevi cosmology."
+},
+{
+"s": "ENT_ALV_HAJI_BEKTASH",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "medium",
+"ra": "Haji Bektash is the eponymous pir of the tradition centered on the Kirklar/cem archetype; wired to the cohort hub."
+},
+{
+"s": "ENT_ALV_PIR_SULTAN",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "medium",
+"ra": "Pir Sultan Abdal is a saint of the same Alevi tradition whose hymns are sung in the cem rooted in the Kirklar archetype."
+},
+{
+"s": "ENT_ALV_CEM",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "medium",
+"ra": "The cem is the living enactment of the Kirklar assembly; grouped under the hub."
+},
+{
+"s": "ENT_ALV_HIZIR",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "low",
+"ra": "Hizir is a venerated holy figure of the Alevi tradition organized around the Kirklar/cem; wired to the hub."
+},
+{
+"s": "ENT_ALV_TWELVE_IMAMS",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "medium",
+"ra": "The Twelve Imams are venerated throughout Alevi devotion centered on the cem/Kirklar; grouped under the hub."
+},
+{
+"s": "ENT_ALV_KIZILBASH",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "low",
+"ra": "The Kizilbash are the historical Alevi community whose tradition centers on the Kirklar/cem archetype; wired to the hub."
+},
+{
+"s": "ENT_ALV_ABDALAN_RUM",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "low",
+"ra": "The Abdalan-i Rum are the dervish milieu of the Alevi-Bektashi tradition organized around the cem/Kirklar; grouped under the hub."
+},
+{
+"s": "ENT_ALV_SEMAH",
+"t": "associated_ritual",
+"o": "ENT_ALV_CEM",
+"c": "high",
+"ra": "The semah turning dance is performed within the cem ceremony."
+},
+{
+"s": "ENT_ALV_DEDE",
+"t": "presides_over",
+"o": "ENT_ALV_CEM",
+"c": "high",
+"ra": "The dede leads and presides over the cem gathering."
+},
+{
+"s": "ENT_ALV_DEDE",
+"t": "member_of",
+"o": "ENT_ALV_OCAK",
+"c": "high",
+"ra": "Dedes derive their authority from descent within a sacred ocak lineage."
+},
+{
+"s": "ENT_ALV_CEM",
+"t": "reception_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "high",
+"ra": "The cem is explicitly understood as the re-enactment of the primordial assembly of the Forty."
+},
+{
+"s": "ENT_ALV_MUHARREM",
+"t": "associated_ritual",
+"o": "ENT_ALV_TWELVE_IMAMS",
+"c": "high",
+"ra": "The Muharrem/matem mourning fast commemorates Husayn and the Twelve Imams."
+},
+{
+"s": "ENT_ALV_BUYRUK",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "low",
+"ra": "The Buyruk is the doctrinal corpus of the Alevi tradition centered on the cem/Kirklar; grouped under the hub."
+},
+{
+"s": "ENT_ALV_BALIM_SULTAN",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "low",
+"ra": "Balim Sultan, the pir-i sani, organized Bektashi ritual life around the cem/Kirklar archetype; wired to the hub."
+},
+{
+"s": "ENT_ALV_KAYGUSUZ",
+"t": "member_of",
+"o": "ENT_ALV_KIRKLAR",
+"c": "low",
+"ra": "Kaygusuz Abdal is a foundational Bektashi saint-poet of the tradition centered on the cem/Kirklar."
+},
+{
+"s": "ENT_ALV_KIRKLAR",
+"t": "presided_over_by",
+"o": "ENT_ISL_ALI",
+"c": "medium",
+"ra": "In Alevi-Bektashi lore the assembly of the Forty is presided over by Ali (existing ENT_ISL_ALI), the central holy figure of the tradition."
+},
+{
+"s": "ENT_ALV_TRINITY",
+"t": "reception_of",
+"o": "ENT_ISL_ALI",
+"c": "high",
+"ra": "The Alevi Hak-Muhammad-Ali triad receives Ali ibn Abi Talib (existing) as the locus of divine manifestation."
+},
+{
+"s": "ENT_ALV_TRINITY",
+"t": "reception_of",
+"o": "ENT_ISL_MUHAMMAD",
+"c": "high",
+"ra": "The Alevi triad incorporates the Prophet Muhammad (existing ENT_ISL_MUHAMMAD)."
+},
+{
+"s": "ENT_ALV_TRINITY",
+"t": "reception_of",
+"o": "ENT_ISL_ALLAH",
+"c": "high",
+"ra": "The triad's Hak (the Truth/God) is the Alevi reception of Allah (existing ENT_ISL_ALLAH)."
+},
+{
+"s": "ENT_ALV_HAJI_BEKTASH",
+"t": "reception_of",
+"o": "ENT_SUF_BEKTASH",
+"c": "high",
+"ra": "ENT_ALV_HAJI_BEKTASH is the Alevi-Bektashi veneration of the historical Hajji Bektash Wali recorded at existing ENT_SUF_BEKTASH (homonymous figure, two tradition-receptions)."
+},
+{
+"s": "ENT_ALV_HAJI_BEKTASH",
+"t": "member_of",
+"o": "ENT_SUF_BEKTASHI",
+"c": "medium",
+"ra": "Haji Bektash is the eponym and pir of the Bektashiyya order (existing ENT_SUF_BEKTASHI), the institutional wing of the Alevi-Bektashi tradition."
+},
+{
+"s": "ENT_ALV_HIZIR",
+"t": "reception_of",
+"o": "ENT_ISL_KHIDR",
+"c": "high",
+"ra": "Alevi Hizir is the reception of the immortal Khidr (existing ENT_ISL_KHIDR); homonymous figure across traditions."
+},
+{
+"s": "ENT_ALV_TWELVE_IMAMS",
+"t": "reception_of",
+"o": "ENT_ISL_INFALLIBLES",
+"c": "high",
+"ra": "The Alevi On Iki Imam are the reception of the Twelve Imams found within the Shi'a Fourteen Infallibles (existing ENT_ISL_INFALLIBLES)."
+},
+{
+"s": "ENT_ALV_TWELVE_IMAMS",
+"t": "reception_of",
+"o": "ENT_ISL_AHL_BAYT",
+"c": "medium",
+"ra": "Alevi veneration of the Imams continues devotion to the Ahl al-Bayt (existing ENT_ISL_AHL_BAYT)."
+},
+{
+"s": "ENT_ALV_TWELVE_IMAMS",
+"t": "reception_of",
+"o": "ENT_ISL_MAHDI",
+"c": "medium",
+"ra": "The twelfth of the venerated Imams is the hidden Mahdi (existing ENT_ISL_MAHDI), awaited in Alevi eschatology."
+},
+{
+"s": "ENT_ALV_MUHARREM",
+"t": "reception_of",
+"o": "ENT_ISL_HUSAYN",
+"c": "high",
+"ra": "The Muharrem/matem mourning commemorates the martyrdom of Husayn ibn Ali (existing ENT_ISL_HUSAYN) at Karbala."
+},
+{
+"s": "ENT_ALV_OCAK",
+"t": "reception_of",
+"o": "ENT_ISL_AHL_BAYT",
+"c": "medium",
+"ra": "Ocak lineages claim genealogical descent from the Ahl al-Bayt (existing ENT_ISL_AHL_BAYT), grounding dede authority."
+},
+{
+"s": "ENT_ALV_PIR_SULTAN",
+"t": "aligned_with",
+"o": "ENT_SUF_YUNUS_EMRE",
+"c": "medium",
+"ra": "Pir Sultan Abdal stands in the Anatolian Turkish saint-poet (asik) tradition exemplified by Yunus Emre (existing ENT_SUF_YUNUS_EMRE); functional/literary alignment, not identity."
+},
+{
+"s": "ENT_ALV_TRINITY",
+"t": "aligned_with",
+"o": "ENT_SUF_HALLAJ",
+"c": "low",
+"ra": "The Alevi divinization-of-Ali motif draws on the antinomian Sufi current of divine immanence exemplified by al-Hallaj's 'Ana al-Haqq' (existing ENT_SUF_HALLAJ); doctrinal alignment of theme."
+},
+{
+"s": "ENT_ALV_BUYRUK",
+"t": "reception_of",
+"o": "ENT_ISL_SADIQ",
+"c": "low",
+"ra": "The Buyruk corpus is traditionally ascribed in part to Ja'far al-Sadiq (existing ENT_ISL_SADIQ); attested ascription, not historical authorship."
+}
+]

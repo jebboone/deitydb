@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.85.0 — 2026-06-17
+
+### Completeness build-out, Phase 1 — whole missing religions + connectivity (orchestrated)
+
+First phase of the systematic completeness program (see `docs/COMPLETENESS_ROADMAP.md`),
+executed as a background multi-agent workflow (research → adversarial verify, JSON only;
+applied + QA'd here). **+135 entities, +321 relationships, +28 sources, 9 new traditions.**
+Scorecard now 3,308 entities / 6,082 relationships / 390 sources / 105 traditions.
+
+- **Nine whole missing religions** (Tier 1) — each a new tradition with a `tradition_profile`
+  row, periodized, sourced, wired into a hub + cross-tradition reception links:
+  **Yazidi** (Tawûsî Melek / the Peacock Angel + the Heptad + Sheikh Adi; the Shaytan
+  misidentification explicitly rejected), **Druze** (the five luminaries / al-hudud +
+  al-Hakim), **Yarsan / Ahl-e Haqq** (Sultan Sahak + the Haftan + the manifestation chain),
+  **Alawite / Nusayri** (the ʿAyn-Mim-Sin trinity, cross-linked to mainstream Ali/Muhammad/
+  Salman), **Bahá'í** (the Manifestations chain — Bahá'u'lláh `reception_of` Abraham/Moses/
+  Jesus/Muhammad/Zoroaster), **Samaritan** (the Taheb, Marqah, Mt Gerizim), **Latter-day
+  Saint** (Heavenly Father & Mother, Kolob, Moroni, the three degrees of glory),
+  **Sabian/Harranian** (the planetary star-cult, cross-linked to Sin of Harran & the
+  Hermetic corpus), **Alevi-Bektashi** (the Allah-Muhammad-Ali trinity, the Assembly of the
+  Forty, cross-linked to the existing Hajji Bektash).
+- **Connectivity remediation** (Tier 7) — the two long-disconnected rosters wired into their
+  cosmologies: **Mandaean** (Hayyi Rabbi → the uthras/Manda d-Hayyi/Abathur/Ptahil/Ruha; the
+  Mandaean John the Baptist cross-linked to the NT John), and **Manichaean** (a Lightworld
+  hierarchy hub + new emanation/cross edges; the adversarial verifier dropped 24 proposed
+  edges that duplicated or contradicted the cohort's already-existing 54 edges). **Zurvan**'s
+  twin-birth myth (parent of both Ohrmazd and Ahriman) + its two time-aspects.
+- **Data quality** — normalized 23 case-variant `entity_type` labels (god/God, goddess/
+  Goddess, …) to a single casing so type-faceted views stop double-counting.
+
+All applied via committed generators; integrity-gated to 0 rejected / orphan / unsourced /
+unperiodized / rationale-less / orphan-source / unreviewed-duplicate.
+
 ## v1.84.2 — 2026-06-17
 
 ### Traceability backfill — the dataset is now fully clean (`scripts/qa_v1_84_2.sql`)

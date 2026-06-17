@@ -1,0 +1,149 @@
+[
+{
+"s": "ENT_YRS_PIR_BENJAMIN",
+"t": "member_of",
+"o": "ENT_YRS_HAFTAN",
+"c": "high",
+"ra": "Pir Benjamin (Binyamin) is the foremost of the Haftan in Yarsan tradition (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_DAWUD",
+"t": "member_of",
+"o": "ENT_YRS_HAFTAN",
+"c": "high",
+"ra": "Dawud is counted among the Seven (Haftan) in the Sultan Sahak cycle (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_PIR_MUSI",
+"t": "member_of",
+"o": "ENT_YRS_HAFTAN",
+"c": "high",
+"ra": "Pir Musi is one of the Haftan, with a recording/scribe function (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_MOSTAFA_DAWAN",
+"t": "member_of",
+"o": "ENT_YRS_HAFTAN",
+"c": "high",
+"ra": "Mostafa Dawan is counted among the Haftan (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_RAMZBAR",
+"t": "member_of",
+"o": "ENT_YRS_HAFTAN",
+"c": "medium",
+"ra": "Ramzbar, the female holy figure, is associated with the Haftan cycle of Sultan Sahak (Hamzeh'ee, Mir-Hosseini)."
+},
+{
+"s": "ENT_YRS_HAFTAWANE",
+"t": "member_of",
+"o": "ENT_YRS_HAFTAN",
+"c": "medium",
+"ra": "The Haftawane (Seven Other) form the secondary order ranked beneath the Haftan in Yarsan angelology (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_SULTAN_SAHAK",
+"t": "presides_over",
+"o": "ENT_YRS_HAFTAN",
+"c": "high",
+"ra": "Sultan Sahak, the central manifestation, gathers and presides over the Haftan of his cosmic cycle (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_SULTAN_SAHAK",
+"t": "reception_of",
+"o": "ENT_YRS_SHAH_KHOSHIN",
+"c": "high",
+"ra": "Sultan Sahak is the manifestation of the Divine Essence succeeding Shah Khoshin in the Yarsan chain of mazhariyya (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_SHAH_KHOSHIN",
+"t": "reception_of",
+"o": "ENT_ISL_ALI",
+"c": "high",
+"ra": "In the Yarsan chain of manifestations the theophany passes Khawandagar -> Ali -> Shah Khoshin; Shah Khoshin re-manifests the Essence borne by Ali (Hamzeh'ee, Mir-Hosseini). Object ENT_ISL_ALI verified existing."
+},
+{
+"s": "ENT_ISL_ALI",
+"t": "reception_of",
+"o": "ENT_YRS_KHAWANDAGAR",
+"c": "medium",
+"ra": "Yarsan doctrine reinterprets the historical Imam Ali (existing ENT_ISL_ALI) as a manifestation of the Divine Essence succeeding the primordial Khawandagar in the chain of mazhariyya (Hamzeh'ee). Same entity, reinterpreted by Yarsan theology."
+},
+{
+"s": "ENT_YRS_SULTAN_SAHAK",
+"t": "embodies",
+"o": "ENT_YRS_DIVINE_ESSENCE",
+"c": "high",
+"ra": "Sultan Sahak is held to be a human manifestation (mazhar) embodying the hidden Divine Essence (Dhat) (Mir-Hosseini)."
+},
+{
+"s": "ENT_YRS_KHAWANDAGAR",
+"t": "embodies",
+"o": "ENT_YRS_DIVINE_ESSENCE",
+"c": "medium",
+"ra": "Khawandagar is the first manifestation embodying the Divine Essence in Yarsan cosmology (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_SHAH_KHOSHIN",
+"t": "embodies",
+"o": "ENT_YRS_DIVINE_ESSENCE",
+"c": "medium",
+"ra": "Shah Khoshin embodies the Divine Essence as one theophany in the manifestation chain (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_MAZHARIYYA",
+"t": "emanates_from",
+"o": "ENT_YRS_DIVINE_ESSENCE",
+"c": "medium",
+"ra": "The doctrine of mazhariyya describes how successive manifestations issue from the hidden Divine Essence (Mir-Hosseini)."
+},
+{
+"s": "ENT_YRS_JAM",
+"t": "ritual_associated_with",
+"o": "ENT_YRS_SULTAN_SAHAK",
+"c": "high",
+"ra": "The jam assembly is instituted in the cycle of Sultan Sahak and centers Yarsan communal worship (Mir-Hosseini). Direction corrected to ritual->figure per DB convention."
+},
+{
+"s": "ENT_YRS_HAFTAN",
+"t": "participates_in_creation",
+"o": "ENT_YRS_JAM",
+"c": "medium",
+"ra": "The archetypal first jam is held among the Haftan at creation in the Kalam, the model for the earthly assembly (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_KALAM",
+"t": "transmits",
+"o": "ENT_YRS_MAZHARIYYA",
+"c": "medium",
+"ra": "The Kalam-e Saranjam records and transmits the doctrine of successive manifestations (Hamzeh'ee)."
+},
+{
+"s": "ENT_YRS_KALAM",
+"t": "reveals",
+"o": "ENT_YRS_SULTAN_SAHAK",
+"c": "low",
+"ra": "The acts and teaching of Sultan Sahak are preserved and revealed through the Kalam-e Saranjam corpus (Hamzeh'ee). Direction corrected to revealer->revealed (the prior revealed_by edge was backwards and that verb is unused in the DB)."
+},
+{
+"s": "ENT_YRS_HAFTAN",
+"t": "aligned_with",
+"o": "ENT_SUF_BEKTASHI",
+"c": "medium",
+"ra": "Yarsan heptadic angelology and ghulat manifestation theology are functionally aligned with the Alevi-Bektashi heterodox current (van Bruinessen). Object ENT_SUF_BEKTASHI verified existing."
+},
+{
+"s": "ENT_YRS_SULTAN_SAHAK",
+"t": "aligned_with",
+"o": "ENT_SUF_BEKTASH",
+"c": "low",
+"ra": "Sultan Sahak as a venerated founder-manifestation parallels Hajji Bektash Wali in the comparative typology of Kurdish/Anatolian heterodoxy (van Bruinessen). Object ENT_SUF_BEKTASH verified existing."
+},
+{
+"s": "ENT_YRS_DIVINE_ESSENCE",
+"t": "aligned_with",
+"o": "ENT_SUF_HALLAJ",
+"c": "low",
+"ra": "Yarsan tradition reveres al-Hallaj as a figure of the manifest Haqq; his 'ana al-Haqq' resonates with Yarsan manifestation doctrine (Hamzeh'ee). Object ENT_SUF_HALLAJ verified existing."
+}
+]

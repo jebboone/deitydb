@@ -1,0 +1,178 @@
+[
+{
+"id": "ENT_ALV_KIRKLAR",
+"name": "Kirklar Meclisi (Assembly of the Forty)",
+"type": "Saint collective",
+"trad": "Alevi",
+"dom": "mystical assembly / archetype of the cem",
+"conf": "B",
+"note": "The Forty Saints (Kirklar) whose primordial assembly, presided over by Ali, is the mythic archetype of the cem ceremony; central Alevi-Bektashi collective. Attested in Birge and Alevi buyruk lore. Cohort hub.",
+"src": "SRC_BIRGE_BEKTASHI",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_TRINITY",
+"name": "Allah-Muhammad-Ali (the Alevi triad)",
+"type": "Theological category",
+"trad": "Alevi",
+"dom": "divine unity expressed as a triadic formula",
+"conf": "B",
+"note": "The Alevi-Bektashi understanding of divine unity expressed in the formula Hak-Muhammad-Ali, in which Ali is venerated as the locus of divine manifestation; doctrinally distinct from Sunni Islam. Attested in Birge and Dressler.",
+"src": "SRC_DRESSLER_WRITING",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_HAJI_BEKTASH",
+"name": "Haji Bektash Veli (Alevi-Bektashi veneration)",
+"type": "Saint",
+"trad": "Alevi",
+"dom": "eponymous saint / pir of the path",
+"conf": "B",
+"note": "The 13th-c. Anatolian saint venerated as pir and patron of the Alevi-Bektashi path; the Alevi reception of the historical figure recorded at ENT_SUF_BEKTASH. Velayetname hagiography; Birge.",
+"src": "SRC_BIRGE_BEKTASHI",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_PIR_SULTAN",
+"name": "Pir Sultan Abdal",
+"type": "Mystic/saint",
+"trad": "Alevi",
+"dom": "saint-poet / martyr of the tradition",
+"conf": "B",
+"note": "16th-c. Alevi saint-poet (asik) executed by Ottoman authorities; his nefes hymns are central to Alevi devotional repertoire and identity. Attested poet of the Kizilbash-Alevi milieu.",
+"src": "SRC_SHANKLAND_ALEVIS",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_CEM",
+"name": "Cem (the gathering)",
+"type": "Ritual category",
+"trad": "Alevi",
+"dom": "core communal worship ceremony",
+"conf": "B",
+"note": "The central Alevi-Bektashi communal worship gathering led by a dede, modeled on the primordial Kirklar assembly; includes the semah. Publicly attested ritual category (interiors not modeled). Shankland; Birge.",
+"src": "SRC_SHANKLAND_ALEVIS",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_SEMAH",
+"name": "Semah",
+"type": "Ritual category",
+"trad": "Alevi",
+"dom": "turning ritual dance within the cem",
+"conf": "B",
+"note": "The ritual turning movement performed during the cem, understood as imitating the turning of the Forty and the cosmos. UNESCO-recognized; publicly attested. Birge.",
+"src": "SRC_BIRGE_BEKTASHI",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_DEDE",
+"name": "Dede (spiritual guide)",
+"type": "Spiritual office",
+"trad": "Alevi",
+"dom": "hereditary religious office leading the community",
+"conf": "B",
+"note": "The hereditary spiritual leader of an Alevi community, drawn from sacred lineages (ocak) tracing descent to the Ahl al-Bayt; presides over the cem. Attested institution; Shankland, Dressler.",
+"src": "SRC_SHANKLAND_ALEVIS",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_OCAK",
+"name": "Ocak (sacred lineage)",
+"type": "Spiritual/social category",
+"trad": "Alevi",
+"dom": "hereditary holy lineage system",
+"conf": "B",
+"note": "The system of sacred hearths/lineages from which dedes descend, claiming genealogical connection to the Imams and saints; organizes Alevi sacred authority. Attested; Dressler.",
+"src": "SRC_DRESSLER_WRITING",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_HIZIR",
+"name": "Hizir (Alevi veneration)",
+"type": "Holy figure",
+"trad": "Alevi",
+"dom": "immortal helper, patron of the distressed",
+"conf": "B",
+"note": "The Alevi veneration of Hizir (Khidr) as the ever-living helper invoked in distress, honored with the Hizir fast; the Alevi reception of the figure at ENT_ISL_KHIDR. Attested in Alevi practice.",
+"src": "SRC_SHANKLAND_ALEVIS",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_TWELVE_IMAMS",
+"name": "The Twelve Imams (Alevi veneration / On Iki Imam)",
+"type": "Holy collective",
+"trad": "Alevi",
+"dom": "venerated Imams central to Alevi devotion",
+"conf": "B",
+"note": "The Twelve Imams as venerated in Alevi-Bektashi devotion (On Iki Imam), commemorated in the Muharrem mourning and matem fast; the Alevi reception of the Shi'a Imamate (cf. ENT_ISL_INFALLIBLES / ENT_ISL_AHL_BAYT). Attested.",
+"src": "SRC_DRESSLER_WRITING",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_MUHARREM",
+"name": "Muharrem / Matem (Alevi mourning)",
+"type": "Ritual/devotional category",
+"trad": "Alevi",
+"dom": "mourning observance for Husayn and the Imams",
+"conf": "C",
+"note": "The Alevi twelve-day Muharrem mourning fast (matem) commemorating Husayn's martyrdom at Karbala and the Twelve Imams, ended by Ashura. Publicly attested observance; Shankland.",
+"src": "SRC_SHANKLAND_ALEVIS",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_BUYRUK",
+"name": "Buyruk (the Book of Command)",
+"type": "Sacred text/principle",
+"trad": "Alevi",
+"dom": "doctrinal/catechetical text corpus",
+"conf": "C",
+"note": "The Buyruk, the body of Alevi-Bektashi doctrinal texts transmitting belief, the cem, and the path; ascribed in tradition to Ja'far al-Sadiq / Shaykh Safi lineages. Attested manuscript tradition.",
+"src": "SRC_DRESSLER_WRITING",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_KIZILBASH",
+"name": "Kizilbash (Qizilbash, Alevi forebears)",
+"type": "Movement",
+"trad": "Alevi",
+"dom": "historical Safavid-allied Anatolian devotees",
+"conf": "B",
+"note": "The Kizilbash, the Safavid-allied heterodox Anatolian Turkmen devotees of Ali and the Safavid shaykhs, the historical antecedent of modern Alevis. Attested; Dressler, Karamustafa.",
+"src": "SRC_DRESSLER_WRITING",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_ABDALAN_RUM",
+"name": "Abdalan-i Rum (Abdals of Anatolia)",
+"type": "Initiate order",
+"trad": "Alevi",
+"dom": "antinomian Anatolian dervish milieu",
+"conf": "C",
+"note": "The wandering antinomian dervish groups of medieval Anatolia among whom the Bektashi tradition crystallized; matrix of Alevi-Bektashi formation. Attested; Karamustafa, God's Unruly Friends.",
+"src": "SRC_KARAMUSTAFA_GODS",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_KAYGUSUZ",
+"name": "Kaygusuz Abdal",
+"type": "Sufi poet",
+"trad": "Alevi",
+"dom": "early Bektashi saint-poet",
+"conf": "C",
+"note": "Late-14th/15th-c. dervish poet, a foundational Bektashi literary saint whose verse shaped the tradition's hymnody. Attested Bektashi poet; Birge, Karamustafa.",
+"src": "SRC_KARAMUSTAFA_GODS",
+"per": "PER_ALEVI"
+},
+{
+"id": "ENT_ALV_BALIM_SULTAN",
+"name": "Balim Sultan",
+"type": "Founder/saint",
+"trad": "Alevi",
+"dom": "organizer (pir-i sani) of the Bektashi order",
+"conf": "C",
+"note": "Early-16th-c. saint called the 'second pir' (pir-i sani) credited with systematizing Bektashi ritual and organization at the Pir Evi (Haji Bektash lodge). Attested; Birge.",
+"src": "SRC_BIRGE_BEKTASHI",
+"per": "PER_ALEVI"
+}
+]

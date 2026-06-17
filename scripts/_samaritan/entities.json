@@ -1,0 +1,178 @@
+[
+{
+"id": "ENT_SAM_PANTHEON",
+"name": "Samaritan Pantheon / Sacred Cohort",
+"type": "Collective",
+"trad": "Samaritan",
+"dom": "Samaritan Israelite religion centered on Mount Gerizim",
+"conf": "B",
+"note": "Organizing hub for the Samaritan tradition (deity, prophets, priests, eschatology, sacred realm). Modeling device, not an attested 'pantheon' — Samaritanism is strictly monotheistic.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_SHEMA",
+"name": "Shema (the One God of the Samaritans)",
+"type": "Deity",
+"trad": "Samaritan",
+"dom": "The one God of Israel as worshipped on Mount Gerizim",
+"conf": "B",
+"note": "Samaritans confess strict monotheism of the God of Israel; commonly invoke 'Shema' (the Name / the One) and the tetragrammaton-equivalent of Israelite faith. Same God as Israelite Yahweh; distinct cult on Gerizim. Attested in Samaritan liturgy and Pummer.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_MOSES",
+"name": "Moses (Samaritan: Moshe, the supreme prophet)",
+"type": "Prophet / Lawgiver",
+"trad": "Samaritan",
+"dom": "Lawgiver and unique mediator of the Torah",
+"conf": "B",
+"note": "In Samaritan theology Moses is the unsurpassable prophet, sole revealer of the complete Torah, sometimes given pre-cosmic dignity in Memar Marqah; no later prophet is canonical. Homonym/reception of the Israelite Moses (ENT_ISR_MOSES).",
+"src": "SRC_MEMAR_MARQAH",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_TAHEB",
+"name": "Taheb (the Samaritan Restorer)",
+"type": "Eschatological figure",
+"trad": "Samaritan",
+"dom": "Eschatological restorer and prophet-like-Moses",
+"conf": "B",
+"note": "The Taheb ('the one who returns/restores') is the Samaritan messianic figure, a prophet like Moses (Deut 18:18) who will restore true worship on Gerizim and the hidden cult vessels; attested in Samaritan sources and discussed by Pummer and Anderson-Giles. Functional analogue of the Jewish Messiah.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_MARQAH",
+"name": "Marqah (Marqe)",
+"type": "Theologian",
+"trad": "Samaritan",
+"dom": "Foundational Samaritan theologian and poet",
+"conf": "B",
+"note": "4th-c. CE Samaritan theologian, traditional author of the Memar Marqah (Tibat Marqe) and liturgical poems; the great systematizer of Samaritan theology of Moses and the Glory. Historical figure.",
+"src": "SRC_MEMAR_MARQAH",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_BABA_RABBA",
+"name": "Baba Rabba",
+"type": "Reformer / Leader",
+"trad": "Samaritan",
+"dom": "Religious-political reformer of the Samaritan community",
+"conf": "B",
+"note": "4th-c. CE Samaritan reformer who reorganized the community, established sages/hukama and synagogue worship, traditionally associated with a Samaritan revival; historical figure attested in the Samaritan chronicles and Anderson-Giles.",
+"src": "SRC_ANDERSON_GILES_KEEPERS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_HIGH_PRIEST",
+"name": "Samaritan High Priest (the High-Priestly Line)",
+"type": "Office / Lineage",
+"trad": "Samaritan",
+"dom": "Hereditary high priesthood of the Samaritans",
+"conf": "B",
+"note": "The hereditary Samaritan high priesthood, claimed from Aaron/Levi via Phinehas (and after that line's end, from the Levitical line of Uzziel); the living head of the community on Gerizim. Continuous office, well attested.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_PHINEHAS",
+"name": "Phinehas (Samaritan priestly ancestor)",
+"type": "Priest / Ancestor",
+"trad": "Samaritan",
+"dom": "Eponymous ancestor of the high-priestly line",
+"conf": "C",
+"note": "Phinehas son of Eleazar son of Aaron is venerated as the zealous priest and ancestor of the Samaritan high-priestly line (the 'Pinhasite' priesthood). Pentateuchal figure read through Samaritan priestly genealogy.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_GERIZIM",
+"name": "Mount Gerizim (Har Brakha / Argarizim)",
+"type": "Sacred place",
+"trad": "Samaritan",
+"dom": "The chosen sacred mountain and cult-center",
+"conf": "B",
+"note": "Mount Gerizim is the Samaritan 'chosen place' (the tenth commandment in the Samaritan Decalogue), site of the temple/altar, the Passover sacrifice, and the eschatological restoration; the central sacred realm of the religion. Archaeologically and textually attested.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_GLORY",
+"name": "The Glory (Kavod / the divine Light)",
+"type": "Divine attribute / Manifestation",
+"trad": "Samaritan",
+"dom": "The manifest divine Glory/Light revealed to Moses",
+"conf": "C",
+"note": "Samaritan theology (esp. Memar Marqah) develops the divine Glory/Light (the Kavod) as God's manifestation at Sinai and upon Moses' face; a mediating presence akin to but distinct from the Jewish Shekhinah/Kavod. Attested in Marqah.",
+"src": "SRC_MEMAR_MARQAH",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_ANGEL",
+"name": "The Angel of the LORD (Samaritan Malak)",
+"type": "Angelic being",
+"trad": "Samaritan",
+"dom": "Created angelic mediator of the divine presence",
+"conf": "C",
+"note": "Samaritan theology recognizes the Angel/Malak as a created mediator of God's word and presence (e.g., the Angel at the burning bush and Sinai), within a strictly monotheistic framework; discussed in Pummer and Memar Marqah.",
+"src": "SRC_MEMAR_MARQAH",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_TORAH",
+"name": "Samaritan Torah (Samaritan Pentateuch)",
+"type": "Scripture",
+"trad": "Samaritan",
+"dom": "The sole Samaritan scriptural canon",
+"conf": "B",
+"note": "The Samaritan Pentateuch (Samaritan Hebrew Torah) is the entire Samaritan canon, with distinctive readings (notably the Gerizim commandment); the Abisha Scroll is its most venerated copy. Well attested textual tradition.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_PASSOVER",
+"name": "Samaritan Passover Sacrifice (Pesach on Gerizim)",
+"type": "Ritual",
+"trad": "Samaritan",
+"dom": "Annual paschal lamb sacrifice on Mount Gerizim",
+"conf": "B",
+"note": "The living Samaritan Passover sacrifice on Mount Gerizim is the most distinctive surviving Israelite blood-sacrifice; publicly attested annual ritual. Modeled only at the level of public observance, not ritual interiors.",
+"src": "SRC_ANDERSON_GILES_KEEPERS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_JOSEPH",
+"name": "Joseph (Samaritan ancestor of the Josephite tribes)",
+"type": "Patriarch",
+"trad": "Samaritan",
+"dom": "Tribal ancestor of Ephraim and Manasseh",
+"conf": "C",
+"note": "Samaritans identify principally as descendants of Joseph through Ephraim and Manasseh (the 'B'nei Yosef'); Joseph and Gerizim/Shechem are central to their self-understanding. Reception of the Pentateuchal Joseph (ENT_ISR_JOSEPH).",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_JOSHUA",
+"name": "Joshua (Samaritan: builder of the Gerizim altar)",
+"type": "Hero / Leader",
+"trad": "Samaritan",
+"dom": "Conqueror who established worship at Gerizim/Shechem",
+"conf": "C",
+"note": "In Samaritan tradition (incl. the Samaritan Book of Joshua/Chronicle) Joshua leads Israel into the land and establishes the sanctuary at Gerizim near Shechem, inaugurating the period of Divine Favor (Rahuta). Reception of the Israelite Joshua (ENT_ISR_JOSHUA).",
+"src": "SRC_ANDERSON_GILES_KEEPERS",
+"per": "PER_SAMARITAN"
+},
+{
+"id": "ENT_SAM_RAHUTA_FANUTA",
+"name": "Rahuta and Fanuta (Favor and Disfavor)",
+"type": "Cosmological concept",
+"trad": "Samaritan",
+"dom": "Periodized divine Favor/Turning-away of history",
+"conf": "C",
+"note": "Samaritan periodization of sacred history into Rahuta (the era of divine Favor, from Moses/Joshua) and Fanuta (the era of divine Disfavor/turning-away, beginning with Eli's schism), to be ended by the Taheb. Attested in Samaritan chronicles and Pummer.",
+"src": "SRC_PUMMER_SAMARITANS",
+"per": "PER_SAMARITAN"
+}
+]

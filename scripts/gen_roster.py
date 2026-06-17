@@ -38,16 +38,18 @@ if sources:
     out.append(",\n".join(" (%s,%s,%s,%s)"%(q(a),q(b),q(c),q(d)) for (a,b,c,d) in sources)+"\nON CONFLICT (source_id) DO NOTHING;")
     out.append("")
 out.append("CREATE TEMP TABLE _e(id text,name text,etype text,cat text,trad text,dom text,conf text,note text) ON COMMIT DROP;")
-out.append("INSERT INTO _e VALUES")
-out.append(",\n".join(" (%s,%s,%s,%s,%s,%s,%s,%s)"%(q(e["id"]),q(e["name"]),q(e["type"]),q(e["cat"]),q(e["trad"]),q(e["dom"]),q(econf(e["conf"])),q(e["note"])) for e in ents)+";")
+if ents:
+    out.append("INSERT INTO _e VALUES")
+    out.append(",\n".join(" (%s,%s,%s,%s,%s,%s,%s,%s)"%(q(e["id"]),q(e["name"]),q(e["type"]),q(e.get("cat") or e.get("type","")),q(e["trad"]),q(e.get("dom","")),q(econf(e["conf"])),q(e.get("note",""))) for e in ents)+";")
 out.append("""
 INSERT INTO entities (entity_id,canonical_name,tradition,entity_type,category,primary_domains,cult_scope,evidence_confidence,review_status,inclusion_basis,earth_association_score,chthonic_flag,serpent_flag,short_note)
 SELECT id,name,trad,etype,cat,dom,'devotional',conf,'candidate_verified_name','Roster build via gen_roster.py (see CHANGELOG/git for release)',0,false,false,note FROM _e
 ON CONFLICT (entity_id) DO NOTHING;
 """)
 out.append("CREATE TEMP TABLE _s(id text,src text,etype text,note text) ON COMMIT DROP;")
-out.append("INSERT INTO _s VALUES")
-out.append(",\n".join(" (%s,%s,%s,%s)"%(q(e["id"]),q(e["src"]),q("primary text attestation" if e["src"] in PRIMARY else "scholarly attestation"),q("attestation")) for e in ents)+";")
+if ents:
+    out.append("INSERT INTO _s VALUES")
+    out.append(",\n".join(" (%s,%s,%s,%s)"%(q(e["id"]),q(e["src"]),q("primary text attestation" if e["src"] in PRIMARY else "scholarly attestation"),q("attestation")) for e in ents)+";")
 out.append("""
 INSERT INTO entity_sources (entity_id,source_id,evidence_type,source_note)
 SELECT s.id,s.src,s.etype,s.note FROM _s s
@@ -55,8 +57,9 @@ WHERE EXISTS(SELECT 1 FROM entities e WHERE e.entity_id=s.id) AND EXISTS(SELECT 
 ON CONFLICT DO NOTHING;
 """)
 out.append("CREATE TEMP TABLE _p(id text,per text,note text) ON COMMIT DROP;")
-out.append("INSERT INTO _p VALUES")
-out.append(",\n".join(" (%s,%s,%s)"%(q(e["id"]),q(e["per"]),q(e["note"])) for e in ents)+";")
+if ents:
+    out.append("INSERT INTO _p VALUES")
+    out.append(",\n".join(" (%s,%s,%s)"%(q(e["id"]),q(e["per"]),q(e["note"])) for e in ents)+";")
 out.append("""
 INSERT INTO entity_periods (entity_id,period_id,confidence,rationale,source_id,review_status)
 SELECT p.id,p.per,'high',p.note,(SELECT es.source_id FROM entity_sources es WHERE es.entity_id=p.id ORDER BY es.source_id LIMIT 1),'reviewed'
