@@ -42,7 +42,7 @@ out.append("INSERT INTO _e VALUES")
 out.append(",\n".join(" (%s,%s,%s,%s,%s,%s,%s,%s)"%(q(e["id"]),q(e["name"]),q(e["type"]),q(e["cat"]),q(e["trad"]),q(e["dom"]),q(econf(e["conf"])),q(e["note"])) for e in ents)+";")
 out.append("""
 INSERT INTO entities (entity_id,canonical_name,tradition,entity_type,category,primary_domains,cult_scope,evidence_confidence,review_status,inclusion_basis,earth_association_score,chthonic_flag,serpent_flag,short_note)
-SELECT id,name,trad,etype,cat,dom,'devotional',conf,'candidate_verified_name','High/late-medieval depth build (v1.80.0)',0,false,false,note FROM _e
+SELECT id,name,trad,etype,cat,dom,'devotional',conf,'candidate_verified_name','Roster build via gen_roster.py (see CHANGELOG/git for release)',0,false,false,note FROM _e
 ON CONFLICT (entity_id) DO NOTHING;
 """)
 out.append("CREATE TEMP TABLE _s(id text,src text,etype text,note text) ON COMMIT DROP;")

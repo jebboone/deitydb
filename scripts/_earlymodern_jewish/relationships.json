@@ -1,0 +1,65 @@
+[
+  {"s": "ENT_JM_CORDOVERO", "t": "member_of", "o": "ENT_JM_SAFED_KABBALISTS", "c": "high", "ra": "Cordovero led the systematizing school of Kabbalah in 16th-c Safed."},
+  {"s": "ENT_JM_LURIA", "t": "member_of", "o": "ENT_JM_SAFED_KABBALISTS", "c": "high", "ra": "Luria, the Ari, was the central master of the Safed circle."},
+  {"s": "ENT_JM_VITAL", "t": "member_of", "o": "ENT_JM_SAFED_KABBALISTS", "c": "high", "ra": "Vital was a leading member of Luria's Safed circle."},
+  {"s": "ENT_JM_KARO", "t": "member_of", "o": "ENT_JM_SAFED_KABBALISTS", "c": "high", "ra": "Karo was a pillar of the Safed mystical-halakhic community."},
+  {"s": "ENT_JM_ALKABETZ", "t": "member_of", "o": "ENT_JM_SAFED_KABBALISTS", "c": "high", "ra": "Alkabetz, author of Lekhah Dodi, belonged to the Safed circle."},
+
+  {"s": "ENT_JM_LURIA", "t": "taught_by", "o": "ENT_JM_CORDOVERO", "c": "medium", "ra": "Luria briefly studied with Cordovero in Safed; his system built upon and superseded Cordovero's."},
+  {"s": "ENT_JM_VITAL", "t": "taught_by", "o": "ENT_JM_LURIA", "c": "high", "ra": "Vital was Luria's foremost disciple and the recorder of his teachings."},
+  {"s": "ENT_JM_VITAL", "t": "taught_by", "o": "ENT_JM_CORDOVERO", "c": "high", "ra": "Vital first studied Cordoverian Kabbalah before becoming Luria's disciple."},
+  {"s": "ENT_JM_CORDOVERO", "t": "taught_by", "o": "ENT_JM_ALKABETZ", "c": "high", "ra": "Alkabetz was Cordovero's teacher and brother-in-law."},
+
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_TZIMTZUM", "c": "high", "ra": "Luria taught the doctrine of Tzimtzum, the divine self-contraction."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_RESHIMU", "c": "high", "ra": "The Reshimu (residue) is a core element of Luria's cosmogony."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_KAV", "c": "high", "ra": "The Kav (ray of light entering the void) is part of Luria's emanation scheme."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_SHEVIRAH", "c": "high", "ra": "Luria taught Shevirat ha-Kelim, the breaking of the vessels."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_TIKKUN", "c": "high", "ra": "Luria taught Tikkun, the cosmic restoration."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_TOHU", "c": "high", "ra": "Olam ha-Tohu, the World of Chaos that shattered, is central to Lurianic cosmology."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_NETZOTZOT", "c": "high", "ra": "The scattered netzotzot (holy sparks) to be raised are a Lurianic doctrine."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_ADAM_KADMON", "c": "high", "ra": "Adam Kadmon, the primordial man, is a foundational Lurianic figure."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_ARIKH_ANPIN", "c": "high", "ra": "Luria's partzuf doctrine includes Arikh Anpin (the Long Face)."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_ATIKA_KADISHA", "c": "high", "ra": "Atika Kadisha (the Holy Ancient One) is a Lurianic partzuf."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_ABBA", "c": "high", "ra": "The partzuf Abba (Father) belongs to Luria's configuration of the sefirot."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_IMMA", "c": "high", "ra": "The partzuf Imma (Mother) belongs to Luria's configuration."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_ZEIR_ANPIN", "c": "high", "ra": "Zeir Anpin (the Small Face) is a central Lurianic partzuf."},
+  {"s": "ENT_JM_LURIA", "t": "reveals", "o": "ENT_JM_NUKVA", "c": "high", "ra": "Nukva (the Female) is a Lurianic partzuf paired with Zeir Anpin."},
+
+  {"s": "ENT_JM_VITAL", "t": "reveals", "o": "ENT_JM_TIKKUN", "c": "high", "ra": "Vital transmitted Luria's Tikkun doctrine in Etz Chaim."},
+  {"s": "ENT_JM_VITAL", "t": "reveals", "o": "ENT_JM_SHEVIRAH", "c": "high", "ra": "Vital recorded the Shevirat ha-Kelim teaching in Etz Chaim."},
+
+  {"s": "ENT_JM_LUZZATTO", "t": "reception_of", "o": "ENT_JM_TIKKUN", "c": "high", "ra": "Luzzatto systematized the Lurianic doctrine of Tikkun for later readers."},
+  {"s": "ENT_JM_LUZZATTO", "t": "reception_of", "o": "ENT_JM_EIN_SOF", "c": "medium", "ra": "Luzzatto's metaphysics centers on the unfolding of the Ein Sof's providence."},
+  {"s": "ENT_JM_ALKABETZ", "t": "aligned_with", "o": "ENT_JM_SHEKHINAH", "c": "high", "ra": "Alkabetz's Lekhah Dodi welcomes the Sabbath as the Shekhinah, the divine bride."},
+
+  {"s": "ENT_JM_SABBATAI_ZEVI", "t": "member_of", "o": "ENT_JM_SABBATEANS", "c": "high", "ra": "Sabbatai Zevi was the messianic figurehead of the Sabbatean movement."},
+  {"s": "ENT_JM_NATHAN_GAZA", "t": "member_of", "o": "ENT_JM_SABBATEANS", "c": "high", "ra": "Nathan of Gaza was the prophet-theologian of the Sabbatean movement."},
+  {"s": "ENT_JM_NATHAN_GAZA", "t": "aligned_with", "o": "ENT_JM_SABBATAI_ZEVI", "c": "high", "ra": "Nathan of Gaza proclaimed Sabbatai Zevi as the messiah and built the theology around him."},
+  {"s": "ENT_JM_SABBATEANS", "t": "reception_of", "o": "ENT_JM_TIKKUN", "c": "high", "ra": "Sabbatean messianism interpreted Tikkun and Lurianic redemption as fulfilled in Sabbatai Zevi."},
+  {"s": "ENT_JM_NATHAN_GAZA", "t": "reception_of", "o": "ENT_JM_QLIPHOTH", "c": "medium", "ra": "Nathan's theology of the apostasy framed the messiah's descent among the qliphoth to raise the sparks."},
+
+  {"s": "ENT_JM_BESHT", "t": "member_of", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "The Baal Shem Tov is the founder of the Hasidic movement."},
+  {"s": "ENT_JM_DOV_BER", "t": "member_of", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "Dov Ber, the Maggid, succeeded the Baal Shem Tov as leader of Hasidism."},
+  {"s": "ENT_JM_SCHNEUR_ZALMAN", "t": "member_of", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "Schneur Zalman founded the Chabad branch of Hasidism."},
+  {"s": "ENT_JM_NACHMAN", "t": "member_of", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "Nachman founded the Breslov branch of Hasidism."},
+  {"s": "ENT_JM_LEVI_YITZHAK", "t": "member_of", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "Levi Yitzhak of Berditchev was a leading Hasidic rebbe."},
+  {"s": "ENT_JM_ELIMELECH", "t": "member_of", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "Elimelech of Lizhensk shaped Polish-Galician Hasidism."},
+  {"s": "ENT_JM_JACOB_JOSEPH", "t": "member_of", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "Jacob Joseph of Polonne was the first to record the Baal Shem Tov's teachings in print."},
+
+  {"s": "ENT_JM_DOV_BER", "t": "taught_by", "o": "ENT_JM_BESHT", "c": "high", "ra": "Dov Ber was the chief disciple of the Baal Shem Tov."},
+  {"s": "ENT_JM_JACOB_JOSEPH", "t": "taught_by", "o": "ENT_JM_BESHT", "c": "high", "ra": "Jacob Joseph was a direct disciple of the Baal Shem Tov."},
+  {"s": "ENT_JM_SCHNEUR_ZALMAN", "t": "taught_by", "o": "ENT_JM_DOV_BER", "c": "high", "ra": "Schneur Zalman was a disciple of Dov Ber, the Maggid."},
+  {"s": "ENT_JM_LEVI_YITZHAK", "t": "taught_by", "o": "ENT_JM_DOV_BER", "c": "high", "ra": "Levi Yitzhak of Berditchev was a disciple of Dov Ber."},
+  {"s": "ENT_JM_ELIMELECH", "t": "taught_by", "o": "ENT_JM_DOV_BER", "c": "high", "ra": "Elimelech of Lizhensk was a disciple of Dov Ber."},
+
+  {"s": "ENT_JM_NACHMAN", "t": "child_of", "o": "ENT_JM_BESHT", "c": "medium", "ra": "Nachman of Breslov was the great-grandson of the Baal Shem Tov (descent line, not literal parent)."},
+
+  {"s": "ENT_JM_SCHNEUR_ZALMAN", "t": "reception_of", "o": "ENT_JM_TZIMTZUM", "c": "high", "ra": "The Tanya develops a distinctive contemplative reading of the Lurianic Tzimtzum."},
+  {"s": "ENT_JM_SCHNEUR_ZALMAN", "t": "reception_of", "o": "ENT_JM_EIN_SOF", "c": "high", "ra": "Chabad theology centers on the immanence of the Ein Sof within creation."},
+  {"s": "ENT_JM_BESHT", "t": "reception_of", "o": "ENT_JM_NETZOTZOT", "c": "high", "ra": "The Baal Shem Tov popularized the Lurianic raising of holy sparks (netzotzot) in everyday life."},
+
+  {"s": "ENT_JM_VILNA_GAON", "t": "opposes", "o": "ENT_JM_HASIDISM", "c": "high", "ra": "The Vilna Gaon led the Mitnagdim and issued bans against the Hasidic movement."},
+  {"s": "ENT_JM_CHAYYIM_VOLOZHIN", "t": "taught_by", "o": "ENT_JM_VILNA_GAON", "c": "high", "ra": "Chayyim of Volozhin was the foremost disciple of the Vilna Gaon."},
+  {"s": "ENT_JM_CHAYYIM_VOLOZHIN", "t": "opposes", "o": "ENT_JM_HASIDISM", "c": "medium", "ra": "Chayyim of Volozhin gave the Mitnagdic opposition to Hasidism its theological framework in Nefesh ha-Chayyim."},
+  {"s": "ENT_JM_VILNA_GAON", "t": "reception_of", "o": "ENT_JM_SEFIROT", "c": "medium", "ra": "The Vilna Gaon was a serious kabbalist who commented on the sefirotic system within the Lithuanian tradition."}
+]

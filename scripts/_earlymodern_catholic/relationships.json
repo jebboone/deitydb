@@ -1,0 +1,71 @@
+[
+  {"s":"ENT_EMC_IGNATIUS_LOYOLA","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Ignatius of Loyola founded and led the Society of Jesus (1540)."},
+  {"s":"ENT_EMC_FRANCIS_XAVIER","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Francis Xavier was a founding companion of the Society of Jesus."},
+  {"s":"ENT_EMC_PETER_FABER","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Peter Faber was a founding companion of the Society of Jesus."},
+  {"s":"ENT_EMC_FRANCIS_BORGIA","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Francis Borgia was the third Superior General of the Society of Jesus."},
+  {"s":"ENT_EMC_PETER_CANISIUS","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Peter Canisius was a leading early Jesuit."},
+  {"s":"ENT_EMC_ROBERT_BELLARMINE","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Robert Bellarmine was a Jesuit cardinal and theologian."},
+  {"s":"ENT_EMC_ALOYSIUS_GONZAGA","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Aloysius Gonzaga was a Jesuit novice."},
+  {"s":"ENT_EMC_STANISLAUS_KOSTKA","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Stanislaus Kostka was a Jesuit novice."},
+  {"s":"ENT_EMC_PETER_CLAVER","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Peter Claver was a Jesuit missionary at Cartagena."},
+  {"s":"ENT_EMC_ISAAC_JOGUES","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Isaac Jogues was a Jesuit missionary in New France."},
+  {"s":"ENT_EMC_JEAN_DE_BREBEUF","t":"member_of","o":"ENT_EMC_JESUITS","c":"high","ra":"Jean de Brébeuf was a Jesuit missionary to the Huron."},
+
+  {"s":"ENT_EMC_ISAAC_JOGUES","t":"member_of","o":"ENT_EMC_NORTH_AMERICAN_MARTYRS","c":"high","ra":"Isaac Jogues is one of the eight North American Martyrs."},
+  {"s":"ENT_EMC_JEAN_DE_BREBEUF","t":"member_of","o":"ENT_EMC_NORTH_AMERICAN_MARTYRS","c":"high","ra":"Jean de Brébeuf is one of the eight North American Martyrs."},
+
+  {"s":"ENT_EMC_TERESA_AVILA","t":"member_of","o":"ENT_EMC_DISCALCED_CARMELITES","c":"high","ra":"Teresa of Ávila founded the Discalced Carmelite reform."},
+  {"s":"ENT_EMC_JOHN_CROSS","t":"member_of","o":"ENT_EMC_DISCALCED_CARMELITES","c":"high","ra":"John of the Cross co-founded the Discalced Carmelite reform."},
+  {"s":"ENT_EMC_TERESA_AVILA","t":"aligned_with","o":"ENT_EMC_JOHN_CROSS","c":"high","ra":"Teresa of Ávila and John of the Cross were co-reformers of the Carmelite order and spiritual collaborators."},
+
+  {"s":"ENT_EMC_VINCENT_DE_PAUL","t":"aligned_with","o":"ENT_EMC_LOUISE_MARILLAC","c":"high","ra":"Vincent de Paul and Louise de Marillac jointly founded the Daughters of Charity."},
+  {"s":"ENT_EMC_FRANCIS_DE_SALES","t":"aligned_with","o":"ENT_EMC_JANE_CHANTAL","c":"high","ra":"Francis de Sales and Jane Frances de Chantal jointly founded the Order of the Visitation."},
+  {"s":"ENT_EMC_JANE_CHANTAL","t":"taught_by","o":"ENT_EMC_FRANCIS_DE_SALES","c":"high","ra":"Jane Frances de Chantal was the spiritual disciple of Francis de Sales, her director."},
+
+  {"s":"ENT_EMC_FRANCIS_XAVIER","t":"taught_by","o":"ENT_EMC_IGNATIUS_LOYOLA","c":"high","ra":"Francis Xavier was formed by Ignatius of Loyola and made the Spiritual Exercises under him."},
+  {"s":"ENT_EMC_PETER_FABER","t":"taught_by","o":"ENT_EMC_IGNATIUS_LOYOLA","c":"high","ra":"Peter Faber was a first companion formed by Ignatius of Loyola."},
+
+  {"s":"ENT_EMC_MARTIN_PORRES","t":"aligned_with","o":"ENT_EMC_ROSE_LIMA","c":"medium","ra":"Martín de Porres and Rose of Lima were contemporary Dominican holy figures of colonial Lima."},
+
+  {"s":"ENT_EMC_IGNATIUS_LOYOLA","t":"patron_of","o":"ENT_MISSION","c":"high","ra":"Ignatius of Loyola and his order embody the Counter-Reformation missionary impulse."},
+  {"s":"ENT_EMC_FRANCIS_XAVIER","t":"patron_of","o":"ENT_MISSION","c":"high","ra":"Francis Xavier is the patron saint of the missions."},
+  {"s":"ENT_EMC_PETER_CLAVER","t":"patron_of","o":"ENT_MISSION","c":"high","ra":"Peter Claver is patron of missionary work, especially African missions."},
+  {"s":"ENT_EMC_TURIBIUS_MOGROVEJO","t":"patron_of","o":"ENT_MISSION","c":"medium","ra":"Turibius of Mogrovejo led the evangelizing reform of colonial Peru."},
+
+  {"s":"ENT_EMC_TERESA_AVILA","t":"patron_of","o":"ENT_PRAYER","c":"high","ra":"Teresa of Ávila is a Doctor of the Church on contemplative prayer."},
+  {"s":"ENT_EMC_JOHN_CROSS","t":"patron_of","o":"ENT_PRAYER","c":"high","ra":"John of the Cross is a Doctor of the Church on contemplative prayer and mysticism."},
+  {"s":"ENT_EMC_FRANCIS_DE_SALES","t":"patron_of","o":"ENT_PRAYER","c":"medium","ra":"Francis de Sales taught lay devotional prayer in the Introduction to the Devout Life."},
+
+  {"s":"ENT_EMC_CAMILLUS_LELLIS","t":"patron_of","o":"ENT_HEALING","c":"high","ra":"Camillus de Lellis is patron of the sick, hospitals and nurses."},
+  {"s":"ENT_EMC_JOHN_OF_GOD","t":"patron_of","o":"ENT_HEALING","c":"high","ra":"John of God is patron of hospitals and the sick."},
+  {"s":"ENT_EMC_MARTIN_PORRES","t":"patron_of","o":"ENT_HEALING","c":"medium","ra":"Martín de Porres is venerated as a healer and patron of the infirm."},
+
+  {"s":"ENT_EMC_VINCENT_DE_PAUL","t":"patron_of","o":"ENT_POVERTY","c":"high","ra":"Vincent de Paul is patron of charitable works for the poor."},
+  {"s":"ENT_EMC_LOUISE_MARILLAC","t":"patron_of","o":"ENT_POVERTY","c":"high","ra":"Louise de Marillac is patroness of social workers and service to the poor."},
+  {"s":"ENT_EMC_BENEDICT_LABRE","t":"patron_of","o":"ENT_POVERTY","c":"high","ra":"Benedict Joseph Labre is patron of the homeless and the destitute."},
+
+  {"s":"ENT_EMC_PETER_CANISIUS","t":"patron_of","o":"ENT_KNOWLEDGE","c":"medium","ra":"Peter Canisius, Doctor of the Church, is patron of catechists and Catholic education."},
+  {"s":"ENT_EMC_ROBERT_BELLARMINE","t":"patron_of","o":"ENT_KNOWLEDGE","c":"medium","ra":"Robert Bellarmine, Doctor of the Church, is patron of catechists and canonists."},
+  {"s":"ENT_EMC_ALPHONSUS_LIGUORI","t":"patron_of","o":"ENT_KNOWLEDGE","c":"medium","ra":"Alphonsus Liguori, Doctor of the Church, is patron of confessors and moral theologians."},
+
+  {"s":"ENT_EMC_ISAAC_JOGUES","t":"patron_of","o":"ENT_MARTYRDOM","c":"high","ra":"Isaac Jogues is venerated as a martyr of the North American missions."},
+  {"s":"ENT_EMC_JEAN_DE_BREBEUF","t":"patron_of","o":"ENT_MARTYRDOM","c":"high","ra":"Jean de Brébeuf is venerated as a martyr of the North American missions."},
+  {"s":"ENT_EMC_JOSAPHAT_KUNCEVYC","t":"patron_of","o":"ENT_MARTYRDOM","c":"high","ra":"Josaphat Kuntsevych is venerated as a martyr for church unity."},
+
+  {"s":"ENT_EMC_NORTH_AMERICAN_MARTYRS","t":"patron_of","o":"ENT_MARTYRDOM","c":"high","ra":"The North American Martyrs are a devotional collective venerated for martyrdom."},
+
+  {"s":"ENT_EMC_OUR_LADY_GUADALUPE","t":"reception_of","o":"ENT_SAINT_MARY","c":"high","ra":"Our Lady of Guadalupe is a Marian apparition and title of Mary Theotokos venerated in the Americas."},
+
+  {"s":"ENT_EMC_ROSE_LIMA","t":"patron_of","o":"ENT_PRAYER","c":"medium","ra":"Rose of Lima, Dominican mystic, is venerated as a model of penitential contemplative prayer."},
+  {"s":"ENT_EMC_CATHERINE_RICCI","t":"member_of","o":"ENT_EMC_DISCALCED_CARMELITES","c":"low","ra":"Catherine dei Ricci was a Dominican mystic loosely associated with Counter-Reformation Carmelite spirituality; weak link pending a Dominican hub."},
+  {"s":"ENT_EMC_MARY_MAGDALENE_PAZZI","t":"member_of","o":"ENT_EMC_DISCALCED_CARMELITES","c":"medium","ra":"Mary Magdalene de' Pazzi was a Carmelite nun of the Counter-Reformation era."},
+  {"s":"ENT_EMC_PHILIP_NERI","t":"patron_of","o":"ENT_PRAYER","c":"medium","ra":"Philip Neri, founder of the Oratory, is a patron of joyful Catholic devotion and prayer."},
+  {"s":"ENT_EMC_CHARLES_BORROMEO","t":"patron_of","o":"ENT_MISSION","c":"medium","ra":"Charles Borromeo led the pastoral implementation of Tridentine reform."},
+  {"s":"ENT_EMC_ALOYSIUS_GONZAGA","t":"patron_of","o":"ENT_HEALING","c":"medium","ra":"Aloysius Gonzaga, who died nursing plague victims, is patron of the sick in epidemics."},
+  {"s":"ENT_EMC_PAUL_OF_CROSS","t":"patron_of","o":"ENT_PRAYER","c":"medium","ra":"Paul of the Cross founded the Passionists devoted to meditation on the Passion."},
+  {"s":"ENT_EMC_JOSEPH_CUPERTINO","t":"patron_of","o":"ENT_PRAYER","c":"low","ra":"Joseph of Cupertino was a Franciscan mystic noted for ecstatic prayer."},
+  {"s":"ENT_EMC_JANE_CHANTAL","t":"patron_of","o":"ENT_PRAYER","c":"low","ra":"Jane Frances de Chantal co-founded the contemplative Visitation order."},
+  {"s":"ENT_EMC_ALPHONSUS_LIGUORI","t":"aligned_with","o":"ENT_EMC_PAUL_OF_CROSS","c":"low","ra":"Alphonsus Liguori and Paul of the Cross were contemporary 18th-century Italian founders of Passion-centered congregations."},
+  {"s":"ENT_EMC_FRANCIS_BORGIA","t":"taught_by","o":"ENT_EMC_PETER_FABER","c":"low","ra":"Francis Borgia was drawn into the Jesuits after making the Spiritual Exercises under Peter Faber."},
+  {"s":"ENT_EMC_STANISLAUS_KOSTKA","t":"patron_of","o":"ENT_PRAYER","c":"low","ra":"Stanislaus Kostka is patron of novices and Catholic youth, models of devotion."}
+]

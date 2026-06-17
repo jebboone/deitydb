@@ -1,5 +1,41 @@
 # Changelog
 
+## v1.81.0 — 2026-06-17
+
+### Early-modern Abrahamic depth (1500–1800) — filling the era cliff
+
+A fresh era scan showed the early-modern window almost empty (17 entities for
+1500–1800, versus hundreds in every adjacent era). This fills it with the
+mainstream tri-faith devotional/mystical layer — no occult weighting, per the
+standing steer. **+77 entities, +142 relationships, +16 sources, 2 new periods**,
+all via the reusable `gen_roster.py` from agent-proposed JSON (agents wrote input
+files only, never the DB). The **1500–1800 era went 17 → 94**. Scorecard now
+3,063 entities / 5,594 relationships / 334 sources / 95 traditions.
+
+- **Counter-Reformation & Baroque Catholic saints (`ENT_EMC_`, 35):** the Jesuit
+  founders (Ignatius, Francis Xavier, Faber, Borgia), the Discalced Carmelite
+  mystics (Teresa of Ávila, John of the Cross, Mary Magdalene de' Pazzi), the
+  Oratorian/Borromean reformers, the colonial-American saints (Rose of Lima, Martín
+  de Porres, Turibius), the charity founders (Vincent de Paul, Louise de Marillac,
+  Francis de Sales), the North American Martyrs, and Our Lady of Guadalupe
+  (`reception_of` the Virgin Mary). New period `PER_COUNTER_REFORMATION` (1517–1800);
+  4 new primary sources (Ignatius' Exercises, Teresa's Interior Castle, John of the
+  Cross' Dark Night, de Sales' Devout Life).
+- **Early-modern Jewish mystics (`ENT_JM_`, 20):** the human masters of a tradition
+  whose *concepts* were already mapped — wired into the existing Lurianic apparatus.
+  The Safed/Lurianic circle (Cordovero, Isaac Luria, Hayyim Vital, Karo, Alkabetz,
+  Luzzatto — Luria `reveals` the 14 existing Lurianic concepts he taught), the
+  Sabbatean messianism (Sabbatai Zevi, Nathan of Gaza), the Hasidic founders (Baal
+  Shem Tov → Dov Ber → Schneur Zalman/Levi Yitzhak/Elimelech, plus Nachman of
+  Breslov), and the Lithuanian mitnagdim (the Vilna Gaon, who `opposes` Hasidism).
+  2 new primary sources (Vital's Etz Chaim, Shivhei ha-Besht).
+- **Early-modern Sufi reformers & orders (`ENT_SUF_`, 22):** the reform-and-revival
+  era — Ahmad Sirhindi (Naqshbandi-Mujaddidi), al-Nabulsi (Akbari commentator), Shah
+  Waliullah, Ahmad al-Tijani (Tijaniyya), the Khalwati/Darqawi lines, and the
+  saint-poets (Bulleh Shah, Bhittai, Sultan Bahu, Yunus Emre-tradition). New period
+  `PER_ISL_EARLY_MODERN` (1517–1850); the Mujaddidi hub `reception_of` the existing
+  Naqshbandi order; al-Nabulsi `reception_of` Ibn Arabi.
+
 ## v1.80.0 — 2026-06-17
 
 ### High & late-medieval depth (1000–1450) — the mainstream Abrahamic devotional layer
