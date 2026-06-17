@@ -1,5 +1,26 @@
 # Changelog
 
+## v1.84.2 — 2026-06-17
+
+### Traceability backfill — the dataset is now fully clean (`scripts/qa_v1_84_2.sql`)
+
+Cleared the last pre-existing traceability debt surfaced by the v1.84.1 audit:
+- **Backfilled all 77 rationale-less relationships** with accurate, source-grounded
+  rationales drawn from each edge's own citation — chiefly the Testament of Solomon
+  decan-demons (causes_affliction / member_of / opposes / Solomon rules) and the
+  3 Enoch & Hekhalot Jewish-mystical edges (Metatron, the throne-bearing angelic
+  orders, Enoch's ascent).
+- **Resolved all 10 legacy orphan sources:** attached the genuine bibliographic ones
+  to the figures they document (2 Enoch → Enoch/Metatron, the DSS War Scroll → Michael,
+  Mēnōg-ī Khrad → Zoroastrian beings, Sappho → Aphrodite, Lindow → the Norse gods,
+  Digital Egypt → the major Egyptian gods, the Catholic Encyclopedia & Bibliotheca
+  Sanctorum → saints), and retired three non-attestational entries (an internal
+  placeholder and the Pleiades / ToposText gazetteers).
+
+Every traceability invariant is now **0**: 0 unsourced entities, 0 relationships
+without a source, **0 relationships without a rationale**, 0 dangling references,
+**0 orphan sources**. (3,173 entities / 5,761 relationships / 363 sources.)
+
 ## v1.84.1 — 2026-06-17
 
 ### Sourcing / traceability QA pass (`scripts/qa_sourcing_v1_84.sql`)
