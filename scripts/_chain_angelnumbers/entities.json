@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ENT_GRK_PYTHAGOREAN_NUMBERS",
+    "name": "Pythagorean Number Mysticism",
+    "type": "Sacred-number doctrine",
+    "cat": "Greek number metaphysics",
+    "trad": "Greek",
+    "dom": "['cosmic order', 'number', 'harmony', 'divine principle']",
+    "conf": "B",
+    "note": "The Pythagorean doctrine that numbers are the divine archai (first principles) of reality ('all is number'); the tetractys as a sacred figure and the special sanctity of particular numbers, founding the Western tradition of sacred arithmetic. Pythagoras fl. c. 530 BCE.",
+    "src": "SRC_BURKERT_PYTHAGOREANISM",
+    "per": "PER_GRK_ARCHAIC"
+  },
+  {
+    "id": "ENT_JM_GEMATRIA",
+    "name": "Gematria",
+    "type": "Number-hermeneutic practice",
+    "cat": "Kabbalistic number-hermeneutics",
+    "trad": "Jewish Mystical",
+    "dom": "['exegesis', 'number', 'divine names', 'angelology']",
+    "conf": "B",
+    "note": "The Kabbalistic technique in which Hebrew letters equal numerical values, so words sharing a sum share hidden meaning; numbers thereby carry divine and angelic significance. The ten sefirot are themselves the numerical emanations of the divine.",
+    "src": "SRC_SCHOLEM_KABBALAH",
+    "per": "PER_JM_MEDIEVAL"
+  },
+  {
+    "id": "ENT_REN_NUMBER_SCALE",
+    "name": "The Scale of Numbers (Agrippa)",
+    "type": "Esoteric correspondence system",
+    "cat": "Renaissance number-angel correspondence",
+    "trad": "Renaissance Esoteric",
+    "dom": "['correspondence', 'number', 'angelology', 'divine names', 'cosmic hierarchy']",
+    "conf": "B",
+    "note": "In De occulta philosophia Book II, Agrippa tabulates each number 1-12 against its angels, divine names, planetary and cosmic ranks (the Scales of the numbers). This is the explicit number-to-angel bridge that joins ancient number mysticism to angelology.",
+    "src": "SRC_AGRIPPA_OCCULTA",
+    "per": "PER_RENAISSANCE"
+  },
+  {
+    "id": "ENT_MOD_NUMEROLOGY",
+    "name": "Modern Numerology",
+    "type": "Divinatory system",
+    "cat": "Modern occult number divination",
+    "trad": "Theosophical",
+    "dom": "['divination', 'number', 'self-knowledge', 'destiny']",
+    "conf": "B",
+    "note": "The late-19th and 20th-century revival of Pythagorean number meaning (life-path and destiny numbers, the spiritual significance of repeating digits), popularized through Theosophical and New Thought milieus.",
+    "src": "SRC_DUDLEY_NUMEROLOGY",
+    "per": "PER_MODERN_OCCULT"
+  },
+  {
+    "id": "ENT_VF_999",
+    "name": "999 (Juice WRLD)",
+    "type": "Cultural number-devotion",
+    "cat": "Vernacular number-devotion",
+    "trad": "Contemporary Folklore & Vernacular Religion",
+    "dom": "['memorial', 'protection', 'transformation', 'self-empowerment']",
+    "conf": "B",
+    "note": "Rapper Juice WRLD's '999' creed: the inversion of 666, turning pain and negativity into something good and rising above. After his death (Dec 2019) fans use 999 (and the 999 Club) as a devotional, memorial and apotropaic sign. Included because fans genuinely use it as a mantra/protective sign, not as fiction.",
+    "src": "SRC_JUICEWRLD_999_PITCHFORK",
+    "per": "PER_DIGITAL_FOLKLORE"
+  },
+  {
+    "id": "ENT_VF_ELEVEN_ELEVEN",
+    "name": "11:11",
+    "type": "Cultural number-devotion",
+    "cat": "Vernacular number-devotion",
+    "trad": "Contemporary Folklore & Vernacular Religion",
+    "dom": "['synchronicity', 'wish-making', 'angelic sign', 'guidance']",
+    "conf": "B",
+    "note": "The widespread make-a-wish / synchronicity practice of noticing the time 11:11, read as an angelic or 'the Universe' sign of alignment - a digital-age angel-number devotion.",
+    "src": "SRC_DUDLEY_NUMEROLOGY",
+    "per": "PER_DIGITAL_FOLKLORE"
+  }
+]

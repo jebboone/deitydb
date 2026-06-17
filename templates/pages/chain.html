@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% block title %}Lineages — DeityDB{% endblock %}
+{% block body_class %}deitydb-chain{% endblock %}
+
+{% block content %}
+<style>
+.ch-page{max-width:1240px;margin:0 auto;padding:8px 16px 60px}
+.ch-head h1{margin:0 0 4px}
+.ch-sub{color:#5a5246;max-width:860px;margin:0 0 12px}
+.ch-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 12px}
+.ch-feat{display:flex;flex-wrap:wrap;gap:7px}
+.ch-feat button{border:1px solid #d8cdbb;background:#faf8f5;color:#3b2a55;font-weight:600;padding:7px 13px;border-radius:8px;cursor:pointer;font-size:.86rem}
+.ch-feat button.on{background:#5b2a9e;color:#fff;border-color:#5b2a9e}
+.ch-feat button:hover{border-color:#5b2a9e}
+.ch-search{position:relative;margin-left:auto}
+.ch-search input{padding:8px 12px;border:1px solid #d8cdbb;border-radius:8px;font-size:.9rem;width:240px}
+.ch-sug{position:absolute;left:0;right:0;top:40px;background:#fff;border:1px solid #d8cdbb;border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.12);z-index:20;overflow:hidden}
+.ch-sug[hidden]{display:none}
+.ch-si{display:flex;justify-content:space-between;gap:10px;padding:8px 12px;cursor:pointer;font-size:.88rem}
+.ch-si:hover{background:#f3efe6}.ch-si .st{color:#9a8f7c;font-size:.8rem}
+.ch-note{color:#7c7569;font-size:.86rem;margin:0 0 10px}
+.ch-wrap{position:relative;border:1px solid #e7dccb;border-radius:10px;background:linear-gradient(180deg,#fdfcfb,#faf7f2);overflow:hidden}
+.ch-wrap svg{display:block;width:100%;height:600px}
+.ch-node rect{transition:filter .1s}
+.ch-node:hover rect{filter:brightness(1.07)}
+.ch-tip{position:fixed;z-index:50;background:#2b2440;color:#fff;font-size:.82rem;padding:8px 11px;border-radius:7px;pointer-events:none;display:none;max-width:320px;box-shadow:0 8px 24px rgba(0,0,0,.3);line-height:1.4}
+.ch-tip .tt-rel{color:#d9c7f5;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.7rem}
+.ch-tip .tt-src{color:#9a8f7c;font-size:.74rem;display:block;margin-top:4px}
+.ch-legend{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 0;font-size:.78rem;color:#5a5246}
+.ch-leg{display:flex;align-items:center;gap:6px}
+.ch-leg .dot{width:11px;height:11px;border-radius:3px}
+.ch-loading{padding:40px 16px;color:#7c7569}
+</style>
+
+<div class="ch-page">
+  <div class="ch-head">
+    <h1>Lineages</h1>
+    <p class="ch-sub">Reception chains across time. Each arrow is a <strong>source-traced link</strong> — how a figure, idea, or practice was received, renamed, or revived from one tradition into the next. Read left (ancient) to right (today). Click any node for its full entry; hover an arrow for the citation.</p>
+  </div>
+
+  <div class="ch-bar">
+    <div class="ch-feat" id="ch-feat"></div>
+    <div class="ch-search">
+      <input id="ch-q" type="search" placeholder="Trace any figure's lineage…" autocomplete="off" spellcheck="false" aria-label="Search entities">
+      <div id="ch-sug" class="ch-sug" role="listbox" hidden></div>
+    </div>
+  </div>
+  <p class="ch-note" id="ch-note">Loading…</p>
+
+  <div class="ch-wrap"><svg id="ch-svg" aria-label="Reception chain"></svg></div>
+  <div class="ch-legend" id="ch-legend"></div>
+</div>
+
+<div class="ch-tip" id="ch-tip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(function(){
+'use strict';
+var TRAD_COLOR={greek:'#3b6fd4',egyptian:'#d4873b',mesopotamian:'#c43b8f',christian:'#2a8a4f',islamic:'#1a9e76',jewish:'#c4923b',gnostic:'#7c3bd4',northern:'#3b9dc4',roman:'#c43b3b',zoroastrian:'#c47c3b',hermetic:'#3ba8a0',vernacular:'#d4458f',cross:'#6b7280',other:'#94a3b8'};
+var TRAD_LABEL={greek:'Greek',egyptian:'Egyptian',mesopotamian:'Mesopotamian',christian:'Christian',islamic:'Islamic',jewish:'Jewish/Israelite',gnostic:'Gnostic',northern:'Celtic/Norse',roman:'Roman/Etruscan',zoroastrian:'Zoroastrian',hermetic:'Hermetic/Esoteric',vernacular:'Contemporary/Vernacular',other:'Other'};
+function tradKey(t){t=(t||'').toLowerCase();
+  if(t.indexOf('zoroastrian')>=0||t.indexOf('persian')>=0)return'zoroastrian';
+  if(t.indexOf('greek')===0)return'greek'; if(t.indexOf('egyptian')===0)return'egyptian'; if(t.indexOf('mesopotamian')===0)return'mesopotamian';
+  if(t.indexOf('islamic')>=0||t.indexOf('sufi')>=0)return'islamic';
+  if(t.indexOf('jewish')>=0||t.indexOf('israelite')>=0||t.indexOf('second temple')>=0)return'jewish';
+  if(t.indexOf('christian')>=0||t.indexOf('biblical')>=0)return'christian';
+  if(t.indexOf('gnostic')>=0||t.indexOf('mandaean')>=0||t.indexOf('manichaean')>=0)return'gnostic';
+  if(t.indexOf('celtic')>=0||t.indexOf('norse')>=0||t.indexOf('germanic')>=0)return'northern';
+  if(t.indexOf('roman')>=0||t.indexOf('etruscan')>=0)return'roman';
+  if(t.indexOf('renaissance')>=0||t.indexOf('hermetic')>=0||t.indexOf('theosoph')>=0||t.indexOf('occult')>=0||t.indexOf('esoteric')>=0||t.indexOf('thelemic')>=0)return'hermetic';
+  if(t.indexOf('vernacular')>=0||t.indexOf('folklore')>=0||t.indexOf('spiritualist')>=0)return'vernacular';
+  return'other';}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function fmtY(y){if(y==null)return'';y=Math.round(y);return y<0?Math.abs(y)+' BCE':y+' CE';}
+
+var FEATURED=[
+  {label:'★ Angel Numbers (Juice WRLD → ancient Iran)',seeds:['ENT_VF_999','ENT_VF_ELEVEN_ELEVEN']},
+  {label:'Cybele',seeds:['ENT_CYBELE']},
+  {label:'Aphrodite',seeds:['ENT_APHRODITE']},
+  {label:'Mithras',seeds:['ENT_SYN_MITHRAS']},
+  {label:'The Holy Grail',seeds:['ENT_ART_GRAIL']}
+];
+
+var svg=document.getElementById('ch-svg'), noteEl=document.getElementById('ch-note'), tipEl=document.getElementById('ch-tip');
+var legendEl=document.getElementById('ch-legend'), featEl=document.getElementById('ch-feat');
+
+function buildSQL(seeds){
+  var inlist=seeds.map(function(s){return "'"+String(s).replace(/'/g,"''")+"'";}).join(',');
+  return "WITH RECURSIVE anc(frm,too,depth) AS ("+
+    " SELECT subject_entity_id, object_entity_id, 1 FROM entity_relationships"+
+    "  WHERE subject_entity_id IN ("+inlist+") AND relationship_type='reception_of'"+
+    " UNION SELECT r.subject_entity_id, r.object_entity_id, a.depth+1"+
+    "  FROM entity_relationships r JOIN anc a ON r.subject_entity_id=a.too"+
+    "  WHERE r.relationship_type='reception_of' AND a.depth<14)"+
+    " SELECT DISTINCT a.frm, a.too,"+
+    " sf.canonical_name fn, sf.tradition ft,"+
+    " (SELECT min(p.start_year) FROM entity_periods ep JOIN periods p ON p.period_id=ep.period_id WHERE ep.entity_id=a.frm) fy,"+
+    " so.canonical_name onm, so.tradition ot,"+
+    " (SELECT min(p.start_year) FROM entity_periods ep JOIN periods p ON p.period_id=ep.period_id WHERE ep.entity_id=a.too) oy,"+
+    " (SELECT rationale FROM entity_relationships r2 WHERE r2.subject_entity_id=a.frm AND r2.object_entity_id=a.too AND r2.relationship_type='reception_of' LIMIT 1) rat,"+
+    " (SELECT source_id FROM entity_relationships r2 WHERE r2.subject_entity_id=a.frm AND r2.object_entity_id=a.too AND r2.relationship_type='reception_of' LIMIT 1) src"+
+    " FROM anc a JOIN entities sf ON sf.entity_id=a.frm JOIN entities so ON so.entity_id=a.too";
+}
+
+async function loadChain(seeds, title){
+  noteEl.textContent='Tracing '+title+'…';
+  var rows;
+  try{ rows=await(await fetch('/deitydb.json?_shape=array&_size=600&sql='+encodeURIComponent(buildSQL(seeds)))).json(); }
+  catch(e){ noteEl.textContent='Could not load this lineage.'; return; }
+  if(!Array.isArray(rows)||!rows.length){ noteEl.textContent='No reception chain found for '+title+'. (Not every figure has one.)'; d3.select(svg).selectAll('*').remove(); legendEl.innerHTML=''; return; }
+
+  /* nodes + edges */
+  var nodes={}, edges=[];
+  function add(id,name,trad,year){ if(!nodes[id])nodes[id]={id:id,name:name,trad:trad,year:(year==null?null:+year)}; else if(nodes[id].year==null&&year!=null)nodes[id].year=+year; }
+  seeds.forEach(function(s){ /* ensure seeds present even if missing year, resolved below */ });
+  rows.forEach(function(r){
+    add(r.frm,r.fn,r.ft,r.fy); add(r.too,r.onm,r.ot,r.oy);
+    edges.push({from:r.frm,to:r.too,rat:r.rat,src:r.src}); /* from = later (reception), to = earlier */
+  });
+  var nodeArr=Object.keys(nodes).map(function(k){return nodes[k];});
+  /* fill missing years from neighbours (earlier than its receiver) */
+  var yrs=nodeArr.map(function(n){return n.year;}).filter(function(y){return y!=null;});
+  var defY=yrs.length?Math.max.apply(null,yrs):2000;
+  nodeArr.forEach(function(n){ if(n.year==null)n.year=defY; });
+
+  var minY=Math.min.apply(null,nodeArr.map(function(n){return n.year;}));
+  var maxY=Math.max.apply(null,nodeArr.map(function(n){return n.year;}));
+  if(maxY===minY)maxY=minY+1;
+
+  var W=Math.max(svg.clientWidth||1000,900), H=600, padL=70,padR=70,padT=30,padB=46;
+  function xOf(y){ return padL + (y-minY)/(maxY-minY)*(W-padL-padR); }
+
+  /* lane assignment: sort by year, greedily place to avoid x-overlap */
+  nodeArr.sort(function(a,b){return a.year-b.year;});
+  var NODE_W=150, laneEnds=[];
+  nodeArr.forEach(function(n){
+    var nx=xOf(n.year);
+    var lane=0;
+    for(;lane<laneEnds.length;lane++){ if(nx - laneEnds[lane] > NODE_W+14) break; }
+    n.lane=lane; laneEnds[lane]=nx + NODE_W;
+  });
+  var nLanes=Math.max(laneEnds.length,1);
+  var laneH=(H-padT-padB)/nLanes;
+  nodeArr.forEach(function(n){ n.x=xOf(n.year); n.y=padT + n.lane*laneH + laneH/2; });
+
+  /* render */
+  var sel=d3.select(svg).attr('viewBox','0 0 '+W+' '+H);
+  sel.selectAll('*').remove();
+  var defs=sel.append('defs');
+  defs.append('marker').attr('id','ch-arrow').attr('viewBox','0 -5 10 10').attr('refX',9).attr('refY',0)
+    .attr('markerWidth',7).attr('markerHeight',7).attr('orient','auto')
+    .append('path').attr('d','M0,-5L10,0L0,5').attr('fill','#a99');
+  var g=sel.append('g');
+  sel.call(d3.zoom().scaleExtent([0.4,3]).on('zoom',function(e){g.attr('transform',e.transform);}));
+
+  /* time axis */
+  var axis=g.append('g');
+  var step=(maxY-minY)>2500?500:((maxY-minY)>800?250:100);
+  for(var t=Math.ceil(minY/step)*step;t<=maxY;t+=step){
+    var ax=xOf(t);
+    axis.append('line').attr('x1',ax).attr('x2',ax).attr('y1',padT-8).attr('y2',H-padB+4).attr('stroke',(t===0?'#d8c7b0':'#efe9df')).attr('stroke-width',t===0?2:1);
+    axis.append('text').attr('x',ax).attr('y',H-padB+20).attr('text-anchor','middle').attr('font-size','11px').attr('fill','#8a8170').text(fmtY(t));
+  }
+
+  /* edges: draw earlier(to) -> later(from), curved */
+  var byId={}; nodeArr.forEach(function(n){byId[n.id]=n;});
+  var link=g.append('g').selectAll('path').data(edges.filter(function(e){return byId[e.from]&&byId[e.to];})).join('path')
+    .attr('fill','none').attr('stroke','#c3b4a0').attr('stroke-width',1.6).attr('opacity',.7)
+    .attr('marker-end','url(#ch-arrow)')
+    .attr('d',function(e){var s=byId[e.to],t=byId[e.from];var mx=(s.x+t.x)/2;return 'M'+s.x+','+s.y+'C'+mx+','+s.y+' '+mx+','+t.y+' '+t.x+','+t.y;})
+    .style('cursor','pointer')
+    .on('mouseenter',function(ev,e){ d3.select(this).attr('stroke','#7c3bd4').attr('stroke-width',2.6).attr('opacity',1);
+      tipEl.innerHTML='<span class="tt-rel">'+esc(byId[e.to].name)+' → '+esc(byId[e.from].name)+'</span>'+esc(e.rat||'')+(e.src?'<span class="tt-src">source: '+esc(e.src)+'</span>':'');
+      tipEl.style.display='block'; })
+    .on('mousemove',function(ev){ tipEl.style.left=(ev.clientX+13)+'px'; tipEl.style.top=(ev.clientY-10)+'px'; })
+    .on('mouseleave',function(){ d3.select(this).attr('stroke','#c3b4a0').attr('stroke-width',1.6).attr('opacity',.7); tipEl.style.display='none'; });
+
+  /* nodes */
+  var seedSet={}; seeds.forEach(function(s){seedSet[s]=1;});
+  var node=g.append('g').selectAll('g').data(nodeArr).join('g').attr('class','ch-node')
+    .attr('transform',function(n){return 'translate('+n.x+','+n.y+')';})
+    .style('cursor','pointer')
+    .on('click',function(ev,n){ window.location='/entity?id='+encodeURIComponent(n.id); })
+    .on('mouseenter',function(ev,n){ tipEl.innerHTML='<strong>'+esc(n.name)+'</strong><span class="tt-src">'+esc(n.trad)+' · '+fmtY(n.year)+' · click to open</span>'; tipEl.style.display='block'; })
+    .on('mousemove',function(ev){ tipEl.style.left=(ev.clientX+13)+'px'; tipEl.style.top=(ev.clientY-10)+'px'; })
+    .on('mouseleave',function(){ tipEl.style.display='none'; });
+  node.append('rect').attr('x',-NODE_W/2).attr('y',-17).attr('width',NODE_W).attr('height',34).attr('rx',8)
+    .attr('fill',function(n){return TRAD_COLOR[tradKey(n.trad)]||TRAD_COLOR.other;})
+    .attr('stroke',function(n){return seedSet[n.id]?'#f5c542':'#fff';}).attr('stroke-width',function(n){return seedSet[n.id]?3:1.5;});
+  node.append('text').attr('text-anchor','middle').attr('dy','-1').attr('fill','#fff').attr('font-size','12px').attr('font-weight','600')
+    .text(function(n){return n.name.length>20?n.name.slice(0,18)+'…':n.name;});
+  node.append('text').attr('text-anchor','middle').attr('dy','12').attr('fill','rgba(255,255,255,.85)').attr('font-size','9px')
+    .text(function(n){return fmtY(n.year);});
+
+  /* legend (traditions present) */
+  var seen={}; nodeArr.forEach(function(n){seen[tradKey(n.trad)]=1;});
+  legendEl.innerHTML=Object.keys(seen).map(function(k){return '<span class="ch-leg"><span class="dot" style="background:'+TRAD_COLOR[k]+'"></span>'+esc(TRAD_LABEL[k]||k)+'</span>';}).join('');
+  noteEl.innerHTML=nodeArr.length+' figures across '+Object.keys(seen).length+' traditions, '+fmtY(minY)+' → '+fmtY(maxY)+'. Each arrow points from the earlier source to its later reception — hover for the citation.';
+}
+
+/* featured buttons */
+FEATURED.forEach(function(f,i){
+  var b=document.createElement('button'); b.textContent=f.label; if(i===0)b.className='on';
+  b.addEventListener('click',function(){ featEl.querySelectorAll('button').forEach(function(x){x.classList.remove('on');}); b.classList.add('on'); loadChain(f.seeds,f.label.replace(/^★ /,'')); });
+  featEl.appendChild(b);
+});
+
+/* search → trace any entity */
+var qEl=document.getElementById('ch-q'), sugEl=document.getElementById('ch-sug'), tmr;
+qEl.addEventListener('input',function(){clearTimeout(tmr);var v=this.value.trim();if(v.length<2){sugEl.hidden=true;return;}tmr=setTimeout(function(){ac(v);},200);});
+async function ac(v){
+  try{
+    var d=await(await fetch('/deitydb/entities.json?_shape=array&_size=10&_col=entity_id&_col=canonical_name&_col=tradition&canonical_name__contains='+encodeURIComponent(v))).json();
+    if(!d.length){sugEl.hidden=true;return;}
+    sugEl.innerHTML=d.map(function(r){return '<div class="ch-si" data-id="'+esc(r.entity_id)+'" data-nm="'+esc(r.canonical_name)+'"><span>'+esc(r.canonical_name)+'</span><span class="st">'+esc(r.tradition||'')+'</span></div>';}).join('');
+    sugEl.hidden=false;
+    sugEl.querySelectorAll('.ch-si').forEach(function(it){it.addEventListener('click',function(){ sugEl.hidden=true; qEl.value=this.dataset.nm; featEl.querySelectorAll('button').forEach(function(x){x.classList.remove('on');}); loadChain([this.dataset.id],this.dataset.nm); });});
+  }catch(e){sugEl.hidden=true;}
+}
+document.addEventListener('click',function(e){if(!e.target.closest('.ch-search'))sugEl.hidden=true;});
+
+/* boot: deep-link ?start= or the hero angel-numbers lineage */
+var sp=new URLSearchParams(window.location.search), start=sp.get('start');
+if(start){ loadChain([start], start); } else { loadChain(FEATURED[0].seeds, 'the Angel Numbers lineage'); }
+})();
+</script>
+{% endblock %}
