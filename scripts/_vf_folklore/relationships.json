@@ -1,0 +1,31 @@
+[
+{"s":"ENT_VF_HAT_MAN","t":"member_of","o":"ENT_VF_SLEEP_PARALYSIS_ENTITIES","c":"high","ra":"The Hat Man is a core recurring figure of the supernatural-assault / sleep-paralysis tradition."},
+{"s":"ENT_VF_SHADOW_PEOPLE","t":"member_of","o":"ENT_VF_SLEEP_PARALYSIS_ENTITIES","c":"high","ra":"Shadow People are a recurring figure of the sleep-paralysis assault tradition."},
+{"s":"ENT_VF_OLD_HAG","t":"member_of","o":"ENT_VF_SLEEP_PARALYSIS_ENTITIES","c":"high","ra":"The Old Hag is Hufford's paradigm case of the experience-centered sleep-paralysis tradition."},
+{"s":"ENT_VF_OLD_HAG","t":"reception_of","o":"ENT_JM_LILITH","c":"medium","ra":"The chest-pressing night-hag/strangler complex continues the older Lilith-as-nocturnal-strangler / mara night-mare tradition."},
+{"s":"ENT_VF_OLD_HAG","t":"opposed_by","o":"ENT_CHR_GUARDIAN_ANGELS","c":"medium","ra":"Sleep-paralysis experiencers invoke prayer and guardian angels to ward off the pressing Hag."},
+{"s":"ENT_VF_SHADOW_PEOPLE","t":"opposed_by","o":"ENT_CHR_GUARDIAN_ANGELS","c":"low","ra":"Experiencers commonly invoke guardian-angel protection and prayer against Shadow People."},
+
+{"s":"ENT_VF_DMT_MANTIS","t":"aligned_with","o":"ENT_VF_DMT_MACHINE_ELVES","c":"high","ra":"The Mantis and the machine elves are the two best-documented recurrent DMT entity-types, both encountered in the same entheogenic visionary space."},
+
+{"s":"ENT_VF_MOTHMAN","t":"member_of","o":"ENT_VF_MODERN_CRYPTIDS","c":"high","ra":"Mothman is a paradigmatic modern cryptid of the sighting-wave tradition."},
+{"s":"ENT_VF_CHUPACABRA","t":"member_of","o":"ENT_VF_MODERN_CRYPTIDS","c":"high","ra":"The Chupacabra is a core modern cryptid of vernacular belief."},
+{"s":"ENT_VF_JERSEY_DEVIL","t":"member_of","o":"ENT_VF_MODERN_CRYPTIDS","c":"high","ra":"The Jersey Devil is a durable regional modern cryptid."},
+{"s":"ENT_VF_MOTHMAN","t":"embodies","o":"ENT_APOCALYPSE","c":"medium","ra":"Mothman is read as a harbinger of catastrophe (the Silver Bridge collapse), embodying disaster-omen / eschatological dread."},
+
+{"s":"ENT_VF_EL_CUCUY","t":"member_of","o":"ENT_VF_APOTROPAIC_BOGEYS","c":"high","ra":"El Cucuy/the Boogeyman is the archetypal apotropaic child-warding bogey."},
+{"s":"ENT_VF_BLACK_EYED_CHILDREN","t":"member_of","o":"ENT_VF_APOTROPAIC_BOGEYS","c":"high","ra":"The Black-Eyed Children are engaged through the apotropaic 'don't let them in' threshold rule."},
+
+{"s":"ENT_VF_LA_LLORONA","t":"opposed_by","o":"ENT_CHR_GUARDIAN_ANGELS","c":"low","ra":"La Llorona is warded against (prayer, keeping children from water) within a Catholic folk frame invoking angelic/saintly protection."},
+{"s":"ENT_VF_LA_LLORONA","t":"aligned_with","o":"ENT_VF_APOTROPAIC_BOGEYS","c":"medium","ra":"La Llorona functions as an apotropaic child-warning figure alongside the bogey complex."},
+
+{"s":"ENT_VF_KRAMPUS","t":"aligned_with","o":"ENT_SAINT_NICHOLAS","c":"high","ra":"Krampus is the punishing companion of St. Nicholas in the Alpine Nicholas–Krampus winter custom (Krampusnacht)."},
+{"s":"ENT_VF_KRAMPUS","t":"opposed_by","o":"ENT_SAINT_NICHOLAS","c":"medium","ra":"St. Nicholas rewards good children while restraining/pairing with Krampus who punishes the bad — a protector-vs-menace dyad in the living custom."},
+
+{"s":"ENT_VF_ZOZO","t":"opposed_by","o":"ENT_CHR_GUARDIAN_ANGELS","c":"low","ra":"Ouija practitioners ward off Zozo with prayer, board-closing protocols, and appeals to angelic protection."},
+{"s":"ENT_VF_BLOODY_MARY","t":"aligned_with","o":"ENT_VF_ZOZO","c":"medium","ra":"Bloody Mary and Zozo are both deliberately summoned/contacted entities of adolescent ritual-conjuration legendry."},
+
+{"s":"ENT_VF_SLENDER_MAN","t":"aligned_with","o":"ENT_VF_MODERN_CRYPTIDS","c":"low","ra":"Slender Man is the leading online-born ostensive being, sharing the sighting/menace mode with the modern cryptid cluster."},
+{"s":"ENT_VF_TULPA","t":"aligned_with","o":"ENT_VF_DMT_MACHINE_ELVES","c":"low","ra":"Tulpas and DMT entities are both relational, agentic mind-encountered beings people engage as autonomous interlocutors."},
+{"s":"ENT_VF_ROKOS_BASILISK","t":"aligned_with","o":"ENT_VF_SLENDER_MAN","c":"low","ra":"Roko's Basilisk and Slender Man are both digital-age egregores born online that some people genuinely act on (dread/avoidance)."}
+]

@@ -16,6 +16,7 @@ CLASS_NOTE = {
  "esoteric-magic":"A learned ritual-magic / grimoire tradition — historically present and genuinely influential, but a textual subculture of a few literate specialists, framed within and drawing on the dominant religion rather than a mainstream faith in its own right.",
  "modern-esoteric":"A modern (19th-20th c.) esoteric movement — an organized but comparatively small new-religious / occult current, not a mainstream faith.",
  "legendary-literary":"A legendary/literary mythos rather than a practiced religion — its figures live in story (and, for the Grail, in Christian devotion), but it was never the cult of a community.",
+ "vernacular-folklore":"Contemporary vernacular & digital folklore — emergent supernatural beings people genuinely engage ritually (summoning), devotionally (petition/veneration), or apotropaically (warding/protection), outside any organized religion: urban legends, cryptids, sleep-paralysis and entheogenic encounter-entities, meme-magic egregores, and New Age / Gen-Z devotional currents. Lived belief and practice (ostension), NOT fiction — purely fictional creepypasta and franchises are excluded.",
  "comparative":"Not a religion: a cross-traditional layer of shared abstractions used for comparison.",
 }
 # tradition -> (class, prevalence[, note_override])
@@ -70,6 +71,8 @@ P = {
  "Hungarian":("civic-polytheism","regional"),
  # legendary-literary
  "Arthurian":("legendary-literary","literary"),
+ # vernacular-folklore (contemporary online + urban-legend + New Age devotional)
+ "Contemporary Folklore & Vernacular Religion":("vernacular-folklore","emergent"),
  # comparative
  "Cross-traditional":("comparative","abstraction"),
 }

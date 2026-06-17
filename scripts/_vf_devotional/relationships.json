@@ -1,0 +1,149 @@
+[
+{
+"s": "ENT_VF_NEWAGE_ANGELS",
+"t": "reception_of",
+"o": "ENT_CHR_GUARDIAN_ANGELS",
+"c": "high",
+"ra": "New Age guardian angels are a direct contemporary reception of the Christian guardian-angel doctrine, reframed as personally assignable, nameable angels reachable on demand."
+},
+{
+"s": "ENT_VF_NEWAGE_ANGELS",
+"t": "reception_of",
+"o": "ENT_ZOR_FRAVASHIS",
+"c": "medium",
+"ra": "The Zoroastrian fravashis (personal protecting spirits) are a documented historical taproot of the guardian-angel idea that New Age angelology inherits."
+},
+{
+"s": "ENT_VF_NEWAGE_ANGELS",
+"t": "reception_of",
+"o": "ENT_ZOR_AMESHA_SPENTAS",
+"c": "medium",
+"ra": "The Zoroastrian Amesha Spentas (benevolent emanations/archangel prototypes) feed the angelic-hierarchy stream the New Age angels draw on."
+},
+{
+"s": "ENT_VF_ANGEL_NUMBERS",
+"t": "aligned_with",
+"o": "ENT_VF_NEWAGE_ANGELS",
+"c": "high",
+"ra": "Angel numbers are read as direct messages from the New Age guardian angels; the practice is oriented toward those beings."
+},
+{
+"s": "ENT_VF_ANGEL_NUMBERS",
+"t": "member_of",
+"o": "ENT_VF_NEWAGE_ANGELS",
+"c": "medium",
+"ra": "Angel numbers belong to the New Age angelic-devotion complex hubbed on the guardian angels."
+},
+{
+"s": "ENT_VF_MANIFESTATION",
+"t": "associated_with",
+"o": "ENT_VF_THE_UNIVERSE",
+"c": "high",
+"ra": "Manifestation techniques are petitionary acts directed at the Universe to obtain desired outcomes."
+},
+{
+"s": "ENT_VF_MANIFESTATION",
+"t": "embodies",
+"o": "ENT_VF_THE_UNIVERSE",
+"c": "medium",
+"ra": "Manifestation practice operationalizes and embodies trust in the providential Universe of Law of Attraction."
+},
+{
+"s": "ENT_VF_KEK",
+"t": "reception_of",
+"o": "ENT_EGY_KEK",
+"c": "high",
+"ra": "The 2016 meme-magic Kek egregore is an explicit, conscious syncretism with the ancient Egyptian frog/darkness god Kek — a deliberate contemporary reception."
+},
+{
+"s": "ENT_VF_KEK",
+"t": "member_of",
+"o": "ENT_VF_EGREGORE",
+"c": "medium",
+"ra": "Kek is the paradigmatic case of the egregore concept — a collectively generated, fed, and invoked thoughtform."
+},
+{
+"s": "ENT_VF_HIGHER_SELF",
+"t": "aligned_with",
+"o": "ENT_SPI_SPIRIT_GUIDES",
+"c": "medium",
+"ra": "The higher self and spirit guides are adjacent New Age inner/helping guidance sources, frequently consulted together."
+},
+{
+"s": "ENT_VF_STARSEEDS",
+"t": "aligned_with",
+"o": "ENT_SPI_SPIRIT_GUIDES",
+"c": "low",
+"ra": "Starseed practice draws on channeled star-family/guide communication characteristic of the spirit-guide complex."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_JM_LILITH",
+"c": "high",
+"ra": "Lilith is among the most venerated figures in WitchTok deity work — a contemporary devotional reception of the existing entity."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_NOR_LOKI",
+"c": "high",
+"ra": "Loki has a large, documented WitchTok/Lokean devotional following; modeled as contemporary reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_HECATE",
+"c": "high",
+"ra": "Hecate is a flagship WitchTok deity for witchcraft and the crossroads; contemporary devotional reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_HADES",
+"c": "high",
+"ra": "Hades is widely worked with in WitchTok/Hellenic-pagan deity work; contemporary devotional reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_PERSEPHONE",
+"c": "high",
+"ra": "Persephone is one of the most popular WitchTok deities for transformation/underworld work; contemporary devotional reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_APHRODITE",
+"c": "high",
+"ra": "Aphrodite is heavily venerated on WitchTok for love/self-worth devotion; contemporary devotional reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_HERMES",
+"c": "medium",
+"ra": "Hermes has an active WitchTok following (luck, communication, travel); contemporary devotional reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_DIONYSUS",
+"c": "medium",
+"ra": "Dionysus is widely worked with on WitchTok for liberation/ecstasy devotion; contemporary devotional reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_NOR_FREYJA",
+"c": "medium",
+"ra": "Freyja is a popular WitchTok/Norse-pagan deity for love, seidr, and witchcraft; contemporary devotional reception."
+},
+{
+"s": "ENT_VF_WITCHTOK",
+"t": "reception_of",
+"o": "ENT_CEL_BRIGID",
+"c": "medium",
+"ra": "Brigid is widely venerated on WitchTok (and modern Druidry) for hearth, healing, and poetry; contemporary devotional reception."
+}
+]
