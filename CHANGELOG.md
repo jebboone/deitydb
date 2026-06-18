@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.1.3 — 2026-06-18
+
+### Sourcing-error remediation (citation quality audit)
+
+Systematic audit + fix of the verbatim citation set. Removed ~120 sourcing errors and
+re-extracted clean replacements; net verbatim 1,360 → 1,329, but every remaining quote is
+now genuine primary text (0 editorial-apparatus, 0 OCR-garbage).
+
+- **Engine hardened** (`scripts/citations/cite_anchor.py`): anchor selection now rejects
+  windows that are **editorial apparatus** (footnotes, "Compare…", "cf.", "this fact is clearly
+  seen…", page/volume refs, "Digitized by Google", running headers) or **OCR garbage**
+  (file-paths, index/TOC fragments, comma-runs, low alpha-ratio / digit-heavy), and picks the
+  highest-scoring *clean primary-text* occurrence instead.
+- **Removed:** 73 apparatus quotes (e.g. Charon/Adonis/Gabriel landing on Frazer/Charles
+  footnotes), 55 OCR-garbage quotes (Agrippa file-paths, Golden-Legend TOC, ETCSL catalog
+  refs), 23 non-English (Latin) fragments, 17 name-absent name-anchored mis-anchors, and a
+  set of by-date synaxarion same-name mis-anchors (Tsar Nicholas II → "Nicholas Motovilov", etc.).
+- **Re-extracted clean** for the affected corpora (1 Enoch, 3 Enoch, Agrippa, Apollodorus,
+  Bundahishn, Avesta, ETCSL, Eddas, Malory, Golden Legend, Hittite, Nag Hammadi, Manichaean,
+  Picatrix, Ventris-Chadwick). Deterministic corpora (Theogony catalogue, Shem→Exodus,
+  Herodotus interpretatio, KJV verse) preserved — their legitimate name-absent excerpts are exempt.
+
 ## v2.1.0 — 2026-06-18
 
 ### Citation remediation: every entity now carries a graded, source-traceable citation

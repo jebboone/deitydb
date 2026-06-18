@@ -100,6 +100,19 @@ def clean(t):
     return t
 full=clean(raw)
 def kw(s): return set(w.lower() for w in re.findall(r'[A-Za-z]{4,}',s))-STOP
+_APP=re.compile(r'\bcompare\b|\bcf\.|\bsqq|\bibid|\bop\. cit|\d(st|nd|rd|th) ed\.|\bpara\.?\s*\d|this fact is clearly seen|disconnected allusion|the name for .* in .* was|in middle persian|in the (greek|latin) (text|version)|\bfootnote|\btransl(ator|ation) |\bviz\.|\bff\.|\bvol\.\s*\d|see (also |the )?(para|p\.|note|chap|above|below)|\bpp\.\s*\d|manuscript reads|\beditor',re.I)
+_GARB=re.compile(r'file:///|,\s*,|„|\|\s*\||\d+,\s*\d+,\s*\d+|Contents of|VOL\.|seqq|\bBd\.\s*\d|&[a-zA-Z];|\biae|\biea |Myths \d|\bnn?\.\b|\d{3,}\s+\d{2,}')
+def _garbage(seg):
+    if _GARB.search(seg): return True
+    a=sum(ch.isalpha() or ch.isspace() for ch in seg)/max(1,len(seg))
+    d=sum(ch.isdigit() for ch in seg)/max(1,len(seg))
+    return a<0.80 or d>0.06
+def _excerpt(i):
+    s=full.rfind('. ',0,i); s=0 if s<0 else s+2
+    if i-s>180: s=max(0,i-90)
+    seg=full[s:s+460]; cut=seg.rfind('. ')
+    if cut>170: seg=seg[:cut+1]
+    return seg.strip()
 def anchor(name,note,aliases=None):
     nm=re.sub(r'\s*\(.*?\)','',name).strip()
     words=[w for w in re.findall(r'[A-Za-z]{5,}',nm)]
@@ -112,20 +125,18 @@ def anchor(name,note,aliases=None):
     for c in ([nm] if len(nm)>=5 else [])+sorted(words,key=len,reverse=True)+extra:
         if c and c not in seen: seen.add(c);cands.append(c)
     notek=kw(note)
-    best=None
+    scored=[]
     for cand in cands:
         occ=[m.start() for m in re.finditer(re.escape(cand),full)][:120]
         if not occ: continue
         for i in occ:
-            score=len(kw(full[max(0,i-160):i+260])&notek)
-            if best is None or score>best[0]: best=(score,i)
+            scored.append((len(kw(full[max(0,i-160):i+260])&notek), i))
         break
-    if not best: return None
-    i=best[1]; s=full.rfind('. ',0,i); s=0 if s<0 else s+2
-    if i-s>180: s=max(0,i-90)
-    seg=full[s:s+460]; cut=seg.rfind('. ')
-    if cut>170: seg=seg[:cut+1]
-    return seg.strip()
+    if not scored: return None
+    for score,i in sorted(scored,key=lambda x:-x[0]):
+        seg=_excerpt(i)
+        if not _APP.search(seg) and not _garbage(seg): return seg   # skip apparatus + OCR garbage
+    return None
 def esc(s): return s.replace("'","''")
 rows=[];deferred=[]
 for line in open('/tmp/cohort_%s.tsv'%key,encoding='utf-8'):
