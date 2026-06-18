@@ -48,6 +48,7 @@ VIEWS=(
   v_public_comparative_domains
   v_public_cross_tradition_links
   v_public_cross_tradition_matrix
+  v_public_entity_citations
   v_release_metrics
 )
 
