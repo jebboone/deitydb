@@ -1,6 +1,13 @@
 import re,sys
 STOP=set('the a an of and to in is on at by for with from as his her their they who whom which that this these those who he she it him them was were are be been being into out over under upon also who god gods son daughter named name great who one two three'.split())
 CONFIGS={
+ 'zohar2':dict(file='zohar2.txt',sid='SRC_ZOHAR',wt='The Zohar (Soncino edition)',tr='Sperling & Simon',yr=1934,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt; verify section.'),
+ 'ginza':dict(file='ginza.txt',sid='SRC_GINZA_RBA',wt='Ginza Rabba (The Great Treasure)',tr='Al-Saadi',yr=2019,url=None,clean='plain',reason='Located by name; verify book/section.'),
+ 'manich_psalm':dict(file='manich.txt',sid='SRC_MANICHAEAN_PSALM_BOOK',wt='Manichaean Texts from the Roman Empire (Psalm-Book)',tr='Gardner & Lieu',yr=2004,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt; verify.'),
+ 'manich_keph':dict(file='manich.txt',sid='SRC_MANICHAEAN_KEPHALAIA',wt='Manichaean Texts from the Roman Empire (Kephalaia)',tr='Gardner & Lieu',yr=2004,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt; verify.'),
+ 'ventris':dict(file='ventris.txt',sid='SRC_VENTRIS_CHADWICK',wt='Ventris & Chadwick, Documents in Mycenaean Greek',tr='Ventris & Chadwick',yr=1973,url=None,clean='plain',reason='Linear B attestation — brief flagged excerpt; verify the tablet.'),
+ 'farley':dict(file='farley.txt',sid='SRC_SYNAXARION',wt='A Daily Calendar of Saints (Farley)',tr='Lawrence Farley',yr=2018,url=None,clean='plain',reason='Located by name in an Orthodox synaxarion; brief flagged excerpt; verify the commemoration.'),
+
  'dee':dict(file='dee.txt',sid='SRC_DEE_ENOCHIAN',wt='A True and Faithful Relation (Dee & Kelley)',tr='Meric Casaubon',yr=1659,url='https://archive.org/details/truefaithfulrela00deej',clean='ocr',reason='OCR scan, located by name; verify the action/aethyr.'),
  'apocrypha':dict(file='apocrypha.txt',sid='SRC_APOCRYPHA_NRSV',wt='The Apocrypha (King James Version)',tr='King James Version',yr=1611,url='https://www.gutenberg.org/ebooks/10900',clean='plain',reason='English (KJV Apocrypha) located by name; verify book:chapter.'),
  'secretdoctrine':dict(file='secretdoctrine.txt',sid='SRC_BLAVATSKY_SECRET_DOCTRINE',wt='H. P. Blavatsky, The Secret Doctrine',tr='H. P. Blavatsky',yr=1888,url='https://www.gutenberg.org/ebooks/54824',clean='plain',reason='Located by name; verify volume/page.'),
