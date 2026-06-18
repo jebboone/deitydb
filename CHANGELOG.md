@@ -1,5 +1,36 @@
 # Changelog
 
+## v2.1.0 — 2026-06-18
+
+### Citation remediation: every entity now carries a graded, source-traceable citation
+
+Response to user feedback that entity descriptions read as AI-written and weren't properly
+cited. Introduces a verified-citation layer and replaces unsourced description prose with
+real, source-traceable citations. No entity/relationship row-count change
+(3,837 entities / 7,098 relationships / 458 sources / 135 traditions, unchanged).
+
+- **New `entity_citations` table + `v_public_entity_citations` view** — per-entity citation
+  records with `work_title`, `locus`, verbatim `quote`, `translator`/`translation_year`,
+  `source_url`, `original_text_url`, `evidence_grade`, and `needs_review`/`review_reason` flags.
+  Built by `scripts/build_pilot_citations.sql` + `scripts/citations/` (reproducible generators;
+  see `scripts/citations/README.md`).
+- **1,223 verbatim primary-source quotes**, each gated as a literal substring of a real
+  public-domain / licensed text (deterministic line/section extraction or note-scored
+  name-anchoring). Corpora include Hesiod, the Homeric Hymns, Homer, Pausanias, Herodotus,
+  Ovid, Virgil, Apollodorus, the KJV (OT+NT), the Qur'an (Pickthall), Irenaeus, the Ars
+  Goetia, Budge's Papyrus of Ani, the Faulkner Pyramid Texts, the Eddas, Mabinogion,
+  Kalevala, Volsungs, Malory, the Nag Hammadi library, Pistis Sophia, the Books of Jeu,
+  Corpus Hermeticum, 3 Enoch, the Testament of Solomon, Agrippa, Picatrix, the Mandaean Book
+  of John, Sahih al-Bukhari, Ibn Ishaq, the Kabbalah Unveiled, ETCSL Sumerian, the Prologue
+  of Ohrid, and more.
+- **Remaining 2,614 entities carry graded academic source pointers** — `primary-uncited`
+  (a primary text identified, verbatim quote pending), `secondary` (academic scholarship),
+  or `reference` (reference works) — all flagged `needs_review`. **0 entities uncited.**
+- **Entity pages** (`/entity`) now render the verbatim quote (or, for pointers, "Cited
+  source: …" with a grade badge), an "original text" link where applicable, and a
+  "Legacy summary — pending citation" notice on any entity whose blurb is not yet replaced,
+  so no AI-written text is presented as verified.
+
 ## v2.0.0 — 2026-06-17
 
 ### Schema epoch: controlled `entity_class` (BREAKING)

@@ -568,3 +568,15 @@ SELECT tp.tradition, tp.tradition_class, tp.prevalence, tp.status_note,
        (SELECT count(*) FROM entities e WHERE e.tradition = tp.tradition) AS entity_count
 FROM tradition_profile tp
 ORDER BY tp.tradition_class, entity_count DESC;
+
+-- v_public_entity_citations (v2.1.0 citation-remediation pilot):
+-- verbatim primary-source excerpts with locus, translator, year, URL, evidence grade.
+-- Backing table entity_citations is created in scripts/build_pilot_citations.sql.
+CREATE OR REPLACE VIEW public.v_public_entity_citations AS
+SELECT c.entity_id, e.canonical_name, e.tradition,
+       c.work_title, c.locus, c.quote, c.translator, c.translation_year,
+       c.source_url, c.original_text_url, c.evidence_grade, c.evidence_note,
+       c.needs_review, c.review_reason, c.display_order
+FROM entity_citations c
+JOIN entities e ON e.entity_id = c.entity_id
+ORDER BY e.canonical_name, c.display_order;

@@ -39,6 +39,28 @@
 .en-src:first-child{border-top:0}
 .en-src a{color:#5b2a9e}
 .en-src .stype{color:#9a8f7c;font-size:.8rem}
+.en-cite-sec{margin:22px 0 4px;background:#fbf9f4;border:1px solid #ece2cd;border-radius:12px;padding:18px 20px}
+.en-cite-sec h2{margin:0 0 4px;color:#3b2a55}
+.en-cite-intro{color:#7c7569;font-size:.86rem;margin:0 0 14px}
+.en-cite{border-left:3px solid #c8a24a;padding:2px 0 2px 16px;margin:0 0 18px}
+.en-cite:last-child{margin-bottom:0}
+.en-cite blockquote{margin:0 0 8px;font-size:1.08rem;line-height:1.6;color:#2c2620;font-style:italic}
+.en-cite .en-cite-meta{font-size:.85rem;color:#6a5d44}
+.en-cite .en-cite-meta a{color:#5b2a9e;font-weight:600;text-decoration:none}
+.en-cite .en-cite-meta a:hover{text-decoration:underline}
+.en-grade{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;border-radius:5px;padding:2px 7px;margin-left:6px;vertical-align:1px}
+.en-grade.primary{background:#e4f1e7;color:#2a6a47}
+.en-grade.heresiological{background:#f6e7d6;color:#9a5a1c}
+.en-grade.pending{background:#eef0f4;color:#5a6472}
+.en-grade.secondary{background:#eae6f3;color:#5b3a8a}
+.en-grade.reference{background:#f0eee9;color:#7a7060}
+.en-cite.pointer{border-left-color:#cdd2da}
+.en-cite.pointer blockquote{display:none}
+.en-evnote{font-size:.82rem;color:#7c6f57;margin:6px 0 0;line-height:1.45}
+.en-evnote.warn{color:#9a5a1c}
+.en-flag{font-size:.8rem;color:#8a6d1c;background:#fbf3da;border:1px solid #e8d49a;border-radius:6px;padding:5px 9px;margin:6px 0 0}
+.en-pending{font-size:.82rem;color:#8a5a2c;background:#fbf0e6;border:1px solid #e8cba9;border-radius:6px;padding:6px 10px;margin:2px 0 14px}
+.en-note.legacy{color:#9a8f7c;font-size:.95rem;font-style:italic}
 </style>
 
 <div class="en-page">
@@ -58,6 +80,11 @@
       <div class="en-when" id="en-when"></div>
       <p class="en-aka" id="en-aka" hidden></p>
       <a class="en-graph-btn" id="en-graph" href="#">◉ Open in relationship graph</a>
+    </div>
+    <div class="en-cite-sec" id="en-cite-sec" hidden>
+      <h2>Sources &amp; citations</h2>
+      <p class="en-cite-intro">Verbatim primary-source excerpts where available; otherwise the cited source on which the entry rests, graded and flagged where verification is still pending.</p>
+      <div id="en-cites"></div>
     </div>
     <div class="en-sec" id="en-rels-sec" hidden><h2>Relationships</h2><div id="en-rels"></div></div>
     <div class="en-sec" id="en-src-sec" hidden><h2>Sources</h2><div id="en-sources"></div></div>
@@ -102,11 +129,13 @@ async function load(id){
     var pers=await jsql("SELECT p.period_name nm, p.start_year sy, p.end_year ey FROM entity_periods ep JOIN periods p ON p.period_id=ep.period_id WHERE ep.entity_id='"+sqlStr(id)+"' ORDER BY p.start_year");
     var aka=await jsql("SELECT alias_name nm FROM entity_aliases WHERE entity_id='"+sqlStr(id)+"' ORDER BY alias_name");
     var srcs=await jsql("SELECT s.title title, s.url url, s.source_type st, es.evidence_type ev FROM entity_sources es JOIN sources s ON s.source_id=es.source_id WHERE es.entity_id='"+sqlStr(id)+"' ORDER BY s.title");
-    render(e,rels,pers,aka,srcs);
+    var cites=[];
+    try{ cites=await jsql("SELECT work_title, locus, quote, translator, translation_year, source_url, original_text_url, evidence_grade, evidence_note, needs_review, review_reason FROM v_public_entity_citations WHERE entity_id='"+sqlStr(id)+"' ORDER BY display_order"); }catch(_){ cites=[]; }
+    render(e,rels,pers,aka,srcs,cites);
   }catch(err){ errEl.textContent='Could not load this entity: '+err.message; errEl.hidden=false; loadEl.hidden=true; }
 }
 
-function render(e,rels,pers,aka,srcs){
+function render(e,rels,pers,aka,srcs,cites){
   document.title=e.canonical_name+' — DeityDB';
   document.getElementById('en-name').innerHTML=esc(e.canonical_name)+(e.greek_name?' <span class="en-greek">'+esc(e.greek_name)+'</span>':'');
   var tc=TRAD_COLOR[tradKey(e.tradition)]||TRAD_COLOR.other;
@@ -116,11 +145,42 @@ function render(e,rels,pers,aka,srcs){
   if(e.category&&e.category!==e.entity_type)chips+='<span class="en-chip">'+esc(e.category)+'</span>';
   if(e.evidence_confidence)chips+='<span class="en-chip">Evidence '+esc(e.evidence_confidence)+'</span>';
   document.getElementById('en-chips').innerHTML=chips;
-  document.getElementById('en-note').textContent=e.short_note||'';
+  var noteEl=document.getElementById('en-note'); noteEl.textContent=e.short_note||'';
+  if(cites&&cites.length){ noteEl.classList.add('legacy'); }
+  else if(e.short_note){
+    noteEl.classList.add('legacy');
+    var warn=document.createElement('p'); warn.className='en-pending';
+    warn.textContent='⚠ Legacy summary — pending source citation. This description has not yet been replaced with a verified primary-source quotation.';
+    noteEl.parentNode.insertBefore(warn, noteEl.nextSibling);
+  }
   document.getElementById('en-domains').innerHTML=(e.primary_domains||'').split(/[;,]/).map(function(d){d=d.trim();return d?'<span class="en-dom">'+esc(d)+'</span>':'';}).join('');
   document.getElementById('en-when').innerHTML=pers.map(function(p){return '<span class="en-per">'+esc(p.nm)+' ('+esc(fmtY(p.sy))+' – '+esc(fmtY(p.ey))+')</span>';}).join('');
   if(aka.length){var el=document.getElementById('en-aka');el.hidden=false;el.innerHTML='<strong>Also known as:</strong> '+aka.map(function(a){return esc(a.nm);}).join(', ');}
   document.getElementById('en-graph').href='/graph?start='+encodeURIComponent(e.entity_id);
+
+  /* primary-source citations (remediation pilot) */
+  if(cites&&cites.length){
+    document.getElementById('en-cite-sec').hidden=false;
+    var GRADE={'primary-verbatim':['primary','primary · verbatim'],'heresiological-verbatim':['heresiological','heresiological · verbatim'],
+      'primary-uncited':['pending','primary source · not yet quoted'],'secondary':['secondary','secondary scholarship'],'reference':['reference','reference work']};
+    document.getElementById('en-cites').innerHTML=cites.map(function(c){
+      var g=GRADE[c.evidence_grade]||['secondary',esc(c.evidence_grade||'source')];
+      var cls=g[0], gradeLabel=g[1];
+      var link=c.source_url?' · <a href="'+esc(c.source_url)+'" target="_blank" rel="noopener">read the source ↗</a>':'';
+      if(c.original_text_url)link+=' · <a href="'+esc(c.original_text_url)+'" target="_blank" rel="noopener">original text ↗</a>';
+      var evn=c.evidence_note?'<p class="en-evnote'+(cls==='heresiological'?' warn':'')+'">'+esc(c.evidence_note)+'</p>':'';
+      var flag=(c.needs_review===1||c.needs_review===true)?'<p class="en-flag">⚑ Flagged for review: '+esc(c.review_reason||'')+'</p>':'';
+      var badge='<span class="en-grade '+cls+'">'+gradeLabel+'</span>';
+      if(c.quote){
+        var meta=esc(c.work_title)+', '+esc(c.locus)+' — trans. '+esc(c.translator||'')+(c.translation_year?' ('+esc(c.translation_year)+')':'');
+        return '<div class="en-cite"><blockquote>“'+esc(c.quote)+'”</blockquote>'+
+          '<div class="en-cite-meta">'+meta+badge+link+'</div>'+evn+flag+'</div>';
+      }
+      // pointer (no verbatim quote yet)
+      var loc=(c.locus&&c.locus!=='per cited source')?', '+esc(c.locus):'';
+      return '<div class="en-cite pointer"><div class="en-cite-meta"><strong>Cited source:</strong> '+esc(c.work_title)+loc+badge+link+'</div>'+evn+flag+'</div>';
+    }).join('');
+  }
 
   /* relationships grouped by direction + verb */
   if(rels.length){
