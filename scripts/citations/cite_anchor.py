@@ -1,6 +1,9 @@
 import re,sys
 STOP=set('the a an of and to in is on at by for with from as his her their they who whom which that this these those who he she it him them was were are be been being into out over under upon also who god gods son daughter named name great who one two three'.split())
 CONFIGS={
+ 'homer_il':dict(file='iliad.txt',sid='SRC_HOMER_ILIAD_ODYSSEY',wt='Homer, Iliad',tr='Samuel Butler',yr=1898,url='https://www.gutenberg.org/ebooks/2199',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133',reason='English prose translation located by name; locus is the Greek line-numbering — consult the original.'),
+ 'homer_od':dict(file='odyssey.txt',sid='SRC_HOMER_ILIAD_ODYSSEY',wt='Homer, Odyssey',tr='Samuel Butler',yr=1900,url='https://www.gutenberg.org/ebooks/1727',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0135',reason='English prose translation located by name; locus is the Greek line-numbering — consult the original.'),
+
  'ovidf':dict(file='fasti.txt',sid='SRC_OVID_FASTI',wt='Ovid, Fasti',tr='Henry T. Riley',yr=1851,url='https://www.gutenberg.org/ebooks/8738',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0547',reason='English translation located by name (apparatus/Latin windows skipped); the locus is the Latin line-numbering — consult the original (linked).'),
 
  'zohar2':dict(file='zohar2.txt',sid='SRC_ZOHAR',wt='The Zohar (Soncino edition)',tr='Sperling & Simon',yr=1934,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt; verify section.'),
