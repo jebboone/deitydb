@@ -21,6 +21,8 @@ details.gp-ctrl summary::-webkit-details-marker{display:none}
 .gp-types label{display:block;padding:2px 0;white-space:nowrap;font-size:.83rem}
 .gp-types .gp-types-act{display:flex;gap:10px;margin:0 0 6px;font-size:.78rem}
 .gp-types .gp-types-act a{color:#5b2a9e;cursor:pointer}
+.gp-label{cursor:pointer}
+.gp-label:hover{text-decoration:underline}
 </style>
 <div class="gp-page">
 
@@ -28,7 +30,7 @@ details.gp-ctrl summary::-webkit-details-marker{display:none}
   <div class="gp-header">
     <div class="gp-header-text">
       <h1>Relationship Graph</h1>
-      <p class="gp-subtitle">Search for an entity, then click a node to <strong>expand</strong> its connections — and click it again to <strong>collapse</strong> them. Start small and grow only what you want.</p>
+      <p class="gp-subtitle">Search for an entity, then click a node to <strong>expand</strong> its connections — and click it again to <strong>collapse</strong> them. Click an entity's <strong>name</strong> to open its full profile. Start small and grow only what you want.</p>
     </div>
     <div class="gp-search-wrap">
       <div class="gp-ac" id="gp-ac">
@@ -121,7 +123,7 @@ details.gp-ctrl summary::-webkit-details-marker{display:none}
 
   {# ── Legend ───────────────────────────────────────────────────────── #}
   <div class="gp-legend" id="gp-legend" hidden>
-    <span class="gp-legend-hint"><strong>+</strong> expand  ·  <strong>−</strong> collapse  ·  <strong>double-click</strong> opens its page  ·  drag to move  ·  scroll to zoom</span>
+    <span class="gp-legend-hint"><strong>click a node</strong> to expand / collapse  ·  <strong>click its name</strong> to open its page  ·  drag to move  ·  scroll to zoom</span>
     <div class="gp-legend-trads" id="gp-legend-trads"></div>
   </div>
 
@@ -362,7 +364,7 @@ function render() {
     .on('mouseenter', onNodeOver)
     .on('mouseleave', hideTip)
     .on('click', onNodeClick)
-    .on('dblclick', onNodeOpen);
+    .on('dblclick', onNodeOpen);   /* kept as a bonus; primary "open" is the name label below */
 
   nodeG.selectAll('circle')
     .call(d3.drag()
@@ -393,12 +395,15 @@ function render() {
     .attr('y', function(d){ return d.y + 28; })
     .attr('fill', '#1a2f4e')
     .attr('font-size', '11px')
-    .attr('pointer-events', 'none')
+    .attr('pointer-events', 'auto')
     .attr('paint-order', 'stroke')
     .attr('stroke', 'rgba(250,248,245,0.9)')
     .attr('stroke-width', '3')
     .attr('stroke-linejoin', 'round')
-    .text(function(d){ return d.name.length > 14 ? d.name.slice(0,12) + '…' : d.name; });
+    .text(function(d){ return d.name.length > 14 ? d.name.slice(0,12) + '…' : d.name; })
+    .on('click', onNodeOpen)
+    .on('mouseenter', onNodeOver)
+    .on('mouseleave', hideTip);
 
   simulation.nodes(nodes);
   simulation.force('link').links(links);
