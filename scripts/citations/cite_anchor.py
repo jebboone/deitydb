@@ -1,6 +1,13 @@
 import re,sys
 STOP=set('the a an of and to in is on at by for with from as his her their they who whom which that this these those who he she it him them was were are be been being into out over under upon also who god gods son daughter named name great who one two three'.split())
 CONFIGS={
+ 'irenaeus':dict(file='iren_all.txt',sid='SRC_IRENAEUS_AH',wt='Irenaeus, Against Heresies',tr='Roberts & Rambaut (Ante-Nicene Fathers)',yr=1885,url='https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS',clean='plain',reason='Heresiological source (hostile witness) located by name; verify chapter.section.'),
+ 'virgil':dict(file='aeneid.txt',sid='SRC_VIRGIL_AENEID',wt='Virgil, Aeneid',tr='John Dryden',yr=1697,url='https://www.gutenberg.org/ebooks/228',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0055',reason='English verse translation located by name; the locus is the Latin line-numbering — consult the original.'),
+ 'ovidm':dict(file='ovidm_all.txt',sid='SRC_OVID_METAMORPHOSES',wt='Ovid, Metamorphoses',tr='Henry T. Riley',yr=1851,url='https://www.gutenberg.org/ebooks/21765',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0029',reason='English translation located by name; the locus is the Latin line-numbering — consult the original.'),
+
+ 'prose_edda2':dict(file='prose_edda2.txt',sid='SRC_PROSE_EDDA',wt='Snorri Sturluson, Prose Edda (Faulkes)',tr='Anthony Faulkes',yr=1987,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt located by name; verify section.'),
+ 'poetic_edda2':dict(file='poetic_edda2.txt',sid='SRC_POETIC_EDDA',wt='The Poetic Edda',tr='trans.',yr=0,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt located by name; verify the poem/stanza.'),
+
  'homer_il':dict(file='iliad.txt',sid='SRC_HOMER_ILIAD_ODYSSEY',wt='Homer, Iliad',tr='Samuel Butler',yr=1898,url='https://www.gutenberg.org/ebooks/2199',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133',reason='English prose translation located by name; locus is the Greek line-numbering — consult the original.'),
  'homer_od':dict(file='odyssey.txt',sid='SRC_HOMER_ILIAD_ODYSSEY',wt='Homer, Odyssey',tr='Samuel Butler',yr=1900,url='https://www.gutenberg.org/ebooks/1727',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0135',reason='English prose translation located by name; locus is the Greek line-numbering — consult the original.'),
 
