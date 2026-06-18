@@ -1,6 +1,8 @@
 import re,sys
 STOP=set('the a an of and to in is on at by for with from as his her their they who whom which that this these those who he she it him them was were are be been being into out over under upon also who god gods son daughter named name great who one two three'.split())
 CONFIGS={
+ 'ovidf':dict(file='fasti.txt',sid='SRC_OVID_FASTI',wt='Ovid, Fasti',tr='Henry T. Riley',yr=1851,url='https://www.gutenberg.org/ebooks/8738',clean='plain',orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0547',reason='English translation located by name (apparatus/Latin windows skipped); the locus is the Latin line-numbering — consult the original (linked).'),
+
  'zohar2':dict(file='zohar2.txt',sid='SRC_ZOHAR',wt='The Zohar (Soncino edition)',tr='Sperling & Simon',yr=1934,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt; verify section.'),
  'ginza':dict(file='ginza.txt',sid='SRC_GINZA_RBA',wt='Ginza Rabba (The Great Treasure)',tr='Al-Saadi',yr=2019,url=None,clean='plain',reason='Located by name; verify book/section.'),
  'manich_psalm':dict(file='manich.txt',sid='SRC_MANICHAEAN_PSALM_BOOK',wt='Manichaean Texts from the Roman Empire (Psalm-Book)',tr='Gardner & Lieu',yr=2004,url=None,clean='plain',reason='In-copyright translation — brief flagged excerpt; verify.'),
