@@ -18,7 +18,7 @@ def pfx(eid): return eid.split("_")[1]
 def conf_norm(c):
     c=(c or "").lower()
     return c if c in ("high","medium","low") else {"a":"high","b":"medium","c":"low"}.get(c,"medium")
-def q(x): return "'" + str(x).replace("'","''") + "'"
+from sqlgen import sql_str as q  # robust literals (None->NULL, int validation); see scripts/sqlgen.py
 
 ents = json.load(open(os.path.join(F,"entities.json")))
 rels = json.load(open(os.path.join(F,"relationships.json")))

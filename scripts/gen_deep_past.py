@@ -26,8 +26,7 @@ CLUSTERS = [
     ("elamite.json", "Elamite", elam_src, "Elamite deity (Susa / Anshan / Tchoga Zanbil)"),
 ]
 
-def q(x):
-    return "'" + x.replace("'", "''") + "'"
+from sqlgen import sql_str as q  # robust literals (None->NULL, int validation); see scripts/sqlgen.py
 
 ents, srcs, pers, edges = [], [], [], []
 for fname, tradition, srcfn, basis in CLUSTERS:

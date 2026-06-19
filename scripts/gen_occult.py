@@ -46,8 +46,7 @@ def remap(rt, obj):
 def dom(x):
     return "; ".join(x) if isinstance(x, list) else x
 
-def q(x):
-    return "'" + str(x).replace("'", "''") + "'"
+from sqlgen import sql_str as q  # robust literals (None->NULL, int validation); see scripts/sqlgen.py
 
 # first pass: collect all NEW entity ids
 new_ids = set()
