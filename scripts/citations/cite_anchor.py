@@ -70,8 +70,8 @@ CONFIGS={
  'avesta_kanga':dict(file='avesta_kanga.txt',sid='SRC_AVESTA',wt='Khordeh Avesta (Kanga, English)',tr='Kavasji Edalji Kanga',yr=1880,url=None,clean='plain',
    orig='https://www.avesta.org/',reason='English translation (Kanga) located by name/alias; verify exact Yasna/Yasht locus.'),
 
- 'testsol':dict(file='testsol.txt',sid='SRC_TESTAMENT_SOLOMON',wt='The Testament of Solomon',tr='F. C. Conybeare',yr=1898,url='https://archive.org/details/jstor-1450398',clean='ocr',
-   reason='OCR scan, located by name; verify wording against a clean edition.'),
+ 'testsol':dict(file='testsol.txt',sid='SRC_TESTAMENT_SOLOMON',wt='The Testament of Solomon',tr='F. C. Conybeare',yr=1898,url='https://www.esotericarchives.com/solomon/testamen.htm',clean='plain',
+   reason='Conybeare 1898 translation (clean digital edition), located by name; verify the verse number against the edition.'),
  'avesta':dict(file='avesta.txt',sid='SRC_AVESTA',wt='The Zend-Avesta',tr='Darmesteter & Mills (Sacred Books of the East)',yr=1887,url='https://archive.org/details/zendavesta02darm',clean='ocr',
    reason='OCR scan, located by name; verify wording and exact Yasna/Yasht locus against a clean edition.'),
 
