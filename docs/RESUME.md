@@ -1,21 +1,38 @@
 # DeityDB — Resume / Cross-Machine Handoff
 
-Snapshot for picking the project up on another machine. Last updated **2026-06-17, v2.0.0**.
+Snapshot for picking the project up on another machine. Last updated **2026-06-19, v2.1.6**.
 
 ## ⟶ Pick up here (next action)
-**v2.0.0 is committed & pushed but NOT yet deployed.** The live site is still v1.92.0.
-To ship it: bring up the machine (below), then `flyctl auth login` + `flyctl deploy -a deitydb-explorer`.
-Everything else (Postgres migration, SQLite export, schema files, docs) is already done and on `main`.
+**Citation remediation (the v2.1.x epoch) is the active work** — replacing AI-paraphrase
+`short_note` prose with source-traceable citations in `entity_citations`. Current state
+(rebuilt + measured 2026-06-19): **0 entities fully uncited**; 1,351 carry real verbatim
+quotes; the remaining surface is **1,254 `primary-uncited`** entities (primary text known,
+verbatim quote pending — the Track-1 upgrade targets), plus 1,129 `secondary` / 103 `reference`
+pointers. **Next:** continue the public-domain extraction pipeline (`scripts/citations/`) to
+upgrade `primary-uncited` → `primary-verbatim`, and fix two broken builds (see Known issues below).
+
+**Deploy status unconfirmed** — verify the live version at deitydb-explorer.fly.dev before
+assuming the citation epoch is deployed (it was v1.92.0 pre-citation). Ship via
+`flyctl deploy -a deitydb-explorer` after the publish cycle.
+
+### Known issues (rebuild surfaced 2026-06-19)
+- `scripts/citations/build_etzhayim_citations.sql` — **empty `VALUES` list** (0 rows), never
+  applies; the corpus extracted nothing. Make it a no-op/remove, or re-source.
+- `scripts/citations/build_testsol_citations.sql` — quote contains **JSTOR OCR apparatus**
+  ("This content downloaded from…") and a broken string literal; never applies. Re-extract the
+  Testament of Solomon from a clean PD edition (Conybeare). Both entities currently fall back to
+  track-2 pointers, so nothing AI-written is shown as verified.
 
 ## Current state
-- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Code & DB at **v2.0.0** on `main`; **deitydb-explorer.fly.dev is still serving v1.92.0 until the v2.0.0 deploy runs.**
+- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Code & DB at **v2.1.6** on `main`.
+- **Citation remediation (v2.1.0–2.1.6): IN PROGRESS** — `entity_citations` table + `v_public_entity_citations` view; every entity graded (`primary-verbatim` / `primary-uncited` / `secondary` / `reference`), 0 fully uncited. 1,351 verbatim quotes substring-gated against public-domain texts; 1,254 `primary-uncited` remain as upgrade targets. Pipeline + run order: `scripts/citations/README.md`. Triage/plan: `docs/REMEDIATION_TRIAGE.md`.
 - **Completeness program (Phases 1–7): COMPLETE and audited clean** — every integrity invariant 0, 97.3% primary/scholarly source coverage. Per-phase record in `CHANGELOG.md` (v1.85.0–v1.91.1); the gap register is `docs/COMPLETENESS_ROADMAP.md`.
 - **Deeper graph/API features: DONE** (v1.92.0) — JSON API + `/path` finder + `/constellation` map + `/graph` filters.
 - **Schema epoch — controlled `entity_class`: DONE** (v2.0.0) — 19-value controlled vocabulary over free-text `entity_type`; 57 blank types filled; 0 unmapped types. Migration `upgrade_v2_0_entity_class.sql`; map source in `scripts/_classmap/`.
 - **Git:** all pushed to `github.com/jebboone/deitydb` (main).
 
 ## What travels, and what doesn't
-- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and a portable Postgres dump at `backups/deitydb_pg_v2.0.0.sql.gz`.
+- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON + `scripts/citations/`), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and portable Postgres dumps in `backups/` — **`deitydb_pg_v2.1.6.sql.gz` is current (includes the citation layer)**; `deitydb_pg_v2.0.0.sql.gz` is the pre-citation baseline kept for reference.
 - **NOT in git:** `deitydb.sqlite` (gitignored — rebuilt from Postgres), `CLAUDE.md` (gitignored project instructions), the Python **venv**, and **flyctl**. The **Postgres source-of-truth runs only in the local Docker container** — it travels via the committed dump, not git.
 
 ## Bring up a new machine
@@ -23,11 +40,16 @@ Everything else (Postgres migration, SQLite export, schema files, docs) is alrea
 # 1. code
 git clone https://github.com/jebboone/deitydb && cd deitydb
 
-# 2. Postgres source-of-truth (restore from the committed dump)
-docker run -d --name deitydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=deitydb -p 5432:5432 postgres:16
+# 2. Postgres source-of-truth (restore from the current committed dump).
+#    On Bazzite use `podman` (rootless, no sudo); it's drop-in for `docker` here.
+podman run -d --name deitydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=deitydb -p 5432:5432 docker.io/library/postgres:16
 sleep 5
-gunzip -c backups/deitydb_pg_v2.0.0.sql.gz | docker exec -i deitydb psql -U postgres -d deitydb
-docker exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"   # expect 3837
+gunzip -c backups/deitydb_pg_v2.1.6.sql.gz | podman exec -i deitydb psql -U postgres -d deitydb
+podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"          # expect 3837
+podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entity_citations;"  # expect ~3871
+# To rebuild the citation layer FROM SCRATCH on the v2.0.0 baseline instead (rarely needed):
+#   apply scripts/build_pilot_citations.sql, then scripts/citations/build_*_citations.sql
+#   (build_track2_secondary_citations.sql LAST). NOTE: etzhayim + testsol builds are broken (see Known issues).
 
 # 3. tooling venv (export + serve)
 python3 -m venv .venv && .venv/bin/pip install "datasette==0.65.2" db-to-sqlite sqlite-utils psycopg2-binary

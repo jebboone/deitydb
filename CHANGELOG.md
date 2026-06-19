@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.1.6 — 2026-06-18
+
+### Citation remediation: Edda + Latin verbatim tails (hardened engine)
+
+Verbatim primary-source quotes for remaining entities in already-opened corpora, all via the
+v2.1.3 hardened (apparatus/OCR-rejecting) `cite_anchor.py`.
+
+- **+ Prose Edda (Faulkes) and Poetic Edda tails**, plus additional **Irenaeus**, **Virgil**,
+  and **Ovid *Metamorphoses*** quotes.
+- Continues the push toward **zero AI-written descriptions** still on display.
+
+## v2.1.5 — 2026-06-18
+
+### Citation remediation: Homer + Mabinogion tails
+
+- **+ Homer** (*Iliad*/*Odyssey*) verbatim via a hardened-engine retry, plus additional
+  **Mabinogion** quotes. Net verbatim ≈ 1,326 / 3,837.
+
+## v2.1.4 — 2026-06-18
+
+### Citation cleanup + Ovid *Fasti* deferral
+
+- Cleanup pass over the verbatim set (all clean) + a **Mabinogion** tail; verbatim 1,317.
+- **Deferred Ovid *Fasti***: the only free full text (Bohn) is bilingual + footnoted, unusable
+  for clean substring-gated extraction — those entities reverted to graded pointers pending a
+  clean public-domain translation.
+
 ## v2.1.3 — 2026-06-18
 
 ### Sourcing-error remediation (citation quality audit)
@@ -21,6 +48,22 @@ now genuine primary text (0 editorial-apparatus, 0 OCR-garbage).
   Bundahishn, Avesta, ETCSL, Eddas, Malory, Golden Legend, Hittite, Nag Hammadi, Manichaean,
   Picatrix, Ventris-Chadwick). Deterministic corpora (Theogony catalogue, Shem→Exodus,
   Herodotus interpretatio, KJV verse) preserved — their legitimate name-absent excerpts are exempt.
+
+## v2.1.2 — 2026-06-18
+
+### Citation remediation: +61 verbatim (Kabbalah / Mandaean / Manichaean / Linear B / modern saints)
+
+- **+61 verbatim quotes** — Zohar (Soncino), Ginza Rabba, Manichaean (Kephalaia + Psalms),
+  Ventris–Chadwick (Linear B), and the Farley *Synaxarion* (fixing modern Orthodox saints —
+  Matrona, Maria Skobtsova, etc.). Same-name mis-anchors dropped. Verbatim now 1,360 / 3,837.
+
+## v2.1.1 — 2026-06-18
+
+### Citation remediation: +76 verbatim from public-domain corpora
+
+- **+76 verbatim quotes** — Pseudo-Dionysius, 1 Enoch, the Golden Legend, the Apocrypha,
+  Blavatsky, Philo of Byblos, Cath Maige Tuired, Dee, and Sefer ha-Razim. Verbatim now
+  1,299 / 3,837; pending 1,306.
 
 ## v2.1.0 — 2026-06-18
 
