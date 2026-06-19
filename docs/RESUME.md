@@ -46,6 +46,9 @@ flyctl deploy -a deitydb-explorer                                    # live (~1-
 ```
 Frontend/plugin-only changes skip the export step. Bump `VERSION` + add a `CHANGELOG.md` entry for releases.
 
+## Schema migrations (dbmate)
+Schema changes are tracked with **dbmate** (config in `.env` / `.env.example`; migrations in `db/migrations/`). The v2.0.0 schema is the **baseline** (= the committed dump), so on a fresh machine, after restoring the dump, run `dbmate up` once to record the baseline. New schema changes: `dbmate new <name>` → edit the `-- migrate:up`/`-- migrate:down` sections → `dbmate up` (`dbmate rollback` undoes the last). dbmate wraps each migration in a transaction, so don't add `BEGIN;`/`COMMIT;` in the body. Data loads stay as idempotent `scripts/build_*.sql` (NOT migrations). Generators share SQL-literal helpers in `scripts/sqlgen.py`. Full rationale: `docs/SQL_AUDIT.md`.
+
 ## Build pattern (how the cohorts were made)
 Per cohort: JSON in `scripts/_<cohort>/{entities,relationships,sources,periods}.json` → `python scripts/gen_roster.py <cohort>` → emits `scripts/build_<cohort>.sql` (idempotent, self-validating, prints REJECTED edges) → `docker exec -i deitydb psql -U postgres -d deitydb -v ON_ERROR_STOP=1 < scripts/build_<cohort>.sql`. New traditions get a row in `scripts/gen_tradition_profile.py` (then regenerate+apply `build_tradition_profile.sql`). Integrity gate every batch: 0 rejected/orphan/unsourced/unperiodized/rationale-less/orphan-source/dup-name.
 

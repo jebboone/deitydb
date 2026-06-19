@@ -122,7 +122,7 @@ P = {
  # comparative
  "Cross-traditional":("comparative","abstraction"),
 }
-def q(x): return "'" + str(x).replace("'","''") + "'"
+from sqlgen import sql_str as q  # robust literals (None->NULL, int validation); see scripts/sqlgen.py
 rows=[]
 for trad,(cls,prev,*ov) in sorted(P.items()):
     note = ov[0] if ov else CLASS_NOTE[cls]

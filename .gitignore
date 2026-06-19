@@ -8,6 +8,10 @@ CLAUDE.md
 # Python virtual environment (tooling: datasette, db-to-sqlite, etc.)
 .venv/
 
+# Python bytecode (from scripts/gen_*.py generators)
+__pycache__/
+*.pyc
+
 # Generated SQLite export (built from PostgreSQL; not checked in)
 deitydb.sqlite
 
