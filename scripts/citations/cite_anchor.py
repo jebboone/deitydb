@@ -82,8 +82,8 @@ CONFIGS={
 
  'prose_edda':dict(file='prose_edda.txt',sid='SRC_PROSE_EDDA',wt='Snorri Sturluson, Prose Edda',tr='Rasmus B. Anderson',yr=1880,url='https://www.gutenberg.org/ebooks/18947',clean='plain',
    reason='English translation (Anderson, The Younger Edda) located by name within the work (not exact chapter); verify locus.'),
- 'poetic_edda':dict(file='poetic_edda.txt',sid='SRC_POETIC_EDDA',wt='The Poetic Edda',tr='Olive Bray',yr=1908,url='https://www.gutenberg.org/ebooks/14726',clean='plain',
-   reason='English translation located by name within the work (not exact stanza); verify locus.'),
+ 'poetic_edda':dict(file='poetic_edda.txt',sid='SRC_POETIC_EDDA',wt='The Poetic Edda',tr='Benjamin Thorpe',yr=1866,url='https://www.gutenberg.org/ebooks/14726',clean='plain',
+   reason='English translation (Benjamin Thorpe, in the Norroena ed. Gutenberg #14726) located by name within the work (not exact stanza); verify locus.'),
  'mabinogion':dict(file='mabinogion.txt',sid='SRC_MABINOGION',wt='The Mabinogion',tr='Lady Charlotte Guest',yr=1877,url='https://www.gutenberg.org/ebooks/5160',clean='plain',
    reason='English translation located by name within the work; verify locus.'),
  'kalevala':dict(file='kalevala.txt',sid='SRC_KALEVALA',wt='The Kalevala',tr='John Martin Crawford',yr=1888,url='https://www.gutenberg.org/ebooks/5186',clean='plain',
