@@ -23030,6 +23030,12 @@
       <data key="entity_class">collective</data>
       <data key="entity_type">Collective</data>
     </node>
+    <node id="ENT_ISIS_LACTANS">
+      <data key="name">Isis Lactans</data>
+      <data key="tradition">Greco-Roman Egypt</data>
+      <data key="entity_class"></data>
+      <data key="entity_type">Iconographic form</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
@@ -58519,6 +58525,46 @@
       <data key="relationship_type">aligned_with</data>
       <data key="confidence">medium</data>
       <data key="source_id">SRC_IAMBLICHUS_DE_MYSTERIIS</data>
+    </edge>
+    <edge id="e7098" source="ENT_TYPHON" target="ENT_EGY_SETH">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">high</data>
+      <data key="source_id">SRC_PLUTARCH_ISIS_OSIRIS</data>
+    </edge>
+    <edge id="e7099" source="ENT_CHR_DEVIL" target="ENT_TYPHON">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">medium</data>
+      <data key="source_id">SRC_FORSYTH_OLD_ENEMY</data>
+    </edge>
+    <edge id="e7100" source="ENT_WIC_TRIPLE_GODDESS" target="ENT_HECATE">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">high</data>
+      <data key="source_id">SRC_HUTTON_TRIUMPH</data>
+    </edge>
+    <edge id="e7101" source="ENT_WIC_TRIPLE_GODDESS" target="ENT_ROM_DIANA">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">medium</data>
+      <data key="source_id">SRC_GRAVES_WHITE_GODDESS</data>
+    </edge>
+    <edge id="e7102" source="ENT_VF_WITCHTOK" target="ENT_WIC_TRIPLE_GODDESS">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">medium</data>
+      <data key="source_id">SRC_BURTON_STRANGE_RITES</data>
+    </edge>
+    <edge id="e7103" source="ENT_ISIS_LACTANS" target="ENT_EGY_ISIS">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">high</data>
+      <data key="source_id">SRC_TRAN_ISIS_LACTANS</data>
+    </edge>
+    <edge id="e7104" source="ENT_SAINT_MARY" target="ENT_ISIS_LACTANS">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">medium</data>
+      <data key="source_id">SRC_HIGGINS_DIVINE_MOTHERS</data>
+    </edge>
+    <edge id="e7105" source="ENT_AST_DECANS" target="ENT_EGY_DECANS">
+      <data key="relationship_type">reception_of</data>
+      <data key="confidence">medium</data>
+      <data key="source_id">SRC_PINGREE_PICATRIX</data>
     </edge>
   </graph>
 </graphml>

@@ -3837,6 +3837,7 @@ CREATE (:Entity {id:'ENT_PCB_MESOAMERICAN_RELIGION', name:'Pre-Columbian Mesoame
 CREATE (:Entity {id:'ENT_PCB_TONANTZIN', name:'Tonantzin', tradition:'Mesoamerican', entity_class:'deity', entity_type:'Goddess'});
 CREATE (:Entity {id:'ENT_PCB_MAM', name:'Mam', tradition:'Mesoamerican', entity_class:'deity', entity_type:'God'});
 CREATE (:Entity {id:'ENT_CHR_COMMUNION_SAINTS', name:'The Communion of Saints', tradition:'Christian', entity_class:'collective', entity_type:'Collective'});
+CREATE (:Entity {id:'ENT_ISIS_LACTANS', name:'Isis Lactans', tradition:'Greco-Roman Egypt', entity_class:null, entity_type:'Iconographic form'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
@@ -10935,3 +10936,11 @@ MATCH (a:Entity {id:'ENT_EGY_RENPET'}),(b:Entity {id:'ENT_ROM_ANNA_PERENNA'}) CR
 MATCH (a:Entity {id:'ENT_EGY_NEMTY'}),(b:Entity {id:'ENT_CHARON'}) CREATE (a)-[:ALIGNED_WITH {confidence:'low', source_id:'SRC_WILKINSON_EGYPTIAN_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ROM_VACUNA'}),(b:Entity {id:'ENT_ROM_VICTORIA'}) CREATE (a)-[:EQUATED_WITH {confidence:'medium', source_id:'SRC_OVID_FASTI'}]->(b);
 MATCH (a:Entity {id:'ENT_LAT_HEROES'}),(b:Entity {id:'ENT_LAT_DAIMONES'}) CREATE (a)-[:ALIGNED_WITH {confidence:'medium', source_id:'SRC_IAMBLICHUS_DE_MYSTERIIS'}]->(b);
+MATCH (a:Entity {id:'ENT_TYPHON'}),(b:Entity {id:'ENT_EGY_SETH'}) CREATE (a)-[:RECEPTION_OF {confidence:'high', source_id:'SRC_PLUTARCH_ISIS_OSIRIS'}]->(b);
+MATCH (a:Entity {id:'ENT_CHR_DEVIL'}),(b:Entity {id:'ENT_TYPHON'}) CREATE (a)-[:RECEPTION_OF {confidence:'medium', source_id:'SRC_FORSYTH_OLD_ENEMY'}]->(b);
+MATCH (a:Entity {id:'ENT_WIC_TRIPLE_GODDESS'}),(b:Entity {id:'ENT_HECATE'}) CREATE (a)-[:RECEPTION_OF {confidence:'high', source_id:'SRC_HUTTON_TRIUMPH'}]->(b);
+MATCH (a:Entity {id:'ENT_WIC_TRIPLE_GODDESS'}),(b:Entity {id:'ENT_ROM_DIANA'}) CREATE (a)-[:RECEPTION_OF {confidence:'medium', source_id:'SRC_GRAVES_WHITE_GODDESS'}]->(b);
+MATCH (a:Entity {id:'ENT_VF_WITCHTOK'}),(b:Entity {id:'ENT_WIC_TRIPLE_GODDESS'}) CREATE (a)-[:RECEPTION_OF {confidence:'medium', source_id:'SRC_BURTON_STRANGE_RITES'}]->(b);
+MATCH (a:Entity {id:'ENT_ISIS_LACTANS'}),(b:Entity {id:'ENT_EGY_ISIS'}) CREATE (a)-[:RECEPTION_OF {confidence:'high', source_id:'SRC_TRAN_ISIS_LACTANS'}]->(b);
+MATCH (a:Entity {id:'ENT_SAINT_MARY'}),(b:Entity {id:'ENT_ISIS_LACTANS'}) CREATE (a)-[:RECEPTION_OF {confidence:'medium', source_id:'SRC_HIGGINS_DIVINE_MOTHERS'}]->(b);
+MATCH (a:Entity {id:'ENT_AST_DECANS'}),(b:Entity {id:'ENT_EGY_DECANS'}) CREATE (a)-[:RECEPTION_OF {confidence:'medium', source_id:'SRC_PINGREE_PICATRIX'}]->(b);
