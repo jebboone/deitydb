@@ -43,6 +43,7 @@ CREATE (:Entity {id:'ENT_COEUS', name:'Coeus', tradition:'Greek', entity_class:'
 CREATE (:Entity {id:'ENT_EGY_ANUKET', name:'Anuket', tradition:'Egyptian', entity_class:'deity', entity_type:'Goddess'});
 CREATE (:Entity {id:'ENT_EGY_BANEBDJEDET', name:'Banebdjedet', tradition:'Egyptian', entity_class:'deity', entity_type:'Ram deity'});
 CREATE (:Entity {id:'ENT_ISR_ZEPHANIAH', name:'Zephaniah', tradition:'Israelite/Second Temple', entity_class:'prophet', entity_type:'Prophet'});
+CREATE (:Entity {id:'ENT_ISIS_LACTANS', name:'Isis Lactans', tradition:'Greco-Roman Egypt', entity_class:null, entity_type:'Iconographic form'});
 CREATE (:Entity {id:'ENT_SOL_PLANETARY_ANGELS', name:'The Seven Planetary Angels of the Grimoire Tradition', tradition:'Solomonic Magic', entity_class:'collective', entity_type:'Collective'});
 CREATE (:Entity {id:'ENT_MISSION', name:'Mission', tradition:'Christian', entity_class:'abstraction', entity_type:'Ecclesial/social category'});
 CREATE (:Entity {id:'ENT_PHORCYS', name:'Phorcys', tradition:'Greek', entity_class:'deity', entity_type:'Sea god'});
@@ -3837,7 +3838,6 @@ CREATE (:Entity {id:'ENT_PCB_MESOAMERICAN_RELIGION', name:'Pre-Columbian Mesoame
 CREATE (:Entity {id:'ENT_PCB_TONANTZIN', name:'Tonantzin', tradition:'Mesoamerican', entity_class:'deity', entity_type:'Goddess'});
 CREATE (:Entity {id:'ENT_PCB_MAM', name:'Mam', tradition:'Mesoamerican', entity_class:'deity', entity_type:'God'});
 CREATE (:Entity {id:'ENT_CHR_COMMUNION_SAINTS', name:'The Communion of Saints', tradition:'Christian', entity_class:'collective', entity_type:'Collective'});
-CREATE (:Entity {id:'ENT_ISIS_LACTANS', name:'Isis Lactans', tradition:'Greco-Roman Egypt', entity_class:null, entity_type:'Iconographic form'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);

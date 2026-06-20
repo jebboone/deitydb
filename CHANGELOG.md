@@ -1,5 +1,28 @@
 # Changelog
 
+## v2.1.12 — 2026-06-20
+
+### Reception-chain bridges (Track B): +1 entity, +8 links
+
+Lineage/chain view widened to follow `received_as` and `cult_form_of` (not just
+`reception_of`), surfacing 117 already-sourced figures across 57 chains. Featured
+lineup swapped the Holy Grail (a real single-leap gap) for the Hermes
+Trismegistus chain (Thoth → Hermes → Trismegistus → Idris).
+
+Filled genuinely orphaned reception gaps (`scripts/add_reception_bridges.sql`,
+citation-only rationales, real sources):
+
+- Seth → Typhon → Devil (Plutarch *De Iside*; Forsyth, *The Old Enemy*)
+- Wiccan Triple Goddess (was 0 links) ← Hecate/Diana, → WitchTok
+  (Hutton, *Triumph of the Moon*; Graves, *White Goddess*; Burton, *Strange Rites*)
+- new entity **Isis Lactans** between Isis and Mary Theotokos
+  (Tran Tam Tinh, *Isis lactans*; Higgins, *Divine Mothers*)
+- astral-magic decans (Wujuh) ← Egyptian decanal system (Picatrix, ed. Pingree)
+
+Scope items already bridged in the data (Aphrodite ← Astarte; Horus → Thelema
+via Harpocrates) were verified and left untouched. Snapshot
+`backups/deitydb_pg_v2.1.12.sql.gz`.
+
 ## v2.1.11 — 2026-06-20
 
 ### Relationship cleanup (cont.): +2 reclassified
