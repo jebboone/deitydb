@@ -87,6 +87,11 @@ CONFIGS={
    reason='English translation (Benjamin Thorpe, in the Norroena ed. Gutenberg #14726) located by name within the work (not exact stanza); verify locus.'),
  'pausanias_sh':dict(file='pausanias_sh.txt',sid='SRC_PAUSANIAS_DESCRIPTION',wt='Pausanias, Description of Greece',tr='A. R. Shilleto',yr=1886,url='https://www.gutenberg.org/ebooks/68946',clean='plain',
    orig='https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0159',reason='English translation (A. R. Shilleto, Bohn ed., Gutenberg #68946/#68680) located by name; verify book.chapter.'),
+ 'geoffrey':dict(file='geoffrey.txt',sid='SRC_GEOFFREY_MONMOUTH',wt='Geoffrey of Monmouth, Historia Regum Britanniae',tr='J. A. Giles',yr=1848,url='https://www.gutenberg.org/ebooks/37848',clean='plain',
+   reason='English translation (J. A. Giles, in Old English Chronicles, Gutenberg #37848) located by name; verify book.chapter.'),
+ # livy_all.txt = Canon Roberts, concatenated Gutenberg #19725 (Bks 1-8) + #10907 (9-26) + #12582 (27-36).
+ 'livy':dict(file='livy_all.txt',sid='SRC_LIVY_AUC',wt='Livy, Ab Urbe Condita',tr='Canon Roberts',yr=1912,url='https://www.gutenberg.org/ebooks/19725',clean='plain',
+   reason='English translation (Canon Roberts, Everyman ed.) located by name; verify book.chapter.'),
  'mabinogion':dict(file='mabinogion.txt',sid='SRC_MABINOGION',wt='The Mabinogion',tr='Lady Charlotte Guest',yr=1877,url='https://www.gutenberg.org/ebooks/5160',clean='plain',
    reason='English translation located by name within the work; verify locus.'),
  'kalevala':dict(file='kalevala.txt',sid='SRC_KALEVALA',wt='The Kalevala',tr='John Martin Crawford',yr=1888,url='https://www.gutenberg.org/ebooks/5186',clean='plain',
