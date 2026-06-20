@@ -87,19 +87,24 @@ var legendEl=document.getElementById('ch-legend'), featEl=document.getElementByI
 
 function buildSQL(seeds){
   var inlist=seeds.map(function(s){return "'"+String(s).replace(/'/g,"''")+"'";}).join(',');
-  return "WITH RECURSIVE anc(frm,too,depth) AS ("+
-    " SELECT subject_entity_id, object_entity_id, 1 FROM entity_relationships"+
-    "  WHERE subject_entity_id IN ("+inlist+") AND relationship_type='reception_of'"+
-    " UNION SELECT r.subject_entity_id, r.object_entity_id, a.depth+1"+
-    "  FROM entity_relationships r JOIN anc a ON r.subject_entity_id=a.too"+
-    "  WHERE r.relationship_type='reception_of' AND a.depth<14)"+
+  /* Normalise every across-time reception edge to (later, earlier, rat, src).
+     reception_of: subject=later receives object=earlier (Grail -> Jesus).
+     received_as : subject=earlier received as object=later (Hermes -> Trismegistus) — flipped.
+     cult_form_of: subject=later cult form of object=earlier base deity. */
+  return "WITH RECURSIVE rec(later,earlier,rat,src) AS ("+
+    " SELECT subject_entity_id, object_entity_id, rationale, source_id FROM entity_relationships WHERE relationship_type='reception_of'"+
+    " UNION ALL SELECT object_entity_id, subject_entity_id, rationale, source_id FROM entity_relationships WHERE relationship_type='received_as'"+
+    " UNION ALL SELECT subject_entity_id, object_entity_id, rationale, source_id FROM entity_relationships WHERE relationship_type='cult_form_of'"+
+    " ), anc(frm,too,depth,rat,src) AS ("+
+    " SELECT later, earlier, 1, rat, src FROM rec WHERE later IN ("+inlist+")"+
+    " UNION SELECT r.later, r.earlier, a.depth+1, r.rat, r.src"+
+    "  FROM rec r JOIN anc a ON r.later=a.too WHERE a.depth<14)"+
     " SELECT DISTINCT a.frm, a.too,"+
     " sf.canonical_name fn, sf.tradition ft,"+
     " (SELECT min(p.start_year) FROM entity_periods ep JOIN periods p ON p.period_id=ep.period_id WHERE ep.entity_id=a.frm) fy,"+
     " so.canonical_name onm, so.tradition ot,"+
     " (SELECT min(p.start_year) FROM entity_periods ep JOIN periods p ON p.period_id=ep.period_id WHERE ep.entity_id=a.too) oy,"+
-    " (SELECT rationale FROM entity_relationships r2 WHERE r2.subject_entity_id=a.frm AND r2.object_entity_id=a.too AND r2.relationship_type='reception_of' LIMIT 1) rat,"+
-    " (SELECT source_id FROM entity_relationships r2 WHERE r2.subject_entity_id=a.frm AND r2.object_entity_id=a.too AND r2.relationship_type='reception_of' LIMIT 1) src"+
+    " a.rat rat, a.src src"+
     " FROM anc a JOIN entities sf ON sf.entity_id=a.frm JOIN entities so ON so.entity_id=a.too";
 }
 
