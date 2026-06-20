@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.1.10 — 2026-06-20
+
+### Relationship cleanup: reclassify the `associated_with` smell
+
+Begin reclassifying the vague `associated_with` / `associated_ritual` edges (a
+`CLAUDE.md` "code smell," was 108) to precise relationship types. Auto-
+classification proved unsafe (direction reversals + semantic mis-fires), so each
+change is human-reviewed and direction-checked (`scripts/reclassify_associated_with.sql`;
+worklist in `docs/associated_with_triage.md`).
+
+- **21 edges reclassified** to precise, direction-correct types — e.g. Well of
+  Urd → `dwelling_of` Norns, Seven Hekhalot → `presided_over_by` Metatron, the
+  Throne-bearing angelic orders → `guardian_of`, Petra Genetrix → `creator_of`
+  Mithras, Quddús/Táhirih → `taught_by` the Báb.
+- 14 `associated_ritual`→ritual edges are correctly typed (kept).
+- ~73 edges kept as `associated_with` — legitimately uncharacterized associations
+  (attendants of single deities, realm-to-realm borders) where forcing a type
+  would be wrong.
+
+`associated_*` edges 108 → 87. No entity/citation change. Snapshot
+`backups/deitydb_pg_v2.1.10.sql.gz`.
+
 ## v2.1.9 — 2026-06-20
 
 ### Citation remediation: last PD corpora + honest re-grade of the unquotable tail

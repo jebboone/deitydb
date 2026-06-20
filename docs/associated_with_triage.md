@@ -1,6 +1,6 @@
 # `associated_with` / `associated_ritual` triage
 
-108 vague-relationship edges flagged for precise reclassification. Auto-classification is unsafe (direction/semantic errors), so this is a review worklist. `SAFE` rows applied in v2.1.x; the rest need a per-edge domain call.
+108 vague-relationship edges flagged for precise reclassification. Auto-classification is unsafe (direction/semantic errors), so this is a review worklist. **21 edges reclassified to precise types (v2.1.9–2.1.10, `scripts/reclassify_associated_with.sql`, all human-reviewed + direction-checked); the remaining ~73 are kept as `associated_with` (legitimately uncharacterized) pending a per-edge domain call.**
 
 | subject | current | object | obj_class | proposed | flag | rationale |
 |---|---|---|---|---|---|---|
