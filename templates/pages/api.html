@@ -32,6 +32,18 @@
     <strong>Example:</strong> <code>curl https://deitydb-explorer.fly.dev/api/path?from=ENT_ZEUS&to=ENT_VF_999</code>
   </div>
 
+  <div class="ap-ep" style="border-color:#cbb8e7;background:#faf7ff">
+    <h3 style="font-family:inherit;color:#5b2a9e">⬇ Full graph download</h3>
+    <p>The complete entity–relationship graph ({{ db_entities }} nodes, {{ db_relationships }} edges,
+    with node attributes — name, tradition, class, type — and edge attributes — relationship type,
+    confidence) in standard interchange formats for offline analysis and visualization:</p>
+    <div class="ap-try" style="line-height:1.9">
+      <a href="/custom/exports/deitydb.graphml">deitydb.graphml</a> <span style="color:#6a6258">— Gephi · yEd · NetworkX · igraph</span><br>
+      <a href="/custom/exports/deitydb.cypher">deitydb.cypher</a> <span style="color:#6a6258">— Neo4j (<code>cypher-shell</code> / Browser <code>:source</code>)</span><br>
+      <a href="/custom/exports/deitydb_graph.json">deitydb_graph.json</a> <span style="color:#6a6258">— node-link JSON (<code>networkx.node_link_graph</code>)</span>
+    </div>
+  </div>
+
   <div class="ap-ep">
     <h3><span class="m">GET</span>/api/entity/{id}</h3>
     <p>A single entity with its relationships, sources, and periods.</p>

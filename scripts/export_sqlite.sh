@@ -80,6 +80,11 @@ print(f"\n  Materialised views: {len(views)}")
 for v in views:
     print(f"    {v}")
 PYEOF
+
+echo ""
+echo "==> Exporting graph interchange formats..."
+python3 scripts/export_graph.py "$OUTPUT"
+
 echo ""
 echo "Export complete: $OUTPUT"
 echo "Test locally with:  datasette serve $OUTPUT --metadata metadata.yaml  # requires datasette==0.65.2"
