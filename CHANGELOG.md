@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.1.8 — 2026-06-20
+
+### Citation remediation: more verbatim corpora + complete attribution audit
+
+Continues the AI-text epoch. **1,478 entities now carry verbatim quotes** (was
+1,453 at v2.1.7); 1,127 `primary-uncited`, 1,129 `secondary`, 103 `reference`;
+0 fully uncited.
+
+- **Irenaeus (+10)** — recovered Valentinian aeons (Akinetos, Bythios,
+  Parakletos, Makariotes, …) from ANF *Against Heresies* Book I via aliases
+  bridging the Greek -os/k forms to ANF's Latinized -us/c spellings; graded
+  `heresiological-verbatim` (hostile witness).
+- **Homer (+6)** — Boreas, Zephyrus, Diomedes, Rhadamanthys, Teiresias, the
+  Asphodel Meadows, via Butler's spelling variants (Diomedes→Diomed,
+  Tiresias→Teiresias).
+- **Pausanias (+9) + misattribution fix** — `extract_pausanias.py` hardcoded
+  "J. G. Frazer, 1898" but Gutenberg #68946/#68680 is actually **A. R. Shilleto,
+  1886**; corrected the extractor + 25 existing rows, and recovered 9 more
+  (Corycia, Dactyls, Eleos, Eurynomos, Hades Klymenos, Hygieia, …).
+- **Attribution audit COMPLETE** — verified every cite_anchor config AND every
+  bespoke `extract_*.py` extractor against its actual source header. All correct
+  except the three fixed across v2.1.7–2.1.8 (Anderson, Thorpe, Shilleto). The
+  Qur'an legitimately uses two correctly-labeled translations (Rodwell #2800 +
+  Pickthall, tanzil).
+- **Snapshot** `backups/deitydb_pg_v2.1.8.sql.gz` (supersedes v2.1.7).
+
 ## v2.1.7 — 2026-06-20
 
 ### Citation remediation: broken-build fixes, two source re-attributions, config audit
