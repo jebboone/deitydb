@@ -3,19 +3,19 @@
 Snapshot for picking the project up on another machine. Last updated **2026-06-20, v2.1.10**.
 
 ## ⟶ Pick up here (next action)
-**Citation remediation (the v2.1.x epoch) is the active work** — replacing AI-paraphrase
-`short_note` prose with source-traceable citations in `entity_citations`. Current state
-(measured 2026-06-20): **0 entities fully uncited**; **1,496 carry real verbatim
-quotes**; the remaining surface is **937 `primary-uncited`** entities (primary text known,
-verbatim quote pending — the Track-1 upgrade targets), plus 1,129 `secondary` / 103 `reference`
-pointers. **Next:** continue the public-domain extraction pipeline (`scripts/citations/`) to
-upgrade `primary-uncited` → `primary-verbatim`. Most large clusters are picked-over — progress
-now means per-corpus re-sourcing (complete/clean text) + spelling aliases (the testsol / Augustine
-/ Mabinogion / Edda method), not just re-running.
+**Citation epoch is COMPLETE and DEPLOYED (v2.1.10 live at deitydb-explorer.fly.dev).** Primary-
+quotable extraction is exhausted; attributions audited end-to-end; the unquotable tail honestly
+re-graded. Current: 1,496 verbatim / 937 `primary-uncited` (PD-quotable tails + Ovid Fasti) /
+1,301 `secondary` / 103 `reference`; **0 fully uncited.**
 
-**Deploy status unconfirmed** — verify the live version at deitydb-explorer.fly.dev before
-assuming the citation epoch is deployed (it was v1.92.0 pre-citation). Ship via
-`flyctl deploy -a deitydb-explorer` after the publish cycle.
+**Active work now: relationship-type cleanup** — reclassifying the vague `associated_with` /
+`associated_ritual` "code smell" to precise types. 21 done (human-reviewed, direction-checked);
+worklist for the ~73 remaining (each needs a per-edge domain call) is `docs/associated_with_triage.md`.
+Other open directions: ROADMAP Phase VI (graph export Neo4j/NetworkX), per-entity images,
+persistent header search.
+
+**Deploy:** `flyctl deploy -a deitydb-explorer --remote-only` (podman box, no docker) after the
+publish cycle. flyctl auth = jebboone2@gmail.com.
 
 ### Known issues
 - `scripts/citations/build_etzhayim_citations.sql` — **empty `VALUES` list** (0 rows), never
