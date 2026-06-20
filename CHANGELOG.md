@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.1.9 — 2026-06-20
+
+### Citation remediation: last PD corpora + honest re-grade of the unquotable tail
+
+Closes the achievable extraction and makes the remaining grades honest.
+**1,496 entities carry verbatim quotes**; 937 `primary-uncited` (now only
+genuinely PD-quotable sources + Ovid *Fasti*); 1,301 `secondary`; 103
+`reference`; 0 fully uncited.
+
+- **Ovid Metamorphoses (+7)** — incomplete-source fix (added Books VIII–XV,
+  Gutenberg #26073, to the Books I–VII already loaded).
+- **Geoffrey of Monmouth (+8, full)** — Arthur, Merlin, Avalon, Uther, Igraine,
+  Gawain, Kay, Bedivere (Giles, #37848), via Latin/Giles aliases (Igraine→Igerna,
+  Gawain→Walgan, Kay→Caius, Bedivere→Bedver).
+- **Livy (+3)** — Bellona, Jupiter, Magna Mater (Roberts). The deified virtues
+  (Libertas/Salus/Victoria/Virtus/Pietas) defer — Roberts renders them as English
+  common nouns.
+- **Honest re-grade of 172 structurally-unquotable entities** `primary-uncited`
+  → `secondary` (`scripts/citations/regrade_unquotable_secondary.sql`): 125 in
+  in-copyright modern editions/studies (Faulkner Pyramid Texts, Wyatt/KTU Ugarit,
+  Foster, Desert Fathers, Schäfer, George, Hoffner, Bailey, Etz Hayyim) + 47 in
+  inscriptional corpora (CIL, RIB, Piacenza Liver). The grade badges no longer
+  imply a primary verbatim quote is achievable for sources where it isn't.
+  Conservative: PD-quotable tails and Ovid *Fasti* left `primary-uncited`.
+- **Primary-quotable extraction is now exhausted** — Aeschylus (abstract
+  personifications) and Iamblichus (philosophical concepts) are un-anchorable.
+- **Snapshot** `backups/deitydb_pg_v2.1.9.sql.gz` (supersedes v2.1.8).
+
 ## v2.1.8 — 2026-06-20
 
 ### Citation remediation: more verbatim corpora + complete attribution audit

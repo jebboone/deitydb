@@ -1,12 +1,12 @@
 # DeityDB — Resume / Cross-Machine Handoff
 
-Snapshot for picking the project up on another machine. Last updated **2026-06-20, v2.1.8**.
+Snapshot for picking the project up on another machine. Last updated **2026-06-20, v2.1.9**.
 
 ## ⟶ Pick up here (next action)
 **Citation remediation (the v2.1.x epoch) is the active work** — replacing AI-paraphrase
 `short_note` prose with source-traceable citations in `entity_citations`. Current state
-(measured 2026-06-20): **0 entities fully uncited**; **1,478 carry real verbatim
-quotes**; the remaining surface is **1,127 `primary-uncited`** entities (primary text known,
+(measured 2026-06-20): **0 entities fully uncited**; **1,496 carry real verbatim
+quotes**; the remaining surface is **937 `primary-uncited`** entities (primary text known,
 verbatim quote pending — the Track-1 upgrade targets), plus 1,129 `secondary` / 103 `reference`
 pointers. **Next:** continue the public-domain extraction pipeline (`scripts/citations/`) to
 upgrade `primary-uncited` → `primary-verbatim`. Most large clusters are picked-over — progress
@@ -25,15 +25,15 @@ assuming the citation epoch is deployed (it was v1.92.0 pre-citation). Ship via
   Thorpe 1866). A config-attribution audit verified the other Gutenberg sources.
 
 ## Current state
-- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Code & DB at **v2.1.8** on `main`.
-- **Citation remediation (v2.1.0–2.1.8): IN PROGRESS** — `entity_citations` table + `v_public_entity_citations` view; every entity graded (`primary-verbatim` / `primary-uncited` / `secondary` / `reference`), 0 fully uncited. **1,478 verbatim quotes** substring-gated against public-domain texts; 1,127 `primary-uncited` remain as upgrade targets. Source attributions audited end-to-end (3 fixed: Anderson/Thorpe/Shilleto). Pipeline + run order: `scripts/citations/README.md`. Triage/plan: `docs/REMEDIATION_TRIAGE.md`.
+- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Code & DB at **v2.1.9** on `main`.
+- **Citation remediation (v2.1.0–2.1.9): primary-quotable extraction COMPLETE** — `entity_citations` table + `v_public_entity_citations` view; every entity graded, 0 fully uncited. **1,496 verbatim quotes** substring-gated against public-domain texts; 937 `primary-uncited` remain (genuinely PD-quotable tails + Ovid Fasti); 1,301 `secondary` (incl. 172 re-graded from primary-uncited where the source is unquotable — in-copyright editions / inscriptions). Source attributions audited end-to-end (3 fixed: Anderson/Thorpe/Shilleto). Pipeline: `scripts/citations/README.md`. Triage/plan: `docs/REMEDIATION_TRIAGE.md`.
 - **Completeness program (Phases 1–7): COMPLETE and audited clean** — every integrity invariant 0, 97.3% primary/scholarly source coverage. Per-phase record in `CHANGELOG.md` (v1.85.0–v1.91.1); the gap register is `docs/COMPLETENESS_ROADMAP.md`.
 - **Deeper graph/API features: DONE** (v1.92.0) — JSON API + `/path` finder + `/constellation` map + `/graph` filters.
 - **Schema epoch — controlled `entity_class`: DONE** (v2.0.0) — 19-value controlled vocabulary over free-text `entity_type`; 57 blank types filled; 0 unmapped types. Migration `upgrade_v2_0_entity_class.sql`; map source in `scripts/_classmap/`.
 - **Git:** all pushed to `github.com/jebboone/deitydb` (main).
 
 ## What travels, and what doesn't
-- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON + `scripts/citations/`), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and portable Postgres dumps in `backups/` — **`deitydb_pg_v2.1.8.sql.gz` is current (includes the citation layer)**; `deitydb_pg_v2.0.0.sql.gz` is the pre-citation baseline kept for reference.
+- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON + `scripts/citations/`), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and portable Postgres dumps in `backups/` — **`deitydb_pg_v2.1.9.sql.gz` is current (includes the citation layer)**; `deitydb_pg_v2.0.0.sql.gz` is the pre-citation baseline kept for reference.
 - **NOT in git:** `deitydb.sqlite` (gitignored — rebuilt from Postgres), `CLAUDE.md` (gitignored project instructions), the Python **venv**, and **flyctl**. The **Postgres source-of-truth runs only in the local Docker container** — it travels via the committed dump, not git.
 
 ## Bring up a new machine
@@ -45,7 +45,7 @@ git clone https://github.com/jebboone/deitydb && cd deitydb
 #    On Bazzite use `podman` (rootless, no sudo); it's drop-in for `docker` here.
 podman run -d --name deitydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=deitydb -p 5432:5432 docker.io/library/postgres:16
 sleep 5
-gunzip -c backups/deitydb_pg_v2.1.8.sql.gz | podman exec -i deitydb psql -U postgres -d deitydb
+gunzip -c backups/deitydb_pg_v2.1.9.sql.gz | podman exec -i deitydb psql -U postgres -d deitydb
 podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"          # expect 3837
 podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entity_citations;"  # expect ~3871
 # To rebuild the citation layer FROM SCRATCH on the v2.0.0 baseline instead (rarely needed):
