@@ -80,8 +80,8 @@ CONFIGS={
  'agrippa':dict(file='agrippa_full.txt',sid='SRC_AGRIPPA_OCCULTA',wt='Agrippa, Three Books of Occult Philosophy',tr='J. F. (1651 English)',yr=1651,url='https://archive.org/details/threebooksofoccu00agri',clean='ocr',
    reason='OCR scan of the 1651 English translation, located by name; verify wording and exact book.chapter.'),
 
- 'prose_edda':dict(file='prose_edda.txt',sid='SRC_PROSE_EDDA',wt='Snorri Sturluson, Prose Edda',tr='Arthur G. Brodeur',yr=1916,url='https://www.gutenberg.org/ebooks/18947',clean='plain',
-   reason='English translation located by name within the work (not exact chapter); verify locus.'),
+ 'prose_edda':dict(file='prose_edda.txt',sid='SRC_PROSE_EDDA',wt='Snorri Sturluson, Prose Edda',tr='Rasmus B. Anderson',yr=1880,url='https://www.gutenberg.org/ebooks/18947',clean='plain',
+   reason='English translation (Anderson, The Younger Edda) located by name within the work (not exact chapter); verify locus.'),
  'poetic_edda':dict(file='poetic_edda.txt',sid='SRC_POETIC_EDDA',wt='The Poetic Edda',tr='Olive Bray',yr=1908,url='https://www.gutenberg.org/ebooks/14726',clean='plain',
    reason='English translation located by name within the work (not exact stanza); verify locus.'),
  'mabinogion':dict(file='mabinogion.txt',sid='SRC_MABINOGION',wt='The Mabinogion',tr='Lady Charlotte Guest',yr=1877,url='https://www.gutenberg.org/ebooks/5160',clean='plain',
