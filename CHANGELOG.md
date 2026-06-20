@@ -1,5 +1,37 @@
 # Changelog
 
+## v2.1.7 — 2026-06-20
+
+### Citation remediation: broken-build fixes, two source re-attributions, config audit
+
+Continues the AI-text citation epoch. Net **1,453 entities now carry verbatim
+quotes** (was ~1,329 at the v2.1.6 baseline); 1,152 `primary-uncited` remain,
+1,129 `secondary`, 103 `reference`; **0 entities fully uncited**.
+
+- **Testament of Solomon (+43)** — `build_testsol_citations.sql` was generated
+  from a JSTOR OCR scan (apparatus, OCR garbage, NUL bytes) and never parsed.
+  Re-sourced from the clean Conybeare 1898 edition (Esoteric Archives); 43
+  entities `primary-uncited` → `primary-verbatim`.
+- **Augustine, *City of God* (+9)** — regenerated from the complete text (Dods,
+  Gutenberg #45304) instead of an incomplete one; recovers the minor Roman
+  *indigitamenta* via aliases (Vaticanus, Educa, Hecate). 5 → 14 verbatim.
+- **Mabinogion (+32)** — alias map bridging modern Welsh spellings to Lady
+  Guest's 1877 orthography (Aranrhod→Arianrod, Lleu→Llew, Gofannon→Govannon…).
+  2 → 34 verbatim.
+- **Source re-attribution (integrity):** a config audit of all 13 Gutenberg
+  sources found two mislabeled translators. **Prose Edda** (Gutenberg #18947) was
+  attributed to "Brodeur 1916" but is actually **Rasmus B. Anderson, 1880**;
+  **Poetic Edda** (#14726) was attributed to "Olive Bray 1908" but is actually
+  **Benjamin Thorpe, 1866**. Both corrected and re-extracted (Prose 13→28, Poetic
+  32→35). 45 citations re-attributed. The other 11 Gutenberg configs verify
+  correct.
+- **Infrastructure:** rebuilt the citation layer from the v2.0.0 baseline and
+  snapshotted `backups/deitydb_pg_v2.1.7.sql.gz` (supersedes the intermediate
+  v2.1.6 dump). Generators share `scripts/sqlgen.py`; schema changes tracked via
+  dbmate (`db/migrations/`).
+- **Known issue:** `build_etzhayim_citations.sql` is an empty INSERT (the corpus
+  yielded no extractable text); its entities fall back to graded pointers.
+
 ## v2.1.6 — 2026-06-18
 
 ### Citation remediation: Edda + Latin verbatim tails (hardened engine)
