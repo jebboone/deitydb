@@ -266,6 +266,12 @@
       <data key="entity_class">prophet</data>
       <data key="entity_type">Prophet</data>
     </node>
+    <node id="ENT_ISIS_LACTANS">
+      <data key="name">Isis Lactans</data>
+      <data key="tradition">Greco-Roman Egypt</data>
+      <data key="entity_class"></data>
+      <data key="entity_type">Iconographic form</data>
+    </node>
     <node id="ENT_SOL_PLANETARY_ANGELS">
       <data key="name">The Seven Planetary Angels of the Grimoire Tradition</data>
       <data key="tradition">Solomonic Magic</data>
@@ -23029,12 +23035,6 @@
       <data key="tradition">Christian</data>
       <data key="entity_class">collective</data>
       <data key="entity_type">Collective</data>
-    </node>
-    <node id="ENT_ISIS_LACTANS">
-      <data key="name">Isis Lactans</data>
-      <data key="tradition">Greco-Roman Egypt</data>
-      <data key="entity_class"></data>
-      <data key="entity_type">Iconographic form</data>
     </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>

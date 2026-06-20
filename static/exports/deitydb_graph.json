@@ -307,6 +307,13 @@
 "entity_type": "Prophet"
 },
 {
+"id": "ENT_ISIS_LACTANS",
+"name": "Isis Lactans",
+"tradition": "Greco-Roman Egypt",
+"entity_class": null,
+"entity_type": "Iconographic form"
+},
+{
 "id": "ENT_SOL_PLANETARY_ANGELS",
 "name": "The Seven Planetary Angels of the Grimoire Tradition",
 "tradition": "Solomonic Magic",
@@ -26863,13 +26870,6 @@
 "tradition": "Christian",
 "entity_class": "collective",
 "entity_type": "Collective"
-},
-{
-"id": "ENT_ISIS_LACTANS",
-"name": "Isis Lactans",
-"tradition": "Greco-Roman Egypt",
-"entity_class": null,
-"entity_type": "Iconographic form"
 }
 ],
 "links": [
