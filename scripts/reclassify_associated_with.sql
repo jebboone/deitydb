@@ -32,3 +32,9 @@ UPDATE entity_relationships SET relationship_type='aligned_with' WHERE relations
 UPDATE entity_relationships SET relationship_type='aligned_with' WHERE relationship_id=7024;  -- Hilary of Poitiers -> Athanasius of Alexandria
 UPDATE entity_relationships SET relationship_type='guarded_by' WHERE relationship_id=7799;  -- Well of Mimir (Mímisbrunnr) -> Mimir
 COMMIT;
+
+-- Third pass (2 edges, human-reviewed 2026-06-20):
+BEGIN;
+UPDATE entity_relationships SET relationship_type='aligned_with' WHERE relationship_id=7677;  -- Sananda -> Ashtar (chief associate)
+UPDATE entity_relationships SET relationship_type='embodied_by' WHERE relationship_id=7815;  -- Greek Underworld -> Erebus (personifies its gloom)
+COMMIT;

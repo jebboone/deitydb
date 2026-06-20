@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.1.11 — 2026-06-20
+
+### Relationship cleanup (cont.): +2 reclassified
+
+Second/third review passes over the remaining vague edges. The tail is now
+exhausted of clean reclassifications: +2 applied (Sananda → `aligned_with`
+Ashtar; Greek Underworld → `embodied_by` Erebus). 23 total reclassified across
+v2.1.9–2.1.11; `associated_*` 108 → 85. The ~71 remaining are legitimately
+`associated_with` (realm-to-realm borders, attendant/servant roles, institution-
+founding — no vocabulary type fits). Snapshot `backups/deitydb_pg_v2.1.11.sql.gz`.
+
 ## v2.1.10 — 2026-06-20
 
 ### Relationship cleanup: reclassify the `associated_with` smell
