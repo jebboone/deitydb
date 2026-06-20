@@ -206,7 +206,7 @@ async function loadChain(seeds, title){
 
 /* featured buttons */
 FEATURED.forEach(function(f,i){
-  var b=document.createElement('button'); b.textContent=f.label; if(i===0)b.className='on';
+  var b=document.createElement('button'); b.textContent=f.label;
   b.addEventListener('click',function(){ featEl.querySelectorAll('button').forEach(function(x){x.classList.remove('on');}); b.classList.add('on'); loadChain(f.seeds,f.label.replace(/^★ /,'')); });
   featEl.appendChild(b);
 });
@@ -225,9 +225,19 @@ async function ac(v){
 }
 document.addEventListener('click',function(e){if(!e.target.closest('.ch-search'))sugEl.hidden=true;});
 
-/* boot: deep-link ?start= or the hero angel-numbers lineage */
+/* boot: deep-link ?start= or the hero angel-numbers lineage.
+   Highlight the featured button only when the active chain is that button's. */
+var featBtns=featEl.querySelectorAll('button');
 var sp=new URLSearchParams(window.location.search), start=sp.get('start');
-if(start){ loadChain([start], start); } else { loadChain(FEATURED[0].seeds, 'the Angel Numbers lineage'); }
+if(start){
+  var fi=-1;
+  for(var i=0;i<FEATURED.length;i++){ if(FEATURED[i].seeds.indexOf(start)!==-1){ fi=i; break; } }
+  if(fi>=0){ featBtns[fi].classList.add('on'); loadChain(FEATURED[fi].seeds, FEATURED[fi].label.replace(/^★ /,'')); }
+  else { loadChain([start], start); }   /* arbitrary deep-link: no featured button active */
+} else {
+  if(featBtns[0]) featBtns[0].classList.add('on');
+  loadChain(FEATURED[0].seeds, 'the Angel Numbers lineage');
+}
 })();
 </script>
 {% endblock %}
