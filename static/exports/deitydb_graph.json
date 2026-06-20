@@ -26863,6 +26863,13 @@
 "tradition": "Christian",
 "entity_class": "collective",
 "entity_type": "Collective"
+},
+{
+"id": "ENT_ISIS_LACTANS",
+"name": "Isis Lactans",
+"tradition": "Greco-Roman Egypt",
+"entity_class": null,
+"entity_type": "Iconographic form"
 }
 ],
 "links": [
@@ -76551,6 +76558,62 @@
 "relationship_type": "aligned_with",
 "confidence": "medium",
 "source_id": "SRC_IAMBLICHUS_DE_MYSTERIIS"
+},
+{
+"source": "ENT_TYPHON",
+"target": "ENT_EGY_SETH",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_PLUTARCH_ISIS_OSIRIS"
+},
+{
+"source": "ENT_CHR_DEVIL",
+"target": "ENT_TYPHON",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_FORSYTH_OLD_ENEMY"
+},
+{
+"source": "ENT_WIC_TRIPLE_GODDESS",
+"target": "ENT_HECATE",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_HUTTON_TRIUMPH"
+},
+{
+"source": "ENT_WIC_TRIPLE_GODDESS",
+"target": "ENT_ROM_DIANA",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_GRAVES_WHITE_GODDESS"
+},
+{
+"source": "ENT_VF_WITCHTOK",
+"target": "ENT_WIC_TRIPLE_GODDESS",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_BURTON_STRANGE_RITES"
+},
+{
+"source": "ENT_ISIS_LACTANS",
+"target": "ENT_EGY_ISIS",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_TRAN_ISIS_LACTANS"
+},
+{
+"source": "ENT_SAINT_MARY",
+"target": "ENT_ISIS_LACTANS",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_HIGGINS_DIVINE_MOTHERS"
+},
+{
+"source": "ENT_AST_DECANS",
+"target": "ENT_EGY_DECANS",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_PINGREE_PICATRIX"
 }
 ]
 }
