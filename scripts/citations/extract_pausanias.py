@@ -52,7 +52,7 @@ with open('/tmp/build_paus_citations.sql','w',encoding='utf-8') as f:
     vals=[]
     for eid,name,note,bk,ch,sec,q in rows:
         loc="Book %d, ch. %d%s"%(bk,ch,(".%s"%sec) if sec else "")
-        vals.append("('%s','%s','SRC_PAUSANIAS_DESCRIPTION','Pausanias, Description of Greece','%s','%s','J. G. Frazer',1898,'https://www.gutenberg.org/ebooks/68946','primary-verbatim',NULL,DATE '2026-06-17','book.chapter located + name-anchored in chapter + substring gate (Gutenberg #68946/#68680); section-level locus per attestation — audit pending',1)"%(sqlesc(('CIT_'+eid.replace('ENT_','')+'_PAUS')[:60]),sqlesc(eid),sqlesc(loc),sqlesc(q)))
+        vals.append("('%s','%s','SRC_PAUSANIAS_DESCRIPTION','Pausanias, Description of Greece','%s','%s','A. R. Shilleto',1886,'https://www.gutenberg.org/ebooks/68946','primary-verbatim',NULL,DATE '2026-06-17','book.chapter located + name-anchored in chapter + substring gate (Gutenberg #68946/#68680); section-level locus per attestation — audit pending',1)"%(sqlesc(('CIT_'+eid.replace('ENT_','')+'_PAUS')[:60]),sqlesc(eid),sqlesc(loc),sqlesc(q)))
     f.write(',\n'.join(vals)+"\nON CONFLICT (citation_id) DO UPDATE SET quote=EXCLUDED.quote,locus=EXCLUDED.locus,verify_method=EXCLUDED.verify_method;\n")
 print("books:",sorted(books),"| citations:",len(rows),"| deferred:",len(deferred))
 for d in deferred[:15]: print("  defer",d)
