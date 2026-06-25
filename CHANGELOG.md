@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.1.14 — 2026-06-25
+
+### Citation: Isis Lactans (last fully-uncited entity)
+
+Attached a secondary-scholarship source pointer (Tran Tam Tinh, *Isis lactans* —
+the definitive corpus of Greco-Roman Isis-lactans monuments) to
+`ENT_ISIS_LACTANS`, the only entity in the database with zero `entity_citations`
+rows (added as a reception-chain intermediate in v2.1.12; surfaced by the v2.1.13
+audit). No verbatim quote — Isis Lactans is an iconographic type with no single
+quotable primary text — so the entity now correctly shows the "source identified
+but not yet quoted" state. **0 fully-uncited entities.**
+`scripts/add_isis_lactans_citation.sql`.
+
 ## v2.1.13 — 2026-06-25
 
 ### Live-site bug audit: fixed silent data-truncation and citation-display bugs
