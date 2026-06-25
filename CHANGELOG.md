@@ -1,5 +1,35 @@
 # Changelog
 
+## v2.1.13 — 2026-06-25
+
+### Live-site bug audit: fixed silent data-truncation and citation-display bugs
+
+Full audit of the live UI after the Browse page was found capping at 2,000 of
+3,838 entities (Datasette `max_returned_rows` was pinned to 2,000), making ~48%
+of entities — including Norea — unsearchable. Fixes:
+
+- **Browse (`explore.html`) + Dockerfile**: raised `max_returned_rows` 2,000 →
+  10,000 and the entity/rel-count fetches to `_size=10000`; full table now loads.
+- **Citations (`entity.html`)**: the "pending source citation" warning was
+  suppressed whenever *any* citation row existed, so ~2,341 entities with only a
+  source pointer (no verbatim quote) read as sourced. Now gates on an actual
+  verbatim quote; pointer-only entities show a "source identified but not yet
+  quoted" notice.
+- **Lineage (`chain.html`)**: chain fetch raised `_size` 600 → 10,000 (reception
+  edges were at 595/600, near silent truncation); added an HTTP-error check so
+  backend faults no longer render as "no chain found."
+- **Path (`path.html`)**: fixed dead featured button — `ENT_MES_INANNA` →
+  `ENT_MES_INANNA_ISHTAR` (Inanna → Aphrodite example was erroring out).
+- **Constellation graph (`deitydb_api.py`)**: full-graph node query no longer
+  applies a 5,000-row LIMIT (would silently drop nodes and orphan edges as the
+  DB grows); per-tradition ceiling raised to 20,000.
+- **README + `metadata.yaml`**: refreshed stale counts (v1.62.0/2,109/3,412/273/81
+  → v2.1.13/3,838/7,106/463/136; cross-tradition links 577 → 1,006; Greek
+  500 entities with 376/500 period coverage; verbatim-quote coverage stated
+  honestly at ~39%).
+
+No data change; SQLite re-exported from current Postgres for deploy.
+
 ## v2.1.12 — 2026-06-20
 
 ### Reception-chain bridges (Track B): +1 entity, +8 links

@@ -146,11 +146,17 @@ function render(e,rels,pers,aka,srcs,cites){
   if(e.evidence_confidence)chips+='<span class="en-chip">Evidence '+esc(e.evidence_confidence)+'</span>';
   document.getElementById('en-chips').innerHTML=chips;
   var noteEl=document.getElementById('en-note'); noteEl.textContent=e.short_note||'';
-  if(cites&&cites.length){ noteEl.classList.add('legacy'); }
+  // Only treat the summary as "backed" when a citation carries an actual verbatim quote.
+  // A bare source pointer (grade primary-uncited/secondary with no quote) must NOT suppress
+  // the pending-citation warning, or an unquoted editorial summary reads as sourced.
+  var hasQuote=cites&&cites.some(function(c){return c.quote&&c.quote.trim();});
+  if(hasQuote){ noteEl.classList.add('legacy'); }
   else if(e.short_note){
     noteEl.classList.add('legacy');
     var warn=document.createElement('p'); warn.className='en-pending';
-    warn.textContent='⚠ Legacy summary — pending source citation. This description has not yet been replaced with a verified primary-source quotation.';
+    warn.textContent=(cites&&cites.length)
+      ? '⚠ Source identified but not yet quoted. This description has not yet been replaced with a verified verbatim primary-source quotation.'
+      : '⚠ Legacy summary — pending source citation. This description has not yet been replaced with a verified primary-source quotation.';
     noteEl.parentNode.insertBefore(warn, noteEl.nextSibling);
   }
   document.getElementById('en-domains').innerHTML=(e.primary_domains||'').split(/[;,]/).map(function(d){d=d.trim();return d?'<span class="en-dom">'+esc(d)+'</span>':'';}).join('');

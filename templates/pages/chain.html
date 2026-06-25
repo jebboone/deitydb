@@ -111,7 +111,10 @@ function buildSQL(seeds){
 async function loadChain(seeds, title){
   noteEl.textContent='Tracing '+title+'…';
   var rows;
-  try{ rows=await(await fetch('/deitydb.json?_shape=array&_size=600&sql='+encodeURIComponent(buildSQL(seeds)))).json(); }
+  // _size must clear the full reception-edge universe (~595, growing) so a broad seed's
+  // chain never silently truncates; matches the Datasette max_returned_rows ceiling (10000).
+  try{ var r=await fetch('/deitydb.json?_shape=array&_size=10000&sql='+encodeURIComponent(buildSQL(seeds)));
+    if(!r.ok)throw new Error(r.status); rows=await r.json(); }
   catch(e){ noteEl.textContent='Could not load this lineage.'; return; }
   if(!Array.isArray(rows)||!rows.length){ noteEl.textContent='No reception chain found for '+title+'. (Not every figure has one.)'; d3.select(svg).selectAll('*').remove(); legendEl.innerHTML=''; return; }
 
