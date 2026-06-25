@@ -109,7 +109,9 @@ var all = [], counts = {}, filtered = [];
 async function loadEntities() {
   var cols = ['entity_id','canonical_name','tradition','entity_class','entity_type','category',
               'primary_domains','short_note'];
-  var url = '/deitydb/entities.json?_shape=array&_size=2000&_col=' + cols.join('&_col=');
+  // _size must stay <= Datasette max_returned_rows (Dockerfile); 10000 covers the full
+  // entity table (~3,838) so the long tail (e.g. low-connection figures like Norea) loads.
+  var url = '/deitydb/entities.json?_shape=array&_size=10000&_col=' + cols.join('&_col=');
   var r = await fetch(url);
   if (!r.ok) throw new Error('entities fetch failed');
   return r.json();
@@ -125,7 +127,9 @@ async function loadRelCounts() {
     'FROM entity_relationships GROUP BY object_entity_id' +
     ') GROUP BY entity_id'
   );
-  var r = await fetch('/deitydb.json?sql=' + sql + '&_shape=array&_size=2000');
+  // every entity appears in >=1 relationship, so this must return all ~3,838 rows or the
+  // "most connected" sort and rel-counts truncate; aggregate SQL can't cursor-paginate.
+  var r = await fetch('/deitydb.json?sql=' + sql + '&_shape=array&_size=10000');
   if (!r.ok) return {};
   var rows = await r.json();
   var map = {};

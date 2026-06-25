@@ -207,15 +207,17 @@ async def api_tradition(datasette, request):
 async def api_graph(datasette, request):
     trad = request.args.get("tradition")
     try:
-        limit = min(int(request.args.get("limit", 5000)), 8000)
+        limit = min(int(request.args.get("limit", 20000)), 20000)
     except ValueError:
-        limit = 5000
+        limit = 20000
     if trad:
         nodes = await _rows(datasette,
             "select entity_id id, canonical_name name, tradition trad from entities where tradition=? limit ?", [trad, limit])
     else:
+        # Full graph must return every node, else nodes AND a non-linear share of edges
+        # (those losing an endpoint) silently vanish. No LIMIT — bounded by the entity table.
         nodes = await _rows(datasette,
-            "select entity_id id, canonical_name name, tradition trad from entities limit ?", [limit])
+            "select entity_id id, canonical_name name, tradition trad from entities")
     ids = {n["id"] for n in nodes}
     links = []
     for r in await _rows(datasette, "select subject_entity_id s, object_entity_id o, relationship_type t from entity_relationships"):

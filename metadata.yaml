@@ -296,7 +296,7 @@ databases:
 
       v_public_cross_tradition_links:
         title: Cross-Tradition Links ★
-        description: The comparative-religion core — every link where one tradition's figure is received, syncretised, equated, or recognised as a cognate of another tradition's (reception_of, received_as, syncretized_with, identified_with, equated_with, aligned_with, cult_form_of). 577 connections across the religions of the ancient and late-antique world.
+        description: The comparative-religion core — every link where one tradition's figure is received, syncretised, equated, or recognised as a cognate of another tradition's (reception_of, received_as, syncretized_with, identified_with, equated_with, aligned_with, cult_form_of). 1,006 connections across the religions of the ancient and late-antique world.
 
       v_public_cross_tradition_matrix:
         title: Cross-Tradition Web ★
@@ -313,7 +313,7 @@ databases:
         description_html: |
           The heart of DeityDB: every link where one tradition's figure is
           <em>received</em>, <em>syncretised</em>, <em>equated</em>, or recognised as a
-          <em>cognate</em> of another's — 577 connections across the religions of the
+          <em>cognate</em> of another's — 1,006 connections across the religions of the
           ancient and late-antique world. Filter by tradition with the queries below,
           or browse all here.
         sql: |
