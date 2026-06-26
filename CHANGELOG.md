@@ -1,5 +1,38 @@
 # Changelog
 
+## v2.1.42 — 2026-06-26
+
+### Secondary-scholarship layer (start): Black & Green excerpts → Mesopotamian (+15)
+
+New phase: adding a peer-reviewed *secondary-scholarship* layer on top of the
+primary-source foundation, carrying genuine substring-gated quotes (never
+fabricated). Method constraints, settled honestly:
+
+- **Integrity unchanged.** Quotes are added ONLY from sources whose full text I can
+  actually read and substring-gate. In-copyright works I cannot read stay honest
+  pointers — no quotes manufactured from memory.
+- **Encyclopaedia Iranica was attempted first but is not viable here**: its article
+  bodies are JS-injected (only the abstract/TOC is in static HTML), so it can't be
+  reliably substring-gated without a headless browser.
+- **The in-copyright reference dictionaries ARE fully readable** (publicly-uploaded
+  OCR on archive.org) and meet the bar — peer-reviewed, scholarly presses, credible
+  academics at major universities. Quoted as brief attributed excerpts with
+  `needs_review=true`, mirroring the project's established in-copyright-translation
+  excerpt pattern.
+
+This release: 15 Mesopotamian pointers gain a verbatim definition from **Jeremy Black
+& Anthony Green, *Gods, Demons and Symbols of Ancient Mesopotamia*** (British Museum
+Press, 1992; Black was an Oxford Assyriologist) — Aya, Dagan, Ennugi, Gatumdug,
+Kusarikku, Lisin, Lugal-irra, Lulal, Ninazu, Nungal, Numushda, Shara, Tishpak, Uttu,
+Zababa. Each `secondary` grade, substring-gated against the OCR (diacritics normalized
+to ASCII), flagged for print-edition verification. Conservative first batch of the
+65-entry cluster; homonym/cross-reference/OCR risks mean every quote is eyeballed.
+Script: `upgrade_blackgreen_secondary.sql` (+`_secondary2`).
+
+NEXT: remainder of Black & Green (~50), then Wilkinson's *Complete Gods and Goddesses
+of Ancient Egypt* (Thames & Hudson, 2003; 62 Egyptian pointers) — both fetched and ready.
+
+
 ## v2.1.41 — 2026-06-26
 
 ### Depth pass: Ovid Fasti pointers → verbatim (Riley prose) (+11)
