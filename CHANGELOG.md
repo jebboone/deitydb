@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.1.30 — 2026-06-26
+
+### Norse expansion: Ásynjur (goddesses) + valkyries (+20)
+
+Fresh corpus. From the Eddas, all `primary-verbatim`, substring-gated:
+- **Ásynjur (Snorri, Gylfaginning)** — 7 new goddesses with their own descriptive
+  clauses: Gefjun, Lofn (love-union), Vör (wisdom), Syn (refusal/defence), Hlín
+  (protection), Snotra (prudence), Gná (errand-rider). Plus verbatim quotes added
+  to 3 existing pointer-only goddesses (Sága, Sjöfn, Vár).
+- **Valkyries (Grímnismál 36)** — the 13 who bear ale to the Einherjar: Hrist,
+  Mist, Skeggöld, Skögul, Hlökk, Herfjötur, Hild, Þrúð, Göll, Geirölul, Randgríð,
+  Ráðgríð, Reginleif.
+
+NOTE: `ilike` probing is accent-blind — 3 goddesses existed under accented names
+(Vár/Sága/Sjöfn) and correctly merged (ON CONFLICT) rather than duplicating; their
+redundant empty pointers were removed. 4,078 → 4,098 entities; 0 fully-uncited.
+Script: `add_norse_goddesses_valkyries.sql`.
+
+
 ## v2.1.29 — 2026-06-26
 
 ### Greek expansion: river-gods (Potamoi) +10

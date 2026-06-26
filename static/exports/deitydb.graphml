@@ -24476,6 +24476,126 @@
       <data key="entity_class">deity</data>
       <data key="entity_type">River-god (Potamos)</data>
     </node>
+    <node id="ENT_NOR_GEFJUN">
+      <data key="name">Gefjun</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess (Asynja)</data>
+    </node>
+    <node id="ENT_NOR_LOFN">
+      <data key="name">Lofn</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess (Asynja)</data>
+    </node>
+    <node id="ENT_NOR_VOR">
+      <data key="name">Vor</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess (Asynja)</data>
+    </node>
+    <node id="ENT_NOR_SYN">
+      <data key="name">Syn</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess (Asynja)</data>
+    </node>
+    <node id="ENT_NOR_HLIN">
+      <data key="name">Hlin</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess (Asynja)</data>
+    </node>
+    <node id="ENT_NOR_SNOTRA">
+      <data key="name">Snotra</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess (Asynja)</data>
+    </node>
+    <node id="ENT_NOR_GNA">
+      <data key="name">Gna</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess (Asynja)</data>
+    </node>
+    <node id="ENT_NOR_VK_HRIST">
+      <data key="name">Hrist</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_MIST">
+      <data key="name">Mist</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_SKEGGOLD">
+      <data key="name">Skeggold</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_SKOGUL">
+      <data key="name">Skogul</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_HLOKK">
+      <data key="name">Hlokk</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_HERFIOTUR">
+      <data key="name">Herfiotur</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_HILD">
+      <data key="name">Hild</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_THRUD">
+      <data key="name">Thrud</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_GOLL">
+      <data key="name">Goll</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_GEIROLUL">
+      <data key="name">Geirolul</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_RANDGRID">
+      <data key="name">Randgrid</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_RADGRID">
+      <data key="name">Radgrid</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
+    <node id="ENT_NOR_VK_REGINLEIF">
+      <data key="name">Reginleif</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Valkyrie</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
