@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.1.34 — 2026-06-26
+
+### Celtic/Irish: Tuatha Dé / Fomorians from Cath Maige Tuired (+4)
+
+From the *Cath Maige Tuired* (Stokes, CELT, PD), all `primary-verbatim`:
+- **Miach** (Dian Cecht's son, who healed Nuadu's hand joint-to-joint) and
+  **Airmed** (his daughter, who knew every herb's property) — the healer siblings.
+- **Octriallach** (Fomorian, son of Indech) and **Delbaeth** (father of Elatha,
+  king of the Fomorians).
+
+"Ethne" folded into the existing **Ethniu** (Balor's daughter) as an alias — the
+variant-spelling trap again. 4,113 → 4,117 entities; 0 fully-uncited. Script:
+`add_irish_tuatha_de.sql`.
+
+
 ## v2.1.33 — 2026-06-26
 
 ### Finnish/Kalevala expansion (+6)
