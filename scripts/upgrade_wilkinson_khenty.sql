@@ -1,0 +1,3 @@
+BEGIN;
+UPDATE entity_citations SET quote='Khenty-irty was a falcon god of Khem or Letopolis modern Ausim), the capital of the second Lower Egyptian nome.', work_title='Richard H. Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (Thames & Hudson, 2003)', source_url='https://archive.org/details/the-complete-gods-and-goddesses-of-ancient-egypt_202502', verify_method='secondary-scholarship excerpt; substring-gated against Wilkinson (2003) OCR; diacritics normalized to ASCII', needs_review=true, review_reason='In-copyright peer-reviewed reference work — brief attributed excerpt for scholarly identification; verify against the print edition.', verified_on=DATE '2026-06-26' WHERE citation_id='CIT_EGY_KHENTYIRTY_SEC';
+COMMIT;
