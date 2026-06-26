@@ -1,5 +1,22 @@
 # Changelog
 
+## v2.1.44 — 2026-06-26
+
+### Secondary-scholarship layer: Wilkinson Egyptian +11 (→ 22/62)
+
+Continued the Wilkinson (2003) Egyptian secondary excerpts: Ha, Hauhet, Heket,
+Imentet, Iunit, Kherty, Mehet-Weret, Naunet, Pakhet, Seret, Tutu. Includes two
+Ogdoad members (Hauhet, Naunet — defined via their primeval-pair role at
+Hermopolis). All `secondary` grade, substring-gated against the OCR, `needs_review`,
+attributed to Wilkinson, *The Complete Gods and Goddesses of Ancient Egypt* (Thames &
+Hudson). 44 secondary citations now carry verbatim quotes; 0 fully-uncited.
+
+The remaining ~40 Egyptian pointers thin out into very obscure deities that are
+absent under any spelling tried (Werethekau, Wadj-wer, Mehit, Wenut, Iusaaset,
+Nebethetepet, Harsomtus) or appear only in index/king-list lines — honest pointers.
+Script: `upgrade_wilkinson_secondary2.sql`.
+
+
 ## v2.1.43 — 2026-06-26
 
 ### Secondary-scholarship layer: Black & Green +5, Wilkinson Egyptian +11
