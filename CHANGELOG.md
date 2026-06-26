@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.1.27 — 2026-06-26
+
+### Relationship sourcing: upgrade weak Theoi category-index links (200 re-sourced)
+
+Relationship audit found the link layer is referentially flawless (0 dangling
+refs/dupes/self-loops, 100% sourced, all reviewed) but with graded rigor — 281
+Greek-myth links were sourced to a generic *"Theoi … category index"* (a listing,
+not a specific citation). Re-pointed 200 of them to the **specific Theoi deity page**
+for the subject (e.g. Zeus→Apollo now cites theoi.com/Olympios/Zeus.html), adding
+99 per-deity reference sources. The 81 whose subject lacks a standalone Theoi page
+(minor personifications — Adikia, Aion, the Fates) keep the index. No relationship
+data changed, only source precision. sources 465 → 564; 0 dangling. Script:
+`resource_theoi_relationship_links.sql`.
+
+
 ## v2.1.26 — 2026-06-26
 
 ### Re-anchoring continued: 18 of 48 restored to primary text
