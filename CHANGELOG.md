@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.1.50 — 2026-06-26
+
+### Secondary layer: Catholic Encyclopedia batch 2 (+11 → 25 CE; 86 secondary)
+
+Continued the 1913 Catholic Encyclopedia (Wikisource) saints/heresiarchs mining, all
+hand-verified per figure: **Camillus de Lellis, Francis Borgia, Jane Frances de Chantal,
+John of God, Joseph of Cupertino, Paul of the Cross, Isaac Jogues, Arsenius the Great**
+(saints/fathers); **Montanus, Donatus Magnus, Eutyches** (heresiarchs). Disambiguation
+rejected wrong-figure hits (the "Macarius" title resolved to Macarius of Jerusalem, not
+Macarius of Egypt; Ignatius Loyola's opening is genealogy not definition — skipped). 25
+CE excerpts now; 86 secondary citations carry verbatim quotes; 0 fully-uncited.
+
+Script: `upgrade_catholicenc_secondary3.sql` (+jogues).
+
+
 ## v2.1.49 — 2026-06-26
 
 ### Secondary layer: 1913 Catholic Encyclopedia → saints/heresiarchs (+14)
