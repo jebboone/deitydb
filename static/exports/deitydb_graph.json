@@ -28550,6 +28550,146 @@
 "tradition": "Greek",
 "entity_class": "deity",
 "entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_NOR_GEFJUN",
+"name": "Gefjun",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "Goddess (Asynja)"
+},
+{
+"id": "ENT_NOR_LOFN",
+"name": "Lofn",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "Goddess (Asynja)"
+},
+{
+"id": "ENT_NOR_VOR",
+"name": "Vor",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "Goddess (Asynja)"
+},
+{
+"id": "ENT_NOR_SYN",
+"name": "Syn",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "Goddess (Asynja)"
+},
+{
+"id": "ENT_NOR_HLIN",
+"name": "Hlin",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "Goddess (Asynja)"
+},
+{
+"id": "ENT_NOR_SNOTRA",
+"name": "Snotra",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "Goddess (Asynja)"
+},
+{
+"id": "ENT_NOR_GNA",
+"name": "Gna",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "Goddess (Asynja)"
+},
+{
+"id": "ENT_NOR_VK_HRIST",
+"name": "Hrist",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_MIST",
+"name": "Mist",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_SKEGGOLD",
+"name": "Skeggold",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_SKOGUL",
+"name": "Skogul",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_HLOKK",
+"name": "Hlokk",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_HERFIOTUR",
+"name": "Herfiotur",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_HILD",
+"name": "Hild",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_THRUD",
+"name": "Thrud",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_GOLL",
+"name": "Goll",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_GEIROLUL",
+"name": "Geirolul",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_RANDGRID",
+"name": "Randgrid",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_RADGRID",
+"name": "Radgrid",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_VK_REGINLEIF",
+"name": "Reginleif",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Valkyrie"
 }
 ],
 "links": [
