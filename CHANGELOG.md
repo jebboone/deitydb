@@ -1,5 +1,30 @@
 # Changelog
 
+## v2.1.43 — 2026-06-26
+
+### Secondary-scholarship layer: Black & Green +5, Wilkinson Egyptian +11
+
+Continued the peer-reviewed secondary layer (substring-gated brief excerpts,
+`secondary` grade, `needs_review`, full attribution).
+
+**Black & Green (Mesopotamian), +5** → 20 of 65: Ningirima, Ninshubur, Ninsikila,
+Isimud, Ishtaran. The remaining ~45 are genuinely not cleanly extractable — most are
+cross-references ("see Gula"), bleed into adjacent entries, or use OCR spellings absent
+under any variant (Kulla, Lahar, Ashnan, Lamassu, Shedu, Ugallu). Those stay honest
+pointers.
+
+**Wilkinson, *The Complete Gods and Goddesses of Ancient Egypt*** (Thames & Hudson,
+2003; Richard Wilkinson, Univ. of Arizona Egyptology), **+11** of 62 Egyptian pointers:
+Andjety, Apis, Bat, Hededet, Heh, Hesat, Khenty-irty, Mnevis, Renenutet, Sed, Tatenen.
+Wilkinson's entries open with clean "X was a [type] god/goddess…" definitions, so
+extraction is far cleaner than the Mesopotamian dictionary. First conservative batch;
+many remaining Egyptian pointers are Ogdoad-pair or obscure entries needing per-entity
+work.
+
+Scripts: `upgrade_blackgreen_secondary3.sql`, `upgrade_wilkinson_secondary.sql`
+(+`_khenty`). 33 secondary citations now carry verbatim attributed quotes; 0 fully-uncited.
+
+
 ## v2.1.42 — 2026-06-26
 
 ### Secondary-scholarship layer (start): Black & Green excerpts → Mesopotamian (+15)
