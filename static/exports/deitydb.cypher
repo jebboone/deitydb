@@ -1991,6 +1991,7 @@ CREATE (:Entity {id:'ENT_EGY_ASSESSOR_34', name:'Tem-Sepu', tradition:'Egyptian'
 CREATE (:Entity {id:'ENT_EGY_ASSESSOR_35', name:'Ari-em-ab-f', tradition:'Egyptian', entity_class:'deity', entity_type:'Assessor of Maat'});
 CREATE (:Entity {id:'ENT_EGY_ASSESSOR_36', name:'Ahi', tradition:'Egyptian', entity_class:'deity', entity_type:'Assessor of Maat'});
 CREATE (:Entity {id:'ENT_EGY_ASSESSOR_37', name:'Uatch-rekhit', tradition:'Egyptian', entity_class:'deity', entity_type:'Assessor of Maat'});
+CREATE (:Entity {id:'ENT_NOR_BOMBUR', name:'Bombur', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
 CREATE (:Entity {id:'ENT_EGY_ASSESSOR_38', name:'Neheb-ka', tradition:'Egyptian', entity_class:'deity', entity_type:'Assessor of Maat'});
 CREATE (:Entity {id:'ENT_EGY_ASSESSOR_39', name:'Neheb-nefert', tradition:'Egyptian', entity_class:'deity', entity_type:'Assessor of Maat'});
 CREATE (:Entity {id:'ENT_EGY_ASSESSOR_40', name:'Tcheser-tep', tradition:'Egyptian', entity_class:'deity', entity_type:'Assessor of Maat'});
@@ -3034,6 +3035,7 @@ CREATE (:Entity {id:'ENT_VF_EL_CUCUY', name:'El Cucuy (the Boogeyman / Sack Man)
 CREATE (:Entity {id:'ENT_VF_BLACK_EYED_CHILDREN', name:'Black-Eyed Children', tradition:'Contemporary Folklore & Vernacular Religion', entity_class:'spirit', entity_type:'Folkloric being'});
 CREATE (:Entity {id:'ENT_VF_LA_LLORONA', name:'La Llorona', tradition:'Contemporary Folklore & Vernacular Religion', entity_class:'spirit', entity_type:'Spirit'});
 CREATE (:Entity {id:'ENT_VF_KRAMPUS', name:'Krampus', tradition:'Contemporary Folklore & Vernacular Religion', entity_class:'spirit', entity_type:'Folkloric being'});
+CREATE (:Entity {id:'ENT_NOR_GANDALF', name:'Gandalf', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
 CREATE (:Entity {id:'ENT_VF_BLOODY_MARY', name:'Bloody Mary', tradition:'Contemporary Folklore & Vernacular Religion', entity_class:'spirit', entity_type:'Spirit'});
 CREATE (:Entity {id:'ENT_VF_ZOZO', name:'Zozo', tradition:'Contemporary Folklore & Vernacular Religion', entity_class:'spirit', entity_type:'Spirit'});
 CREATE (:Entity {id:'ENT_VF_SLENDER_MAN', name:'Slender Man', tradition:'Contemporary Folklore & Vernacular Religion', entity_class:'spirit', entity_type:'Egregore'});
@@ -3287,6 +3289,7 @@ CREATE (:Entity {id:'ENT_SAM_SHEMA', name:'Shema (the One God of the Samaritans)
 CREATE (:Entity {id:'ENT_SAM_MOSES', name:'Moses (Samaritan: Moshe, the supreme prophet)', tradition:'Samaritan', entity_class:'prophet', entity_type:'Prophet / Lawgiver'});
 CREATE (:Entity {id:'ENT_ALV_HAJI_BEKTASH', name:'Haji Bektash Veli (Alevi-Bektashi veneration)', tradition:'Alevi', entity_class:'saint', entity_type:'Saint'});
 CREATE (:Entity {id:'ENT_SAM_TAHEB', name:'Taheb (the Samaritan Restorer)', tradition:'Samaritan', entity_class:'scriptural-figure', entity_type:'Eschatological figure'});
+CREATE (:Entity {id:'ENT_NOR_VINDALF', name:'Vindalf', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
 CREATE (:Entity {id:'ENT_SAM_MARQAH', name:'Marqah (Marqe)', tradition:'Samaritan', entity_class:'sage', entity_type:'Theologian'});
 CREATE (:Entity {id:'ENT_SAM_BABA_RABBA', name:'Baba Rabba', tradition:'Samaritan', entity_class:'sage', entity_type:'Reformer / Leader'});
 CREATE (:Entity {id:'ENT_SAM_HIGH_PRIEST', name:'Samaritan High Priest (the High-Priestly Line)', tradition:'Samaritan', entity_class:'collective', entity_type:'Office / Lineage'});
@@ -3337,6 +3340,7 @@ CREATE (:Entity {id:'ENT_PAT_CYRIL_ALEX', name:'Cyril of Alexandria', tradition:
 CREATE (:Entity {id:'ENT_PAT_MAXIMUS_CONFESSOR', name:'Maximus the Confessor', tradition:'Christian', entity_class:'sage', entity_type:'Church Father / theologian'});
 CREATE (:Entity {id:'ENT_DESERT_FATHERS', name:'The Desert Fathers and Mothers', tradition:'Christian', entity_class:'collective', entity_type:'Saint collective'});
 CREATE (:Entity {id:'ENT_DESERT_PACHOMIUS', name:'Pachomius the Great', tradition:'Christian', entity_class:'saint', entity_type:'Monk/saint'});
+CREATE (:Entity {id:'ENT_NOR_THRAIN', name:'Thrain', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
 CREATE (:Entity {id:'ENT_DESERT_MACARIUS', name:'Macarius the Great (Macarius the Egyptian)', tradition:'Christian', entity_class:'saint', entity_type:'Monk/saint'});
 CREATE (:Entity {id:'ENT_DESERT_EVAGRIUS', name:'Evagrius Ponticus', tradition:'Christian', entity_class:'saint', entity_type:'Monk/theologian'});
 CREATE (:Entity {id:'ENT_DESERT_CASSIAN', name:'John Cassian', tradition:'Christian', entity_class:'saint', entity_type:'Monk/saint'});
@@ -3870,6 +3874,18 @@ CREATE (:Entity {id:'ENT_ISR_JOMJAEL', name:'Jomjael', tradition:'Israelite/Seco
 CREATE (:Entity {id:'ENT_ISR_ARAQIEL', name:'Araqiel', tradition:'Israelite/Second Temple', entity_class:'demon', entity_type:'Fallen angel'});
 CREATE (:Entity {id:'ENT_ISR_EZEQEEL', name:'Ezeqeel', tradition:'Israelite/Second Temple', entity_class:'demon', entity_type:'Fallen angel'});
 CREATE (:Entity {id:'ENT_ISR_ARMAROS', name:'Armaros', tradition:'Israelite/Second Temple', entity_class:'demon', entity_type:'Fallen angel'});
+CREATE (:Entity {id:'ENT_LAT_BARSAFAEL', name:'Barsafael', tradition:'Late Antique Ritual', entity_class:'demon', entity_type:'Disease demon'});
+CREATE (:Entity {id:'ENT_LAT_METATHIAX', name:'Metathiax', tradition:'Late Antique Ritual', entity_class:'demon', entity_type:'Disease demon'});
+CREATE (:Entity {id:'ENT_LAT_HEPHESIMIRETH', name:'Hephesimireth', tradition:'Late Antique Ritual', entity_class:'demon', entity_type:'Disease demon'});
+CREATE (:Entity {id:'ENT_NOR_NORDRI', name:'Nordri', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_SUDRI', name:'Sudri', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_AUSTRI', name:'Austri', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_VESTRI', name:'Vestri', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_BIVOR', name:'Bivor', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_THEKK', name:'Thekk', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_FUNDIN', name:'Fundin', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_HORNBORI', name:'Hornbori', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
+CREATE (:Entity {id:'ENT_NOR_AURVANG', name:'Aurvang', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Dwarf'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);

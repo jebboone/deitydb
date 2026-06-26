@@ -1,5 +1,22 @@
 # Changelog
 
+## v2.1.18 — 2026-06-25
+
+### Mainstream-traditions pass (2): Testament of Solomon decans + Norse Dvergatal (+16)
+
+All `primary-verbatim`, substring-gated against the cited PD translations.
+
+- **Testament of Solomon (Conybeare 1898):** the 3 missing disease-demon decans
+  Barsafael (migraine), Metathiax (the reins), Hephesimireth (lingering disease) —
+  completing the 36-decan set.
+- **Voluspa Dvergatal (Poetic Edda, Thorpe 1866):** 13 dwarves of the dwarf-catalogue,
+  including the four cardinal sky-bearers Nordri, Sudri, Austri, Vestri, plus Gandalf,
+  Vindalf, Bombur, Thrain, Thekk, Fundin, Hornbori, Aurvang, Bivor.
+
+3,870 → 3,886 entities; 0 fully-uncited. Script: `add_mainstream_demons_dwarves.sql`.
+Still pending in this pass: 3 Enoch angelic princes and the Greek Nereids.
+
+
 ## v2.1.17 — 2026-06-25
 
 ### Mainstream-traditions pass (1): the fallen Watchers of 1 Enoch (+13)

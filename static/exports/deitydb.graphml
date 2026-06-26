@@ -11954,6 +11954,12 @@
       <data key="entity_class">deity</data>
       <data key="entity_type">Assessor of Maat</data>
     </node>
+    <node id="ENT_NOR_BOMBUR">
+      <data key="name">Bombur</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
     <node id="ENT_EGY_ASSESSOR_38">
       <data key="name">Neheb-ka</data>
       <data key="tradition">Egyptian</data>
@@ -18212,6 +18218,12 @@
       <data key="entity_class">spirit</data>
       <data key="entity_type">Folkloric being</data>
     </node>
+    <node id="ENT_NOR_GANDALF">
+      <data key="name">Gandalf</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
     <node id="ENT_VF_BLOODY_MARY">
       <data key="name">Bloody Mary</data>
       <data key="tradition">Contemporary Folklore &amp; Vernacular Religion</data>
@@ -19730,6 +19742,12 @@
       <data key="entity_class">scriptural-figure</data>
       <data key="entity_type">Eschatological figure</data>
     </node>
+    <node id="ENT_NOR_VINDALF">
+      <data key="name">Vindalf</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
     <node id="ENT_SAM_MARQAH">
       <data key="name">Marqah (Marqe)</data>
       <data key="tradition">Samaritan</data>
@@ -20029,6 +20047,12 @@
       <data key="tradition">Christian</data>
       <data key="entity_class">saint</data>
       <data key="entity_type">Monk/saint</data>
+    </node>
+    <node id="ENT_NOR_THRAIN">
+      <data key="name">Thrain</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
     </node>
     <node id="ENT_DESERT_MACARIUS">
       <data key="name">Macarius the Great (Macarius the Egyptian)</data>
@@ -23227,6 +23251,78 @@
       <data key="tradition">Israelite/Second Temple</data>
       <data key="entity_class">demon</data>
       <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_LAT_BARSAFAEL">
+      <data key="name">Barsafael</data>
+      <data key="tradition">Late Antique Ritual</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Disease demon</data>
+    </node>
+    <node id="ENT_LAT_METATHIAX">
+      <data key="name">Metathiax</data>
+      <data key="tradition">Late Antique Ritual</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Disease demon</data>
+    </node>
+    <node id="ENT_LAT_HEPHESIMIRETH">
+      <data key="name">Hephesimireth</data>
+      <data key="tradition">Late Antique Ritual</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Disease demon</data>
+    </node>
+    <node id="ENT_NOR_NORDRI">
+      <data key="name">Nordri</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_SUDRI">
+      <data key="name">Sudri</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_AUSTRI">
+      <data key="name">Austri</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_VESTRI">
+      <data key="name">Vestri</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_BIVOR">
+      <data key="name">Bivor</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_THEKK">
+      <data key="name">Thekk</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_FUNDIN">
+      <data key="name">Fundin</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_HORNBORI">
+      <data key="name">Hornbori</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_AURVANG">
+      <data key="name">Aurvang</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
     </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
