@@ -28369,119 +28369,119 @@
 "target": "ENT_HERA",
 "relationship_type": "spouse_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_ATHENA",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_APOLLO",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_ARTEMIS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_HERMES",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_ARES",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_DIONYSUS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_DEMETER",
 "target": "ENT_PERSEPHONE",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_DEMETER"
 },
 {
 "source": "ENT_HADES",
 "target": "ENT_PERSEPHONE",
 "relationship_type": "spouse_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HADES"
 },
 {
 "source": "ENT_APOLLO",
 "target": "ENT_PYTHON",
 "relationship_type": "slays",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_APOLLO"
 },
 {
 "source": "ENT_APOLLO",
 "target": "ENT_ASCLEPIUS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_APOLLO"
 },
 {
 "source": "ENT_HERMES_CHTHONIOS_CULT",
 "target": "ENT_CHARON",
 "relationship_type": "guides",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HERMES_CHTHONIOS"
 },
 {
 "source": "ENT_CHARON",
 "target": "ENT_STYX",
 "relationship_type": "dwells_in",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CHARON"
 },
 {
 "source": "ENT_DIOSCURI",
 "target": "ENT_CASTOR",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_DIOSCURI"
 },
 {
 "source": "ENT_DIOSCURI",
 "target": "ENT_POLYDEUCES",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_DIOSCURI"
 },
 {
 "source": "ENT_PHANES",
 "target": "ENT_PROTOGONOS",
 "relationship_type": "identified_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PHANES"
 },
 {
 "source": "ENT_DIONYSUS",
 "target": "ENT_ZAGREUS",
 "relationship_type": "identified_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_DIONYSUS"
 },
 {
 "source": "ENT_SYN_SERAPIS",
@@ -28523,28 +28523,28 @@
 "target": "ENT_ZEUS",
 "relationship_type": "cult_form_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS_MEILICHIOS"
 },
 {
 "source": "ENT_ZEUS_KTESIOS_CULT",
 "target": "ENT_ZEUS",
 "relationship_type": "cult_form_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS_KTESIOS"
 },
 {
 "source": "ENT_ZEUS_CHTHONIOS_CULT",
 "target": "ENT_ZEUS",
 "relationship_type": "cult_form_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS_CHTHONIOS"
 },
 {
 "source": "ENT_HERMES_CHTHONIOS_CULT",
 "target": "ENT_HERMES",
 "relationship_type": "cult_form_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HERMES_CHTHONIOS"
 },
 {
 "source": "ENT_KORE",
@@ -28572,70 +28572,70 @@
 "target": "ENT_CRONUS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_URANUS"
 },
 {
 "source": "ENT_CRONUS",
 "target": "ENT_RHEA",
 "relationship_type": "spouse_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CRONUS"
 },
 {
 "source": "ENT_CRONUS",
 "target": "ENT_ZEUS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CRONUS"
 },
 {
 "source": "ENT_RHEA",
 "target": "ENT_ZEUS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_RHEA"
 },
 {
 "source": "ENT_CRONUS",
 "target": "ENT_HERA",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CRONUS"
 },
 {
 "source": "ENT_RHEA",
 "target": "ENT_HERA",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_RHEA"
 },
 {
 "source": "ENT_CRONUS",
 "target": "ENT_HADES",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CRONUS"
 },
 {
 "source": "ENT_RHEA",
 "target": "ENT_HADES",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_RHEA"
 },
 {
 "source": "ENT_CRONUS",
 "target": "ENT_POSEIDON",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CRONUS"
 },
 {
 "source": "ENT_RHEA",
 "target": "ENT_POSEIDON",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_RHEA"
 },
 {
 "source": "ENT_MOIRAI",
@@ -28663,161 +28663,161 @@
 "target": "ENT_AGLAIA",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CHARITES"
 },
 {
 "source": "ENT_CHARITES",
 "target": "ENT_EUPHROSYNE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CHARITES"
 },
 {
 "source": "ENT_CHARITES",
 "target": "ENT_THALIA_GRACE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CHARITES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_CALLIOPE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_CLIO",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_ERATO",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_EUTERPE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_MELPOMENE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_POLYHYMNIA",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_TERPSICHORE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_THALIA_MUSE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_URANIA_MUSE",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_ANEMOI",
 "target": "ENT_BOREAS",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ANEMOI"
 },
 {
 "source": "ENT_ANEMOI",
 "target": "ENT_ZEPHYRUS",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ANEMOI"
 },
 {
 "source": "ENT_ANEMOI",
 "target": "ENT_NOTUS",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ANEMOI"
 },
 {
 "source": "ENT_ANEMOI",
 "target": "ENT_EURUS",
 "relationship_type": "has_member",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ANEMOI"
 },
 {
 "source": "ENT_CHARON",
 "target": "ENT_ACHERON",
 "relationship_type": "dwells_in",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CHARON"
 },
 {
 "source": "ENT_CERBERUS",
 "target": "ENT_HADES",
 "relationship_type": "guardian_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CERBERUS"
 },
 {
 "source": "ENT_CERBERUS",
 "target": "ENT_PERSEPHONE",
 "relationship_type": "guardian_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CERBERUS"
 },
 {
 "source": "ENT_DEMETER",
 "target": "ENT_TRIPTOLEMUS",
 "relationship_type": "member_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_DEMETER"
 },
 {
 "source": "ENT_CABEIRI",
 "target": "ENT_GREAT_GODS_SAMOTHRACE",
 "relationship_type": "syncretized_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CABEIRI"
 },
 {
 "source": "ENT_ASCLEPIUS",
 "target": "ENT_ACESO",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_HERA",
 "target": "ENT_ARES",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HERA"
 },
 {
 "source": "ENT_HERACLES",
@@ -28831,28 +28831,28 @@
 "target": "ENT_HYGIEIA",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_ASCLEPIUS",
 "target": "ENT_IASO",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_PERSEUS",
 "target": "ENT_MEDUSA",
 "relationship_type": "slays",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PERSEUS"
 },
 {
 "source": "ENT_ASCLEPIUS",
 "target": "ENT_PANACEA",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_HYGIEIA",
@@ -28866,28 +28866,28 @@
 "target": "ENT_EUMENIDES",
 "relationship_type": "identified_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ERINYES"
 },
 {
 "source": "ENT_LETHE",
 "target": "ENT_HADES",
 "relationship_type": "belongs_to_realm",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_LETHE"
 },
 {
 "source": "ENT_KERES",
 "target": "ENT_KER",
 "relationship_type": "identified_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_KERES"
 },
 {
 "source": "ENT_CHRONOS",
 "target": "ENT_ANANKE",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CHRONOS"
 },
 {
 "source": "ENT_SYN_AION",
@@ -28901,7 +28901,7 @@
 "target": "ENT_CHIMERA",
 "relationship_type": "slays",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_BELLEROPHON"
 },
 {
 "source": "ENT_HERACLES",
@@ -28936,105 +28936,105 @@
 "target": "ENT_ANEMOI",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASTRAEUS"
 },
 {
 "source": "ENT_EOS",
 "target": "ENT_ANEMOI",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_EOS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_CHARITES",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ARES",
 "target": "ENT_DEIMOS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ARES"
 },
 {
 "source": "ENT_EOS",
 "target": "ENT_HESPERUS",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_EOS"
 },
 {
 "source": "ENT_ASTRAEUS",
 "target": "ENT_HESPERUS",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASTRAEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_HORAE",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_THEMIS",
 "target": "ENT_HORAE",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_THEMIS"
 },
 {
 "source": "ENT_ASCLEPIUS",
 "target": "ENT_MACHAON",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_THEMIS",
 "target": "ENT_MOIRAI",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_THEMIS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_MOIRAI",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_MNEMOSYNE",
 "target": "ENT_MUSES",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MNEMOSYNE"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_MUSES",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ARES",
 "target": "ENT_PHOBOS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ARES"
 },
 {
 "source": "ENT_ASCLEPIUS",
 "target": "ENT_PODALIRIUS",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_EGY_AMUN_RA",
@@ -29748,7 +29748,7 @@
 "target": "ENT_DEAD",
 "relationship_type": "judges",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_AEACUS"
 },
 {
 "source": "ENT_EGY_ANUBIS",
@@ -29762,28 +29762,28 @@
 "target": "ENT_DEAD",
 "relationship_type": "guides",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CHARON"
 },
 {
 "source": "ENT_HADES",
 "target": "ENT_DEAD",
 "relationship_type": "judges",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HADES"
 },
 {
 "source": "ENT_HERMES_CHTHONIOS_CULT",
 "target": "ENT_DEAD",
 "relationship_type": "guides",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HERMES_CHTHONIOS"
 },
 {
 "source": "ENT_MINOS",
 "target": "ENT_DEAD",
 "relationship_type": "judges",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MINOS"
 },
 {
 "source": "ENT_RHADAMANTHUS",
@@ -29818,21 +29818,21 @@
 "target": "ENT_DEAD",
 "relationship_type": "belongs_to_realm",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HADES"
 },
 {
 "source": "ENT_HECATE",
 "target": "ENT_DEAD",
 "relationship_type": "protects",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_HERMES_CHTHONIOS_CULT",
 "target": "ENT_DEAD",
 "relationship_type": "protects",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HERMES_CHTHONIOS"
 },
 {
 "source": "ENT_EGY_ISIS",
@@ -29853,7 +29853,7 @@
 "target": "ENT_DEAD",
 "relationship_type": "belongs_to_realm",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PERSEPHONE"
 },
 {
 "source": "ENT_EGY_SERQET",
@@ -29867,7 +29867,7 @@
 "target": "ENT_APOLLO",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_PANACEA",
@@ -29944,14 +29944,14 @@
 "target": "ENT_FORTUNE",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_TYCHE"
 },
 {
 "source": "ENT_TYCHON",
 "target": "ENT_FORTUNE",
 "relationship_type": "embodies",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_TYCHON"
 },
 {
 "source": "ENT_AGATHOS_DAIMON",
@@ -29965,21 +29965,21 @@
 "target": "ENT_WEALTH",
 "relationship_type": "patron_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS_KTESIOS"
 },
 {
 "source": "ENT_PLUTUS",
 "target": "ENT_WEALTH",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PLUTUS"
 },
 {
 "source": "ENT_HEPHAESTUS",
 "target": "ENT_CRAFT",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HEPHAESTUS"
 },
 {
 "source": "ENT_EGY_KHNUM",
@@ -29993,14 +29993,14 @@
 "target": "ENT_CRAFT",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_CYCLOPES_CRAFTSMEN"
 },
 {
 "source": "ENT_ATHENA",
 "target": "ENT_CRAFT",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ATHENA"
 },
 {
 "source": "ENT_EGY_PTAH",
@@ -30021,7 +30021,7 @@
 "target": "ENT_TECHNOLOGY",
 "relationship_type": "patron_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PROMETHEUS"
 },
 {
 "source": "ENT_EGY_THOTH",
@@ -30063,14 +30063,14 @@
 "target": "ENT_MAGIC",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_HERMES",
 "target": "ENT_MAGIC",
 "relationship_type": "patron_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HERMES"
 },
 {
 "source": "ENT_EGY_TAWERET",
@@ -30098,7 +30098,7 @@
 "target": "ENT_PROTECTION",
 "relationship_type": "patron_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS_KTESIOS"
 },
 {
 "source": "ENT_EGY_BES",
@@ -30140,14 +30140,14 @@
 "target": "ENT_SOVEREIGNTY",
 "relationship_type": "embodies",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_HERA"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_SOVEREIGNTY",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_EGY_RA",
@@ -30168,7 +30168,7 @@
 "target": "ENT_COSMIC_ORDER",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_THEMIS"
 },
 {
 "source": "ENT_EGY_THOTH",
@@ -30182,14 +30182,14 @@
 "target": "ENT_JUSTICE",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_DIKE"
 },
 {
 "source": "ENT_EUNOMIA",
 "target": "ENT_CIVIC_ORDER",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_EUNOMIA"
 },
 {
 "source": "ENT_EGY_RENENUTET",
@@ -30245,7 +30245,7 @@
 "target": "ENT_NECESSITY",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ANANKE"
 },
 {
 "source": "ENT_KAIROS",
@@ -30273,7 +30273,7 @@
 "target": "ENT_FERTILITY",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PRIAPUS"
 },
 {
 "source": "ENT_EGY_BASTET",
@@ -30287,21 +30287,21 @@
 "target": "ENT_LONGING",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_POTHOS"
 },
 {
 "source": "ENT_EROS",
 "target": "ENT_LOVE",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_EROS"
 },
 {
 "source": "ENT_APHRODITE",
 "target": "ENT_LOVE",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_APHRODITE"
 },
 {
 "source": "ENT_EGY_HATHOR",
@@ -30315,7 +30315,7 @@
 "target": "ENT_PERSUASION",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PEITHO"
 },
 {
 "source": "ENT_EGY_SETH",
@@ -30329,21 +30329,21 @@
 "target": "ENT_CONFLICT",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ERIS"
 },
 {
 "source": "ENT_PHOBOS",
 "target": "ENT_FEAR",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_PHOBOS"
 },
 {
 "source": "ENT_BIA",
 "target": "ENT_FORCE",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_BIA"
 },
 {
 "source": "ENT_KRATOS",
@@ -30357,7 +30357,7 @@
 "target": "ENT_STRATEGY",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ATHENA"
 },
 {
 "source": "ENT_DEIMOS",
@@ -30371,14 +30371,14 @@
 "target": "ENT_WAR",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ARES"
 },
 {
 "source": "ENT_ENYO",
 "target": "ENT_WAR",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ENYO"
 },
 {
 "source": "ENT_EGY_MONTU",
@@ -30427,7 +30427,7 @@
 "target": "ENT_DEATH",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_KERES"
 },
 {
 "source": "ENT_MOROS",
@@ -30441,21 +30441,21 @@
 "target": "ENT_MISERY",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_OIZYS"
 },
 {
 "source": "ENT_ACHLYS",
 "target": "ENT_MISERY",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ACHLYS"
 },
 {
 "source": "ENT_GERAS",
 "target": "ENT_OLD_AGE",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_GERAS"
 },
 {
 "source": "ENT_EGY_BES",
@@ -30490,21 +30490,21 @@
 "target": "ENT_MUSIC",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_APOLLO"
 },
 {
 "source": "ENT_MUSES",
 "target": "ENT_INSPIRATION",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MUSES"
 },
 {
 "source": "ENT_MNEMOSYNE",
 "target": "ENT_MEMORY",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_MNEMOSYNE"
 },
 {
 "source": "ENT_CALLIOPE",
@@ -35257,7 +35257,7 @@
 "target": "ENT_ADRASTEIA",
 "relationship_type": "identified_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_ANANKE"
 },
 {
 "source": "ENT_DIONYSUS",
@@ -35390,7 +35390,7 @@
 "target": "ENT_PHANES",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_GODS"
+"source_id": "SRC_THEOI_NYX"
 },
 {
 "source": "ENT_MANICH_MOTHER_LIFE",
@@ -38946,7 +38946,7 @@
 "target": "ENT_WAR",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_IOKE"
 },
 {
 "source": "ENT_KYDOIMOS",
@@ -38960,42 +38960,42 @@
 "target": "ENT_WAR",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_PROIOXIS"
 },
 {
 "source": "ENT_PALIOXIS",
 "target": "ENT_WAR",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_PALIOXIS"
 },
 {
 "source": "ENT_PHEME",
 "target": "ENT_SPEECH",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_PHEME"
 },
 {
 "source": "ENT_TECHNE",
 "target": "ENT_CRAFT",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_TECHNE"
 },
 {
 "source": "ENT_SOTERIA",
 "target": "ENT_SALVATION",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_SOTERIA"
 },
 {
 "source": "ENT_PHILOTES",
 "target": "ENT_LOVE",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_PHILOTES"
 },
 {
 "source": "ENT_POROS",
@@ -40115,7 +40115,7 @@
 "target": "ENT_WAR",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_NIKE"
 },
 {
 "source": "ENT_ZEUS",
@@ -40129,21 +40129,21 @@
 "target": "ENT_AUXO",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_CARPO",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_THALLO",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_ZEUS",
@@ -40346,14 +40346,14 @@
 "target": "ENT_UNDERWORLD",
 "relationship_type": "dwells_in",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HADES_KLYMENOS"
 },
 {
 "source": "ENT_HADES_KLYMENOS",
 "target": "ENT_UNDERWORLD",
 "relationship_type": "rules",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HADES_KLYMENOS"
 },
 {
 "source": "ENT_BRIMO",
@@ -40374,14 +40374,14 @@
 "target": "ENT_DESPOINA",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_POSEIDON"
 },
 {
 "source": "ENT_DEMETER",
 "target": "ENT_DESPOINA",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_DEMETER"
 },
 {
 "source": "ENT_ACHERON_RIVER",
@@ -40416,7 +40416,7 @@
 "target": "ENT_THYIADS",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_DIONYSUS"
 },
 {
 "source": "ENT_THYIADS",
@@ -40430,7 +40430,7 @@
 "target": "ENT_SATYRS",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_DIONYSUS"
 },
 {
 "source": "ENT_DIONYSUS",
@@ -40444,7 +40444,7 @@
 "target": "ENT_KORYBANTES",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_RHEA"
 },
 {
 "source": "ENT_RHEA",
@@ -40507,7 +40507,7 @@
 "target": "ENT_SPEECH",
 "relationship_type": "embodies",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_DAPHNE"
 },
 {
 "source": "ENT_SYRINX",
@@ -40521,7 +40521,7 @@
 "target": "ENT_ECHO",
 "relationship_type": "opposes",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HERA"
 },
 {
 "source": "ENT_APHRODITE",
@@ -40549,7 +40549,7 @@
 "target": "ENT_EUBOULEUS",
 "relationship_type": "reveals",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_DEMETER"
 },
 {
 "source": "ENT_APOLLO",
@@ -40563,7 +40563,7 @@
 "target": "ENT_HYMENAIOS",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_APOLLO"
 },
 {
 "source": "ENT_HYMENAIOS",
@@ -40577,14 +40577,14 @@
 "target": "ENT_EPIONE",
 "relationship_type": "spouse_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_EPIONE",
 "target": "ENT_ASCLEPIUS",
 "relationship_type": "spouse_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_EPIONE"
 },
 {
 "source": "ENT_EGY_HARSIESE",
@@ -41011,14 +41011,14 @@
 "target": "ENT_ATE",
 "relationship_type": "reception_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ATE"
 },
 {
 "source": "ENT_MOMUS",
 "target": "ENT_MOMOS",
 "relationship_type": "reception_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_MOMUS"
 },
 {
 "source": "ENT_AIDOS",
@@ -41039,21 +41039,21 @@
 "target": "ENT_AIDOS",
 "relationship_type": "opposes",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HYBRIS"
 },
 {
 "source": "ENT_SOPHROSYNE",
 "target": "ENT_HYBRIS",
 "relationship_type": "opposes",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_SOPHROSYNE"
 },
 {
 "source": "ENT_NEMESIS",
 "target": "ENT_HYBRIS",
 "relationship_type": "opposes",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_NEMESIS"
 },
 {
 "source": "ENT_ARETE",
@@ -41088,14 +41088,14 @@
 "target": "ENT_POROS",
 "relationship_type": "paired_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_PENIA"
 },
 {
 "source": "ENT_PENIA",
 "target": "ENT_POROS",
 "relationship_type": "opposes",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_PENIA"
 },
 {
 "source": "ENT_HOMONOIA",
@@ -41109,7 +41109,7 @@
 "target": "ENT_POROS",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HEDONE"
 },
 {
 "source": "ENT_ELPIS",
@@ -41123,7 +41123,7 @@
 "target": "ENT_TYCHE",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_CAERUS"
 },
 {
 "source": "ENT_ELEUTHERIA",
@@ -41165,21 +41165,21 @@
 "target": "ENT_DOLOS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_NYX"
 },
 {
 "source": "ENT_NYX",
 "target": "ENT_LYSSA",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_NYX"
 },
 {
 "source": "ENT_DIONYSUS",
 "target": "ENT_MANIA",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_DIONYSUS"
 },
 {
 "source": "ENT_DOLOS",
@@ -41193,7 +41193,7 @@
 "target": "ENT_ERINYES",
 "relationship_type": "member_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ALASTOR"
 },
 {
 "source": "ENT_POINAI",
@@ -41228,42 +41228,42 @@
 "target": "ENT_LAMIA",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_HECATE",
 "target": "ENT_GELLO",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_HECATE",
 "target": "ENT_MORMO",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_HECATE",
 "target": "ENT_EMPUSA",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_HECATE",
 "target": "ENT_EMPOUSA",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_HECATE",
 "target": "ENT_MORMOLYKEIA",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_KAKODAIMON",
@@ -41312,14 +41312,14 @@
 "target": "ENT_ARTEMIS",
 "relationship_type": "equated_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_BENDIS"
 },
 {
 "source": "ENT_BENDIS",
 "target": "ENT_SELENE",
 "relationship_type": "equated_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_BENDIS"
 },
 {
 "source": "ENT_M_N",
@@ -41382,14 +41382,14 @@
 "target": "ENT_BEROE",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_APHRODITE"
 },
 {
 "source": "ENT_HERMES",
 "target": "ENT_CHELONE",
 "relationship_type": "opposes",
 "confidence": "high",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_HERMES"
 },
 {
 "source": "ENT_LEIMAKIDES",
@@ -41424,14 +41424,14 @@
 "target": "ENT_PHANES",
 "relationship_type": "equated_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_EROS_PRIMORDIAL"
 },
 {
 "source": "ENT_OCEANUS",
 "target": "ENT_NESOI",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_OCEANUS"
 },
 {
 "source": "ENT_HYDROS",
@@ -41459,14 +41459,14 @@
 "target": "ENT_AESAR",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_OCEANUS"
 },
 {
 "source": "ENT_OCEANUS",
 "target": "ENT_MELES",
 "relationship_type": "parent_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_OCEANUS"
 },
 {
 "source": "ENT_OCEANUS",
@@ -41508,14 +41508,14 @@
 "target": "ENT_DRYADS",
 "relationship_type": "member_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_HAMADRYADS"
 },
 {
 "source": "ENT_DRYADS",
 "target": "ENT_EARTH",
 "relationship_type": "dwells_in",
 "confidence": "high",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_DRYADS"
 },
 {
 "source": "ENT_COCYTUS",
@@ -41543,35 +41543,35 @@
 "target": "ENT_LAMPADES",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_UNDERWORLD"
+"source_id": "SRC_THEOI_HECATE"
 },
 {
 "source": "ENT_PERSEPHONE",
 "target": "ENT_MELINOE",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_UNDERWORLD"
+"source_id": "SRC_THEOI_PERSEPHONE"
 },
 {
 "source": "ENT_MELINOE",
 "target": "ENT_UNDERWORLD",
 "relationship_type": "dwells_in",
 "confidence": "high",
-"source_id": "SRC_THEOI_UNDERWORLD"
+"source_id": "SRC_THEOI_MELINOE"
 },
 {
 "source": "ENT_HADES",
 "target": "ENT_MINTHE",
 "relationship_type": "paired_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_UNDERWORLD"
+"source_id": "SRC_THEOI_HADES"
 },
 {
 "source": "ENT_PERSEPHONE",
 "target": "ENT_MINTHE",
 "relationship_type": "opposes",
 "confidence": "high",
-"source_id": "SRC_THEOI_UNDERWORLD"
+"source_id": "SRC_THEOI_PERSEPHONE"
 },
 {
 "source": "ENT_ORPHNE",
@@ -41585,14 +41585,14 @@
 "target": "ENT_UNDERWORLD",
 "relationship_type": "dwells_in",
 "confidence": "high",
-"source_id": "SRC_THEOI_UNDERWORLD"
+"source_id": "SRC_THEOI_GORGYRA"
 },
 {
 "source": "ENT_LEUCE",
 "target": "ENT_UNDERWORLD",
 "relationship_type": "dwells_in",
 "confidence": "high",
-"source_id": "SRC_THEOI_UNDERWORLD"
+"source_id": "SRC_THEOI_LEUCE"
 },
 {
 "source": "ENT_EURYNOMOS",
@@ -41606,7 +41606,7 @@
 "target": "ENT_WAR",
 "relationship_type": "embodies",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ALALA"
 },
 {
 "source": "ENT_HOMADOS",
@@ -41648,14 +41648,14 @@
 "target": "ENT_EOS",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_AURAE"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_NEPHELAE",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ZEUS"
 },
 {
 "source": "ENT_OCEANUS",
@@ -41718,14 +41718,14 @@
 "target": "ENT_HERMAPHRODITUS",
 "relationship_type": "paired_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_SALMACIS"
 },
 {
 "source": "ENT_OCEANUS",
 "target": "ENT_NAIADS",
 "relationship_type": "parent_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_OCEANUS"
 },
 {
 "source": "ENT_CRENAIAE",
@@ -41753,35 +41753,35 @@
 "target": "ENT_NAIADS",
 "relationship_type": "member_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_PEGAEAE"
 },
 {
 "source": "ENT_POTAMEIDES",
 "target": "ENT_NAIADS",
 "relationship_type": "member_of",
 "confidence": "medium",
-"source_id": "SRC_THEOI_NYMPHS"
+"source_id": "SRC_THEOI_POTAMEIDES"
 },
 {
 "source": "ENT_AMECHANIA",
 "target": "ENT_POROS",
 "relationship_type": "opposes",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_AMECHANIA"
 },
 {
 "source": "ENT_AMECHANIA",
 "target": "ENT_PENIA",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_AMECHANIA"
 },
 {
 "source": "ENT_EPIPHRON",
 "target": "ENT_SOPHROSYNE",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_EPIPHRON"
 },
 {
 "source": "ENT_PRAXIS",
@@ -41837,7 +41837,7 @@
 "target": "ENT_PHANES",
 "relationship_type": "paired_with",
 "confidence": "medium",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_THESIS"
 },
 {
 "source": "ENT_RHEA",
@@ -41872,21 +41872,21 @@
 "target": "ENT_DACTYLS",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_RHEA"
 },
 {
 "source": "ENT_DACTYLS",
 "target": "ENT_CURETES",
 "relationship_type": "paired_with",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_DACTYLS"
 },
 {
 "source": "ENT_POSEIDON",
 "target": "ENT_TELCHINES",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_POSEIDON"
 },
 {
 "source": "ENT_APOLLO",
@@ -41907,7 +41907,7 @@
 "target": "ENT_TELESPHORUS",
 "relationship_type": "patron_of",
 "confidence": "high",
-"source_id": "SRC_THEOI_DAIMONES"
+"source_id": "SRC_THEOI_ASCLEPIUS"
 },
 {
 "source": "ENT_TRIVIA",

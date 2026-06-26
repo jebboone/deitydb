@@ -24317,87 +24317,87 @@
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e1" source="ENT_ZEUS" target="ENT_ATHENA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e2" source="ENT_ZEUS" target="ENT_APOLLO">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e3" source="ENT_ZEUS" target="ENT_ARTEMIS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e4" source="ENT_ZEUS" target="ENT_HERMES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e5" source="ENT_ZEUS" target="ENT_ARES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e6" source="ENT_ZEUS" target="ENT_DIONYSUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e7" source="ENT_DEMETER" target="ENT_PERSEPHONE">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_DEMETER</data>
     </edge>
     <edge id="e8" source="ENT_HADES" target="ENT_PERSEPHONE">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HADES</data>
     </edge>
     <edge id="e9" source="ENT_APOLLO" target="ENT_PYTHON">
       <data key="relationship_type">slays</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_APOLLO</data>
     </edge>
     <edge id="e10" source="ENT_APOLLO" target="ENT_ASCLEPIUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_APOLLO</data>
     </edge>
     <edge id="e11" source="ENT_HERMES_CHTHONIOS_CULT" target="ENT_CHARON">
       <data key="relationship_type">guides</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HERMES_CHTHONIOS</data>
     </edge>
     <edge id="e12" source="ENT_CHARON" target="ENT_STYX">
       <data key="relationship_type">dwells_in</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CHARON</data>
     </edge>
     <edge id="e13" source="ENT_DIOSCURI" target="ENT_CASTOR">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_DIOSCURI</data>
     </edge>
     <edge id="e14" source="ENT_DIOSCURI" target="ENT_POLYDEUCES">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_DIOSCURI</data>
     </edge>
     <edge id="e15" source="ENT_PHANES" target="ENT_PROTOGONOS">
       <data key="relationship_type">identified_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PHANES</data>
     </edge>
     <edge id="e16" source="ENT_DIONYSUS" target="ENT_ZAGREUS">
       <data key="relationship_type">identified_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_DIONYSUS</data>
     </edge>
     <edge id="e17" source="ENT_SYN_SERAPIS" target="ENT_EGY_OSIRIS">
       <data key="relationship_type">syncretized_with</data>
@@ -24427,22 +24427,22 @@
     <edge id="e22" source="ENT_ZEUS_MEILICHIOS_CULT" target="ENT_ZEUS">
       <data key="relationship_type">cult_form_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS_MEILICHIOS</data>
     </edge>
     <edge id="e23" source="ENT_ZEUS_KTESIOS_CULT" target="ENT_ZEUS">
       <data key="relationship_type">cult_form_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS_KTESIOS</data>
     </edge>
     <edge id="e24" source="ENT_ZEUS_CHTHONIOS_CULT" target="ENT_ZEUS">
       <data key="relationship_type">cult_form_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS_CHTHONIOS</data>
     </edge>
     <edge id="e25" source="ENT_HERMES_CHTHONIOS_CULT" target="ENT_HERMES">
       <data key="relationship_type">cult_form_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HERMES_CHTHONIOS</data>
     </edge>
     <edge id="e26" source="ENT_KORE" target="ENT_PERSEPHONE">
       <data key="relationship_type">cult_form_of</data>
@@ -24462,52 +24462,52 @@
     <edge id="e29" source="ENT_URANUS" target="ENT_CRONUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_URANUS</data>
     </edge>
     <edge id="e30" source="ENT_CRONUS" target="ENT_RHEA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CRONUS</data>
     </edge>
     <edge id="e31" source="ENT_CRONUS" target="ENT_ZEUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CRONUS</data>
     </edge>
     <edge id="e32" source="ENT_RHEA" target="ENT_ZEUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_RHEA</data>
     </edge>
     <edge id="e33" source="ENT_CRONUS" target="ENT_HERA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CRONUS</data>
     </edge>
     <edge id="e34" source="ENT_RHEA" target="ENT_HERA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_RHEA</data>
     </edge>
     <edge id="e35" source="ENT_CRONUS" target="ENT_HADES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CRONUS</data>
     </edge>
     <edge id="e36" source="ENT_RHEA" target="ENT_HADES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_RHEA</data>
     </edge>
     <edge id="e37" source="ENT_CRONUS" target="ENT_POSEIDON">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CRONUS</data>
     </edge>
     <edge id="e38" source="ENT_RHEA" target="ENT_POSEIDON">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_RHEA</data>
     </edge>
     <edge id="e39" source="ENT_MOIRAI" target="ENT_CLOTHO">
       <data key="relationship_type">has_member</data>
@@ -24527,117 +24527,117 @@
     <edge id="e42" source="ENT_CHARITES" target="ENT_AGLAIA">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CHARITES</data>
     </edge>
     <edge id="e43" source="ENT_CHARITES" target="ENT_EUPHROSYNE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CHARITES</data>
     </edge>
     <edge id="e44" source="ENT_CHARITES" target="ENT_THALIA_GRACE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CHARITES</data>
     </edge>
     <edge id="e45" source="ENT_MUSES" target="ENT_CALLIOPE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e46" source="ENT_MUSES" target="ENT_CLIO">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e47" source="ENT_MUSES" target="ENT_ERATO">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e48" source="ENT_MUSES" target="ENT_EUTERPE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e49" source="ENT_MUSES" target="ENT_MELPOMENE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e50" source="ENT_MUSES" target="ENT_POLYHYMNIA">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e51" source="ENT_MUSES" target="ENT_TERPSICHORE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e52" source="ENT_MUSES" target="ENT_THALIA_MUSE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e53" source="ENT_MUSES" target="ENT_URANIA_MUSE">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e54" source="ENT_ANEMOI" target="ENT_BOREAS">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ANEMOI</data>
     </edge>
     <edge id="e55" source="ENT_ANEMOI" target="ENT_ZEPHYRUS">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ANEMOI</data>
     </edge>
     <edge id="e56" source="ENT_ANEMOI" target="ENT_NOTUS">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ANEMOI</data>
     </edge>
     <edge id="e57" source="ENT_ANEMOI" target="ENT_EURUS">
       <data key="relationship_type">has_member</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ANEMOI</data>
     </edge>
     <edge id="e58" source="ENT_CHARON" target="ENT_ACHERON">
       <data key="relationship_type">dwells_in</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CHARON</data>
     </edge>
     <edge id="e59" source="ENT_CERBERUS" target="ENT_HADES">
       <data key="relationship_type">guardian_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CERBERUS</data>
     </edge>
     <edge id="e60" source="ENT_CERBERUS" target="ENT_PERSEPHONE">
       <data key="relationship_type">guardian_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CERBERUS</data>
     </edge>
     <edge id="e61" source="ENT_DEMETER" target="ENT_TRIPTOLEMUS">
       <data key="relationship_type">member_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_DEMETER</data>
     </edge>
     <edge id="e62" source="ENT_CABEIRI" target="ENT_GREAT_GODS_SAMOTHRACE">
       <data key="relationship_type">syncretized_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CABEIRI</data>
     </edge>
     <edge id="e63" source="ENT_ASCLEPIUS" target="ENT_ACESO">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e64" source="ENT_HERA" target="ENT_ARES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HERA</data>
     </edge>
     <edge id="e65" source="ENT_HERACLES" target="ENT_CERBERUS">
       <data key="relationship_type">undergoes_process</data>
@@ -24647,22 +24647,22 @@
     <edge id="e66" source="ENT_ASCLEPIUS" target="ENT_HYGIEIA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e67" source="ENT_ASCLEPIUS" target="ENT_IASO">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e68" source="ENT_PERSEUS" target="ENT_MEDUSA">
       <data key="relationship_type">slays</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PERSEUS</data>
     </edge>
     <edge id="e69" source="ENT_ASCLEPIUS" target="ENT_PANACEA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e70" source="ENT_HYGIEIA" target="ENT_ASCLEPIUS">
       <data key="relationship_type">member_of</data>
@@ -24672,22 +24672,22 @@
     <edge id="e71" source="ENT_ERINYES" target="ENT_EUMENIDES">
       <data key="relationship_type">identified_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ERINYES</data>
     </edge>
     <edge id="e72" source="ENT_LETHE" target="ENT_HADES">
       <data key="relationship_type">belongs_to_realm</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_LETHE</data>
     </edge>
     <edge id="e73" source="ENT_KERES" target="ENT_KER">
       <data key="relationship_type">identified_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_KERES</data>
     </edge>
     <edge id="e74" source="ENT_CHRONOS" target="ENT_ANANKE">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CHRONOS</data>
     </edge>
     <edge id="e75" source="ENT_SYN_AION" target="ENT_CHRONOS">
       <data key="relationship_type">identified_with</data>
@@ -24697,7 +24697,7 @@
     <edge id="e76" source="ENT_BELLEROPHON" target="ENT_CHIMERA">
       <data key="relationship_type">slays</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_BELLEROPHON</data>
     </edge>
     <edge id="e77" source="ENT_HERACLES" target="ENT_GERYON">
       <data key="relationship_type">slays</data>
@@ -24722,77 +24722,77 @@
     <edge id="e81" source="ENT_ASTRAEUS" target="ENT_ANEMOI">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASTRAEUS</data>
     </edge>
     <edge id="e82" source="ENT_EOS" target="ENT_ANEMOI">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_EOS</data>
     </edge>
     <edge id="e83" source="ENT_ZEUS" target="ENT_CHARITES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e84" source="ENT_ARES" target="ENT_DEIMOS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ARES</data>
     </edge>
     <edge id="e85" source="ENT_EOS" target="ENT_HESPERUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_EOS</data>
     </edge>
     <edge id="e86" source="ENT_ASTRAEUS" target="ENT_HESPERUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASTRAEUS</data>
     </edge>
     <edge id="e87" source="ENT_ZEUS" target="ENT_HORAE">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e88" source="ENT_THEMIS" target="ENT_HORAE">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_THEMIS</data>
     </edge>
     <edge id="e89" source="ENT_ASCLEPIUS" target="ENT_MACHAON">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e90" source="ENT_THEMIS" target="ENT_MOIRAI">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_THEMIS</data>
     </edge>
     <edge id="e91" source="ENT_ZEUS" target="ENT_MOIRAI">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e92" source="ENT_MNEMOSYNE" target="ENT_MUSES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MNEMOSYNE</data>
     </edge>
     <edge id="e93" source="ENT_ZEUS" target="ENT_MUSES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e94" source="ENT_ARES" target="ENT_PHOBOS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ARES</data>
     </edge>
     <edge id="e95" source="ENT_ASCLEPIUS" target="ENT_PODALIRIUS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e96" source="ENT_EGY_AMUN_RA" target="ENT_EGY_AMUN">
       <data key="relationship_type">syncretized_with</data>
@@ -25302,7 +25302,7 @@
     <edge id="e197" source="ENT_AEACUS" target="ENT_DEAD">
       <data key="relationship_type">judges</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_AEACUS</data>
     </edge>
     <edge id="e198" source="ENT_EGY_ANUBIS" target="ENT_DEAD">
       <data key="relationship_type">guides</data>
@@ -25312,22 +25312,22 @@
     <edge id="e199" source="ENT_CHARON" target="ENT_DEAD">
       <data key="relationship_type">guides</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CHARON</data>
     </edge>
     <edge id="e200" source="ENT_HADES" target="ENT_DEAD">
       <data key="relationship_type">judges</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HADES</data>
     </edge>
     <edge id="e201" source="ENT_HERMES_CHTHONIOS_CULT" target="ENT_DEAD">
       <data key="relationship_type">guides</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HERMES_CHTHONIOS</data>
     </edge>
     <edge id="e202" source="ENT_MINOS" target="ENT_DEAD">
       <data key="relationship_type">judges</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MINOS</data>
     </edge>
     <edge id="e203" source="ENT_RHADAMANTHUS" target="ENT_DEAD">
       <data key="relationship_type">judges</data>
@@ -25352,17 +25352,17 @@
     <edge id="e207" source="ENT_HADES" target="ENT_DEAD">
       <data key="relationship_type">belongs_to_realm</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HADES</data>
     </edge>
     <edge id="e208" source="ENT_HECATE" target="ENT_DEAD">
       <data key="relationship_type">protects</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e209" source="ENT_HERMES_CHTHONIOS_CULT" target="ENT_DEAD">
       <data key="relationship_type">protects</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HERMES_CHTHONIOS</data>
     </edge>
     <edge id="e210" source="ENT_EGY_ISIS" target="ENT_DEAD">
       <data key="relationship_type">guardian_of</data>
@@ -25377,7 +25377,7 @@
     <edge id="e212" source="ENT_PERSEPHONE" target="ENT_DEAD">
       <data key="relationship_type">belongs_to_realm</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PERSEPHONE</data>
     </edge>
     <edge id="e213" source="ENT_EGY_SERQET" target="ENT_DEAD">
       <data key="relationship_type">guardian_of</data>
@@ -25387,7 +25387,7 @@
     <edge id="e214" source="ENT_ASCLEPIUS" target="ENT_APOLLO">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e215" source="ENT_PANACEA" target="ENT_ASCLEPIUS">
       <data key="relationship_type">member_of</data>
@@ -25442,12 +25442,12 @@
     <edge id="e225" source="ENT_TYCHE" target="ENT_FORTUNE">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_TYCHE</data>
     </edge>
     <edge id="e226" source="ENT_TYCHON" target="ENT_FORTUNE">
       <data key="relationship_type">embodies</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_TYCHON</data>
     </edge>
     <edge id="e227" source="ENT_AGATHOS_DAIMON" target="ENT_PROSPERITY">
       <data key="relationship_type">patron_of</data>
@@ -25457,17 +25457,17 @@
     <edge id="e228" source="ENT_ZEUS_KTESIOS_CULT" target="ENT_WEALTH">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS_KTESIOS</data>
     </edge>
     <edge id="e229" source="ENT_PLUTUS" target="ENT_WEALTH">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PLUTUS</data>
     </edge>
     <edge id="e230" source="ENT_HEPHAESTUS" target="ENT_CRAFT">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HEPHAESTUS</data>
     </edge>
     <edge id="e231" source="ENT_EGY_KHNUM" target="ENT_CRAFT">
       <data key="relationship_type">patron_of</data>
@@ -25477,12 +25477,12 @@
     <edge id="e232" source="ENT_CYCLOPES_CRAFTSMEN" target="ENT_CRAFT">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_CYCLOPES_CRAFTSMEN</data>
     </edge>
     <edge id="e233" source="ENT_ATHENA" target="ENT_CRAFT">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ATHENA</data>
     </edge>
     <edge id="e234" source="ENT_EGY_PTAH" target="ENT_CRAFT">
       <data key="relationship_type">patron_of</data>
@@ -25497,7 +25497,7 @@
     <edge id="e236" source="ENT_PROMETHEUS" target="ENT_TECHNOLOGY">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PROMETHEUS</data>
     </edge>
     <edge id="e237" source="ENT_EGY_THOTH" target="ENT_WRITING">
       <data key="relationship_type">patron_of</data>
@@ -25527,12 +25527,12 @@
     <edge id="e242" source="ENT_HECATE" target="ENT_MAGIC">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e243" source="ENT_HERMES" target="ENT_MAGIC">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HERMES</data>
     </edge>
     <edge id="e244" source="ENT_EGY_TAWERET" target="ENT_PROTECTION">
       <data key="relationship_type">patron_of</data>
@@ -25552,7 +25552,7 @@
     <edge id="e247" source="ENT_ZEUS_KTESIOS_CULT" target="ENT_PROTECTION">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS_KTESIOS</data>
     </edge>
     <edge id="e248" source="ENT_EGY_BES" target="ENT_PROTECTION">
       <data key="relationship_type">patron_of</data>
@@ -25582,12 +25582,12 @@
     <edge id="e253" source="ENT_HERA" target="ENT_SOVEREIGNTY">
       <data key="relationship_type">embodies</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_HERA</data>
     </edge>
     <edge id="e254" source="ENT_ZEUS" target="ENT_SOVEREIGNTY">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e255" source="ENT_EGY_RA" target="ENT_SOVEREIGNTY">
       <data key="relationship_type">patron_of</data>
@@ -25602,7 +25602,7 @@
     <edge id="e257" source="ENT_THEMIS" target="ENT_COSMIC_ORDER">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_THEMIS</data>
     </edge>
     <edge id="e258" source="ENT_EGY_THOTH" target="ENT_JUSTICE">
       <data key="relationship_type">embodies</data>
@@ -25612,12 +25612,12 @@
     <edge id="e259" source="ENT_DIKE" target="ENT_JUSTICE">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_DIKE</data>
     </edge>
     <edge id="e260" source="ENT_EUNOMIA" target="ENT_CIVIC_ORDER">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_EUNOMIA</data>
     </edge>
     <edge id="e261" source="ENT_EGY_RENENUTET" target="ENT_DESTINY">
       <data key="relationship_type">patron_of</data>
@@ -25657,7 +25657,7 @@
     <edge id="e268" source="ENT_ANANKE" target="ENT_NECESSITY">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ANANKE</data>
     </edge>
     <edge id="e269" source="ENT_KAIROS" target="ENT_OPPORTUNITY">
       <data key="relationship_type">embodies</data>
@@ -25677,7 +25677,7 @@
     <edge id="e272" source="ENT_PRIAPUS" target="ENT_FERTILITY">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PRIAPUS</data>
     </edge>
     <edge id="e273" source="ENT_EGY_BASTET" target="ENT_JOY">
       <data key="relationship_type">embodies</data>
@@ -25687,17 +25687,17 @@
     <edge id="e274" source="ENT_POTHOS" target="ENT_LONGING">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_POTHOS</data>
     </edge>
     <edge id="e275" source="ENT_EROS" target="ENT_LOVE">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_EROS</data>
     </edge>
     <edge id="e276" source="ENT_APHRODITE" target="ENT_LOVE">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_APHRODITE</data>
     </edge>
     <edge id="e277" source="ENT_EGY_HATHOR" target="ENT_LOVE">
       <data key="relationship_type">patron_of</data>
@@ -25707,7 +25707,7 @@
     <edge id="e278" source="ENT_PEITHO" target="ENT_PERSUASION">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PEITHO</data>
     </edge>
     <edge id="e279" source="ENT_EGY_SETH" target="ENT_CONFLICT">
       <data key="relationship_type">embodies</data>
@@ -25717,17 +25717,17 @@
     <edge id="e280" source="ENT_ERIS" target="ENT_CONFLICT">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ERIS</data>
     </edge>
     <edge id="e281" source="ENT_PHOBOS" target="ENT_FEAR">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_PHOBOS</data>
     </edge>
     <edge id="e282" source="ENT_BIA" target="ENT_FORCE">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_BIA</data>
     </edge>
     <edge id="e283" source="ENT_KRATOS" target="ENT_POWER">
       <data key="relationship_type">embodies</data>
@@ -25737,7 +25737,7 @@
     <edge id="e284" source="ENT_ATHENA" target="ENT_STRATEGY">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ATHENA</data>
     </edge>
     <edge id="e285" source="ENT_DEIMOS" target="ENT_TERROR">
       <data key="relationship_type">embodies</data>
@@ -25747,12 +25747,12 @@
     <edge id="e286" source="ENT_ARES" target="ENT_WAR">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ARES</data>
     </edge>
     <edge id="e287" source="ENT_ENYO" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ENYO</data>
     </edge>
     <edge id="e288" source="ENT_EGY_MONTU" target="ENT_WAR">
       <data key="relationship_type">patron_of</data>
@@ -25787,7 +25787,7 @@
     <edge id="e294" source="ENT_KERES" target="ENT_DEATH">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_KERES</data>
     </edge>
     <edge id="e295" source="ENT_MOROS" target="ENT_DEATH">
       <data key="relationship_type">embodies</data>
@@ -25797,17 +25797,17 @@
     <edge id="e296" source="ENT_OIZYS" target="ENT_MISERY">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_OIZYS</data>
     </edge>
     <edge id="e297" source="ENT_ACHLYS" target="ENT_MISERY">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ACHLYS</data>
     </edge>
     <edge id="e298" source="ENT_GERAS" target="ENT_OLD_AGE">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_GERAS</data>
     </edge>
     <edge id="e299" source="ENT_EGY_BES" target="ENT_MUSIC">
       <data key="relationship_type">patron_of</data>
@@ -25832,17 +25832,17 @@
     <edge id="e303" source="ENT_APOLLO" target="ENT_MUSIC">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_APOLLO</data>
     </edge>
     <edge id="e304" source="ENT_MUSES" target="ENT_INSPIRATION">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MUSES</data>
     </edge>
     <edge id="e305" source="ENT_MNEMOSYNE" target="ENT_MEMORY">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_MNEMOSYNE</data>
     </edge>
     <edge id="e306" source="ENT_CALLIOPE" target="ENT_POETRY">
       <data key="relationship_type">patron_of</data>
@@ -29237,7 +29237,7 @@
     <edge id="e984" source="ENT_ANANKE" target="ENT_ADRASTEIA">
       <data key="relationship_type">identified_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_ANANKE</data>
     </edge>
     <edge id="e985" source="ENT_DIONYSUS" target="ENT_IACCHUS">
       <data key="relationship_type">identified_with</data>
@@ -29332,7 +29332,7 @@
     <edge id="e1003" source="ENT_NYX" target="ENT_PHANES">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_GODS</data>
+      <data key="source_id">SRC_THEOI_NYX</data>
     </edge>
     <edge id="e1004" source="ENT_MANICH_MOTHER_LIFE" target="ENT_MANICH_PRIMAL_MAN">
       <data key="relationship_type">paired_with</data>
@@ -31872,7 +31872,7 @@
     <edge id="e1511" source="ENT_IOKE" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_IOKE</data>
     </edge>
     <edge id="e1512" source="ENT_KYDOIMOS" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
@@ -31882,32 +31882,32 @@
     <edge id="e1513" source="ENT_PROIOXIS" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_PROIOXIS</data>
     </edge>
     <edge id="e1514" source="ENT_PALIOXIS" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_PALIOXIS</data>
     </edge>
     <edge id="e1515" source="ENT_PHEME" target="ENT_SPEECH">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_PHEME</data>
     </edge>
     <edge id="e1516" source="ENT_TECHNE" target="ENT_CRAFT">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_TECHNE</data>
     </edge>
     <edge id="e1517" source="ENT_SOTERIA" target="ENT_SALVATION">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_SOTERIA</data>
     </edge>
     <edge id="e1518" source="ENT_PHILOTES" target="ENT_LOVE">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_PHILOTES</data>
     </edge>
     <edge id="e1519" source="ENT_POROS" target="ENT_WEALTH">
       <data key="relationship_type">embodies</data>
@@ -32707,7 +32707,7 @@
     <edge id="e1678" source="ENT_NIKE" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_NIKE</data>
     </edge>
     <edge id="e1679" source="ENT_ZEUS" target="ENT_EIRENE">
       <data key="relationship_type">parent_of</data>
@@ -32717,17 +32717,17 @@
     <edge id="e1680" source="ENT_ZEUS" target="ENT_AUXO">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e1681" source="ENT_ZEUS" target="ENT_CARPO">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e1682" source="ENT_ZEUS" target="ENT_THALLO">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e1683" source="ENT_ZEUS" target="ENT_EILEITHYIA">
       <data key="relationship_type">parent_of</data>
@@ -32872,12 +32872,12 @@
     <edge id="e1711" source="ENT_HADES_KLYMENOS" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HADES_KLYMENOS</data>
     </edge>
     <edge id="e1712" source="ENT_HADES_KLYMENOS" target="ENT_UNDERWORLD">
       <data key="relationship_type">rules</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HADES_KLYMENOS</data>
     </edge>
     <edge id="e1713" source="ENT_BRIMO" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
@@ -32892,12 +32892,12 @@
     <edge id="e1715" source="ENT_POSEIDON" target="ENT_DESPOINA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_POSEIDON</data>
     </edge>
     <edge id="e1716" source="ENT_DEMETER" target="ENT_DESPOINA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_DEMETER</data>
     </edge>
     <edge id="e1717" source="ENT_ACHERON_RIVER" target="ENT_ASCALAPHUS">
       <data key="relationship_type">parent_of</data>
@@ -32922,7 +32922,7 @@
     <edge id="e1721" source="ENT_DIONYSUS" target="ENT_THYIADS">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_DIONYSUS</data>
     </edge>
     <edge id="e1722" source="ENT_THYIADS" target="ENT_MAENADS">
       <data key="relationship_type">member_of</data>
@@ -32932,7 +32932,7 @@
     <edge id="e1723" source="ENT_DIONYSUS" target="ENT_SATYRS">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_DIONYSUS</data>
     </edge>
     <edge id="e1724" source="ENT_DIONYSUS" target="ENT_SILENUS">
       <data key="relationship_type">patron_of</data>
@@ -32942,7 +32942,7 @@
     <edge id="e1725" source="ENT_RHEA" target="ENT_KORYBANTES">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_RHEA</data>
     </edge>
     <edge id="e1726" source="ENT_RHEA" target="ENT_KOURETES">
       <data key="relationship_type">patron_of</data>
@@ -32987,7 +32987,7 @@
     <edge id="e1734" source="ENT_DAPHNE" target="ENT_SPEECH">
       <data key="relationship_type">embodies</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_DAPHNE</data>
     </edge>
     <edge id="e1735" source="ENT_SYRINX" target="ENT_PAN">
       <data key="relationship_type">received_as</data>
@@ -32997,7 +32997,7 @@
     <edge id="e1736" source="ENT_HERA" target="ENT_ECHO">
       <data key="relationship_type">opposes</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HERA</data>
     </edge>
     <edge id="e1737" source="ENT_APHRODITE" target="ENT_PSYCHE">
       <data key="relationship_type">opposes</data>
@@ -33017,7 +33017,7 @@
     <edge id="e1740" source="ENT_DEMETER" target="ENT_EUBOULEUS">
       <data key="relationship_type">reveals</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_DEMETER</data>
     </edge>
     <edge id="e1741" source="ENT_APOLLO" target="ENT_LINUS">
       <data key="relationship_type">parent_of</data>
@@ -33027,7 +33027,7 @@
     <edge id="e1742" source="ENT_APOLLO" target="ENT_HYMENAIOS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_APOLLO</data>
     </edge>
     <edge id="e1743" source="ENT_HYMENAIOS" target="ENT_LOVE">
       <data key="relationship_type">patron_of</data>
@@ -33037,12 +33037,12 @@
     <edge id="e1744" source="ENT_ASCLEPIUS" target="ENT_EPIONE">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e1745" source="ENT_EPIONE" target="ENT_ASCLEPIUS">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_EPIONE</data>
     </edge>
     <edge id="e1746" source="ENT_EGY_HARSIESE" target="ENT_EGY_HORUS">
       <data key="relationship_type">reception_of</data>
@@ -33347,12 +33347,12 @@
     <edge id="e1806" source="ENT_AT" target="ENT_ATE">
       <data key="relationship_type">reception_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ATE</data>
     </edge>
     <edge id="e1807" source="ENT_MOMUS" target="ENT_MOMOS">
       <data key="relationship_type">reception_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_MOMUS</data>
     </edge>
     <edge id="e1808" source="ENT_AIDOS" target="ENT_NEMESIS">
       <data key="relationship_type">paired_with</data>
@@ -33367,17 +33367,17 @@
     <edge id="e1810" source="ENT_HYBRIS" target="ENT_AIDOS">
       <data key="relationship_type">opposes</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HYBRIS</data>
     </edge>
     <edge id="e1811" source="ENT_SOPHROSYNE" target="ENT_HYBRIS">
       <data key="relationship_type">opposes</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_SOPHROSYNE</data>
     </edge>
     <edge id="e1812" source="ENT_NEMESIS" target="ENT_HYBRIS">
       <data key="relationship_type">opposes</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_NEMESIS</data>
     </edge>
     <edge id="e1813" source="ENT_ARETE" target="ENT_KAKIA">
       <data key="relationship_type">paired_with</data>
@@ -33402,12 +33402,12 @@
     <edge id="e1817" source="ENT_PENIA" target="ENT_POROS">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_PENIA</data>
     </edge>
     <edge id="e1818" source="ENT_PENIA" target="ENT_POROS">
       <data key="relationship_type">opposes</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_PENIA</data>
     </edge>
     <edge id="e1819" source="ENT_HOMONOIA" target="ENT_EIRENE">
       <data key="relationship_type">paired_with</data>
@@ -33417,7 +33417,7 @@
     <edge id="e1820" source="ENT_HEDONE" target="ENT_POROS">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HEDONE</data>
     </edge>
     <edge id="e1821" source="ENT_ELPIS" target="ENT_MOIRAI">
       <data key="relationship_type">paired_with</data>
@@ -33427,7 +33427,7 @@
     <edge id="e1822" source="ENT_CAERUS" target="ENT_TYCHE">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_CAERUS</data>
     </edge>
     <edge id="e1823" source="ENT_ELEUTHERIA" target="ENT_SOVEREIGNTY">
       <data key="relationship_type">patron_of</data>
@@ -33457,17 +33457,17 @@
     <edge id="e1828" source="ENT_NYX" target="ENT_DOLOS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_NYX</data>
     </edge>
     <edge id="e1829" source="ENT_NYX" target="ENT_LYSSA">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_NYX</data>
     </edge>
     <edge id="e1830" source="ENT_DIONYSUS" target="ENT_MANIA">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_DIONYSUS</data>
     </edge>
     <edge id="e1831" source="ENT_DOLOS" target="ENT_APATE">
       <data key="relationship_type">paired_with</data>
@@ -33477,7 +33477,7 @@
     <edge id="e1832" source="ENT_ALASTOR" target="ENT_ERINYES">
       <data key="relationship_type">member_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ALASTOR</data>
     </edge>
     <edge id="e1833" source="ENT_POINAI" target="ENT_ERINYES">
       <data key="relationship_type">member_of</data>
@@ -33502,32 +33502,32 @@
     <edge id="e1837" source="ENT_HECATE" target="ENT_LAMIA">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e1838" source="ENT_HECATE" target="ENT_GELLO">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e1839" source="ENT_HECATE" target="ENT_MORMO">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e1840" source="ENT_HECATE" target="ENT_EMPUSA">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e1841" source="ENT_HECATE" target="ENT_EMPOUSA">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e1842" source="ENT_HECATE" target="ENT_MORMOLYKEIA">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e1843" source="ENT_KAKODAIMON" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
@@ -33562,12 +33562,12 @@
     <edge id="e1849" source="ENT_BENDIS" target="ENT_ARTEMIS">
       <data key="relationship_type">equated_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_BENDIS</data>
     </edge>
     <edge id="e1850" source="ENT_BENDIS" target="ENT_SELENE">
       <data key="relationship_type">equated_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_BENDIS</data>
     </edge>
     <edge id="e1851" source="ENT_M_N" target="ENT_SELENE">
       <data key="relationship_type">equated_with</data>
@@ -33612,12 +33612,12 @@
     <edge id="e1859" source="ENT_APHRODITE" target="ENT_BEROE">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_APHRODITE</data>
     </edge>
     <edge id="e1860" source="ENT_HERMES" target="ENT_CHELONE">
       <data key="relationship_type">opposes</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_HERMES</data>
     </edge>
     <edge id="e1861" source="ENT_LEIMAKIDES" target="ENT_NYMPHS">
       <data key="relationship_type">member_of</data>
@@ -33642,12 +33642,12 @@
     <edge id="e1865" source="ENT_EROS_PRIMORDIAL" target="ENT_PHANES">
       <data key="relationship_type">equated_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_EROS_PRIMORDIAL</data>
     </edge>
     <edge id="e1866" source="ENT_OCEANUS" target="ENT_NESOI">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_OCEANUS</data>
     </edge>
     <edge id="e1867" source="ENT_HYDROS" target="ENT_PHANES">
       <data key="relationship_type">paired_with</data>
@@ -33667,12 +33667,12 @@
     <edge id="e1870" source="ENT_OCEANUS" target="ENT_AESAR">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_OCEANUS</data>
     </edge>
     <edge id="e1871" source="ENT_OCEANUS" target="ENT_MELES">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_OCEANUS</data>
     </edge>
     <edge id="e1872" source="ENT_OCEANUS" target="ENT_NESSUS">
       <data key="relationship_type">parent_of</data>
@@ -33702,12 +33702,12 @@
     <edge id="e1877" source="ENT_HAMADRYADS" target="ENT_DRYADS">
       <data key="relationship_type">member_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_HAMADRYADS</data>
     </edge>
     <edge id="e1878" source="ENT_DRYADS" target="ENT_EARTH">
       <data key="relationship_type">dwells_in</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_DRYADS</data>
     </edge>
     <edge id="e1879" source="ENT_COCYTUS" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
@@ -33727,27 +33727,27 @@
     <edge id="e1882" source="ENT_HECATE" target="ENT_LAMPADES">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_UNDERWORLD</data>
+      <data key="source_id">SRC_THEOI_HECATE</data>
     </edge>
     <edge id="e1883" source="ENT_PERSEPHONE" target="ENT_MELINOE">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_UNDERWORLD</data>
+      <data key="source_id">SRC_THEOI_PERSEPHONE</data>
     </edge>
     <edge id="e1884" source="ENT_MELINOE" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_UNDERWORLD</data>
+      <data key="source_id">SRC_THEOI_MELINOE</data>
     </edge>
     <edge id="e1885" source="ENT_HADES" target="ENT_MINTHE">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_UNDERWORLD</data>
+      <data key="source_id">SRC_THEOI_HADES</data>
     </edge>
     <edge id="e1886" source="ENT_PERSEPHONE" target="ENT_MINTHE">
       <data key="relationship_type">opposes</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_UNDERWORLD</data>
+      <data key="source_id">SRC_THEOI_PERSEPHONE</data>
     </edge>
     <edge id="e1887" source="ENT_ORPHNE" target="ENT_ACHERON_RIVER">
       <data key="relationship_type">paired_with</data>
@@ -33757,12 +33757,12 @@
     <edge id="e1888" source="ENT_GORGYRA" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_UNDERWORLD</data>
+      <data key="source_id">SRC_THEOI_GORGYRA</data>
     </edge>
     <edge id="e1889" source="ENT_LEUCE" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_UNDERWORLD</data>
+      <data key="source_id">SRC_THEOI_LEUCE</data>
     </edge>
     <edge id="e1890" source="ENT_EURYNOMOS" target="ENT_UNDERWORLD">
       <data key="relationship_type">dwells_in</data>
@@ -33772,7 +33772,7 @@
     <edge id="e1891" source="ENT_ALALA" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ALALA</data>
     </edge>
     <edge id="e1892" source="ENT_HOMADOS" target="ENT_WAR">
       <data key="relationship_type">embodies</data>
@@ -33802,12 +33802,12 @@
     <edge id="e1897" source="ENT_AURAE" target="ENT_EOS">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_AURAE</data>
     </edge>
     <edge id="e1898" source="ENT_ZEUS" target="ENT_NEPHELAE">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ZEUS</data>
     </edge>
     <edge id="e1899" source="ENT_OCEANUS" target="ENT_PEITHO_OCEANID">
       <data key="relationship_type">parent_of</data>
@@ -33852,12 +33852,12 @@
     <edge id="e1907" source="ENT_SALMACIS" target="ENT_HERMAPHRODITUS">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_SALMACIS</data>
     </edge>
     <edge id="e1908" source="ENT_OCEANUS" target="ENT_NAIADS">
       <data key="relationship_type">parent_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_OCEANUS</data>
     </edge>
     <edge id="e1909" source="ENT_CRENAIAE" target="ENT_NAIADS">
       <data key="relationship_type">member_of</data>
@@ -33877,27 +33877,27 @@
     <edge id="e1912" source="ENT_PEGAEAE" target="ENT_NAIADS">
       <data key="relationship_type">member_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_PEGAEAE</data>
     </edge>
     <edge id="e1913" source="ENT_POTAMEIDES" target="ENT_NAIADS">
       <data key="relationship_type">member_of</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_NYMPHS</data>
+      <data key="source_id">SRC_THEOI_POTAMEIDES</data>
     </edge>
     <edge id="e1914" source="ENT_AMECHANIA" target="ENT_POROS">
       <data key="relationship_type">opposes</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_AMECHANIA</data>
     </edge>
     <edge id="e1915" source="ENT_AMECHANIA" target="ENT_PENIA">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_AMECHANIA</data>
     </edge>
     <edge id="e1916" source="ENT_EPIPHRON" target="ENT_SOPHROSYNE">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_EPIPHRON</data>
     </edge>
     <edge id="e1917" source="ENT_PRAXIS" target="ENT_TECHNE">
       <data key="relationship_type">paired_with</data>
@@ -33937,7 +33937,7 @@
     <edge id="e1924" source="ENT_THESIS" target="ENT_PHANES">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">medium</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_THESIS</data>
     </edge>
     <edge id="e1925" source="ENT_RHEA" target="ENT_CORYBANTES">
       <data key="relationship_type">patron_of</data>
@@ -33962,17 +33962,17 @@
     <edge id="e1929" source="ENT_RHEA" target="ENT_DACTYLS">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_RHEA</data>
     </edge>
     <edge id="e1930" source="ENT_DACTYLS" target="ENT_CURETES">
       <data key="relationship_type">paired_with</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_DACTYLS</data>
     </edge>
     <edge id="e1931" source="ENT_POSEIDON" target="ENT_TELCHINES">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_POSEIDON</data>
     </edge>
     <edge id="e1932" source="ENT_APOLLO" target="ENT_SIBYL">
       <data key="relationship_type">patron_of</data>
@@ -33987,7 +33987,7 @@
     <edge id="e1934" source="ENT_ASCLEPIUS" target="ENT_TELESPHORUS">
       <data key="relationship_type">patron_of</data>
       <data key="confidence">high</data>
-      <data key="source_id">SRC_THEOI_DAIMONES</data>
+      <data key="source_id">SRC_THEOI_ASCLEPIUS</data>
     </edge>
     <edge id="e1935" source="ENT_TRIVIA" target="ENT_HECATE">
       <data key="relationship_type">reception_of</data>
