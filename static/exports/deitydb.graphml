@@ -24632,6 +24632,24 @@
       <data key="entity_class">deity</data>
       <data key="entity_type">God (As)</data>
     </node>
+    <node id="ENT_EGY_FENTIU">
+      <data key="name">Fentiu</data>
+      <data key="tradition">Egyptian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Assessor of Maat</data>
+    </node>
+    <node id="ENT_EGY_NEHAU">
+      <data key="name">Nehau</data>
+      <data key="tradition">Egyptian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Assessor of Maat</data>
+    </node>
+    <node id="ENT_EGY_SEKHERIU">
+      <data key="name">Sekheriu</data>
+      <data key="tradition">Egyptian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Assessor of Maat</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>

@@ -4104,6 +4104,9 @@ CREATE (:Entity {id:'ENT_NOR_BAUGI', name:'Baugi', tradition:'Germanic/Norse', e
 CREATE (:Entity {id:'ENT_NOR_HRAESVELG', name:'Hraesvelg', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Giant (Jotun)'});
 CREATE (:Entity {id:'ENT_NOR_FORNJOT', name:'Fornjot', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Giant (Jotun)'});
 CREATE (:Entity {id:'ENT_NOR_LODUR', name:'Lodur', tradition:'Germanic/Norse', entity_class:'deity', entity_type:'God (As)'});
+CREATE (:Entity {id:'ENT_EGY_FENTIU', name:'Fentiu', tradition:'Egyptian', entity_class:'spirit', entity_type:'Assessor of Maat'});
+CREATE (:Entity {id:'ENT_EGY_NEHAU', name:'Nehau', tradition:'Egyptian', entity_class:'spirit', entity_type:'Assessor of Maat'});
+CREATE (:Entity {id:'ENT_EGY_SEKHERIU', name:'Sekheriu', tradition:'Egyptian', entity_class:'spirit', entity_type:'Assessor of Maat'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
