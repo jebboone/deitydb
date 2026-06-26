@@ -1,5 +1,28 @@
 # Changelog
 
+## v2.1.23 — 2026-06-26
+
+### Citation-quality cleanup: Zoroastrian apparatus-anchored citations
+
+Spotting West's *index line* cited as the quote for "Fravashis" (`Fravashis, Bd.
+1, 8n; 2, ion. See Guardian spirits...`) prompted an audit: ~13 Zoroastrian
+citations were graded `primary-verbatim` but anchored on the translator's
+apparatus — footnotes, index entries, commentary — or mis-anchored to the wrong
+passage. Fixes (all substring-gated; no fabrication):
+
+- **Re-anchored to real primary text (8):** Fravashis, Keresaspa (Farvardin Yasht);
+  Mithra (Mihr Yasht); Sraosha, Aeshma (Srosh Yasht); Amesha Spentas, Gayomard,
+  Angra Mainyu (Bundahishn — Ahriman = West's rendering).
+- **Re-graded primary-verbatim → secondary (2):** Khshathra Vairya, Spenta Armaiti
+  — the quotes are Darmesteter/West scholarly description, now honestly labeled.
+- **Cleared mis-anchored quotes → primary-uncited pointers (3):** Daena (had cited
+  unrelated Fravashis), Indra (a manuscript footnote), Spenta Mainyu (a passage
+  about Angra Mainyu). Primary source identified, verbatim quote pending.
+
+Bushyasta was re-verified as already correct (genuine Srosh Yasht text). No entity
+count change; 0 fully-uncited maintained. Script: `cleanup_zoroastrian_citations.sql`.
+
+
 ## v2.1.22 — 2026-06-26
 
 ### Bundahishn primordial creatures (+5)
