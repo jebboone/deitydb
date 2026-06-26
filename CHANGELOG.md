@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.1.48 — 2026-06-26
+
+### Secondary layer: Bunson, Encyclopedia of Ancient Rome → Roman (+16)
+
+User supplied a local PDF of **Matthew Bunson, Encyclopedia of Ancient Rome** (Facts on
+File, 1994). Clean encyclopedia format → 16 Roman pointers gained a verbatim definition:
+Apollo, Carna, Consus, Dea Dia, Diana, Fides, Janus, Pomona, Portunus, Robigus, Roma,
+Sol Invictus, Vertumnus, Vesta, Volturnus, Vulcan (e.g. Janus: "The Roman god of
+doorways, beginnings, the past, and the future."). Several of these were the figures
+DEFERRED in the Fasti primary pass (Janus, Diana, Apollo, Vulcan, Vesta), so they finally
+gain a cited definition.
+
+CREDIBILITY NOTE: Bunson's encyclopedia is from a general reference publisher, not an
+academic press, and Bunson is a reference author rather than a university scholar — a
+slightly lower tier than the project's other secondary sources (Brill, OUP, British
+Museum Press). Attributed transparently ("Matthew Bunson, Encyclopedia of Ancient Rome,
+Facts on File") and flagged `needs_review` so provenance is clear. Substring-gated as
+always — no fabrication. Entries hitting temple/concept sub-entries (Mars Ultor, Temple
+of Saturn, Pax Romana) were rejected. 66 secondary citations now carry verbatim quotes.
+Script: `upgrade_bunson_secondary.sql` (+2, +3).
+
+
 ## v2.1.47 — 2026-06-26
 
 ### Secondary layer: MacKillop mining concluded (+2 → 18); 60 secondary quotes
