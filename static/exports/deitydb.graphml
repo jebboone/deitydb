@@ -24596,6 +24596,42 @@
       <data key="entity_class">spirit</data>
       <data key="entity_type">Valkyrie</data>
     </node>
+    <node id="ENT_NOR_BERGELMIR">
+      <data key="name">Bergelmir</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Jotun)</data>
+    </node>
+    <node id="ENT_NOR_GYMIR">
+      <data key="name">Gymir</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Jotun)</data>
+    </node>
+    <node id="ENT_NOR_BAUGI">
+      <data key="name">Baugi</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Jotun)</data>
+    </node>
+    <node id="ENT_NOR_HRAESVELG">
+      <data key="name">Hraesvelg</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Jotun)</data>
+    </node>
+    <node id="ENT_NOR_FORNJOT">
+      <data key="name">Fornjot</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Jotun)</data>
+    </node>
+    <node id="ENT_NOR_LODUR">
+      <data key="name">Lodur</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">God (As)</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
