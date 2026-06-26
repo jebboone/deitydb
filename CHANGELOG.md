@@ -1,5 +1,22 @@
 # Changelog
 
+## v2.1.47 — 2026-06-26
+
+### Secondary layer: MacKillop mining concluded (+2 → 18); 60 secondary quotes
+
+Mined the remaining Celtic targets from MacKillop. Added **Badb** ("A supernatural
+woman, perhaps a goddess or demon, who frequents places of battle.") and **Nehalennia**
+(Continental Germanic — "Latin name for a Celtic goddess of seafarers worshipped at two
+sites along the North Sea…").
+
+MacKillop is now at its clean-extraction ceiling (18 entries). The remaining Celtic
+pointers are predominantly Irish saga *characters* whose entries are narrative (Conchobar,
+Medb, Emer, Fionn, Deirdre, Midir — described through their stories, not "X was a goddess
+of Y"), or Gaulish deities whose short entries the 2-column PDF bleeds into adjacent text.
+Those stay honest pointers. 60 secondary citations now carry verbatim attributed quotes;
+0 fully-uncited.
+
+
 ## v2.1.46 — 2026-06-26
 
 ### Secondary layer: MacKillop Celtic Mythology +16 (locally-supplied PDF)
