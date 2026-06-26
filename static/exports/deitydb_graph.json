@@ -13943,6 +13943,13 @@
 "entity_type": "Assessor of Maat"
 },
 {
+"id": "ENT_NOR_BOMBUR",
+"name": "Bombur",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
 "id": "ENT_EGY_ASSESSOR_38",
 "name": "Neheb-ka",
 "tradition": "Egyptian",
@@ -21244,6 +21251,13 @@
 "entity_type": "Folkloric being"
 },
 {
+"id": "ENT_NOR_GANDALF",
+"name": "Gandalf",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
 "id": "ENT_VF_BLOODY_MARY",
 "name": "Bloody Mary",
 "tradition": "Contemporary Folklore & Vernacular Religion",
@@ -23015,6 +23029,13 @@
 "entity_type": "Eschatological figure"
 },
 {
+"id": "ENT_NOR_VINDALF",
+"name": "Vindalf",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
 "id": "ENT_SAM_MARQAH",
 "name": "Marqah (Marqe)",
 "tradition": "Samaritan",
@@ -23363,6 +23384,13 @@
 "tradition": "Christian",
 "entity_class": "saint",
 "entity_type": "Monk/saint"
+},
+{
+"id": "ENT_NOR_THRAIN",
+"name": "Thrain",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
 },
 {
 "id": "ENT_DESERT_MACARIUS",
@@ -27094,6 +27122,90 @@
 "tradition": "Israelite/Second Temple",
 "entity_class": "demon",
 "entity_type": "Fallen angel"
+},
+{
+"id": "ENT_LAT_BARSAFAEL",
+"name": "Barsafael",
+"tradition": "Late Antique Ritual",
+"entity_class": "demon",
+"entity_type": "Disease demon"
+},
+{
+"id": "ENT_LAT_METATHIAX",
+"name": "Metathiax",
+"tradition": "Late Antique Ritual",
+"entity_class": "demon",
+"entity_type": "Disease demon"
+},
+{
+"id": "ENT_LAT_HEPHESIMIRETH",
+"name": "Hephesimireth",
+"tradition": "Late Antique Ritual",
+"entity_class": "demon",
+"entity_type": "Disease demon"
+},
+{
+"id": "ENT_NOR_NORDRI",
+"name": "Nordri",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_SUDRI",
+"name": "Sudri",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_AUSTRI",
+"name": "Austri",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_VESTRI",
+"name": "Vestri",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_BIVOR",
+"name": "Bivor",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_THEKK",
+"name": "Thekk",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_FUNDIN",
+"name": "Fundin",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_HORNBORI",
+"name": "Hornbori",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_AURVANG",
+"name": "Aurvang",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
 }
 ],
 "links": [
