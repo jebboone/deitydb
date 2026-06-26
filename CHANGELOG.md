@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.1.45 — 2026-06-26
+
+### Secondary layer: Dictionary of Deities and Demons in the Bible (+5, signed entries)
+
+Scouted and added the **Dictionary of Deities and Demons in the Bible** (DDD; van der
+Toorn, Becking & van der Horst, eds., Brill, 2nd ed. 1999) — the gold-standard
+peer-reviewed reference for West Semitic / Canaanite / biblical deities, fetched as
+public full text from archive.org. Bonus: DDD entries are **individually signed**, so
+each quote is attributed to its named author (parsed from the contributor list):
+**Dagon** (John F. Healey, Manchester), **Baal Hadad** (Jonas C. Greenfield),
+**Adrammelech, Anammelech, Nibhaz** (A. R. Millard).
+
+HONEST FINDING — DDD is a poor *extraction* fit despite being the ideal source. Unlike
+the dictionaries (Black & Green, Wilkinson), DDD entries are nuanced scholarly *essays*
+whose opening sections lead with etymology and biblical-attestation rather than a crisp
+"X was the god of Y." Only ~5 of 92 West Semitic pointers yielded a clean, contextually
+SOUND one-line definition. Pushing harder was deliberately avoided: pulling
+characterizing sentences out of qualified scholarly prose risks decontextualization
+(e.g. a stray "El is a poorly known deity" describes one limited attestation, not El the
+pantheon head) — accurate-substring but misleading, which the integrity rule also guards
+against. The remaining West Semitic pointers stay honest pointers.
+
+Scouting also confirmed: MacKillop (Celtic), Simek (Norse), Gimbutas (Baltic) are all
+borrow-only on archive.org (no public full text). Script: `upgrade_ddd_secondary.sql`.
+
+
 ## v2.1.44 — 2026-06-26
 
 ### Secondary-scholarship layer: Wilkinson Egyptian +11 (→ 22/62)
