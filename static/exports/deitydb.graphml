@@ -23036,6 +23036,84 @@
       <data key="entity_class">collective</data>
       <data key="entity_type">Collective</data>
     </node>
+    <node id="ENT_SET_ZOSTRIANOS">
+      <data key="name">Zostrianos</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">prophet</data>
+      <data key="entity_type">Visionary/revealer figure</data>
+    </node>
+    <node id="ENT_SET_ALLOGENES">
+      <data key="name">Allogenes</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">prophet</data>
+      <data key="entity_type">Visionary/revealer figure</data>
+    </node>
+    <node id="ENT_SET_MARSANES">
+      <data key="name">Marsanes</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">prophet</data>
+      <data key="entity_type">Prophet/visionary figure</data>
+    </node>
+    <node id="ENT_SET_SAMBLO">
+      <data key="name">Samblo</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Angelic minister</data>
+    </node>
+    <node id="ENT_SET_ESEPHECH">
+      <data key="name">Esephech</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">aeon</data>
+      <data key="entity_type">Divine child</data>
+    </node>
+    <node id="ENT_SET_MICHEUS">
+      <data key="name">Micheus</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Baptismal power</data>
+    </node>
+    <node id="ENT_SET_MICHAR">
+      <data key="name">Michar</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Baptismal power</data>
+    </node>
+    <node id="ENT_SET_MNESINOUS">
+      <data key="name">Mnesinous</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Baptismal power</data>
+    </node>
+    <node id="ENT_SET_SESENGENPHARANGES">
+      <data key="name">Sesengenpharanges</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Baptismal power</data>
+    </node>
+    <node id="ENT_SET_ATHOTH">
+      <data key="name">Athoth</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Archon</data>
+    </node>
+    <node id="ENT_SET_HARMAS">
+      <data key="name">Harmas</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Archon</data>
+    </node>
+    <node id="ENT_SET_YABEL">
+      <data key="name">Yabel</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Archon</data>
+    </node>
+    <node id="ENT_GNO_DERDEKEAS">
+      <data key="name">Derdekeas</data>
+      <data key="tradition">Gnostic</data>
+      <data key="entity_class">prophet</data>
+      <data key="entity_type">Revealer/savior figure</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>

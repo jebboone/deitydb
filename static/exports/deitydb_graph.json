@@ -26870,6 +26870,97 @@
 "tradition": "Christian",
 "entity_class": "collective",
 "entity_type": "Collective"
+},
+{
+"id": "ENT_SET_ZOSTRIANOS",
+"name": "Zostrianos",
+"tradition": "Sethian",
+"entity_class": "prophet",
+"entity_type": "Visionary/revealer figure"
+},
+{
+"id": "ENT_SET_ALLOGENES",
+"name": "Allogenes",
+"tradition": "Sethian",
+"entity_class": "prophet",
+"entity_type": "Visionary/revealer figure"
+},
+{
+"id": "ENT_SET_MARSANES",
+"name": "Marsanes",
+"tradition": "Sethian",
+"entity_class": "prophet",
+"entity_type": "Prophet/visionary figure"
+},
+{
+"id": "ENT_SET_SAMBLO",
+"name": "Samblo",
+"tradition": "Sethian",
+"entity_class": "angel",
+"entity_type": "Angelic minister"
+},
+{
+"id": "ENT_SET_ESEPHECH",
+"name": "Esephech",
+"tradition": "Sethian",
+"entity_class": "aeon",
+"entity_type": "Divine child"
+},
+{
+"id": "ENT_SET_MICHEUS",
+"name": "Micheus",
+"tradition": "Sethian",
+"entity_class": "spirit",
+"entity_type": "Baptismal power"
+},
+{
+"id": "ENT_SET_MICHAR",
+"name": "Michar",
+"tradition": "Sethian",
+"entity_class": "spirit",
+"entity_type": "Baptismal power"
+},
+{
+"id": "ENT_SET_MNESINOUS",
+"name": "Mnesinous",
+"tradition": "Sethian",
+"entity_class": "spirit",
+"entity_type": "Baptismal power"
+},
+{
+"id": "ENT_SET_SESENGENPHARANGES",
+"name": "Sesengenpharanges",
+"tradition": "Sethian",
+"entity_class": "spirit",
+"entity_type": "Baptismal power"
+},
+{
+"id": "ENT_SET_ATHOTH",
+"name": "Athoth",
+"tradition": "Sethian",
+"entity_class": "demon",
+"entity_type": "Archon"
+},
+{
+"id": "ENT_SET_HARMAS",
+"name": "Harmas",
+"tradition": "Sethian",
+"entity_class": "demon",
+"entity_type": "Archon"
+},
+{
+"id": "ENT_SET_YABEL",
+"name": "Yabel",
+"tradition": "Sethian",
+"entity_class": "demon",
+"entity_type": "Archon"
+},
+{
+"id": "ENT_GNO_DERDEKEAS",
+"name": "Derdekeas",
+"tradition": "Gnostic",
+"entity_class": "prophet",
+"entity_type": "Revealer/savior figure"
 }
 ],
 "links": [

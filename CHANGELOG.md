@@ -1,5 +1,30 @@
 # Changelog
 
+## v2.1.15 — 2026-06-25
+
+### Nag Hammadi verify-and-add pass: +13 Sethian/Gnostic figures (all primary-verbatim)
+
+The coverage audit (after the Browse cap was fixed) surfaced genuinely-missing
+Nag Hammadi figures — verified absent in both `entities` and `entity_aliases`.
+Added with **real verbatim citations**, each substring-gated against the Robinson
+*Nag Hammadi Library in English* (1990) text (hosted per-tractate at gnosis.org)
+via `scripts/citations/cite_anchor.py`, then trimmed to a clause/sentence
+boundary. No AI-written descriptions.
+
+- **Platonizing Sethian eponyms:** Zostrianos (NHC VIII,1), Allogenes (NHC XI,3),
+  Marsanes (NHC X,1)
+- **Gospel of the Egyptians (NHC III,2):** Samblo (fourth luminary-minister),
+  Esephech (the child of the child), and the baptismal powers Micheus, Michar,
+  Mnesinous, Sesengenpharanges
+- **Apocryphon of John (NHC II,1) rulers:** Athoth (the reaper), Harmas (the eye
+  of envy; alias Armas), Yabel
+- **Paraphrase of Shem (NHC VII,1):** Derdekeas (son of the infinite Light)
+
+3,838 → 3,851 entities; 0 fully-uncited; +13 primary-verbatim citations.
+Scripts: `add_nag_hammadi_sethian.sql`, `add_nag_hammadi_clusters.sql`.
+Deferred (absent from the Robinson text, or low-notability name-list filler):
+Nikotheos, Phosilampes, Strophaia, Mellephanea, Eleinos, Aphredon, Seldao.
+
 ## v2.1.14 — 2026-06-25
 
 ### Citation: Isis Lactans (last fully-uncited entity)
