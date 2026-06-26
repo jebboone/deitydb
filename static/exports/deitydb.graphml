@@ -14918,6 +14918,12 @@
       <data key="entity_class">deity</data>
       <data key="entity_type">Deity</data>
     </node>
+    <node id="ENT_FIN_AHTO">
+      <data key="name">Ahto</data>
+      <data key="tradition">Finnish/Kalevala</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">God</data>
+    </node>
     <node id="ENT_SAB_DHAT_HIMYAM">
       <data key="name">Dhāt-Ḥimyam</data>
       <data key="tradition">South Arabian</data>
@@ -24649,6 +24655,36 @@
       <data key="tradition">Egyptian</data>
       <data key="entity_class">spirit</data>
       <data key="entity_type">Assessor of Maat</data>
+    </node>
+    <node id="ENT_FIN_LOVIATAR">
+      <data key="name">Loviatar</data>
+      <data key="tradition">Finnish/Kalevala</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess</data>
+    </node>
+    <node id="ENT_FIN_OTSO">
+      <data key="name">Otso</data>
+      <data key="tradition">Finnish/Kalevala</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Animal-spirit</data>
+    </node>
+    <node id="ENT_FIN_LEMPO">
+      <data key="name">Lempo</data>
+      <data key="tradition">Finnish/Kalevala</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Demon</data>
+    </node>
+    <node id="ENT_FIN_KALEVATAR">
+      <data key="name">Kalevatar</data>
+      <data key="tradition">Finnish/Kalevala</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess</data>
+    </node>
+    <node id="ENT_FIN_ANTEROVIPUNEN">
+      <data key="name">Antero Vipunen</data>
+      <data key="tradition">Finnish/Kalevala</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant-sage</data>
     </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>

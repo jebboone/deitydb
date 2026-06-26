@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.1.33 — 2026-06-26
+
+### Finnish/Kalevala expansion (+6)
+
+Finnish was thin (24) and had a real gap. From the Kalevala verse (Crawford, PD),
+all `primary-verbatim`, substring-gated:
+- **Ahto** (king of all the waters), **Loviatar** (blind daughter of Tuoni, mother
+  of the nine diseases; alias Lowyatar = Crawford's spelling), **Otso** (the sacred
+  bear), **Lempo** (evil spirit), **Kalevatar** (daughter of Kaleva, the beer-brewer),
+  **Antero Vipunen** (the dead giant-sage of lost words).
+
+Avoided two traps: Lemminkäinen looked "missing" only because the probe was
+accent-blind (it exists with the ä); and Crawford's end-glossary first bled into
+the quotes, so extraction was restricted to the verse and Untamo was dropped (a
+homonym — dream-spirit vs Kullervo's enemy). 4,107 → 4,113 entities; Finnish 24→30;
+0 fully-uncited. Script: `add_finnish_kalevala.sql`.
+
+
 ## v2.1.32 — 2026-06-26
 
 ### Egyptian: Assessors of Maat + Budge-spelling aliases (+3, +6 aliases)
