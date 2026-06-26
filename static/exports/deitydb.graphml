@@ -24686,6 +24686,30 @@
       <data key="entity_class">spirit</data>
       <data key="entity_type">Giant-sage</data>
     </node>
+    <node id="ENT_IRL_MIACH">
+      <data key="name">Miach</data>
+      <data key="tradition">Celtic/Irish</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">God of healing</data>
+    </node>
+    <node id="ENT_IRL_AIRMED">
+      <data key="name">Airmed</data>
+      <data key="tradition">Celtic/Irish</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Goddess of healing</data>
+    </node>
+    <node id="ENT_IRL_OCTRIALLACH">
+      <data key="name">Octriallach</data>
+      <data key="tradition">Celtic/Irish</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Fomorian</data>
+    </node>
+    <node id="ENT_IRL_DELBAETH">
+      <data key="name">Delbaeth</data>
+      <data key="tradition">Celtic/Irish</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Fomorian ancestor</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>

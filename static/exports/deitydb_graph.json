@@ -28795,6 +28795,34 @@
 "tradition": "Finnish/Kalevala",
 "entity_class": "spirit",
 "entity_type": "Giant-sage"
+},
+{
+"id": "ENT_IRL_MIACH",
+"name": "Miach",
+"tradition": "Celtic/Irish",
+"entity_class": "deity",
+"entity_type": "God of healing"
+},
+{
+"id": "ENT_IRL_AIRMED",
+"name": "Airmed",
+"tradition": "Celtic/Irish",
+"entity_class": "deity",
+"entity_type": "Goddess of healing"
+},
+{
+"id": "ENT_IRL_OCTRIALLACH",
+"name": "Octriallach",
+"tradition": "Celtic/Irish",
+"entity_class": "monster",
+"entity_type": "Fomorian"
+},
+{
+"id": "ENT_IRL_DELBAETH",
+"name": "Delbaeth",
+"tradition": "Celtic/Irish",
+"entity_class": "deity",
+"entity_type": "Fomorian ancestor"
 }
 ],
 "links": [
