@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.1.49 — 2026-06-26
+
+### Secondary layer: 1913 Catholic Encyclopedia → saints/heresiarchs (+14)
+
+Mined the **1913 Catholic Encyclopedia** (public domain; fetched as clean text from
+Wikisource) for the Christian/saints cluster — the practical substitute for the
+borrow-locked Oxford Dictionary of Saints. 14 figures gained a verbatim definition:
+
+- Saints/Fathers: Martin of Tours, Gregory the Illuminator, Mesrop Mashtots, Thecla,
+  Francis de Sales, Francis Xavier, Rose of Lima, Vincent de Paul, Robert Bellarmine,
+  John Cassian, Peter Claver.
+- Heresiarchs: Nestorius, Pelagius. Concept: the Communion of Saints.
+
+Each substring-gated against Wikisource, `secondary` grade, `needs_review`, attributed
+"s.v. <entry>" with the dated-perspective caveat noted. Per-figure DISAMBIGUATION was
+verified by hand (the search API mis-resolved common names — "Lawrence" → "Lawrence
+Hengler", a wrong "Thecla" of Kitzingen vs. the correct Thecla of Iconium), so every
+quote was checked against its entry.
+
+FRICTION NOTE: the CE has the same essay-format limits as DDD (doctrinal articles like
+Purgatory/Heaven/Beatific Vision open with tables of contents, not definitions; some
+entries are cross-ref stubs) PLUS Wikisource title-resolution issues (404s, wrong-figure
+matches). So it yields careful modest batches, not bulk coverage. Modern (post-1913)
+saints — Aloysius Gonzaga, Padre Pio, etc. — are absent and still need another source.
+75 secondary citations now carry verbatim quotes; 0 fully-uncited. Scripts:
+`upgrade_catholicenc_secondary.sql` (+2).
+
+
 ## v2.1.48 — 2026-06-26
 
 ### Secondary layer: Bunson, Encyclopedia of Ancient Rome → Roman (+16)
