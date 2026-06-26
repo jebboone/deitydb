@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.1.28 — 2026-06-26
+
+### Greek expansion: the Gigantes + monster-group members (+17)
+
+- **Gigantes (Apollodorus 1.6.1-2):** 8 Giants of the Gigantomachy with their
+  death-clauses — Alcyoneus, Porphyrion, Mimas, Enceladus (buried under Sicily),
+  Polybotes (under Nisyros), Gration, Agrius, Thoas. Homonym-colliding Giants
+  (Pallas/Ephialtes/Eurytus/Clytius/Hippolytus) skipped to avoid duplicate ids.
+- **Monster-groups (Hesiod Theogony):** the three Cyclopes (Brontes, Steropes,
+  Arges), the three Hekatoncheires (Cottus, Briareus, Gyes), Gorgon Euryale,
+  Harpy Aello, Graea Pemphredo.
+
+All `primary-verbatim`, substring-gated; held/colliding names skipped (Ocypete,
+Enyo, Medusa, etc.). Caught a mis-anchor mid-build — Euryale first grabbed the
+*wrong* Euryale (Orion's mother) and was re-pointed to the Gorgon passage.
+4,051 → 4,068 entities; 0 fully-uncited. Scripts: `add_gigantes.sql`,
+`add_greek_monster_groups.sql`.
+
+
 ## v2.1.27 — 2026-06-26
 
 ### Relationship sourcing: upgrade weak Theoi category-index links (200 re-sourced)

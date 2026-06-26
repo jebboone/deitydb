@@ -1767,6 +1767,7 @@ CREATE (:Entity {id:'ENT_ISR_LOT', name:'Lot', tradition:'Israelite/Second Templ
 CREATE (:Entity {id:'ENT_ISR_ISAAC', name:'Isaac', tradition:'Israelite/Second Temple', entity_class:'scriptural-figure', entity_type:'Patriarch'});
 CREATE (:Entity {id:'ENT_ISR_REBECCA', name:'Rebecca', tradition:'Israelite/Second Temple', entity_class:'scriptural-figure', entity_type:'Matriarch'});
 CREATE (:Entity {id:'ENT_ISR_JACOB', name:'Jacob (Israel)', tradition:'Israelite/Second Temple', entity_class:'scriptural-figure', entity_type:'Patriarch'});
+CREATE (:Entity {id:'ENT_STEROPES', name:'Steropes', tradition:'Greek', entity_class:'monster', entity_type:'Cyclops'});
 CREATE (:Entity {id:'ENT_ISR_RACHEL', name:'Rachel', tradition:'Israelite/Second Temple', entity_class:'scriptural-figure', entity_type:'Matriarch'});
 CREATE (:Entity {id:'ENT_ISR_LEAH', name:'Leah', tradition:'Israelite/Second Temple', entity_class:'scriptural-figure', entity_type:'Matriarch'});
 CREATE (:Entity {id:'ENT_ISR_JOSEPH', name:'Joseph (son of Jacob)', tradition:'Israelite/Second Temple', entity_class:'scriptural-figure', entity_type:'Patriarch'});
@@ -2406,6 +2407,7 @@ CREATE (:Entity {id:'ENT_EGY_KHENTIKHETI', name:'Khenti-kheti', tradition:'Egypt
 CREATE (:Entity {id:'ENT_EGY_SOULS_OF_PE', name:'Souls of Pe', tradition:'Egyptian', entity_class:'collective', entity_type:'Collective'});
 CREATE (:Entity {id:'ENT_EGY_SOULS_OF_NEKHEN', name:'Souls of Nekhen', tradition:'Egyptian', entity_class:'collective', entity_type:'Collective'});
 CREATE (:Entity {id:'ENT_ELAM_HISHMITIK', name:'Hishmitik', tradition:'Elamite', entity_class:'deity', entity_type:'Deity'});
+CREATE (:Entity {id:'ENT_ARGES', name:'Arges', tradition:'Greek', entity_class:'monster', entity_type:'Cyclops'});
 CREATE (:Entity {id:'ENT_EGY_IABET', name:'Iabet', tradition:'Egyptian', entity_class:'deity', entity_type:'Goddess'});
 CREATE (:Entity {id:'ENT_EGY_IMENTET', name:'Imentet', tradition:'Egyptian', entity_class:'deity', entity_type:'Goddess'});
 CREATE (:Entity {id:'ENT_EGY_IUNIT', name:'Iunit', tradition:'Egyptian', entity_class:'deity', entity_type:'Goddess'});
@@ -4028,6 +4030,7 @@ CREATE (:Entity {id:'ENT_ROM_MELLONA', name:'Mellona', tradition:'Roman', entity
 CREATE (:Entity {id:'ENT_ROM_BUBONA', name:'Bubona', tradition:'Roman', entity_class:'deity', entity_type:'Functional deity'});
 CREATE (:Entity {id:'ENT_ROM_JUGATINUS', name:'Jugatinus', tradition:'Roman', entity_class:'deity', entity_type:'Functional deity'});
 CREATE (:Entity {id:'ENT_ROM_DOMIDUCUS', name:'Domiducus', tradition:'Roman', entity_class:'deity', entity_type:'Functional deity'});
+CREATE (:Entity {id:'ENT_BRONTES', name:'Brontes', tradition:'Greek', entity_class:'monster', entity_type:'Cyclops'});
 CREATE (:Entity {id:'ENT_ROM_PERTUNDA', name:'Pertunda', tradition:'Roman', entity_class:'deity', entity_type:'Functional deity'});
 CREATE (:Entity {id:'ENT_ROM_VOLUPIA', name:'Volupia', tradition:'Roman', entity_class:'deity', entity_type:'Functional deity'});
 CREATE (:Entity {id:'ENT_ROM_AGENORIA', name:'Agenoria', tradition:'Roman', entity_class:'deity', entity_type:'Functional deity'});
@@ -4051,6 +4054,20 @@ CREATE (:Entity {id:'ENT_ZOR_GOPATSHAH', name:'Gopatshah', tradition:'Zoroastria
 CREATE (:Entity {id:'ENT_ZOR_GAVAEVODATA', name:'Gavaevodata', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Primeval ox'});
 CREATE (:Entity {id:'ENT_ZOR_HADHAYANS', name:'Hadhayans', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Mythical ox'});
 CREATE (:Entity {id:'ENT_ZOR_VIZARESHA', name:'Vizaresha', tradition:'Zoroastrian', entity_class:'demon', entity_type:'Demon'});
+CREATE (:Entity {id:'ENT_ALCYONEUS', name:'Alcyoneus', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_PORPHYRION', name:'Porphyrion', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_MIMAS', name:'Mimas', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_ENCELADUS', name:'Enceladus', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_POLYBOTES', name:'Polybotes', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_GRATION', name:'Gration', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_AGRIUS', name:'Agrius', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_THOAS', name:'Thoas', tradition:'Greek', entity_class:'spirit', entity_type:'Giant (Gigas)'});
+CREATE (:Entity {id:'ENT_COTTUS', name:'Cottus', tradition:'Greek', entity_class:'monster', entity_type:'Hundred-Hander'});
+CREATE (:Entity {id:'ENT_BRIAREUS', name:'Briareus', tradition:'Greek', entity_class:'monster', entity_type:'Hundred-Hander'});
+CREATE (:Entity {id:'ENT_GYES', name:'Gyes', tradition:'Greek', entity_class:'monster', entity_type:'Hundred-Hander'});
+CREATE (:Entity {id:'ENT_EURYALE', name:'Euryale', tradition:'Greek', entity_class:'monster', entity_type:'Gorgon'});
+CREATE (:Entity {id:'ENT_AELLO', name:'Aello', tradition:'Greek', entity_class:'monster', entity_type:'Harpy'});
+CREATE (:Entity {id:'ENT_PEMPHREDO', name:'Pemphredo', tradition:'Greek', entity_class:'spirit', entity_type:'Graea'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
