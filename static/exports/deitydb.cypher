@@ -4117,6 +4117,8 @@ CREATE (:Entity {id:'ENT_IRL_MIACH', name:'Miach', tradition:'Celtic/Irish', ent
 CREATE (:Entity {id:'ENT_IRL_AIRMED', name:'Airmed', tradition:'Celtic/Irish', entity_class:'deity', entity_type:'Goddess of healing'});
 CREATE (:Entity {id:'ENT_IRL_OCTRIALLACH', name:'Octriallach', tradition:'Celtic/Irish', entity_class:'monster', entity_type:'Fomorian'});
 CREATE (:Entity {id:'ENT_IRL_DELBAETH', name:'Delbaeth', tradition:'Celtic/Irish', entity_class:'deity', entity_type:'Fomorian ancestor'});
+CREATE (:Entity {id:'ENT_GMC_TUISTO', name:'Tuisto', tradition:'Continental Germanic', entity_class:'deity', entity_type:'Primeval god'});
+CREATE (:Entity {id:'ENT_GMC_MANNUS', name:'Mannus', tradition:'Continental Germanic', entity_class:'deity', entity_type:'Ancestral god'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);

@@ -24710,6 +24710,18 @@
       <data key="entity_class">deity</data>
       <data key="entity_type">Fomorian ancestor</data>
     </node>
+    <node id="ENT_GMC_TUISTO">
+      <data key="name">Tuisto</data>
+      <data key="tradition">Continental Germanic</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Primeval god</data>
+    </node>
+    <node id="ENT_GMC_MANNUS">
+      <data key="name">Mannus</data>
+      <data key="tradition">Continental Germanic</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Ancestral god</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>

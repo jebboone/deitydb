@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.1.35 — 2026-06-26
+
+### Continental Germanic: the primeval ancestors Tuisto & Mannus (+2)
+
+From Tacitus, *Germania* 2 (PD): **Tuisto** (the earth-born primeval god) and his
+son **Mannus** (eponymous ancestor of the Germanic peoples), citing the verbatim
+sentence. 4,117 → 4,119 entities; 0 fully-uncited. Script:
+`add_germanic_ancestors.sql`.
+
+Note: a full tradition-list audit confirmed the DB has **no genuinely-absent
+Western branch** — even Anglo-Saxon, Continental Germanic, Sámi, Basque, Nart, and
+Illyrian are already present. Breadth expansion has reached the comprehensive-
+coverage floor (each remaining probe yields only 2-6 new figures).
+
+
 ## v2.1.34 — 2026-06-26
 
 ### Celtic/Irish: Tuatha Dé / Fomorians from Cath Maige Tuired (+4)

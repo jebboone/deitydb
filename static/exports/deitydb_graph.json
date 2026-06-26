@@ -28823,6 +28823,20 @@
 "tradition": "Celtic/Irish",
 "entity_class": "deity",
 "entity_type": "Fomorian ancestor"
+},
+{
+"id": "ENT_GMC_TUISTO",
+"name": "Tuisto",
+"tradition": "Continental Germanic",
+"entity_class": "deity",
+"entity_type": "Primeval god"
+},
+{
+"id": "ENT_GMC_MANNUS",
+"name": "Mannus",
+"tradition": "Continental Germanic",
+"entity_class": "deity",
+"entity_type": "Ancestral god"
 }
 ],
 "links": [
