@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.1.25 — 2026-06-26
+
+### Re-anchoring apparatus-cleanup pointers to primary text (10 restored)
+
+Began restoring the 48 citations blanked in v2.1.24 (apparatus → `primary-uncited`
+pointers) to real primary-text quotes, source by source — all substring-gated:
+
+- **Poetic Edda (Thorpe):** Geri & Huginn (Grímnismál), Well of Mímir & Well of Urd (Völuspá)
+- **Prose Edda (Anderson):** Geirröðr (Thor's journey to Geirröðsgarð)
+- **1 Enoch (Charles):** Uriel (ch 20), Sariel (8:3 teaching)
+- **3 Enoch (Odeberg):** Rahatiel (over the constellations)
+- **Testament of Solomon (Conybeare):** Marmareth
+- **Pseudo-Dionysius (Parker):** The Celestial Hierarchy
+
+An audit of the blanked originals confirmed v2.1.24 was sound — they were indexes,
+TOCs, footnotes, and Agrippa magic-square tables (a few, like Geri's Grímnismál
+line, had real text buried in OCR noise, now cleanly restored).
+
+The remaining 38 stay as honest pointers: ~13 re-anchorable with further per-source
+fetches (Pistis Sophia, Apollodorus, Kalevala, Orphic Hymns, the three Dionysius
+triads); the rest are tabular-only (Agrippa's planetary spirits exist in magic
+squares, not quotable prose) or in-copyright (Hoffner, Byock, Picatrix, Sefer
+ha-Razim, Manichaean). 0 fully-uncited maintained; primary-verbatim 1,657 → 1,667.
+Scripts: `reanchor_apparatus_batch1.sql`, `reanchor_apparatus_batch2.sql`.
+
+
 ## v2.1.24 — 2026-06-26
 
 ### Database-wide apparatus-citation cleanup (48 re-pointed)
