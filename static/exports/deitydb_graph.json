@@ -27003,6 +27003,97 @@
 "tradition": "Gnostic",
 "entity_class": "prophet",
 "entity_type": "Teacher/sage figure"
+},
+{
+"id": "ENT_ISR_RAMEEL",
+"name": "Rameel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_TAMIEL",
+"name": "Tamiel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_RAMIEL",
+"name": "Ramiel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_DANEL",
+"name": "Danel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_BATAREL",
+"name": "Batarel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_ANANEL",
+"name": "Ananel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_ZAQIEL",
+"name": "Zaqiel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_SATAREL",
+"name": "Satarel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_TUREL",
+"name": "Turel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_JOMJAEL",
+"name": "Jomjael",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_ARAQIEL",
+"name": "Araqiel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_EZEQEEL",
+"name": "Ezeqeel",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
+},
+{
+"id": "ENT_ISR_ARMAROS",
+"name": "Armaros",
+"tradition": "Israelite/Second Temple",
+"entity_class": "demon",
+"entity_type": "Fallen angel"
 }
 ],
 "links": [

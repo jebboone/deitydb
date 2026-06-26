@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.1.17 — 2026-06-25
+
+### Mainstream-traditions pass (1): the fallen Watchers of 1 Enoch (+13)
+
+Extended the verify-and-add method from the Gnostic corpus to mainstream Second
+Temple Jewish/Christian angelology. Added the missing chiefs of tens among the
+fallen Watchers of *1 Enoch* (Book of Watchers), all `primary-verbatim` and
+substring-gated against R. H. Charles's translation (Wikisource):
+
+- **6:7 leaders-list:** Rameel, Tamiel, Ramiel, Danel, Batarel, Ananel, Zaqiel,
+  Satarel, Turel, Jomjael
+- **8:3 teachings:** Araqiel (signs of the earth), Ezeqeel (knowledge of the
+  clouds), Armaros (resolving of enchantments)
+
+Variant spellings added as **aliases** to existing entities, not duplicated:
+Asael→Azazel, Baraqijal→Baraqiel, Samsapeel→Shamshiel, Semjaza/Samiazaz→Shemihazah,
+Arakiba→Araqiel. 3,857 → 3,870 entities; 0 fully-uncited. Script:
+`add_enoch_watchers.sql`.
+
 ## v2.1.16 — 2026-06-25
 
 ### Nag Hammadi pass: deferred figures recovered from other translations (+6)
