@@ -1,0 +1,45 @@
+-- scripts/add_nag_hammadi_deferred.sql
+-- Deferred Nag Hammadi figures recovered from OTHER translations.
+-- Aphredon/Seldao/Eleinos/Mellephaneus: Robinson NHL under variant spellings.
+-- Nikotheos: Porphyry, Life of Plotinus 16 (MacKenna). Phosilampes: Untitled Text
+-- of the Bruce Codex (gnosis.org). All verbatim, substring-gated. Strophaia dropped
+-- (no verifiable Gnostic attestation found). No AI-written descriptions.
+
+BEGIN;
+
+INSERT INTO sources (source_id, title, url, source_type, scope) VALUES
+('SRC_PORPHYRY_LIFE_PLOTINUS','Porphyry, Life of Plotinus (Vita Plotini), trans. Stephen MacKenna','https://sacred-texts.com/cla/plotenn/enn001.htm','primary text','Doxographic attestation naming the Gnostic revelation-authors (Zostrianos, Nikotheos, Allogenes) in Plotinus circle'),
+('SRC_BRUCE_UNTITLED','The Untitled Text of the Bruce Codex (Gnosis of the Light)','http://www.gnosis.org/library/untitl.htm','primary text','Gnostic cosmological treatise of the Bruce Codex (Bodleian Library)')
+ON CONFLICT (source_id) DO NOTHING;
+
+INSERT INTO entities
+  (entity_id, canonical_name, tradition, entity_type, category, primary_domains, cult_scope, primary_period, evidence_confidence, review_status, inclusion_basis, earth_association_score, chthonic_flag, serpent_flag, short_note, entity_class)
+VALUES
+('ENT_SET_APHREDON','Aphredon','Sethian','Aeon','Aeon','Aphredon; aeon; the perfect great one','Sethian','2nd-3rd c. CE','A','candidate_verified_name','Primary attestation (Zostrianos, NHC VIII,1)',1,false,false,'Aeon acclaimed among the aeons of the perfect great one in Zostrianos (NHC VIII,1).','aeon'),
+('ENT_SET_SELDAO','Seldao','Sethian','Guardian power','Angelic Being','guardianship; the mountain','Sethian','2nd-3rd c. CE','A','candidate_verified_name','Primary attestation (Gospel of the Egyptians, NHC III,2)',1,false,false,'Sethian power who, with Eleinos, presides over the mountain in the Gospel of the Egyptians (NHC III,2).','angel'),
+('ENT_SET_ELEINOS','Eleinos','Sethian','Guardian power','Angelic Being','guardianship; the mountain','Sethian','2nd-3rd c. CE','A','candidate_verified_name','Primary attestation (Gospel of the Egyptians, NHC III,2)',1,false,false,'Sethian power who, with Seldao, presides over the mountain in the Gospel of the Egyptians (NHC III,2).','angel'),
+('ENT_SET_MELLEPHANEUS','Mellephaneus','Sethian','Aeon','Aeon','Mellephaneus; aeon; invocation','Sethian','2nd-3rd c. CE','A','candidate_verified_name','Primary attestation (Allogenes, NHC XI,3)',1,false,false,'Aeon named in the praise-invocation of the Universal One in Allogenes (NHC XI,3).','aeon'),
+('ENT_SET_NIKOTHEOS','Nikotheos','Sethian','Prophet/visionary figure','Revealer Figure','Nikotheos; revelation; apocalypse','Sethian','2nd-3rd c. CE','A','candidate_verified_name','Primary attestation (Life of Plotinus 16)',1,false,false,'Gnostic prophet named by Porphyry among the authors of revelations (with Zostrianos and Allogenes) circulating among the sectarians around Plotinus.','prophet'),
+('ENT_GNO_PHOSILAMPES','Phosilampes','Gnostic','Teacher/sage figure','Revealer Figure','Phosilampes; the only-begotten; pre-existence','Gnostic','2nd-3rd c. CE','A','candidate_verified_name','Primary attestation (Untitled Text (Bruce Codex))',1,false,false,'Sage cited in the Untitled Text of the Bruce Codex as teaching that the only-begotten ''exists before the All.''','prophet')
+ON CONFLICT (entity_id) DO NOTHING;
+
+INSERT INTO entity_aliases
+  (entity_id, alias_name, alias_type, language, source_id, confidence, review_status, notes)
+SELECT 'ENT_SET_ELEINOS','Elainos','variant','en','SRC_NAG_HAMMADI_SCRIPTURES','high','candidate_verified_name','Variant spelling.' WHERE NOT EXISTS (SELECT 1 FROM entity_aliases WHERE entity_id='ENT_SET_ELEINOS' AND alias_name='Elainos')
+UNION ALL
+SELECT 'ENT_SET_MELLEPHANEUS','Mellephanea','variant','en','SRC_NAG_HAMMADI_SCRIPTURES','high','candidate_verified_name','Variant spelling.' WHERE NOT EXISTS (SELECT 1 FROM entity_aliases WHERE entity_id='ENT_SET_MELLEPHANEUS' AND alias_name='Mellephanea')
+UNION ALL
+SELECT 'ENT_SET_NIKOTHEOS','Nicotheus','variant','en','SRC_PORPHYRY_LIFE_PLOTINUS','high','candidate_verified_name','Variant spelling.' WHERE NOT EXISTS (SELECT 1 FROM entity_aliases WHERE entity_id='ENT_SET_NIKOTHEOS' AND alias_name='Nicotheus');
+
+INSERT INTO entity_citations
+  (citation_id,entity_id,source_id,work_title,locus,quote,translator,translation_year,source_url,original_text_url,evidence_grade,evidence_note,needs_review,review_reason,verified_on,verify_method,display_order)
+VALUES
+('CIT_SET_APHREDON_NHC','ENT_SET_APHREDON','SRC_NAG_HAMMADI_SCRIPTURES','The Nag Hammadi Library (Robinson, ed.)','Zostrianos, NHC VIII,1','You are one, you are one, Siou, E[ ], Aphredon, you are the [aeon] of the aeons of the perfect great one, the first Kalyptos of the [ ] activity, and [ ] he is [ ] his image [ ] of his, he [ ] 89 [ ] [ existence] [ ] and he [ ] in [ the glory] [ ] glories [ ] a [ ] in [ ] aeon 90 exist [ ] [and [blessed ] (1 line unrecoverable) [perfect ] 91 [ ] god [ ] first [ ] and powers [ all-perfect] they are [ ] of all these and a cause of [them] all','J. M. Robinson et al.',1990,'http://gnosis.org/naghamm/zostr.html',NULL,'primary-verbatim',NULL,true,'Located by name; verify against the published edition/locus.',DATE '2026-06-25','name-anchored + substring gate against the cited translation text; trimmed to clause/sentence boundary',1),
+('CIT_SET_SELDAO_NHC','ENT_SET_SELDAO','SRC_NAG_HAMMADI_SCRIPTURES','The Nag Hammadi Library (Robinson, ed.)','Gospel of the Egyptians, NHC III,2','the gates of the waters, Micheus and Michar, and they who preside over the mountain, Seldao and Elainos, and the receivers of the great race, the incorruptible, mighty men <of> the great Seth, the ministers of the four lights, the great Gamaliel, the great Gabriel, the great Samblo, and the great Abrasax, and they who preside over the sun, its rising, Olses and Hypneus and Heurumaious','J. M. Robinson et al.',1990,'http://gnosis.org/naghamm/goseqypt.html',NULL,'primary-verbatim',NULL,true,'Located by name; verify against the published edition/locus.',DATE '2026-06-25','name-anchored + substring gate against the cited translation text; trimmed to clause/sentence boundary',1),
+('CIT_SET_ELEINOS_NHC','ENT_SET_ELEINOS','SRC_NAG_HAMMADI_SCRIPTURES','The Nag Hammadi Library (Robinson, ed.)','Gospel of the Egyptians, NHC III,2','of the waters, Micheus and Michar, and they who preside over the mountain, Seldao and Elainos, and the receivers of the great race, the incorruptible, mighty men <of> the great Seth, the ministers of the four lights, the great Gamaliel, the great Gabriel, the great Samblo, and the great Abrasax, and they who preside over the sun, its rising, Olses and Hypneus and Heurumaious, and they who preside over the entrance into the rest of eternal life','J. M. Robinson et al.',1990,'http://gnosis.org/naghamm/goseqypt.html',NULL,'primary-verbatim',NULL,true,'Located by name; verify against the published edition/locus.',DATE '2026-06-25','name-anchored + substring gate against the cited translation text; trimmed to clause/sentence boundary',1),
+('CIT_SET_MELLEPHANEUS_NHC','ENT_SET_MELLEPHANEUS','SRC_NAG_HAMMADI_SCRIPTURES','The Nag Hammadi Library (Robinson, ed.)','Allogenes, NHC XI,3','praised the Universal One, saying "Lalameus, Noetheus, Senaon, Asine[us, ]riphanios, Mellephaneus, Elemaoni, Smoun, Optaon, He Who Is! Thou art He Who Is, the Aeon of Aeons, the Unbegotten, who art higher than the unbegotten (ones), Yatomenos, thou alone for whom all the unborn ones were begotten, the Unnameable One! (10 lines missing) knowledge.','J. M. Robinson et al.',1990,'http://gnosis.org/naghamm/allogene.html',NULL,'primary-verbatim',NULL,true,'Located by name; verify against the published edition/locus.',DATE '2026-06-25','name-anchored + substring gate against the cited translation text; trimmed to clause/sentence boundary',1),
+('CIT_SET_NIKOTHEOS_PORPH','ENT_SET_NIKOTHEOS','SRC_PORPHYRY_LIFE_PLOTINUS','Porphyry, Life of Plotinus','Life of Plotinus 16','exhibited also Revelations bearing the names of Zoroaster, Zostrianus, Nicotheus, Allogenes, Mesus, and others of that order.','Stephen MacKenna',1917,'https://sacred-texts.com/cla/plotenn/enn001.htm',NULL,'primary-verbatim',NULL,true,'Located by name; verify against the published edition/locus.',DATE '2026-06-25','name-anchored + substring gate against the cited translation text; trimmed to clause/sentence boundary',1),
+('CIT_GNO_PHOSILAMPES_BRUCE','ENT_GNO_PHOSILAMPES','SRC_BRUCE_UNTITLED','The Untitled Text of the Bruce Codex','Untitled Text (Bruce Codex)','This is the only-begotten of whom Phosilampes spoke : "He exists before the All"','',NULL,'http://www.gnosis.org/library/untitl.htm',NULL,'primary-verbatim',NULL,true,'Located by name; verify against the published edition/locus.',DATE '2026-06-25','name-anchored + substring gate against the cited translation text; trimmed to clause/sentence boundary',1)
+ON CONFLICT (citation_id) DO UPDATE SET quote=EXCLUDED.quote, locus=EXCLUDED.locus, source_url=EXCLUDED.source_url;
+
+COMMIT;

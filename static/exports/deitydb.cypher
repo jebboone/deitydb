@@ -1946,6 +1946,7 @@ CREATE (:Entity {id:'ENT_DIO_DEACONS', name:'Deacons (Leitourgoi)', tradition:'C
 CREATE (:Entity {id:'ENT_DIO_MONKS', name:'Monks (Therapeutae)', tradition:'Christian/Theurgic', entity_class:'collective', entity_type:'Initiate order'});
 CREATE (:Entity {id:'ENT_DIO_HOLY_PEOPLE', name:'Holy People (Contemplative Laity)', tradition:'Christian/Theurgic', entity_class:'collective', entity_type:'Initiate order'});
 CREATE (:Entity {id:'ENT_DIO_PURIFIED_ORDERS', name:'The Purified (Catechumens, Energumens, Penitents)', tradition:'Christian/Theurgic', entity_class:'collective', entity_type:'Initiate order'});
+CREATE (:Entity {id:'ENT_SET_APHREDON', name:'Aphredon', tradition:'Sethian', entity_class:'aeon', entity_type:'Aeon'});
 CREATE (:Entity {id:'ENT_DIO_SACRAMENT_ILLUMINATION', name:'Illumination (Photismos / Baptism)', tradition:'Christian/Theurgic', entity_class:'ritual', entity_type:'Ritual category'});
 CREATE (:Entity {id:'ENT_DIO_SACRAMENT_SYNAXIS', name:'Synaxis (the Eucharist)', tradition:'Christian/Theurgic', entity_class:'ritual', entity_type:'Ritual category'});
 CREATE (:Entity {id:'ENT_DIO_SACRAMENT_MYRON', name:'Consecration of the Myron (Chrism)', tradition:'Christian/Theurgic', entity_class:'ritual', entity_type:'Ritual category'});
@@ -2424,6 +2425,7 @@ CREATE (:Entity {id:'ENT_LAT_ENEPSIGOS', name:'Enepsigos', tradition:'Late Antiq
 CREATE (:Entity {id:'ENT_ELAM_KILAH_SHUPIR', name:'Kilah-shupir', tradition:'Elamite', entity_class:'deity', entity_type:'God'});
 CREATE (:Entity {id:'ENT_ELAM_JABRU', name:'Jabru', tradition:'Elamite', entity_class:'deity', entity_type:'God'});
 CREATE (:Entity {id:'ENT_JM_VEHADRZIOLO', name:'Vehadrziolo (Asharuyliay)', tradition:'Jewish Mystical', entity_class:'angel', entity_type:'Angelic prince'});
+CREATE (:Entity {id:'ENT_SET_SELDAO', name:'Seldao', tradition:'Sethian', entity_class:'angel', entity_type:'Guardian power'});
 CREATE (:Entity {id:'ENT_PGM_INVOKED_POWERS', name:'The Invoked Powers of the Magical Papyri', tradition:'Greco-Egyptian Magical', entity_class:'collective', entity_type:'Collective'});
 CREATE (:Entity {id:'ENT_PGM_AKEPHALOS', name:'The Headless One (Akephalos)', tradition:'Greco-Egyptian Magical', entity_class:'deity', entity_type:'Magical deity'});
 CREATE (:Entity {id:'ENT_PGM_KOSMOKRATOR', name:'The Kosmokrator (Ruler of the Cosmos)', tradition:'Greco-Egyptian Magical', entity_class:'abstraction', entity_type:'Cosmic power'});
@@ -3851,6 +3853,10 @@ CREATE (:Entity {id:'ENT_SET_ATHOTH', name:'Athoth', tradition:'Sethian', entity
 CREATE (:Entity {id:'ENT_SET_HARMAS', name:'Harmas', tradition:'Sethian', entity_class:'demon', entity_type:'Archon'});
 CREATE (:Entity {id:'ENT_SET_YABEL', name:'Yabel', tradition:'Sethian', entity_class:'demon', entity_type:'Archon'});
 CREATE (:Entity {id:'ENT_GNO_DERDEKEAS', name:'Derdekeas', tradition:'Gnostic', entity_class:'prophet', entity_type:'Revealer/savior figure'});
+CREATE (:Entity {id:'ENT_SET_ELEINOS', name:'Eleinos', tradition:'Sethian', entity_class:'angel', entity_type:'Guardian power'});
+CREATE (:Entity {id:'ENT_SET_MELLEPHANEUS', name:'Mellephaneus', tradition:'Sethian', entity_class:'aeon', entity_type:'Aeon'});
+CREATE (:Entity {id:'ENT_SET_NIKOTHEOS', name:'Nikotheos', tradition:'Sethian', entity_class:'prophet', entity_type:'Prophet/visionary figure'});
+CREATE (:Entity {id:'ENT_GNO_PHOSILAMPES', name:'Phosilampes', tradition:'Gnostic', entity_class:'prophet', entity_type:'Teacher/sage figure'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
