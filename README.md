@@ -12,27 +12,27 @@ The goal is to make religious entities queryable across traditions instead of le
 
 A public read-only web interface with pre-built queries and a full SQL explorer — no installation required.
 
-- [Tradition Overview](https://deitydb-explorer.fly.dev/deitydb/tradition-overview) — all 136 traditions by entity count
+- [Tradition Overview](https://deitydb-explorer.fly.dev/deitydb/tradition-overview) — all 137 traditions by entity count
 - [Cross-Traditional Parallels](https://deitydb-explorer.fly.dev/deitydb/cross-traditional-parallels) — entities linked across tradition boundaries
 - [Reception Chains](https://deitydb-explorer.fly.dev/deitydb/reception-chain) — trace how a figure was renamed across traditions
 - [Angelic Beings](https://deitydb-explorer.fly.dev/deitydb/angelic-beings), [Adversarial Beings](https://deitydb-explorer.fly.dev/deitydb/adversarial-beings), [Underworld Entities](https://deitydb-explorer.fly.dev/deitydb/underworld-entities), [Revealer Figures](https://deitydb-explorer.fly.dev/deitydb/revealer-figures)
 - [About the project](https://deitydb-explorer.fly.dev/about) · [How to contribute](https://deitydb-explorer.fly.dev/contribute)
 
-## Current Release — v2.1.12
+## Current Release — v2.1.38
 
-- 3,838 entities
-- 7,106 relationships (1,006 cross-tradition comparative links)
-- 463 sources
-- 136 tradition labels
-- 0 unresolved relationship references; 0 unsourced relationships; every entity carries a
-  source pointer except one (Isis Lactans, pending an initial source)
-- ~39% of entities carry a verbatim primary-source quotation; the remainder carry a cited
+- 4,119 entities
+- 7,106 relationships (2,857 crossing tradition boundaries)
+- 564 sources
+- 137 tradition labels
+- 0 unresolved relationship references; 0 unsourced relationships; every entity carries at
+  least one sourced citation (0 fully uncited)
+- ~43% of entities carry a verbatim primary-source quotation; the remainder carry a cited
   source pointer (verbatim-citation work ongoing)
 - duplicate-name review complete
 - diachronic reception chains across traditions
 - public query views, including a comparative-domains pivot (compare a function like
   Sovereignty or Healing across every tradition)
-- Greek pantheon: 500 entities (primary-period coverage 376/500)
+- Greek pantheon: 599 entities (primary-period coverage 485/599)
 - pantheons built to canonical depth across the whole timeline: Mesopotamian, Egyptian,
   Greek, Canaanite, Israelite, Roman, Norse, and Anatolian (Hittite/Hurrian/Luwian) before
   the Common Era; and forward through Zoroastrian, Manichaean, Mandaean, Gnostic,
@@ -41,9 +41,9 @@ A public read-only web interface with pre-built queries and a full SQL explorer 
 
 ## Included Traditions
 
-136 tradition labels in all, including:
+137 tradition labels in all, including:
 
-- Greek (500 entities; primary-period coverage 376/500)
+- Greek (599 entities; primary-period coverage 485/599)
 - Egyptian, Mesopotamian, Canaanite / Ugaritic, Israelite / Second Temple
 - Roman, Etruscan, Italic / Sabine
 - Celtic (Irish, Welsh, Gaulish), Germanic / Norse, Baltic, Slavic, Finnish, Thracian, Dacian
