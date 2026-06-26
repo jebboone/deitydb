@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.1.19 — 2026-06-25
+
+### Mainstream-traditions pass (3): 3 Enoch princes + Hesiod's Nereids (+37)
+
+- **3 Enoch (Odeberg 1928):** 6 angelic princes — Chayyliel (over the Chayyoth),
+  Zazriel, Geburatiel, Sopheriel (twofold scribe of life and death), Barattiel
+  (bears the highest heaven on his fingertips), Azbogah (alias Azbuga).
+- **Hesiod, *Theogony* (Evelyn-White 1914):** the 31 missing Nereids of the
+  fifty-name catalogue (Theogony 240-264) — Ploto, Eucrante, Sao … Nemertes.
+
+All `primary-verbatim`, substring-gated. 3,886 → 3,923 entities; 0 fully-uncited.
+Script: `add_3enoch_nereids.sql`. Deferred (not in Odeberg under those spellings):
+Hadarniel, Tagas, Nahariel.
+
+
 ## v2.1.18 — 2026-06-25
 
 ### Mainstream-traditions pass (2): Testament of Solomon decans + Norse Dvergatal (+16)

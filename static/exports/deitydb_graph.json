@@ -27206,6 +27206,265 @@
 "tradition": "Germanic/Norse",
 "entity_class": "spirit",
 "entity_type": "Dwarf"
+},
+{
+"id": "ENT_JM_CHAYYLIEL",
+"name": "Chayyliel",
+"tradition": "Jewish Mystical",
+"entity_class": "angel",
+"entity_type": "Angelic prince"
+},
+{
+"id": "ENT_JM_ZAZRIEL",
+"name": "Zazriel",
+"tradition": "Jewish Mystical",
+"entity_class": "angel",
+"entity_type": "Angelic prince"
+},
+{
+"id": "ENT_JM_GEBURATIEL",
+"name": "Geburatiel",
+"tradition": "Jewish Mystical",
+"entity_class": "angel",
+"entity_type": "Angelic prince"
+},
+{
+"id": "ENT_JM_SOPHERIEL",
+"name": "Sopheriel",
+"tradition": "Jewish Mystical",
+"entity_class": "angel",
+"entity_type": "Angelic prince"
+},
+{
+"id": "ENT_JM_BARATTIEL",
+"name": "Barattiel",
+"tradition": "Jewish Mystical",
+"entity_class": "angel",
+"entity_type": "Angelic prince"
+},
+{
+"id": "ENT_JM_AZBOGAH",
+"name": "Azbogah",
+"tradition": "Jewish Mystical",
+"entity_class": "angel",
+"entity_type": "Angelic prince"
+},
+{
+"id": "ENT_PLOTO",
+"name": "Ploto",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_EUCRANTE",
+"name": "Eucrante",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_EUDORA",
+"name": "Eudora",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_GALENE",
+"name": "Galene",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_SPEO",
+"name": "Speo",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_THOE",
+"name": "Thoe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_HALIE",
+"name": "Halie",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_PASITHEA",
+"name": "Pasithea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_EUNICE",
+"name": "Eunice",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_EULIMENE",
+"name": "Eulimene",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_AGAUE",
+"name": "Agaue",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_NISAEA",
+"name": "Nisaea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_PROTOMEDEA",
+"name": "Protomedea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_PANOPEA",
+"name": "Panopea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_HIPPOTHOE",
+"name": "Hippothoe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_CYMO",
+"name": "Cymo",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_EIONE",
+"name": "Eione",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_ALIMEDE",
+"name": "Alimede",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_GLAUCONOME",
+"name": "Glauconome",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_PONTOPOREA",
+"name": "Pontoporea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_LEAGORE",
+"name": "Leagore",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_EUAGORE",
+"name": "Euagore",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_LAOMEDEA",
+"name": "Laomedea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_POLYNOE",
+"name": "Polynoe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_AUTONOE",
+"name": "Autonoe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_LYSIANASSA",
+"name": "Lysianassa",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_MENIPPE",
+"name": "Menippe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_EUPOMPE",
+"name": "Eupompe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_THEMISTO",
+"name": "Themisto",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_PRONOE",
+"name": "Pronoe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
+},
+{
+"id": "ENT_NEMERTES",
+"name": "Nemertes",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Nereid"
 }
 ],
 "links": [
