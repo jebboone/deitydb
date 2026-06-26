@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.1.26 — 2026-06-26
+
+### Re-anchoring continued: 18 of 48 restored to primary text
+
+Continued restoring the v2.1.24 apparatus-cleanup pointers to verbatim primary
+text (+8 since v2.1.25), all substring-gated:
+
+- **Kalevala (Crawford):** Louhi
+- **Apollodorus (Frazer):** Cassandra (Apollo and the gift of prophecy), Adonis
+- **Pseudo-Dionysius (Parker):** the three celestial triads — Seraphim/Cherubim/
+  Thrones, Dominions/Virtues/Powers, Principalities/Archangels/Angels
+- **Pistis Sophia (Mead):** Christ, Thomas
+
+**18 of the 48 now carry real primary-text quotes.** The remaining 30 stay honest
+pointers: Agrippa's planetary spirits (magic-square tables, not prose),
+in-copyright sources (Hoffner, Byock, Picatrix, Sefer ha-Razim, Manichaean,
+Faulkner), and a handful not named in their source text (Cross/Israfil/Charon).
+0 fully-uncited; primary-verbatim 1,657 → 1,675. Scripts:
+`reanchor_apparatus_batch3.sql`, `reanchor_apparatus_batch4.sql`.
+
+
 ## v2.1.25 — 2026-06-26
 
 ### Re-anchoring apparatus-cleanup pointers to primary text (10 restored)
