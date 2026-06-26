@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.1.37 — 2026-06-26
+
+### Depth pass: Qur'an cosmology pointers → verbatim (Rodwell) (+3)
+
+Per-source upgrade mini-project on the Qur'an pointer-only cluster. Rodwell
+(1861, PD) renders most level-names of Hell/Paradise in English, so only the
+figures with specific anchorable renderings were cleanly upgradeable:
+**al-Hawiyah** (Sura 101), **Jannat ʿAdn** / gardens of Eden, and **Ya'juj wa
+Ma'juj** (Gog and Magog, Sura 21) → `primary-verbatim`.
+
+Integrity catches during extraction (reverted to honest pointers, NOT shipped):
+**Mikail** mis-anchored on a Rodwell footnote about the scholar J. D.
+*Michaelis*; **Jahannam** grabbed a Talmud/Purgatory commentary footnote. Both
+restored to `primary-uncited`. Scripts: `upgrade_quran_pointers.sql`,
+`fix_quran_pointers.sql`.
+
+The Butler's-Lives cluster (55) was checked and found NOT upgradeable: those are
+modern saints (Bernadette, Edith Stein, John Paul II) from the in-copyright
+Thurston–Attwater edition, not the PD 1756 Butler.
+
+
 ## v2.1.36 — 2026-06-26
 
 ### Depth pass (start): upgrade pointer-only Zoroastrian citations to verbatim (+4)
