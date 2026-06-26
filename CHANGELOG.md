@@ -1,5 +1,29 @@
 # Changelog
 
+## v2.1.39 — 2026-06-26
+
+### Depth pass: Testament of Solomon + Mabinogion pointers → verbatim (+12)
+
+Two per-source upgrade mini-projects.
+
+**Testament of Solomon** (Conybeare, 1898, PD), +8: the demon self-descriptions,
+each bounded to its thwarting formula — **Decans** (the collective zodiacal
+intro), **Ruax, Barsaphael** (text: "Barsafael"), **Artosael** ("Arotosael"),
+**Sphendonael, Envy, Hephesikireth** ("Hephesimireth"), and the **Winged Dragon**.
+Deferred (absent from this recension or contested): Lix Tetrax, Kunopegos, Koruphe,
+Leophoros, Orophael (not in the text), Iax (a thwarting-angel name), Anael (only
+inside "Rathanael"). Conybeare's Greek transliterations differ from the DB spellings,
+mapped via aliases; footnote superscripts excluded so every quote is a genuine substring.
+
+**Mabinogion** (Lady Charlotte Guest, 1849, PD; Gutenberg #5160), +4: **Brân the
+Blessed** (named in the lenited form "Bendigeid Vran"), **Dôn** (via "Gwydion the
+son of Don"), **Llŷr** ("Branwen the daughter of Llyr"), **Euroswydd** (Guest:
+"Eurosswydd"). This exhausts the Welsh pointer cluster — Beli Mawr remains a pointer
+(cites the in-copyright Bromwich Triads).
+
+Scripts: `upgrade_testsol_pointers.sql`, `upgrade_mabinogion_pointers.sql`.
+
+
 ## v2.1.38 — 2026-06-26
 
 ### Depth pass: Lebor Gabála Érenn pointers → verbatim (Macalister) (+11)
