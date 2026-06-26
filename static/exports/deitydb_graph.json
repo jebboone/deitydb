@@ -28732,6 +28732,27 @@
 "tradition": "Germanic/Norse",
 "entity_class": "deity",
 "entity_type": "God (As)"
+},
+{
+"id": "ENT_EGY_FENTIU",
+"name": "Fentiu",
+"tradition": "Egyptian",
+"entity_class": "spirit",
+"entity_type": "Assessor of Maat"
+},
+{
+"id": "ENT_EGY_NEHAU",
+"name": "Nehau",
+"tradition": "Egyptian",
+"entity_class": "spirit",
+"entity_type": "Assessor of Maat"
+},
+{
+"id": "ENT_EGY_SEKHERIU",
+"name": "Sekheriu",
+"tradition": "Egyptian",
+"entity_class": "spirit",
+"entity_type": "Assessor of Maat"
 }
 ],
 "links": [

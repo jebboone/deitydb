@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.1.32 — 2026-06-26
+
+### Egyptian: Assessors of Maat + Budge-spelling aliases (+3, +6 aliases)
+
+Audit finding: Egyptian (205) is already well-covered — the major and secondary
+gods are present under standard spellings, and Budge's Book of the Dead mostly
+yields *variant transliterations* of existing gods (Tem/Tmu=Atum, Khnemu=Khnum,
+Sebek=Sobek, Ap-uat=Wepwawet, Tenen=Tatenen — all added as aliases) rather than
+new deities. Genuinely new: 3 proper-named **Assessors of Maat** (the 42 judges
+of the Hall of Two Truths, Negative Confession / Book of the Dead 125) — Fentiu
+(of Khemennu), Nehau (of Re-stau), Sekheriu (of Utten) — each citing its verbatim
+confession-line. (Most of the 42 are rendered by Budge as English epithets, not
+names, so not added.) 4,104 → 4,107 entities; 0 fully-uncited. Script:
+`add_egyptian_assessors_aliases.sql`.
+
+
 ## v2.1.31 — 2026-06-26
 
 ### Norse expansion: jötnar + missing Æsir (+6)
