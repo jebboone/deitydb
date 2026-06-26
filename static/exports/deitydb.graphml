@@ -23150,6 +23150,84 @@
       <data key="entity_class">prophet</data>
       <data key="entity_type">Teacher/sage figure</data>
     </node>
+    <node id="ENT_ISR_RAMEEL">
+      <data key="name">Rameel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_TAMIEL">
+      <data key="name">Tamiel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_RAMIEL">
+      <data key="name">Ramiel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_DANEL">
+      <data key="name">Danel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_BATAREL">
+      <data key="name">Batarel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_ANANEL">
+      <data key="name">Ananel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_ZAQIEL">
+      <data key="name">Zaqiel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_SATAREL">
+      <data key="name">Satarel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_TUREL">
+      <data key="name">Turel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_JOMJAEL">
+      <data key="name">Jomjael</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_ARAQIEL">
+      <data key="name">Araqiel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_EZEQEEL">
+      <data key="name">Ezeqeel</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
+    <node id="ENT_ISR_ARMAROS">
+      <data key="name">Armaros</data>
+      <data key="tradition">Israelite/Second Temple</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Fallen angel</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
