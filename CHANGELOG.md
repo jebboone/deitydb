@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.1.22 — 2026-06-26
+
+### Bundahishn primordial creatures (+5)
+
+From West's SBE5 Bundahishn (PDF provided by Jeb), completing the Zoroastrian
+creatures deferred in v2.1.21. All `primary-verbatim`, substring-gated; canonical =
+standard Avestan form, West's spelling as alias:
+
+- **Gaokerena** (the Gôkard white-Haoma tree of all germs, source of immortality)
+- **Gavaevodata** (the sole-created primeval ox slain at the origin)
+- **Hadhayans** (the ox Hadhayôsh / Sarsâok, fat of the renovation-drink)
+- **Gopatshah** (the ox-bodied immortal who keeps the seashore)
+- **Vizaresha** (the demon who drags the souls of the dead to hell's gate)
+
+Zoroastrian 68 → 73. 4,046 → 4,051 entities; 0 fully-uncited. Script:
+`add_bundahishn_creatures.sql`.
+
+
 ## v2.1.21 — 2026-06-26
 
 ### Rebalancing pass: Roman indigitamenta + Zoroastrian yazatas (+27)

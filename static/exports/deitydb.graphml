@@ -24284,6 +24284,36 @@
       <data key="entity_class">deity</data>
       <data key="entity_type">Saoshyant</data>
     </node>
+    <node id="ENT_ZOR_GAOKERENA">
+      <data key="name">Gaokerena</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Cosmic plant</data>
+    </node>
+    <node id="ENT_ZOR_GOPATSHAH">
+      <data key="name">Gopatshah</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Bull-man</data>
+    </node>
+    <node id="ENT_ZOR_GAVAEVODATA">
+      <data key="name">Gavaevodata</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Primeval ox</data>
+    </node>
+    <node id="ENT_ZOR_HADHAYANS">
+      <data key="name">Hadhayans</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Mythical ox</data>
+    </node>
+    <node id="ENT_ZOR_VIZARESHA">
+      <data key="name">Vizaresha</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">demon</data>
+      <data key="entity_type">Demon</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>

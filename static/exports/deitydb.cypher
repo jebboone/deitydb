@@ -4046,6 +4046,11 @@ CREATE (:Entity {id:'ENT_ZOR_SAENA', name:'Saena', tradition:'Zoroastrian', enti
 CREATE (:Entity {id:'ENT_ZOR_FRASHAOSHTRA', name:'Frashaoshtra', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Fravashi'});
 CREATE (:Entity {id:'ENT_ZOR_JAMASPA', name:'Jamaspa', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Fravashi'});
 CREATE (:Entity {id:'ENT_ZOR_ASTVATERETA', name:'Astvat-ereta', tradition:'Zoroastrian', entity_class:'deity', entity_type:'Saoshyant'});
+CREATE (:Entity {id:'ENT_ZOR_GAOKERENA', name:'Gaokerena', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Cosmic plant'});
+CREATE (:Entity {id:'ENT_ZOR_GOPATSHAH', name:'Gopatshah', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Bull-man'});
+CREATE (:Entity {id:'ENT_ZOR_GAVAEVODATA', name:'Gavaevodata', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Primeval ox'});
+CREATE (:Entity {id:'ENT_ZOR_HADHAYANS', name:'Hadhayans', tradition:'Zoroastrian', entity_class:'spirit', entity_type:'Mythical ox'});
+CREATE (:Entity {id:'ENT_ZOR_VIZARESHA', name:'Vizaresha', tradition:'Zoroastrian', entity_class:'demon', entity_type:'Demon'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_GODS'}]->(b);
