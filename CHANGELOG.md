@@ -1,5 +1,29 @@
 # Changelog
 
+## v2.1.46 — 2026-06-26
+
+### Secondary layer: MacKillop Celtic Mythology +16 (locally-supplied PDF)
+
+The user supplied local PDFs of three previously borrow-only references. **MacKillop,
+*Dictionary of Celtic Mythology*** (Oxford University Press, 1998; James MacKillop) —
+converted via pdftotext — proved a clean, high-yield dictionary source. 16 Celtic
+pointers gained a verbatim definition: Artio, Beli Mawr, Brigantia, Carman, Cathubodua,
+Cocidius, Coventina, Danu, Esus, Maponos, Nantosuelta, Ogmios, Ritona, Sirona, Tailtiu,
+Vosegus — mostly Gaulish/Romano-British deities (e.g. Cocidius: "A god worshipped in
+early Britain, especially in the north and west, whom the Romans compared with Mars.").
+
+All `secondary` grade, substring-gated against the OCR, `needs_review`, attributed
+"s.v. <entry>". Two extraction wrinkles handled: the 2-column PDF bleeds adjacent-column
+text mid-entry (every quote eyeballed; bleed/wrong-entry candidates like Andraste,
+Cernunnos, Sequana, Taranis rejected and left as pointers), and MacKillop definitions
+don't repeat the headword ("Artio. *The bear-goddess of…*"), so extraction verifies the
+headword immediately precedes the definition. Cross-reference asterisks stripped.
+
+59 secondary citations now carry verbatim quotes; 0 fully-uncited. ~23 more Celtic
+candidates and the Gimbutas Baltic monograph (essay-format) remain for later.
+Script: `upgrade_mackillop_secondary.sql`.
+
+
 ## v2.1.45 — 2026-06-26
 
 ### Secondary layer: Dictionary of Deities and Demons in the Bible (+5, signed entries)
