@@ -1,5 +1,25 @@
 # Changelog
 
+## v2.1.20 — 2026-06-26
+
+### Enumerable tails: Oceanids, full Dvergatal, Danaids (+96)
+
+Long-tail completion of catalogue-style sets, all `primary-verbatim` and
+substring-gated against the cited PD translations. Names already in the DB are
+skipped to avoid collisions/duplicates.
+
+- **Hesiod, *Theogony* 346-366 (Evelyn-White):** 25 Oceanids of the catalogue
+  (Telesto, Plexaura, Galaxaura, Petraea, Menestho, Amphirho, Ocyrrhoe, …).
+- **Voluspa Dvergatal (Thorpe Poetic Edda):** 45 remaining dwarves of stanzas
+  11-16 (Thorin, Thror, Regin, Nar, Nain, Dain, Fili, Kili, Draupnir, Gloi,
+  Fialar, Frosti, … in their attested Thorpe spellings).
+- **Apollodorus, *Library* 2.1.5 (Frazer):** 26 Danaids, daughters of Danaus
+  (Hypermnestra, Gorgophone, Automate, Amymone, Hippomedusa, Iphimedusa, …).
+
+3,923 → 4,019 entities; 0 fully-uncited. Scripts: `add_oceanids_dvergatal_tail.sql`,
+`add_danaids.sql`.
+
+
 ## v2.1.19 — 2026-06-25
 
 ### Mainstream-traditions pass (3): 3 Enoch princes + Hesiod's Nereids (+37)

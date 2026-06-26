@@ -23546,6 +23546,582 @@
       <data key="entity_class">spirit</data>
       <data key="entity_type">Nereid</data>
     </node>
+    <node id="ENT_ADMETE">
+      <data key="name">Admete</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_IANTHE">
+      <data key="name">Ianthe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_ELECTRA">
+      <data key="name">Electra</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_PRYMNO">
+      <data key="name">Prymno</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_URANIA">
+      <data key="name">Urania</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_HIPPO">
+      <data key="name">Hippo</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_CLYMENE">
+      <data key="name">Clymene</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_RHODEA">
+      <data key="name">Rhodea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_ZEUXO">
+      <data key="name">Zeuxo</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_CLYTIE">
+      <data key="name">Clytie</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_PASITHOE">
+      <data key="name">Pasithoe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_PLEXAURA">
+      <data key="name">Plexaura</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_GALAXAURA">
+      <data key="name">Galaxaura</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_MELOBOSIS">
+      <data key="name">Melobosis</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_POLYDORA">
+      <data key="name">Polydora</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_CERCEIS">
+      <data key="name">Cerceis</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_IANEIRA">
+      <data key="name">Ianeira</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_ACASTE">
+      <data key="name">Acaste</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_XANTHE">
+      <data key="name">Xanthe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_PETRAEA">
+      <data key="name">Petraea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_MENESTHO">
+      <data key="name">Menestho</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_TELESTO">
+      <data key="name">Telesto</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_CHRYSEIS">
+      <data key="name">Chryseis</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_AMPHIRHO">
+      <data key="name">Amphirho</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_OCYRRHOE">
+      <data key="name">Ocyrrhoe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Oceanid</data>
+    </node>
+    <node id="ENT_NOR_NYI">
+      <data key="name">Nyi</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NIDI">
+      <data key="name">Nidi</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_ALTHIOF">
+      <data key="name">Althiof</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NAR">
+      <data key="name">Nar</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NAIN">
+      <data key="name">Nain</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NIPING">
+      <data key="name">Niping</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_DAIN">
+      <data key="name">Dain</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_BAVOR">
+      <data key="name">Bavor</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NORI">
+      <data key="name">Nori</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_MIODVITNIR">
+      <data key="name">Miodvitnir</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_VEIG">
+      <data key="name">Veig</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_THORIN">
+      <data key="name">Thorin</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_THROR">
+      <data key="name">Thror</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_VITR">
+      <data key="name">Vitr</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_LITR">
+      <data key="name">Litr</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NUR">
+      <data key="name">Nur</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NYRAD">
+      <data key="name">Nyrad</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_REGIN">
+      <data key="name">Regin</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_RADSVID">
+      <data key="name">Radsvid</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_FILI">
+      <data key="name">Fili</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_KILI">
+      <data key="name">Kili</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_NALI">
+      <data key="name">Nali</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_HEPTI">
+      <data key="name">Hepti</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_VILI">
+      <data key="name">Vili</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_HANAR">
+      <data key="name">Hanar</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_SVIOR">
+      <data key="name">Svior</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_BILLING">
+      <data key="name">Billing</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_BRUNI">
+      <data key="name">Bruni</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_BILD">
+      <data key="name">Bild</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_FRAR">
+      <data key="name">Frar</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_LONI">
+      <data key="name">Loni</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_IARI">
+      <data key="name">Iari</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_EIKINSKIALDI">
+      <data key="name">Eikinskialdi</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_DRAUPNIR">
+      <data key="name">Draupnir</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_DOLGTHRASIR">
+      <data key="name">Dolgthrasir</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_HAUGSPORI">
+      <data key="name">Haugspori</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_GLOI">
+      <data key="name">Gloi</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_SKIRVIR">
+      <data key="name">Skirvir</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_VIRVIR">
+      <data key="name">Virvir</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_SKAFID">
+      <data key="name">Skafid</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_YNGVI">
+      <data key="name">Yngvi</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_FIALAR">
+      <data key="name">Fialar</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_FROSTI">
+      <data key="name">Frosti</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_FINN">
+      <data key="name">Finn</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_NOR_GINNAR">
+      <data key="name">Ginnar</data>
+      <data key="tradition">Germanic/Norse</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Dwarf</data>
+    </node>
+    <node id="ENT_HYPERMNESTRA">
+      <data key="name">Hypermnestra</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_GORGOPHONE">
+      <data key="name">Gorgophone</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_AUTOMATE">
+      <data key="name">Automate</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_AMYMONE">
+      <data key="name">Amymone</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_SCAEA">
+      <data key="name">Scaea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_HIPPODAMIA">
+      <data key="name">Hippodamia</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_RHODIA">
+      <data key="name">Rhodia</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_HIPPOMEDUSA">
+      <data key="name">Hippomedusa</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_IPHIMEDUSA">
+      <data key="name">Iphimedusa</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_RHODE">
+      <data key="name">Rhode</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_STYGNE">
+      <data key="name">Stygne</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_BRYCE">
+      <data key="name">Bryce</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_PODARCE">
+      <data key="name">Podarce</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_DIOXIPPE">
+      <data key="name">Dioxippe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_ADITE">
+      <data key="name">Adite</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_OCYPETE">
+      <data key="name">Ocypete</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_PYLARGE">
+      <data key="name">Pylarge</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_HIPPODICE">
+      <data key="name">Hippodice</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_ADIANTE">
+      <data key="name">Adiante</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_CALLIDICE">
+      <data key="name">Callidice</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_OEME">
+      <data key="name">Oeme</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_HYPERIPPE">
+      <data key="name">Hyperippe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_GORGE">
+      <data key="name">Gorge</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_CHRYSIPPE">
+      <data key="name">Chrysippe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_THEANO">
+      <data key="name">Theano</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
+    <node id="ENT_EURYDICE">
+      <data key="name">Eurydice</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">hero</data>
+      <data key="entity_type">Danaid</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>

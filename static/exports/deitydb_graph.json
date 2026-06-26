@@ -27465,6 +27465,678 @@
 "tradition": "Greek",
 "entity_class": "spirit",
 "entity_type": "Nereid"
+},
+{
+"id": "ENT_ADMETE",
+"name": "Admete",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_IANTHE",
+"name": "Ianthe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_ELECTRA",
+"name": "Electra",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_PRYMNO",
+"name": "Prymno",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_URANIA",
+"name": "Urania",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_HIPPO",
+"name": "Hippo",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_CLYMENE",
+"name": "Clymene",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_RHODEA",
+"name": "Rhodea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_ZEUXO",
+"name": "Zeuxo",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_CLYTIE",
+"name": "Clytie",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_PASITHOE",
+"name": "Pasithoe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_PLEXAURA",
+"name": "Plexaura",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_GALAXAURA",
+"name": "Galaxaura",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_MELOBOSIS",
+"name": "Melobosis",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_POLYDORA",
+"name": "Polydora",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_CERCEIS",
+"name": "Cerceis",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_IANEIRA",
+"name": "Ianeira",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_ACASTE",
+"name": "Acaste",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_XANTHE",
+"name": "Xanthe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_PETRAEA",
+"name": "Petraea",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_MENESTHO",
+"name": "Menestho",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_TELESTO",
+"name": "Telesto",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_CHRYSEIS",
+"name": "Chryseis",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_AMPHIRHO",
+"name": "Amphirho",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_OCYRRHOE",
+"name": "Ocyrrhoe",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Oceanid"
+},
+{
+"id": "ENT_NOR_NYI",
+"name": "Nyi",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NIDI",
+"name": "Nidi",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_ALTHIOF",
+"name": "Althiof",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NAR",
+"name": "Nar",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NAIN",
+"name": "Nain",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NIPING",
+"name": "Niping",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_DAIN",
+"name": "Dain",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_BAVOR",
+"name": "Bavor",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NORI",
+"name": "Nori",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_MIODVITNIR",
+"name": "Miodvitnir",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_VEIG",
+"name": "Veig",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_THORIN",
+"name": "Thorin",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_THROR",
+"name": "Thror",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_VITR",
+"name": "Vitr",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_LITR",
+"name": "Litr",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NUR",
+"name": "Nur",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NYRAD",
+"name": "Nyrad",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_REGIN",
+"name": "Regin",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_RADSVID",
+"name": "Radsvid",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_FILI",
+"name": "Fili",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_KILI",
+"name": "Kili",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_NALI",
+"name": "Nali",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_HEPTI",
+"name": "Hepti",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_VILI",
+"name": "Vili",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_HANAR",
+"name": "Hanar",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_SVIOR",
+"name": "Svior",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_BILLING",
+"name": "Billing",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_BRUNI",
+"name": "Bruni",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_BILD",
+"name": "Bild",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_FRAR",
+"name": "Frar",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_LONI",
+"name": "Loni",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_IARI",
+"name": "Iari",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_EIKINSKIALDI",
+"name": "Eikinskialdi",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_DRAUPNIR",
+"name": "Draupnir",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_DOLGTHRASIR",
+"name": "Dolgthrasir",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_HAUGSPORI",
+"name": "Haugspori",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_GLOI",
+"name": "Gloi",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_SKIRVIR",
+"name": "Skirvir",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_VIRVIR",
+"name": "Virvir",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_SKAFID",
+"name": "Skafid",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_YNGVI",
+"name": "Yngvi",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_FIALAR",
+"name": "Fialar",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_FROSTI",
+"name": "Frosti",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_FINN",
+"name": "Finn",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_NOR_GINNAR",
+"name": "Ginnar",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Dwarf"
+},
+{
+"id": "ENT_HYPERMNESTRA",
+"name": "Hypermnestra",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_GORGOPHONE",
+"name": "Gorgophone",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_AUTOMATE",
+"name": "Automate",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_AMYMONE",
+"name": "Amymone",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_SCAEA",
+"name": "Scaea",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_HIPPODAMIA",
+"name": "Hippodamia",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_RHODIA",
+"name": "Rhodia",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_HIPPOMEDUSA",
+"name": "Hippomedusa",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_IPHIMEDUSA",
+"name": "Iphimedusa",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_RHODE",
+"name": "Rhode",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_STYGNE",
+"name": "Stygne",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_BRYCE",
+"name": "Bryce",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_PODARCE",
+"name": "Podarce",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_DIOXIPPE",
+"name": "Dioxippe",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_ADITE",
+"name": "Adite",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_OCYPETE",
+"name": "Ocypete",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_PYLARGE",
+"name": "Pylarge",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_HIPPODICE",
+"name": "Hippodice",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_ADIANTE",
+"name": "Adiante",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_CALLIDICE",
+"name": "Callidice",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_OEME",
+"name": "Oeme",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_HYPERIPPE",
+"name": "Hyperippe",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_GORGE",
+"name": "Gorge",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_CHRYSIPPE",
+"name": "Chrysippe",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_THEANO",
+"name": "Theano",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
+},
+{
+"id": "ENT_EURYDICE",
+"name": "Eurydice",
+"tradition": "Greek",
+"entity_class": "hero",
+"entity_type": "Danaid"
 }
 ],
 "links": [
