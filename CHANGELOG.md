@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.1.24 — 2026-06-26
+
+### Database-wide apparatus-citation cleanup (48 re-pointed)
+
+Following the Zoroastrian cleanup, scanned all ~1,700 `primary-verbatim` citations
+across every tradition for quotes that are actually translator apparatus — tables
+of contents, index pages, title pages, bibliographic footnotes, or raw HTML/
+file-path bleed — rather than primary text.
+
+First-pass heuristics over-flagged (they caught real name-catalogues that ARE the
+primary text — the Voluspa Dvergatal, the Egyptian Ennead, the Apocryphon of John
+archon-lists), so detection was tightened to **concrete garbage signals only**:
+page-numbers-after-names, comma number-runs, `file://`/`<meta>`, vol./sqq/
+Ante-Nicene/GLOSSARY, calendar indexes.
+
+48 confirmed-garbage quotes (concentrated in Renaissance Esoteric/Agrippa tables,
+Norse Edda front-matter, and scholarly-edition footnotes) were blanked and
+re-graded `primary-verbatim` → `primary-uncited` (source still identified; verbatim
+quote pending — now upgrade targets). No real catalogue quotes were touched; 0
+fully-uncited maintained. Script: `cleanup_apparatus_citations.sql`.
+
+
 ## v2.1.23 — 2026-06-26
 
 ### Citation-quality cleanup: Zoroastrian apparatus-anchored citations
