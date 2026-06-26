@@ -1,0 +1,3 @@
+BEGIN;
+UPDATE entity_citations SET quote='A supernatural woman, perhaps a goddess or demon, who frequents places of battle.', work_title='James MacKillop, Dictionary of Celtic Mythology (Oxford University Press, 1998), s.v. Badb', verify_method='secondary-scholarship excerpt; substring-gated against MacKillop (1998) OCR; cross-reference asterisks removed', needs_review=true, review_reason='In-copyright peer-reviewed reference work — brief attributed excerpt for scholarly identification; verify against the print edition.', verified_on=DATE '2026-06-26' WHERE citation_id='CIT_CEL_BADB_SEC';
+COMMIT;
