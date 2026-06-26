@@ -12375,6 +12375,13 @@
 "entity_type": "Patriarch"
 },
 {
+"id": "ENT_STEROPES",
+"name": "Steropes",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Cyclops"
+},
+{
 "id": "ENT_ISR_RACHEL",
 "name": "Rachel",
 "tradition": "Israelite/Second Temple",
@@ -16846,6 +16853,13 @@
 "tradition": "Elamite",
 "entity_class": "deity",
 "entity_type": "Deity"
+},
+{
+"id": "ENT_ARGES",
+"name": "Arges",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Cyclops"
 },
 {
 "id": "ENT_EGY_IABET",
@@ -28202,6 +28216,13 @@
 "entity_type": "Functional deity"
 },
 {
+"id": "ENT_BRONTES",
+"name": "Brontes",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Cyclops"
+},
+{
 "id": "ENT_ROM_PERTUNDA",
 "name": "Pertunda",
 "tradition": "Roman",
@@ -28361,6 +28382,104 @@
 "tradition": "Zoroastrian",
 "entity_class": "demon",
 "entity_type": "Demon"
+},
+{
+"id": "ENT_ALCYONEUS",
+"name": "Alcyoneus",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_PORPHYRION",
+"name": "Porphyrion",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_MIMAS",
+"name": "Mimas",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_ENCELADUS",
+"name": "Enceladus",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_POLYBOTES",
+"name": "Polybotes",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_GRATION",
+"name": "Gration",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_AGRIUS",
+"name": "Agrius",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_THOAS",
+"name": "Thoas",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Giant (Gigas)"
+},
+{
+"id": "ENT_COTTUS",
+"name": "Cottus",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Hundred-Hander"
+},
+{
+"id": "ENT_BRIAREUS",
+"name": "Briareus",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Hundred-Hander"
+},
+{
+"id": "ENT_GYES",
+"name": "Gyes",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Hundred-Hander"
+},
+{
+"id": "ENT_EURYALE",
+"name": "Euryale",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Gorgon"
+},
+{
+"id": "ENT_AELLO",
+"name": "Aello",
+"tradition": "Greek",
+"entity_class": "monster",
+"entity_type": "Harpy"
+},
+{
+"id": "ENT_PEMPHREDO",
+"name": "Pemphredo",
+"tradition": "Greek",
+"entity_class": "spirit",
+"entity_type": "Graea"
 }
 ],
 "links": [

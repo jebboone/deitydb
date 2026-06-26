@@ -10610,6 +10610,12 @@
       <data key="entity_class">scriptural-figure</data>
       <data key="entity_type">Patriarch</data>
     </node>
+    <node id="ENT_STEROPES">
+      <data key="name">Steropes</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Cyclops</data>
+    </node>
     <node id="ENT_ISR_RACHEL">
       <data key="name">Rachel</data>
       <data key="tradition">Israelite/Second Temple</data>
@@ -14443,6 +14449,12 @@
       <data key="tradition">Elamite</data>
       <data key="entity_class">deity</data>
       <data key="entity_type">Deity</data>
+    </node>
+    <node id="ENT_ARGES">
+      <data key="name">Arges</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Cyclops</data>
     </node>
     <node id="ENT_EGY_IABET">
       <data key="name">Iabet</data>
@@ -24176,6 +24188,12 @@
       <data key="entity_class">deity</data>
       <data key="entity_type">Functional deity</data>
     </node>
+    <node id="ENT_BRONTES">
+      <data key="name">Brontes</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Cyclops</data>
+    </node>
     <node id="ENT_ROM_PERTUNDA">
       <data key="name">Pertunda</data>
       <data key="tradition">Roman</data>
@@ -24313,6 +24331,90 @@
       <data key="tradition">Zoroastrian</data>
       <data key="entity_class">demon</data>
       <data key="entity_type">Demon</data>
+    </node>
+    <node id="ENT_ALCYONEUS">
+      <data key="name">Alcyoneus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_PORPHYRION">
+      <data key="name">Porphyrion</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_MIMAS">
+      <data key="name">Mimas</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_ENCELADUS">
+      <data key="name">Enceladus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_POLYBOTES">
+      <data key="name">Polybotes</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_GRATION">
+      <data key="name">Gration</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_AGRIUS">
+      <data key="name">Agrius</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_THOAS">
+      <data key="name">Thoas</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Giant (Gigas)</data>
+    </node>
+    <node id="ENT_COTTUS">
+      <data key="name">Cottus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Hundred-Hander</data>
+    </node>
+    <node id="ENT_BRIAREUS">
+      <data key="name">Briareus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Hundred-Hander</data>
+    </node>
+    <node id="ENT_GYES">
+      <data key="name">Gyes</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Hundred-Hander</data>
+    </node>
+    <node id="ENT_EURYALE">
+      <data key="name">Euryale</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Gorgon</data>
+    </node>
+    <node id="ENT_AELLO">
+      <data key="name">Aello</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">monster</data>
+      <data key="entity_type">Harpy</data>
+    </node>
+    <node id="ENT_PEMPHREDO">
+      <data key="name">Pemphredo</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Graea</data>
     </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
