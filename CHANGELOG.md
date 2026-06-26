@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.1.40 — 2026-06-26
+
+### Depth pass: ETCSL (Sumerian) pointers → verbatim (+12)
+
+Per-source upgrade mini-project on the ETCSL (Electronic Text Corpus of Sumerian
+Literature, Oxford; open-access) pointer cluster — 15 core Sumerian deities.
+Fetched the relevant composition translations (Inana's descent, Enki and Ninmaḫ,
+Enki and the world order, Ninurta's exploits/return, Dumuzid's dream, hymns, the
+Debate between Sheep and Grain), stripped HTML/line-labels/apparatus, and upgraded
+pointer→`primary-verbatim`:
+
+**Anunnaki** (Anuna), **Anzu** (Anzud bird), **Asag**, **Bau**, **Damu**,
+**Geshtinanna** (Ĝeštin-ana), **Nammu** (Namma), **Nanshe** (Nanše), **Neti**,
+**Ningishzida** (Ninĝišzida), **Ninhursag** (Ninhursaĝa), **Utu** — 12 in all.
+
+ETCSL's ASCII transliteration diverges sharply from the DB spellings (š→"c", ĝ→"j":
+Nanše→"Nance", Ninĝišzida→"Ninjiczida", Ĝeštin-ana→"Jectin-ana", Nammu→"Namma"),
+mapped per figure. Deferred (kept as honest pointers): **Galla** (ETCSL renders the
+galla as "demons", the name isn't in the translation), **Gula** (not present — the
+only "gula" hits were inside "regulate"), **Ningirsu** (appears only inside a
+manuscript-variant note "1 ms. has instead: Niĝirsu", i.e. apparatus). Embedded line
+labels and editorial apparatus were stripped so every quote is a genuine substring;
+one over-eager end-marker (Utu) was caught and re-bounded. Script:
+`upgrade_etcsl_pointers.sql`.
+
+
 ## v2.1.39 — 2026-06-26
 
 ### Depth pass: Testament of Solomon + Mabinogion pointers → verbatim (+12)
