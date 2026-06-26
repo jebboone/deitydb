@@ -1,0 +1,3 @@
+BEGIN;
+UPDATE entity_citations SET quote='French missionary, born at Orléans, France, 10 January, 1607.', work_title='The Catholic Encyclopedia (Robert Appleton Co., 1913), s.v. Isaac Jogues', source_url='https://en.wikisource.org/wiki/Catholic%20Encyclopedia%20%281913%29/St.%20Isaac%20Jogues', verify_method='secondary-scholarship excerpt; substring-gated against the 1913 Catholic Encyclopedia (Wikisource); figure verified against entry', needs_review=true, review_reason='Public-domain 1913 reference work (signed articles); dated perspective — brief attributed excerpt; verify against a current source.', verified_on=DATE '2026-06-26' WHERE citation_id='CIT_EMC_ISAAC_JOGUES_SEC';
+COMMIT;
