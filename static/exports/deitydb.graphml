@@ -23324,6 +23324,228 @@
       <data key="entity_class">spirit</data>
       <data key="entity_type">Dwarf</data>
     </node>
+    <node id="ENT_JM_CHAYYLIEL">
+      <data key="name">Chayyliel</data>
+      <data key="tradition">Jewish Mystical</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Angelic prince</data>
+    </node>
+    <node id="ENT_JM_ZAZRIEL">
+      <data key="name">Zazriel</data>
+      <data key="tradition">Jewish Mystical</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Angelic prince</data>
+    </node>
+    <node id="ENT_JM_GEBURATIEL">
+      <data key="name">Geburatiel</data>
+      <data key="tradition">Jewish Mystical</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Angelic prince</data>
+    </node>
+    <node id="ENT_JM_SOPHERIEL">
+      <data key="name">Sopheriel</data>
+      <data key="tradition">Jewish Mystical</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Angelic prince</data>
+    </node>
+    <node id="ENT_JM_BARATTIEL">
+      <data key="name">Barattiel</data>
+      <data key="tradition">Jewish Mystical</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Angelic prince</data>
+    </node>
+    <node id="ENT_JM_AZBOGAH">
+      <data key="name">Azbogah</data>
+      <data key="tradition">Jewish Mystical</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Angelic prince</data>
+    </node>
+    <node id="ENT_PLOTO">
+      <data key="name">Ploto</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_EUCRANTE">
+      <data key="name">Eucrante</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_EUDORA">
+      <data key="name">Eudora</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_GALENE">
+      <data key="name">Galene</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_SPEO">
+      <data key="name">Speo</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_THOE">
+      <data key="name">Thoe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_HALIE">
+      <data key="name">Halie</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_PASITHEA">
+      <data key="name">Pasithea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_EUNICE">
+      <data key="name">Eunice</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_EULIMENE">
+      <data key="name">Eulimene</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_AGAUE">
+      <data key="name">Agaue</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_NISAEA">
+      <data key="name">Nisaea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_PROTOMEDEA">
+      <data key="name">Protomedea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_PANOPEA">
+      <data key="name">Panopea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_HIPPOTHOE">
+      <data key="name">Hippothoe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_CYMO">
+      <data key="name">Cymo</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_EIONE">
+      <data key="name">Eione</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_ALIMEDE">
+      <data key="name">Alimede</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_GLAUCONOME">
+      <data key="name">Glauconome</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_PONTOPOREA">
+      <data key="name">Pontoporea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_LEAGORE">
+      <data key="name">Leagore</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_EUAGORE">
+      <data key="name">Euagore</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_LAOMEDEA">
+      <data key="name">Laomedea</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_POLYNOE">
+      <data key="name">Polynoe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_AUTONOE">
+      <data key="name">Autonoe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_LYSIANASSA">
+      <data key="name">Lysianassa</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_MENIPPE">
+      <data key="name">Menippe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_EUPOMPE">
+      <data key="name">Eupompe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_THEMISTO">
+      <data key="name">Themisto</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_PRONOE">
+      <data key="name">Pronoe</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
+    <node id="ENT_NEMERTES">
+      <data key="name">Nemertes</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Nereid</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
