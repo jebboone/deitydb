@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.1.41 — 2026-06-26
+
+### Depth pass: Ovid Fasti pointers → verbatim (Riley prose) (+11)
+
+Per-source upgrade on the Ovid Fasti pointer cluster (32 Roman deities) — the
+hardest source in the depth pass. The staged file (Gutenberg #8738) turned out to
+be **Keightley's Latin edition with English notes**, not a translation, so every
+auto-pick was Latin verse or commentary; the `ovidf` config was mislabeled. Fixed
+it to Riley's actual PD English prose Fasti (Bohn Classical Library 1851, archive.org
+`fastitristiapon00ovid`), bounded to the Fasti section (excluding the Tristia/Pontic
+Epistles that share the volume).
+
+Even then the OCR interleaves Ovid's translation with Riley's footnotes and the
+per-section "argument" summaries. A strict filter (reject footnote markers, Latin,
+argument headers, OCR superscripts/line-numbers/garble) isolated the genuinely clean
+Ovid passages. Upgraded pointer→`primary-verbatim`: **Bacchus, Ceres, Genius, Mars**
+(named in Ovid's epithet "Gradivus"), **Mercury, Minerva, Neptune, Pales, Quirinus,
+Saturn, Venus** — 11 in all.
+
+Deferred (kept as honest pointers — only note/Latin/argument mentions survived, no
+clean translation window): Apollo, Janus, Diana, Vulcan, Vesta, Lares, Summanus,
+Manes, Carna, Concordia, Fortuna, Tellus, Proserpina, Pax, Flora, Carmenta, Anna
+Perenna, Robigus, Veiovis, Vacuna, Semo Sancus. Config corrected in
+`scripts/citations/cite_anchor.py`; script `upgrade_fasti_pointers.sql`.
+
+
 ## v2.1.40 — 2026-06-26
 
 ### Depth pass: ETCSL (Sumerian) pointers → verbatim (+12)
