@@ -1,5 +1,30 @@
 # Changelog
 
+## v2.1.38 — 2026-06-26
+
+### Depth pass: Lebor Gabála Érenn pointers → verbatim (Macalister) (+11)
+
+Per-source upgrade mini-project on the Lebor Gabála Érenn cluster (18 Irish
+deities). Source: R. A. S. Macalister's translation, Vol. IV (1941, Tuatha Dé
+section; translator d. 1950 → PD in life+70), archive.org OCR. Upgraded
+pointer→`primary-verbatim`: **Banba, Brigid, Cermait→(deferred), Dagda, Dian
+Cécht, Ériu, Ernmas, Fódla, Fomorians, Lugh, Nuada, Tuatha Dé Danann** — 11 in all.
+
+This was a high-friction OCR source: the scan has two-column page-bleed (garbled
+doubling), heavy critical apparatus (variant-reading sigla), editorial notes, and
+bilingual Irish-verse/English-prose interleaving where a name appears identically
+in both. Every candidate was eyeballed; auto-anchored windows that landed on
+apparatus, Irish text, OCR-mangled columns, or the wrong figure were rejected and
+re-anchored to clean English-prose sentences by hand-targeted search.
+
+Deferred (kept as honest pointers — no clean defining passage in Vol. IV):
+**Aengus** (the Mac Óc — collides with Oengus son of Umor), **Cermait** (OCR-gapped
+verse), **Danu/Anu** (matches conflate with "Tuatha Dé *Danann*"; identification
+contested), **Goibniu** (two-column OCR mangling), **Manannán** (only editorial
+windows), **Lir** (2 occurrences, no defining sentence), **Tethra** (absent from
+Vol. IV). Scripts: `upgrade_lebor_pointers.sql`, `upgrade_lebor_nuada.sql`.
+
+
 ## v2.1.37 — 2026-06-26
 
 ### Depth pass: Qur'an cosmology pointers → verbatim (Rodwell) (+3)
