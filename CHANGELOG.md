@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.1.36 — 2026-06-26
+
+### Depth pass (start): upgrade pointer-only Zoroastrian citations to verbatim (+4)
+
+Began the citation-quality depth pass — upgrading entities that have only a
+"pointer" citation (no verbatim quote) to real primary-text quotes. Apam Napat,
+Chista, Saoshyant, and Tishtrya upgraded pointer→`primary-verbatim` from the
+Darmesteter Yashts (avesta.org). Script: `upgrade_avesta_pointers.sql`.
+
+SCOPE FINDING: of ~2,372 pointer-only entities, 1,245 cite only *secondary*
+scholarship (not upgradeable — no primary quote exists) and most of the 1,127
+citing a primary source cite *in-copyright* modern translations or appear only in
+name-lists. The cleanly-upgradeable set is a few hundred, spread across many PD
+sources each with its own extraction friction (the Riley Fasti mixes Latin+notes;
+Darmesteter renders yazatas in English — "the Moon", "Glory"). Per-source effort
+yields ~handful of clean upgrades each.
+
+
 ## v2.1.35 — 2026-06-26
 
 ### Continental Germanic: the primeval ancestors Tuisto & Mannus (+2)
