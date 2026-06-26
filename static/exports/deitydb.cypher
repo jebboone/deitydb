@@ -2485,6 +2485,7 @@ CREATE (:Entity {id:'ENT_SAB_ANBAY', name:'Anbay', tradition:'South Arabian', en
 CREATE (:Entity {id:'ENT_SAB_TALAB', name:'Taʾlab Riyam', tradition:'South Arabian', entity_class:'deity', entity_type:'Deity'});
 CREATE (:Entity {id:'ENT_LAT_BAZAZATH', name:'Bazazath', tradition:'Late Antique Ritual', entity_class:'angel', entity_type:'Angelic being'});
 CREATE (:Entity {id:'ENT_SAB_HAWBAS', name:'Hawbas', tradition:'South Arabian', entity_class:'deity', entity_type:'Deity'});
+CREATE (:Entity {id:'ENT_FIN_AHTO', name:'Ahto', tradition:'Finnish/Kalevala', entity_class:'deity', entity_type:'God'});
 CREATE (:Entity {id:'ENT_SAB_DHAT_HIMYAM', name:'Dhāt-Ḥimyam', tradition:'South Arabian', entity_class:'spirit', entity_type:'Astral deity'});
 CREATE (:Entity {id:'ENT_SAB_DHAT_BADAN', name:'Dhāt-Baʿdan', tradition:'South Arabian', entity_class:'spirit', entity_type:'Astral deity'});
 CREATE (:Entity {id:'ENT_SAB_DHAT_ZAHRAN', name:'Dhāt-Ẓahrān', tradition:'South Arabian', entity_class:'spirit', entity_type:'Astral deity'});
@@ -4107,6 +4108,11 @@ CREATE (:Entity {id:'ENT_NOR_LODUR', name:'Lodur', tradition:'Germanic/Norse', e
 CREATE (:Entity {id:'ENT_EGY_FENTIU', name:'Fentiu', tradition:'Egyptian', entity_class:'spirit', entity_type:'Assessor of Maat'});
 CREATE (:Entity {id:'ENT_EGY_NEHAU', name:'Nehau', tradition:'Egyptian', entity_class:'spirit', entity_type:'Assessor of Maat'});
 CREATE (:Entity {id:'ENT_EGY_SEKHERIU', name:'Sekheriu', tradition:'Egyptian', entity_class:'spirit', entity_type:'Assessor of Maat'});
+CREATE (:Entity {id:'ENT_FIN_LOVIATAR', name:'Loviatar', tradition:'Finnish/Kalevala', entity_class:'deity', entity_type:'Goddess'});
+CREATE (:Entity {id:'ENT_FIN_OTSO', name:'Otso', tradition:'Finnish/Kalevala', entity_class:'spirit', entity_type:'Animal-spirit'});
+CREATE (:Entity {id:'ENT_FIN_LEMPO', name:'Lempo', tradition:'Finnish/Kalevala', entity_class:'demon', entity_type:'Demon'});
+CREATE (:Entity {id:'ENT_FIN_KALEVATAR', name:'Kalevatar', tradition:'Finnish/Kalevala', entity_class:'deity', entity_type:'Goddess'});
+CREATE (:Entity {id:'ENT_FIN_ANTEROVIPUNEN', name:'Antero Vipunen', tradition:'Finnish/Kalevala', entity_class:'spirit', entity_type:'Giant-sage'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);

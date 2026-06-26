@@ -17401,6 +17401,13 @@
 "entity_type": "Deity"
 },
 {
+"id": "ENT_FIN_AHTO",
+"name": "Ahto",
+"tradition": "Finnish/Kalevala",
+"entity_class": "deity",
+"entity_type": "God"
+},
+{
 "id": "ENT_SAB_DHAT_HIMYAM",
 "name": "Dhāt-Ḥimyam",
 "tradition": "South Arabian",
@@ -28753,6 +28760,41 @@
 "tradition": "Egyptian",
 "entity_class": "spirit",
 "entity_type": "Assessor of Maat"
+},
+{
+"id": "ENT_FIN_LOVIATAR",
+"name": "Loviatar",
+"tradition": "Finnish/Kalevala",
+"entity_class": "deity",
+"entity_type": "Goddess"
+},
+{
+"id": "ENT_FIN_OTSO",
+"name": "Otso",
+"tradition": "Finnish/Kalevala",
+"entity_class": "spirit",
+"entity_type": "Animal-spirit"
+},
+{
+"id": "ENT_FIN_LEMPO",
+"name": "Lempo",
+"tradition": "Finnish/Kalevala",
+"entity_class": "demon",
+"entity_type": "Demon"
+},
+{
+"id": "ENT_FIN_KALEVATAR",
+"name": "Kalevatar",
+"tradition": "Finnish/Kalevala",
+"entity_class": "deity",
+"entity_type": "Goddess"
+},
+{
+"id": "ENT_FIN_ANTEROVIPUNEN",
+"name": "Antero Vipunen",
+"tradition": "Finnish/Kalevala",
+"entity_class": "spirit",
+"entity_type": "Giant-sage"
 }
 ],
 "links": [
