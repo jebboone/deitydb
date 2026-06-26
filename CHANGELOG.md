@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.1.51 — 2026-06-26
+
+### Greek secondary: Grimal unsourceable → Smith's Dictionary; Greek is the floor (+3)
+
+User couldn't find the full Grimal; asked me to source it. RESULT: the full Grimal
+(*Dictionary of Classical Mythology*, Blackwell/Penguin) is **borrow-only on every
+archive.org copy** — genuinely unsourceable. The only public Grimal is the *Concise*
+edition already converted locally (heavy 2-column bleed). The right substitute is
+**William Smith, A Dictionary of Greek and Roman Biography and Mythology (1873)** —
+public domain, fully fetchable (3 vols downloaded), clean dictionary definitions.
+
+HONEST FINDING — Greek is the floor for secondary extraction, for three compounding
+reasons: (1) the Greek cluster already has the heaviest PRIMARY coverage (Theogony,
+Apollodorus, Homeric Hymns, Pausanias), so secondary adds the least; (2) Smith's OCR is
+badly damaged (rampant "w/v"→"A": "Avith"=with, "loAe"=love); (3) common Greek names carry
+many bearers, so disambiguation is dangerous — auto-matches for Arete, Ion, and Soter all
+resolved to the WRONG figure (a Syracusan princess, a river, a Seleucid king) and were
+rejected. Only 3 cleanly survived all three filters: **Axieros, Brimo, Dirce** (each
+disambiguated against its DB note and OCR-checked). 87 secondary citations now carry
+verbatim quotes; 0 fully-uncited. Script: `upgrade_smith_secondary.sql`.
+
+This effectively bottoms out the reliably-extractable secondary sources: dictionary-format
+references (Black & Green, Wilkinson, MacKillop, Bunson, Catholic Encyclopedia) yield well;
+essay-format (DDD) and damaged-OCR/disambiguation-heavy (Smith Greek) yield little.
+
+
 ## v2.1.50 — 2026-06-26
 
 ### Secondary layer: Catholic Encyclopedia batch 2 (+11 → 25 CE; 86 secondary)
