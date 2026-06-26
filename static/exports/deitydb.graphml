@@ -24122,6 +24122,168 @@
       <data key="entity_class">hero</data>
       <data key="entity_type">Danaid</data>
     </node>
+    <node id="ENT_ROM_CLOACINA">
+      <data key="name">Cloacina</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_VATICANUS">
+      <data key="name">Vaticanus</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_EDUCA">
+      <data key="name">Educa</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_ABEONA">
+      <data key="name">Abeona</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_ADEONA">
+      <data key="name">Adeona</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_MELLONA">
+      <data key="name">Mellona</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_BUBONA">
+      <data key="name">Bubona</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_JUGATINUS">
+      <data key="name">Jugatinus</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_DOMIDUCUS">
+      <data key="name">Domiducus</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_PERTUNDA">
+      <data key="name">Pertunda</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_VOLUPIA">
+      <data key="name">Volupia</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_AGENORIA">
+      <data key="name">Agenoria</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_STIMULA">
+      <data key="name">Stimula</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_NUMERIA">
+      <data key="name">Numeria</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_PELLONIA">
+      <data key="name">Pellonia</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_RUNCINA">
+      <data key="name">Runcina</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_SPINIENSIS">
+      <data key="name">Spiniensis</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ROM_FESSONIA">
+      <data key="name">Fessonia</data>
+      <data key="tradition">Roman</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Functional deity</data>
+    </node>
+    <node id="ENT_ZOR_SATAVAESA">
+      <data key="name">Satavaesa</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Yazata</data>
+    </node>
+    <node id="ENT_ZOR_HAPTOIRINGA">
+      <data key="name">Haptoiringa</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Yazata</data>
+    </node>
+    <node id="ENT_ZOR_VANANT">
+      <data key="name">Vanant</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Yazata</data>
+    </node>
+    <node id="ENT_ZOR_PARENDI">
+      <data key="name">Parendi</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Yazata</data>
+    </node>
+    <node id="ENT_ZOR_ARSHTAT">
+      <data key="name">Arshtat</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Yazata</data>
+    </node>
+    <node id="ENT_ZOR_SAENA">
+      <data key="name">Saena</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Fravashi</data>
+    </node>
+    <node id="ENT_ZOR_FRASHAOSHTRA">
+      <data key="name">Frashaoshtra</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Fravashi</data>
+    </node>
+    <node id="ENT_ZOR_JAMASPA">
+      <data key="name">Jamaspa</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">spirit</data>
+      <data key="entity_type">Fravashi</data>
+    </node>
+    <node id="ENT_ZOR_ASTVATERETA">
+      <data key="name">Astvat-ereta</data>
+      <data key="tradition">Zoroastrian</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">Saoshyant</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>

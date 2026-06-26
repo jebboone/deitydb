@@ -1,5 +1,28 @@
 # Changelog
 
+## v2.1.21 — 2026-06-26
+
+### Rebalancing pass: Roman indigitamenta + Zoroastrian yazatas (+27)
+
+Deepening two under-covered major traditions instead of adding more bounded
+esoteric/catalogue tail. All `primary-verbatim`, substring-gated.
+
+- **Roman (Augustine, *City of God*, from Varro):** 18 functional minor deities
+  (indigitamenta) — Cloacina, Vaticanus, Educa, Abeona, Adeona, Mellona, Bubona,
+  Jugatinus, Domiducus, Pertunda, Volupia, Agenoria, Stimula, Numeria, Pellonia,
+  Runcina, Fessonia, Spiniensis. (A 19th, Mutunus, correctly de-duped to the
+  existing "Mutunus Tutunus", gaining an Augustine citation.) Hostile-witness
+  attestation — Augustine names them to mock them — but each is named + described.
+- **Zoroastrian (Avesta Yashts, Darmesteter SBE):** 9 — astral yazatas Satavaesa,
+  Haptoiringa, Vanant; yazatas Parendi, Arshtat; Fravashis Saena, Frashaoshtra,
+  Jamaspa; and the final Saoshyant Astvat-ereta.
+
+Roman 102 → 120, Zoroastrian 59 → 68 (now both above Goetia's 77... Roman is).
+4,019 → 4,046 entities; 0 fully-uncited. Scripts: `add_roman_indigitamenta.sql`,
+`add_zoroastrian_yazatas.sql`. Deferred: Bundahišn creatures (Gaokerena, Gopatshah,
+Gavaevodata, Hadhayans), Kavi Vishtaspa, and 3 Roman names not in the Dods text.
+
+
 ## v2.1.20 — 2026-06-26
 
 ### Enumerable tails: Oceanids, full Dvergatal, Danaids (+96)
