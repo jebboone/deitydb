@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.1.29 — 2026-06-26
+
+### Greek expansion: river-gods (Potamoi) +10
+
+The ten missing river-gods of the Theogony's river catalogue (337-345), sons of
+Oceanus and Tethys — Nilus, Ister, Rhesus, Achelous, Rhodius, Haliacmon,
+Heptaporus, Simois, Hermus, Ardescus — each citing the shared catalogue passage
+(primary-verbatim, substring-gated). Held names skipped. Also added attested
+Theogony spelling-variant aliases for Echidna's brood (Orthus→Orthrus,
+Chimaera→Chimera, Phix→Sphinx). 4,068 → 4,078 entities; 0 fully-uncited.
+Script: `add_potamoi.sql`.
+
+
 ## v2.1.28 — 2026-06-26
 
 ### Greek expansion: the Gigantes + monster-group members (+17)

@@ -24416,6 +24416,66 @@
       <data key="entity_class">spirit</data>
       <data key="entity_type">Graea</data>
     </node>
+    <node id="ENT_NILUS">
+      <data key="name">Nilus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_ISTER">
+      <data key="name">Ister</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_RHESUS">
+      <data key="name">Rhesus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_ACHELOUS">
+      <data key="name">Achelous</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_RHODIUS">
+      <data key="name">Rhodius</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_HALIACMON">
+      <data key="name">Haliacmon</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_HEPTAPORUS">
+      <data key="name">Heptaporus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_SIMOIS">
+      <data key="name">Simois</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_HERMUS">
+      <data key="name">Hermus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
+    <node id="ENT_ARDESCUS">
+      <data key="name">Ardescus</data>
+      <data key="tradition">Greek</data>
+      <data key="entity_class">deity</data>
+      <data key="entity_type">River-god (Potamos)</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
