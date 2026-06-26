@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.1.16 — 2026-06-25
+
+### Nag Hammadi pass: deferred figures recovered from other translations (+6)
+
+Six of the seven previously-deferred figures, now sourced from other translations
+— all `primary-verbatim`, substring-gated against the cited text:
+
+- **Robinson NHL, variant spellings:** Aphredon (Zostrianos), Seldao & Eleinos
+  (Gospel of the Egyptians — "preside over the mountain"), Mellephaneus (Allogenes)
+- **Porphyry, *Life of Plotinus* 16 (MacKenna):** Nikotheos — named alongside
+  Zostrianos and Allogenes among the sectarian revelations; new source
+  `SRC_PORPHYRY_LIFE_PLOTINUS`
+- **Untitled Text of the Bruce Codex:** Phosilampes — "the only-begotten ...
+  exists before the All"; new source `SRC_BRUCE_UNTITLED`
+
+**Strophaia dropped** — no verifiable Gnostic attestation (only modern/Greek
+homonyms surfaced); not invented. 3,851 → 3,857 entities; 463 → 465 sources;
+0 fully-uncited. Script: `add_nag_hammadi_deferred.sql`.
+
 ## v2.1.15 — 2026-06-25
 
 ### Nag Hammadi verify-and-add pass: +13 Sethian/Gnostic figures (all primary-verbatim)

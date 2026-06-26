@@ -13628,6 +13628,13 @@
 "entity_type": "Initiate order"
 },
 {
+"id": "ENT_SET_APHREDON",
+"name": "Aphredon",
+"tradition": "Sethian",
+"entity_class": "aeon",
+"entity_type": "Aeon"
+},
+{
 "id": "ENT_DIO_SACRAMENT_ILLUMINATION",
 "name": "Illumination (Photismos / Baptism)",
 "tradition": "Christian/Theurgic",
@@ -16972,6 +16979,13 @@
 "tradition": "Jewish Mystical",
 "entity_class": "angel",
 "entity_type": "Angelic prince"
+},
+{
+"id": "ENT_SET_SELDAO",
+"name": "Seldao",
+"tradition": "Sethian",
+"entity_class": "angel",
+"entity_type": "Guardian power"
 },
 {
 "id": "ENT_PGM_INVOKED_POWERS",
@@ -26961,6 +26975,34 @@
 "tradition": "Gnostic",
 "entity_class": "prophet",
 "entity_type": "Revealer/savior figure"
+},
+{
+"id": "ENT_SET_ELEINOS",
+"name": "Eleinos",
+"tradition": "Sethian",
+"entity_class": "angel",
+"entity_type": "Guardian power"
+},
+{
+"id": "ENT_SET_MELLEPHANEUS",
+"name": "Mellephaneus",
+"tradition": "Sethian",
+"entity_class": "aeon",
+"entity_type": "Aeon"
+},
+{
+"id": "ENT_SET_NIKOTHEOS",
+"name": "Nikotheos",
+"tradition": "Sethian",
+"entity_class": "prophet",
+"entity_type": "Prophet/visionary figure"
+},
+{
+"id": "ENT_GNO_PHOSILAMPES",
+"name": "Phosilampes",
+"tradition": "Gnostic",
+"entity_class": "prophet",
+"entity_type": "Teacher/sage figure"
 }
 ],
 "links": [

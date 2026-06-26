@@ -11684,6 +11684,12 @@
       <data key="entity_class">collective</data>
       <data key="entity_type">Initiate order</data>
     </node>
+    <node id="ENT_SET_APHREDON">
+      <data key="name">Aphredon</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">aeon</data>
+      <data key="entity_type">Aeon</data>
+    </node>
     <node id="ENT_DIO_SACRAMENT_ILLUMINATION">
       <data key="name">Illumination (Photismos / Baptism)</data>
       <data key="tradition">Christian/Theurgic</data>
@@ -14551,6 +14557,12 @@
       <data key="tradition">Jewish Mystical</data>
       <data key="entity_class">angel</data>
       <data key="entity_type">Angelic prince</data>
+    </node>
+    <node id="ENT_SET_SELDAO">
+      <data key="name">Seldao</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Guardian power</data>
     </node>
     <node id="ENT_PGM_INVOKED_POWERS">
       <data key="name">The Invoked Powers of the Magical Papyri</data>
@@ -23113,6 +23125,30 @@
       <data key="tradition">Gnostic</data>
       <data key="entity_class">prophet</data>
       <data key="entity_type">Revealer/savior figure</data>
+    </node>
+    <node id="ENT_SET_ELEINOS">
+      <data key="name">Eleinos</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">angel</data>
+      <data key="entity_type">Guardian power</data>
+    </node>
+    <node id="ENT_SET_MELLEPHANEUS">
+      <data key="name">Mellephaneus</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">aeon</data>
+      <data key="entity_type">Aeon</data>
+    </node>
+    <node id="ENT_SET_NIKOTHEOS">
+      <data key="name">Nikotheos</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">prophet</data>
+      <data key="entity_type">Prophet/visionary figure</data>
+    </node>
+    <node id="ENT_GNO_PHOSILAMPES">
+      <data key="name">Phosilampes</data>
+      <data key="tradition">Gnostic</data>
+      <data key="entity_class">prophet</data>
+      <data key="entity_type">Teacher/sage figure</data>
     </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
