@@ -28480,6 +28480,76 @@
 "tradition": "Greek",
 "entity_class": "spirit",
 "entity_type": "Graea"
+},
+{
+"id": "ENT_NILUS",
+"name": "Nilus",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_ISTER",
+"name": "Ister",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_RHESUS",
+"name": "Rhesus",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_ACHELOUS",
+"name": "Achelous",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_RHODIUS",
+"name": "Rhodius",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_HALIACMON",
+"name": "Haliacmon",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_HEPTAPORUS",
+"name": "Heptaporus",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_SIMOIS",
+"name": "Simois",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_HERMUS",
+"name": "Hermus",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
+},
+{
+"id": "ENT_ARDESCUS",
+"name": "Ardescus",
+"tradition": "Greek",
+"entity_class": "deity",
+"entity_type": "River-god (Potamos)"
 }
 ],
 "links": [

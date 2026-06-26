@@ -4068,6 +4068,16 @@ CREATE (:Entity {id:'ENT_GYES', name:'Gyes', tradition:'Greek', entity_class:'mo
 CREATE (:Entity {id:'ENT_EURYALE', name:'Euryale', tradition:'Greek', entity_class:'monster', entity_type:'Gorgon'});
 CREATE (:Entity {id:'ENT_AELLO', name:'Aello', tradition:'Greek', entity_class:'monster', entity_type:'Harpy'});
 CREATE (:Entity {id:'ENT_PEMPHREDO', name:'Pemphredo', tradition:'Greek', entity_class:'spirit', entity_type:'Graea'});
+CREATE (:Entity {id:'ENT_NILUS', name:'Nilus', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_ISTER', name:'Ister', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_RHESUS', name:'Rhesus', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_ACHELOUS', name:'Achelous', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_RHODIUS', name:'Rhodius', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_HALIACMON', name:'Haliacmon', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_HEPTAPORUS', name:'Heptaporus', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_SIMOIS', name:'Simois', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_HERMUS', name:'Hermus', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
+CREATE (:Entity {id:'ENT_ARDESCUS', name:'Ardescus', tradition:'Greek', entity_class:'deity', entity_type:'River-god (Potamos)'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
