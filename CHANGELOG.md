@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.1.31 — 2026-06-26
+
+### Norse expansion: jötnar + missing Æsir (+6)
+
+From the Eddas, all `primary-verbatim`, substring-gated:
+- **Jötnar (giants):** Vafþrúðnir (the all-wise giant of the wisdom-contest),
+  Bergelmir (primeval survivor of Ymir's flood), Gymir (Gerðr's father), Baugi
+  (Suttung's brother, the mead myth), Hræsvelgr (the eagle-giant whose wings make
+  the wind), Fornjót (primeval giant, father of sea/fire/wind).
+- **Æsir:** Hœnir and Lóðurr (who, with Odin, gave the first humans sense and
+  blood — Völuspá).
+
+Caught the Edda table-of-contents bleeding into 3 quotes (Vafþrúðnir/Baugi/Fornjót)
+and re-anchored to primary verse/genealogy. Skrýmir & Móði deferred (spelling
+variants not located). 4,098 → 4,104 entities; 0 fully-uncited. Script:
+`add_norse_jotnar_aesir.sql`.
+
+
 ## v2.1.30 — 2026-06-26
 
 ### Norse expansion: Ásynjur (goddesses) + valkyries (+20)

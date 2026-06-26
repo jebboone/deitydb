@@ -28690,6 +28690,48 @@
 "tradition": "Germanic/Norse",
 "entity_class": "spirit",
 "entity_type": "Valkyrie"
+},
+{
+"id": "ENT_NOR_BERGELMIR",
+"name": "Bergelmir",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Giant (Jotun)"
+},
+{
+"id": "ENT_NOR_GYMIR",
+"name": "Gymir",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Giant (Jotun)"
+},
+{
+"id": "ENT_NOR_BAUGI",
+"name": "Baugi",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Giant (Jotun)"
+},
+{
+"id": "ENT_NOR_HRAESVELG",
+"name": "Hraesvelg",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Giant (Jotun)"
+},
+{
+"id": "ENT_NOR_FORNJOT",
+"name": "Fornjot",
+"tradition": "Germanic/Norse",
+"entity_class": "spirit",
+"entity_type": "Giant (Jotun)"
+},
+{
+"id": "ENT_NOR_LODUR",
+"name": "Lodur",
+"tradition": "Germanic/Norse",
+"entity_class": "deity",
+"entity_type": "God (As)"
 }
 ],
 "links": [

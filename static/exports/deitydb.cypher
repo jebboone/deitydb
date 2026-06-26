@@ -4098,6 +4098,12 @@ CREATE (:Entity {id:'ENT_NOR_VK_GEIROLUL', name:'Geirolul', tradition:'Germanic/
 CREATE (:Entity {id:'ENT_NOR_VK_RANDGRID', name:'Randgrid', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Valkyrie'});
 CREATE (:Entity {id:'ENT_NOR_VK_RADGRID', name:'Radgrid', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Valkyrie'});
 CREATE (:Entity {id:'ENT_NOR_VK_REGINLEIF', name:'Reginleif', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Valkyrie'});
+CREATE (:Entity {id:'ENT_NOR_BERGELMIR', name:'Bergelmir', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Giant (Jotun)'});
+CREATE (:Entity {id:'ENT_NOR_GYMIR', name:'Gymir', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Giant (Jotun)'});
+CREATE (:Entity {id:'ENT_NOR_BAUGI', name:'Baugi', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Giant (Jotun)'});
+CREATE (:Entity {id:'ENT_NOR_HRAESVELG', name:'Hraesvelg', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Giant (Jotun)'});
+CREATE (:Entity {id:'ENT_NOR_FORNJOT', name:'Fornjot', tradition:'Germanic/Norse', entity_class:'spirit', entity_type:'Giant (Jotun)'});
+CREATE (:Entity {id:'ENT_NOR_LODUR', name:'Lodur', tradition:'Germanic/Norse', entity_class:'deity', entity_type:'God (As)'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
