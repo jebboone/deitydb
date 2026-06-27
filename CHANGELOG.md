@@ -1,5 +1,25 @@
 # Changelog
 
+## v2.1.52 — 2026-06-26
+
+### Secondary layer: Catholic Encyclopedia batch 3 (+3 → 28 CE; 89 secondary)
+
+Continued the CE saints: **Teresa of Ávila** (CE title "St. Teresa of Jesus"),
+**Peter Faber**, **Stanislaus Kostka** (CE title "St. Stanislas Kostka"). Each
+hand-verified.
+
+DIMINISHING-RETURNS NOTE: the easy distinctive-name CE wins are now largely exhausted.
+The Wikisource search API mis-resolves most remaining saints to the WRONG article —
+Philip Neri → "Oratory of Saint Philip Neri" (the institution), Charles Borromeo →
+"Society of St. Charles Borromeo", Mary Magdalen dei Pazzi → "St. Mary of Egypt" (a
+different saint entirely), Catherine dei Ricci → "Archdiocese of Siena" — and several
+real articles (Aloysius Gonzaga, Alphonsus Liguori) open with a table of contents or
+genealogy rather than a definition. Plus Wikisource rate-limits (HTTP 429) on rapid
+queries. Further CE saints need slow, careful per-entity title resolution with
+verification. 89 secondary citations now carry verbatim quotes; 0 fully-uncited.
+Script: `upgrade_catholicenc_secondary4.sql` (+stanislaus).
+
+
 ## v2.1.51 — 2026-06-26
 
 ### Greek secondary: Grimal unsourceable → Smith's Dictionary; Greek is the floor (+3)
