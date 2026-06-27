@@ -1,5 +1,34 @@
 # Changelog
 
+## v2.1.53 — 2026-06-27
+
+### Secondary layer: Davidson (Jewish angels) +11, Dixon-Kennedy (Slavic) +15
+
+User supplied local PDFs of two borrow-locked dictionaries. Both dictionary-format,
+both mined cleanly:
+
+- **Gustav Davidson, A Dictionary of Angels** (Free Press, 1967) → 11 Jewish angel
+  entities: Assiah, Galgaliel, Metatron, Nuriel, Raamiel, Raziel, Sandalphon, Sar
+  ha-Panim, Yahoel, Zaphiel, Zaphkiel.
+- **Mike Dixon-Kennedy, Encyclopedia of Russian and Slavic Myth and Legend** (ABC-CLIO,
+  1998) → 15 Slavic deities: Bannik, Chernobog, Devana, Khors, Kikimora, Kupala, Lada,
+  Mokosh, Perun, Rod, Stribog, Svarog, Svarozhich, Veles, Zhiva.
+
+New `sources` rows SRC_DAVIDSON_ANGELS and SRC_DIXON_SLAVIC; all `secondary` grade,
+`needs_review`, attributed s.v. entry; 2-column OCR bleed eyeballed out.
+
+REGRESSION CAUGHT & FIXED: the first apply overwrote 16 entities' `primary-uncited`
+pointers — which referenced REAL primary sources (Perun/Mokosh/Veles in Nestor's
+*Primary Chronicle*; Chernobog in Helmold's *Chronica Slavorum*; Metatron in *2 Enoch*;
+the angels in *3 Enoch*/*Zohar*) — losing the primary attributions. Corrected by
+restoring all 16 primary pointers from the v2.1.52 backup and re-adding the secondary
+quotes as SEPARATE citations. So these entities now correctly carry BOTH a primary-source
+pointer AND a secondary-scholarship quote — the secondary layer built ON the primary
+foundation, not replacing it. 115 secondary citations now carry verbatim quotes; 0
+fully-uncited; 0 dangling source refs. Scripts: `upgrade_davidson_secondary.sql`,
+`upgrade_dixon_secondary.sql`, `fix_secondary_dual_citations.sql`.
+
+
 ## v2.1.52 — 2026-06-26
 
 ### Secondary layer: Catholic Encyclopedia batch 3 (+3 → 28 CE; 89 secondary)
