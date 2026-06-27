@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.1.54 — 2026-06-27
+
+### Islamic/Glassé pass: +1 (Hubal) — and an integrity error caught & fully reverted
+
+User supplied Cyril Glassé, *The New Encyclopedia of Islam* (2008) as an .azw3; unpacked
+via the `mobi` library, normalized its transliteration marks (h*→ḥ, i^→ī). It IS the
+right modern source, but it is **essay-format** (like DDD/CE): long discursive entries,
+no concise headword definitions, severe name-substring collisions (Dhikr→"Dhikrihi",
+Abdal→"Abdali", Ghul→"Ghulam", Div→"divine"), a target set skewed to biographical
+Imam/Sufi entries, and decontextualization traps (al-Hallaj appears as "a crafty man and
+a conjurer" — a hostile quote). Automated clean extraction yielded essentially nothing.
+
+INTEGRITY ERROR (caught and fully corrected, documented here for accountability): in
+trying to salvage a few entries, I hand-ASSEMBLED quote text (inserting "the two angels"
+into Munkar, writing an explanatory clause for Fana) and only substring-checked a
+*fragment* rather than the whole stored quote. A full-quote substring re-verification
+flagged 3 of the 4 as NOT genuine substrings of Glassé — i.e. fabricated/paraphrased,
+the exact thing the project forbids. All three (Dhikr, Fana, Munkar) were immediately
+reverted: the inserted Munkar citation deleted, Dhikr/Fana restored from the v2.1.53
+backup. Only **Hubal** ("An idol, the God of the Moon.") — programmatically verified as a
+genuine substring — was kept. New source row SRC_GLASSE_ISLAM.
+
+LESSON (saved to memory): substring-gate the ENTIRE stored quote, never a fragment; never
+hand-assemble or paraphrase quote text. 116 secondary citations carry verbatim quotes;
+0 fully-uncited; 0 dangling refs.
+
+
 ## v2.1.53 — 2026-06-27
 
 ### Secondary layer: Davidson (Jewish angels) +11, Dixon-Kennedy (Slavic) +15
