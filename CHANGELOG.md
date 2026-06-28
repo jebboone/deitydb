@@ -1,5 +1,30 @@
 # Changelog
 
+## v2.1.56 — 2026-06-27
+
+### Norse: deferred figures resolved with correct sourcing (+5)
+
+Resolved the v2.1.55 deferrals after establishing that /tmp/poetic_edda.txt is Gutenberg
+#14726 — a COMBINED *Elder + Younger Edda* volume (Thorpe's Poetic Edda + Blackwell's
+Prose/Younger Edda). The prose-style passages that caused the deferral are the Younger
+(Prose) Edda portion, now attributed correctly:
+
+- **Ymir, Nótt, Borr** → Prose Edda (Younger Edda, trans. Blackwell): prose narrative
+  ("...continued Har"/"replied Har"). Nótt and Borr re-sourced from Poetic→Prose to match
+  the quoted text.
+- **Máni** (Alvíssmál) and **Móði** (Vafþrúðnismál) → Poetic Edda (Thorpe): genuine
+  poem-stanzas, source unchanged.
+
+This was exactly the v2.1.54 lesson applied correctly: verify which text/translation a
+passage actually belongs to BEFORE quoting, so the quote matches its stated source. All
+genuine literal substrings. Norse primary-verbatim this session: 17 total (12 + 5).
+primary-verbatim now 1,818; 0 fully-uncited. Script: `upgrade_norse_deferred.sql`.
+
+Remaining Norse: the Simek-only set (Romano-Germanic inscriptional deities — Matronae,
+Hercules Magusanus, etc. — best served by CIL epigraphy; and folklore beings — Draugr,
+Huldra, Nokk…). Vali/Buri/Brokkr have no clean Eddic passage. All stay honest pointers.
+
+
 ## v2.1.55 — 2026-06-27
 
 ### Norse: primary verbatim from the Eddas (+12) — Simek not needed
