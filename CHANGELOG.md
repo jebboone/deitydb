@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.1.57 — 2026-06-27
+
+### Romano-Germanic: literary-attested deities via Latin Tacitus (+4)
+
+The Romano-Germanic inscriptional cluster splits two ways. The LITERARY-attested ones
+were sourced cleanly from the Latin Tacitus (the standard English translations, e.g.
+Gutenberg #16927, drop these names, so the Latin original is the only faithful primary
+attestation). Upgraded pointer→`primary-verbatim` with the Latin text (The Latin Library):
+
+- **Tanfana** — Annals 1.51: "celeberrimum illis gentibus templum quod Tanfanae vocabant."
+- **Baduhenna** — Annals 4.73: "nongentos Romanorum apud lucum quem Baduhennae vocant."
+- **Nerthus** — Germania 40: "in commune Nerthum, id est Terram matrem, colunt."
+- **The Alcis** — Germania 43: "Ea vis numini, nomen Alcis."
+
+New source row SRC_TACITUS_ANNALS; each quote full-substring-gated against the Latin text
+(v2.1.54 lesson), flagged with an evidence_note that the name is absent from common English
+translations. primary-verbatim now 1,822; 0 fully-uncited.
+
+BARRIER (honest): the PURELY EPIGRAPHIC deities (Matronae groups, Vagdavercustis, Hludana,
+Hercules Magusanus, Requalivahanus, Sandraudiga) need an inscription database, and all
+accessible ones are blocked: EDH (Heidelberg) is behind Anubis bot-protection; EDCS moved
+to a Zurich host whose results are a JS SPA — its /api/query returns JSON WITH the
+inscription text (`inschriften` field) but ignores simple filter params (returns all
+542,496 records), so isolating one deity's inscription needs a headless browser or
+reverse-engineering its DataTables filter. These stay honest pointers (they already carry a
+CIL source pointer). Script: `upgrade_tacitus_germanic.sql`.
+
+
 ## v2.1.56 — 2026-06-27
 
 ### Norse: deferred figures resolved with correct sourcing (+5)
