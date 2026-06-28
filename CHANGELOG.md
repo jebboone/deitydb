@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.1.55 — 2026-06-27
+
+### Norse: primary verbatim from the Eddas (+12) — Simek not needed
+
+User can't obtain Simek's dictionary. KEY FINDING: most Norse pointers don't need a
+secondary source at all — they're Eddic figures already citing the *Poetic Edda* or
+*Prose Edda*, both public-domain primary texts already staged locally. So they were
+upgraded pointer→`primary-verbatim` (better than dated secondary):
+
+- Poetic Edda (Thorpe 1866): **Garm** (Völuspá), **Sól** (Alvíssmál), **Sköll** (Grímnismál).
+- Prose Edda (Anderson 1880): **Heimdall, Rán, Höðr, Ullr, Eir, Iðunn, Sif, Týr, Hel**.
+
+Sourcing was verified per figure: several (Týr, Hel) cite Poetic Edda but their clean
+definitions are in the Prose Edda, so the citation was re-sourced to match the text
+actually quoted — quote always matches its stated source. Every quote a genuine literal
+substring of the staged text (no hand-assembly — cf. the v2.1.54 lesson).
+
+DEFERRED, not forced: Ymir/Máni/Borr/Nótt (their prose-style passages surfaced in a
+mixed-content file; deferred rather than risk mis-attribution), Vali/Móði/Buri/Brokkr (no
+clean passage found), and the genuinely Simek-only set — the Romano-Germanic inscriptional
+deities (Matronae groups, Hercules Magusanus, Hludana, Vagdavercustis…) and later-folklore
+beings (Draugr, Huldra, Nokk, Nisse, Mara). Those still need a secondary source; for the
+inscriptional ones, epigraphic primary (CIL) is the better long-term path than a dictionary.
+
+primary-verbatim now 1,813; 0 fully-uncited. Script: `upgrade_norse_primary.sql`.
+
+
 ## v2.1.54 — 2026-06-27
 
 ### Islamic/Glassé pass: +1 (Hubal) — and an integrity error caught & fully reverted
