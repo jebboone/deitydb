@@ -11619,13 +11619,6 @@
 "entity_type": "Archangel"
 },
 {
-"id": "ENT_JM_GEHENNA",
-"name": "Gehenna",
-"tradition": "Jewish Mystical",
-"entity_class": "realm",
-"entity_type": "Cosmological realm"
-},
-{
 "id": "ENT_ISR_ZIZ",
 "name": "Ziz",
 "tradition": "Israelite/Second Temple",
@@ -28837,6 +28830,83 @@
 "tradition": "Continental Germanic",
 "entity_class": "deity",
 "entity_type": "Ancestral god"
+},
+{
+"id": "ENT_ROM_AESCULAPIUS",
+"name": "Aesculapius",
+"tradition": "Roman",
+"entity_class": "deity",
+"entity_type": "Healing god"
+},
+{
+"id": "ENT_ROM_LUNA",
+"name": "Luna",
+"tradition": "Roman",
+"entity_class": "deity",
+"entity_type": "Goddess"
+},
+{
+"id": "ENT_ROM_LATONA",
+"name": "Latona",
+"tradition": "Roman",
+"entity_class": "deity",
+"entity_type": "Goddess"
+},
+{
+"id": "ENT_ISR_ASHTORETH",
+"name": "Ashtoreth",
+"tradition": "Israelite/Second Temple",
+"entity_class": "deity",
+"entity_type": "Goddess (polemical reception)"
+},
+{
+"id": "ENT_ISR_BAAL",
+"name": "Baal (Hebrew Bible)",
+"tradition": "Israelite/Second Temple",
+"entity_class": "deity",
+"entity_type": "God (polemical reception)"
+},
+{
+"id": "ENT_ISR_HELEL",
+"name": "Helel ben Shahar",
+"tradition": "Israelite/Second Temple",
+"entity_class": "deity",
+"entity_type": "Astral being (fallen)"
+},
+{
+"id": "ENT_ISR_ANAT_YAHU",
+"name": "Anat-Yahu",
+"tradition": "Israelite/Second Temple",
+"entity_class": "deity",
+"entity_type": "Goddess (syncretic)"
+},
+{
+"id": "ENT_WEL_MYRDDIN",
+"name": "Myrddin (Wyllt)",
+"tradition": "Celtic/Welsh",
+"entity_class": "prophet",
+"entity_type": "Prophet-poet"
+},
+{
+"id": "ENT_WEL_GWENHWYFAR",
+"name": "Gwenhwyfar",
+"tradition": "Celtic/Welsh",
+"entity_class": "ruler",
+"entity_type": "Queen"
+},
+{
+"id": "ENT_ORTH_PARASKEVA",
+"name": "Paraskeva Pyatnitsa",
+"tradition": "Christian/Orthodox",
+"entity_class": "saint",
+"entity_type": "Saint (folk veneration)"
+},
+{
+"id": "ENT_JM_GEHENNA",
+"name": "Gehenna",
+"tradition": "Israelite/Second Temple",
+"entity_class": "realm",
+"entity_type": "Cosmological realm"
 }
 ],
 "links": [
@@ -36250,14 +36320,14 @@
 "source": "ENT_CAN_MOT",
 "target": "ENT_ISR_SHEOL",
 "relationship_type": "received_as",
-"confidence": "high",
+"confidence": "medium",
 "source_id": "SRC_UGARIT_DDD"
 },
 {
 "source": "ENT_ISR_SHEOL",
 "target": "ENT_CAN_MOT",
 "relationship_type": "reception_of",
-"confidence": "high",
+"confidence": "medium",
 "source_id": "SRC_UGARIT_DDD"
 },
 {
@@ -36615,14 +36685,14 @@
 "target": "ENT_ISL_IBLIS",
 "relationship_type": "received_as",
 "confidence": "medium",
-"source_id": "SRC_QURAN"
+"source_id": "SRC_DAVIDSON_ANGELS"
 },
 {
 "source": "ENT_ISL_IBLIS",
 "target": "ENT_ISR_AZAZEL",
 "relationship_type": "reception_of",
 "confidence": "medium",
-"source_id": "SRC_QURAN"
+"source_id": "SRC_DAVIDSON_ANGELS"
 },
 {
 "source": "ENT_ISR_WATCHERS",
@@ -36824,7 +36894,7 @@
 "source": "ENT_JM_LILITH",
 "target": "ENT_MES_LILITU",
 "relationship_type": "reception_of",
-"confidence": "low",
+"confidence": "high",
 "source_id": "SRC_BLACK_GREEN_MESO"
 },
 {
@@ -36914,16 +36984,16 @@
 {
 "source": "ENT_EGY_HATHOR",
 "target": "ENT_APHRODITE",
-"relationship_type": "received_as",
+"relationship_type": "equated_with",
 "confidence": "medium",
-"source_id": "SRC_PLUTARCH_ISIS_OSIRIS"
+"source_id": "SRC_HERODOTUS_HISTORIES"
 },
 {
 "source": "ENT_APHRODITE",
 "target": "ENT_EGY_HATHOR",
-"relationship_type": "reception_of",
+"relationship_type": "equated_with",
 "confidence": "medium",
-"source_id": "SRC_PLUTARCH_ISIS_OSIRIS"
+"source_id": "SRC_HERODOTUS_HISTORIES"
 },
 {
 "source": "ENT_EGY_SETH",
@@ -36998,15 +37068,15 @@
 {
 "source": "ENT_HTT_TESHUB",
 "target": "ENT_ZEUS",
-"relationship_type": "received_as",
-"confidence": "high",
+"relationship_type": "aligned_with",
+"confidence": "low",
 "source_id": "SRC_WEST_EAST_HELICON"
 },
 {
 "source": "ENT_ZEUS",
 "target": "ENT_HTT_TESHUB",
-"relationship_type": "reception_of",
-"confidence": "high",
+"relationship_type": "aligned_with",
+"confidence": "low",
 "source_id": "SRC_WEST_EAST_HELICON"
 },
 {
@@ -37209,27 +37279,20 @@
 "source": "ENT_PHO_MELQART",
 "target": "ENT_HERACLES",
 "relationship_type": "received_as",
-"confidence": "high",
+"confidence": "medium",
 "source_id": "SRC_HERODOTUS_HISTORIES"
 },
 {
 "source": "ENT_HERACLES",
 "target": "ENT_PHO_MELQART",
 "relationship_type": "reception_of",
-"confidence": "high",
+"confidence": "medium",
 "source_id": "SRC_HERODOTUS_HISTORIES"
 },
 {
 "source": "ENT_PHO_ESHMUN",
 "target": "ENT_ASCLEPIUS",
 "relationship_type": "received_as",
-"confidence": "high",
-"source_id": "SRC_MARKOE_PHOENICIANS"
-},
-{
-"source": "ENT_ASCLEPIUS",
-"target": "ENT_PHO_ESHMUN",
-"relationship_type": "reception_of",
 "confidence": "high",
 "source_id": "SRC_MARKOE_PHOENICIANS"
 },
@@ -37278,36 +37341,36 @@
 {
 "source": "ENT_ATHENA",
 "target": "ENT_ARA_ALLAT",
-"relationship_type": "reception_of",
-"confidence": "medium",
+"relationship_type": "equated_with",
+"confidence": "high",
 "source_id": "SRC_HEALEY_NABATAEAN_RELIGION"
 },
 {
 "source": "ENT_APHRODITE",
 "target": "ENT_ARA_AL_UZZA",
-"relationship_type": "reception_of",
-"confidence": "medium",
+"relationship_type": "equated_with",
+"confidence": "high",
 "source_id": "SRC_HEALEY_NABATAEAN_RELIGION"
 },
 {
 "source": "ENT_ARA_MANAT",
 "target": "ENT_NEMESIS",
-"relationship_type": "received_as",
+"relationship_type": "equated_with",
 "confidence": "low",
 "source_id": "SRC_HEALEY_NABATAEAN_RELIGION"
 },
 {
 "source": "ENT_NEMESIS",
 "target": "ENT_ARA_MANAT",
-"relationship_type": "reception_of",
+"relationship_type": "equated_with",
 "confidence": "low",
 "source_id": "SRC_HEALEY_NABATAEAN_RELIGION"
 },
 {
 "source": "ENT_DIONYSUS",
 "target": "ENT_ARA_DUSHARA",
-"relationship_type": "reception_of",
-"confidence": "medium",
+"relationship_type": "equated_with",
+"confidence": "high",
 "source_id": "SRC_HEALEY_NABATAEAN_RELIGION"
 },
 {
@@ -43249,14 +43312,14 @@
 {
 "source": "ENT_ARA_ALLAT",
 "target": "ENT_APHRODITE",
-"relationship_type": "received_as",
+"relationship_type": "equated_with",
 "confidence": "high",
 "source_id": "SRC_HERODOTUS_HISTORIES"
 },
 {
 "source": "ENT_APHRODITE",
 "target": "ENT_ARA_ALLAT",
-"relationship_type": "reception_of",
+"relationship_type": "equated_with",
 "confidence": "high",
 "source_id": "SRC_HERODOTUS_HISTORIES"
 },
@@ -50359,8 +50422,8 @@
 "source_id": "SRC_PHILO_BYBLOS"
 },
 {
-"source": "ENT_PHO_ADONIS",
-"target": "ENT_ADONIS",
+"source": "ENT_ADONIS",
+"target": "ENT_PHO_ADONIS",
 "relationship_type": "reception_of",
 "confidence": "high",
 "source_id": "SRC_PHILO_BYBLOS"
@@ -70015,8 +70078,8 @@
 "source_id": "SRC_HAMZEHEE_YARESAN"
 },
 {
-"source": "ENT_ISL_ALI",
-"target": "ENT_YRS_KHAWANDAGAR",
+"source": "ENT_YRS_KHAWANDAGAR",
+"target": "ENT_ISL_ALI",
 "relationship_type": "reception_of",
 "confidence": "medium",
 "source_id": "SRC_ISLAM_EI2"
@@ -71627,7 +71690,7 @@
 {
 "source": "ENT_PAT_CYRIL_ALEX",
 "target": "ENT_ORTH_ATHANASIUS",
-"relationship_type": "reception_of",
+"relationship_type": "aligned_with",
 "confidence": "medium",
 "source_id": "SRC_QUASTEN_PATROLOGY"
 },
@@ -73902,7 +73965,7 @@
 {
 "source": "ENT_ROM_DEA_SYRIA",
 "target": "ENT_ARA_ATARGATIS",
-"relationship_type": "received_as",
+"relationship_type": "reception_of",
 "confidence": "high",
 "source_id": "SRC_BEARD_ROMAN_RELIGIONS"
 },
@@ -73916,14 +73979,14 @@
 {
 "source": "ENT_ROM_DEA_CAELESTIS",
 "target": "ENT_PHO_TANIT",
-"relationship_type": "received_as",
+"relationship_type": "reception_of",
 "confidence": "high",
 "source_id": "SRC_BEARD_ROMAN_RELIGIONS"
 },
 {
 "source": "ENT_ROM_SOL_INVICTUS_ELAGABAL",
 "target": "ENT_ARA_ELAGABAL",
-"relationship_type": "received_as",
+"relationship_type": "reception_of",
 "confidence": "high",
 "source_id": "SRC_BEARD_ROMAN_RELIGIONS"
 },
@@ -74336,37 +74399,37 @@
 {
 "source": "ENT_ASX_WODEN",
 "target": "ENT_NOR_ODIN",
-"relationship_type": "aligned_with",
+"relationship_type": "identified_with",
 "confidence": "high",
-"source_id": "SRC_POLLINGTON_ELDER_GODS"
+"source_id": "SRC_SIMEK_NORTHERN"
 },
 {
 "source": "ENT_ASX_THUNOR",
 "target": "ENT_NOR_THOR",
-"relationship_type": "aligned_with",
+"relationship_type": "identified_with",
 "confidence": "high",
-"source_id": "SRC_POLLINGTON_ELDER_GODS"
+"source_id": "SRC_SIMEK_NORTHERN"
 },
 {
 "source": "ENT_ASX_TIW",
 "target": "ENT_NOR_TYR",
-"relationship_type": "aligned_with",
+"relationship_type": "identified_with",
 "confidence": "high",
-"source_id": "SRC_POLLINGTON_ELDER_GODS"
+"source_id": "SRC_SIMEK_NORTHERN"
 },
 {
 "source": "ENT_ASX_FRIGE",
 "target": "ENT_NOR_FRIGG",
-"relationship_type": "aligned_with",
+"relationship_type": "identified_with",
 "confidence": "high",
-"source_id": "SRC_POLLINGTON_ELDER_GODS"
+"source_id": "SRC_SIMEK_NORTHERN"
 },
 {
 "source": "ENT_ASX_ING",
 "target": "ENT_NOR_FREYR",
-"relationship_type": "aligned_with",
+"relationship_type": "identified_with",
 "confidence": "medium",
-"source_id": "SRC_POLLINGTON_ELDER_GODS"
+"source_id": "SRC_SIMEK_NORTHERN"
 },
 {
 "source": "ENT_ASX_WULDOR",
@@ -78529,7 +78592,7 @@
 {
 "source": "ENT_TYPHON",
 "target": "ENT_EGY_SETH",
-"relationship_type": "reception_of",
+"relationship_type": "equated_with",
 "confidence": "high",
 "source_id": "SRC_PLUTARCH_ISIS_OSIRIS"
 },
@@ -78581,6 +78644,370 @@
 "relationship_type": "reception_of",
 "confidence": "medium",
 "source_id": "SRC_PINGREE_PICATRIX"
+},
+{
+"source": "ENT_EGY_OSIRIS",
+"target": "ENT_DIONYSUS",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_HERODOTUS_HISTORIES"
+},
+{
+"source": "ENT_EGY_ISIS",
+"target": "ENT_DEMETER",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_HERODOTUS_HISTORIES"
+},
+{
+"source": "ENT_EGY_HORUS",
+"target": "ENT_APOLLO",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_HERODOTUS_HISTORIES"
+},
+{
+"source": "ENT_EGY_BASTET",
+"target": "ENT_ARTEMIS",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_HERODOTUS_HISTORIES"
+},
+{
+"source": "ENT_EGY_WADJET",
+"target": "ENT_LETO",
+"relationship_type": "equated_with",
+"confidence": "medium",
+"source_id": "SRC_HERODOTUS_HISTORIES"
+},
+{
+"source": "ENT_EGY_THOTH",
+"target": "ENT_HERMES",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_CICERO_DE_NATURA"
+},
+{
+"source": "ENT_EGY_IMHOTEP",
+"target": "ENT_ASCLEPIUS",
+"relationship_type": "equated_with",
+"confidence": "medium",
+"source_id": "SRC_WILDUNG_IMHOTEP"
+},
+{
+"source": "ENT_ROM_CUPID",
+"target": "ENT_EROS",
+"relationship_type": "identified_with",
+"confidence": "high",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_ROM_VICTORIA",
+"target": "ENT_NIKE",
+"relationship_type": "identified_with",
+"confidence": "high",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_ROM_SOL_INVICTUS",
+"target": "ENT_HELIOS",
+"relationship_type": "identified_with",
+"confidence": "medium",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_ROM_APOLLO",
+"target": "ENT_APOLLO",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_APOLLO",
+"target": "ENT_ROM_APOLLO",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_ROM_AESCULAPIUS",
+"target": "ENT_ASCLEPIUS",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_LIVY_AUC"
+},
+{
+"source": "ENT_ASCLEPIUS",
+"target": "ENT_ROM_AESCULAPIUS",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_LIVY_AUC"
+},
+{
+"source": "ENT_ROM_LUNA",
+"target": "ENT_SELENE",
+"relationship_type": "identified_with",
+"confidence": "high",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_ROM_LATONA",
+"target": "ENT_LETO",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_LETO",
+"target": "ENT_ROM_LATONA",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_ROMAN_OCD"
+},
+{
+"source": "ENT_MES_DAGAN",
+"target": "ENT_CAN_DAGON",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_CAN_DAGON",
+"target": "ENT_MES_DAGAN",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_MES_NINGAL",
+"target": "ENT_CAN_NIKKAL",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_BLACK_GREEN_MESO"
+},
+{
+"source": "ENT_CAN_NIKKAL",
+"target": "ENT_MES_NINGAL",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_BLACK_GREEN_MESO"
+},
+{
+"source": "ENT_CAN_RESHEPH",
+"target": "ENT_MES_NERGAL",
+"relationship_type": "equated_with",
+"confidence": "medium",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_CAN_KOTHAR",
+"target": "ENT_MES_ENKI_EA",
+"relationship_type": "equated_with",
+"confidence": "medium",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_CAN_SHAPASH",
+"target": "ENT_MES_UTU_SHAMASH",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_CAN_BAAL",
+"target": "ENT_MES_ADAD_ISHKUR",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_CAN_ASTARTE",
+"target": "ENT_ISR_ASHTORETH",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_HEBREW_BIBLE"
+},
+{
+"source": "ENT_ISR_ASHTORETH",
+"target": "ENT_CAN_ASTARTE",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_HEBREW_BIBLE"
+},
+{
+"source": "ENT_CAN_BAAL",
+"target": "ENT_ISR_BAAL",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_HEBREW_BIBLE"
+},
+{
+"source": "ENT_ISR_BAAL",
+"target": "ENT_CAN_BAAL",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_HEBREW_BIBLE"
+},
+{
+"source": "ENT_CAN_ANAT",
+"target": "ENT_ISR_ANAT_YAHU",
+"relationship_type": "received_as",
+"confidence": "medium",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_ISR_ANAT_YAHU",
+"target": "ENT_CAN_ANAT",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_DDD_BIBLE"
+},
+{
+"source": "ENT_ISR_HELEL",
+"target": "ENT_CHR_LUCIFER",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_HEBREW_BIBLE"
+},
+{
+"source": "ENT_CHR_LUCIFER",
+"target": "ENT_ISR_HELEL",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_HEBREW_BIBLE"
+},
+{
+"source": "ENT_ASX_WODEN",
+"target": "ENT_ROM_MERCURY",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_SIMEK_NORTHERN"
+},
+{
+"source": "ENT_ASX_THUNOR",
+"target": "ENT_ROM_JUPITER",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_SIMEK_NORTHERN"
+},
+{
+"source": "ENT_ASX_TIW",
+"target": "ENT_ROM_MARS",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_SIMEK_NORTHERN"
+},
+{
+"source": "ENT_ASX_FRIGE",
+"target": "ENT_ROM_VENUS",
+"relationship_type": "equated_with",
+"confidence": "high",
+"source_id": "SRC_SIMEK_NORTHERN"
+},
+{
+"source": "ENT_SAMI_HORAGALLES",
+"target": "ENT_NOR_THOR",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_RYDVING_DRUM_TIME"
+},
+{
+"source": "ENT_NOR_THOR",
+"target": "ENT_SAMI_HORAGALLES",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_RYDVING_DRUM_TIME"
+},
+{
+"source": "ENT_SLAV_PERUN",
+"target": "ENT_ISR_ELIJAH",
+"relationship_type": "received_as",
+"confidence": "medium",
+"source_id": "SRC_IVANITS_RUSSIAN_FOLK"
+},
+{
+"source": "ENT_ISR_ELIJAH",
+"target": "ENT_SLAV_PERUN",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_IVANITS_RUSSIAN_FOLK"
+},
+{
+"source": "ENT_SLAV_VELES",
+"target": "ENT_SAINT_BLAISE",
+"relationship_type": "received_as",
+"confidence": "medium",
+"source_id": "SRC_IVANITS_RUSSIAN_FOLK"
+},
+{
+"source": "ENT_SAINT_BLAISE",
+"target": "ENT_SLAV_VELES",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_IVANITS_RUSSIAN_FOLK"
+},
+{
+"source": "ENT_SLAV_MOKOSH",
+"target": "ENT_ORTH_PARASKEVA",
+"relationship_type": "received_as",
+"confidence": "medium",
+"source_id": "SRC_IVANITS_RUSSIAN_FOLK"
+},
+{
+"source": "ENT_ORTH_PARASKEVA",
+"target": "ENT_SLAV_MOKOSH",
+"relationship_type": "reception_of",
+"confidence": "medium",
+"source_id": "SRC_IVANITS_RUSSIAN_FOLK"
+},
+{
+"source": "ENT_ART_MERLIN",
+"target": "ENT_WEL_MYRDDIN",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_TRIADS_BROMWICH"
+},
+{
+"source": "ENT_WEL_MYRDDIN",
+"target": "ENT_ART_MERLIN",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_TRIADS_BROMWICH"
+},
+{
+"source": "ENT_ART_GUINEVERE",
+"target": "ENT_WEL_GWENHWYFAR",
+"relationship_type": "reception_of",
+"confidence": "high",
+"source_id": "SRC_TRIADS_BROMWICH"
+},
+{
+"source": "ENT_WEL_GWENHWYFAR",
+"target": "ENT_ART_GUINEVERE",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_TRIADS_BROMWICH"
+},
+{
+"source": "ENT_ARA_ATARGATIS",
+"target": "ENT_ROM_DEA_SYRIA",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_BEARD_ROMAN_RELIGIONS"
+},
+{
+"source": "ENT_PHO_TANIT",
+"target": "ENT_ROM_DEA_CAELESTIS",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_BEARD_ROMAN_RELIGIONS"
+},
+{
+"source": "ENT_ARA_ELAGABAL",
+"target": "ENT_ROM_SOL_INVICTUS_ELAGABAL",
+"relationship_type": "received_as",
+"confidence": "high",
+"source_id": "SRC_BEARD_ROMAN_RELIGIONS"
 }
 ]
 }
