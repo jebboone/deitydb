@@ -209,7 +209,6 @@ section.content { padding: 0 !important; }
   background: linear-gradient(135deg, rgba(201,168,76,0.10) 0%, rgba(201,168,76,0.03) 100%);
   border: 1px solid var(--gold);
   border-left: 4px solid var(--gold);
-  border-radius: 10px;
   padding: 28px 32px;
   margin-top: 28px;
 }
@@ -220,7 +219,6 @@ section.content { padding: 0 !important; }
   justify-content: space-between;
   gap: 24px;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-  border-radius: 10px;
   padding: 28px 32px;
   flex-wrap: wrap;
 }
@@ -237,15 +235,13 @@ section.content { padding: 0 !important; }
   font-weight: 700;
   font-size: 0.97rem;
   padding: 12px 24px;
-  border-radius: 6px;
   text-decoration: none !important;
   white-space: nowrap;
-  transition: background 0.15s, box-shadow 0.15s;
+  transition: background 0.15s;
   flex-shrink: 0;
 }
 .browse-cta-btn:hover {
   background: var(--gold-light);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
 }
 .browse-cta-btns {
   display: flex;
@@ -260,7 +256,6 @@ section.content { padding: 0 !important; }
 }
 .browse-cta-btn-alt:hover {
   background: rgba(212,170,59,0.12);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
 }
 
 hr.db-divider {
@@ -301,33 +296,20 @@ hr.db-divider {
   text-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
-.hero-stats {
-  display: flex;
-  gap: 48px;
-  justify-content: center;
-  flex-wrap: wrap;
+.hero-figures {
+  margin: 4px 0 0;
+  color: #b8cfe6;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.3);
 }
-
-.hero-stat { text-align: center; }
-
-.hero-stat-number {
-  display: block;
-  font-size: 2.4rem;
-  font-weight: 600;
+.hero-figures b {
   color: var(--gold);
   font-family: Georgia, serif;
-  line-height: 1.1;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  font-weight: 600;
+  font-size: 1.06rem;
 }
-
-.hero-stat-label {
-  font-size: 0.7rem;
-  color: #a0bcd8;
-  text-transform: uppercase;
-  letter-spacing: 0.13em;
-  margin-top: 5px;
-  display: block;
-}
+.hero-figures span { color: rgba(160,188,216,0.5); margin: 0 7px; }
 
 .hero-art-credit {
   font-size: 0.7rem;
@@ -414,26 +396,14 @@ hr.db-divider {
 .query-card {
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 10px;
   padding: 22px 20px 18px;
   text-decoration: none !important;
   display: block;
-  transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
-  box-shadow: var(--card-shadow);
+  transition: border-color 0.15s;
 }
 
-.query-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 4px 18px rgba(26,47,78,0.13);
-  transform: translateY(-2px);
-}
-
-.query-card-icon {
-  font-size: 1.4rem;
-  display: block;
-  margin-bottom: 12px;
-  line-height: 1;
-}
+.query-card:hover { border-color: var(--gold); }
+.query-card:hover .query-card-title { color: var(--gold-dark); }
 
 .query-card-title {
   display: block;
@@ -451,6 +421,40 @@ hr.db-divider {
   line-height: 1.55;
 }
 
+/* ── Editorial index list (homepage tools & queries) ────────────────── */
+
+.index-list { margin-top: 10px; }
+.index-cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 52px; }
+.index-item {
+  display: block;
+  padding: 17px 2px;
+  border-top: 1px solid var(--border);
+  text-decoration: none !important;
+}
+.index-item:first-child,
+.index-cols > .index-item:nth-child(2) { border-top: none; }
+.index-item-name {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 1.12rem;
+  color: var(--navy);
+  margin-bottom: 3px;
+  transition: color 0.12s;
+}
+.index-item-name::after {
+  content: " →";
+  color: var(--gold);
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+.index-item:hover .index-item-name { color: var(--gold-dark); }
+.index-item:hover .index-item-name::after { opacity: 1; }
+.index-item-desc { display: block; color: var(--muted); font-size: 0.86rem; line-height: 1.55; }
+@media (max-width: 720px) {
+  .index-cols { grid-template-columns: 1fr; }
+  .index-cols > .index-item:nth-child(2) { border-top: 1px solid var(--border); }
+}
+
 /* ── Tradition grid ───────────────────────────────────────────────── */
 
 .tradition-grid {
@@ -462,20 +466,16 @@ hr.db-divider {
 .tradition-chip {
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 7px;
   padding: 9px 12px;
   text-decoration: none !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  transition: background 0.12s, border-color 0.12s;
+  transition: border-color 0.12s;
 }
 
-.tradition-chip:hover {
-  background: var(--navy);
-  border-color: var(--navy);
-}
+.tradition-chip:hover { border-color: var(--navy); }
 
 .trad-name {
   font-size: 0.82rem;
@@ -487,21 +487,14 @@ hr.db-divider {
   transition: color 0.12s;
 }
 
-.tradition-chip:hover .trad-name { color: white; }
+.tradition-chip:hover .trad-name { color: var(--navy); }
 
 .trad-count {
   font-size: 0.7rem;
   color: var(--muted);
   background: var(--cream);
-  border-radius: 10px;
   padding: 1px 7px;
   flex-shrink: 0;
-  transition: background 0.12s, color 0.12s;
-}
-
-.tradition-chip:hover .trad-count {
-  background: rgba(255,255,255,0.15);
-  color: #cfd9e8;
 }
 
 .loading-text {
@@ -808,12 +801,6 @@ input[name="entity_name"] {
   margin: 0;
 }
 
-.principle-icon {
-  font-size: 1.3rem;
-  display: block;
-  color: var(--gold-dark);
-}
-
 /* ── Tradition tags (About page) ──────────────────────────────────── */
 
 .tradition-tags {
@@ -912,11 +899,6 @@ input[name="entity_name"] {
 }
 
 .contrib-card p:last-of-type { margin-bottom: 14px; }
-
-.contrib-icon {
-  font-size: 1.4rem;
-  display: block;
-}
 
 .contrib-link {
   font-size: 0.83rem;
@@ -1337,21 +1319,16 @@ p.zero-results {
   flex-direction: column;
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 8px;
   padding: 14px 16px 12px;
   text-align: left;
   cursor: pointer;
-  box-shadow: var(--card-shadow);
-  transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+  transition: border-color 0.15s;
   gap: 4px;
   font-family: inherit;
   color: var(--text);
 }
-.entity-card:hover {
-  border-color: var(--navy-mid);
-  box-shadow: 0 4px 14px rgba(26,47,78,0.14);
-  transform: translateY(-2px);
-}
+.entity-card:hover { border-color: var(--gold); }
+.entity-card:hover .ec-name { color: var(--gold-dark); }
 .entity-card:focus-visible {
   outline: 2px solid var(--navy-mid);
   outline-offset: 2px;
@@ -1702,13 +1679,6 @@ body.panel-open { overflow: hidden; }
 }
 
 /* ── Empty state ──────────────────────────────────────────────────── */
-.gp-empty {
-.gp-empty-icon {
-  font-size: 3rem;
-  opacity: 0.18;
-  line-height: 1;
-  color: var(--text);
-}
 .gp-empty-title {
   font-size: 1.1rem;
   color: var(--muted);

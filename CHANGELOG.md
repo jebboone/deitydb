@@ -1,5 +1,134 @@
 # Changelog
 
+## v2.1.60 — 2026-07-02
+
+### Cross-tradition link buildout, Phase 1 (`scripts/buildout_cross_tradition_v2_1_60.sql`)
+
+Encoding policy enforced throughout: ancient author equates → `equated_with` (ancient
+text cited); modern scholarship asserts derivation → `received_as`/`reception_of`
+(received_as subject = EARLIER, reception_of subject = LATER); typological parallel
+only → `aligned_with` low. Everything new is `needs_review` — nothing lands
+human-verified.
+
+- **52 new edges** (all `review_status='needs_review'`):
+  - Greek↔Egyptian interpretatio (7 `equated_with`): Osiris↔Dionysus (Hdt 2.42, 2.144
+    verbatim + Plut. De Iside 35 verbatim), Isis↔Demeter (Hdt 2.59), Horus↔Apollo
+    (Hdt 2.144/2.156), Bastet↔Artemis (Hdt 2.137/2.156), Wadjet↔Leto (Hdt 2.155–156,
+    medium — Herodotus never names Wadjet), Thoth↔Hermes (Cicero, DND 3.56 verbatim),
+    Imhotep↔Asclepius (Wildung pointer, medium).
+  - Greek↔Roman (10): Cupid/Eros, Victoria/Nike, Sol Invictus/Helios (medium),
+    Luna/Selene `identified_with` (OCD pointers); Roman Apollo reception_of Greek
+    Apollo (+mirror); Aesculapius reception_of Asclepius (+mirror; Livy 10.47
+    verbatim, PG #10907); Latona reception_of Leto (+mirror).
+  - Mesopotamian↔Canaanite (8): Dagan→Dagon and Ningal→Nikkal reception pairs;
+    Resheph↔Nergal, Kothar↔Ea, Shapshu↔Shamash, Baal Hadad↔Adad `equated_with`
+    (DDD / Black & Green pointers).
+  - Canaanite↔Israelite (8): Astarte→Ashtoreth (+mirror; 1 Kgs 11:5 KJV verbatim),
+    Baal Hadad→biblical Baal (+mirror; 1 Kgs 18:21 KJV verbatim), Anat→Anat-Yahu
+    (+mirror; DDD, medium), and the marquee **Helel→Lucifer** chain (+mirror;
+    Isa 14:12 KJV verbatim + DDD s.v. Helel) — completing Helel→Lucifer→Devil.
+  - Tier 2 (16): Anglo-Saxon weekday interpretatio Woden↔Mercury, Thunor↔Jupiter,
+    Tiw↔Mars, Frige↔Venus (Simek pointers); Horagalles reception_of Thor (+mirror;
+    Rydving); Slavic Christianization substitutions Perun→Elijah, Veles→St Blaise,
+    Mokosh→St Paraskeva (+mirrors; Ivanits, all MEDIUM); Merlin reception_of Myrddin
+    and Guinevere reception_of Gwenhwyfar (+mirrors; Bromwich TYP).
+  - 3 correct-direction mirrors for the retyped Dea Syria / Dea Caelestis /
+    Sol Invictus Elagabal rows (Beard/North/Price).
+  - Mabon reception_of Maponos and Trivia reception_of Hecate already existed
+    (edges 3440, 2259) — not duplicated.
+- **10 new entities** (all `candidate_verified_name`, each with entity_sources,
+  a period, and its own citation): Aesculapius, Luna, Latona (primary-verbatim:
+  Livy 10.47, Cicero DND 2.68/3.46); Ashtoreth, Baal (Hebrew Bible), Helel ben
+  Shahar (primary-verbatim KJV); Anat-Yahu (DDD pointer), Myrddin, Gwenhwyfar
+  (Bromwich pointers), Paraskeva Pyatnitsa (Ivanits pointer).
+- **2 citations added to existing entities**: Dagon (1 Sam 5:2 KJV verbatim) and
+  Resheph (Hab 3:5 KJV verbatim, flagged — the resheph referent rests on DDD).
+- **28 edge fixes** (in place, all re-flagged `needs_review`):
+  - REVERSED: 3493 (Greek Adonis is now reception_of Phoenician Adonis),
+    6562 (Khawandagar reception_of Ali — was chronologically inverted).
+  - RETYPED received_as→reception_of (subject was the LATER form): 7359 Dea Syria,
+    7361 Dea Caelestis, 7362 Sol Invictus Elagabal.
+  - RETYPED reception→`equated_with` (ancient equation, no derivation): 1521, 1523,
+    1524, 1525, 1527, 2396, 2397 (Greek gods ↔ Al-Lat/Al-Uzza/Manat/Dushara; Hdt 3.8
+    verbatim added), 8026 Typhon↔Seth (Plut. De Iside 41 verbatim), 1468/1469
+    Hathor↔Aphrodite (re-sourced Plutarch→Hdt 2.41 verbatim).
+  - RETYPED reception→`aligned_with` low: 1480/1481 Zeus↔Teshub (West argues motif
+    transmission, not deity derivation); 7027 Cyril←Athanasius retyped aligned_with
+    (intra-Christian continuity, not cross-tradition reception).
+  - RETYPED aligned_with→`identified_with`: 7421–7425 Woden/Odin, Thunor/Thor,
+    Tiw/Tyr, Frige/Frigg, Ing/Freyr (Common Germanic cognate names; Simek).
+  - CONFIDENCE: 1372/1373 Sheol↔Mot high→medium; 1510/1511 Heracles↔Melqart
+    high→medium (equation stays high on edge 6001); 1455 Lilith reception_of Lilitu
+    low→high (reconciled with mirror 4466).
+  - REMOVED: 1513 (Asclepius reception_of Eshmun — reversed duplicate; the
+    correct-direction edge 1512 remains).
+- **Entity fix**: ENT_JM_GEHENNA tradition relabeled Jewish Mystical →
+  Israelite/Second Temple.
+- 3 new sources: SRC_WILDUNG_IMHOTEP, SRC_IVANITS_RUSSIAN_FOLK, SRC_RYDVING_DRUM_TIME.
+- Sourcing note: the roadmap named Rawlinson's Herodotus (Gutenberg); Rawlinson is
+  not on Project Gutenberg, so all Herodotus quotes were substring-gated against
+  Macaulay (PG #2707, equally public-domain). Plutarch gated against the LacusCurtius
+  Babbitt text (Loeb 1936, US copyright not renewed).
+- Idempotent: re-run touches 0 rows. Not deployed; SQLite re-exported.
+
+## v2.1.59 — 2026-07-01
+
+### Citation re-sourcing (`scripts/resource_flagged_v2_1_59.sql`)
+
+(Housekeeping entry added retroactively with v2.1.60 — the pass had been applied to
+the database without a CHANGELOG/VERSION bump, so no separate v2.1.59 backup exists.)
+
+- Re-sourced the 13 wrong-referent / apparatus-as-text citations and the 4 voided
+  archive.org HTML-grab quotes flagged by the v2.1.58 citation QA — every replacement
+  quote verified as a verbatim substring of a retrievable text (Wikisource KJV
+  Apocrypha, Rodwell Qur'an, Darmesteter SBE 23, ANF Irenaeus, Livy 29 (Edmonds),
+  Apollodorus (Frazer), Hoffner, Gardner & Lieu, Schmidt/MacDermot, Mead, Parker,
+  Crowley Equinox, ETCSL).
+- Re-pointed edges 1424/1425 (Azazel↔Iblis) from SRC_QURAN to Davidson (the
+  identification is tafsir/legend, not Qur'anic text).
+- Added sources SRC_MANICHAEAN_HOMILIES, SRC_CROWLEY_VISION_VOICE,
+  SRC_CROWLEY_LIBER_CHANOKH; aliases "Idaean Mother" (Magna Mater), "Isaac" (Ishaq).
+
+## v2.1.58 — 2026-07-01
+
+### Citation QA: mechanical lint + wrong-quote/wrong-referent cleanup
+
+New standing lint `scripts/qa_citations.sql` (read-only, 5 checks): (A) HTML/URL markers
+in quotes, (B) footnote/apparatus signatures, (C) work_title↔locus contradictions,
+(D) sources-row edition label vs the citations' own translator field, (E) homonym
+suspects (quote names neither canonical_name nor any alias). Before→after this pass:
+A 10→6, B 56→55, C 4→4, D 201→94, E 855→851.
+
+Fixes (script: `fix_citation_qa_v2_1_58.sql`):
+
+- **4 archive.org HTML grabs VOIDED** — Living Jesus, Holy Spirit, Enochian System of
+  John Dee, Thirty Aethyrs: the "quote" was archive.org nav chrome, not source text.
+  Quote NULLed, primary-verbatim→primary-uncited, flagged 'WRONG QUOTE — re-anchor
+  needed'. No replacement quotes invented. primary-verbatim 1,822→1,818.
+- **2 edition labels corrected to the translation actually quoted** — every quoted
+  citation on SRC_APOLLODORUS_LIBRARY is Frazer 1921 (68/68) and on
+  SRC_HOMER_ILIAD_ODYSSEY is Butler 1898/1900 (39/39, the linked Gutenberg #2199/#1727
+  texts), yet the source titles claimed in-copyright editions (Hard OUP 2008;
+  Lattimore/Wilson). Titles now name Frazer (Loeb 1921) and Butler (1898/1900).
+- **13 wrong-referent / apparatus-as-text citations FLAGGED, not replaced** — each got a
+  precise review_reason for human re-sourcing: Judith (quote is Gen 26:34 — Esau's wife,
+  not the heroine), Ishaq (Rodwell's note on Ibn Ishaq the biographer), Hvar Khshaeta
+  (Yima Khshaeta homonym), Ecclesia + Logos (translators' introductions, and the Logos
+  hit is the Books-of-Ieou title), Magna Mater (political speech matched on "Mater…"),
+  Marsyas (Frazer's footnote), Adamas of Light (glossary), Raphael + Michael (Celestial
+  Hierarchy chapter heading, never names them), Illuyanka (Hoffner's commentary),
+  Rhadamanthys (work_title Iliad, quote Odyssey 4), Nanshe (quote is Enki and the World
+  Order ll. 418-421, verified against ETCSL, not the cited Nanshe A 4.14.1).
+- **Azazel⇄Iblis edges flagged** — both directions cite SRC_QURAN but the Azazil
+  identification is tafsir (al-Tabari/Ibn Kathir), not Qur'anic text; review_status back
+  to needs_review with a '[SOURCE MISMATCH — tafsir not Qur'an]' rationale prefix.
+
+Remaining lint hits are known/flagged: A's 6 leftovers are ⟨⟩-bracket editorial
+restorations in NHC quotes (false positives); C's other 3 (Castor, Diomedes, Asphodel
+Meadows) and D's other 4 sources (Byock/Crawford, Homeric Hymns West/Evelyn-White,
+Kalevala Bosley/Crawford, Pausanias Jones/Shilleto) await the same verify-then-correct
+treatment; E is a heuristic homonym worklist.
+
 ## v2.1.57 — 2026-06-27
 
 ### Romano-Germanic: literary-attested deities via Latin Tacitus (+4)

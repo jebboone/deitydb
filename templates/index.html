@@ -46,85 +46,27 @@
   <div class="hero-art-credit">
     William Blake, <em>The Ancient of Days</em> (1794) · British Museum · Public domain
   </div>
-  <div class="hero-stats">
-    <div class="hero-stat">
-      <span class="hero-stat-number">{{ db_entities }}</span>
-      <span class="hero-stat-label">Entities</span>
-    </div>
-    <div class="hero-stat">
-      <span class="hero-stat-number">{{ db_relationships }}</span>
-      <span class="hero-stat-label">Relationships</span>
-    </div>
-    <div class="hero-stat">
-      <span class="hero-stat-number">{{ db_traditions }}</span>
-      <span class="hero-stat-label">Traditions</span>
-    </div>
-    <div class="hero-stat">
-      <span class="hero-stat-number">{{ db_sources }}</span>
-      <span class="hero-stat-label">Sources</span>
-    </div>
-  </div>
+  <p class="hero-figures">
+    <b>{{ db_entities }}</b> entities <span aria-hidden="true">·</span>
+    <b>{{ db_relationships }}</b> relationships <span aria-hidden="true">·</span>
+    <b>{{ db_traditions }}</b> traditions <span aria-hidden="true">·</span>
+    <b>{{ db_sources }}</b> sources
+  </p>
 </div>
 
 {# ── EXPLORE VISUALLY — the four no-SQL tools, lead of the page ─────── #}
 <div class="db-section">
   <h2>Browse &amp; Visualize</h2>
   <p class="db-section-desc">Explore every figure and connection — no SQL required.</p>
-  <div class="viz-grid">
-
-    <a href="/explore" class="viz-card">
-      <span class="viz-card-icon">🔎</span>
-      <span class="viz-card-title">Browse</span>
-      <span class="viz-card-desc">Search and filter every divine figure, spirit, and cosmic being. Click any card to see its relationships.</span>
-    </a>
-
-    <a href="/graph" class="viz-card">
-      <span class="viz-card-icon">◉</span>
-      <span class="viz-card-title">Graph</span>
-      <span class="viz-card-desc">See how one figure connects — click to expand, click again to collapse.</span>
-    </a>
-
-    <a href="/connections" class="viz-card">
-      <span class="viz-card-icon">✦</span>
-      <span class="viz-card-title">Connections</span>
-      <span class="viz-card-desc">How whole traditions link — as a heatmap or a constellation.</span>
-    </a>
-
-    <a href="/timeline" class="viz-card">
-      <span class="viz-card-icon">🕰</span>
-      <span class="viz-card-title">Timeline</span>
-      <span class="viz-card-desc">When each tradition's gods, spirits, and cosmologies are attested — from the Early Dynastic Nile to the modern occult revival.</span>
-    </a>
-
-    <a href="/chain" class="viz-card">
-      <span class="viz-card-icon">⛓</span>
-      <span class="viz-card-title">Lineages</span>
-      <span class="viz-card-desc">Trace a source-traced reception chain across the centuries — how a figure or practice passed from one tradition into the next, antiquity to today.</span>
-    </a>
-
-    <a href="/path" class="viz-card">
-      <span class="viz-card-icon">🧭</span>
-      <span class="viz-card-title">Find a Path</span>
-      <span class="viz-card-desc">The shortest source-traced chain of relationships between any two figures — across traditions and millennia.</span>
-    </a>
-
-    <a href="/constellation" class="viz-card">
-      <span class="viz-card-icon">✸</span>
-      <span class="viz-card-title">Constellation</span>
-      <span class="viz-card-desc">The whole dataset as one zoomable map — every figure a star, every relationship a thread, clustered by tradition.</span>
-    </a>
-
+  <div class="index-list index-cols">
+    <a href="/explore" class="index-item"><span class="index-item-name">Browse</span><span class="index-item-desc">Search and filter every divine figure, spirit, and cosmic being.</span></a>
+    <a href="/graph" class="index-item"><span class="index-item-name">Graph</span><span class="index-item-desc">See how one figure connects — expand the web around it, node by node.</span></a>
+    <a href="/connections" class="index-item"><span class="index-item-name">Connections</span><span class="index-item-desc">How whole traditions link — as a heatmap or a constellation.</span></a>
+    <a href="/timeline" class="index-item"><span class="index-item-name">Timeline</span><span class="index-item-desc">When each tradition is attested — the Early Dynastic Nile to the modern occult revival.</span></a>
+    <a href="/chain" class="index-item"><span class="index-item-name">Lineages</span><span class="index-item-desc">Trace a source-traced reception chain as a figure passes from one tradition to the next.</span></a>
+    <a href="/path" class="index-item"><span class="index-item-name">Find a Path</span><span class="index-item-desc">The shortest source-traced chain of relationships between any two figures.</span></a>
+    <a href="/constellation" class="index-item"><span class="index-item-name">Constellation</span><span class="index-item-desc">The whole dataset as one zoomable map — every figure a star, clustered by tradition.</span></a>
   </div>
-  <style>
-  .viz-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-  .viz-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px 20px 20px;text-decoration:none !important;display:block;box-shadow:var(--card-shadow);transition:border-color .15s,box-shadow .15s,transform .12s}
-  .viz-card:hover{border-color:var(--gold);box-shadow:0 6px 22px rgba(26,47,78,.15);transform:translateY(-3px)}
-  .viz-card-icon{font-size:2rem;display:block;margin-bottom:14px;line-height:1}
-  .viz-card-title{display:block;font-weight:700;font-size:1.15rem;color:var(--navy);margin-bottom:8px;font-family:'Segoe UI',system-ui,sans-serif}
-  .viz-card-desc{display:block;font-size:.84rem;color:var(--muted);line-height:1.5}
-  @media (max-width:880px){.viz-grid{grid-template-columns:1fr 1fr}}
-  @media (max-width:540px){.viz-grid{grid-template-columns:1fr}}
-  </style>
 </div>
 
 <hr class="db-divider">
@@ -133,44 +75,13 @@
 <div class="db-section">
   <h2>Pre-built Queries</h2>
   <p class="db-section-desc">Jump straight to a curated view — no SQL required.</p>
-  <div class="query-grid">
-
-    <a href="{{ urls.query('deitydb', 'cross-tradition-links') }}" class="query-card">
-      <span class="query-card-icon">★</span>
-      <span class="query-card-title">All Cross-Tradition Links</span>
-      <span class="query-card-desc">Every comparative bridge in the database — reception, syncretism, equation, and cognate links between two traditions, each with its source.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'cross-tradition-web') }}" class="query-card">
-      <span class="query-card-icon">🕸️</span>
-      <span class="query-card-title">The Cross-Tradition Web</span>
-      <span class="query-card-desc">Which traditions connect, and how strongly — the tradition-to-tradition matrix. Greek and Egyptian are the great hubs.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'reception-chain') }}" class="query-card">
-      <span class="query-card-icon">🔄</span>
-      <span class="query-card-title">Reception Chains</span>
-      <span class="query-card-desc">Follow a figure hop-by-hop across traditions — Matar → Cybele → Magna Mater; Lugus → Lugh → Lleu.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'cross-traditional-parallels') }}" class="query-card">
-      <span class="query-card-icon">⚖️</span>
-      <span class="query-card-title">Cross-Traditional Parallels</span>
-      <span class="query-card-desc">The explicit equation links — equated_with, identified_with, syncretized_with — where a writer or scholar called two figures the same god.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'most-connected') }}" class="query-card">
-      <span class="query-card-icon">⭐</span>
-      <span class="query-card-title">Most Connected Entities</span>
-      <span class="query-card-desc">The fifty entities with the most relationships — the theological hubs of the network.</span>
-    </a>
-
-    <a href="{{ urls.query('deitydb', 'tradition-overview') }}" class="query-card">
-      <span class="query-card-icon">🌍</span>
-      <span class="query-card-title">Tradition Overview</span>
-      <span class="query-card-desc">All {{ db_traditions }} traditions ranked by entity count — a one-page map of the database.</span>
-    </a>
-
+  <div class="index-list index-cols">
+    <a href="{{ urls.query('deitydb', 'cross-tradition-links') }}" class="index-item"><span class="index-item-name">All Cross-Tradition Links</span><span class="index-item-desc">Every comparative bridge — reception, syncretism, equation, cognate — each with its source.</span></a>
+    <a href="{{ urls.query('deitydb', 'cross-tradition-web') }}" class="index-item"><span class="index-item-name">The Cross-Tradition Web</span><span class="index-item-desc">Which traditions connect, and how strongly — the tradition-to-tradition matrix.</span></a>
+    <a href="{{ urls.query('deitydb', 'reception-chain') }}" class="index-item"><span class="index-item-name">Reception Chains</span><span class="index-item-desc">Follow a figure across traditions — Matar → Cybele → Magna Mater; Lugus → Lugh → Lleu.</span></a>
+    <a href="{{ urls.query('deitydb', 'cross-traditional-parallels') }}" class="index-item"><span class="index-item-name">Cross-Traditional Parallels</span><span class="index-item-desc">The explicit equations — where a writer or scholar called two figures the same god.</span></a>
+    <a href="{{ urls.query('deitydb', 'most-connected') }}" class="index-item"><span class="index-item-name">Most Connected Entities</span><span class="index-item-desc">The fifty entities with the most relationships — the theological hubs of the network.</span></a>
+    <a href="{{ urls.query('deitydb', 'tradition-overview') }}" class="index-item"><span class="index-item-name">Tradition Overview</span><span class="index-item-desc">All {{ db_traditions }} traditions ranked by entity count — a one-page map.</span></a>
   </div>
   <p class="more-link"><a href="/deitydb">Browse all queries &amp; tables →</a></p>
   <style>
