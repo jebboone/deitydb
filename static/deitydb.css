@@ -19,6 +19,58 @@
   --border-dark: #c8bfaf;
   --card-shadow: 0 1px 4px rgba(26,47,78,0.10);
   --nav-h:       62px;
+  /* derived surface + measure tokens (no new brand colours) */
+  --panel:       var(--white);        /* white panels on the cream canvas      */
+  --band:        #f4efe7;             /* alt section band, between cream & white */
+  --hairline:    var(--border);       /* warm hairline for panel edges          */
+  --measure:     68ch;                /* readable prose measure                 */
+  --wrap:        1160px;              /* max content width                      */
+}
+
+/* ── Reusable section-header system (kicker + serif H2 + gold rule) ── */
+.sec-kicker {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--gold-dark);
+  margin: 0;
+  display: block;
+}
+.sec-head { margin: 0 0 22px; }
+.sec-head .sec-kicker { margin-bottom: 10px; }
+.sec-head .sec-kicker::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 2px;
+  background: var(--gold);
+  margin-top: 9px;
+}
+.sec-head h2 { margin: 0 0 6px; }
+.sec-head p { margin: 0; color: var(--muted); font-size: 0.9rem; max-width: var(--measure); }
+
+/* Shared eyebrow for the visual-tool page headers (timeline, connections,
+   path, lineages, constellation, api, entity) so they gain the same
+   reference-site kicker + gold-rule hierarchy as the database sections. */
+.tool-kicker {
+  display: block;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--gold-dark);
+  margin: 12px 0 10px;
+}
+.tool-kicker::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 2px;
+  background: var(--gold);
+  margin-top: 9px;
 }
 
 /* ── Base ─────────────────────────────────────────────────────────── */
@@ -42,6 +94,9 @@ body {
 a { color: var(--navy-mid); }
 a:hover { color: var(--gold-dark); }
 
+/* Cap prose measure for readability wherever paragraphs run long. */
+p { max-width: var(--measure); }
+
 h1, h2, h3, h4 {
   font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
   font-weight: normal;
@@ -50,7 +105,7 @@ h1, h2, h3, h4 {
 
 /* ── Site Navigation ──────────────────────────────────────────────── */
 
-header.hd { position: sticky; top: 0; z-index: 100; }
+header.hd { position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--gold); }
 header.hd nav { padding: 0 !important; background: var(--navy) !important; }
 
 .site-nav {
@@ -183,22 +238,45 @@ section.content { padding: 0 !important; }
 
 /* ── Section layout ───────────────────────────────────────────────── */
 
+/* Section band: alternating cream / faint band gives each section a ground
+   of its own so it stops reading as loose text.  The inner panel is a white
+   card with a warm hairline — print/scholarly, not app-dashboard. */
 .db-section {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 40px 24px;
+  padding: 44px 24px;
+}
+/* alternating band — applied explicitly in templates for reliable rhythm */
+.db-section.db-section-alt { background: var(--band); }
+
+.db-section > .sec-head,
+.db-section > .index-list,
+.db-section > .more-link,
+.db-section > .tables-details,
+.db-section > h2,
+.db-section > .db-section-desc {
+  max-width: var(--wrap);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* the index list itself sits in a white panel for containment */
+.db-section .index-list {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 6px 26px;
 }
 
 .db-section h2 {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   color: var(--navy);
   margin: 0 0 6px;
 }
 
 .db-section-desc {
   color: var(--muted);
-  font-size: 0.88rem;
-  margin: 0 0 22px;
+  font-size: 0.9rem;
+  margin: 0 0 20px;
+  max-width: var(--measure);
 }
 
 /* ── Browse CTA banner ───────────────────────────────────────────── */
@@ -258,10 +336,12 @@ section.content { padding: 0 !important; }
   background: rgba(212,170,59,0.12);
 }
 
+/* Sections now separate via bands + panels; the legacy divider is retired
+   to a no-op so we don't double up rules between full-width sections. */
 hr.db-divider {
   border: none;
-  border-top: 1px solid var(--border);
   margin: 0;
+  height: 0;
 }
 
 /* ── Hero (index page) ────────────────────────────────────────────── */
@@ -365,16 +445,29 @@ hr.db-divider {
 .db-page-header {
   background: var(--white);
   border-bottom: 1px solid var(--border);
-  padding: 28px 24px 24px;
+  padding: 30px 24px 26px;
 }
 
 .db-page-header-inner {
-  max-width: 1160px;
+  max-width: var(--wrap);
   margin: 0 auto;
+  border-left: 3px solid var(--gold);
+  padding-left: 20px;
+}
+
+.db-page-header .db-page-kicker {
+  display: block;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--gold-dark);
+  margin: 0 0 8px;
 }
 
 .db-page-header h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: var(--navy);
   margin: 0 0 6px;
 }
@@ -383,6 +476,7 @@ hr.db-divider {
   color: var(--muted);
   margin: 0;
   font-size: 0.9rem;
+  max-width: var(--measure);
 }
 
 /* ── Query cards ──────────────────────────────────────────────────── */
@@ -423,22 +517,30 @@ hr.db-divider {
 
 /* ── Editorial index list (homepage tools & queries) ────────────────── */
 
-.index-list { margin-top: 10px; }
-.index-cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 52px; }
+.index-list { margin-top: 0; }
+.index-cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 26px; }
 .index-item {
   display: block;
-  padding: 17px 2px;
-  border-top: 1px solid var(--border);
+  position: relative;
+  padding: 18px 16px;
+  border-top: 1px solid var(--hairline);
+  border-left: 3px solid transparent;
   text-decoration: none !important;
+  transition: background 0.12s, border-left-color 0.12s;
 }
 .index-item:first-child,
 .index-cols > .index-item:nth-child(2) { border-top: none; }
+/* left accent + warm wash on hover, so a row reads as an intentional target */
+.index-item:hover {
+  background: var(--cream);
+  border-left-color: var(--gold);
+}
 .index-item-name {
   display: block;
   font-family: Georgia, serif;
-  font-size: 1.12rem;
+  font-size: 1.14rem;
   color: var(--navy);
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   transition: color 0.12s;
 }
 .index-item-name::after {
@@ -449,10 +551,10 @@ hr.db-divider {
 }
 .index-item:hover .index-item-name { color: var(--gold-dark); }
 .index-item:hover .index-item-name::after { opacity: 1; }
-.index-item-desc { display: block; color: var(--muted); font-size: 0.86rem; line-height: 1.55; }
+.index-item-desc { display: block; color: var(--muted); font-size: 0.87rem; line-height: 1.58; }
 @media (max-width: 720px) {
   .index-cols { grid-template-columns: 1fr; }
-  .index-cols > .index-item:nth-child(2) { border-top: 1px solid var(--border); }
+  .index-cols > .index-item:nth-child(2) { border-top: 1px solid var(--hairline); }
 }
 
 /* ── Tradition grid ───────────────────────────────────────────────── */
@@ -546,21 +648,22 @@ hr.db-divider {
 .sql-section {
   background: var(--white);
   border-top: 1px solid var(--border);
-  padding: 36px 24px;
+  border-bottom: 1px solid var(--border);
+  padding: 40px 24px;
 }
 
 .sql-section-inner {
-  max-width: 1160px;
+  max-width: var(--wrap);
   margin: 0 auto;
 }
 
 .sql-section-label {
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--muted);
-  font-weight: 600;
-  margin: 0 0 12px;
+  letter-spacing: 0.13em;
+  color: var(--gold-dark);
+  font-weight: 700;
+  margin: 0 0 14px;
 }
 
 form.sql { padding: 0 !important; background: none !important; }
@@ -1246,12 +1349,31 @@ p.zero-results {
 .explore-page { max-width: 1280px; margin: 0 auto; padding: 0 24px 64px; }
 
 .explore-hero {
-  padding: 48px 0 32px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 28px;
+  padding: 44px 0 28px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--gold);
 }
-.explore-hero h1 { font-size: 2rem; color: var(--navy); margin: 0 0 8px; }
-.explore-subtitle { color: var(--muted); margin: 0; font-size: 1.05rem; max-width: 68ch; }
+.explore-kicker {
+  display: block;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--gold-dark);
+  margin: 0 0 10px;
+}
+.explore-hero h1 { font-size: 2.1rem; color: var(--navy); margin: 0 0 8px; }
+.explore-subtitle { color: var(--muted); margin: 0; font-size: 1.02rem; max-width: var(--measure); line-height: 1.6; }
+
+/* Controls sit in a contained white bar so filters read as a panel, not
+   loose form widgets floating on the page. */
+.explore-controls {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 14px 16px;
+}
 
 /* ── Controls bar ────────────────────────────────────────────────── */
 .explore-controls {

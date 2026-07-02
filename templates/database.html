@@ -14,6 +14,7 @@
 {# ── Page header ─────────────────────────────────────────────────── #}
 <div class="db-page-header">
   <div class="db-page-header-inner">
+    <span class="db-page-kicker">Query Explorer</span>
     <h1>DeityDB Explorer</h1>
     <p>
       A comparative database of spiritual beings across {{ db_traditions }} Western traditions.
@@ -25,8 +26,11 @@
 
 {# ── BROWSE THE DATA ──────────────────────────────────────────────── #}
 <div class="db-section">
-  <h2>Browse the Data</h2>
-  <p class="db-section-desc">Start with a tradition or functional category.</p>
+  <div class="sec-head">
+    <span class="sec-kicker">Start Here</span>
+    <h2>Browse the Data</h2>
+    <p>Start with a tradition or functional category.</p>
+  </div>
   <div class="index-list index-cols">
     <a href="{{ urls.query(database, 'tradition-overview') }}" class="index-item"><span class="index-item-name">Tradition Overview</span><span class="index-item-desc">All {{ db_traditions }} traditions with entity and relationship counts at a glance.</span></a>
     <a href="{{ urls.query(database, 'browse-tradition') }}" class="index-item"><span class="index-item-name">Browse a Tradition</span><span class="index-item-desc">Enter a tradition name — Greek, Egyptian, Islamic, Gnostic, Norse — to list all its entities.</span></a>
@@ -37,9 +41,12 @@
 <hr class="db-divider">
 
 {# ── ENTITY EXPLORER ──────────────────────────────────────────────── #}
-<div class="db-section">
-  <h2>Entity Explorer</h2>
-  <p class="db-section-desc">Investigate individual entities and how they connect.</p>
+<div class="db-section db-section-alt">
+  <div class="sec-head">
+    <span class="sec-kicker">Individual Figures</span>
+    <h2>Entity Explorer</h2>
+    <p>Investigate individual entities and how they connect.</p>
+  </div>
   <div class="index-list index-cols">
     <a href="{{ urls.query(database, 'entity-relationships') }}" class="index-item"><span class="index-item-name">Entity Relationships</span><span class="index-item-desc">All relationships for a named entity — what it rules, opposes, emanates from, or is received as.</span></a>
     <a href="{{ urls.query(database, 'reception-chain') }}" class="index-item"><span class="index-item-name">Reception Chain</span><span class="index-item-desc">Trace how a figure was received and renamed across traditions, following up to 8 hops.</span></a>
@@ -51,8 +58,11 @@
 
 {# ── CROSS-TRADITION ANALYSIS ─────────────────────────────────────── #}
 <div class="db-section">
-  <h2>Cross-Tradition Analysis</h2>
-  <p class="db-section-desc">Find patterns that span multiple traditions.</p>
+  <div class="sec-head">
+    <span class="sec-kicker">Comparative</span>
+    <h2>Cross-Tradition Analysis</h2>
+    <p>Find patterns that span multiple traditions.</p>
+  </div>
   <div class="index-list index-cols">
     <a href="{{ urls.query(database, 'cross-traditional-parallels') }}" class="index-item"><span class="index-item-name">Cross-Traditional Parallels</span><span class="index-item-desc">Entities explicitly linked across tradition boundaries via parallel_to and syncretized_with relationships.</span></a>
     <a href="{{ urls.query(database, 'most-connected') }}" class="index-item"><span class="index-item-name">Most Connected Entities</span><span class="index-item-desc">The top 50 entities by total relationship count — the theological hubs of the network.</span></a>
@@ -62,9 +72,12 @@
 <hr class="db-divider">
 
 {# ── BROWSE BY TYPE ────────────────────────────────────────────────── #}
-<div class="db-section">
-  <h2>Browse by Entity Type</h2>
-  <p class="db-section-desc">Pre-filtered views for major categories across all traditions.</p>
+<div class="db-section db-section-alt">
+  <div class="sec-head">
+    <span class="sec-kicker">By Kind</span>
+    <h2>Browse by Entity Type</h2>
+    <p>Pre-filtered views for major categories across all traditions.</p>
+  </div>
   <div class="index-list index-cols">
     <a href="{{ urls.query(database, 'angelic-beings') }}" class="index-item"><span class="index-item-name">Angelic Beings</span><span class="index-item-desc">Angels, divine messengers, and celestial servants across Jewish, Christian, Islamic, and Zoroastrian traditions.</span></a>
     <a href="{{ urls.query(database, 'adversarial-beings') }}" class="index-item"><span class="index-item-name">Adversarial Beings</span><span class="index-item-desc">Demons, adversaries, tempters, and powers of chaos from Mesopotamia to medieval Europe.</span></a>
@@ -79,8 +92,11 @@
 
 {# ── REFERENCE ────────────────────────────────────────────────────── #}
 <div class="db-section">
-  <h2>Reference</h2>
-  <p class="db-section-desc">Source materials and relationship vocabulary.</p>
+  <div class="sec-head">
+    <span class="sec-kicker">Apparatus</span>
+    <h2>Reference</h2>
+    <p>Source materials and relationship vocabulary.</p>
+  </div>
   <div class="index-list index-cols">
     <a href="{{ urls.query(database, 'source-bibliography') }}" class="index-item"><span class="index-item-name">Source Bibliography</span><span class="index-item-desc">All {{ db_sources }} sources with citation counts — primary texts and academic references.</span></a>
     <a href="{{ urls.query(database, 'relationship-vocabulary') }}" class="index-item"><span class="index-item-name">Relationship Vocabulary</span><span class="index-item-desc">All relationship types with definitions and usage counts.</span></a>
