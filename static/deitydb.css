@@ -378,6 +378,8 @@ hr.db-divider {
 
 .hero-figures {
   margin: 4px 0 0;
+  max-width: none;          /* opt out of the global p measure cap */
+  text-align: center;       /* keep it centered in the hero */
   color: #b8cfe6;
   font-size: 0.98rem;
   letter-spacing: 0.01em;
