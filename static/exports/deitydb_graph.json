@@ -28907,6 +28907,13 @@
 "tradition": "Israelite/Second Temple",
 "entity_class": "realm",
 "entity_type": "Cosmological realm"
+},
+{
+"id": "ENT_SET_VIRGINAL_SPIRIT",
+"name": "Virginal Spirit",
+"tradition": "Sethian",
+"entity_class": "aeon",
+"entity_type": "Aeon/personification"
 }
 ],
 "links": [
@@ -79008,6 +79015,34 @@
 "relationship_type": "received_as",
 "confidence": "high",
 "source_id": "SRC_BEARD_ROMAN_RELIGIONS"
+},
+{
+"source": "ENT_SET_NOREA",
+"target": "ENT_ISR_EVE",
+"relationship_type": "child_of",
+"confidence": "high",
+"source_id": "SRC_HYPOSTASIS_ARCHONS"
+},
+{
+"source": "ENT_SET_NOREA",
+"target": "ENT_SET_VIRGINAL_SPIRIT",
+"relationship_type": "dwells_in",
+"confidence": "high",
+"source_id": "SRC_HYPOSTASIS_ARCHONS"
+},
+{
+"source": "ENT_SET_NOREA",
+"target": "ENT_SET_ELELETH",
+"relationship_type": "rescued_by",
+"confidence": "high",
+"source_id": "SRC_HYPOSTASIS_ARCHONS"
+},
+{
+"source": "ENT_SET_ELELETH",
+"target": "ENT_SET_NOREA",
+"relationship_type": "rescues",
+"confidence": "high",
+"source_id": "SRC_HYPOSTASIS_ARCHONS"
 }
 ]
 }

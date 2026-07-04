@@ -4129,6 +4129,7 @@ CREATE (:Entity {id:'ENT_WEL_MYRDDIN', name:'Myrddin (Wyllt)', tradition:'Celtic
 CREATE (:Entity {id:'ENT_WEL_GWENHWYFAR', name:'Gwenhwyfar', tradition:'Celtic/Welsh', entity_class:'ruler', entity_type:'Queen'});
 CREATE (:Entity {id:'ENT_ORTH_PARASKEVA', name:'Paraskeva Pyatnitsa', tradition:'Christian/Orthodox', entity_class:'saint', entity_type:'Saint (folk veneration)'});
 CREATE (:Entity {id:'ENT_JM_GEHENNA', name:'Gehenna', tradition:'Israelite/Second Temple', entity_class:'realm', entity_type:'Cosmological realm'});
+CREATE (:Entity {id:'ENT_SET_VIRGINAL_SPIRIT', name:'Virginal Spirit', tradition:'Sethian', entity_class:'aeon', entity_type:'Aeon/personification'});
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_HERA'}) CREATE (a)-[:SPOUSE_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_ATHENA'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
 MATCH (a:Entity {id:'ENT_ZEUS'}),(b:Entity {id:'ENT_APOLLO'}) CREATE (a)-[:PARENT_OF {confidence:'high', source_id:'SRC_THEOI_ZEUS'}]->(b);
@@ -11286,3 +11287,7 @@ MATCH (a:Entity {id:'ENT_WEL_GWENHWYFAR'}),(b:Entity {id:'ENT_ART_GUINEVERE'}) C
 MATCH (a:Entity {id:'ENT_ARA_ATARGATIS'}),(b:Entity {id:'ENT_ROM_DEA_SYRIA'}) CREATE (a)-[:RECEIVED_AS {confidence:'high', source_id:'SRC_BEARD_ROMAN_RELIGIONS'}]->(b);
 MATCH (a:Entity {id:'ENT_PHO_TANIT'}),(b:Entity {id:'ENT_ROM_DEA_CAELESTIS'}) CREATE (a)-[:RECEIVED_AS {confidence:'high', source_id:'SRC_BEARD_ROMAN_RELIGIONS'}]->(b);
 MATCH (a:Entity {id:'ENT_ARA_ELAGABAL'}),(b:Entity {id:'ENT_ROM_SOL_INVICTUS_ELAGABAL'}) CREATE (a)-[:RECEIVED_AS {confidence:'high', source_id:'SRC_BEARD_ROMAN_RELIGIONS'}]->(b);
+MATCH (a:Entity {id:'ENT_SET_NOREA'}),(b:Entity {id:'ENT_ISR_EVE'}) CREATE (a)-[:CHILD_OF {confidence:'high', source_id:'SRC_HYPOSTASIS_ARCHONS'}]->(b);
+MATCH (a:Entity {id:'ENT_SET_NOREA'}),(b:Entity {id:'ENT_SET_VIRGINAL_SPIRIT'}) CREATE (a)-[:DWELLS_IN {confidence:'high', source_id:'SRC_HYPOSTASIS_ARCHONS'}]->(b);
+MATCH (a:Entity {id:'ENT_SET_NOREA'}),(b:Entity {id:'ENT_SET_ELELETH'}) CREATE (a)-[:RESCUED_BY {confidence:'high', source_id:'SRC_HYPOSTASIS_ARCHONS'}]->(b);
+MATCH (a:Entity {id:'ENT_SET_ELELETH'}),(b:Entity {id:'ENT_SET_NOREA'}) CREATE (a)-[:RESCUES {confidence:'high', source_id:'SRC_HYPOSTASIS_ARCHONS'}]->(b);
