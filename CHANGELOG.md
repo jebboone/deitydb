@@ -1,5 +1,35 @@
 # Changelog
 
+## v2.1.61 — 2026-07-04
+
+### Norea / Sethian feminine buildout (`scripts/build_norea_sethian_buildout_v2_1_61.sql`)
+
+Fills out the Norea sub-graph, previously only three edges (`opposes`→Archons,
+`undergoes_process`→Salvation, Eleleth `guides`→Norea) plus a locus-less
+citation. All loci are from the Hypostasis of the Archons (NHC II,4), trans.
+Roger A. Bullard and Bentley Layton (Robinson, NHL 3rd ed.), cross-checked
+against research notes. Citations are locus-precise POINTERS (`quote` NULL) —
+no text quoted from memory; verbatim excerpts pending. Everything new lands
+`review_status='needs_review'` — nothing human-verified.
+
+- **+1 entity:** `ENT_SET_VIRGINAL_SPIRIT` (Virginal Spirit) — Norea's abode in
+  the Incorruptibility (Hyp. Arch. 93,18–32; 96,17–33). Kept distinct from
+  `ENT_PS_VIRGIN_LIGHT` (Virgin of the Light) and `ENT_OPH_EVE_ZOE` (Eve/Zoe).
+  With a locus-precise citation.
+- **+4 edges** (all `needs_review`): Norea `dwells_in` Virginal Spirit; Norea
+  `rescued_by` Eleleth + mirror Eleleth `rescues` Norea (the cry-and-rescue,
+  92,32–93,2); Norea `child_of` Eve (the biblical `ENT_ISR_EVE`, 91,34–92,4 —
+  no duplicate node created).
+- **Citations:** filled Norea's `CIT_SET_NOREA_SEC` with real loci + named
+  translator (was "per cited source", no translator); added a citation for the
+  new entity.
+- **Enriched:** the existing `opposes`→Archons rationale (burns the rulers' ark;
+  renames them "rulers of darkness", 92,4–93,2); claim and confidence unchanged.
+- The synthesis-only Norea↔Zoe "fiery-breath" kinship is intentionally NOT
+  encoded (interpretation, not a textual relationship).
+
+Node count 4129 → 4130; Norea 3 → 7 edges (+4 total; 7161 edges).
+
 ## v2.1.60 — 2026-07-02
 
 ### Cross-tradition link buildout, Phase 1 (`scripts/buildout_cross_tradition_v2_1_60.sql`)

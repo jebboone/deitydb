@@ -24782,6 +24782,12 @@
       <data key="entity_class">realm</data>
       <data key="entity_type">Cosmological realm</data>
     </node>
+    <node id="ENT_SET_VIRGINAL_SPIRIT">
+      <data key="name">Virginal Spirit</data>
+      <data key="tradition">Sethian</data>
+      <data key="entity_class">aeon</data>
+      <data key="entity_type">Aeon/personification</data>
+    </node>
     <edge id="e0" source="ENT_ZEUS" target="ENT_HERA">
       <data key="relationship_type">spouse_of</data>
       <data key="confidence">high</data>
@@ -60566,6 +60572,26 @@
       <data key="relationship_type">received_as</data>
       <data key="confidence">high</data>
       <data key="source_id">SRC_BEARD_ROMAN_RELIGIONS</data>
+    </edge>
+    <edge id="e7157" source="ENT_SET_NOREA" target="ENT_ISR_EVE">
+      <data key="relationship_type">child_of</data>
+      <data key="confidence">high</data>
+      <data key="source_id">SRC_HYPOSTASIS_ARCHONS</data>
+    </edge>
+    <edge id="e7158" source="ENT_SET_NOREA" target="ENT_SET_VIRGINAL_SPIRIT">
+      <data key="relationship_type">dwells_in</data>
+      <data key="confidence">high</data>
+      <data key="source_id">SRC_HYPOSTASIS_ARCHONS</data>
+    </edge>
+    <edge id="e7159" source="ENT_SET_NOREA" target="ENT_SET_ELELETH">
+      <data key="relationship_type">rescued_by</data>
+      <data key="confidence">high</data>
+      <data key="source_id">SRC_HYPOSTASIS_ARCHONS</data>
+    </edge>
+    <edge id="e7160" source="ENT_SET_ELELETH" target="ENT_SET_NOREA">
+      <data key="relationship_type">rescues</data>
+      <data key="confidence">high</data>
+      <data key="source_id">SRC_HYPOSTASIS_ARCHONS</data>
     </edge>
   </graph>
 </graphml>
