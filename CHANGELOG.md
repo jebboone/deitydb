@@ -1,5 +1,42 @@
 # Changelog
 
+## v2.1.74 — 2026-07-05
+
+### Library-inventory pointer sourcing (v2.1.69–v2.1.74)
+
+Adds **58 `secondary` pointer citations** from six in-copyright scholarly works
+in the consolidated master library — presence of every entity verified in
+context by text extraction, **no text reproduced** (`quote` NULL), per the
+DeityDB sourcing rule. All land `needs_review=true`. Under-sourced entities
+(best grade ≤ `primary-uncited`) drop 830 → 772.
+
+- **Meyer & Smith, *Ancient Christian Magic: Coptic Texts of Ritual Power*** (9,
+  `build_acm_pointers_v2_1_69.sql`): Eleleth, Seth, Sabaoth, the Cherubim, and
+  the aeon-archons of the ascent spell (Choucho, Chouncheoch, Chous, Persomphon,
+  Proteth). New source `SRC_ACM_MEYER_SMITH`.
+- **Foster, *Before the Muses*** (4, `build_foster_pointers_v2_1_70.sql`):
+  Pazuzu, Rabisu, Sarpanit, Ninisina.
+- **van den Broek, *Gnostic Religion in Antiquity*** (18,
+  `build_vandenbroek_pointers_v2_1_71.sql`): Kalyptos, Protophanes, Doxomedon,
+  Adamas, Horaios, and the full catalogue of attendant aeons of the Four
+  Luminaries (Charis, Aletheia, Morphe, Aisthesis, Mneme, Synesis, Agape, Idea,
+  Eirene, Teleios) + the Valentinian classes (pneumatic/psychic/hylic). Cracks
+  the macron-accented Sethian names that OCR had blocked. New source
+  `SRC_VDBROEK_GNOSTIC`.
+- **Betz, *The Greek Magical Papyri in Translation*** (9,
+  `build_pgm_pointers_v2_1_72.sql`): Agathos Daimon, Brimo, Montu, Neith,
+  Ogdoad, Kairos, Harpocrates, Serapis, Tyche. New source `SRC_BETZ_PGM`.
+- **Scholem, *Kabbalah*** (11, `build_scholem_pointers_v2_1_73.sql`): Adam
+  Kadmon, Keter, Gevurah, Da'at, the shedim, Gehenna, Hayyim Vital, the mystical
+  Torah, Michael, Asmodeus, Enoch/Metatron. New source `SRC_SCHOLEM_KABBALAH`.
+- **Meyer, *The Ancient Mysteries: A Sourcebook*** (7,
+  `build_meyer_mysteries_pointers_v2_1_74.sql`): Attis, the Korybantes, the
+  Kouretes, the maenads, Lethe, Cupid, Apollo. New source `SRC_MEYER_MYSTERIES`.
+
+Substring false positives were rejected by hand throughout (e.g. Haniel →
+"Bakthaniel", Dumah → "Kedumah", Carna → "incarnate", Neith → "neither"; the
+Neith and Teleios entries were retained via genuine attestations).
+
 ## v2.1.68 — 2026-07-05
 
 ### Citation sourcing sweep (v2.1.62–v2.1.68)
