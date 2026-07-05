@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.1.76 — 2026-07-05
+
+### Hermetica + Pyramid Texts pointer sourcing (v2.1.75–v2.1.76)
+
+Adds **7 `secondary` pointer citations** from two more in-copyright works,
+verified in context, no text reproduced (`quote` NULL), `needs_review=true`.
+Under-sourced entities 772 → 765.
+
+- **Copenhaver, *Hermetica: The Greek Corpus Hermeticum and the Latin
+  Asclepius*** (5, `build_copenhaver_pointers_v2_1_75.sql`): the Cosmos (as
+  "second god"), the Demiurge, Hermes Trismegistus, the One/Monad (CH IV), and
+  Agathodaimon ("the second Hermes"). New source `SRC_COPENHAVER_HERMETICA`.
+  Held Ennead (only an intro title-reference to the "Eighth and Ninth", a
+  tractate Copenhaver does not include) and the henads (commentary-only).
+- **Allen, *The Ancient Egyptian Pyramid Texts*** (2,
+  `build_allen_pyramid_pointers_v2_1_76.sql`): Hraf-haf (rendered "Face Behind
+  Him", the ferryman) and Sekhet-Hetepet (the "Marsh of Offerings"). New source
+  `SRC_ALLEN_PYRAMID_TEXTS`. Rejected Aten (substring of "eaten"/"beaten", and
+  the Aten cult postdates the Old Kingdom PT); the remaining Egyptian-tagged
+  gaps are Greco-Egyptian magical figures absent from the Pyramid Texts.
+
 ## v2.1.74 — 2026-07-05
 
 ### Library-inventory pointer sourcing (v2.1.69–v2.1.74)
