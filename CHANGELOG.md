@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.1.77 — 2026-07-05
+
+### Chaldean Oracles verbatim sourcing (v2.1.77)
+
+Upgrades four `primary-uncited` placeholders to **`primary-verbatim`** with
+located excerpts from the public-domain *Chaldean Oracles*, trans. W. Wynn
+Westcott (1895) — quotes substring-verified against the extracted text, nothing
+from memory. Under-sourced entities 765 → 761.
+
+- **Iynges** (frag. 54): "Intelligible Iynges themselves understand from the
+  Father".
+- **Teletarchs** (frag. 58): "Teletarchs are comprehended in the Synoches".
+- **Material Daimones** (frag. 75): the "certain Irrational Demons … which
+  derive their subsistence from the Aerial Rulers" (the terrestrial dogs).
+- **World Soul** (frag. 148): "Invoke not the visible Image of the Soul of
+  Nature".
+
+Two of these rows also had mis-attributed source_ids (Iamblichus, Plotinus) —
+corrected to `SRC_CHALDEAN_ORACLES`, the actual source of the quote.
+
+**Notes on the two requested sources.** Majercik's *Chaldean Oracles* is not on
+disk (the library sheet mis-matched it to the Westcott PD edition), so Westcott
+was used for verbatim quotes instead — a better result than pointers. Idel &
+Dan, *The Early Kabbalah*, was checked against the Jewish-mystical gaps but
+yielded nothing clean: its Bahir/Gerona vocabulary and the sefirot it covers are
+already sourced, while the remaining JM gaps are Hekhalot/Enochic/Hasidic and
+Second-Temple figures absent from that anthology.
+
 ## v2.1.76 — 2026-07-05
 
 ### Hermetica + Pyramid Texts pointer sourcing (v2.1.75–v2.1.76)
