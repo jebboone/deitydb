@@ -1,5 +1,45 @@
 # Changelog
 
+## v2.1.68 — 2026-07-05
+
+### Citation sourcing sweep (v2.1.62–v2.1.68)
+
+Replaces `primary-uncited` placeholders across seven traditions with **real,
+located citations** — 48 in all. Two kinds, per the DeityDB sourcing rule
+(nothing quoted from memory, no fabricated citations):
+
+- **23 `primary-verbatim`** — short located quotes extracted verbatim from
+  **public-domain** primary texts (verified 2026-07-05 by text extraction, not
+  memory):
+  - **Hermetic** (`build_hermetic_citations_v2_1_62.sql`, `..._v2_1_64.sql`,
+    `..._v2_1_65.sql`): Poimandres, Nous, Seven Governors, Heimarmene, Anthropos,
+    Logos from the *Corpus Hermeticum* (Mead 1906); Hecate, the Synoches, the
+    Paternal Intellect from the *Chaldean Oracles* (Westcott 1895).
+  - **Egyptian** (`build_egyptian_citations_v2_1_63.sql`): Nephthys, Anubis, Set,
+    Mau-aa, Sekhet-Aaru from the *Book of the Dead / Papyrus of Ani* (Budge 1895).
+  - **Jewish mystical** (`..._v2_1_65.sql`): Shekhinah from the *Zohar*
+    (Sperling & Simon, Soncino 1934, PD).
+  - **Gnostic — Pistis Sophia** (`build_pistis_sophia_citations_v2_1_67.sql`):
+    First Mystery, Authades, Adamas the Tyrant, Jeu, Zorokothora Melchisedek, the
+    lion-faced power, Pistis Sophia, the thirteenth aeon — from *Pistis Sophia*
+    (Mead 1896). Loci are descriptive (chapter numbers not reliably recoverable
+    from the source, so none were invented).
+
+- **25 `secondary` pointers** — bibliographic pointers to in-copyright scholarly
+  editions, **no text reproduced** (`quote` NULL); each entity's presence was
+  verified in the edition before citing:
+  - **Mesopotamian** (`build_chaldean_meso_citations_v2_1_64.sql`, `..._v2_1_65.sql`,
+    and the v2.1.66 sweep): Anshar, Kishar, Lahmu, Lahamu, Mummu, Kakka, Damkina,
+    Anu, Belet-ili, Apkallu, Gibil, Gula, Ningirsu, Pabilsag, Utukku, Galla,
+    Ganzir, Dilmun → Dalley, *Myths from Mesopotamia* (OUP 2000).
+  - **Sethian / Valentinian** (`build_layton_pointers_v2_1_68.sql`): Barbelo,
+    Protennoia, Norea, the Triple-Powered One, the Four Luminaries, Horos,
+    Stauros → Layton, *The Gnostic Scriptures* (1987).
+
+Everything lands `needs_review=true` — nothing human-verified yet. Under-sourced
+entities (best grade ≤ `primary-uncited`) drop accordingly. New sources:
+`SRC_DALLEY_MYTHS`, `SRC_LAYTON_GNOSTIC`.
+
 ## v2.1.61 — 2026-07-04
 
 ### Norea / Sethian feminine buildout (`scripts/build_norea_sethian_buildout_v2_1_61.sql`)
