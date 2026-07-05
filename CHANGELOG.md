@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.1.79 — 2026-07-05
+
+### Jewish-mystical sourcing: Apocrypha verbatim + Davidson angels (v2.1.78–v2.1.79)
+
+Sources the Jewish-mystical gap cluster — **27 citations**, under-sourced 761 → 734.
+
+- **6 `primary-verbatim`** from the public-domain **KJV Apocrypha** (Authorized
+  Version, 1611), substring-verified (`build_apocrypha_verbatim_v2_1_78.sql`),
+  replacing placeholders that had pointed at the in-copyright NRSV:
+  Antiochus IV Epiphanes (1 Macc 1:10), Tobit (Tobit 1:1), Tobias (Tobit 1:9),
+  Holofernes (Judith 2:4), the Maccabee Brothers (1 Macc 2:3-5), and the mother
+  of the Maccabean martyrs (2 Macc 7:20). New source `SRC_KJV_APOCRYPHA`.
+- **21 `secondary` pointers** to **Davidson, *A Dictionary of Angels*** (a
+  dictionary — each is a headword; `build_davidson_pointers_v2_1_79.sql`):
+  Akatriel, Anpiel, Hadraniel, Zagzagel, Shamshiel, Haniel, Erelim, Ishim, the
+  Elohim (as an angelic order), the Malachim, Mastema, Penemue, Baraqiel, the
+  Angel of Darkness / of the Presence, the Prince of Light, the heavenly host,
+  Af and Hemah, Agrat bat Mahlat, the mazzikin, and Sar ha-Olam. Substring-risky
+  entries were verified by hand; held Dumah/Lilin/Spirit-of-Truth as unverified.
+
+**Two requested sources came up dry (recorded for honesty):** Ritner, *The
+Mechanics of Ancient Egyptian Magical Practice*, is about ritual *mechanics*, not
+named deities — its only gap-name hits were false positives (Aten → "Akh**enaten**",
+Akephalos → an execration figurine's "headless torso"). A deeper **PGM** sweep was
+also exhausted after the v2.1.72 pass (remaining hits were voces magicae or
+common-word substrings; the one "Monad" hit is a text-title, not the hypostasis).
+
 ## v2.1.77 — 2026-07-05
 
 ### Chaldean Oracles verbatim sourcing (v2.1.77)
