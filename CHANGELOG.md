@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.1.83 — 2026-08-20
+
+### Recovered pointers — Neoplatonic theurgy, Simonian, Samaritan, Armenian
+
+**11 secondary pointers** (`scripts/build_library_recovered_v2_1_83.sql`),
+recovered after widening the tradition↔collection fit test in the v2.1.82 pass
+from exact-key to substring matching. Compound tradition labels such as
+`Hermetic/Theurgic`, `Greek/Orphic`, `Simonian` and `Armenian Christian` had no
+exact key and were being discarded wholesale.
+
+- Henads → Damascius, *Problems and Solutions Concerning First Principles*;
+  Encosmic Gods and Aion → Syrianus on Plato; Hypercosmic Gods → Shaw,
+  *Theurgy and the Soul*; Simon Magus → Irenaeus; Adrasteia, Corybantes;
+  Marqah the Samaritan theologian → *Origen and the Jews*; Gregory the
+  Illuminator, Mesrop Mashtots, Gregory of Narek.
+- Precision here was 11/16 (~69%) versus ~28% in v2.1.82 — distinctive
+  multi-word proper nouns disambiguate far better than single common nouns.
+- Rejected: `The Glory (Kavod)` → "Solomon in all his glory"; `Helena (Ennoia)`
+  → Helena Augusta, Constantine's mother; `Solitary` → "solitary reflection";
+  `Trivia` → a table-of-contents heading.
+
 ## v2.1.82 — 2026-08-20
 
 ### Library-wide secondary pointers from the 2026-08 acquisition
