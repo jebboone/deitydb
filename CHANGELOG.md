@@ -1,5 +1,95 @@
 # Changelog
 
+## v2.1.82 — 2026-08-20
+
+### Library-wide secondary pointers from the 2026-08 acquisition
+
+Corpus-wide pass over the newly acquired library (1,084 volumes; 1,074 extracted
+to text, 705 MB). **56 secondary pointers** across **42 newly registered sources**
+(`scripts/build_library_pointers_v2_1_82.sql`). Pointers only — `quote` is NULL,
+no text reproduced, since these are in-copyright monographs.
+
+- Method: extract all volumes → single word-boundary regex sweep for 866 name
+  variants of 764 gap entities (abstractions like "Fire"/"Life" excluded as
+  unsearchable) → require ≥3 occurrences → rank by topical fit between the
+  book's collection and the entity's tradition → **read context for every
+  candidate and confirm the referent by hand**.
+- Notable: Thecla (Cult of Saint Thecla), Theurgy (Shaw, *Theurgy and the Soul*),
+  Irenaeus of Lyons, Julian of Norwich, Hildegard of Bingen, Athanasius,
+  Symeon the New Theologian, Gregory Palamas, John Climacus, Mani, Sophia,
+  Abrasax and Theletos (both via Irenaeus), Seed of Seth, Dodecad, Monogenes,
+  Occultation, Insan al-Kamil, Perfect Nature, Daena, Chinvat Bridge.
+- **Yield was 56 of 197 candidates (~28%).** The rejects are instructive and the
+  reason nothing here was bulk-applied: `Vine` (a Goetia demon) → Cyril of
+  Alexandria on the true vine; `Cross` (Gnostic) → *Cross-Examining Socrates*;
+  `Camelot` → the scholar P. T. Camelot; `Nane` (Armenian) → Middle English
+  "nane"; `Vladimir` → a publisher's address in Crestwood NY; `Zarathustra` →
+  Nietzsche; `Muhammad al-Mahdi` → an author surname. Greek philosophical common
+  nouns (Arete, Psyche, Techne, Pistis, Logos, Nous) matched Plato scholarship
+  wholesale rather than the Gnostic aeons and Greek deities intended.
+- Also excluded matches to primary texts in translation (Loeb Apuleius, Plutarch,
+  Plato) — a pointer there would not upgrade a `primary-uncited` placeholder.
+- Loci are `passim` with an occurrence count: pdftotext form-feed positions give
+  PDF sequence pages, not printed page numbers, so citing them would mislead.
+
+## v2.1.81 — 2026-08-20
+
+### Cross-traditional pointers — The Brill Dictionary of Religion
+
+**16 secondary pointers** to signed articles in Kocku von Stuckrad (ed.), *The
+Brill Dictionary of Religion* (4 vols., Brill 2006) — `SRC_BRILL_DICT_RELIGION`,
+`scripts/build_brill_dict_v2_1_81.sql`. Pointers only (`quote` NULL).
+
+- Targets the thematic/abstract entities that name-search cannot reach:
+  Angels, Creation, Immortality, Monasticism, Possession, Poverty, Prophecy,
+  Revelation, Salvation, Wholeness, Writing, Heaven, Hell, Sphinx, Zarathustra,
+  Hildegard of Bingen. Entry titles recovered from running headers, entry starts
+  confirmed against the body, printed page numbers captured for each locus.
+- **Deliberately pointers, not quotes.** Brill is essay-format: the "Angel"
+  article opens on angel-reception in post-war Europe, so an opening-sentence
+  quote would misrepresent the subject — exactly the decontextualization risk
+  flagged for DDD in v2.1.45.
+
+## v2.1.80 — 2026-08-20
+
+### Islamic/Sufi sourcing from the new library: Renard, *Historical Dictionary of Sufism*
+
+Cracks the **Islamic cluster**, which prior passes had documented as having no
+suitable on-hand source (the 2026-06 Hughes and Glassé attempts both netted ~0).
+**22 secondary citations**, under-sourced Islamic **88 → 66**.
+
+- New source `SRC_RENARD_SUFISM` — John Renard, *Historical Dictionary of Sufism*
+  (Scarecrow Press, 2005). Dictionary-format, so headword definitions extract
+  cleanly, matching the rule established in v2.1.42+: **dictionaries extract
+  well, essay-format references do not.**
+- Figures: al-Ghazali, al-Hallaj, al-Junayd al-Baghdadi, al-Qushayri, Hasan
+  al-Basri, Rabia al-Adawiyya, Rumi, Jami, Ahmad Sirhindi, Ahmad al-Tijani,
+  Baha al-Din Naqshband, Khwaja Ubayd Allah Ahrar, Fakhr al-Din Iraqi, Husayn
+  ibn Ali, Ja'far al-Sadiq. Orders/terms: Naqshbandiyya, Chishtiyya, Tijaniyya,
+  Darqawiyya, Abdal, Sama, Wahdat al-Wujud.
+- **Existing primary-source pointers were PRESERVED** (Ihya, Kashf al-Mahjub,
+  Nafahat al-Uns, Masnavi, Maktubat, Qur'an, al-Kafi). Renard was added as a
+  *separate* citation (`_2NDRY`, `display_order` 3) per the v2.1.53 rule, never
+  overwriting a primary pointer.
+- Method (`scripts/build_renard_sufism_v2_1_80.sql`, idempotent): pdftotext →
+  clean (strip running heads/typesetter stamps; normalize dot-below and stripped
+  macrons; preserve hyphens) → segment headword entries → tiered match → **every
+  stored quote programmatically substring-gated in full** → **eyeball every
+  candidate**.
+- **Disambiguation is the binding constraint, not extraction.** The first
+  automated pass matched 48 candidates of which only ~1/3 were correct:
+  `al-Ghazali`→GHAZAL (a poetry genre), `Abd al-Wahhab al-Sha'rani`→Ibn Abd
+  al-Wahhab (a different, anti-Sufi figure), three Shi'a Imams→"MUHAMMAD,
+  PROPHET". Tightened matching (require a hit on the inverted main-entry key;
+  no unmatched distinctive non-nisba token) plus per-entry review cut this to
+  22 accepted. **Do not bulk-apply matches from this pipeline.**
+- Held: Ibn al-'Arabi (source PDF drops a hyphen, printing "Iberianborn"; the
+  collection has nine dedicated Ibn 'Arabi volumes that will serve him better).
+  Not in a Sufism dictionary, so still unsourced: Qur'anic eschatology (Jahannam,
+  Jannah, Saqar, Sa'ir, al-Hutamah, Sidrat al-Muntaha, Kiraman Katibin, Azrail,
+  Israfil, Mikail, Munkar, Nakir, Dajjal, Ifrit), the Prophet's wives, and most
+  Shi'a Imams — these need a Qur'an/hadith or Shi'a reference work.
+
 ## v2.1.79 — 2026-07-05
 
 ### Jewish-mystical sourcing: Apocrypha verbatim + Davidson angels (v2.1.78–v2.1.79)
