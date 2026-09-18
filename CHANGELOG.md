@@ -1,5 +1,111 @@
 # Changelog
 
+## v2.1.87 — 2026-09-18
+
+### Apparatus-bleed cleanup, round 2; grade corrections
+
+The v2.1.24 cleanup caught 48 mis-anchored rows but its signal set missed dot
+leaders, scan furniture ("Digitized by"), forewords, title pages, translator
+footnotes, incipit concordances and bare SGML entities. A widened sweep nominated
+62 candidates; every one was read in full by hand before any change, because the
+regex over-flags badly — legitimate primary name-catalogues (the Völuspá
+Dvergatal, the Egyptian Ennead, the Apocryphon of John's archon lists) trip the
+same signals. 11 of 18 newly-flagged rows turned out to be genuine text and were
+left alone.
+
+`scripts/cleanup_apparatus_v2_1_87.sql`:
+
+- **45 rows blanked** to `primary-uncited` (`quote = NULL`), attribution retained
+  for a later re-anchor: Malory and Golden Legend tables of contents, the Warburg
+  foreword to Picatrix, the Ventris & Chadwick title page and a smiths/bronze
+  table, Frazer's footnotes to Apollodorus, R. H. Charles's notes to 1 Enoch,
+  Odeberg's notes to 3 Enoch, Morgan's introduction to Sepher ha-Razim, Gardner &
+  Lieu's commentary, the Ginza table of contents, five ETCSL incipit concordances,
+  a modern bibliography cited as a Nag Hammadi tractate, and six Golden Legend
+  saint lives whose Google scan interleaves running heads mid-sentence over badly
+  damaged OCR.
+- **`CIT_SAINT_CATHERINE_ALEX_GOLDEN` was mis-anchored** — it displayed the Life
+  of S. Eugenia under Catherine of Alexandria. Blanked and flagged.
+- **5 Ventris & Chadwick rows re-graded** `primary-verbatim` → `secondary`. The
+  content is genuine but it is the authors' own commentary and translations in an
+  in-copyright scholarly edition; the old grade implied Mycenaean tablet text.
+- **3 prefix/suffix trims** (Avesta Asman and Haoma, the Thought of Norea). Each
+  replacement removes material only from the ends of an already-verified span, so
+  contiguity is preserved. Nothing was excised from the middle and rejoined.
+
+`scripts/cleanup_grades_and_pointers_v2_1_87.sql`:
+
+- **2 false pointers deleted.** Babalon and Choronzon carried citations to *Liber
+  AL vel Legis*, which names neither figure (0 occurrences of either across the
+  full text). Both now rest on genuine *Vision and the Voice* quotes.
+- **34 empty-string quotes → NULL.** `''` is not NULL, so every `quote IS NOT
+  NULL` filter — including the site's "has a quote" logic — was counting these as
+  quoted. Introduced by the v2.1.24 cleanup.
+- **25 grade corrections.** 22 rows graded `primary-uncited` while carrying a
+  quote from a secondary reference work (Catholic Encyclopedia, Smith, MacKillop,
+  Bunson), and 3 signed DDD articles graded `reference`, all moved to `secondary`.
+
+### Documentation and hygiene
+
+- `scripts/citations/README.md` gains an explicit **quoting policy**: the
+  substring gate, the format rule (dictionaries quote, monographs stay pointers),
+  and the standing brief-excerpt allowance for in-copyright works — which is a
+  separate question from format, and not a licence to quote monographs.
+- `README.md` Quick Start no longer bootstraps `schema_postgres.sql`, the v0
+  7-table skeleton; it restores the committed dump against postgres:16.
+- `docs/RESUME.md` refreshed to current scale and now requires a committed
+  Postgres dump on every data release. v2.1.80–v2.1.83 shipped without one and
+  left 105 citations and 51 sources backed up nowhere.
+- Counts refreshed in `README.md` and `metadata.yaml`. `metadata.yaml` had also
+  been recommending `category` as the filtering field; it is unnormalised free
+  text with 1,148 distinct values (both `Deity` and `deity` occur). It now points
+  at `entity_class`, the 19-value controlled vocabulary.
+- `templates/pages/graph.html`: the `master` store renamed to `store`
+  (`addMasterNode`/`addMasterEdge` → `addStoreNode`/`addStoreEdge`), 33
+  occurrences.
+- CI pins `superfly/flyctl-actions/setup-flyctl` to `@v1` instead of a branch.
+
+## v2.1.84–v2.1.86 — 2026-09-18
+
+### Library expansion: 955 new volumes mined
+
+The library grew from 1,052 to 2,007 volumes. 950 of the 955 new ones were
+extracted (5 EPUB failures) into the existing corpus at
+`/var/mnt/storage/deitydb-corpus/text/`, now 2,024 files. 65 are image-only scans
+and remain un-OCR'd — including Farmer's *Oxford Dictionary of Saints* and volume
+2 of Rankine's *Grimoire Encyclopaedia*, both of which would close standing gaps.
+
+**183 citations across 174 entities, 6 new sources, 43 new aliases.** Every quote
+passed a whitespace-tolerant substring gate against the raw extraction, and spans
+crossing a form feed or containing a page-number line were refused. All 163 stored
+quotes were independently re-verified against source after the fact.
+
+- `scripts/build_library_pd_primary_v2_1_84.sql` — 65 primary-verbatim from
+  public-domain primaries: Peterson's *Five Books of Mystery* and *Arbatel*,
+  Weyer's *Pseudomonarchia*, Turner's *Ars Notoria*, Crowley's *Liber AL*,
+  *Vision and the Voice* and *Liber Chanokh*, West's *Bundahishn*.
+- `scripts/build_library_dictionaries_v2_1_85.sql` — Netton's *Popular Dictionary
+  of Islam*, Davidson's *Dictionary of Angels*, Jastrow. **Netton broke the
+  Islamic dead end** that Hughes (1885) and Glassé both failed at, for the same
+  reason Renard worked: dictionary format, not essay format.
+- `scripts/build_library_grimal_v2_1_86.sql` — Grimal's *Concise Dictionary of
+  Classical Mythology* for the Greek and Roman tails.
+
+Under-sourced entities fell from 650 to 476. Renaissance Esoteric 40→4,
+Zoroastrian 29→8, Thelemic 11→1, Islamic 27→11, Shi'a 11→2, Greek 92→66,
+Jewish Mystical 34→25, Mandaean 18→9.
+
+**Rejected roughly 97 of 280 candidates (~65% acceptance)**, on referent mismatch
+(Grimal's *Basileia*, *Macaria* and *Manes*; Stratton-Kent's *Baalberith*),
+OCR damage, or absence from the source. Agrippa's planetary spirits returned zero
+hits in both the 1651 and the 2021 editions — those names live only in magic-square
+tables and Hebrew script that do not extract, which is now a settled dead end.
+
+**Still unreachable with this library:** Christian demonology (needs Michaelis),
+the Mandaean residue (no Ginza or Mandaean reference work on hand), and the
+Celtic, Arthurian, Phoenician, Finnish, Mesopotamian and Slavic tails.
+
+
 ## v2.1.83 — 2026-08-20
 
 ### Recovered pointers — Neoplatonic theurgy, Simonian, Samaritan, Armenian
@@ -192,7 +298,7 @@ Under-sourced entities 772 → 765.
 ### Library-inventory pointer sourcing (v2.1.69–v2.1.74)
 
 Adds **58 `secondary` pointer citations** from six in-copyright scholarly works
-in the consolidated master library — presence of every entity verified in
+in the consolidated library — presence of every entity verified in
 context by text extraction, **no text reproduced** (`quote` NULL), per the
 DeityDB sourcing rule. All land `needs_review=true`. Under-sourced entities
 (best grade ≤ `primary-uncited`) drop 830 → 772.

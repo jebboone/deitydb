@@ -20,9 +20,9 @@ A public read-only web interface with pre-built queries and a full SQL explorer 
 
 ## Current Release — v2.1.38
 
-- 4,119 entities
-- 7,106 relationships (2,857 crossing tradition boundaries)
-- 564 sources
+- 4,130 entities
+- 7,161 relationships (2,910 crossing tradition boundaries)
+- 638 sources
 - 137 tradition labels
 - 0 unresolved relationship references; 0 unsourced relationships; every entity carries at
   least one sourced citation (0 fully uncited)
@@ -91,17 +91,23 @@ See `examples/sample_queries.sql` for more.
 
 ## Quick Start
 
-Requires Docker.
+Requires Docker or Podman.
 
 ```bash
 git clone https://github.com/jebboone/deitydb.git
 cd deitydb
-docker run --name deitydb -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres:15
-docker exec -i deitydb psql -U postgres -c "CREATE DATABASE deitydb;"
-docker exec -i deitydb psql -U postgres -d deitydb < schema_postgres.sql
+podman run -d --name deitydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=deitydb \
+  -p 5432:5432 docker.io/library/postgres:16
+sleep 5
+gunzip -c backups/deitydb_pg_v2.1.87.sql.gz | podman exec -i deitydb psql -U postgres -d deitydb
+podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"  # expect 4130
 ```
 
-See `docs/install.md` for the full setup guide including seed data and views.
+`docker` is drop-in for `podman` above. The committed dump is the full database —
+schema, data and citation layer. (`schema_postgres.sql` is the original v0 skeleton,
+kept for history only; it does not reflect the current 40-table schema.)
+
+See `docs/RESUME.md` for the full runbook — SQLite export, Datasette, and deployment.
 
 ## Design Principle
 

@@ -91,7 +91,7 @@
 | al-Aʿraf (the Heights) | associated_with | Jahannam (Gehenna, Hell) | realm | (keep associated_with) | vague->keep | al-Aʿraf borders Hell, whose occupants see and shrink from its inhabit |
 | Hamalat al-Arsh | associated_with | Sidrat al-Muntaha (the Lote-Tree of the Boundary) | realm | (keep associated_with) | vague->keep | The bearers of the Throne are situated above the seventh heaven, near  |
 | Munkar | associated_with | Barzakh (the intermediate state) | realm | (keep associated_with) | vague->keep | Munkar questions the dead in the grave, the realm of the Barzakh |
-| Hiram Abiff | associated_with | Solomon | ruler | (keep associated_with) | vague->keep | The Hiramic legend casts Hiram Abiff as master-builder of King Solomon |
+| Hiram Abiff | associated_with | Solomon | ruler | (keep associated_with) | vague->keep | The Hiramic legend casts Hiram Abiff as chief builder for King Solomon |
 | Makeda, Queen of Sheba | associated_with | Solomon | ruler | (keep associated_with) | vague->keep | In the Kebra Nagast Makeda (the Ethiopian Queen of Sheba) visits Solom |
 | Jachin (the pillar) | associated_with | Solomon | ruler | (keep associated_with) | vague->keep | The pillars Jachin and Boaz stood at the porch of Solomon's Temple in  |
 | Shoghi Effendi (Shoghi Rabbání) | associated_with | Covenant (Bahá'í) | sage | (keep associated_with) | vague->keep | Shoghi Effendi was appointed Guardian and authorized interpreter withi |

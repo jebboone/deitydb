@@ -1,6 +1,6 @@
 # DeityDB — Resume / Cross-Machine Handoff
 
-Snapshot for picking the project up on another machine. Last updated **2026-06-20, v2.1.11**.
+Snapshot for picking the project up on another machine. Last updated **2026-09-18, v2.1.87**.
 
 ## ⟶ Pick up here (next action)
 **Citation epoch is COMPLETE and DEPLOYED (v2.1.10 live at deitydb-explorer.fly.dev).** Primary-
@@ -25,7 +25,7 @@ publish cycle. flyctl auth = jebboone2@gmail.com.
   Thorpe 1866). A config-attribution audit verified the other Gutenberg sources.
 
 ## Current state
-- **Scale:** 3,837 entities / 7,098 relationships / 458 sources / 135 traditions. Code & DB at **v2.1.11** on `main`.
+- **Scale:** 4,130 entities / 7,161 relationships / 638 sources / 137 traditions / 4,554 citations. Code & DB at **v2.1.87** on `main`.
 - **Citation remediation (v2.1.0–2.1.11): primary-quotable extraction COMPLETE** — `entity_citations` table + `v_public_entity_citations` view; every entity graded, 0 fully uncited. **1,496 verbatim quotes** substring-gated against public-domain texts; 937 `primary-uncited` remain (genuinely PD-quotable tails + Ovid Fasti); 1,301 `secondary` (incl. 172 re-graded from primary-uncited where the source is unquotable — in-copyright editions / inscriptions). Source attributions audited end-to-end (3 fixed: Anderson/Thorpe/Shilleto). Pipeline: `scripts/citations/README.md`. Triage/plan: `docs/REMEDIATION_TRIAGE.md`.
 - **Completeness program (Phases 1–7): COMPLETE and audited clean** — every integrity invariant 0, 97.3% primary/scholarly source coverage. Per-phase record in `CHANGELOG.md` (v1.85.0–v1.91.1); the gap register is `docs/COMPLETENESS_ROADMAP.md`.
 - **Deeper graph/API features: DONE** (v1.92.0) — JSON API + `/path` finder + `/constellation` map + `/graph` filters.
@@ -33,7 +33,7 @@ publish cycle. flyctl auth = jebboone2@gmail.com.
 - **Git:** all pushed to `github.com/jebboone/deitydb` (main).
 
 ## What travels, and what doesn't
-- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON + `scripts/citations/`), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and portable Postgres dumps in `backups/` — **`deitydb_pg_v2.1.11.sql.gz` is current (includes the citation layer)**; `deitydb_pg_v2.0.0.sql.gz` is the pre-citation baseline kept for reference.
+- **In git (clones cleanly):** all schema, `scripts/` (build SQL + `gen_*.py` generators + the `_p1..p7_*` cohort JSON + `scripts/citations/`), `templates/`, `static/`, `plugins/`, `metadata.yaml`, `docs/`, and portable Postgres dumps in `backups/` — **`deitydb_pg_v2.1.87.sql.gz` is current (includes the citation layer)**; `deitydb_pg_v2.0.0.sql.gz` is the pre-citation baseline kept for reference.
 - **NOT in git:** `deitydb.sqlite` (gitignored — rebuilt from Postgres), `CLAUDE.md` (gitignored project instructions), the Python **venv**, and **flyctl**. The **Postgres source-of-truth runs only in the local Docker container** — it travels via the committed dump, not git.
 
 ## Bring up a new machine
@@ -45,9 +45,9 @@ git clone https://github.com/jebboone/deitydb && cd deitydb
 #    On Bazzite use `podman` (rootless, no sudo); it's drop-in for `docker` here.
 podman run -d --name deitydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=deitydb -p 5432:5432 docker.io/library/postgres:16
 sleep 5
-gunzip -c backups/deitydb_pg_v2.1.11.sql.gz | podman exec -i deitydb psql -U postgres -d deitydb
-podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"          # expect 3837
-podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entity_citations;"  # expect ~3871
+gunzip -c backups/deitydb_pg_v2.1.87.sql.gz | podman exec -i deitydb psql -U postgres -d deitydb
+podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entities;"          # expect 4130
+podman exec deitydb psql -U postgres -d deitydb -c "select count(*) from entity_citations;"  # expect 4554
 # To rebuild the citation layer FROM SCRATCH on the v2.0.0 baseline instead (rarely needed):
 #   apply scripts/build_pilot_citations.sql, then scripts/citations/build_*_citations.sql
 #   (build_track2_secondary_citations.sql LAST). NOTE: etzhayim + testsol builds are broken (see Known issues).
@@ -68,6 +68,18 @@ docker rm -f deitydb-dev; docker run -d --name deitydb-dev -p 8080:8080 deitydb 
 flyctl deploy -a deitydb-explorer                                    # live (~1-2 min; "metrics token" warning is benign)
 ```
 Frontend/plugin-only changes skip the export step. Bump `VERSION` + add a `CHANGELOG.md` entry for releases.
+
+**Every release that changes data must also commit a fresh Postgres dump**, or the work
+exists only in the local container:
+
+```bash
+podman exec deitydb pg_dump -U postgres -d deitydb | gzip > backups/deitydb_pg_v<VERSION>.sql.gz
+gzip -t backups/deitydb_pg_v<VERSION>.sql.gz
+```
+
+Then update the restore line above and in `README.md` to name the new dump. Releases
+v2.1.80–v2.1.83 were shipped without this step and left 105 citations and 51 sources
+backed up nowhere.
 
 ## Schema migrations (dbmate)
 Schema changes are tracked with **dbmate** (config in `.env` / `.env.example`; migrations in `db/migrations/`). The v2.0.0 schema is the **baseline** (= the committed dump), so on a fresh machine, after restoring the dump, run `dbmate up` once to record the baseline. New schema changes: `dbmate new <name>` → edit the `-- migrate:up`/`-- migrate:down` sections → `dbmate up` (`dbmate rollback` undoes the last). dbmate wraps each migration in a transaction, so don't add `BEGIN;`/`COMMIT;` in the body. Data loads stay as idempotent `scripts/build_*.sql` (NOT migrations). Generators share SQL-literal helpers in `scripts/sqlgen.py`. Full rationale: `docs/SQL_AUDIT.md`.

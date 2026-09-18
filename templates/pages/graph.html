@@ -184,12 +184,12 @@ var REL_SHORT = {
 function relLabel(t) { return REL_SHORT[t] || (t || '').replace(/_/g, ' '); }
 
 /* ── State ───────────────────────────────────────────────────────────
-   master = everything ever fetched. The VISIBLE graph (nodes/links) is
-   recomputed from master each time something is expanded or collapsed:
+   store = everything ever fetched. The VISIBLE graph (nodes/links) is
+   recomputed from store each time something is expanded or collapsed:
    a node is visible iff it's the focal node OR a neighbour of a visible
    *expanded* node. Collapsing a node therefore hides exactly what was
    only reachable through it.                                            */
-var master = {
+var store = {
   nodes: {},          /* id → {id,name,trad,type}                        */
   adj:   {},          /* id → { neighbourId: true } (undirected)         */
   edges: {},          /* "sid|type|tid" → {lid,sid,tid,type,conf}        */
@@ -308,7 +308,7 @@ function tick() {
 
 /* ── Node interaction state helpers ──────────────────────────────── */
 function hiddenCount(id) {
-  var nb = master.adj[id]; if (!nb) return 0;
+  var nb = store.adj[id]; if (!nb) return 0;
   var n = 0;
   for (var k in nb) { if (!visibleIds.has(k)) n++; }
   return n;
@@ -414,22 +414,22 @@ function render() {
   applyTradDim();
 }
 
-/* ── Master-store helpers ────────────────────────────────────────── */
-function addMasterNode(id, name, trad, type) {
-  if (!master.nodes[id]) master.nodes[id] = { id:id, name:name||id, trad:trad||'', type:type||'' };
-  if (!master.adj[id]) master.adj[id] = {};
+/* ── Store helpers ────────────────────────────────────────── */
+function addStoreNode(id, name, trad, type) {
+  if (!store.nodes[id]) store.nodes[id] = { id:id, name:name||id, trad:trad||'', type:type||'' };
+  if (!store.adj[id]) store.adj[id] = {};
 }
-function addMasterEdge(sid, tid, type, conf) {
+function addStoreEdge(sid, tid, type, conf) {
   var k = sid + '|' + type + '|' + tid;
-  if (master.edges[k]) return;
+  if (store.edges[k]) return;
   var e = { lid:k, sid:sid, tid:tid, type:type, conf:conf || '' };
-  master.edges[k] = e;
-  master.edgeList.push(e);
-  (master.adj[sid] = master.adj[sid] || {})[tid] = true;
-  (master.adj[tid] = master.adj[tid] || {})[sid] = true;
+  store.edges[k] = e;
+  store.edgeList.push(e);
+  (store.adj[sid] = store.adj[sid] || {})[tid] = true;
+  (store.adj[tid] = store.adj[tid] || {})[sid] = true;
 }
 function makeNode(id) {
-  var m = master.nodes[id] || { id:id, name:id, trad:'', type:'' };
+  var m = store.nodes[id] || { id:id, name:id, trad:'', type:'' };
   var sz = getSize();
   var anchor = (rootId && pool[rootId]) ? pool[rootId] : { x: sz.W/2, y: sz.H/2 };
   var ang = Object.keys(pool).length * 2.39996;   /* golden angle */
@@ -441,7 +441,7 @@ function makeNode(id) {
   };
 }
 
-/* Recompute the visible subgraph from master via reachability through
+/* Recompute the visible subgraph from store via reachability through
    expanded nodes, then rebuild the nodes/links arrays.                 */
 function computeVisible() {
   var vis = new Set();
@@ -450,7 +450,7 @@ function computeVisible() {
   while (queue.length) {
     var id = queue.shift();
     if (!expanded.has(id)) continue;            /* leaves contribute nothing */
-    var nb = master.adj[id] || {};
+    var nb = store.adj[id] || {};
     for (var m in nb) { if (!vis.has(m)) { vis.add(m); queue.push(m); } }
   }
   visibleIds = vis;
@@ -462,7 +462,7 @@ function computeVisible() {
   });
 
   links = [];
-  master.edgeList.forEach(function(e){
+  store.edgeList.forEach(function(e){
     if (vis.has(e.sid) && vis.has(e.tid) && (activeTypes === null || activeTypes.has(e.type))) {
       links.push({ lid:e.lid, source:e.sid, target:e.tid, type:e.type, conf:e.conf });
     }
@@ -478,7 +478,7 @@ function applyTradDim() {
 }
 function populateControls() {
   var types = {}, trads = {};
-  master.edgeList.forEach(function(e){ if (visibleIds.has(e.sid) && visibleIds.has(e.tid)) types[e.type] = 1; });
+  store.edgeList.forEach(function(e){ if (visibleIds.has(e.sid) && visibleIds.has(e.tid)) types[e.type] = 1; });
   nodes.forEach(function(n){ if (n.trad) trads[n.trad] = 1; });
   var typeKeys = Object.keys(types).sort(), tradKeys = Object.keys(trads).sort();
   var sig = typeKeys.join('|') + '##' + tradKeys.join('|');
@@ -505,7 +505,7 @@ function onTypeChange() {
 }
 tradFilterEl.addEventListener('change', function(){ activeTrad = this.value; applyTradDim(); });
 
-/* ── Fetch neighbourhood into the master store ───────────────────── */
+/* ── Fetch neighbourhood into the store ───────────────────── */
 async function fetchNeighbourhood(entityId) {
   if (fetched.has(entityId)) return;
   var safe = entityId.replace(/'/g, "''");
@@ -528,9 +528,9 @@ async function fetchNeighbourhood(entityId) {
   if (!Array.isArray(data)) throw new Error('Unexpected response from API');
 
   data.forEach(function(row) {
-    addMasterNode(row.sid, row.sname, row.strad, row.stype);
-    addMasterNode(row.oid, row.oname, row.otrad, row.otype);
-    addMasterEdge(row.sid, row.oid, row.rtype, row.conf);
+    addStoreNode(row.sid, row.sname, row.strad, row.stype);
+    addStoreNode(row.oid, row.oname, row.otrad, row.otype);
+    addStoreEdge(row.sid, row.oid, row.rtype, row.conf);
   });
   fetched.add(entityId);
 }
@@ -621,7 +621,7 @@ function fitGraph() {
 
 /* ── Reset ───────────────────────────────────────────────────────── */
 function gpReset(keepSVG) {
-  master.nodes = {}; master.adj = {}; master.edges = {}; master.edgeList = [];
+  store.nodes = {}; store.adj = {}; store.edges = {}; store.edgeList = [];
   Object.keys(pool).forEach(function(k){ delete pool[k]; });
   fetched.clear(); expanded.clear(); visibleIds = new Set();
   rootId = null;
@@ -677,8 +677,8 @@ function onNodeOver(ev, d) {
 }
 
 function onLinkOver(ev, d) {
-  var sn = typeof d.source === 'object' ? d.source.name : (master.nodes[d.source] || {}).name || d.source;
-  var tn = typeof d.target === 'object' ? d.target.name : (master.nodes[d.target] || {}).name || d.target;
+  var sn = typeof d.source === 'object' ? d.source.name : (store.nodes[d.source] || {}).name || d.source;
+  var tn = typeof d.target === 'object' ? d.target.name : (store.nodes[d.target] || {}).name || d.target;
   tipEl.innerHTML =
     '<span class="gt-rel">' + esc(relLabel(d.type)) + '</span>' +
     '<span class="gt-conn">' + esc(sn) + ' → ' + esc(tn) + '</span>';

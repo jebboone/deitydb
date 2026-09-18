@@ -58,8 +58,9 @@ databases:
         description_html: |
           The core table — every entity in the database, spanning gods, angels, demons, aeons,
           prophets, saints, heroes, spirits, monsters, personified abstractions, cosmological realms,
-          and ritual categories. Use <strong>category</strong> to filter by functional type
-          (146 values: Underworld Deity, Hero, Adversarial Being, Revealer Figure, etc.).
+          and ritual categories. Use <strong>entity_class</strong> to filter by kind
+          (19 controlled values: deity, angel, demon, aeon, sefirah, spirit, monster, hero, etc.).
+          <strong>category</strong> is free text (1,148 values) and is not a reliable filter.
           Use <strong>tradition</strong> to filter by tradition. The <strong>short_note</strong>
           column contains a scholarly description with source citations.
         label_column: canonical_name
@@ -79,9 +80,9 @@ databases:
           entity_class:
             description: "Controlled top-level kind (19 values: deity, angel, demon, aeon, sefirah, spirit, monster, hero, ruler, prophet, sage, saint, scriptural-figure, abstraction, collective, realm, ritual, title, object) — recommended for filtering by kind"
           entity_type:
-            description: Granular free-text type descriptor (894 distinct values; see entity_class for the controlled grouping)
+            description: Granular free-text type descriptor (934 distinct values; see entity_class for the controlled grouping)
           category:
-            description: Broader functional category (146 values — recommended for filtering)
+            description: Free-text functional category (1,148 distinct values, not normalised — filter on entity_class instead)
           primary_domains:
             description: Primary divine domains, comma-separated
           evidence_confidence:
@@ -96,7 +97,7 @@ databases:
       entity_relationships:
         title: Relationships
         description_html: |
-          2,079 typed, source-backed relationships between entities. Each row records a directed
+          7,161 typed, source-backed relationships between entities. Each row records a directed
           relationship (subject → type → object) with a justifying source and rationale note.
           See <em>relationship_types</em> for the full controlled vocabulary of 70 relationship types.
           Key types: <em>reception_of</em> / <em>received_as</em> (transmission across traditions),
@@ -156,7 +157,7 @@ databases:
       entity_sources:
         title: Entity Sources
         description_html: |
-          2,936 links between entities and the sources that attest them, with evidence type
+          6,487 links between entities and the sources that attest them, with evidence type
           and passage-level notes. The primary evidence layer: every entity classification
           traces to at least one record here.
         columns:
@@ -202,7 +203,7 @@ databases:
       entity_aliases:
         title: Aliases
         description_html: |
-          181 alternate names, epithets, and variant spellings. Useful for finding an entity
+          260 alternate names, epithets, and variant spellings. Useful for finding an entity
           by a name that is not used as the canonical_name (e.g. "Ishtar" for Inanna,
           "Magna Mater" for Cybele).
         columns:
@@ -296,7 +297,7 @@ databases:
 
       v_public_cross_tradition_links:
         title: Cross-Tradition Links ★
-        description: The comparative-religion core — every link where one tradition's figure is received, syncretised, equated, or recognised as a cognate of another tradition's (reception_of, received_as, syncretized_with, identified_with, equated_with, aligned_with, cult_form_of). 1,006 connections across the religions of the ancient and late-antique world.
+        description: The comparative-religion core — every link where one tradition's figure is received, syncretised, equated, or recognised as a cognate of another tradition's (reception_of, received_as, syncretized_with, identified_with, equated_with, aligned_with, cult_form_of). 1,510 connections across the religions of the ancient and late-antique world.
 
       v_public_cross_tradition_matrix:
         title: Cross-Tradition Web ★
@@ -313,7 +314,7 @@ databases:
         description_html: |
           The heart of DeityDB: every link where one tradition's figure is
           <em>received</em>, <em>syncretised</em>, <em>equated</em>, or recognised as a
-          <em>cognate</em> of another's — 1,006 connections across the religions of the
+          <em>cognate</em> of another's — 1,510 connections across the religions of the
           ancient and late-antique world. Filter by tradition with the queries below,
           or browse all here.
         sql: |

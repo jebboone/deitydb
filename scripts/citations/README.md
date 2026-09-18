@@ -27,3 +27,49 @@ The extract_*.py scripts download their public-domain source text via curl/Guten
 - `secondary` / `reference` — attestation rests on scholarship; not primary-quotable.
 
 `needs_review=true` + `review_reason` flags every row that a human should verify (translation/anchor/OCR/section/secondary).
+
+## Quoting policy
+
+Two rules decide whether a citation carries a quote. They are independent — a source
+must satisfy both to be quoted.
+
+**1. The substring gate (absolute).** A stored `quote` must be a contiguous verbatim
+substring of the source text, verified programmatically over the *entire* quote, never
+a fragment of it. Never hand-write, assemble, splice or paraphrase quote text. If no
+clean genuine substring can be found, leave the row as a pointer (`quote IS NULL`).
+Trimming a verified span at its *ends* preserves contiguity; excising from the middle
+and rejoining does not, and is fabrication.
+
+**2. Source format decides quote vs pointer.** Dictionary and encyclopedia entries —
+headword definitions of the form "X was a god of…" — quote cleanly and are the
+preferred target. Essay-format references and monographs stay **pointers**, because
+lifting a characterizing sentence out of qualified scholarly prose produces a
+decontextualized-but-accurate quote that misleads. The canonical example: DDD's "El is
+a poorly known deity" describes one limited attestation, not El's standing in the
+pantheon. This is a subtler integrity risk than fabrication and is unrelated to
+copyright — Brill's *Dictionary of Religion*, DDD, Glassé and the *Catholic
+Encyclopedia* stay pointers on these grounds alone.
+
+**Copyright is not a third rule.** Brief attributed excerpts from in-copyright works
+are permitted for identification, and are used throughout the database (Robinson's
+*Nag Hammadi Library*, Pickthall, Gardner & Lieu, Guillaume, Renard, Davidson,
+Dixon-Kennedy, Netton, Grimal). Keep them brief — roughly 250–450 characters — give
+full attribution in `work_title`, and set
+`review_reason = 'In-copyright modern translation — brief excerpt for identification'`.
+An in-copyright *dictionary* is therefore quotable; an in-copyright *monograph* is not,
+by rule 2.
+
+**Always eyeball every candidate.** Never bulk-apply either pipeline. Disambiguation,
+not extraction, is the binding constraint: measured precision runs ~28% for single
+common nouns and ~69% for distinctive multi-word proper nouns. Read the surrounding
+context and confirm the referent before accepting a match.
+
+**Apparatus is not source text.** Tables of contents, indexes, forewords, title pages,
+running heads, translator footnotes, editorial commentary, bibliographies and incipit
+concordances have all been mis-anchored as `primary-verbatim` in the past (cleaned in
+v2.1.24 and again in v2.1.87). Bound extraction to the body of the text and reject
+candidates carrying dot leaders, page-number runs, scan furniture ("Digitized by"),
+or catalogue numbers. Note that naive "looks like a name list" heuristics over-flag
+badly — legitimate primary catalogues such as the Völuspá Dvergatal, the Egyptian
+Ennead and the Apocryphon of John's archon lists all trip them. Use the regex to
+nominate candidates; decide by reading.
